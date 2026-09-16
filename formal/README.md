@@ -1,4 +1,4 @@
-# Lean milestone: exact recurrence of chair contacts
+# Lean proofs: chair contact recurrence and grid tilings
 
 *16 September 2026. Lean 4.34.0, bundled Std, no Mathlib dependency.*
 
@@ -7,6 +7,12 @@ and final axiom audit passed. The [verification record](verification.json)
 identifies the exact source hashes and theorem dependencies. This establishes
 the normalized-grid recurrence statement below, not the entire proposed
 aperiodic-solid theorem.
+
+**Grid-tiling bridge completed:** [result and proof map](GRID_TILING_BRIDGE.md).
+Arbitrary legal grid tilings now have a precise definition. Common proper
+grid motions preserve legality, coverage supplies actual face neighbors,
+and those neighbors normalize to the certified contact lists. The recurrence
+also applies to arbitrarily placed macro pairs. Grouping is the next target.
 
 ## Precise target
 
@@ -85,19 +91,20 @@ Lean's standard `propext`, `Classical.choice`, and `Quot.sound`.
 
 ## Scope and remaining work
 
-This is a **normalized integer-grid matching theorem**. It does not yet
-formalize:
+These are **integer-grid matching and conditional tiling theorems**. They do
+not yet formalize:
 
 - The curved physical solid or the arbitrary-placement-to-grid argument.
-- Covariance under simultaneous changes of frame of both contacting objects.
 - The unique parent partition of every legal infinite tiling.
 - Common parity of an entire tiling, infinite iteration, existence, or the
   finite-symmetry conclusion.
 - Reflections, novelty, or the behavior of meshes and manufactured objects.
 
 Those statements must not be hidden in the interpretation of this result.
-The immediate next formal target is the local parent partition and its
-connection to these recurrent rules, including frame covariance.
+The immediate next formal target is to derive the local contact exclusions
+and parent partition from the unrestricted `LegalTiling` definition.
+The [next-milestone plan](NEXT_MILESTONE.md) specifies the unrestricted tiling
+definition, universal grouping theorem, and global parity/deflation obligations.
 
 ## Reproduce
 
@@ -144,6 +151,8 @@ and rebuild after regeneration.
 | [Witnesses](Chair/Witnesses.lean), [Cache](Chair/Cache.lean), [Checked](Chair/Checked.lean) | Untrusted data and checked concrete certificates |
 | [Integrity](Chair/Integrity.lean) | Construction and boundary checks |
 | [Recurrence](Chair/Recurrence.lean) | Unconditional normalized recurrence theorem and counts |
+| [Frames](Chair/Frames.lean), [Covariance](Chair/Covariance.lean) | Placement algebra and frame covariance of full contact records |
+| [Boundary](Chair/Boundary.lean), [Tiling](Chair/Tiling.lean) | Exposed-face ownership, arbitrary tilings and the contact-certificate bridge |
 | [Verifier](verify.py) | Source correspondence, build, axiom audit, independent comparison |
 | [Controls](Chair/Controls.lean) | Deliberately incomplete/incorrect certificates must fail |
 
@@ -164,7 +173,7 @@ They also reviewed each other's integration where applicable; neither is an
 independent human reviewer. Their roles and final verification are recorded
 in the [research chronology](../strong/review/RECORD.md).
 
-## Independent agent review
+## Independent agent review of the normalized recurrence
 
 A fresh agent that did not author this formalization subsequently reviewed
 the milestone. Its [assessment](INDEPENDENT_REVIEW.md) found no material
@@ -185,3 +194,5 @@ This is a review independent of implementation authorship, not an external
 human review or a verification of the complete physical theorem. The review
 documents its commands, alternative arithmetic methods, trust assumptions,
 and the fact that its Lean build reused cached artifacts.
+The later grid-tiling addition has the internal cross-review described in
+[its record](GRID_TILING_BRIDGE.md); it was not covered by that earlier review.

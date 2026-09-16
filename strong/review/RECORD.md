@@ -487,3 +487,63 @@ README, handoff, and review index. Changes remain local. This fresh agent
 review is independent of authorship, but is still an AI review; it reused
 compiled Lean artifacts rather than performing a cold rebuild or auditing
 the Lean kernel.
+
+## Internal next-step review — 16 September 2026
+
+After committing the completed work, the user requested a review and the
+next step besides external reviews. Re-read the formal recurrence statement,
+coordinate/placement definitions, dependency audit, local grouping proof,
+and grouping certificate structure. Consulted the fresh milestone reviewer
+again on priority and prerequisites. No new defect was identified.
+
+Recorded `formal/NEXT_MILESTONE.md`: the next target is universal unique
+parent grouping and legal deflation. The first bounded step is a precise
+definition of arbitrary legal grid tilings, frame composition/inversion and
+covariance, and coverage-implied neighboring faces. Then connect the existing
+14 exclusions, six forcing chains and exceptional notch argument to every
+legal tiling. Reuse the Lean port rules, or explicitly formalize the motif
+correspondence; avoid an assumed replacement rule system. Finally prove
+parent adjacency connectivity, common parity and preservation of legality
+under deflation. Existence remains a separate, necessary branch.
+
+Updated the handoff and formal README to link the plan. No Lean source,
+certificate, frozen construction or verification result changed. This entry
+records an implementation target and review assessment, not a newly completed
+mathematical milestone.
+
+## Arbitrary grid-tiling bridge completed — 16 September 2026
+
+Implemented the user's approved first bounded step of `formal/NEXT_MILESTONE.md`.
+`Frames.lean` defines proper cubic frames and integral motions, with composition,
+inversion and actions on cube lower corners and scaled point coordinates.
+`Covariance.lean` proves that the full existing face/port model transforms
+consistently, including arbitrary relative contact offsets. `Boundary.lean`
+checks the actual exposed boundary in all 24 orientations and proves its
+translation transport. No frozen geometry or prior certificate was altered.
+
+`Tiling.lean` defines arbitrary placement sets with coverage, unique ownership
+and interface matching only. It proves common-motion invariance, derives
+an actual neighbor of every exposed face from coverage, and normalizes any
+touching pair into the 44 certified contacts. A combined neighbor theorem is
+ready for the next contact-exclusion proofs. Arbitrarily placed macro pairs
+also inherit the existing recurrence; no parent partition is assumed or proved.
+
+Three subagents separately authored the frame, covariance and boundary modules.
+The boundary contributor then performed a read-only cross-review of the
+coordinator's tiling module, including both final corollaries, and reproduced
+its build. It found no material issue and highlighted the proper-grid,
+discrete-model and conditional-existence scope. This is internal AI
+cross-review, not independent external validation of the entire addition.
+
+Ran the full `formal/verify.py --write-report` through uv with Lean 4.34.0.
+Deterministic source checks, build, independent contact-table comparison and
+all 16 axiom audits passed. The updated report contains 21 Lean source hashes;
+axioms remain restricted to `propext`, `Classical.choice`, and `Quot.sound`.
+This reused existing compiled finite-proof batches, rather than rebuilding
+the whole project cold. The substantive record and reproduction command are
+in `formal/GRID_TILING_BRIDGE.md`; README, index, plan and handoff are updated.
+
+Next: prove the 14 contact exclusions for arbitrary `LegalTiling`, then the
+forcing chains and unique parent partition. Existence, legal deflation and
+the complete aperiodic-solid theorem remain outside the completed step.
+Changes remain local; no outreach, commit or push was performed this turn.

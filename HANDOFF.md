@@ -40,7 +40,8 @@ child interfaces, and enumerates shifts by cube adjacency. It recovers all
 1,194/6,801 geometric contacts and 44/44 accepted contacts with exact
 same-frame doubling. The script and output are preserved as
 `formal/independent_review_probe.py` and `independent_review_results.json`.
-No Lean source changed; the saved 17-source verification hashes still match.
+At that review, no Lean source changed and all 17 then-current source hashes
+matched. The subsequent addition below updates the verification manifest.
 This remains AI review of the normalized-grid milestone, not external human
 validation or a cold independent rebuild of every compiled proof.
 
@@ -51,11 +52,31 @@ omit `--lake` when the pinned toolchain is installed through elan. Four
 independent proof batches reduce cold build time; preserve source certificates
 and ignore `.lake/`. All final checks passed; frozen artifacts are unchanged.
 
-Next: audit/formalize unique parent grouping for arbitrary legal grid tilings,
-connect it to recurrence, and establish frame covariance/common parity for
-iteration. Existence, arbitrary Euclidean grid enforcement, and the full
+**First grid-tiling step completed:** read
+[`formal/GRID_TILING_BRIDGE.md`](formal/GRID_TILING_BRIDGE.md).
+Four new modules (`Frames`, `Covariance`, `Boundary`, `Tiling`) prove proper
+grid motion algebra and contact covariance, exact exposed-face ownership,
+preservation of `LegalTiling` under a common motion, and coverage-derived
+neighbors whose relative placements belong to the 44-contact lists.
+`LegalTiling` assumes only coverage, unique cube ownership and matching;
+there is no grouping or parity premise. Recurrence now also applies to
+arbitrarily placed macro pairs, without asserting those macros form groups
+in an arbitrary fine tiling. The full uv verifier passed with 16 audited
+theorem declarations and 21 source hashes. A contributor to the boundary
+module cross-reviewed the coordinator's tiling proofs and found no material
+issue; this was internal review, not a fresh review of the whole addition.
+
+Next: derive the 14 impossible-contact exclusions from `LegalTiling`, using
+`exposed_face_neighbor_accepted` to supply actual neighbors. Then formalize
+the six forcing chains, exceptional notch case and unique parent partition,
+followed by common parity and legal deflation. Existence, arbitrary Euclidean
+grid enforcement, and the full
 finite-symmetry theorem remain separate obligations. Do not describe this
 milestone as a formalization of the complete physical monotile theorem.
+The [next-milestone review](formal/NEXT_MILESTONE.md) gives the precise target
+and acceptance criteria; step A is complete. Connect the existing local
+grouping witnesses to the new definition. Reuse the proven frozen-port rules or formally bridge
+the motif encoding before relying on A/B/C rules in Lean.
 
 **Focused geometric scrutiny completed:**
 `strong/review/GEOMETRIC_GRID_SCRUTINY.md` rewrites the arbitrary-placement

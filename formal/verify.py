@@ -59,6 +59,12 @@ def main():
         "Chair.macro_boundary_exact", "Chair.fine_assignment_exact",
         "Chair.child_pairs_compatible", "Chair.fine_accepted_count",
         "Chair.macro_accepted_count", "Chair.accepted_lists_distinct",
+        "Chair.GridMotion.cell_comp", "Chair.GridMotion.contact_covariant",
+        "Chair.placed_fine_boundary", "Chair.LegalTiling.move",
+        "Chair.LegalTiling.exposed_face_has_neighbor",
+        "Chair.LegalTiling.touching_contact_accepted",
+        "Chair.LegalTiling.exposed_face_neighbor_accepted",
+        "Chair.placed_macro_contact_recurrence",
     }
     assert set(dependencies) == expected_theorems, dependencies
 
@@ -77,11 +83,11 @@ def main():
         "axiom_dependencies": dependencies,
         "lean_source_sha256": {str(p.relative_to(HERE)): hashlib.sha256(p.read_bytes()).hexdigest()
                                for p in sorted(HERE.rglob("*.lean")) if ".lake" not in p.parts},
-        "scope": "Normalized integral-grid face-contact recurrence; not the full solid or aperiodicity theorem",
+        "scope": "Integral-grid contact recurrence, frame covariance and coverage-derived neighbors in arbitrary legal grid tilings; not grouping, existence or the full solid/aperiodicity theorem",
     }
     if args.write_report:
         (HERE / "verification.json").write_text(json.dumps(report, indent=2) + "\n")
-    print("Lean recurrence milestone: all checks passed", flush=True)
+    print("Lean recurrence and grid-tiling bridge: all checks passed", flush=True)
 
 
 if __name__ == "__main__":
