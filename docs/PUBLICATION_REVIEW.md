@@ -1,6 +1,21 @@
 # Publication preparation review
 
-*16 September 2026. Prepared locally. Repository visibility remains private.*
+*16 September 2026. Pre-publication review, followed by the publication record below.*
+
+## Publication completed
+
+The user authorized publication with “Let's publish it,” after disclosure
+of the Gmail identity in the existing commits. The preparation commit
+`ab17536201706e6a3283a8a469a1ec6cda2c40ce` was pushed to `main`, and
+[the repository](https://github.com/yamaton/aperiodic-chair-lab) was changed
+from private to **public**. Read-only GitHub checks confirmed both PUBLIC
+visibility and that commit on the default branch. An unauthenticated fetch
+of the public README matched the local file byte-for-byte.
+
+The existing history and author/committer identities were retained. No
+history rewrite or reviewer outreach occurred. The sections and JSON snapshots
+below describe the earlier preparation, including the then-pending identity
+choice and private visibility. They are preserved as dated evidence.
 
 ## Result
 

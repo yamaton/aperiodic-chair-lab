@@ -13,12 +13,20 @@ authorized pushing the initial commit `ba4b070` to the private GitHub origin
 `yamaton/aperiodic-chair-lab`; that push is complete. The subsequent read-only
 publication review observed remote `main` at tutorial commit `3984e42`,
 matching local HEAD; this preparation did not perform that synchronization.
-Keep new changes local unless publishing is authorized. No reviewer outreach
-has been authorized or sent.
+The user subsequently authorized publication with “Let's publish it.”
+Commit `ab17536` was pushed and the repository made PUBLIC on 16 September
+2026, retaining the existing history and author identity after the email
+disclosure. Keep unrelated future changes local unless publishing is
+authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
-**Publication preparation complete locally:** see
+**Repository published:** https://github.com/yamaton/aperiodic-chair-lab.
+The initial public preparation commit is `ab17536`; GitHub confirmed PUBLIC
+visibility and the matching remote commit. The publication record is in
+`docs/PUBLICATION_REVIEW.md`. No history rewrite or outreach occurred.
+
+**Publication preparation:** see
 [publication review](docs/PUBLICATION_REVIEW.md), [provenance](docs/PROVENANCE.md),
 [licensing scope](LICENSING.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
 The README now leads with the exact Chair44 overlap, verification, teaching
@@ -27,14 +35,13 @@ frozen files, proof sources, evidence logs and Git history are unchanged.
 The prepared defaults are MIT for original code/machine-readable data and
 CC BY 4.0 for prose, figures and models, with explicit third-party exceptions.
 
-**Before making public:** all ten existing commits contain a personal Gmail
-author/committer identity. The publication report records this without copying
-the address. The maintainer must decide whether to retain it or authorize a
-history rewrite to a GitHub no-reply identity. No history rewrite, publication,
-push or outreach has occurred during preparation. Read-only GitHub checks
-confirmed PRIVATE visibility, one branch, no tags, no Actions runs/artifacts.
-The heuristic scanner found no suspected credentials; its scope and limits
-are recorded in `docs/publication_audit.json`. Recheck after further changes.
+**Historical privacy finding:** the ten commits in the preparation audit used
+a personal Gmail author/committer identity. The user authorized publication
+after this disclosure; that identity and history were retained. The pre-release
+GitHub snapshot in `docs/publication_github.json` records PRIVATE visibility
+at its check time and is not current visibility. The heuristic scanner found
+no suspected credentials; its scope and limits are recorded in
+`docs/publication_audit.json`. It is a historical preparation snapshot.
 
 **Undergraduate tutorial added:** [offline illustrated edition](docs/APERIODIC_CHAIR_TUTORIAL.html)
 and [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) explain the chair,

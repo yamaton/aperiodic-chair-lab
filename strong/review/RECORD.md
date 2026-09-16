@@ -933,3 +933,18 @@ Validation: 269 local Markdown links resolve; 128 protected frozen/evidence/
 formal files are byte-identical to HEAD; the frozen hash verifier and scanner
 controls passed. The final scan and its explicit limitations are preserved in
 `docs/publication_audit.json`. No new proof build was needed for these changes.
+
+## Public release — 16 September 2026
+
+The user explicitly instructed “Let's publish it,” following discussion of
+the personal Gmail identity in the existing commit history. Pushed preparation
+commit `ab17536201706e6a3283a8a469a1ec6cda2c40ce` to `origin/main` and changed
+`yamaton/aperiodic-chair-lab` from PRIVATE to PUBLIC using `gh repo edit`.
+Read-only GitHub queries confirmed PUBLIC visibility, default branch `main`,
+and the exact published commit. An unauthenticated public README fetch
+matched the local file byte-for-byte. Existing history and commit identities
+were retained; no force-push, history rewrite or reviewer outreach occurred.
+
+Updated the handoff and repository/publication records to distinguish the
+completed public release from the preserved pre-release audit snapshots.
+No mathematical source, frozen input, evidence log or license was changed.

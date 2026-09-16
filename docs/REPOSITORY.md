@@ -60,6 +60,15 @@ personal Gmail identity; that publication decision is explicitly pending.
 This preparation leaves the repository private and preserves the frozen
 artifacts and history. It does not authorize outreach or a force-push.
 
+## Publication — 16 September 2026
+
+After reviewing the publication preparation and commit-email disclosure,
+the user instructed “Let's publish it.” Commit `ab17536` was pushed to
+`main`, and GitHub visibility changed to PUBLIC. The existing history was
+retained. The [publication review](PUBLICATION_REVIEW.md#publication-completed)
+records the checks and distinguishes its older private-state snapshots.
+No reviewer outreach was authorized or performed.
+
 ## Initial validation
 
 The renamed package runs with `uv run --locked --offline`; project and
