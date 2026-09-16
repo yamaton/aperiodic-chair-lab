@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "orientations": 24,
+  "fine_faces": 24,
+  "macro_faces": 96,
+  "cancelled_child_interfaces": 48,
+  "touching_offsets": [
+    1410,
+    9033
+  ],
+  "disjoint_geometric_contacts": [
+    1194,
+    6801
+  ],
+  "accepted": [
+    44,
+    44
+  ],
+  "cache_geometry": "exact match by all complete records",
+  "method": "face containment; transformed cube corners; child boundary cancellation; adjacency-derived shifts"
+}

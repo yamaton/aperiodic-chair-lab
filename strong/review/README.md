@@ -13,6 +13,8 @@ journal recommendation or endorsement.
 - [Short mathematical brief](BRIEF.md): initial attachment source.
 - [Lean recurrence milestone](../../formal/README.md): formal contact semantics,
   exhaustive certificate checking, and the precise normalized-grid scope.
+  A [fresh independent agent review](../../formal/INDEPENDENT_REVIEW.md)
+  found no material defect and supplies a separate geometric reconstruction.
   This development is separate from the frozen v1 review packet.
 - [Geometric grid scrutiny](GEOMETRIC_GRID_SCRUTINY.md): expanded arbitrary-
   placement proof, exact ownership and feature-box checks, and three

@@ -31,6 +31,19 @@ exports frozen data and proposes witnesses; Lean checks their mathematical
 content. The source JSON correspondence is reproducibly checked outside
 Lean. `formal/verification.json` records source hashes and axiom dependencies.
 
+**Fresh independent agent review completed:** `formal/INDEPENDENT_REVIEW.md`
+was written by a new agent with no implementation role. It found no material
+defect and requested no fix. Incremental Lean reproduction and an expanded
+axiom audit passed. Its separate standard-library Python probe reconstructs
+faces by geometric containment, moves cubes by all eight corners, cancels
+child interfaces, and enumerates shifts by cube adjacency. It recovers all
+1,194/6,801 geometric contacts and 44/44 accepted contacts with exact
+same-frame doubling. The script and output are preserved as
+`formal/independent_review_probe.py` and `independent_review_results.json`.
+No Lean source changed; the saved 17-source verification hashes still match.
+This remains AI review of the normalized-grid milestone, not external human
+validation or a cold independent rebuild of every compiled proof.
+
 Lean 4.34.0 lives at `/tmp/lean-4.34.0-linux/bin/lake` in this session; no
 Mathlib dependency. Reproduce from the root using `uv run --locked python
 formal/verify.py --lake /tmp/lean-4.34.0-linux/bin/lake --write-report`, or

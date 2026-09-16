@@ -163,3 +163,25 @@ Two subagents contributed generic definitions/proofs and construction checks.
 They also reviewed each other's integration where applicable; neither is an
 independent human reviewer. Their roles and final verification are recorded
 in the [research chronology](../strong/review/RECORD.md).
+
+## Independent agent review
+
+A fresh agent that did not author this formalization subsequently reviewed
+the milestone. Its [assessment](INDEPENDENT_REVIEW.md) found no material
+defect and requested no implementation change. It reproduced the incremental
+Lean checks, expanded the axiom audit, and independently reconstructed the
+geometry and all contact sets without importing project helper modules.
+
+The preserved [independent probe](independent_review_probe.py) and
+[results](independent_review_results.json) recover 1,194 fine and 6,801 macro
+disjoint geometric contacts, with exactly 44 fitting contacts at each scale
+and exact same-frame doubling. Run from the repository root:
+
+```sh
+uv run --locked python formal/independent_review_probe.py
+```
+
+This is a review independent of implementation authorship, not an external
+human review or a verification of the complete physical theorem. The review
+documents its commands, alternative arithmetic methods, trust assumptions,
+and the fact that its Lean build reused cached artifacts.

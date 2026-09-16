@@ -449,3 +449,41 @@ tracked; `.lake/` build products are ignored.
 No physical-solid, arbitrary-Euclidean-placement, global grouping,
 existence, aperiodicity, or novelty theorem is claimed by this milestone.
 No frozen candidate, inquiry, PDF/HTML/ZIP, or published repository was changed.
+
+## Independent review of the first Lean milestone — 16 September 2026
+
+At the user's explicit request, spawned `independent_lean_milestone_review`
+with fresh context and no implementation assignment. It reviewed the contact
+definitions, enumeration completeness, certificate soundness, coordinate
+construction, frame enumeration, source export, concrete proof assembly,
+final theorem and validation driver. Its authored report is
+[`formal/INDEPENDENT_REVIEW.md`](../../formal/INDEPENDENT_REVIEW.md).
+
+**Outcome:** no material defect found; no implementation fix requested.
+The reviewer independently ran the incremental verifier and an expanded
+Lean axiom audit. Both passed. It explicitly limits the result to normalized
+integer-grid contact recurrence and identifies the external JSON-to-Lean
+bridge and physical interpretation as remaining trust/scope boundaries.
+
+Its new Python probe imports no project helpers: face ownership uses geometric
+containment, cube transformations use all eight vertices, the macro boundary
+uses internal-face cancellation, rotations use permutation/sign enumeration
+and determinant, and translation candidates use adjacency of occupied cubes.
+Complete cached face records match this independently reconstructed geometry.
+Across all 24 orientations it finds 1,194 fine and 6,801 macro disjoint
+geometric contacts; exactly 44 fit at each scale, with exact doubling for
+each matrix. It also checks all 48 cancelled internal child interfaces.
+
+Preserved the probe byte-for-byte as `formal/independent_review_probe.py`
+(SHA-256 `8eff4bea7187115c0773b3fcf7371eb628eb5cd0ec0ef73e222006b508297979`).
+The coordinating agent reran it through uv from its permanent path and saved
+`formal/independent_review_results.json`; that run also passed. The report
+includes commands and the source of the expanded temporary Lean audit.
+
+The saved verification report matches all 17 current Lean source hashes and
+the frozen candidate. No Lean source, generated formal certificate, original
+verification report, or frozen review artifact changed. Updated the formal
+README, handoff, and review index. Changes remain local. This fresh agent
+review is independent of authorship, but is still an AI review; it reused
+compiled Lean artifacts rather than performing a cold rebuild or auditing
+the Lean kernel.
