@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "scope": "Exact data correspondence only; no Lean compilation or proof validation.",
+  "formula_scope": "Feature formulas transcribed from manually inspected pinned Lean source; the source hashes bind that inspection.",
+  "release_root": "/tmp/chair-prior-v1/six-birds-tiles-137e46b15d36266c37879478cfc62af6e4469147",
+  "source_sha256": {
+    "lean/R44/R44/Generated/CoreData.lean": "f5dcdfd0cd4881101b6d457fb05e7b9412c06671245949256537a21a6d2b0d64",
+    "lean/R44/R44/FiniteModel.lean": "9e99cb65ef71183c18d6c21484d7dbc6b623acc2e704150b0c6a90636fb274cd",
+    "lean/R44/R44/LogicalSpineFoundation.lean": "2e9f857b10b6498f31b6273137dd5bac9cfb34ad1520a5878e9f3b8508e435d2",
+    "solid/native_panels.csv": "b9eec9fd834abba4149bbf021026723499c4bb9e20553ebfab691c9ed3a9ed2d",
+    "solid/r44_solid.json": "f320d7a0c2d784a3eb29f001dc035808f67591d9ea8d3dd45949e66442f0ed55"
+  },
+  "probe_sha256": "2ce708e77015951ec7a94bc1177e33fb7f57191580b37d2e49c1c43ebb877c72",
+  "panels_equal": 24,
+  "features_exact_Lean_formula_vs_JSON": 192,
+  "vertices_equal": 2138,
+  "triangles_equal": 4272,
+  "base_halfwidth": "1/100",
+  "height_unit": "1/10000"
+}

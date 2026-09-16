@@ -309,6 +309,28 @@ There is exactly one cap-contact component. All tiles have the common grid
 and handedness derived above, and their physical interfaces reproduce the
 finite cap rules. This completes the geometric bridge.
 
+## 8a. Shorter component-exhaustion route from the Chair44 comparison
+
+The later [proof comparison](CHAIR44_PROOF_COMPARISON.md#5-an-attributed-simplification-of-our-geometric-argument)
+adapts Tsiokos's retained-core argument, described in Chair44's registration
+section and formalized in `Proved/CarrierCoreCover.lean`. After Section 6,
+it can replace Sections 7–8 **for the registration implication**:
+
+Take any actual tile T and the center c of an open radius-1/4 ball in its
+interior. The component's carrier cubes cover c; choose one such cube owned
+by S. Clamp c into that cube's inset `[1/64,63/64]^3`, obtaining y. Since
+`h=141/35840<1/64`, y has an open neighborhood inside S unaffected by caps.
+Also `||y-c||²≤3/4096<1/16`, so y is in T's interior ball. Interior
+disjointness gives S=T. Every actual tile therefore belongs to the component,
+whose physical coverage now follows from coverage by the original tiling.
+
+This uses carrier coverage to prove membership before inferring physical
+coverage. It does not construct an infinite tiling or remove local feature
+separation obligations. The earlier global-box argument and its certificates
+remain preserved. This shorter proof is written mathematics with exact bounds,
+reviewed by a subagent; it has not been formalized in Lean. Attribution to
+Chair44's formal argument is essential.
+
 ## 9. What changed, and what still needs review
 
 The frozen geometry has not changed. This scrutiny adds:

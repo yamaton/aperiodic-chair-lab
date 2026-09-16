@@ -1,5 +1,9 @@
 # Draft inquiry — not sent
 
+**Historical draft:** the subsequent [Chair44 comparison](TSIOKOS_CHAIR44_COMPARISON.md)
+found an equivalent published matching system. This body and its frozen
+attachment need revision to disclose that overlap before any use.
+
 **To:** Chaim Goodman-Strauss <chaimgoodmanstrauss@gmail.com>  
 **Subject:** Question about a one-chair 3D matching system related to your aperiodic pair  
 **Suggested attachment:** `review-brief.pdf`  
