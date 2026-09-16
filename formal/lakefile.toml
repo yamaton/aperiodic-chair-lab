@@ -1,0 +1,7 @@
+name = "chair_recurrence"
+version = "0.1.0"
+defaultTargets = ["Chair"]
+
+[[lean_lib]]
+name = "Chair"
+moreLeanArgs = ["-j", "4"]

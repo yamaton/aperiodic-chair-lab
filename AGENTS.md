@@ -10,6 +10,10 @@
 - Use **`uv` for all Python work**: `uv sync --locked` to install and
   `uv run --locked python <script>` to run. Use `uv add` for dependencies;
   keep `pyproject.toml` and `uv.lock` consistent. Python 3.13+ is required.
+- Lean work lives in `formal/`; read its README and use its pinned toolchain.
+  From the root run `uv run --locked python formal/verify.py` (optional
+  `--lake /path/to/lake`). Keep generated certificates; ignore `.lake/`.
+  State formal theorem scope and audit axioms before claiming verification.
 - Run commands from the repository root. Some chair searches compile a
   C++17 helper and require `g++`; browser-control checks use Node.js.
 - The objective is one space-filling 3D block whose every tiling has finite

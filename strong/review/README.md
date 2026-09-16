@@ -11,6 +11,9 @@ journal recommendation or endorsement.
 - [Draft inquiry](INQUIRY_GOODMAN_STRAUSS.md): proposed recipient, subject,
   and exact body; the sender must supply their name.
 - [Short mathematical brief](BRIEF.md): initial attachment source.
+- [Lean recurrence milestone](../../formal/README.md): formal contact semantics,
+  exhaustive certificate checking, and the precise normalized-grid scope.
+  This development is separate from the frozen v1 review packet.
 - [Geometric grid scrutiny](GEOMETRIC_GRID_SCRUTINY.md): expanded arbitrary-
   placement proof, exact ownership and feature-box checks, and three
   adversarial subagent reviews.

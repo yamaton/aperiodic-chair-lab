@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "lean": "Lean (version 4.34.0, x86_64-unknown-linux-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "finite_evaluation": "Lean kernel reduction; no native_decide",
+  "source_bridge": "Exact rational export, pinned JSON SHA, deterministic regeneration",
+  "orientations": 24,
+  "fine_contacts": 44,
+  "macro_contacts": 44,
+  "independent_python_contact_table": "all 44 oriented contacts agree",
+  "axiom_dependencies": {
+    "Chair.macro_contact_recurrence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.macro_contact_even": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.macro_boundary_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.fine_assignment_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.child_pairs_compatible": [],
+    "Chair.fine_accepted_count": [],
+    "Chair.macro_accepted_count": [],
+    "Chair.accepted_lists_distinct": []
+  },
+  "lean_source_sha256": {
+    "Audit.lean": "718b80d92be6d64553cf6440e3ebe894cedf11f35f1ed8619287e8f35359980c",
+    "Chair/Batches/Batch0.lean": "96bcdbc2df00c7ffd177befb6c0b18736fbca79ccc9feaae691c5831b11fc422",
+    "Chair/Batches/Batch1.lean": "def8fe82fb0fd02197f30dec096ec3a4c1bc2cfce7c02c54d77b24bb964b5363",
+    "Chair/Batches/Batch2.lean": "17461cf60d2ab2b9f98a81cee761f7a37359f194101e0da337da022fb765b072",
+    "Chair/Batches/Batch3.lean": "6cfbc2cb39e5ccb6fe516ae259bcfe954a36df0f6b975b9db9c8bef100a828a1",
+    "Chair/Cache.lean": "69659c51010d16113b73e3709d3da09719eca8315b8a6c75c3a359224ea4e45e",
+    "Chair/Candidate.lean": "e2d4dbf8e531c863e68df2126284d6ef09b000e158dd0e4916613d168bfc4fb5",
+    "Chair/Certificate.lean": "750f0756c142f551adc8ccd597d9206465ed13c7a4e946cc0e7867e07fd70300",
+    "Chair/Checked.lean": "6b25c2993600421c2553c12e80bfcdd4d4439b16adc8c19b0be97466da07048b",
+    "Chair/Controls.lean": "e26a28a2e4e62215e254aa302f0fc63175e0ebc0763722b1a568bdb516a0c06c",
+    "Chair/Geometry.lean": "cac7867af4d247e0b92941ee27f389e3186649c60e2da54f9c1b7fd4eaca2f44",
+    "Chair/Input.lean": "23f3daf757b33bbb0e6348c4c4c61d76f0a5f441f450a7f45bebbd89d99225ff",
+    "Chair/Integrity.lean": "1fe8463b22475924454861bcc3a09d69c280597fed59c25d0d569a795aa05d35",
+    "Chair/Model.lean": "1468caca06a1bd0cc8a06b3630250e098623ad992bd1dd46c5f5c6c78767f173",
+    "Chair/Recurrence.lean": "1a47f14570ee78701872bcc3d645bb07c7acb3c9450c257c139e81ef0ed0aef3",
+    "Chair/Witnesses.lean": "26fbd5665e80d90286f41937b6877326f7a6e6f86a702d0dfebcbfc947fa3f37",
+    "Chair.lean": "e7cbd68cca3682c5109abf8bf8dc986bfe5a97d32f0ad4592439a266764ed362"
+  },
+  "scope": "Normalized integral-grid face-contact recurrence; not the full solid or aperiodicity theorem"
+}

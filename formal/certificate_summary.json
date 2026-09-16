@@ -1,0 +1,1060 @@
+{
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "orientations": [
+    {
+      "orientation": 0,
+      "matrix": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          -2
+        ]
+      ],
+      "macro_accepted": [
+        [
+          0,
+          0,
+          -4
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "fine_rejected": 56,
+      "macro_rejected": 372
+    },
+    {
+      "orientation": 1,
+      "matrix": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          2,
+          -2,
+          2
+        ],
+        [
+          0,
+          -4,
+          0
+        ]
+      ],
+      "fine_rejected": 54,
+      "macro_rejected": 370
+    },
+    {
+      "orientation": 2,
+      "matrix": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "fine_accepted": [],
+      "macro_accepted": [],
+      "fine_rejected": 51,
+      "macro_rejected": 324
+    },
+    {
+      "orientation": 3,
+      "matrix": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "macro_accepted": [
+        [
+          4,
+          0,
+          0
+        ]
+      ],
+      "fine_rejected": 60,
+      "macro_rejected": 390
+    },
+    {
+      "orientation": 4,
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "fine_accepted": [
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "macro_accepted": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          -4,
+          0,
+          0
+        ]
+      ],
+      "fine_rejected": 56,
+      "macro_rejected": 372
+    },
+    {
+      "orientation": 5,
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "fine_accepted": [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          -2,
+          -2,
+          -2
+        ]
+      ],
+      "fine_rejected": 60,
+      "macro_rejected": 390
+    },
+    {
+      "orientation": 6,
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "macro_accepted": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          -2,
+          -2,
+          2
+        ]
+      ],
+      "fine_rejected": 59,
+      "macro_rejected": 389
+    },
+    {
+      "orientation": 7,
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          4,
+          0
+        ]
+      ],
+      "fine_rejected": 59,
+      "macro_rejected": 389
+    },
+    {
+      "orientation": 8,
+      "matrix": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "fine_accepted": [],
+      "macro_accepted": [],
+      "fine_rejected": 51,
+      "macro_rejected": 324
+    },
+    {
+      "orientation": 9,
+      "matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          4,
+          0
+        ]
+      ],
+      "fine_rejected": 59,
+      "macro_rejected": 389
+    },
+    {
+      "orientation": 10,
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "macro_accepted": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          -4,
+          0,
+          0
+        ]
+      ],
+      "fine_rejected": 56,
+      "macro_rejected": 372
+    },
+    {
+      "orientation": 11,
+      "matrix": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          -2
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          2,
+          2,
+          -2
+        ],
+        [
+          0,
+          0,
+          -4
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "fine_rejected": 55,
+      "macro_rejected": 371
+    },
+    {
+      "orientation": 12,
+      "matrix": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "fine_accepted": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          2,
+          -2,
+          -2
+        ]
+      ],
+      "fine_rejected": 59,
+      "macro_rejected": 389
+    },
+    {
+      "orientation": 13,
+      "matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "macro_accepted": [
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "fine_rejected": 60,
+      "macro_rejected": 390
+    },
+    {
+      "orientation": 14,
+      "matrix": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          -4,
+          0
+        ]
+      ],
+      "fine_rejected": 55,
+      "macro_rejected": 371
+    },
+    {
+      "orientation": 15,
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fine_accepted": [],
+      "macro_accepted": [],
+      "fine_rejected": 62,
+      "macro_rejected": 392
+    },
+    {
+      "orientation": 16,
+      "matrix": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          -2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          -4,
+          0
+        ]
+      ],
+      "fine_rejected": 55,
+      "macro_rejected": 371
+    },
+    {
+      "orientation": 17,
+      "matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "macro_accepted": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          -2,
+          2,
+          2
+        ],
+        [
+          -4,
+          0,
+          0
+        ]
+      ],
+      "fine_rejected": 55,
+      "macro_rejected": 371
+    },
+    {
+      "orientation": 18,
+      "matrix": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "fine_accepted": [],
+      "macro_accepted": [],
+      "fine_rejected": 51,
+      "macro_rejected": 324
+    },
+    {
+      "orientation": 19,
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          0,
+          -2
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "macro_accepted": [
+        [
+          0,
+          0,
+          -4
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "fine_rejected": 59,
+      "macro_rejected": 389
+    },
+    {
+      "orientation": 20,
+      "matrix": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          -2
+        ]
+      ],
+      "macro_accepted": [
+        [
+          0,
+          0,
+          -4
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "fine_rejected": 56,
+      "macro_rejected": 372
+    },
+    {
+      "orientation": 21,
+      "matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "fine_accepted": [],
+      "macro_accepted": [],
+      "fine_rejected": 62,
+      "macro_rejected": 392
+    },
+    {
+      "orientation": 22,
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          0,
+          -2,
+          0
+        ],
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "macro_accepted": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          -4,
+          0
+        ],
+        [
+          -2,
+          2,
+          -2
+        ]
+      ],
+      "fine_rejected": 57,
+      "macro_rejected": 387
+    },
+    {
+      "orientation": 23,
+      "matrix": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "fine_accepted": [
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "macro_accepted": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          -4,
+          0,
+          0
+        ]
+      ],
+      "fine_rejected": 59,
+      "macro_rejected": 389
+    }
+  ],
+  "scope": "Untrusted generated certificate summary; Lean checks the witnesses."
+}

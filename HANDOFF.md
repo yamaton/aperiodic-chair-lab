@@ -16,6 +16,34 @@ outreach has been authorized or sent.
 
 ## Active objective
 
+**First Lean milestone completed:** read `formal/README.md`. Lean now proves
+`macroContact r t ↔ ∃ s, t=2s ∧ fineContact r s` for every integer translation
+and all 24 listed proper cubic orientations, with the first solid/group
+normalized to identity at the origin. The 44 distinct contacts at each scale
+agree with the earlier independent Python table. Finite certificates use
+kernel reduction; the final axiom audit found only standard logical axioms,
+no `sorryAx`, custom axioms, or native evaluation dependencies.
+
+Generic face-witness completeness, certificate soundness, exact source-port
+assignment, child compatibility, doubled coarse support, and equality of
+the complete macro boundary to uncancelled child faces are checked. Python
+exports frozen data and proposes witnesses; Lean checks their mathematical
+content. The source JSON correspondence is reproducibly checked outside
+Lean. `formal/verification.json` records source hashes and axiom dependencies.
+
+Lean 4.34.0 lives at `/tmp/lean-4.34.0-linux/bin/lake` in this session; no
+Mathlib dependency. Reproduce from the root using `uv run --locked python
+formal/verify.py --lake /tmp/lean-4.34.0-linux/bin/lake --write-report`, or
+omit `--lake` when the pinned toolchain is installed through elan. Four
+independent proof batches reduce cold build time; preserve source certificates
+and ignore `.lake/`. All final checks passed; frozen artifacts are unchanged.
+
+Next: audit/formalize unique parent grouping for arbitrary legal grid tilings,
+connect it to recurrence, and establish frame covariance/common parity for
+iteration. Existence, arbitrary Euclidean grid enforcement, and the full
+finite-symmetry theorem remain separate obligations. Do not describe this
+milestone as a formalization of the complete physical monotile theorem.
+
 **Focused geometric scrutiny completed:**
 `strong/review/GEOMETRIC_GRID_SCRUTINY.md` rewrites the arbitrary-placement
 bridge in a noncircular order: local finiteness, open cap coincidence,

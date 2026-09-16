@@ -139,6 +139,10 @@ scaled original boundary, or nested recentered patches.
 
 ## E. Grouping, recurrence, and representation of physical orientations
 
+The [Lean milestone](../../formal/README.md) formalizes normalized-grid
+macrocontact recurrence and its exhaustive enumeration. Consult its current
+validation status; it does not formalize grouping or iteration for all tilings.
+
 The [local parent proof](../MOTIF_GROUPING.md) proves unique grouping in
 the common grid. Its six trigger implications use finite enumeration of
 contacts and forced face coverage. An independent star computation agrees,

@@ -17,7 +17,13 @@ remain unestablished.**
 | Review the latest comparison | [Auxiliary reconstruction](strong/review/AUXILIARY_RECONSTRUCTION.md) |
 | Assess correctness and prior work | [Review preparation](strong/review/README.md) |
 
-The latest [geometric scrutiny](strong/review/GEOMETRIC_GRID_SCRUTINY.md)
+The first [Lean milestone](formal/README.md) proves exact recurrence of
+macrocontacts in the normalized integer-grid model, including exhaustive
+offset coverage and even translations. All 24 orientations and 44 contacts
+at each scale are kernel-checked. This does not formalize the complete
+physical-solid or aperiodicity theorem.
+
+The preceding [geometric scrutiny](strong/review/GEOMETRIC_GRID_SCRUTINY.md)
 expands the argument from arbitrary placements to a single grid, with new
 exact checks and three further subagent reviews. It found no substantive
 defect; independent external mathematical scrutiny remains outstanding.

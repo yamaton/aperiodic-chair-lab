@@ -1,0 +1,88 @@
+"""Reproduce the Lean milestone; run with uv from the repository root.
+
+Requires the pinned Lean toolchain (via elan, or --lake /path/to/lake).
+Python checks the source bridge and an existing independent contact table.
+Lean checks all proof obligations; its final axiom dependencies are audited.
+"""
+
+import argparse
+import hashlib
+import json
+import re
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+from generate_input import SHA256
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+
+
+def run(args, cwd=HERE):
+    output = []
+    with subprocess.Popen(args, cwd=cwd, text=True, stdout=subprocess.PIPE,
+                          stderr=subprocess.STDOUT) as process:
+        for line in process.stdout:
+            print(line, end="", flush=True)
+            output.append(line)
+        returncode = process.wait()
+    if returncode:
+        raise subprocess.CalledProcessError(returncode, args, output="".join(output))
+    return "".join(output)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--lake", default="lake")
+    parser.add_argument("--write-report", action="store_true")
+    args = parser.parse_args()
+    lake = shutil.which(args.lake)
+    if lake is None:
+        parser.error("lake not found; install the pinned toolchain or pass --lake")
+    run([sys.executable, str(HERE / "generate_input.py"), "--check"])
+    run([sys.executable, str(HERE / "generate_certificates.py"), "--check"])
+    version = run([lake, "env", "lean", "--version"]).strip()
+    assert "version 4.34.0," in version, f"Unexpected Lean version: {version}"
+    run([lake, "build"])
+    audit = run([lake, "env", "lean", "Audit.lean"])
+    standard_axioms = {"propext", "Classical.choice", "Quot.sound"}
+    dependencies = {}
+    for name, names in re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", audit):
+        dependencies[name] = [name.strip() for name in names.split(",") if name.strip()]
+        assert set(dependencies[name]) <= standard_axioms, (name, dependencies[name])
+    for name in re.findall(r"'([^']+)' does not depend on any axioms", audit):
+        dependencies[name] = []
+    expected_theorems = {
+        "Chair.macro_contact_recurrence", "Chair.macro_contact_even",
+        "Chair.macro_boundary_exact", "Chair.fine_assignment_exact",
+        "Chair.child_pairs_compatible", "Chair.fine_accepted_count",
+        "Chair.macro_accepted_count", "Chair.accepted_lists_distinct",
+    }
+    assert set(dependencies) == expected_theorems, dependencies
+
+    summary = json.loads((HERE / "certificate_summary.json").read_text())
+    exported = {(tuple(t), tuple(v for row in entry["matrix"] for v in row))
+                for entry in summary["orientations"] for t in entry["fine_accepted"]}
+    independent = json.loads((ROOT / "strong/audit/coordinate_certificate.json").read_text())
+    expected = {(tuple(t), tuple(r)) for t, r in independent["legal_contacts"]}
+    assert exported == expected and len(exported) == 44
+    report = {
+        "status": "passed", "lean": version, "candidate_sha256": SHA256,
+        "finite_evaluation": "Lean kernel reduction; no native_decide",
+        "source_bridge": "Exact rational export, pinned JSON SHA, deterministic regeneration",
+        "orientations": 24, "fine_contacts": 44, "macro_contacts": 44,
+        "independent_python_contact_table": "all 44 oriented contacts agree",
+        "axiom_dependencies": dependencies,
+        "lean_source_sha256": {str(p.relative_to(HERE)): hashlib.sha256(p.read_bytes()).hexdigest()
+                               for p in sorted(HERE.rglob("*.lean")) if ".lake" not in p.parts},
+        "scope": "Normalized integral-grid face-contact recurrence; not the full solid or aperiodicity theorem",
+    }
+    if args.write_report:
+        (HERE / "verification.json").write_text(json.dumps(report, indent=2) + "\n")
+    print("Lean recurrence milestone: all checks passed", flush=True)
+
+
+if __name__ == "__main__":
+    main()

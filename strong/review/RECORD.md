@@ -369,3 +369,83 @@ existence, novelty, or approximate/manufactured geometry. Updated the
 handoff, README, project index, review index, and dependency audit. The
 frozen candidate and v1 PDF/HTML/ZIP remain unchanged. No outreach or push
 of these new changes occurred.
+
+## First Lean milestone — 16 September 2026
+
+User approved introducing Lean for the macrocontact recurrence lemma.
+The development is in [formal/](../../formal/README.md), separate from the
+frozen review packet. The target is the unconditional normalized-grid
+equivalence `macroContact r t ↔ ∃ s, t=2s ∧ fineContact r s`, for all integer
+translations and all 24 listed proper cubic frames. It does not presume
+even offsets, the 30 substitution contacts, or a search radius.
+
+**Completed:** the full 24-orientation build and final axiom audit passed.
+All 48 concrete certificate checks succeeded. The universal recurrence
+theorem, even-offset corollary, 44-contact counts, list uniqueness, and
+construction integrity statements compile. `formal/verification.json`
+records the checked source hashes and transitive axiom dependencies.
+
+Lean reconstructs faces and the eight-child boundary from frozen source
+literals. A generic face-witness proof establishes enumeration completeness.
+The certificate checker verifies every positive contact and every negative
+overlap/mismatching-face witness, and checks coverage of all touching
+offsets. Its soundness theorem turns these finite certificates into a
+statement quantified over the entire integer lattice.
+
+The source exporter pins the frozen JSON hash and uses exact rational
+conversion. Geometry caches are only optimizations: Lean proves them equal
+to reconstructed solids. The Python generator is not a trusted oracle for
+the finite lemmas. The source-to-JSON correspondence is still checked outside
+Lean, and the geometric interpretation of the definitions remains explicit.
+Construction checks include exact assignment of all 192 ports, disjoint
+children with matching internal faces, the doubled coarse chair, and equality
+of complete macro face records to child faces after cancelling interiors.
+
+Two subagents contributed:
+
+- `lean_recurrence_design_review`: independent design recommendation,
+  `Model.lean`, `Integrity.lean`, and review of the other agent's checker and
+  the root agent's coordinate construction/exporter. It requested the
+  explicit child-boundary equality and clarified the normalized-frame scope.
+- `lean_recurrence_theorem`: generic certificate soundness and recurrence
+  logic, followed by review of the final integration. It checked the complete
+  `Fin.cases` selector and suggested checking the exact audit theorem-name
+  set. It did not independently reimplement its own certificate checker.
+
+These are AI collaborators with overlapping premises, not external human
+validation. The root agent implemented the frozen-data bridge, coordinate
+construction, untrusted witnesses/caches, concrete checks, final theorem,
+verification driver, and documentation. The earlier generic direct-evaluation
+recurrence prototype was superseded by the smaller certificate proof.
+
+The first evaluation attempts were computationally wasteful, not failed
+mathematical statements. Direct evaluation of all contacts was stopped for
+resource use. Indexed witnesses, proved geometry caches, and four independent
+proof batches preserve the theorem while reducing checking cost. Contact-list
+order differs across scales, so recurrence uses membership equivalence;
+separate uniqueness proofs justify the number of distinct contacts.
+
+The four final certificate batches finished in 245–279 seconds each on this
+machine, running concurrently. Two proof-wrapper elaboration errors were
+fixed after the concrete checks passed: supplying the expected dependent
+function type to the `Fin.cases` selector, and parenthesizing a Boolean
+conjunction before its equality to `true`. No construction or contact changed.
+The final audit contains only standard `propext`, `Classical.choice`, and
+`Quot.sound` where needed; concrete count and compatibility proofs have no
+axioms. No `sorryAx`, project-specific axiom, or native-evaluation axiom occurs
+in the audited dependencies. Tiny adversarial controls reject missing
+coverage, noncontacts, out-of-range indices, false overlap witnesses, and
+false/nonopposed mismatches. All 44 oriented fine contacts also match the
+earlier independent coordinate checker exactly.
+
+Toolchain: Lean 4.34.0, official release, commit
+`293d5d0c0c3f3dded4688b3ccd6a33939ac5102b`, bundled Std only. The Linux archive
+SHA-256 `caaa98356098c85dc0fcbbd28e1ec66f39eb6551829972b752ff20e1286b646b`
+matches the GitHub release asset digest. The toolchain was extracted under
+`/tmp`; it is not a project dependency installed through uv. All Python work
+used uv. Lean sources, generated certificates and result summaries are
+tracked; `.lake/` build products are ignored.
+
+No physical-solid, arbitrary-Euclidean-placement, global grouping,
+existence, aperiodicity, or novelty theorem is claimed by this milestone.
+No frozen candidate, inquiry, PDF/HTML/ZIP, or published repository was changed.

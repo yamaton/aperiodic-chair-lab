@@ -13,4 +13,7 @@ node_modules/
 /.agents/
 /.codex/
 
+# Lean build outputs; source certificates and verification records are tracked.
+/formal/.lake/
+
 # Research JSON, logs, meshes, figures, and frozen review packets are tracked.

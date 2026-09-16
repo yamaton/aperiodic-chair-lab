@@ -8,6 +8,7 @@ existing paths so older commands, citations, and frozen evidence remain usable.
 
 | Subject | Report | Reproduction or evidence |
 |---|---|---|
+| Lean formalization of macrocontact recurrence | [Scope and reproduction](../formal/README.md) | [Lean theorem](../formal/Chair/Recurrence.lean), [verification driver](../formal/verify.py) |
 | Arbitrary placements → one grid | [Geometric scrutiny](../strong/review/GEOMETRIC_GRID_SCRUTINY.md) | [Primary checker](../strong/audit/scrutinize_grid_bridge.py), [alternate checker](../strong/audit/grid_bridge_crosscheck.py) |
 | Proposed exact solid and hierarchy | [Recut chair](../strong/RECUT_CHAIR.md) | [Frozen-coordinate audit](../strong/audit/README.md) |
 | Reflections and face patterns | [Follow-up](../strong/FOLLOWUP_REFLECTIONS.md) | [Reflection checker](../strong/audit/check_reflections.py) |
@@ -54,6 +55,7 @@ they do not inherit the proposed exact-solid theorem automatically.
 ```text
 README.md, HANDOFF.md, AGENTS.md   overview, current state, working guidance
 docs/                            navigation and repository record
+formal/                          Lean definitions, certificates, and recurrence proof
 strong/*.md                      chair proposal and earlier search reports
 strong/*.py, strong/*.cpp         construction and search implementations
 strong/audit/                    coordinate verifiers, witnesses, certificates
@@ -71,6 +73,9 @@ Run from the repository root, using Python 3.13+ through `uv`:
 
 ```sh
 uv sync --locked
+
+# Lean recurrence milestone (requires the pinned Lean toolchain).
+uv run --locked python formal/verify.py
 
 # Verify the frozen snapshot hashes without regenerating evidence.
 uv run --locked python strong/review/verify_package.py --hashes-only
