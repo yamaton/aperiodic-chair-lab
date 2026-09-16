@@ -2,6 +2,11 @@
 
 *16 September 2026. Research proposal; external review and priority unresolved.*
 
+**Historical review framing:** the later [Chair44 comparison](review/TSIOKOS_CHAIR44_COMPARISON.md)
+establishes exact discrete overlap with Tsiokos's public construction. The
+curved-solid argument below remains a different geometric realization under
+review. This note should not be used alone as the current project assessment.
+
 ## Proposed claim
 
 There is one compact solid `T` with connected interior and volume 7 that

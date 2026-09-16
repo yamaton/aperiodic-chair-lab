@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": {
+    "removed_historical_token_detected": true,
+    "zip_member_token_detected": true,
+    "only_expected_rule": true,
+    "secret_values_not_reported": true,
+    "report_excluded_from_inventory": true,
+    "no_extraction_failures": true
+  },
+  "scanner_sha256": "651de069c26922eb5249931baf923c769cfc469129b28c3342faaf4dc82ca88f",
+  "control_script_sha256": "fb7df0cbfd11f1f92b84a6ca0d9e508570dee54b72d57aaaae01053d03fec34a"
+}

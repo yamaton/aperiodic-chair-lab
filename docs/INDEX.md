@@ -4,6 +4,15 @@ Start with the [README](../README.md) for scope and the
 [handoff](../HANDOFF.md) for the latest state. This index organizes the
 existing paths so older commands, citations, and frozen evidence remain usable.
 
+## Public presentation and provenance
+
+- [AI assistance, attribution and chronology](PROVENANCE.md).
+- [Historical-material guide](HISTORICAL_MATERIAL.md), including unsent review packets.
+- [Licensing scope](../LICENSING.md) and [third-party notices](../THIRD_PARTY_NOTICES.md).
+- [Publication review](PUBLICATION_REVIEW.md), [local audit](publication_audit.json)
+  and [read-only GitHub snapshot](publication_github.json); scanner
+  [controls](check_publication_audit.py) and [results](publication_controls.json).
+
 ## Undergraduate tutorial
 
 [How one shape can enforce order without repetition](APERIODIC_CHAIR_TUTORIAL.html)

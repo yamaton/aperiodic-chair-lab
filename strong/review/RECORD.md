@@ -892,3 +892,44 @@ display formulas, two embedded figures, working contents anchors and local
 links, no external requests or page errors, and no mobile page overflow.
 The revised proof and mobile diffraction screenshots were inspected; artifact
 hashes, Markdown links and whitespace checks passed. Changes remain local.
+
+## Public presentation and licensing preparation — 16 September 2026
+
+The user requested all recommended preparation for a public repository.
+Rewrote the README around Chair44 overlap, reproducible checks, the tutorial,
+formal scope and physical experiments. Added project provenance and a
+historical-material guide; updated proposal and review entry points so old
+novelty assessments and the unsent inquiry are not presented as current work.
+The public-facing draft and navigation now link to the intended recipient's
+public profile rather than repeating his address. Older records remain intact.
+
+Prepared MIT terms for original code and machine-readable research data,
+CC BY 4.0 for project prose, figures and model exports, and explicit notices
+for Tsiokos's unchanged PDFs and CC BY 4.0 release-derived evidence. The
+official CC legal text and the BSD option for Pandoc's templates are retained.
+The notices distinguish scientific attribution from ownership and licensing.
+No frozen packet was rebuilt or relabeled internally.
+
+The publication scan covers all ten reachable commits, 331 distinct blob
+versions, working files, ZIP members and extracted PDF text. Targeted patterns
+found no suspected credentials. The preserved controls detect synthetic
+tokens in deleted historical content and ZIP members without disclosing
+values, and check report exclusion/repeatability. This is a bounded heuristic
+scan, not a guarantee or independent security review.
+
+One material privacy finding remains for the maintainer: all ten existing
+commits use a personal Gmail author/committer address. It is not repeated in
+the report. Historical evidence also contains a local username/workspace path
+and temporary paths. The exact findings and disposition are in
+`docs/PUBLICATION_REVIEW.md`; no history rewrite was performed.
+
+Read-only GitHub checks confirmed private visibility, one branch at `3984e42`,
+no tags, no Actions runs and no Actions artifacts. Thus the remote already
+contains the tutorial; this task did not synchronize it. The snapshot is in
+`docs/publication_github.json`. No push, visibility change, outreach or new
+mathematical claim occurred. Publication edits remain local and uncommitted.
+
+Validation: 269 local Markdown links resolve; 128 protected frozen/evidence/
+formal files are byte-identical to HEAD; the frozen hash verifier and scanner
+controls passed. The final scan and its explicit limitations are preserved in
+`docs/publication_audit.json`. No new proof build was needed for these changes.

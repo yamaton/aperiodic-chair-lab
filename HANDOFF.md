@@ -10,11 +10,31 @@ Project name: **Aperiodic Chair Lab** (`aperiodic-chair-lab`).
 name change, evidence policy, and compatibility path. Existing research
 paths and frozen delivery artifacts are preserved. The user subsequently
 authorized pushing the initial commit `ba4b070` to the private GitHub origin
-`yamaton/aperiodic-chair-lab`; that push is complete. Later research changes
-remain local unless pushed in a separately authorized action. No reviewer
-outreach has been authorized or sent.
+`yamaton/aperiodic-chair-lab`; that push is complete. The subsequent read-only
+publication review observed remote `main` at tutorial commit `3984e42`,
+matching local HEAD; this preparation did not perform that synchronization.
+Keep new changes local unless publishing is authorized. No reviewer outreach
+has been authorized or sent.
 
 ## Active objective
+
+**Publication preparation complete locally:** see
+[publication review](docs/PUBLICATION_REVIEW.md), [provenance](docs/PROVENANCE.md),
+[licensing scope](LICENSING.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
+The README now leads with the exact Chair44 overlap, verification, teaching
+and physical experiments. Historical proposal entry points are contextualized;
+frozen files, proof sources, evidence logs and Git history are unchanged.
+The prepared defaults are MIT for original code/machine-readable data and
+CC BY 4.0 for prose, figures and models, with explicit third-party exceptions.
+
+**Before making public:** all ten existing commits contain a personal Gmail
+author/committer identity. The publication report records this without copying
+the address. The maintainer must decide whether to retain it or authorize a
+history rewrite to a GitHub no-reply identity. No history rewrite, publication,
+push or outreach has occurred during preparation. Read-only GitHub checks
+confirmed PRIVATE visibility, one branch, no tags, no Actions runs/artifacts.
+The heuristic scanner found no suspected credentials; its scope and limits
+are recorded in `docs/publication_audit.json`. Recheck after further changes.
 
 **Undergraduate tutorial added:** [offline illustrated edition](docs/APERIODIC_CHAIR_TUTORIAL.html)
 and [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) explain the chair,

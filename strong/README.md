@@ -1,6 +1,11 @@
 # Search for a strongly aperiodic 3D monotile
 
-**New proposal:** [A recut chair with a recursive matching rule](RECUT_CHAIR.md)
+**Current context:** the later [Chair44 comparison](review/TSIOKOS_CHAIR44_COMPARISON.md)
+identifies the same discrete matching system in Tsiokos's public release.
+Our physical surfaces differ. This page preserves the search history;
+start with the [project overview](../README.md) for current results and scope.
+
+**Curved-solid proposal:** [A recut chair with a recursive matching rule](RECUT_CHAIR.md)
 gives an exact curved solid, independently checked grid-hierarchy certificates,
 and a proposed analytic argument enforcing the grid. The full construction
 needs mathematical review. Its [offline viewer](artifacts/recut-chair.html)

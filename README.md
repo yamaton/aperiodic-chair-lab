@@ -1,140 +1,133 @@
 # Aperiodic Chair Lab
 
-Reproducible research on three-dimensional chair tilings, local matching
-rules, and a candidate strongly aperiodic solid. The target is a single
-block whose every tiling has finite symmetry group, including no
-infinite-order screw symmetry. **The physical monotile claim and novelty
-remain unestablished.**
+A computational research notebook on three-dimensional aperiodic chair
+tilings: comparisons with Chair44, reproducible verification, undergraduate
+explanations, and investigations toward printable realizations.
+
+**Relationship to Chair44.** Ioannis Tsiokos's
+[*A Strongly Aperiodic Monotile in Three Dimensions*](https://zenodo.org/records/22792358)
+uses the same discrete decorated-chair matching system as this project,
+after a coordinate conversion and key relabelling. The physical surfaces
+differ: Chair44 uses square pyramids; our candidate uses asymmetric curved
+caps. We reproduced the pinned Chair44 proof build and investigated that
+correspondence. We do not claim a distinct matching-system discovery or
+established discovery priority. See the [exact comparison](strong/review/TSIOKOS_CHAIR44_COMPARISON.md).
 
 ## Start here
 
 | Purpose | Entry point |
 |---|---|
-| Learn the ideas at undergraduate level | [Illustrated tutorial](docs/APERIODIC_CHAIR_TUTORIAL.html) · [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) |
-| Resume the research | [Current handoff](HANDOFF.md) |
-| Find reports, scripts, evidence, and commands | [Project index](docs/INDEX.md) |
+| Learn the ideas | [Undergraduate tutorial](docs/APERIODIC_CHAIR_TUTORIAL.md) · [offline HTML edition](docs/APERIODIC_CHAIR_TUTORIAL.html) |
 | Inspect the candidate | [Offline chair viewer](strong/artifacts/recut-chair.html) |
-| Read the proposed construction | [Recut-chair proposal](strong/RECUT_CHAIR.md) |
-| Review the latest comparison | [Auxiliary reconstruction](strong/review/AUXILIARY_RECONSTRUCTION.md) |
-| Assess correctness and prior work | [Review preparation](strong/review/README.md) |
+| Compare the constructions | [Geometry and proof comparison](strong/review/CHAIR44_PROOF_COMPARISON.md) |
+| Inspect reproduced evidence | [Chair44 build record](strong/review/CHAIR44_BUILD_REPRODUCTION.md) · [independent finite replay](strong/review/CHAIR44_COMPANION_REPLAY.md) |
+| Follow our formal argument | [Lean project](formal/README.md) · [translation exclusion](formal/TRANSLATION_EXCLUSION.md) |
+| Find reports and commands | [Project index](docs/INDEX.md) |
+| Understand attribution and AI use | [Provenance](docs/PROVENANCE.md) · [third-party notices](THIRD_PARTY_NOTICES.md) |
 
-The first [Lean milestone](formal/README.md) proves exact recurrence of
-macrocontacts in the normalized integer-grid model, including exhaustive
-offset coverage and even translations. All 24 orientations and 44 contacts
-at each scale are kernel-checked. This does not formalize the complete
-physical-solid or aperiodicity theorem.
+Download or clone the repository, then open the HTML files directly in a
+browser. Their figures, styles and scripts are embedded for offline use;
+GitHub's file view displays their source. The viewers and meshes approximate
+exact surfaces and do not certify the aperiodicity of a printed object.
 
-The preceding [geometric scrutiny](strong/review/GEOMETRIC_GRID_SCRUTINY.md)
-expands the argument from arbitrary placements to a single grid, with new
-exact checks and three further subagent reviews. It found no substantive
-defect; independent external mathematical scrutiny remains outstanding.
+## What is established?
 
-The preceding work identifies obstructions to a natural local conversion
-between our decorations and Goodman-Strauss's auxiliary markings. It also
-records an unresolved discrepancy in our transcription of the connected
-cross variant. These arguments await independent scrutiny. The older SCD
-reproduction and unsuccessful searches remain part of the research record.
+The mathematical target is a single space-filling block whose **every tiling
+has a finite symmetry group**, including no nonzero translation or
+infinite-order screw symmetry. Our evidence has several distinct scopes:
 
-Project/package name: `aperiodic-chair-lab` (formerly
-`aperiodic-3d-monotile`). See the [repository record](docs/REPOSITORY.md)
-for the naming, layout, and preservation decisions.
+| Work | Established scope | Remaining limitations |
+|---|---|---|
+| Our discrete chair model | Lean proofs of contact recurrence, universal eight-chair grouping, legal deflation and exclusion of every nonzero integer translation period of a legal tiling | Assumes the defined proper integer-grid model; initial existence, arbitrary Euclidean placement, reflections and the full physical symmetry bound are outside these Lean results |
+| Our exact curved-cap solid | Written geometric and existence arguments, with exact finite checks | Full physical-solid theorem awaits mathematical review; mesh and manufacturing approximations do not inherit it |
+| Chair44 reproduction | Unchanged pinned Lean release builds; its endpoint includes physical tiling existence and a symmetry bound of 24 for arbitrary Euclidean tilings | Disclosed native-evaluation trust boundary; not a complete independent semantic audit or human review |
+| Printable replacement interfaces | Proposed broad relief patterns, contact coupons and hierarchy experiments | No replacement design or printing experiment has yet been validated |
 
-## Strongly aperiodic research
+Our Lean audit reports only standard logical axioms, with no admitted proofs
+or native-evaluation hooks. The reproduced Chair44 endpoint also uses 21
+native-evaluation hooks. Its release control suite has one packaging failure:
+a historical comparison archive is absent. The proof builds, fresh axiom
+audit and logical controls passed. The [build report](strong/review/CHAIR44_BUILD_REPRODUCTION.md)
+records both outcomes rather than treating the whole control suite as passing.
 
-**New proposal:** the [recut chair](strong/RECUT_CHAIR.md) has a verified
-recursive matching rule and a proposed curved-surface argument forcing the
-grid. It is a research candidate requiring mathematical review, not an
-independently established monotile theorem.
-Open its [offline viewer](strong/artifacts/recut-chair.html) to inspect it.
-It shows the modified solid, eight- and 64-copy placements, and the failed
-periodic contact; a [four-panel figure](strong/artifacts/recut-chair-placements.png)
-shows the solid, assembly, and contact cross-sections.
-The [frozen-candidate audit](strong/audit/README.md) reproduces the finite
-certificates from coordinates alone and expands the geometric argument.
-The [follow-up record](strong/FOLLOWUP_REFLECTIONS.md) explains the reflection
-extension, three face patterns, and a periodic altered-solid control.
-A [short review note](strong/REVIEW_NOTE.md) states the current claim and
-its proof dependencies.
-The [illustrated local parent rule](strong/MOTIF_GROUPING.md) now explains
-why the three face patterns force a unique eight-chair grouping.
-The [outside-review preparation](strong/review/README.md) contains a draft
-inquiry for Goodman-Strauss, a two-page brief, and a reproducible archive.
-No external validation has been received. Agents resuming the work should
-start with [HANDOFF.md](HANDOFF.md).
+## What this repository contributes
 
-Read [What the search taught us](FINDINGS.md) for the mathematical insights,
-small proofs, methodological lessons, and open directions worth preserving.
+- Independently implemented finite checks and a precise comparison of the
+  two geometric realizations of the shared matching system.
+- A separate formal development of the grid argument and an illustrated
+  account of the [local parent rule](strong/MOTIF_GROUPING.md), with its
+  Goodman-Strauss attribution.
+- A tutorial connecting hierarchy to symmetry, defects, coarse-graining,
+  diffraction, and manufacturing tolerances.
+- Preserved search results, failed approaches and negative controls, so
+  others can inspect how conclusions changed.
 
-The earlier [strong aperiodicity investigation](strong/README.md) targets
-the stricter requirement of **no screw symmetry**. It analyzes 65,216 single-block
-matching designs and proves a crossed-plane mechanism at the matching-rule
-level. The [whole-chair exploration](strong/EIGHT_CHAIRS.md) exhausts 2,288,650
-rooted eight-chair placements and gives a small parity certificate for a
-surviving local candidate. The [preceding pass](strong/OPEN_FUSION.md) allows
-clusters to cross test boundaries and analyzes filler attachment.
-The [previous pass](strong/SECOND_PASS.md) adds off-centre connectors and
-oblique periodicity checks.
-**Those earlier searches found no strongly aperiodic monotile.** The SCD model below
-remains a separate, weaker construction.
-
-## SCD construction
-
-**Result:** an explicit, connected, convex Schmitt–Conway–Danzer (SCD)
-biprism, with exact coordinates, a space-filling placement rule, a
-translation-aperiodicity argument, and checked numerical models.
-
-This is a realization of a known construction, not a newly discovered monotile.
-The claim uses rotations and translations of **one physical handedness**.
-Screw symmetry is possible; strong aperiodicity has not been established.
-
-![The block and five interlocking layers](artifacts/overview.png)
-
-## Explore or manufacture
-
-- [Offline interactive explorer](viewer.html): open directly in a browser;
-  orbit, inspect layers, separate them, and compare a periodic control.
-- [STL](artifacts/block-30mm.stl), [OBJ](artifacts/block-30mm.obj),
-  [OpenSCAD](artifacts/block.scad): rhombus side 30 mm, total height 24 mm.
-  The STL is a closed, outward-oriented mesh. It approximates irrational
-  coordinates and has no manufacturing clearance; actual printing is untested.
-- [Mathematical derivation and research notes](RESEARCH.md).
-- [Verification results](artifacts/verification.json).
+The current physical direction is to replace fine depth distinctions with
+printable interface patterns, test correct and incorrect contacts, and build
+eight- and 64-chair demonstrations. Assembly paths, tolerances and observable
+contrast are open experimental questions. The
+[tutorial's printing section](docs/APERIODIC_CHAIR_TUTORIAL.md#10-bringing-the-rules-to-a-3d-printer)
+explains the proposal.
 
 ## Reproduce
 
+Use Python 3.13+ through `uv`, from the repository root:
+
 ```sh
 uv sync --locked
-uv run --locked python verify.py
-uv run --locked python build.py
-node verify_viewer.cjs  # optional: exercise the offline explorer controls
+
+# Check the frozen candidate hashes without regenerating evidence.
+uv run --locked python strong/review/verify_package.py --hashes-only
+
+# Reproduce the finite local grouping checks (writes its result files).
+uv run --locked python strong/audit/motif_grouping.py
+
+# Reproduce our Lean development with the pinned toolchain installed.
+uv run --locked python formal/verify.py
 ```
 
-The Python environment is locked in `uv.lock`. `geometry.py` defines the exact
-construction's numerical realization; `verify.py` checks it independently with
-convex-hull halfspaces and linear programming. `build.py` exports the models,
-figure, and a self-contained HTML file with no network dependencies.
-Both `viewer.html` and its exported copy `artifacts/explorer.html` are standalone
-pages. Open either directly in Firefox or another browser; no server or build
-is needed to view them.
+Read [formal/README.md](formal/README.md) for the toolchain and theorem scope.
+Chair44 uses a different pinned toolchain and external release checkout;
+its commands are in the [reproduction report](strong/review/CHAIR44_BUILD_REPRODUCTION.md).
+The [project index](docs/INDEX.md) covers other searches and optional tools.
+Inspect evidence diffs after running generators; preserve the frozen inputs.
 
-## What passed
+## Provenance, AI assistance and historical material
 
-- 947 convex intersection optimization checks across a 175-block patch:
-  no positive-volume overlaps.
-- 12,000 interior sample points: each covered exactly once.
-- 340,000 interface samples: maximum seam discrepancy below `1.5e-14` units.
-- Exact symbolic rotation and lattice identities; mesh incidence and volume.
-- Negative controls: a wrong rotation fails the fit; a 60° version repeats.
+This project was developed with substantial AI assistance, including search
+programs, proposed arguments, Lean code, documentation and agent reviews.
+The human maintainer directs the work. An independent agent review means
+review by another AI agent, not independent human mathematical validation.
+No outside expert has reviewed or endorsed this project, and no inquiry has
+been sent. [Provenance and chronology](docs/PROVENANCE.md) distinguish the
+recorded evidence from claims it cannot establish.
 
-Finite checks validate the implementation. The infinite argument is mathematical;
-the classification of arbitrary tilings relies on the existing SCD literature.
+The chair hierarchy and recognition mechanism have predecessors in
+Chaim Goodman-Strauss's [aperiodic pair construction](https://strauss.hosted.uark.edu/papers/NDimPair.pdf).
+The [historical-material guide](docs/HISTORICAL_MATERIAL.md) identifies older
+proposal notes and unsent review packets that predate the Chair44 comparison.
+They are retained as research history, not current announcements.
 
-## Attribution
+The earlier [Schmitt–Conway–Danzer study](RESEARCH.md) reproduces a known
+construction that allows screw symmetry. It has a separate [viewer](viewer.html)
+and [verification evidence](artifacts/verification.json). Other early searches
+found no strongly aperiodic monotile; see [findings](FINDINGS.md) and the
+[search history](strong/README.md).
 
-Schmitt, Conway and Danzer developed the underlying construction. The principal
-technical source is Michael Baake and Dirk Frettlöh,
-[SCD Patterns Have Singular Diffraction](https://www.math.uni-bielefeld.de/~frettloe/papers/scdart.pdf),
-Journal of Mathematical Physics 46 (2005), DOI
-[10.1063/1.1842355](https://doi.org/10.1063/1.1842355).
-The derivation here fixes an explicit coordinate convention and checks the
-resulting geometry directly.
+## Reuse and contributions
+
+Project code and original machine-readable research data are available under
+[MIT](LICENSE); project writing, figures and geometric models under
+[CC BY 4.0](LICENSES/CC-BY-4.0.txt). Third-party material retains its own terms.
+[Licensing scope](LICENSING.md) explains mixed HTML documents, archived files,
+source-derived evidence and attribution.
+
+Concrete corrections, reproducible counterexamples, clearer proofs and
+printing measurements are welcome. Include the relevant file or commit,
+assumptions, commands and output. Distinguish a finite successful example
+from an infinite theorem, and a geometry change from a change to the discrete
+matching rules.
+
+Project name: `aperiodic-chair-lab` (formerly `aperiodic-3d-monotile`).
+[Repository record](docs/REPOSITORY.md) · [maintainer handoff](HANDOFF.md) ·
+[publication review](docs/PUBLICATION_REVIEW.md).

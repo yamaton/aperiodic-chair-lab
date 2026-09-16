@@ -2,6 +2,11 @@
 
 *Research record, 15–16 September 2026. Frozen candidate unchanged.*
 
+**Later context:** [Chair44](review/TSIOKOS_CHAIR44_COMPARISON.md) uses the same
+discrete decorated system with different surface geometry. The results below
+remain records of our curved candidate and controls, not evidence of a
+distinct matching-system discovery.
+
 **Main findings:** one matching cap already forces neighboring copies to
 have the same handedness. The 192-port specification reduces to three
 oriented face patterns. A particular modification that erases the three

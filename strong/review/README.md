@@ -1,14 +1,16 @@
-# Outside-review preparation: Goodman-Strauss
+# Comparison reports and historical review preparation
 
 *16 September 2026. Prepared locally; no inquiry sent, no external review received.*
 
-The user selected Chaim Goodman-Strauss as the intended initial recipient.
-The immediate purpose is a limited correctness/novelty assessment, not a
-journal recommendation or endorsement.
+This directory now leads with comparison and reproduction of Chair44.
+The earlier Goodman-Strauss inquiry remains an unsent historical draft.
+See the [provenance statement](../../docs/PROVENANCE.md) and
+[historical-material guide](../../docs/HISTORICAL_MATERIAL.md) for context.
 
 **New overlap, 16 September:** the [Chair44 comparison](TSIOKOS_CHAIR44_COMPARISON.md)
 identifies our exact discrete system in Tsiokos's public construction, with a
-different physical realization and a stronger claimed formal theorem. The
+different physical realization and a stronger formal theorem whose pinned
+build and fresh axiom audit we reproduced. The
 draft and frozen attachment below predate this finding and require reframing
 before use. They remain preserved as historical material.
 
@@ -23,9 +25,9 @@ before use. They remain preserved as historical material.
   reconstruction of off-grid candidates and all 299,975 collision boxes;
   [pinned build reproduction](CHAIR44_BUILD_REPRODUCTION.md) tracks compilation
   and a fresh axiom audit separately.
-- [Draft inquiry](INQUIRY_GOODMAN_STRAUSS.md): proposed recipient, subject,
-  and exact body; the sender must supply their name.
-- [Short mathematical brief](BRIEF.md): initial attachment source.
+- [Historical draft inquiry](INQUIRY_GOODMAN_STRAUSS.md): unsent and superseded
+  by the overlap assessment; not a current request ready for sending.
+- [Historical mathematical brief](BRIEF.md): initial attachment source.
 - [Lean recurrence milestone](../../formal/README.md): formal contact semantics,
   exhaustive certificate checking, and the precise normalized-grid scope.
   A [fresh independent agent review](../../formal/INDEPENDENT_REVIEW.md)
@@ -55,7 +57,7 @@ before use. They remain preserved as historical material.
 - [Preparation record](RECORD.md): actions, sources, and completion status.
 - [Agent handoff](../../HANDOFF.md): complete project state and next steps.
 
-Generated outputs: [two-page PDF](../artifacts/review-brief.pdf),
+Historical outputs, preserved byte-for-byte: [two-page PDF](../artifacts/review-brief.pdf),
 [offline HTML brief](../artifacts/review-brief.html), and
 [source archive](../artifacts/review-goodman-strauss-v1.zip).
 The ZIP preserves source paths, includes a root `START_HERE.html`, exact
@@ -92,12 +94,13 @@ Playwright, and Firefox. Browser paths can be supplied with
 
 ## Contact provenance
 
-Suggested recipient: **Chaim Goodman-Strauss**,
-`chaimgoodmanstrauss@gmail.com`.
-This address is explicitly listed on his author-supplied
+The intended recipient was **Chaim Goodman-Strauss**. Contact details were
+obtained from his author-supplied
 [Bridges 2025 exhibition profile](https://gallery.bridgesmathart.org/exhibitions/bridges-2025-exhibition-of-mathematical-art/chaim-goodman-strauss),
 checked 16 September 2026. His [personal website](https://chaimgoodmanstrauss.com/)
-is linked by that profile. The address has not been tested for delivery.
+is linked by that profile. No inquiry was sent. Historical records retain
+the previously listed public address; the current navigation links to the
+profile rather than duplicating it.
 
 The reason to approach him is the close relation to his earlier
 [aperiodic pair construction](https://strauss.hosted.uark.edu/papers/NDimPair.pdf).
@@ -107,7 +110,8 @@ Its author preprint is dated 17 February 1998; the published paper is from
 ## Sending and response tracking
 
 The instruction received was **“Prepare for Goodman-Strauss.”** It did not
-authorize sending. The draft is ready for user review and signature.
+authorize sending. The old draft requires substantive revision around the
+Chair44 overlap before it could serve as a current inquiry.
 If the user later explicitly instructs sending, use the approved sender
 identity and preserve the exact final message and attachment hashes in
 `RECORD.md`. A reply must be quoted or summarized accurately and attributed;

@@ -1,0 +1,106 @@
+{
+  "scope": "all locally reachable Git blob versions and commit metadata; tracked and unignored working files; ZIP members; PDF text",
+  "head": "3984e42c612f20808ff65598aa42b226463aa083",
+  "refs": [
+    "refs/heads/main 3984e42c612f20808ff65598aa42b226463aa083",
+    "refs/remotes/origin/HEAD 3984e42c612f20808ff65598aa42b226463aa083",
+    "refs/remotes/origin/main 3984e42c612f20808ff65598aa42b226463aa083"
+  ],
+  "reachable_commits": 10,
+  "counts": {
+    "reachable_blob_versions": 331,
+    "reachable_blob_bytes": 119860188,
+    "text_payloads_scanned": 755,
+    "pdf_payloads_scanned": 9,
+    "binary_payloads_raw_scanned": 32,
+    "zip_payloads_scanned": 2,
+    "working_files_scanned": 288
+  },
+  "suspected_credentials": [],
+  "exposure_sources": {
+    "email_address": [
+      "git:18c235919c6786d0e56925331ac5bd3dbf7fceed:strong/review/README.md",
+      "git:1cd493feb88921faf44bbc1597c3404d39e0c228:strong/review/README.md",
+      "git:3761f6d3b1bb8dcd6377840ea8f9e2d3095094e0:strong/review/RECORD.md",
+      "git:5248b2f3a2ba23ec7c97e614d21c0c1cf2feccf4:strong/review/INQUIRY_GOODMAN_STRAUSS.md",
+      "git:5dea8e2f6fffc07acdee23faf7c5b7faaf78dfe0:strong/review/RECORD.md",
+      "git:69a63cae6e36cb5ee43247ed3bd8b374e9d89cdc:strong/review/README.md",
+      "git:6bb53bc1a1e00fcce721dbf2b85e42a69c556a06:strong/review/RECORD.md",
+      "git:732ed8125f5a2601208ebbdf14cd07266c5ae425:strong/review/README.md",
+      "git:83511195bb97be72ce27e8948078aa25c2710786:strong/review/INQUIRY_GOODMAN_STRAUSS.md",
+      "git:8c2c142d8bb0604ed802c4f44990867001e60ee0:strong/review/README.md",
+      "git:9bd42a6c2c819f629cc0fc1108e960582d861e56:strong/review/RECORD.md",
+      "git:a8b9258fbe2be5b6fae0fc7eb209bc76cc2a0930:strong/review/RECORD.md",
+      "git:aac3ca2503b6596ea46932aea764f4f7cbcf807a:strong/review/RECORD.md",
+      "git:aba2fa9742d0538d0325c0a23f31098e8a90bb06:strong/review/RECORD.md",
+      "git:commit_metadata_and_messages",
+      "git:ecf24d95e6a18f5b82a718a8708d67884bd7d413:strong/review/RECORD.md",
+      "git:f1307f6f8050fca92a59d6a1660d321a991aeb78:strong/review/RECORD.md",
+      "working:docs/check_publication_audit.py",
+      "working:strong/review/RECORD.md"
+    ],
+    "home_directory": [
+      "git:cdd75aff0c7264b57481be528ea0f71eb14fd7d9:strong/artifacts/review_brief_firefox.json",
+      "working:strong/artifacts/review_brief_firefox.json"
+    ],
+    "temporary_path": [
+      "git:0e1b3e7cffd7233102e5ad6b2f06a5634cfd6620:strong/audit/chair44_build/build_receipt.json",
+      "git:102ff6e76d24d4d4afbd66fb1ec652ba8ed486f0:HANDOFF.md",
+      "git:2059c90b4bbac45ead8c9a4191be63121b474cbd:strong/audit/chair44_lean_literals.json",
+      "git:2956ae8836e933b115dee4e30e285b9c02441f8e:HANDOFF.md",
+      "git:30427a1caf4dce465d9c56dc52bfa6bc2a80d1ad:formal/LEGAL_DEFLATION.md",
+      "git:3b7a423faf7597d38bb0567e7d20497a3efd2fb0:formal/README.md",
+      "git:3de422f0774bc7bb70c06510b562599013312e7a:formal/GRID_TILING_BRIDGE.md",
+      "git:4552023989ac24002e6f00807cf616fcc9a35497:formal/README.md",
+      "git:4e0f89ed37885d2c63505c44e377be52474eb844:HANDOFF.md",
+      "git:5e02e815bac91b0f7a6f4693a8e5b34d29e136e5:formal/README.md",
+      "git:620da401173df3d508f82fb5e111fc6cccd1ab4b:HANDOFF.md",
+      "git:7b62fa6925ce11757d3300d9d215b2d12ae7d317:strong/review/verify_brief_firefox.cjs",
+      "git:86abb2ab94f643526fa0ef144a24addafd8a8a67:HANDOFF.md",
+      "git:914aa245515c15cacd9d3922187732808d16fc2d:formal/README.md",
+      "git:9451ae8d2671c1f321fbfde9499e81813d5b4591:strong/audit/chair44_build/release-controls.log",
+      "git:972a59755781a3f5794e95cb5a774bfc7afc003e:formal/UNIVERSAL_GROUPING.md",
+      "git:9b83e0bf8e3fd8cd3aaf883f2a2d59d252a9c766:HANDOFF.md",
+      "git:a2c08aca4c32655a9f565e92a81c66454f4e3f3c:formal/LEGAL_DEFLATION.md",
+      "git:a72ec128b3f8a4354f021958afcb781c7953647e:strong/verify_recut_firefox.cjs",
+      "git:ad8c4a8e17bdc42ece90ae86797f693a0db1419b:formal/INDEPENDENT_REVIEW.md",
+      "git:cdd75aff0c7264b57481be528ea0f71eb14fd7d9:strong/artifacts/review_brief_firefox.json",
+      "git:cf75d302fced2129fe8dfdccead06ee926548607:formal/TRANSLATION_EXCLUSION.md",
+      "git:e456e9d8e96538a209b765c9be40e8a147506f4a:HANDOFF.md",
+      "git:e528cdeb4a615300065d6605868354d34d83dbf2:formal/README.md",
+      "git:e82793f2b5d02c2cb0c4883a4eb0ee912076cb7e:strong/review/CHAIR44_BUILD_REPRODUCTION.md",
+      "git:f604747cbfa7ed395b4d1723f09148d902ac499b:formal/GRID_TILING_BRIDGE.md",
+      "working:HANDOFF.md",
+      "working:formal/GRID_TILING_BRIDGE.md",
+      "working:formal/INDEPENDENT_REVIEW.md",
+      "working:formal/LEGAL_DEFLATION.md",
+      "working:formal/README.md",
+      "working:formal/TRANSLATION_EXCLUSION.md",
+      "working:formal/UNIVERSAL_GROUPING.md",
+      "working:strong/artifacts/review_brief_firefox.json",
+      "working:strong/audit/chair44_build/build_receipt.json",
+      "working:strong/audit/chair44_build/release-controls.log",
+      "working:strong/audit/chair44_lean_literals.json",
+      "working:strong/review/CHAIR44_BUILD_REPRODUCTION.md",
+      "working:strong/review/verify_brief_firefox.cjs",
+      "working:strong/verify_recut_firefox.cjs"
+    ],
+    "wsl_path": [
+      "working:docs/audit_publication.py"
+    ]
+  },
+  "commit_email_domains": [
+    "gmail.com"
+  ],
+  "unique_commit_email_count": 1,
+  "extraction_failures_or_limits": [],
+  "working_inventory_sha256": "654551f89fb8f507809777fd02f52c537cbb5afd759faa1c784678ad1a4d1fa8",
+  "scanner_sha256": "651de069c26922eb5249931baf923c769cfc469129b28c3342faaf4dc82ca88f",
+  "limitations": [
+    "Heuristic token patterns cannot prove absence of secrets or sensitive information.",
+    "No OCR, steganography detection, or decoding of embedded base64 image contents.",
+    "Unreachable Git objects, reflogs, ignored files and external GitHub state are outside this scan.",
+    "An object's displayed path is a representative path from git rev-list, not its complete path history.",
+    "Local paths and public scholarly contact addresses require contextual review, not automatic deletion."
+  ]
+}

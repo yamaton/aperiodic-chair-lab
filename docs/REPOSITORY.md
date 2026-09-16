@@ -46,6 +46,20 @@ mathematical progress in the relevant report and `HANDOFF.md`. The
 preparation. Keep finite computations, written arguments, and externally
 validated conclusions distinct.
 
+## Public-release preparation — 16 September 2026
+
+The user requested preparing the repository for public use after the Chair44
+comparison. The [publication review](PUBLICATION_REVIEW.md) records the
+editorial, licensing and history checks. [Provenance](PROVENANCE.md) discloses
+AI involvement and chronology limits; [licensing](../LICENSING.md) and
+[third-party notices](../THIRD_PARTY_NOTICES.md) define reuse terms.
+
+Read-only GitHub checks found remote `main` at `3984e42`, with private
+visibility and no Actions runs or artifacts. Existing commits disclose a
+personal Gmail identity; that publication decision is explicitly pending.
+This preparation leaves the repository private and preserves the frozen
+artifacts and history. It does not authorize outreach or a force-push.
+
 ## Initial validation
 
 The renamed package runs with `uv run --locked --offline`; project and

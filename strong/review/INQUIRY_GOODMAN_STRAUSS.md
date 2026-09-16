@@ -4,7 +4,9 @@
 found an equivalent published matching system. This body and its frozen
 attachment need revision to disclose that overlap before any use.
 
-**To:** Chaim Goodman-Strauss <chaimgoodmanstrauss@gmail.com>  
+**Intended recipient:** Chaim Goodman-Strauss; see his
+[public profile](https://gallery.bridgesmathart.org/exhibitions/bridges-2025-exhibition-of-mathematical-art/chaim-goodman-strauss).
+
 **Subject:** Question about a one-chair 3D matching system related to your aperiodic pair  
 **Suggested attachment:** `review-brief.pdf`  
 **Available on request:** `review-goodman-strauss-v1.zip`  

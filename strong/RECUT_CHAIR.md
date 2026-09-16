@@ -2,6 +2,12 @@
 
 *Research proposal, 15 September 2026.*
 
+**Later context:** the [Chair44 comparison](review/TSIOKOS_CHAIR44_COMPARISON.md)
+identifies an equivalent published matching system with different surface
+geometry. Read this proposal with that comparison and the
+[current formal scope](../formal/README.md). The frozen coordinates are
+preserved; this document does not establish a distinct matching-system discovery.
+
 **This pass produces a substantially stronger candidate:** one connected
 chair-shaped solid with 192 small curved tabs and pockets. Its matching rules
 on an integer grid force a unique hierarchy. That statement has independent
