@@ -8,6 +8,10 @@ establish. It also makes the existence argument more explicit. No new
 counterexample or identified fatal gap was found in this preparation pass;
 that is not evidence equivalent to an outside review.
 
+For the later focused review of the arbitrary-placement-to-grid steps, see
+[Geometric grid scrutiny](GEOMETRIC_GRID_SCRUTINY.md), including exact
+face-owner checks and independent periodic-box enumeration.
+
 ## Dependency order
 
 ```text

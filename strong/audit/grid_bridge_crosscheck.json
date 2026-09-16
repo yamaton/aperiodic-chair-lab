@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "scope": "Alternate finite arithmetic; no analytic or all-tilings proof is performed.",
+  "opposite_key_frame_matches": 1536,
+  "relative_determinants": {
+    "1": 1536
+  },
+  "distinct_poses": 86,
+  "cube_corner_owner_checks": 1536,
+  "derived_periodic_box_types": 24,
+  "periodic_checks_shifts_up_to_two": 71976,
+  "minimum_separating_gap": "3/32",
+  "equal_coefficient_control": {
+    "determinant": -1,
+    "translation": [
+      "-2",
+      "-1/8",
+      "1/8"
+    ],
+    "reflections_allowed": true
+  }
+}

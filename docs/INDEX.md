@@ -8,6 +8,7 @@ existing paths so older commands, citations, and frozen evidence remain usable.
 
 | Subject | Report | Reproduction or evidence |
 |---|---|---|
+| Arbitrary placements → one grid | [Geometric scrutiny](../strong/review/GEOMETRIC_GRID_SCRUTINY.md) | [Primary checker](../strong/audit/scrutinize_grid_bridge.py), [alternate checker](../strong/audit/grid_bridge_crosscheck.py) |
 | Proposed exact solid and hierarchy | [Recut chair](../strong/RECUT_CHAIR.md) | [Frozen-coordinate audit](../strong/audit/README.md) |
 | Reflections and face patterns | [Follow-up](../strong/FOLLOWUP_REFLECTIONS.md) | [Reflection checker](../strong/audit/check_reflections.py) |
 | Local eight-chair grouping | [Parent rule](../strong/MOTIF_GROUPING.md) | [Grouping checker](../strong/audit/motif_grouping.py) |
@@ -76,6 +77,10 @@ uv run --locked python strong/review/verify_package.py --hashes-only
 
 # Run the six primary checks in a temporary copy.
 uv run --locked python strong/review/verify_package.py
+
+# Recheck the geometric bridge hypotheses; these write their result JSON.
+uv run --locked python strong/audit/scrutinize_grid_bridge.py
+uv run --locked python strong/audit/grid_bridge_crosscheck.py
 
 # Reproduce the latest comparisons; these write their result JSON/tables.
 uv run --locked python strong/audit/compare_goodman_strauss.py

@@ -156,6 +156,12 @@ parts of the chairs or fail other ports; this does not conflict with the
 These are mathematical arguments. The scripts verify supporting identities
 and finite arithmetic; they do not automatically prove this section.
 
+**Subsequent focused scrutiny:** [the geometric grid report](../review/GEOMETRIC_GRID_SCRUTINY.md)
+gives a complete argument, a quantitative packing bound, actual face-owner
+checks, exhaustive periodic-box checks, and three further subagent reviews.
+It records the arithmetic/analytic boundary and the remaining need for
+external mathematical scrutiny.
+
 ### A. The physical scale preserves the rigidity argument
 
 Write the cap as
@@ -209,7 +215,8 @@ The resulting arrangement consists of two parallel pairs bounding a square
 and a fifth line. An isometry must preserve the two parallel pairs as a
 set, so it preserves the square and its center. The fifth line's positive,
 unequal coefficients eliminate every nonidentity symmetry of the square.
-Consequently the isometry fixes the ordered tangent axes and base center.
+Consequently the isometry fixes the ordered axes in the base plane and its
+center. These axes need not be tangent to the curved graph at its center.
 Its only remaining choice is the sign of the perpendicular direction;
 the height coefficient must have equal magnitude.
 
@@ -264,8 +271,11 @@ The frame map is explicitly
 R = e_u,A e_u,Bᵀ + e_v,A e_v,Bᵀ − n_A n_Bᵀ.
 ```
 
-Its entries are signed coordinate permutations. Restrict to determinant
-`+1` for the proposed one-handed convention. The translation obeys
+Its entries are signed coordinate permutations. The opposite-key chirality
+invariant forces determinant `+1`, even with arbitrary reflected placements
+initially allowed; this is derived rather than imposed. The unfiltered
+frame checks in the [focused scrutiny](../review/GEOMETRIC_GRID_SCRUTINY.md)
+cover this step. The translation obeys
 
 ```text
 t = p_A−Rp_B = f_A−Rf_B ∈ Z³.
@@ -316,8 +326,9 @@ feature lies within `h` of one such plane. Opposing matched features
 occupy the same box; these are the intended exception.
 
 Outside the boxes, the physical tiles agree with the complete coarse-cube
-partition. Inside each box, only its two opposite coarse owners participate,
-and their matching graph inequalities occupy complementary closed sides.
+partition. Inside each box, among tiles of this component, only its two
+opposite coarse owners participate, and their matching graph inequalities
+occupy complementary closed sides.
 Thus they fill the box, including its boundary. This proves physical
 coverage without leaving holes near seams or edges.
 

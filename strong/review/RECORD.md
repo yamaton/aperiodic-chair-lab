@@ -308,3 +308,64 @@ specific difference in where the two systems store hierarchical information.
 Validation: the final reconstruction audit passed, including the nested
 patch inclusions. All 32 local links in the affected reports/index/handoff
 resolve. Candidate, PDF, HTML, and ZIP hashes match the frozen v1 values.
+
+
+## Geometric grid scrutiny — 16 September 2026
+
+User requested scrutiny of the arbitrary-Euclidean-placement grid argument,
+then explicitly authorized consulting subagents. Added
+`GEOMETRIC_GRID_SCRUTINY.md`, a self-contained sequence of geometric lemmas,
+with `../audit/scrutinize_grid_bridge.py` and its JSON. Preserved the second
+arithmetic implementation as `../audit/grid_bridge_crosscheck.py` and JSON.
+
+The main checker verifies actual face ownership of all 192 ports on 24
+faces; all 1,536 opposite-key transforms and their outward-adjacent cube
+owners; 86 distinct necessary single-cap placements; properness without
+filtering improper cases; and core/corridor clearance. A radius-1/4 ball
+and diameter below 4 give the written packing bound `(4R+17)^3`, before
+any common grid is assumed.
+
+All 192 ports under 48 cubic frames enter 24 periodic feature-box types.
+The primary check tests 15,528 nonidentical box pairs; a written bound
+excludes all larger translation offsets. The alternate implementation
+searches all frames instead of using the matrix formula, transforms all
+eight cube vertices to check ownership, and derives box types from actual
+ports. It checks 71,976 box pairs in the larger shift window. Both passed
+using `uv run --locked --offline python`.
+
+Three bounded subagent reviews:
+
+- `cap_rigidity_scrutiny`: independently rederived continuation, the five
+  lines, base-frame identification, opposite graph sides, and the signed-key
+  chirality rule. Its unfiltered calculation found 1,536 proper matches and
+  zero improper matches. No substantive defect found.
+- `global_grid_scrutiny`: checked the cover and component arguments,
+  conditional on cap rigidity, and independently checked face coverage,
+  center patterns, key chiralities, and integral shifts. No circular step
+  found when component filling precedes exclusion of other components.
+- `literature_review`, reassigned to implementation review: supplied the
+  alternate arithmetic paths and caught an imprecise control label. The
+  equal-coefficient cap example uses a determinant -1 isometry and therefore
+  assumes reflections are allowed. Its JSON now states that explicitly.
+
+The first two agents began with fresh context; the third retained the
+older literature-review context. All are AI reviews with shared model and
+supplied project arguments, not independent human endorsements. No agent
+edited project files. The parent incorporated clarifications and the
+reviewers checked the revised proof/code sections.
+
+Clarifications now included: axes lie in the coarse face plane, not the
+curved graph's tangent plane; the fifth-line constant term fixes its affine
+proportionality factor; the oblique-line case has both direction components
+nonzero; all eight cap mates on one face have the same unique opposite
+owner; inside-box claims initially concern only the chosen component;
+virtual boxes on internal faces require no second owner. The earlier live
+audit no longer phrases properness as an initial restriction.
+
+No counterexample or substantive geometric gap was found. The all-tilings
+claims remain written arguments requiring external scrutiny; finite checks
+alone do not establish them. This pass does not newly verify hierarchy,
+existence, novelty, or approximate/manufactured geometry. Updated the
+handoff, README, project index, review index, and dependency audit. The
+frozen candidate and v1 PDF/HTML/ZIP remain unchanged. No outreach or push
+of these new changes occurred.

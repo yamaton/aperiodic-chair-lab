@@ -17,7 +17,12 @@ remain unestablished.**
 | Review the latest comparison | [Auxiliary reconstruction](strong/review/AUXILIARY_RECONSTRUCTION.md) |
 | Assess correctness and prior work | [Review preparation](strong/review/README.md) |
 
-The latest work identifies obstructions to a natural local conversion
+The latest [geometric scrutiny](strong/review/GEOMETRIC_GRID_SCRUTINY.md)
+expands the argument from arbitrary placements to a single grid, with new
+exact checks and three further subagent reviews. It found no substantive
+defect; independent external mathematical scrutiny remains outstanding.
+
+The preceding work identifies obstructions to a natural local conversion
 between our decorations and Goodman-Strauss's auxiliary markings. It also
 records an unresolved discrepancy in our transcription of the connected
 cross variant. These arguments await independent scrutiny. The older SCD

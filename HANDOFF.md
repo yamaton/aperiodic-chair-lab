@@ -8,10 +8,46 @@ Project name: **Aperiodic Chair Lab** (`aperiodic-chair-lab`).
 [Project index](docs/INDEX.md) maps the research and reproduction commands;
 [repository record](docs/REPOSITORY.md) explains the initial Git snapshot,
 name change, evidence policy, and compatibility path. Existing research
-paths and frozen delivery artifacts are preserved. The repository is local;
-no remote publication or outreach is authorized by its initialization.
+paths and frozen delivery artifacts are preserved. The user subsequently
+authorized pushing the initial commit `ba4b070` to the private GitHub origin
+`yamaton/aperiodic-chair-lab`; that push is complete. Later research changes
+remain local unless pushed in a separately authorized action. No reviewer
+outreach has been authorized or sent.
 
 ## Active objective
+
+**Focused geometric scrutiny completed:**
+`strong/review/GEOMETRIC_GRID_SCRUTINY.md` rewrites the arbitrary-placement
+bridge in a noncircular order: local finiteness, open cap coincidence,
+rigidity, adjacent cube ownership, component grid coverage, actual material
+coverage, then exclusion of other components. No substantive defect or
+counterexample was found; external mathematical validation is still absent.
+Three user-authorized subagents separately reviewed cap rigidity, global
+coverage, and the new arithmetic checker. Their scope and corrections are
+recorded in the report; their agreement is not independent human review.
+
+New `strong/audit/scrutinize_grid_bridge.py` checks every actual exposed
+face/port and all 1,536 opposite-key placements, verifying that each owns
+precisely the outward adjacent cube. All relative determinants are +1,
+with 86 distinct local placements. These are single-cap necessities, not
+44 whole-chair contacts. It maps all 192 ports in 48 frames to 24 periodic
+box types and verifies 15,528 nearby box pairs; a written far-shift bound
+makes that enumeration exhaustive over the infinite grid family.
+`strong/audit/grid_bridge_crosscheck.py` independently searches frames,
+transforms eight cube corners, derives box types from ports, and tests
+71,976 pairs with a larger translation window. Both passed using `uv`.
+Result JSONs sit beside the scripts.
+
+Important clarifications: axes are in the cap's base plane; properness is
+derived without discarding improper candidates; inside-box assertions
+concern only the selected component until it has filled space. Unused
+internal-face template boxes are not exposed interfaces. The altered
+symmetric-cap negative control uses an improper map, so its off-grid
+example requires reflected copies and is not a proper-only counterexample.
+The frozen candidate and v1 delivery artifacts are unchanged. This work
+strengthens the geometric argument; it does not independently verify the
+full aperiodicity theorem, novelty, or manufactured approximations.
+
 
 **Auxiliary reconstruction follow-up: obstructions found.** Read
 `strong/review/AUXILIARY_RECONSTRUCTION.md` first. The natural forward map

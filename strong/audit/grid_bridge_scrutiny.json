@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "scope": "Exact finite hypotheses and controls; the all-tilings conclusion is a written proof.",
+  "exposed_faces_reconstructed": 24,
+  "ports_per_face": 8,
+  "ports_checked_on_actual_exposed_faces": 192,
+  "core_box_checks": 1344,
+  "minimum_core_separation": "8819/35840",
+  "connected_core_corridors": 9,
+  "corridor_box_checks": 1728,
+  "minimum_corridor_separation": "8819/35840",
+  "interior_ball_radius": "1/4",
+  "diameter_strict_upper_bound": "4",
+  "packing_bound_for_tiles_meeting_radius_R_ball": "(4*R+17)^3",
+  "cap_pairs_with_opposite_keys": 1536,
+  "relative_determinants": {
+    "1": 1536
+  },
+  "distinct_integer_poses": 86,
+  "adjacent_owner_implications_checked": 1536,
+  "universal_grid_box_types": 24,
+  "all_frame_port_memberships": 9216,
+  "nonidentical_periodic_box_checks": 15528,
+  "box_pair_categories": {
+    "parallel_planes": 3456,
+    "different_coplanar_faces": 1536,
+    "same_unit_face": 168,
+    "perpendicular_faces": 10368
+  },
+  "minimum_separating_gaps": {
+    "different_coplanar_faces": "19/32",
+    "parallel_planes": "17779/17920",
+    "perpendicular_faces": "10499/35840",
+    "same_unit_face": "3/32"
+  },
+  "earlier_audit_conservative_bounds": {
+    "different_coplanar_faces": "19/32",
+    "parallel_planes": "17779/17920",
+    "perpendicular_faces": "10499/35840",
+    "same_unit_face": "3/32"
+  },
+  "far_shifts_separation_reason": "A coordinate shift of magnitude >=2 gives center distance >1, whereas summed radii <=1/32.",
+  "equal_coefficient_cap_control": {
+    "first_port": {
+      "center": [
+        "-1",
+        "-11/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1
+    },
+    "second_port": {
+      "center": [
+        "-9/16",
+        "-11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1
+    },
+    "linear_part": [
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "determinant": -1,
+    "translation": [
+      "-2",
+      "-1/8",
+      "1/8"
+    ],
+    "scope": "Local cap coincidence for the altered equal-coefficient polynomial with reflected copies allowed; no full tiling or proper-only counterexample claimed."
+  }
+}

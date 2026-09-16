@@ -11,6 +11,9 @@ journal recommendation or endorsement.
 - [Draft inquiry](INQUIRY_GOODMAN_STRAUSS.md): proposed recipient, subject,
   and exact body; the sender must supply their name.
 - [Short mathematical brief](BRIEF.md): initial attachment source.
+- [Geometric grid scrutiny](GEOMETRIC_GRID_SCRUTINY.md): expanded arbitrary-
+  placement proof, exact ownership and feature-box checks, and three
+  adversarial subagent reviews.
 - [Dependency audit](DEPENDENCY_AUDIT.md): where the proof is mathematical,
   what is actually checked, and the most important failure modes to examine.
 - [Further scrutiny addendum](SCRUTINY_ADDENDUM.md): subsequent rigidity
