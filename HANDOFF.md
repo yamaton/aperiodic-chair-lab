@@ -16,6 +16,102 @@ outreach has been authorized or sent.
 
 ## Active objective
 
+**Pinned Chair44 build/replay completed:** see
+[`CHAIR44_BUILD_REPRODUCTION.md`](strong/review/CHAIR44_BUILD_REPRODUCTION.md).
+The unchanged release compiled with Lean 4.31.0 and all nine pinned
+dependencies. Cold project build took 1,120.40 seconds; promoted-library
+build and fresh axiom audit passed. All 169 reproduced axiom lines exactly
+equal the shipped log. Final theorem dependencies are the standard three
+logical axioms plus 21 disclosed native-evaluation hooks, with no `sorryAx`.
+All 83 source/configuration hashes match the release and remained unchanged.
+Evidence is preserved in `strong/audit/chair44_build/`, including the fresh
+and shipped logs, receipts and assessment. The source build is no longer running.
+
+The unmodified release controls returned exit 1 **only** because a historical
+delivery ZIP is absent from the public snapshot. Both proof builds,
+admission/import checks, all four negative controls and positive scope
+regressions passed. Do not label the complete control suite PASS. The release
+generator's `--check` passed too. This reproduces the formal theorem with its
+native-computation trust boundary; it is not human review or a theorem for
+our different curved-cap solid. The original source-only reservations below
+are superseded as to compilation, not full manuscript/definition auditing.
+
+Reusable temporary checkout: `/tmp/chair44-build/release/lean/R44`, with
+original phase logs at `/tmp/chair44-build/reproduction-1`.
+Mathlib's cached library artifacts are in authorized RAM-backed storage
+`/dev/shm/chair44-mathlib-lib`, linked from the dependency build directory;
+the sandbox's separate `/dev/shm` means builds need the same execution
+permission as the launched build. All 8,542 dependency cache files were
+successfully re-extracted after a disk-full interruption. Do not repeat the
+completed build/replay without a changed source or specific unresolved concern.
+
+The new [companion replay](strong/review/CHAIR44_COMPANION_REPLAY.md) passed:
+6,862 candidates, 1,545 direct collisions, 5,273 forced-companion rejections,
+299,975 exact collision boxes, exactly 44 proper integral survivors. A fresh
+reviewer reran it and found no material issue. Three mutations were rejected.
+Scripts and hashed results are in `strong/audit/`; this independent finite
+result assumes the continuous companion/retained-core lemmas.
+
+**Direct overlap discovered — reassess before outreach:**
+[`Chair44 comparison`](strong/review/TSIOKOS_CHAIR44_COMPARISON.md) records
+Tsiokos's September 15–16 Zenodo preprint and pinned source release. An exact
+`uv` comparison identifies the same eight child poses, 44 fine contacts,
+30 closed contacts, 44 macro contacts, 372 signed equations and 192 feature
+roles after coordinate conversion and key relabelling. The physical shapes
+differ (square pyramids versus our curved caps). Their released Lean endpoint
+states existence and finite symmetry for arbitrary physical tilings; source
+definitions were inspected and its build/axiom audit are now reproduced above.
+The entire geometric semantic chain has not received independent human review.
+Our matching system cannot be presented as a distinction from this release.
+Priority and independence are not established by this comparison. The old
+Goodman-Strauss inquiry/brief predates this finding and needs reframing.
+
+The user's latest interest is physical implications, core lessons, and a
+3D-printable interface. The proposed next milestone is broad keyed relief
+patterns, contact-test coupons, then eight- and 64-chair assemblies. This
+redesign has not been implemented or verified. At a 25 mm unit-cube scale,
+the current cap keys differ by only 0.0061 mm at their centers. Preserve the
+frozen design and distinguish printable demonstrations from an exact-solid
+theorem. Study tolerances, assembly paths and defects; diffraction requires
+physical contrast such as markers or distinguishable interfaces.
+
+A concise statement-to-geometry audit remains useful. The isolated build
+and off-grid replay are complete. Our kernel-checked grid development remains
+an independent cross-check, not a distinct matching-system claim.
+
+**Proof comparison advanced:** read
+[`CHAIR44_PROOF_COMPARISON.md`](strong/review/CHAIR44_PROOF_COMPARISON.md).
+Our own pyramid-geometry enumerator independently recovers the 44 proper
+registered contacts and no improper contacts among 2,388 carrier contacts.
+A second checker matches all 192 features, 2,138 vertices and 4,272 triangles
+to the released Lean data. A bounded source audit found no hidden grid
+premise or concrete defect in the inspected physical-companion chain; it
+is not a cold build or complete proof audit. Both checkers and hashed results
+are under `strong/audit/`; those two checkers do not execute the downloaded
+implementation. The subsequent build does execute the inspected release.
+
+The report gives a written bijection of the complete legal grid models and
+an attributed improvement to our geometry: after carrier-grid coverage,
+clamp any actual tile's interior-ball center into a component carrier's
+retained core to force common ownership. The exact bounds are
+`141/35840 < rho=1/64` and `3rho² < (1/4)²`. This replaces the long component
+physical-coverage/exclusion route for registration, not existence. It is
+recorded as Section 8a of the geometric scrutiny, with attribution to
+Tsiokos's formal argument. The subsequent Lean 4.31.0 / Mathlib 4.31.0 build
+and axiom audit are complete as recorded above; our 4.34.0 toolchain is
+different. No Lean source or frozen design was changed for this reproduction.
+
+Our grid symmetry bound below remains useful but is no longer the first
+priority for assessing a distinct contribution. The comparison report links
+the script, exact results, version 2 PDF and metadata. The initial comparison
+was data-only; the later build executed the inspected release. Both
+user-supplied root PDFs (v1 and v2) are complete and
+checksum-match their respective Zenodo records. Root v2 is byte-for-byte
+identical to the saved v2 used in the comparison. Both were left untouched.
+Translation exclusion is committed as `45d0bee`; the comparison, replay and
+build evidence are included in the subsequent local research commits.
+No outreach or push occurred.
+
 **First Lean milestone completed:** read `formal/README.md`. Lean now proves
 `macroContact r t ↔ ∃ s, t=2s ∧ fineContact r s` for every integer translation
 and all 24 listed proper cubic orientations, with the first solid/group
@@ -129,7 +225,7 @@ not external human validation of the full construction. The preceding work
 was committed as `7d84070`; translation exclusion is now committed locally
 at the user's request. No push or outreach occurred.
 
-Next: define proper grid symmetries and prove that two with the same frame
+Next within our existing Lean plan: define proper grid symmetries and prove that two with the same frame
 differ by a translation. The new exclusion theorem should make their frame
 map injective and bound the symmetry group by 24. Initial tiling existence,
 arbitrary Euclidean grid enforcement and the full physical finite-symmetry
@@ -447,9 +543,8 @@ Figures: `strong/artifacts/motif-face-layout.png`, `motif-parent-rule.png`.
 
 Work from repository root. `uv run --locked python <script>` is required;
 the existing home uv cache may need the approved `uv run` escalation.
-Python 3.13+; dependencies locked in `uv.lock`. No usable Git repository
-was found here (`git status` reports not a repository); preserve files
-directly and use content hashes rather than assuming commits exist.
+Python 3.13+; dependencies locked in `uv.lock`. A local Git repository now
+exists; preserve research evidence and content hashes alongside commits.
 
 Primary audit commands:
 

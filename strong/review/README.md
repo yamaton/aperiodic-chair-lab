@@ -6,8 +6,23 @@ The user selected Chaim Goodman-Strauss as the intended initial recipient.
 The immediate purpose is a limited correctness/novelty assessment, not a
 journal recommendation or endorsement.
 
+**New overlap, 16 September:** the [Chair44 comparison](TSIOKOS_CHAIR44_COMPARISON.md)
+identifies our exact discrete system in Tsiokos's public construction, with a
+different physical realization and a stronger claimed formal theorem. The
+draft and frozen attachment below predate this finding and require reframing
+before use. They remain preserved as historical material.
+
 ## Start here
 
+- [Chair44 exact comparison](TSIOKOS_CHAIR44_COMPARISON.md): source versions,
+  coordinate equivalence, actual Lean scope, chronology limits and revised work.
+- [Chair44 proof comparison](CHAIR44_PROOF_COMPARISON.md): independent atlas
+  reconstruction, formal-data checks, grid-model bijection and an attributed
+  shorter registration argument; [source audit](CHAIR44_FORMAL_SOURCE_AUDIT.md).
+- [Chair44 companion replay](CHAIR44_COMPANION_REPLAY.md): independent
+  reconstruction of off-grid candidates and all 299,975 collision boxes;
+  [pinned build reproduction](CHAIR44_BUILD_REPRODUCTION.md) tracks compilation
+  and a fresh axiom audit separately.
 - [Draft inquiry](INQUIRY_GOODMAN_STRAUSS.md): proposed recipient, subject,
   and exact body; the sender must supply their name.
 - [Short mathematical brief](BRIEF.md): initial attachment source.

@@ -1,0 +1,13 @@
+POSITIVE BUILD: lake build
+POSITIVE BUILD: PASS
+DISCHARGE BUILD: lake build R44Discharge
+DISCHARGE BUILD: PASS
+DISCHARGE DIFF AUDIT: FAIL (missing delivery /tmp/chair44-build/release/proof/external_lean/F1_exchange2/r44_F1_exchange2_discharge.zip)
+DISCHARGE SORRY AUDIT: PASS (executable=0, marked=0)
+R44 IMPORT CLOSURE: PASS (80 local modules; no R44.Discharge modules)
+NEGATIVE CONTROL: PASS negative/MixedHandedness.lean (exit 1; matched: has type)
+NEGATIVE CONTROL: PASS negative/NegativeControl.lean (exit 1; matched: profileCanonicalCheckWith wrongProfile = true)
+NEGATIVE CONTROL: PASS negative/NoncanonicalGeometricHierarchy.lean (exit 1; matched: geometric_hierarchy_canonical)
+NEGATIVE CONTROL: PASS negative/SecondCarrierHierarchy.lean (exit 1; matched: carrier_hierarchy_unique)
+POSITIVE SCOPE: PASS R44/ScopeRegressions.lean
+CONTROLS: FAIL (build=1/1, discharge_build=1/1, discharge_diff=0/1, discharge_audit=1/1, negative=4/4, scope=1/1, failures=1)

@@ -1,0 +1,71 @@
+{
+  "status": "proof_build_and_axiom_audit_passed; historical_delivery_audit_unreproducible",
+  "release_commit": "137e46b15d36266c37879478cfc62af6e4469147",
+  "project_source_build_seconds": 1120.4013821359986,
+  "source_input_hashes_checked": 83,
+  "proof_sources_unchanged": true,
+  "axiom_report_lines": 169,
+  "fresh_axiom_log_byte_equal_published": true,
+  "standard_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "native_hooks": [
+    "R44.atlas_44._native.native_decide.ax_1_1",
+    "R44.central_completion._native.native_decide.ax_1_1",
+    "R44.contact_closure_30._native.native_decide.ax_1_1",
+    "R44.first_shells_33._native.native_decide.ax_1_1",
+    "R44.hierarchy_cell_controls._native.native_decide.ax_1_1",
+    "R44.mate_records_roles_nonempty._native.native_decide.ax_1_1",
+    "R44.mates_census._native.native_decide.ax_1_1",
+    "R44.mesh_angle_audit._native.native_decide.ax_1_1",
+    "R44.nested_substitution_controls._native.native_decide.ax_1_1",
+    "R44.orientation_group_24._native.native_decide.ax_1_1",
+    "R44.parent_atlas_eq_fine._native.native_decide.ax_1_1",
+    "R44.parent_conflicts_28._native.native_decide.ax_1_1",
+    "R44.profile_canonical._native.native_decide.ax_1_1",
+    "R44.registered_shell_cell_controls._native.native_decide.ax_1_1",
+    "R44.solid_mesh_exact._native.native_decide.ax_1_1",
+    "R44.transported_role_geometry._native.native_decide.ax_1_1",
+    "R44.DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1",
+    "R44.DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1",
+    "R44.DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1",
+    "R44.DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1",
+    "R44.DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1"
+  ],
+  "sorryAx": false,
+  "generated_check": "PASS",
+  "release_controls_exit_code": 1,
+  "positive_builds": "PASS",
+  "admission_and_import_checks": "PASS",
+  "negative_controls_passed": 4,
+  "negative_controls_total": 4,
+  "positive_scope": "PASS",
+  "historical_delivery_audit": {
+    "status": "FAIL_missing_release_archive",
+    "first_missing": "proof/external_lean/F1_exchange2/r44_F1_exchange2_discharge.zip",
+    "mathematical_compile_failure": false
+  },
+  "compiler_archive_sha256": "07a633cc8d9151cbc08825ea4cdda50d4b02a2c9cb852c0131b13046f49cad7f",
+  "build_driver_sha256": "a4c113755c7d8feaeef7e0d13e59882fef4348ec6957ad3ffeb3a07794747a4e",
+  "release_checker_hashes": {
+    "scripts/controls.sh": "b2f673feaf465c6f12aee3da2add6e78c50688dca71754b364aa7cd69d64d736",
+    "scripts/discharge_diff_audit.sh": "1737dff96cd8534e748490892f630d42b11618dc1e4ce9c46c5517754a5a5390",
+    "gen/extract.py": "77ea06410e066db15c4017e050f5627942ef68c6e602ace205e5593dba669ad3",
+    "negative/MixedHandedness.lean": "33499f8e7a530583eef498b1e00cb91291eb368a0b6ef98c542e4e9ad5de8f7a",
+    "negative/NegativeControl.lean": "67a118cecec9396d0e02ab0bc4a3eb35f58e54d0093cbfce80ee6266f85fed12",
+    "negative/NoncanonicalGeometricHierarchy.lean": "028a82abfbb8c8c52c91f983e8bad8ac4816913a1bb5c0bc095bd05d364e36ae",
+    "negative/SecondCarrierHierarchy.lean": "983220a193a5469421494b8d913fdaf274acdc35e72541bb5ded321530077984"
+  },
+  "evidence_hashes": {
+    "axioms-before-build.log": "89d37d4717c1913c215d7923ede61ef7f3618c64f06f1f07dbda718a8d6418ae",
+    "axioms-reproduced.log": "89d37d4717c1913c215d7923ede61ef7f3618c64f06f1f07dbda718a8d6418ae",
+    "build_receipt.json": "f2da0096f40bcf12a6a15db52e0df639096c2f9b0b174da16f954b90323d58af",
+    "default-build.log": "a24d7668d7ec8281dcaaacbe1cbb463d403cb9afed60beee35834ebff0139d52",
+    "discharge-build.log": "349d4cc5c523d9bb3127aa95bd7d7fffb7728783d539c1aa419d2059bbe45be0",
+    "fresh-axiom-audit.log": "72868d4b1876c56b27879f6ac8e68ba7f9e8deb7d3d8da4b01d1f34a190cb7bb",
+    "generated-check.log": "05c127deacaec309328e18f9706945d2517ad396a7f44a8e330f4de87d79f503",
+    "release-controls.log": "404114e2b9291d782c1938635b7679cddd09445b2df32d1a9cf93973ae7d04d8"
+  }
+}

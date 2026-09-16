@@ -10,6 +10,7 @@ __pycache__/
 # Machine-local tools and editor state
 node_modules/
 .DS_Store
+*:Zone.Identifier
 /.agents/
 /.codex/
 

@@ -1,0 +1,1348 @@
+⚠ [8564/8622] Replayed R44.Proved.NativeGeometry
+warning: R44/Proved/NativeGeometry.lean:179:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/NativeGeometry.lean:179:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/NativeGeometry.lean:198:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/NativeGeometry.lean:198:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/NativeGeometry.lean:529:16: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+warning: R44/Proved/NativeGeometry.lean:666:6: This simp argument is unused:
+  chartU_chartPoint
+
+Hint: Omit it from the simp argument list.
+  simp [sectorRadius, cornerU, cornerV, nextCorner, eta, c̵h̵a̵r̵t̵U̵_̵c̵h̵a̵r̵t̵P̵o̵i̵n̵t̵,̵ ̵chartV_chartPoint, chartZ_chartPoint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/NativeGeometry.lean:666:25: This simp argument is unused:
+  chartV_chartPoint
+
+Hint: Omit it from the simp argument list.
+  simp [sectorRadius, cornerU, cornerV, nextCorner, eta, chartU_chartPoint, c̵h̵a̵r̵t̵V̵_̵c̵h̵a̵r̵t̵P̵o̵i̵n̵t̵,̵ ̵chartZ_chartPoint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/NativeGeometry.lean:666:44: This simp argument is unused:
+  chartZ_chartPoint
+
+Hint: Omit it from the simp argument list.
+  simp [sectorRadius, cornerU, cornerV, nextCorner, eta, chartU_chartPoint, c̵h̵a̵r̵t̵V̵_̵c̵h̵a̵r̵t̵P̵o̵i̵n̵t̵,̵ ̵c̵h̵a̵r̵t̵Z̵_̵c̵h̵a̵r̵t̵P̵o̵i̵n̵t̵]̵c̲h̲a̲r̲t̲V̲_̲c̲h̲a̲r̲t̲P̲o̲i̲n̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8565/8622] Replayed R44.Proved.TubeCalculus
+warning: R44/Proved/TubeCalculus.lean:66:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:81:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:93:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/TubeCalculus.lean:93:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/TubeCalculus.lean:112:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:123:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:137:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/TubeCalculus.lean:137:10: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/TubeCalculus.lean:174:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:179:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:205:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:216:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8567/8622] Replayed R44.Proved.FeatureLocalCharts
+warning: R44/Proved/FeatureLocalCharts.lean:383:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8570/8622] Replayed R44.Proved.PolyhedralGerms
+warning: R44/Proved/PolyhedralGerms.lean:296:10: Try `simp at hrx` instead of `simpa using hrx`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8573/8622] Replayed R44.Proved.PyramidGeometry
+warning: R44/Proved/PyramidGeometry.lean:96:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/PyramidGeometry.lean:125:79: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/PyramidGeometry.lean:167:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/PyramidGeometry.lean:193:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/PyramidGeometry.lean:230:56: Variable name `hb` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PyramidGeometry.lean:305:36: Variable name `ha` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PyramidGeometry.lean:305:57: Variable name `hb` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PyramidGeometry.lean:306:23: Variable name `heq` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PyramidGeometry.lean:358:37: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [̵v̵a̵d̵d̵_̵e̵q̵_̵a̵d̵d̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵h̵z̵,̵z̵e̵r̵o̵_̵a̵d̵d̵]̵[̲v̲a̲d̲d̲_̲e̲q̲_̲a̲d̲d̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲h̲z̲]̲ at hm
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8574/8622] Replayed R44.Proved.TentTangentCharts
+info: R44/Proved/TentTangentCharts.lean:84:11: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: R44/Proved/TentTangentCharts.lean:65:62: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [̵x̵,̵p̵t̵,̵e̵t̵a̵]̵[̲x̲,̲ ̲e̲t̲a̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:75:12: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:82:10: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:84:2: 'congr 1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/TentTangentCharts.lean:122:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/TentTangentCharts.lean:99:64: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:100:64: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:101:63: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [̵x̵,̵p̵t̵,̵h̵b̵0̵.̵l̵e̵]̵[̲x̲,̲ ̲h̲b̲0̲.̲l̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:102:63: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [̵x̵,̵p̵t̵,̵h̵b̵0̵.̵l̵e̵]̵[̲x̲,̲ ̲h̲b̲0̲.̲l̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:125:14: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:129:14: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:132:14: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:141:15: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp only [x,p̵t̵,̵ ̲Matrix.cons_val_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8575/8622] Replayed R44.Proved.NativeExceptionalVertices
+warning: R44/Proved/NativeExceptionalVertices.lean:239:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/NativeExceptionalVertices.lean:243:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/NativeExceptionalVertices.lean:283:41: This simp argument is unused:
+  frameCoordinate
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵f̵e̵a̵t̵u̵r̵e̵C̵e̵n̵t̵e̵r̵,̵c̵o̵o̵r̵d̵i̵n̵a̵t̵e̵V̵e̵c̵t̵o̵r̵,̵f̵r̵a̵m̵e̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵t̵a̵n̵g̵e̵n̵t̵O̵f̵f̵s̵e̵t̵,̵V̵3̵.̵a̵d̵d̵,̵V̵3̵.̵s̵m̵u̵l̵,̵V̵3̵.̵g̵e̵t̵,̵e̵t̵a̵,̵R̵4̵4̵.̵v̵]̵s̲i̲m̲p̲ ̲[̲f̲e̲a̲t̲u̲r̲e̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲o̲o̲r̲d̲i̲n̲a̲t̲e̲V̲e̲c̲t̲o̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲t̲a̲n̲g̲e̲n̲t̲O̲f̲f̲s̲e̲t̲,̲ ̲V̲3̲.̲a̲d̲d̲,̲ ̲V̲3̲.̲s̲m̲u̲l̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲e̲t̲a̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲R̲4̲4̲.̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8577/8622] Replayed R44.Proved.PlanarSectorArea
+warning: R44/Proved/PlanarSectorArea.lean:82:50: Variable name `ht` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8579/8622] Replayed R44.Proved.TentMeridianReduction
+warning: R44/Proved/TentMeridianReduction.lean:104:36: This simp argument is unused:
+  hx2
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.sum_univ_succ, ridgeLinear, pt, PiLp.toLp_apply,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵Real.norm_eq_abs, sq_abs, hx̵2̵,̵ ̵h̵y2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentMeridianReduction.lean:104:41: This simp argument is unused:
+  hy2
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.sum_univ_succ, ridgeLinear, pt, PiLp.toLp_apply,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵Real.norm_eq_abs, sq_abs, hx2,̵ ̵h̵y̵2̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8580/8622] Replayed R44.Proved.ElementarySectorGeometry
+warning: R44/Proved/ElementarySectorGeometry.lean:115:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/ElementarySectorGeometry.lean:119:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/ElementarySectorGeometry.lean:108:40: This simp argument is unused:
+  hz
+
+Hint: Omit it from the simp argument list.
+  simp [angularSector, ̲complexSector, ̲z, ̲hz̵,̵h̵0, ̲h1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/ElementarySectorGeometry.lean:178:24: This simp argument is unused:
+  abs_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [neg_neg,̵ ̵a̵b̵s̵_̵n̵e̵g̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/ElementarySectorGeometry.lean:189:24: This simp argument is unused:
+  abs_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [neg_neg,̵ ̵a̵b̵s̵_̵n̵e̵g̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/ElementarySectorGeometry.lean:183:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:187:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:209:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:213:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:230:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:232:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:341:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8582/8622] Replayed R44.Proved.SectorArithmetic
+info: R44/Proved/SectorArithmetic.lean:62:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: R44/Proved/SectorArithmetic.lean:62:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: R44/Proved/SectorArithmetic.lean:62:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: R44/Proved/SectorArithmetic.lean:62:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: R44/Proved/SectorArithmetic.lean:57:48: This simp argument is unused:
+  hj
+
+Hint: Omit it from the simp argument list.
+  simp [featureInteriorAngle, ̲deviationSign, ̲deviationIndex, ̲featureDeviation,
+  ̵  ̵ ̵ ̵ ̵ ̵baseDeviation,
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ridgeDeviation, ̲featureSlope,h̵j̵,̵ ̲show
+  ̵  ̵ ̵ ̵ ̵ ̵(profileCoefficient r).natAbs ̲- ̲1 ̲< ̲12 by omega]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8583/8622] Replayed R44.Proved.PolyhedralConeMeasure
+warning: R44/Proved/PolyhedralConeMeasure.lean:91:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: R44/Proved/PolyhedralConeMeasure.lean:316:5: Variable name `hm` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PolyhedralConeMeasure.lean:411:26: This simp argument is unused:
+  hl
+
+Hint: Omit it from the simp argument list.
+  simp [h̵l̵,̵SectorLabel.angle]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8585/8622] Replayed R44.Proved.NativeFeatureMeridians
+warning: R44/Proved/NativeFeatureMeridians.lean:46:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/NativeFeatureMeridians.lean:86:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/NativeFeatureMeridians.lean:93:26: This simp argument is unused:
+  hpos
+
+Hint: Omit it from the simp argument list.
+  simp_all ̵[̵h̵p̵o̵s̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/NativeFeatureMeridians.lean:93:36: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/NativeFeatureMeridians.lean:93:36: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8586/8622] Replayed R44.Proved.OrdinaryMeridians
+warning: R44/Proved/OrdinaryMeridians.lean:99:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/OrdinaryMeridians.lean:99:66: 'omega' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/OrdinaryMeridians.lean:121:75: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [DischargePyramid.norm_sq, ̲coordinateLinear, ̲coordVec, ̲third,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/OrdinaryMeridians.lean:183:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/OrdinaryMeridians.lean:193:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/OrdinaryMeridians.lean:203:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8587/8622] Replayed R44.Proved.CarrierSymmetries
+warning: R44/Proved/CarrierSymmetries.lean:320:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:320:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:320:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:328:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:328:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:328:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:336:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:336:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:336:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:344:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:344:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:344:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:352:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:352:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:352:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:360:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:360:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:360:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:280:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:361:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:280:51: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:321:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:329:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:337:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:345:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:353:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:361:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8588/8622] Replayed R44.Proved.CarrierBoundaryStrata
+warning: R44/Proved/CarrierBoundaryStrata.lean:81:16: This simp argument is unused:
+  ht
+
+Hint: Omit it from the simp argument list.
+  simp [hz, ht̵,̵ ̵h̵lt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:81:20: This simp argument is unused:
+  hlt
+
+Hint: Omit it from the simp argument list.
+  simp [hz, ht,̵ ̵h̵l̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:84:14: This simp argument is unused:
+  hz
+
+Hint: Omit it from the simp argument list.
+  simp [hz̵,̵ ̵h̵t, hgt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:84:22: This simp argument is unused:
+  hgt
+
+Hint: Omit it from the simp argument list.
+  simp [hz, ht,̵ ̵h̵g̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:168:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:173:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:178:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:183:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:188:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:193:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:199:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:205:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:211:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:217:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:223:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:229:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:235:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:241:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:247:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:253:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:259:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:265:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:271:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:277:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:283:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:289:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:295:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:301:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:307:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:313:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:319:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:169:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:174:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:179:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:184:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:189:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:194:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:200:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:206:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:212:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:218:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:224:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:230:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:236:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:242:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:248:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:254:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:260:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:266:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:272:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:278:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:284:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:290:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:296:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:302:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:308:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:314:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:320:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:320:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:321:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:322:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:324:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:325:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:327:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:328:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:330:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:331:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:333:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:334:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:336:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:337:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:278:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:284:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:290:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:302:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:308:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:314:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:169:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:174:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:179:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:184:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:189:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:194:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:200:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:206:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:212:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:218:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:224:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:230:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:236:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:242:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:248:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:254:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:260:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:266:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:272:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:278:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:284:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:290:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:296:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:302:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:308:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:314:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:320:8: 'tauto' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:320:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:321:4: 'refine Or.inr ⟨2, ?_⟩' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:322:4: 'convert OrdinaryCone.reentrant (1 : Fin 3) (2 : Fin 3) (by omega) (1 : ℝ) (-1 : ℝ) (Or.inl rfl) (Or.inr rfl) using
+  1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:324:4: 'ext d' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:325:4: 'simp [stateCone, Fin.forall_fin_succ, Fin.exists_fin_succ, neg_nonpos] <;> tauto <;> done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:327:4: 'refine Or.inr ⟨2, ?_⟩' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:328:4: 'convert OrdinaryCone.reentrant (1 : Fin 3) (2 : Fin 3) (by omega) (-1 : ℝ) (1 : ℝ) (Or.inr rfl) (Or.inl rfl) using
+  1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:330:4: 'ext d' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:331:4: 'simp [stateCone, Fin.forall_fin_succ, Fin.exists_fin_succ, neg_nonpos] <;> tauto <;> done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:333:4: 'refine Or.inr ⟨2, ?_⟩' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:334:4: 'convert OrdinaryCone.reentrant (1 : Fin 3) (2 : Fin 3) (by omega) (-1 : ℝ) (-1 : ℝ) (Or.inr rfl) (Or.inr rfl) using
+  1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:336:4: 'ext d' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:337:4: 'simp [stateCone, Fin.forall_fin_succ, Fin.exists_fin_succ, neg_nonpos] <;> tauto <;> done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:360:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8589/8622] Replayed R44.Proved.CarrierCoordinateStates
+warning: R44/Proved/CarrierCoordinateStates.lean:804:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierCoordinateStates.lean:804:68: 'linarith' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8591/8622] Replayed R44.Proved.NativeBoundaryLocal
+warning: R44/Proved/NativeBoundaryLocal.lean:265:23: Variable name `hT` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8592/8622] Replayed R44.Proved.MeshChartInterpretation
+warning: R44/Proved/MeshChartInterpretation.lean:259:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/MeshChartInterpretation.lean:259:70: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8593/8622] Replayed R44.Proved.NativeDihedralSectors
+warning: R44/Proved/NativeDihedralSectors.lean:24:5: Variable name `hmesh` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/NativeDihedralSectors.lean:24:33: Variable name `haudit` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/NativeDihedralSectors.lean:25:5: Variable name `hprofile` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8596/8622] Replayed R44.Proved.CanonicalTentStrata
+warning: R44/Proved/CanonicalTentStrata.lean:191:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CanonicalTentStrata.lean:193:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CanonicalTentStrata.lean:195:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CanonicalTentStrata.lean:197:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CanonicalTentStrata.lean:252:37: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [̵p̵t̵,̵h̵x̵v̵,̵h̵y̵v̵,̵h̵y̵z̵]̵[̲h̲x̲v̲,̲ ̲h̲y̲v̲,̲ ̲h̲y̲z̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8599/8622] Replayed R44.Proved.GenericBoundaryLabels
+warning: R44/Proved/GenericBoundaryLabels.lean:75:5: Variable name `hbudget` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8602/8622] Replayed R44.Proved.CircularConeSolidAngle
+warning: R44/Proved/CircularConeSolidAngle.lean:216:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8603/8622] Replayed R44.Proved.ConnectedFeatureCompanion
+warning: R44/Proved/ConnectedFeatureCompanion.lean:67:13: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+warning: R44/Proved/ConnectedFeatureCompanion.lean:69:31: This simp argument is unused:
+  Finset.sum_empty
+
+Hint: Omit it from the simp argument list.
+  simp only [̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵e̵m̵p̵t̵y̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵h̵a̵n̵g̵l̵e̵,̵h̵b̵a̵l̵l̵]̵[̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲h̲a̲n̲g̲l̲e̲,̲ ̲h̲b̲a̲l̲l̲]̲ at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/ConnectedFeatureCompanion.lean:69:48: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Fin.sum_univ_succ, ̲Finset.sum_empty,a̵d̵d̵_̵z̵e̵r̵o̵,̵ ̲hangle, ̲hball] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8607/8622] Replayed R44.Proved.HashListSemantics
+warning: R44/Proved/HashListSemantics.lean:19:8: automatically included section variable(s) unused in theorem `_private.R44.Proved.HashListSemantics.0.R44.DischargeHashLists.mem_hashList`:
+  [LawfulHashable α]
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LawfulHashable α] [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: R44/Proved/HashListSemantics.lean:24:8: automatically included section variable(s) unused in theorem `_private.R44.Proved.HashListSemantics.0.R44.DischargeHashLists.hashList_nodup`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: R44/Proved/HashListSemantics.lean:64:0: automatically included section variable(s) unused in theorem `R44.DischargeHashLists.mem_hashDedup`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8608/8622] Replayed R44.Proved.MateCensusSemantics
+warning: R44/Proved/MateCensusSemantics.lean:165:4: 'change profileCoefficient u = -profileCoefficient v' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8610/8622] Replayed R44.Proved.RetainedBoxGeometry
+warning: R44/Proved/RetainedBoxGeometry.lean:309:30: This simp argument is unused:
+  V3.get
+
+Hint: Omit it from the simp argument list.
+  simp [maxInt, ̲minInt, ̲v,V̵3̵.̵g̵e̵t̵,̵ ̲Bool.and_eq_true, ̲decide_eq_true_eq] at hwidth
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8612/8622] Replayed R44.PoseAlgebra
+warning: R44/PoseAlgebra.lean:340:31: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵c̵a̵l̵e̵d̵V̵3̵,̵ ̵V̵3̵.̵a̵d̵d̵,̵[̲V̲3̲.̲a̲d̲d̲,̲ V3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8613/8622] Replayed R44.Proved.CompanionCollisionSemantics
+warning: R44/Proved/CompanionCollisionSemantics.lean:25:36: This simp argument is unused:
+  instBEqV3
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqV3,̵i̵n̵s̵t̵B̵E̵q̵V̵3̵.beq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:25:46: This simp argument is unused:
+  instBEqV3.beq
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqV3,̵i̵n̵s̵t̵B̵E̵q̵V̵3̵.̵b̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:28:36: This simp argument is unused:
+  instBEqN3
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqN3,̵i̵n̵s̵t̵B̵E̵q̵N̵3̵.beq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:28:46: This simp argument is unused:
+  instBEqN3.beq
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqN3,̵i̵n̵s̵t̵B̵E̵q̵N̵3̵.̵b̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:31:36: This simp argument is unused:
+  instBEqFrame
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqFrame,̵i̵n̵s̵t̵B̵E̵q̵F̵r̵a̵m̵e̵.beq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:31:49: This simp argument is unused:
+  instBEqFrame.beq
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqFrame,̵i̵n̵s̵t̵B̵E̵q̵F̵r̵a̵m̵e̵.̵b̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:34:36: This simp argument is unused:
+  instBEqPose
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqPose,̵i̵n̵s̵t̵B̵E̵q̵P̵o̵s̵e̵.beq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:34:48: This simp argument is unused:
+  instBEqPose.beq
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqPose,̵i̵n̵s̵t̵B̵E̵q̵P̵o̵s̵e̵.̵b̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:118:30: This simp argument is unused:
+  Std.HashSet.contains_iff_mem
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵e̵,̵h̵r̵,̵i̵s̵o̵l̵a̵t̵e̵d̵M̵a̵t̵e̵S̵e̵t̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵m̵e̵m̵_̵o̵f̵L̵i̵s̵t̵,̵h̵i̵s̵o̵]̵[̲h̲e̲,̲ ̲h̲r̲,̲ ̲i̲s̲o̲l̲a̲t̲e̲d̲M̲a̲t̲e̲S̲e̲t̲,̲ ̲S̲t̲d̲.̲H̲a̲s̲h̲S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲L̲i̲s̲t̲,̲ ̲h̲i̲s̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:119:4: This simp argument is unused:
+  Std.HashSet.mem_ofList
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵e̵,̵h̵r̵,̵i̵s̵o̵l̵a̵t̵e̵d̵M̵a̵t̵e̵S̵e̵t̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵m̵e̵m̵_̵o̵f̵L̵i̵s̵t̵,̵h̵i̵s̵o̵]̵[̲h̲e̲,̲ ̲h̲r̲,̲ ̲i̲s̲o̲l̲a̲t̲e̲d̲M̲a̲t̲e̲S̲e̲t̲,̲ ̲S̲t̲d̲.̲H̲a̲s̲h̲S̲e̲t̲.̲c̲o̲n̲t̲a̲i̲n̲s̲_̲i̲f̲f̲_̲m̲e̲m̲,̲ ̲h̲i̲s̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:235:49: This simp argument is unused:
+  Bool.not_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵j̵e̵c̵t̵i̵o̵n̵V̵a̵l̵i̵d̵,̵B̵o̵o̵l̵.̵a̵n̵d̵_̵e̵q̵_̵t̵r̵u̵e̵,̵L̵i̵s̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵B̵o̵o̵l̵.̵o̵r̵_̵e̵q̵_̵t̵r̵u̵e̵,̵b̵e̵q̵_̵i̵f̵f̵_̵e̵q̵,̵d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵t̵r̵u̵e̵_̵e̵q̵,̵B̵o̵o̵l̵.̵n̵o̵t̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲r̲e̲j̲e̲c̲t̲i̲o̲n̲V̲a̲l̲i̲d̲,̲ ̲B̲o̲o̲l̲.̲a̲n̲d̲_̲e̲q̲_̲t̲r̲u̲e̲,̲ ̲L̲i̲s̲t̲.̲c̲o̲n̲t̲a̲i̲n̲s̲_̲i̲f̲f̲_̲m̲e̲m̲,̲ ̲B̲o̲o̲l̲.̲o̲r̲_̲e̲q̲_̲t̲r̲u̲e̲,̲ ̲b̲e̲q̲_̲i̲f̲f̲_̲e̲q̲,̲
+  ̲ ̲ ̲ ̲ ̲d̲e̲c̲i̲d̲e̲_̲e̲q̲_̲t̲r̲u̲e̲_̲e̲q̲]̲ at hv
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:262:25: This simp argument is unused:
+  Std.HashSet.contains_iff_mem
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵a̵s̵h̵D̵i̵f̵f̵,̵h̵p̵,̵h̵n̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵m̵e̵m̵_̵o̵f̵L̵i̵s̵t̵]̵[̲h̲a̲s̲h̲D̲i̲f̲f̲,̲ ̲h̲p̲,̲ ̲h̲n̲,̲ ̲S̲t̲d̲.̲H̲a̲s̲h̲S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲L̲i̲s̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:262:54: This simp argument is unused:
+  Std.HashSet.mem_ofList
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵a̵s̵h̵D̵i̵f̵f̵,̵h̵p̵,̵h̵n̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵m̵e̵m̵_̵o̵f̵L̵i̵s̵t̵]̵[̲h̲a̲s̲h̲D̲i̲f̲f̲,̲ ̲h̲p̲,̲ ̲h̲n̲,̲ ̲S̲t̲d̲.̲H̲a̲s̲h̲S̲e̲t̲.̲c̲o̲n̲t̲a̲i̲n̲s̲_̲i̲f̲f̲_̲m̲e̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8619/8622] Replayed R44.Proved.RegisteredCellGeometry
+warning: R44/Proved/RegisteredCellGeometry.lean:125:8: This simp argument is unused:
+  unitCube
+
+Hint: Omit it from the simp argument list.
+  simp [̵u̵n̵i̵t̵C̵u̵b̵e̵,̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲ at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:125:28: This simp argument is unused:
+  cellCorner
+
+Hint: Omit it from the simp argument list.
+  simp [̵u̵n̵i̵t̵C̵u̵b̵e̵,̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲u̲n̲i̲t̲C̲u̲b̲e̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲ at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:125:39: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵u̵n̵i̵t̵C̵u̵b̵e̵,̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲u̲n̲i̲t̲C̲u̲b̲e̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲ at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:125:55: This simp argument is unused:
+  v
+
+Hint: Omit it from the simp argument list.
+  simp [unitCube, ̲cellCenter, ̲cellCorner, ̲scaledV3, ̲V3.get,̵v̵] at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:207:17: This simp argument is unused:
+  cellCorner
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵s̵t̵_̵e̵q̵_̵n̵o̵r̵m̵,̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵n̵o̵r̵m̵_̵s̵q̵_̵e̵q̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵,̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵s̵q̵_̵a̵b̵s̵]̵[̲d̲i̲s̲t̲_̲e̲q̲_̲n̲o̲r̲m̲,̲ ̲E̲u̲c̲l̲i̲d̲e̲a̲n̲S̲p̲a̲c̲e̲.̲n̲o̲r̲m̲_̲s̲q̲_̲e̲q̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲v̲,̲ ̲R̲e̲a̲l̲.̲n̲o̲r̲m̲_̲e̲q̲_̲a̲b̲s̲,̲ ̲s̲q̲_̲a̲b̲s̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:207:28: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵s̵t̵_̵e̵q̵_̵n̵o̵r̵m̵,̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵n̵o̵r̵m̵_̵s̵q̵_̵e̵q̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵,̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵s̵q̵_̵a̵b̵s̵]̵[̲d̲i̲s̲t̲_̲e̲q̲_̲n̲o̲r̲m̲,̲ ̲E̲u̲c̲l̲i̲d̲e̲a̲n̲S̲p̲a̲c̲e̲.̲n̲o̲r̲m̲_̲s̲q̲_̲e̲q̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲,̲ ̲R̲e̲a̲l̲.̲n̲o̲r̲m̲_̲e̲q̲_̲a̲b̲s̲,̲ ̲s̲q̲_̲a̲b̲s̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:207:44: This simp argument is unused:
+  v
+
+Hint: Omit it from the simp argument list.
+  simp [dist_eq_norm, ̲EuclideanSpace.norm_sq_eq, ̲Fin.sum_univ_succ,
+  ̵  ̵ ̵ ̵ ̵ ̵cellCenter, ̲cellCorner,
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲scaledV3, ̲V3.get,v̵,̵ ̲Real.norm_eq_abs, ̲sq_abs] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8620/8622] Replayed R44.Proved.BaselineComponentCoversGrid
+warning: R44/Proved/BaselineComponentCoversGrid.lean:32:19: This simp argument is unused:
+  cellCorner
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵s̵t̵_̵e̵q̵_̵n̵o̵r̵m̵,̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵n̵o̵r̵m̵_̵s̵q̵_̵e̵q̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵u̵n̵i̵t̵A̵x̵i̵s̵,̵V̵3̵.̵a̵d̵d̵,̵V̵3̵.̵g̵e̵t̵,̵v̵,̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵s̵q̵_̵a̵b̵s̵]̵[̲d̲i̲s̲t̲_̲e̲q̲_̲n̲o̲r̲m̲,̲ ̲E̲u̲c̲l̲i̲d̲e̲a̲n̲S̲p̲a̲c̲e̲.̲n̲o̲r̲m̲_̲s̲q̲_̲e̲q̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲u̲n̲i̲t̲A̲x̲i̲s̲,̲ ̲V̲3̲.̲a̲d̲d̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲,̲ ̲R̲e̲a̲l̲.̲n̲o̲r̲m̲_̲e̲q̲_̲a̲b̲s̲,̲ ̲s̲q̲_̲a̲b̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/BaselineComponentCoversGrid.lean:32:30: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵s̵t̵_̵e̵q̵_̵n̵o̵r̵m̵,̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵n̵o̵r̵m̵_̵s̵q̵_̵e̵q̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵u̵n̵i̵t̵A̵x̵i̵s̵,̵V̵3̵.̵a̵d̵d̵,̵V̵3̵.̵g̵e̵t̵,̵v̵,̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵s̵q̵_̵a̵b̵s̵]̵[̲d̲i̲s̲t̲_̲e̲q̲_̲n̲o̲r̲m̲,̲ ̲E̲u̲c̲l̲i̲d̲e̲a̲n̲S̲p̲a̲c̲e̲.̲n̲o̲r̲m̲_̲s̲q̲_̲e̲q̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲u̲n̲i̲t̲A̲x̲i̲s̲,̲ ̲V̲3̲.̲a̲d̲d̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲,̲ ̲R̲e̲a̲l̲.̲n̲o̲r̲m̲_̲e̲q̲_̲a̲b̲s̲,̲ ̲s̲q̲_̲a̲b̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (8622 jobs).

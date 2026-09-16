@@ -8,6 +8,9 @@ existing paths so older commands, citations, and frozen evidence remain usable.
 
 | Subject | Report | Reproduction or evidence |
 |---|---|---|
+| Chair44 direct overlap | [Exact comparison and revised assessment](../strong/review/TSIOKOS_CHAIR44_COMPARISON.md) | [Comparator](../strong/audit/compare_chair44.py), [exact results](../strong/audit/chair44_comparison.json) |
+| Chair44 proof comparison and shorter registration proof | [Proof comparison](../strong/review/CHAIR44_PROOF_COMPARISON.md), [formal-source audit](../strong/review/CHAIR44_FORMAL_SOURCE_AUDIT.md) | [Independent atlas reconstruction](../strong/audit/reconstruct_chair44_contacts.py), [Lean literal check](../strong/audit/check_chair44_lean_literals.py) |
+| Chair44 off-grid census and build reproduction | [Companion replay](../strong/review/CHAIR44_COMPANION_REPLAY.md), [build record](../strong/review/CHAIR44_BUILD_REPRODUCTION.md) | [Replay](../strong/audit/replay_chair44_companions.py), [corruption controls](../strong/audit/check_chair44_replay_mutations.py), [build driver](../strong/audit/build_chair44_release.py) |
 | Lean contact recurrence and arbitrary grid tilings | [Scope and reproduction](../formal/README.md), [tiling bridge](../formal/GRID_TILING_BRIDGE.md) | [Recurrence](../formal/Chair/Recurrence.lean), [tiling theorems](../formal/Chair/Tiling.lean), [verification driver](../formal/verify.py) |
 | Universal unique grouping in Lean | [Proof record and scope](../formal/UNIVERSAL_GROUPING.md) | [Grouping theorem](../formal/Chair/Grouping.lean), [local forcing](../formal/Chair/LocalGrouping.lean) |
 | Common parity and legal deflation in Lean | [Proof record and scope](../formal/LEGAL_DEFLATION.md) | [Combined theorem and iteration](../formal/Chair/Hierarchy.lean), [deflation proof](../formal/Chair/Deflation.lean) |

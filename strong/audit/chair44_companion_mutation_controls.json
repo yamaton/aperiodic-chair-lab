@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "Three corrupted copies of the collision-box stream must be rejected by the independent checker. Release data remains untouched.",
+  "checker_sha256": "5be3e29d0d747acab166c1ed364b0b7a000ae117338530d2bb13e3651c200bf4",
+  "script_sha256": "cdfc2007764a271f7935c73131a5cdf8f96d41e68b30b0595d0bfce947d0ae04",
+  "controls": [
+    {
+      "mutation": "omit_partner",
+      "detected": true,
+      "expected_error": "export omitted an unpruned partner",
+      "seconds": 0.6410836700015352
+    },
+    {
+      "mutation": "alter_intersection",
+      "detected": true,
+      "expected_error": "claimed carrier intersection incorrect",
+      "seconds": 0.8106378299999051
+    },
+    {
+      "mutation": "duplicate_partner",
+      "detected": true,
+      "expected_error": "invalid/duplicate listed partner",
+      "seconds": 0.8012864229967818
+    }
+  ]
+}

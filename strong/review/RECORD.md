@@ -701,3 +701,131 @@ and research records. Before committing, checked that all 40 Lean source
 hashes and the frozen candidate match the successful manifest recording 52
 axiom audits. No proof source changed after verification. No push or outreach
 was performed.
+
+## Chair44 exact overlap — 16 September 2026
+
+Translation exclusion was committed as `45d0bee`. The user then supplied
+Tsiokos's X post, Zenodo record 22734468 and a local PDF. The local PDF
+eventually completed and matches the version 1 API checksum. We also fetched
+version 2 (22792358), verified its checksum, and inspected the source release
+at `137e46b15d36266c37879478cfc62af6e4469147`.
+
+Two bounded independent subagents compared exact finite data and inspected
+the actual formal statement/definitions. The coordinator examined manuscript
+geometry, mechanization and chronology. No downloaded implementation was run.
+
+`strong/audit/compare_chair44.py`, run through `uv`, proves finite set equality
+after explicit coordinate transformations for seven carrier cubes, eight
+children, 44 fine contacts, 30 closed contacts, 44 macro contacts and 372
+signed equations. All 192 feature roles correspond bijectively under an
+explicit panel-offset reparameterization and signed-key permutation; the
+24 panels recover motifs A/B/C eight times each. A one-port key corruption
+was rejected as a negative control. Exact results and six source hashes are
+in `strong/audit/chair44_comparison.json`.
+
+The physical solids differ: rational square pyramids versus our polynomial
+caps. Their final Lean statement is unconditional over physical Euclidean
+tilings, with existence and symmetry bound 24; its inspected definitions do
+not assume grid alignment. Its 21 native-computation hooks are disclosed.
+We did not rebuild it or verify its entire proof chain, and do not certify
+the physical theorem. Priority, independence and borrowing are not established.
+
+The full assessment is `TSIOKOS_CHAIR44_COMPARISON.md`. Saved version 2 PDF
+and both API metadata records under `sources/`, updated the handoff/index,
+and marked the old inquiry as historical pending revision for this overlap.
+Our current matching system cannot distinguish the proposal from Chair44.
+The next recommended work is isolated reproduction and physical-proof audit,
+using our simpler kernel-checked grid proof as a cross-check. New comparison
+changes remain local and uncommitted; no push or outreach occurred.
+
+## Chair44 proof comparison and independent reconstruction — 16 September 2026
+
+At the user's request, continued beyond supplied-table equality. New
+`strong/audit/reconstruct_chair44_contacts.py` recovers the 24 panels from
+carrier cubes and all 192 features from rational base/apex coordinates,
+checks 768 pyramid facets in the mesh, and enumerates all 48 signed frames.
+It independently obtains 1,194 proper and 1,194 improper carrier contacts;
+44 proper and zero improper contacts satisfy full-panel matching. The 44
+equal the published atlas exactly. A separate agent reviewed completeness
+and semantics and reproduced the result under `uv` without finding a defect.
+
+A second agent inspected the physical-solid-to-companion proof chain and
+wrote `CHAIR44_FORMAL_SOURCE_AUDIT.md`. Its independent checker, preserved
+as `strong/audit/check_chair44_lean_literals.py`, matches all 24 panels,
+192 feature geometries, 2,138 vertices and 4,272 triangles between the
+published solid and inspected Lean literals/formulas. Both scripts and
+hashed JSON results are preserved. No downloaded implementation ran and
+no full Lean build or independent axiom audit was performed.
+
+`CHAIR44_PROOF_COMPARISON.md` gives a written bijection of the complete
+legal grid-tiling models, accounts for the scale-dependent origin shift,
+and compares the geometric, grouping and period arguments. The main useful
+new deduction for our work is an explicitly attributed retained-core lemma
+adapted from Chair44: after component carrier coverage, clamping a tile's
+interior-ball center reaches the interior of a component tile, forcing the
+two tiles to coincide. For our caps, h=141/35840, rho=1/64 and r=1/4 satisfy
+h<rho and 3rho²<r². This shortens the registration proof, not the existence
+proof. The adaptation appears in geometric scrutiny Section 8a and remains
+written mathematics, not a new Lean theorem.
+
+Validation used `uv` throughout. Corrupting one atlas translation and one
+apex coordinate was rejected by the respective checkers, without successful
+output. The rational inequalities, source hash and local report links passed.
+The handoff, review index and project index now link the new comparison.
+Frozen geometry and Lean source are unchanged. Everything remains local and
+uncommitted; no outreach or push occurred. Next: isolated pinned Lean 4.31.0
+build/axiom reproduction, then the off-grid companion census and analytic
+leaves, before claiming verification of their full physical theorem.
+
+## Chair44 cold source build and complete companion replay — 16 September 2026
+
+The user requested continuation. Installed the exact Lean 4.31.0 compiler,
+checking the official archive SHA-256, and all nine dependency commits from
+the release manifest, including Mathlib `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`.
+Built a disposable copy of release `137e46b15d36266c37879478cfc62af6e4469147`.
+Mathlib used its official precompiled cache; Chair44's project was compiled
+from source. The run initially encountered sandboxed DNS, cache-tool PATH/CWD,
+and disk-capacity issues. Authorized RAM-backed storage for the Mathlib
+library cache resolved the disk issue, and forced re-extraction repaired any
+truncated dependency artifacts. No proof source was modified.
+
+`strong/audit/build_chair44_release.py` moved the shipped axiom log aside,
+checked all dependency revisions and hashed all 83 source/configuration
+inputs. The default source build passed in 1,120.40 seconds; the promoted
+`R44Discharge` target passed in 3.88 seconds; fresh elaboration of the axiom
+audit passed in 4.67 seconds. All input hashes match the pinned release and
+remained unchanged. All 169 freshly generated axiom lines exactly equal the
+shipped log. `r44_einstein` depends on the three standard logical axioms and
+21 disclosed native-evaluation hooks, with no `sorryAx`.
+
+The inspected release generator's `--check` passed. The unmodified release
+control script returned exit 1 with exactly one failed gate: its historical
+delivery diff audit references an archive absent from the public release,
+`proof/external_lean/F1_exchange2/r44_F1_exchange2_discharge.zip`. Both proof
+builds, admission/import checks, all four diagnostic-checked negative controls,
+and positive scope regressions passed. This packaging failure is preserved
+and does not count as a mathematical compilation failure. The full controls
+command must not be reported as passing.
+
+In parallel, a separately written mesh-first checker reconstructed all 192
+pyramids, all 6,862 complete-feature poses, 1,545 direct collisions and all
+5,273 further rejections against full unpruned partner sets. It checked all
+299,975 exported collision boxes and recovered exactly the 44 proper,
+integral atlas poses. Minimum retained-core width is 42/400. All rejection
+witnesses use a feature of the root tile. Packet/canonical source equality
+was checked. A fresh reviewer independently reran the checker and found no
+material defect. Three mutations (omitted partner, altered intersection and
+duplicated partner) were rejected. The coordinator reran all checks via `uv`.
+
+Reports: `CHAIR44_BUILD_REPRODUCTION.md` and `CHAIR44_COMPANION_REPLAY.md`.
+Preserved source hashes, phase receipts, build/axiom/control logs and structured
+assessment in `strong/audit/chair44_build/`; replay scripts/results and mutation
+controls are in `strong/audit/`. Handoff and comparison documents now distinguish
+this reproduced formal proof from the earlier source-only review. It retains
+the disclosed compiler trust for finite checks and does not prove our different
+curved-cap solid's physical theorem or replace independent human review.
+
+All changes remain local and uncommitted; no push or outreach occurred.
+The temporary build is complete, not running. Preserve its usable caches if
+further semantic checks need Lean; avoid another cold build without a specific
+reason. Our own Lean source, verification manifest and frozen design are unchanged.

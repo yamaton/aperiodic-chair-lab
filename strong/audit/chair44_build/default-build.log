@@ -1,0 +1,2920 @@
+✔ [3169/3455] Built R44.Types (1.0s)
+✔ [4356/4637] Built R44.Generated.MateData (395ms)
+✔ [8560/8638] Built R44.Generated.CoreData (3.3s)
+✔ [8561/8638] Built R44.FiniteModel (1.9s)
+✔ [8562/8638] Built R44.Proved.CompactCongruent (4.5s)
+✔ [8563/8638] Built R44.Proved.SeparatedHomeomorphismGluing (4.6s)
+✔ [8564/8638] Built R44.Theorems (206s)
+✔ [8565/8638] Built R44.LogicalSpineFoundation (9.9s)
+⚠ [8566/8638] Built R44.Proved.HashListSemantics (4.5s)
+warning: R44/Proved/HashListSemantics.lean:19:8: automatically included section variable(s) unused in theorem `_private.R44.Proved.HashListSemantics.0.R44.DischargeHashLists.mem_hashList`:
+  [LawfulHashable α]
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LawfulHashable α] [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: R44/Proved/HashListSemantics.lean:24:8: automatically included section variable(s) unused in theorem `_private.R44.Proved.HashListSemantics.0.R44.DischargeHashLists.hashList_nodup`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: R44/Proved/HashListSemantics.lean:64:0: automatically included section variable(s) unused in theorem `R44.DischargeHashLists.mem_hashDedup`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [8567/8638] Built R44.GlobalPredicates (4.7s)
+✔ [8568/8638] Built R44.Proved.WedgeVolume (5.5s)
+⚠ [8569/8638] Built R44.PoseAlgebra (5.8s)
+warning: R44/PoseAlgebra.lean:340:31: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵c̵a̵l̵e̵d̵V̵3̵,̵ ̵V̵3̵.̵a̵d̵d̵,̵[̲V̲3̲.̲a̲d̲d̲,̲ V3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8570/8638] Built R44.Proved.CircularConeSolidAngle (7.8s)
+warning: R44/Proved/CircularConeSolidAngle.lean:216:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [8571/8638] Built R44.CollarPredicates (4.4s)
+⚠ [8572/8638] Built R44.Proved.PlanarSectorArea (5.1s)
+warning: R44/Proved/PlanarSectorArea.lean:82:50: Variable name `ht` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8573/8638] Built R44.Proved.AngularMeridianCore (3.8s)
+⚠ [8574/8638] Built R44.Proved.NativeGeometry (15s)
+warning: R44/Proved/NativeGeometry.lean:179:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/NativeGeometry.lean:179:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/NativeGeometry.lean:198:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/NativeGeometry.lean:198:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/NativeGeometry.lean:529:16: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+warning: R44/Proved/NativeGeometry.lean:666:6: This simp argument is unused:
+  chartU_chartPoint
+
+Hint: Omit it from the simp argument list.
+  simp [sectorRadius, cornerU, cornerV, nextCorner, eta, c̵h̵a̵r̵t̵U̵_̵c̵h̵a̵r̵t̵P̵o̵i̵n̵t̵,̵ ̵chartV_chartPoint, chartZ_chartPoint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/NativeGeometry.lean:666:25: This simp argument is unused:
+  chartV_chartPoint
+
+Hint: Omit it from the simp argument list.
+  simp [sectorRadius, cornerU, cornerV, nextCorner, eta, chartU_chartPoint, c̵h̵a̵r̵t̵V̵_̵c̵h̵a̵r̵t̵P̵o̵i̵n̵t̵,̵ ̵chartZ_chartPoint]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/NativeGeometry.lean:666:44: This simp argument is unused:
+  chartZ_chartPoint
+
+Hint: Omit it from the simp argument list.
+  simp [sectorRadius, cornerU, cornerV, nextCorner, eta, chartU_chartPoint, c̵h̵a̵r̵t̵V̵_̵c̵h̵a̵r̵t̵P̵o̵i̵n̵t̵,̵ ̵c̵h̵a̵r̵t̵Z̵_̵c̵h̵a̵r̵t̵P̵o̵i̵n̵t̵]̵c̲h̲a̲r̲t̲V̲_̲c̲h̲a̲r̲t̲P̲o̲i̲n̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8575/8638] Built R44.Proved.TubeCalculus (5.7s)
+warning: R44/Proved/TubeCalculus.lean:66:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:81:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:93:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/TubeCalculus.lean:93:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/TubeCalculus.lean:112:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:123:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:137:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/TubeCalculus.lean:137:10: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/TubeCalculus.lean:174:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:179:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:205:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeCalculus.lean:216:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [8576/8638] Built R44.Proved.RetainedCoreOverlap (6.8s)
+⚠ [8577/8638] Built R44.Proved.CarrierCoreCover (9.2s)
+warning: R44/Proved/CarrierCoreCover.lean:143:36: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵b̵a̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲b̲a̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲ at hs ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierCoreCover.lean:143:45: This simp argument is unused:
+  cellCorner
+
+Hint: Omit it from the simp argument list.
+  simp [̵b̵a̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲b̲a̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲ at hs ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8578/8638] Built R44.Proved.PerTubeHomeomorphisms (4.9s)
+✔ [8579/8638] Built R44.Proved.ComponentSolidsCover (4.3s)
+✔ [8580/8638] Built R44.Proved.FeatureTubeMapsGlue (4.4s)
+✔ [8581/8638] Built R44.Proved.FeatureTubeMapCarriesCarrier (4.3s)
+⚠ [8582/8638] Built R44.Proved.FeatureLocalCharts (10s)
+warning: R44/Proved/FeatureLocalCharts.lean:383:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [8583/8638] Built R44.Proved.FeatureGraphTopology (5.2s)
+✔ [8584/8638] Built R44.Proved.FeatureCircularConeContainment (5.7s)
+⚠ [8585/8638] Built R44.Proved.PolyhedralGerms (6.8s)
+warning: R44/Proved/PolyhedralGerms.lean:296:10: Try `simp at hrx` instead of `simpa using hrx`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8586/8638] Built R44.Proved.NativeExceptionalVertices (28s)
+warning: R44/Proved/NativeExceptionalVertices.lean:239:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/NativeExceptionalVertices.lean:243:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/NativeExceptionalVertices.lean:283:41: This simp argument is unused:
+  frameCoordinate
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵f̵e̵a̵t̵u̵r̵e̵C̵e̵n̵t̵e̵r̵,̵c̵o̵o̵r̵d̵i̵n̵a̵t̵e̵V̵e̵c̵t̵o̵r̵,̵f̵r̵a̵m̵e̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵t̵a̵n̵g̵e̵n̵t̵O̵f̵f̵s̵e̵t̵,̵V̵3̵.̵a̵d̵d̵,̵V̵3̵.̵s̵m̵u̵l̵,̵V̵3̵.̵g̵e̵t̵,̵e̵t̵a̵,̵R̵4̵4̵.̵v̵]̵s̲i̲m̲p̲ ̲[̲f̲e̲a̲t̲u̲r̲e̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲o̲o̲r̲d̲i̲n̲a̲t̲e̲V̲e̲c̲t̲o̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲t̲a̲n̲g̲e̲n̲t̲O̲f̲f̲s̲e̲t̲,̲ ̲V̲3̲.̲a̲d̲d̲,̲ ̲V̲3̲.̲s̲m̲u̲l̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲e̲t̲a̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲R̲4̲4̲.̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8587/8638] Built R44.Proved.FiniteEdgeExceptions (5.5s)
+✔ [8588/8638] Built R44.Proved.ConeSectorBudgets (5.9s)
+⚠ [8589/8638] Built R44.Proved.CarrierSymmetries (34s)
+warning: R44/Proved/CarrierSymmetries.lean:320:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:320:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:320:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:328:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:328:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:328:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:336:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:336:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:336:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:344:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:344:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:344:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:352:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:352:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:352:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:360:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:360:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:360:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierSymmetries.lean:280:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:361:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:280:51: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:321:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:329:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:337:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:345:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:353:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierSymmetries.lean:361:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8590/8638] Built R44.Proved.SectorArithmetic (8.8s)
+info: R44/Proved/SectorArithmetic.lean:62:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: R44/Proved/SectorArithmetic.lean:62:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: R44/Proved/SectorArithmetic.lean:62:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: R44/Proved/SectorArithmetic.lean:62:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: R44/Proved/SectorArithmetic.lean:57:48: This simp argument is unused:
+  hj
+
+Hint: Omit it from the simp argument list.
+  simp [featureInteriorAngle, ̲deviationSign, ̲deviationIndex, ̲featureDeviation,
+  ̵  ̵ ̵ ̵ ̵ ̵baseDeviation,
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ridgeDeviation, ̲featureSlope,h̵j̵,̵ ̲show
+  ̵  ̵ ̵ ̵ ̵ ̵(profileCoefficient r).natAbs ̲- ̲1 ̲< ̲12 by omega]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8591/8638] Built R44.Proved.PolyhedralConeMeasure (6.2s)
+warning: R44/Proved/PolyhedralConeMeasure.lean:91:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: R44/Proved/PolyhedralConeMeasure.lean:316:5: Variable name `hm` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PolyhedralConeMeasure.lean:411:26: This simp argument is unused:
+  hl
+
+Hint: Omit it from the simp argument list.
+  simp [h̵l̵,̵SectorLabel.angle]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8592/8638] Built R44.Proved.CarrierFeatureFrameReduction (7.2s)
+warning: R44/Proved/CarrierFeatureFrameReduction.lean:126:52: This simp argument is unused:
+  N3.get
+
+Hint: Omit it from the simp argument list.
+  simp [positiveFrame, Frame.act, fr, n3, V3.get, N̵3̵.̵g̵e̵t̵,̵ ̵v] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierFeatureFrameReduction.lean:149:5: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/CarrierFeatureFrameReduction.lean:175:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierFeatureFrameReduction.lean:175:48: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8593/8638] Built R44.Proved.PyramidGeometry (18s)
+warning: R44/Proved/PyramidGeometry.lean:96:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/PyramidGeometry.lean:125:79: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/PyramidGeometry.lean:167:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/PyramidGeometry.lean:193:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/PyramidGeometry.lean:230:56: Variable name `hb` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PyramidGeometry.lean:305:36: Variable name `ha` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PyramidGeometry.lean:305:57: Variable name `hb` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PyramidGeometry.lean:306:23: Variable name `heq` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/PyramidGeometry.lean:358:37: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [̵v̵a̵d̵d̵_̵e̵q̵_̵a̵d̵d̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵h̵z̵,̵z̵e̵r̵o̵_̵a̵d̵d̵]̵[̲v̲a̲d̲d̲_̲e̲q̲_̲a̲d̲d̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲h̲z̲]̲ at hm
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8594/8638] Built R44.Proved.TangentIsometry (4.8s)
+✔ [8595/8638] Built R44.Proved.FeatureContainmentRigidity (5.8s)
+⚠ [8596/8638] Built R44.Proved.TentTangentCharts (7.1s)
+info: R44/Proved/TentTangentCharts.lean:84:11: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: R44/Proved/TentTangentCharts.lean:65:62: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [̵x̵,̵p̵t̵,̵e̵t̵a̵]̵[̲x̲,̲ ̲e̲t̲a̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:75:12: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:82:10: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:84:2: 'congr 1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/TentTangentCharts.lean:122:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/TentTangentCharts.lean:99:64: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:100:64: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:101:63: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [̵x̵,̵p̵t̵,̵h̵b̵0̵.̵l̵e̵]̵[̲x̲,̲ ̲h̲b̲0̲.̲l̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:102:63: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [̵x̵,̵p̵t̵,̵h̵b̵0̵.̵l̵e̵]̵[̲x̲,̲ ̲h̲b̲0̲.̲l̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:125:14: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:129:14: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:132:14: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [x,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentTangentCharts.lean:141:15: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp only [x,p̵t̵,̵ ̲Matrix.cons_val_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8597/8638] Built R44.Proved.ConnectedFeatureCompanion (25s)
+warning: R44/Proved/ConnectedFeatureCompanion.lean:67:13: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+warning: R44/Proved/ConnectedFeatureCompanion.lean:69:31: This simp argument is unused:
+  Finset.sum_empty
+
+Hint: Omit it from the simp argument list.
+  simp only [̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵e̵m̵p̵t̵y̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵h̵a̵n̵g̵l̵e̵,̵h̵b̵a̵l̵l̵]̵[̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲,̲ ̲h̲a̲n̲g̲l̲e̲,̲ ̲h̲b̲a̲l̲l̲]̲ at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/ConnectedFeatureCompanion.lean:69:48: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Fin.sum_univ_succ, ̲Finset.sum_empty,a̵d̵d̵_̵z̵e̵r̵o̵,̵ ̲hangle, ̲hball] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8598/8638] Built R44.Proved.TentMeridianReduction (9.1s)
+warning: R44/Proved/TentMeridianReduction.lean:104:36: This simp argument is unused:
+  hx2
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.sum_univ_succ, ridgeLinear, pt, PiLp.toLp_apply,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵Real.norm_eq_abs, sq_abs, hx̵2̵,̵ ̵h̵y2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TentMeridianReduction.lean:104:41: This simp argument is unused:
+  hy2
+
+Hint: Omit it from the simp argument list.
+  simp [Fin.sum_univ_succ, ridgeLinear, pt, PiLp.toLp_apply,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵Real.norm_eq_abs, sq_abs, hx2,̵ ̵h̵y̵2̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8599/8638] Built R44.Proved.CubicFrameAlgebra (23s)
+⚠ [8600/8638] Built R44.Proved.ElementarySectorGeometry (8.2s)
+warning: R44/Proved/ElementarySectorGeometry.lean:115:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/ElementarySectorGeometry.lean:119:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/ElementarySectorGeometry.lean:108:40: This simp argument is unused:
+  hz
+
+Hint: Omit it from the simp argument list.
+  simp [angularSector, ̲complexSector, ̲z, ̲hz̵,̵h̵0, ̲h1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/ElementarySectorGeometry.lean:178:24: This simp argument is unused:
+  abs_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [neg_neg,̵ ̵a̵b̵s̵_̵n̵e̵g̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/ElementarySectorGeometry.lean:189:24: This simp argument is unused:
+  abs_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [neg_neg,̵ ̵a̵b̵s̵_̵n̵e̵g̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/ElementarySectorGeometry.lean:183:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:187:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:209:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:213:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:230:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:232:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/ElementarySectorGeometry.lean:341:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8601/8638] Built R44.Proved.MetricCarrierRecovery (36s)
+warning: R44/Proved/MetricCarrierRecovery.lean:155:20: 'norm_num' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:470:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:470:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:470:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:478:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:478:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:478:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:486:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:486:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:486:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:494:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:494:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:494:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:502:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:502:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:502:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:510:62: This simp argument is unused:
+  b0
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b̵0̵,̵ ̵b1, b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:510:66: This simp argument is unused:
+  b1
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b̵1̵,̵ ̵b2, po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:510:70: This simp argument is unused:
+  b2
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, a0, a1, a2, b0, b1, b̵2̵,̵po, fr, n3, cellCorner,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲V3.get, N3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/MetricCarrierRecovery.lean:430:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:511:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:430:51: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:471:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:479:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:487:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:495:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:503:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:511:62: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/MetricCarrierRecovery.lean:587:62: This simp argument is unused:
+  hindex
+
+Hint: Omit it from the simp argument list.
+  simp [frameActReal, frameCoordinate, po, fr, v, V3.get, h̵i̵n̵d̵e̵x̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵φ, e, N3.get, n3]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8602/8638] Built R44.Proved.NativeMateGeometry (5.3s)
+⚠ [8603/8638] Built R44.Proved.RetainedBoxGeometry (6.4s)
+warning: R44/Proved/RetainedBoxGeometry.lean:309:30: This simp argument is unused:
+  V3.get
+
+Hint: Omit it from the simp argument list.
+  simp [maxInt, ̲minInt, ̲v,V̵3̵.̵g̵e̵t̵,̵ ̲Bool.and_eq_true, ̲decide_eq_true_eq] at hwidth
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8604/8638] Built R44.Proved.PlanarAreaCarrierRecovery (4.9s)
+⚠ [8605/8638] Built R44.Proved.NativeFeatureMeridians (7.5s)
+warning: R44/Proved/NativeFeatureMeridians.lean:46:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/NativeFeatureMeridians.lean:86:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/NativeFeatureMeridians.lean:93:26: This simp argument is unused:
+  hpos
+
+Hint: Omit it from the simp argument list.
+  simp_all ̵[̵h̵p̵o̵s̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/NativeFeatureMeridians.lean:93:36: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/NativeFeatureMeridians.lean:93:36: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8606/8638] Built R44.Proved.MateCensusSemantics (4.8s)
+warning: R44/Proved/MateCensusSemantics.lean:165:4: 'change profileCoefficient u = -profileCoefficient v' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [8607/8638] Built R44.Proved.CompanionPoseDiscrete (4.0s)
+⚠ [8608/8638] Built R44.Proved.CompanionCollisionSemantics (4.9s)
+warning: R44/Proved/CompanionCollisionSemantics.lean:25:36: This simp argument is unused:
+  instBEqV3
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqV3,̵i̵n̵s̵t̵B̵E̵q̵V̵3̵.beq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:25:46: This simp argument is unused:
+  instBEqV3.beq
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqV3,̵i̵n̵s̵t̵B̵E̵q̵V̵3̵.̵b̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:28:36: This simp argument is unused:
+  instBEqN3
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqN3,̵i̵n̵s̵t̵B̵E̵q̵N̵3̵.beq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:28:46: This simp argument is unused:
+  instBEqN3.beq
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqN3,̵i̵n̵s̵t̵B̵E̵q̵N̵3̵.̵b̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:31:36: This simp argument is unused:
+  instBEqFrame
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqFrame,̵i̵n̵s̵t̵B̵E̵q̵F̵r̵a̵m̵e̵.beq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:31:49: This simp argument is unused:
+  instBEqFrame.beq
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqFrame,̵i̵n̵s̵t̵B̵E̵q̵F̵r̵a̵m̵e̵.̵b̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:34:36: This simp argument is unused:
+  instBEqPose
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqPose,̵i̵n̵s̵t̵B̵E̵q̵P̵o̵s̵e̵.beq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:34:48: This simp argument is unused:
+  instBEqPose.beq
+
+Hint: Omit it from the simp argument list.
+  simp [instBEqPose,̵i̵n̵s̵t̵B̵E̵q̵P̵o̵s̵e̵.̵b̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:118:30: This simp argument is unused:
+  Std.HashSet.contains_iff_mem
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵e̵,̵h̵r̵,̵i̵s̵o̵l̵a̵t̵e̵d̵M̵a̵t̵e̵S̵e̵t̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵m̵e̵m̵_̵o̵f̵L̵i̵s̵t̵,̵h̵i̵s̵o̵]̵[̲h̲e̲,̲ ̲h̲r̲,̲ ̲i̲s̲o̲l̲a̲t̲e̲d̲M̲a̲t̲e̲S̲e̲t̲,̲ ̲S̲t̲d̲.̲H̲a̲s̲h̲S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲L̲i̲s̲t̲,̲ ̲h̲i̲s̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:119:4: This simp argument is unused:
+  Std.HashSet.mem_ofList
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵e̵,̵h̵r̵,̵i̵s̵o̵l̵a̵t̵e̵d̵M̵a̵t̵e̵S̵e̵t̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵m̵e̵m̵_̵o̵f̵L̵i̵s̵t̵,̵h̵i̵s̵o̵]̵[̲h̲e̲,̲ ̲h̲r̲,̲ ̲i̲s̲o̲l̲a̲t̲e̲d̲M̲a̲t̲e̲S̲e̲t̲,̲ ̲S̲t̲d̲.̲H̲a̲s̲h̲S̲e̲t̲.̲c̲o̲n̲t̲a̲i̲n̲s̲_̲i̲f̲f̲_̲m̲e̲m̲,̲ ̲h̲i̲s̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:235:49: This simp argument is unused:
+  Bool.not_eq_true
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵j̵e̵c̵t̵i̵o̵n̵V̵a̵l̵i̵d̵,̵B̵o̵o̵l̵.̵a̵n̵d̵_̵e̵q̵_̵t̵r̵u̵e̵,̵L̵i̵s̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵B̵o̵o̵l̵.̵o̵r̵_̵e̵q̵_̵t̵r̵u̵e̵,̵b̵e̵q̵_̵i̵f̵f̵_̵e̵q̵,̵d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵t̵r̵u̵e̵_̵e̵q̵,̵B̵o̵o̵l̵.̵n̵o̵t̵_̵e̵q̵_̵t̵r̵u̵e̵]̵[̲r̲e̲j̲e̲c̲t̲i̲o̲n̲V̲a̲l̲i̲d̲,̲ ̲B̲o̲o̲l̲.̲a̲n̲d̲_̲e̲q̲_̲t̲r̲u̲e̲,̲ ̲L̲i̲s̲t̲.̲c̲o̲n̲t̲a̲i̲n̲s̲_̲i̲f̲f̲_̲m̲e̲m̲,̲ ̲B̲o̲o̲l̲.̲o̲r̲_̲e̲q̲_̲t̲r̲u̲e̲,̲ ̲b̲e̲q̲_̲i̲f̲f̲_̲e̲q̲,̲
+  ̲ ̲ ̲ ̲ ̲d̲e̲c̲i̲d̲e̲_̲e̲q̲_̲t̲r̲u̲e̲_̲e̲q̲]̲ at hv
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:262:25: This simp argument is unused:
+  Std.HashSet.contains_iff_mem
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵a̵s̵h̵D̵i̵f̵f̵,̵h̵p̵,̵h̵n̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵m̵e̵m̵_̵o̵f̵L̵i̵s̵t̵]̵[̲h̲a̲s̲h̲D̲i̲f̲f̲,̲ ̲h̲p̲,̲ ̲h̲n̲,̲ ̲S̲t̲d̲.̲H̲a̲s̲h̲S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲L̲i̲s̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CompanionCollisionSemantics.lean:262:54: This simp argument is unused:
+  Std.HashSet.mem_ofList
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵a̵s̵h̵D̵i̵f̵f̵,̵h̵p̵,̵h̵n̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵S̵t̵d̵.̵H̵a̵s̵h̵S̵e̵t̵.̵m̵e̵m̵_̵o̵f̵L̵i̵s̵t̵]̵[̲h̲a̲s̲h̲D̲i̲f̲f̲,̲ ̲h̲p̲,̲ ̲h̲n̲,̲ ̲S̲t̲d̲.̲H̲a̲s̲h̲S̲e̲t̲.̲c̲o̲n̲t̲a̲i̲n̲s̲_̲i̲f̲f̲_̲m̲e̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8609/8638] Built R44.Proved.OnlyRegisteredMates (4.9s)
+✔ [8610/8638] Built R44.Proved.RegisteredComponentGeometry (6.3s)
+⚠ [8611/8638] Built R44.Proved.RegisteredCellGeometry (9.8s)
+warning: R44/Proved/RegisteredCellGeometry.lean:125:8: This simp argument is unused:
+  unitCube
+
+Hint: Omit it from the simp argument list.
+  simp [̵u̵n̵i̵t̵C̵u̵b̵e̵,̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲ at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:125:28: This simp argument is unused:
+  cellCorner
+
+Hint: Omit it from the simp argument list.
+  simp [̵u̵n̵i̵t̵C̵u̵b̵e̵,̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲u̲n̲i̲t̲C̲u̲b̲e̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲ at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:125:39: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵u̵n̵i̵t̵C̵u̵b̵e̵,̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲u̲n̲i̲t̲C̲u̲b̲e̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲ at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:125:55: This simp argument is unused:
+  v
+
+Hint: Omit it from the simp argument list.
+  simp [unitCube, ̲cellCenter, ̲cellCorner, ̲scaledV3, ̲V3.get,̵v̵] at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:207:17: This simp argument is unused:
+  cellCorner
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵s̵t̵_̵e̵q̵_̵n̵o̵r̵m̵,̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵n̵o̵r̵m̵_̵s̵q̵_̵e̵q̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵,̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵s̵q̵_̵a̵b̵s̵]̵[̲d̲i̲s̲t̲_̲e̲q̲_̲n̲o̲r̲m̲,̲ ̲E̲u̲c̲l̲i̲d̲e̲a̲n̲S̲p̲a̲c̲e̲.̲n̲o̲r̲m̲_̲s̲q̲_̲e̲q̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲v̲,̲ ̲R̲e̲a̲l̲.̲n̲o̲r̲m̲_̲e̲q̲_̲a̲b̲s̲,̲ ̲s̲q̲_̲a̲b̲s̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:207:28: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵s̵t̵_̵e̵q̵_̵n̵o̵r̵m̵,̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵n̵o̵r̵m̵_̵s̵q̵_̵e̵q̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵V̵3̵.̵g̵e̵t̵,̵v̵,̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵s̵q̵_̵a̵b̵s̵]̵[̲d̲i̲s̲t̲_̲e̲q̲_̲n̲o̲r̲m̲,̲ ̲E̲u̲c̲l̲i̲d̲e̲a̲n̲S̲p̲a̲c̲e̲.̲n̲o̲r̲m̲_̲s̲q̲_̲e̲q̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲,̲ ̲R̲e̲a̲l̲.̲n̲o̲r̲m̲_̲e̲q̲_̲a̲b̲s̲,̲ ̲s̲q̲_̲a̲b̲s̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/RegisteredCellGeometry.lean:207:44: This simp argument is unused:
+  v
+
+Hint: Omit it from the simp argument list.
+  simp [dist_eq_norm, ̲EuclideanSpace.norm_sq_eq, ̲Fin.sum_univ_succ,
+  ̵  ̵ ̵ ̵ ̵ ̵cellCenter, ̲cellCorner,
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲scaledV3, ̲V3.get,v̵,̵ ̲Real.norm_eq_abs, ̲sq_abs] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8612/8638] Built R44.Proved.TubeSiteGeometry (4.8s)
+warning: R44/Proved/TubeSiteGeometry.lean:42:52: This simp argument is unused:
+  featureNormal
+
+Hint: Omit it from the simp argument list.
+  simp [̵f̵e̵a̵t̵u̵r̵e̵T̵u̵b̵e̵S̵u̵p̵p̵o̵r̵t̵,̵f̵e̵a̵t̵u̵r̵e̵R̵a̵d̵i̵u̵s̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵f̵e̵a̵t̵u̵r̵e̵T̵a̵n̵g̵e̵n̵t̵A̵x̵e̵s̵,̵h̵a̵x̵i̵s̵,̵h̵n̵,̵f̵r̵a̵m̵e̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵m̵a̵x̵_̵l̵e̵_̵i̵f̵f̵,̵a̵b̵s̵_̵n̵e̵g̵]̵[̲f̲e̲a̲t̲u̲r̲e̲T̲u̲b̲e̲S̲u̲p̲p̲o̲r̲t̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲R̲a̲d̲i̲u̲s̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲T̲a̲n̲g̲e̲n̲t̲A̲x̲e̲s̲,̲ ̲h̲a̲x̲i̲s̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲h̲n̲,̲ ̲f̲r̲a̲m̲e̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲m̲a̲x̲_̲l̲e̲_̲i̲f̲f̲,̲ ̲a̲b̲s̲_̲n̲e̲g̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TubeSiteGeometry.lean:42:66: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵f̵e̵a̵t̵u̵r̵e̵T̵u̵b̵e̵S̵u̵p̵p̵o̵r̵t̵,̵f̵e̵a̵t̵u̵r̵e̵R̵a̵d̵i̵u̵s̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵f̵e̵a̵t̵u̵r̵e̵T̵a̵n̵g̵e̵n̵t̵A̵x̵e̵s̵,̵h̵a̵x̵i̵s̵,̵h̵n̵,̵f̵r̵a̵m̵e̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵m̵a̵x̵_̵l̵e̵_̵i̵f̵f̵,̵a̵b̵s̵_̵n̵e̵g̵]̵[̲f̲e̲a̲t̲u̲r̲e̲T̲u̲b̲e̲S̲u̲p̲p̲o̲r̲t̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲R̲a̲d̲i̲u̲s̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲T̲a̲n̲g̲e̲n̲t̲A̲x̲e̲s̲,̲ ̲h̲a̲x̲i̲s̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲h̲n̲,̲ ̲f̲r̲a̲m̲e̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲,̲ ̲m̲a̲x̲_̲l̲e̲_̲i̲f̲f̲,̲ ̲a̲b̲s̲_̲n̲e̲g̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TubeSiteGeometry.lean:43:8: This simp argument is unused:
+  max_le_iff
+
+Hint: Omit it from the simp argument list.
+  simp [̵f̵e̵a̵t̵u̵r̵e̵T̵u̵b̵e̵S̵u̵p̵p̵o̵r̵t̵,̵f̵e̵a̵t̵u̵r̵e̵R̵a̵d̵i̵u̵s̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵f̵e̵a̵t̵u̵r̵e̵T̵a̵n̵g̵e̵n̵t̵A̵x̵e̵s̵,̵h̵a̵x̵i̵s̵,̵h̵n̵,̵f̵r̵a̵m̵e̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵m̵a̵x̵_̵l̵e̵_̵i̵f̵f̵,̵a̵b̵s̵_̵n̵e̵g̵]̵[̲f̲e̲a̲t̲u̲r̲e̲T̲u̲b̲e̲S̲u̲p̲p̲o̲r̲t̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲R̲a̲d̲i̲u̲s̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲T̲a̲n̲g̲e̲n̲t̲A̲x̲e̲s̲,̲ ̲h̲a̲x̲i̲s̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲h̲n̲,̲ ̲f̲r̲a̲m̲e̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲a̲b̲s̲_̲n̲e̲g̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TubeSiteGeometry.lean:43:19: This simp argument is unused:
+  abs_neg
+
+Hint: Omit it from the simp argument list.
+  simp [̵f̵e̵a̵t̵u̵r̵e̵T̵u̵b̵e̵S̵u̵p̵p̵o̵r̵t̵,̵f̵e̵a̵t̵u̵r̵e̵R̵a̵d̵i̵u̵s̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵f̵e̵a̵t̵u̵r̵e̵T̵a̵n̵g̵e̵n̵t̵A̵x̵e̵s̵,̵h̵a̵x̵i̵s̵,̵h̵n̵,̵f̵r̵a̵m̵e̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵m̵a̵x̵_̵l̵e̵_̵i̵f̵f̵,̵a̵b̵s̵_̵n̵e̵g̵]̵[̲f̲e̲a̲t̲u̲r̲e̲T̲u̲b̲e̲S̲u̲p̲p̲o̲r̲t̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲R̲a̲d̲i̲u̲s̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲T̲a̲n̲g̲e̲n̲t̲A̲x̲e̲s̲,̲ ̲h̲a̲x̲i̲s̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲h̲n̲,̲ ̲f̲r̲a̲m̲e̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲m̲a̲x̲_̲l̲e̲_̲i̲f̲f̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/TubeSiteGeometry.lean:78:4: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/TubeSiteGeometry.lean:93:77: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeSiteGeometry.lean:94:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/TubeSiteGeometry.lean:132:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8613/8638] Built R44.Proved.OrdinaryMeridians (66s)
+warning: R44/Proved/OrdinaryMeridians.lean:99:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/OrdinaryMeridians.lean:99:66: 'omega' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/OrdinaryMeridians.lean:121:75: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [DischargePyramid.norm_sq, ̲coordinateLinear, ̲coordVec, ̲third,̵p̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/OrdinaryMeridians.lean:183:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/OrdinaryMeridians.lean:193:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/OrdinaryMeridians.lean:203:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8614/8638] Built R44.Proved.PanelIncidence (88s)
+warning: R44/Proved/PanelIncidence.lean:110:26: This simp argument is unused:
+  v3_eq_iff
+
+Hint: Omit it from the simp argument list.
+  simp [̵v̵3̵_̵e̵q̵_̵i̵f̵f̵,̵V̵3̵.̵a̵d̵d̵,̵u̵n̵i̵t̵A̵x̵i̵s̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲V̲3̲.̲a̲d̲d̲,̲ ̲u̲n̲i̲t̲A̲x̲i̲s̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/PanelIncidence.lean:110:52: This simp argument is unused:
+  V3.get
+
+Hint: Omit it from the simp argument list.
+  simp [̵v̵3̵_̵e̵q̵_̵i̵f̵f̵,̵V̵3̵.̵a̵d̵d̵,̵u̵n̵i̵t̵A̵x̵i̵s̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲v̲3̲_̲e̲q̲_̲i̲f̲f̲,̲ ̲V̲3̲.̲a̲d̲d̲,̲ ̲u̲n̲i̲t̲A̲x̲i̲s̲,̲ ̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/PanelIncidence.lean:110:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/PanelIncidence.lean:110:66: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/PanelIncidence.lean:242:8: This simp argument is unused:
+  hcontains
+
+Hint: Omit it from the simp argument list.
+  simp [h̵c̵o̵n̵t̵a̵i̵n̵s̵,̵Bool.and_eq_true] at hco
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8615/8638] Built R44.Proved.PairedCollarMaps (6.7s)
+warning: R44/Proved/PairedCollarMaps.lean:99:24: This simp argument is unused:
+  max_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [̵f̵e̵a̵t̵u̵r̵e̵R̵a̵d̵i̵u̵s̵,̵s̵q̵u̵a̵r̵e̵N̵o̵r̵m̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵f̵e̵a̵t̵u̵r̵e̵T̵a̵n̵g̵e̵n̵t̵A̵x̵e̵s̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵f̵e̵a̵t̵u̵r̵e̵A̵x̵i̵s̵,̵f̵e̵a̵t̵u̵r̵e̵A̵x̵i̵s̵O̵f̵,̵h̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵f̵r̵a̵m̵e̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵V̵3̵.̵g̵e̵t̵,̵v̵,̵m̵a̵x̵_̵c̵o̵m̵m̵,̵m̵a̵x̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵m̵a̵x̵_̵a̵s̵s̵o̵c̵,̵a̵b̵s̵_̵n̵o̵n̵n̵e̵g̵]̵[̲f̲e̲a̲t̲u̲r̲e̲R̲a̲d̲i̲u̲s̲,̲ ̲s̲q̲u̲a̲r̲e̲N̲o̲r̲m̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲T̲a̲n̲g̲e̲n̲t̲A̲x̲e̲s̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲A̲x̲i̲s̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲f̲e̲a̲t̲u̲r̲e̲A̲x̲i̲s̲O̲f̲,̲ ̲h̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲f̲r̲a̲m̲e̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲,̲ ̲m̲a̲x̲_̲c̲o̲m̲m̲,̲ ̲m̲a̲x̲_̲a̲s̲s̲o̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲a̲b̲s̲_̲n̲o̲n̲n̲e̲g̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/PairedCollarMaps.lean:99:38: This simp argument is unused:
+  max_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [̵f̵e̵a̵t̵u̵r̵e̵R̵a̵d̵i̵u̵s̵,̵s̵q̵u̵a̵r̵e̵N̵o̵r̵m̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵f̵e̵a̵t̵u̵r̵e̵T̵a̵n̵g̵e̵n̵t̵A̵x̵e̵s̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵f̵e̵a̵t̵u̵r̵e̵A̵x̵i̵s̵,̵f̵e̵a̵t̵u̵r̵e̵A̵x̵i̵s̵O̵f̵,̵h̵,̵f̵e̵a̵t̵u̵r̵e̵N̵o̵r̵m̵a̵l̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵f̵r̵a̵m̵e̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵V̵3̵.̵g̵e̵t̵,̵v̵,̵m̵a̵x̵_̵c̵o̵m̵m̵,̵m̵a̵x̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵m̵a̵x̵_̵a̵s̵s̵o̵c̵,̵a̵b̵s̵_̵n̵o̵n̵n̵e̵g̵]̵[̲f̲e̲a̲t̲u̲r̲e̲R̲a̲d̲i̲u̲s̲,̲ ̲s̲q̲u̲a̲r̲e̲N̲o̲r̲m̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲T̲a̲n̲g̲e̲n̲t̲A̲x̲e̲s̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲A̲x̲i̲s̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲f̲e̲a̲t̲u̲r̲e̲A̲x̲i̲s̲O̲f̲,̲ ̲h̲,̲ ̲f̲e̲a̲t̲u̲r̲e̲N̲o̲r̲m̲a̲l̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲ ̲f̲r̲a̲m̲e̲C̲o̲o̲r̲d̲i̲n̲a̲t̲e̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲,̲ ̲m̲a̲x̲_̲c̲o̲m̲m̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲m̲a̲x̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲,̲ ̲a̲b̲s̲_̲n̲o̲n̲n̲e̲g̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/PairedCollarMaps.lean:109:50: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  simp only [̵c̵o̵o̵r̵d̵i̵n̵a̵t̵e̵P̵e̵r̵m̵u̵t̵a̵t̵i̵o̵n̵s̵,̵L̵i̵s̵t̵.̵m̵e̵m̵_̵c̵o̵n̵s̵,̵L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵
+  ̵ ̵ ̵ ̵ ̵L̵i̵s̵t̵.̵n̵o̵t̵_̵m̵e̵m̵_̵n̵i̵l̵,̵o̵r̵_̵f̵a̵l̵s̵e̵]̵[̲c̲o̲o̲r̲d̲i̲n̲a̲t̲e̲P̲e̲r̲m̲u̲t̲a̲t̲i̲o̲n̲s̲,̲ ̲L̲i̲s̲t̲.̲m̲e̲m̲_̲c̲o̲n̲s̲,̲ ̲L̲i̲s̲t̲.̲n̲o̲t̲_̲m̲e̲m̲_̲n̲i̲l̲,̲ ̲o̲r̲_̲f̲a̲l̲s̲e̲]̲ at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/PairedCollarMaps.lean:111:39: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  simp only [̵s̵i̵g̵n̵T̵r̵i̵p̵l̵e̵s̵,̵L̵i̵s̵t̵.̵m̵e̵m̵_̵c̵o̵n̵s̵,̵L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵
+  ̵ ̵ ̵ ̵ ̵L̵i̵s̵t̵.̵n̵o̵t̵_̵m̵e̵m̵_̵n̵i̵l̵,̵o̵r̵_̵f̵a̵l̵s̵e̵]̵[̲s̲i̲g̲n̲T̲r̲i̲p̲l̲e̲s̲,̲ ̲L̲i̲s̲t̲.̲m̲e̲m̲_̲c̲o̲n̲s̲,̲ ̲L̲i̲s̲t̲.̲n̲o̲t̲_̲m̲e̲m̲_̲n̲i̲l̲,̲ ̲o̲r̲_̲f̲a̲l̲s̲e̲]̲ at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/PairedCollarMaps.lean:128:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/PairedCollarMaps.lean:128:6: 'rw [max_comm (|x 2|), max_assoc, max_left_comm]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/PairedCollarMaps.lean:178:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/PairedCollarMaps.lean:190:10: This simp argument is unused:
+  List.contains_iff_mem
+
+Hint: Omit it from the simp argument list.
+  simp [L̵i̵s̵t̵.̵c̵o̵n̵t̵a̵i̵n̵s̵_̵i̵f̵f̵_̵m̵e̵m̵,̵hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/PairedCollarMaps.lean:301:12: This simp argument is unused:
+  hact
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵a̵c̵t̵,̵V̵3̵.̵n̵e̵g̵,̵V̵3̵.̵s̵m̵u̵l̵,̵v̵]̵[̲V̲3̲.̲n̲e̲g̲,̲ ̲V̲3̲.̲s̲m̲u̲l̲,̲ ̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/PairedCollarMaps.lean:304:38: This simp argument is unused:
+  V3.get
+
+Hint: Omit it from the simp argument list.
+  simp [̵h̵,̵s̵a̵m̵e̵A̵x̵i̵s̵,̵V̵3̵.̵n̵e̵g̵,̵V̵3̵.̵s̵m̵u̵l̵,̵V̵3̵.̵g̵e̵t̵,̵v̵]̵[̲h̲,̲ ̲s̲a̲m̲e̲A̲x̲i̲s̲,̲ ̲V̲3̲.̲n̲e̲g̲,̲ ̲V̲3̲.̲s̲m̲u̲l̲,̲ ̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8616/8638] Built R44.Proved.AssemblyCollarIncidence (5.2s)
+warning: R44/Proved/AssemblyCollarIncidence.lean:42:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/Proved/AssemblyCollarIncidence.lean:42:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/AssemblyCollarIncidence.lean:237:10: This simp argument is unused:
+  rigid_image_iff
+
+Hint: Omit it from the simp argument list.
+  simp [r̵i̵g̵i̵d̵_̵i̵m̵a̵g̵e̵_̵i̵f̵f̵,̵AffineIsometryEquiv.coe_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/AssemblyCollarIncidence.lean:240:10: This simp argument is unused:
+  rigid_image_iff
+
+Hint: Omit it from the simp argument list.
+  simp [r̵i̵g̵i̵d̵_̵i̵m̵a̵g̵e̵_̵i̵f̵f̵,̵AffineIsometryEquiv.coe_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8617/8638] Built R44.Proved.AssemblyCollarData (4.3s)
+warning: R44/Proved/AssemblyCollarData.lean:51:5: Variable name `hH` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8618/8638] Built R44.Proved.SmallCollarRealization (3.9s)
+⚠ [8619/8638] Built R44.Proved.CarrierBoundaryStrata (345s)
+warning: R44/Proved/CarrierBoundaryStrata.lean:81:16: This simp argument is unused:
+  ht
+
+Hint: Omit it from the simp argument list.
+  simp [hz, ht̵,̵ ̵h̵lt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:81:20: This simp argument is unused:
+  hlt
+
+Hint: Omit it from the simp argument list.
+  simp [hz, ht,̵ ̵h̵l̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:84:14: This simp argument is unused:
+  hz
+
+Hint: Omit it from the simp argument list.
+  simp [hz̵,̵ ̵h̵t, hgt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:84:22: This simp argument is unused:
+  hgt
+
+Hint: Omit it from the simp argument list.
+  simp [hz, ht,̵ ̵h̵g̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:168:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:173:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:178:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:183:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:188:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:193:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:199:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:205:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:211:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:217:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:223:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:229:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:235:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:241:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:247:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:253:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:259:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:265:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:271:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:277:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:283:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:289:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:295:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:301:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:307:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:313:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:319:60: This simp argument is unused:
+  neg_nonpos
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵t̵a̵t̵e̵C̵o̵n̵e̵,̵F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵F̵i̵n̵.̵e̵x̵i̵s̵t̵s̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵n̵e̵g̵_̵n̵o̵n̵p̵o̵s̵]̵[̲s̲t̲a̲t̲e̲C̲o̲n̲e̲,̲ ̲F̲i̲n̲.̲f̲o̲r̲a̲l̲l̲_̲f̲i̲n̲_̲s̲u̲c̲c̲,̲ ̲F̲i̲n̲.̲e̲x̲i̲s̲t̲s̲_̲f̲i̲n̲_̲s̲u̲c̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:169:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:174:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:179:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:184:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:189:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:194:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:200:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:206:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:212:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:218:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:224:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:230:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:236:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:242:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:248:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:254:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:260:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:266:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:272:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:278:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:284:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:290:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:296:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:302:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:308:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:314:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:320:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:320:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:321:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:322:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:324:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:325:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:327:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:328:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:330:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:331:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:333:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:334:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:336:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:337:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:278:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:284:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:290:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:302:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:308:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:314:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:169:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:174:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:179:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:184:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:189:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:194:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:200:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:206:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:212:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:218:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:224:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:230:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:236:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:242:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:248:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:254:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:260:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:266:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:272:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:278:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:284:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:290:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:296:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:302:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:308:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:314:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:320:8: 'tauto' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:320:18: 'done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:321:4: 'refine Or.inr ⟨2, ?_⟩' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:322:4: 'convert OrdinaryCone.reentrant (1 : Fin 3) (2 : Fin 3) (by omega) (1 : ℝ) (-1 : ℝ) (Or.inl rfl) (Or.inr rfl) using
+  1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:324:4: 'ext d' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:325:4: 'simp [stateCone, Fin.forall_fin_succ, Fin.exists_fin_succ, neg_nonpos] <;> tauto <;> done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:327:4: 'refine Or.inr ⟨2, ?_⟩' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:328:4: 'convert OrdinaryCone.reentrant (1 : Fin 3) (2 : Fin 3) (by omega) (-1 : ℝ) (1 : ℝ) (Or.inr rfl) (Or.inl rfl) using
+  1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:330:4: 'ext d' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:331:4: 'simp [stateCone, Fin.forall_fin_succ, Fin.exists_fin_succ, neg_nonpos] <;> tauto <;> done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:333:4: 'refine Or.inr ⟨2, ?_⟩' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:334:4: 'convert OrdinaryCone.reentrant (1 : Fin 3) (2 : Fin 3) (by omega) (-1 : ℝ) (-1 : ℝ) (Or.inr rfl) (Or.inr rfl) using
+  1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:336:4: 'ext d' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:337:4: 'simp [stateCone, Fin.forall_fin_succ, Fin.exists_fin_succ, neg_nonpos] <;> tauto <;> done' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/Proved/CarrierBoundaryStrata.lean:360:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8620/8638] Built R44.Proved.CarrierCoordinateStates (5.7s)
+warning: R44/Proved/CarrierCoordinateStates.lean:804:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/CarrierCoordinateStates.lean:804:68: 'linarith' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8621/8638] Built R44.Proved.NativeBoundaryLocal (7.6s)
+warning: R44/Proved/NativeBoundaryLocal.lean:265:23: Variable name `hT` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8622/8638] Built R44.Proved.CanonicalTentStrata (6.3s)
+warning: R44/Proved/CanonicalTentStrata.lean:191:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CanonicalTentStrata.lean:193:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CanonicalTentStrata.lean:195:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CanonicalTentStrata.lean:197:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/Proved/CanonicalTentStrata.lean:252:37: This simp argument is unused:
+  pt
+
+Hint: Omit it from the simp argument list.
+  simp [̵p̵t̵,̵h̵x̵v̵,̵h̵y̵v̵,̵h̵y̵z̵]̵[̲h̲x̲v̲,̲ ̲h̲y̲v̲,̲ ̲h̲y̲z̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8623/8638] Built R44.Proved.NativeBoundaryStrata (4.4s)
+⚠ [8624/8638] Built R44.Proved.GenericBoundaryLabels (4.5s)
+warning: R44/Proved/GenericBoundaryLabels.lean:75:5: Variable name `hbudget` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8625/8638] Built R44.Proved.GenericFeaturePartner (3.9s)
+✔ [8626/8638] Built R44.Proved.MeshChartIncidence (21s)
+⚠ [8627/8638] Built R44.Proved.MeshChartInterpretation (5.4s)
+warning: R44/Proved/MeshChartInterpretation.lean:259:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/Proved/MeshChartInterpretation.lean:259:70: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8628/8638] Built R44.Proved.NativeDihedralSectors (3.7s)
+warning: R44/Proved/NativeDihedralSectors.lean:24:5: Variable name `hmesh` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/NativeDihedralSectors.lean:24:33: Variable name `haudit` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/Proved/NativeDihedralSectors.lean:25:5: Variable name `hprofile` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8629/8638] Built R44.Proved.MeshSemantics (3.0s)
+✔ [8630/8638] Built R44.Proved.CompleteDihedralList (5.4s)
+✔ [8631/8638] Built R44.Proved.ConcreteCompanions (83s)
+✔ [8632/8638] Built R44.Proved.UnrestrictedAlignment (3.9s)
+⚠ [8633/8638] Built R44.Proved.BaselineComponentCoversGrid (4.0s)
+warning: R44/Proved/BaselineComponentCoversGrid.lean:32:19: This simp argument is unused:
+  cellCorner
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵s̵t̵_̵e̵q̵_̵n̵o̵r̵m̵,̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵n̵o̵r̵m̵_̵s̵q̵_̵e̵q̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵u̵n̵i̵t̵A̵x̵i̵s̵,̵V̵3̵.̵a̵d̵d̵,̵V̵3̵.̵g̵e̵t̵,̵v̵,̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵s̵q̵_̵a̵b̵s̵]̵[̲d̲i̲s̲t̲_̲e̲q̲_̲n̲o̲r̲m̲,̲ ̲E̲u̲c̲l̲i̲d̲e̲a̲n̲S̲p̲a̲c̲e̲.̲n̲o̲r̲m̲_̲s̲q̲_̲e̲q̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲s̲c̲a̲l̲e̲d̲V̲3̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲u̲n̲i̲t̲A̲x̲i̲s̲,̲ ̲V̲3̲.̲a̲d̲d̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲,̲ ̲R̲e̲a̲l̲.̲n̲o̲r̲m̲_̲e̲q̲_̲a̲b̲s̲,̲ ̲s̲q̲_̲a̲b̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/Proved/BaselineComponentCoversGrid.lean:32:30: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵d̵i̵s̵t̵_̵e̵q̵_̵n̵o̵r̵m̵,̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵n̵o̵r̵m̵_̵s̵q̵_̵e̵q̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵c̵e̵l̵l̵C̵e̵n̵t̵e̵r̵,̵c̵e̵l̵l̵C̵o̵r̵n̵e̵r̵,̵s̵c̵a̵l̵e̵d̵V̵3̵,̵u̵n̵i̵t̵A̵x̵i̵s̵,̵V̵3̵.̵a̵d̵d̵,̵V̵3̵.̵g̵e̵t̵,̵v̵,̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵s̵q̵_̵a̵b̵s̵]̵[̲d̲i̲s̲t̲_̲e̲q̲_̲n̲o̲r̲m̲,̲ ̲E̲u̲c̲l̲i̲d̲e̲a̲n̲S̲p̲a̲c̲e̲.̲n̲o̲r̲m̲_̲s̲q̲_̲e̲q̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲ ̲c̲e̲l̲l̲C̲e̲n̲t̲e̲r̲,̲ ̲c̲e̲l̲l̲C̲o̲r̲n̲e̲r̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲u̲n̲i̲t̲A̲x̲i̲s̲,̲ ̲V̲3̲.̲a̲d̲d̲,̲ ̲V̲3̲.̲g̲e̲t̲,̲ ̲v̲,̲ ̲R̲e̲a̲l̲.̲n̲o̲r̲m̲_̲e̲q̲_̲a̲b̲s̲,̲ ̲s̲q̲_̲a̲b̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8634/8638] Built R44.LogicalSpine (251s)
+warning: R44/LogicalSpine.lean:445:30: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:466:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:578:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:1301:6: 'change 7 * (refine p).length = doubledChairCells.length' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/LogicalSpine.lean:1457:19: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [hs,̵ ̵i̵f̵_̵f̵a̵l̵s̵e̵] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:1516:19: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [hs,̵ ̵i̵f̵_̵f̵a̵l̵s̵e̵] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:1613:4: Try `simp at hab` instead of `simpa using hab`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/LogicalSpine.lean:2062:28: Variable name `H` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:2072:5: Variable name `H` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:2092:29: Variable name `H` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:2782:10: This simp argument is unused:
+  hfalse
+
+Hint: Omit it from the simp argument list.
+  simp [h̵f̵a̵l̵s̵e̵,̵ ̵centralCellFace]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:2891:6: This simp argument is unused:
+  N3.get
+
+Hint: Omit it from the simp argument list.
+  simp [Frame.transpose, Frame.act, V3.neg, V3.smul, V3.add,
+  ̵  ̵ ̵ ̵ ̵ ̵N̵3̵.̵g̵e̵t̵,̵ ̵V3.get, fr, n3, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:2891:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/LogicalSpine.lean:2891:37: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/LogicalSpine.lean:2938:26: Variable name `hg` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:2938:47: Variable name `hh` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:3250:2: 'change c.relative ((doubledPose rootPose).transform d) = c.relative d' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/LogicalSpine.lean:3302:27: This simp argument is unused:
+  N3.get
+
+Hint: Omit it from the simp argument list.
+  simp [centralGridDirections, centralFaceDirections, Frame.transpose,
+  ̵  ̵ ̵ ̵ ̵ ̵Frame.act, unitAxis,
+  ̲ N̵3̵.̵g̵e̵t̵,̵  ̲ ̲ ̲ ̲V3.get, fr, n3, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:3426:13: This simp argument is unused:
+  V3.x
+
+Hint: Omit it from the simp argument list.
+  simp only [V3.x̵,̵ ̵V̵3̵.̵y, V3.z] at hbx0 hbx2 hby0 hby2 hbz0 hbz2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:3426:19: This simp argument is unused:
+  V3.y
+
+Hint: Omit it from the simp argument list.
+  simp only [V3.x, V3.y̵,̵ ̵V̵3̵.̵z] at hbx0 hbx2 hby0 hby2 hbz0 hbz2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:3426:25: This simp argument is unused:
+  V3.z
+
+Hint: Omit it from the simp argument list.
+  simp only [V3.x, V3.y,̵ ̵V̵3̵.̵z̵] at hbx0 hbx2 hby0 hby2 hbz0 hbz2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:3427:13: This simp argument is unused:
+  V3.x
+
+Hint: Omit it from the simp argument list.
+  simp only [V3.x̵,̵ ̵V̵3̵.̵y, V3.z] at hcx0 hcx2 hcy0 hcy2 hcz0 hcz2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:3427:19: This simp argument is unused:
+  V3.y
+
+Hint: Omit it from the simp argument list.
+  simp only [V3.x, V3.y̵,̵ ̵V̵3̵.̵z] at hcx0 hcx2 hcy0 hcy2 hcz0 hcz2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:3427:25: This simp argument is unused:
+  V3.z
+
+Hint: Omit it from the simp argument list.
+  simp only [V3.x, V3.y,̵ ̵V̵3̵.̵z̵] at hcx0 hcx2 hcy0 hcy2 hcz0 hcz2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:3716:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:3723:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:3998:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/LogicalSpine.lean:4301:31: This simp argument is unused:
+  scaledV3
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵c̵a̵l̵e̵d̵V̵3̵,̵ ̵V̵3̵.̵a̵d̵d̵,̵[̲V̲3̲.̲a̲d̲d̲,̲ V3.get, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:4331:20: Variable name `hshell` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:4332:23: Variable name `hg` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:4383:5: Variable name `hgrid` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:4963:20: This simp argument is unused:
+  V3.neg
+
+Hint: Omit it from the simp argument list.
+  simp [V3.sub, V3.n̵e̵g̵,̵ ̵V̵3̵.̵smul, V3.add, v]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:5120:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:5122:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:5124:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:5126:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:5128:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:5130:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: R44/LogicalSpine.lean:5223:31: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: R44/LogicalSpine.lean:5223:31: 'omega' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: R44/LogicalSpine.lean:5727:10: This simp argument is unused:
+  unitCube
+
+Hint: Omit it from the simp argument list.
+  simp [u̵n̵i̵t̵C̵u̵b̵e̵,̵ ̵V3.smul, V3.add, V3.get, v, smul_eq_mul] at hi ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: R44/LogicalSpine.lean:5756:5: Variable name `H` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:5756:37: Variable name `hregistered` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:6074:23: Try `simp at htouch` instead of `simpa using htouch`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: R44/LogicalSpine.lean:6619:19: Variable name `n` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:6629:19: Variable name `n` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:6644:16: Variable name `n` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: R44/LogicalSpine.lean:6828:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [8635/8638] Built R44.ScopeRegressions (3.8s)
+ℹ [8636/8638] Built R44.Axioms (3.9s)
+info: R44/Axioms.lean:7:0: 'R44.children_partition_2P' does not depend on any axioms
+info: R44/Axioms.lean:8:0: 'R44.contact_closure_30' depends on axioms: [contact_closure_30._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:9:0: 'R44.profile_canonical' depends on axioms: [propext, profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:10:0: 'R44.atlas_44' depends on axioms: [propext, Classical.choice, Quot.sound, atlas_44._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:11:0: 'R44.first_shells_33' depends on axioms: [propext, first_shells_33._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:12:0: 'R44.central_completion' depends on axioms: [propext, central_completion._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:13:0: 'R44.parent_conflicts_28' depends on axioms: [parent_conflicts_28._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:14:0: 'R44.parent_atlas_eq_fine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:15:0: 'R44.mates_census' depends on axioms: [propext, Classical.choice, Quot.sound, mates_census._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:16:0: 'R44.deviations_distinct' does not depend on any axioms
+info: R44/Axioms.lean:17:0: 'R44.no_native_symmetry' depends on axioms: [propext]
+info: R44/Axioms.lean:18:0: 'R44.native_features_length' depends on axioms: [propext]
+info: R44/Axioms.lean:19:0: 'R44.native_feature_centers_nodup' depends on axioms: [propext]
+info: R44/Axioms.lean:20:0: 'R44.native_feature_normal_axis' depends on axioms: [propext]
+info: R44/Axioms.lean:21:0: 'R44.solid_mesh_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ solid_mesh_exact._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:22:0: 'R44.boundary_sphere' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ boundary_sphere._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:23:0: 'R44.nested_substitution_controls' depends on axioms: [propext,
+ Quot.sound,
+ nested_substitution_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:24:0: 'R44.hierarchy_cell_controls' depends on axioms: [hierarchy_cell_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:25:0: 'R44.registered_shell_cell_controls' depends on axioms: [propext,
+ registered_shell_cell_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:26:0: 'R44.orientation_group_24' depends on axioms: [propext, Quot.sound, orientation_group_24._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:27:0: 'R44.substitution_modular_coincidence' depends on axioms: [propext,
+ substitution_modular_coincidence._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:28:0: 'R44.seed_language_closure' depends on axioms: [propext, Quot.sound, seed_language_closure._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:29:0: 'R44.mesh_angle_audit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ mesh_angle_audit._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:30:0: 'R44.no_self_mate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:31:0: 'R44.unitCube_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:32:0: 'R44.unitCube_regularClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:33:0: 'R44.unitCube_interior_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:34:0: 'R44.P_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:35:0: 'R44.P_regularClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:36:0: 'R44.P_interior_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:37:0: 'R44.cellCenter_mem_interior_unitCube' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:38:0: 'R44.featureTubeMap_fixed_on_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:39:0: 'R44.featureTubeSupport_coordinate_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:40:0: 'R44.featureTubeSupports_pairwiseDisjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:41:0: 'R44.planar_area_native_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:42:0: 'R44.hasTubeHomeomorphism_of_tube_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:43:0: 'R44.P_homeomorphic_Q_of_tube_homeomorphism' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:44:0: 'R44.Q_compact_of_tube_homeomorphism' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:45:0: 'R44.Q_regularClosed_of_tube_homeomorphism' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:46:0: 'R44.Q_interior_nonempty_of_tube_homeomorphism' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:47:0: 'R44.compactRegularClosedBall_of_tube_homeomorphism' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:48:0: 'R44.tube_ball' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:49:0: 'R44.tube_homeomorphism' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:50:0: 'R44.local_finiteness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:51:0: 'R44.strictDownwardCone_isOpen' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:52:0: 'R44.strictDownwardCone_subset_tangentCone_hypograph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:53:0: 'R44.circularCone_isOpen' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:54:0: 'R44.coneAngle_gt_four_pi_div_three_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:55:0: 'R44.solidAngle_linearIsometry_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:56:0: 'R44.solidAngle_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:57:0: 'R44.r44_cone_angle_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:58:0: 'R44.uniform_solid_angle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:59:0: 'R44.native_asymmetry_planar_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1,
+ transported_role_geometry._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:60:0: 'R44.native_asymmetry_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:61:0: 'R44.retained_core_overlap_holds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:62:0: 'R44.carrier_feature_frame_reduction_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1,
+ transported_role_geometry._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:63:0: 'R44.circular_cone_solid_angle_holds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:64:0: 'R44.per_tube_homeomorphisms_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:65:0: 'R44.feature_tube_maps_glue_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:66:0: 'R44.feature_tube_map_carries_carrier_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:67:0: 'R44.feature_circular_cone_containment_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:68:0: 'R44.planar_area_carrier_recovery_holds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:69:0: 'R44.mate_records_roles_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:70:0: 'R44.cone_sector_budgets_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:71:0: 'R44.connected_feature_companion_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:72:0: 'R44.feature_containment_rigidity_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:73:0: 'R44.companion_pose_discrete_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:74:0: 'R44.only_registered_mates_holds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:75:0: 'R44.component_solids_cover_holds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:76:0: 'R44.small_collar_realization_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:77:0: 'R44.DischargeAssembly.registered_assembly_collar_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:78:0: 'R44.DischargeCarrierStrata.carrier_coordinate_states_table' depends on axioms: [propext,
+ Quot.sound,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:79:0: 'R44.DischargeMeshTrace.native_mesh_incidence_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:80:0: 'R44.DischargeVertexData.feature_index_bounds' depends on axioms: [DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:81:0: 'R44.DischargeVertexData.feature_vertex_lookup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:82:0: 'R44.DischargeVertexData.carrier_vertex_lookup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:83:0: 'R44.DischargeMeridian.native_oriented_wedge_charts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:84:0: 'R44.DischargeNativeStrata.native_boundary_strata' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:85:0: 'R44.complete_dihedral_list_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:86:0: 'R44.generic_feature_partner_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ profile_canonical._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:87:0: 'R44.baseline_component_covers_grid_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:88:0: 'R44.unrestricted_alignment_holds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:89:0: 'R44.Packing.ext' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:90:0: 'R44.Tiling.ext' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:91:0: 'R44.realizesPose_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:92:0: 'R44.childOfParent_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:93:0: 'R44.ParentPartition.ext' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:94:0: 'R44.hasUniqueParent_of_completeParents' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:95:0: 'R44.halfPose_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:96:0: 'R44.halvedParentPoses_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:97:0: 'R44.closedContacts_subset_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:98:0: 'R44.hierarchyPatch_one' depends on axioms: [propext, Quot.sound]
+info: R44/Axioms.lean:99:0: 'R44.hierarchyPatch_two' depends on axioms: [propext, Quot.sound]
+info: R44/Axioms.lean:100:0: 'R44.hierarchy_patch_nesting' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:101:0: 'R44.cells_refine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:102:0: 'R44.cells_two_refine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:103:0: 'R44.hierarchy_cells_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:104:0: 'R44.hierarchy_box_containment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:105:0: 'R44.hierarchy_boxes_exhaust' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:106:0: 'R44.nested_contact_language' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:107:0: 'R44.nested_baseline_assembly' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:108:0: 'R44.nested_atlas_baseline_assembly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ hierarchy_cell_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:109:0: 'R44.formula_mate_owns_far_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:110:0: 'R44.body_cellCenter_mem_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:111:0: 'R44.component_cell_owner_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:112:0: 'R44.perm_lt_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:113:0: 'R44.frameCoordinate_of_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:114:0: 'R44.frameActReal_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:115:0: 'R44.frameActReal_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:116:0: 'R44.realizesPose_relative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:117:0: 'R44.role_companion_owns_far_cell' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:118:0: 'R44.shellCell_unique_owner_with_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:119:0: 'R44.enumerateShells_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:120:0: 'R44.realizesPose_pose_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:121:0: 'R44.featureAdjacent_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:122:0: 'R44.sameFeatureComponent_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:123:0: 'R44.sameFeatureComponent_trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:124:0: 'R44.shellOwner_indices_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:125:0: 'R44.mem_realizedShellCover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:126:0: 'R44.realizedShellCover_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:127:0: 'R44.realizedShellCover_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:128:0: 'R44.registered_first_shells' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:129:0: 'R44.realizesPose_transform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:130:0: 'R44.touch_relative_has_shell_cell' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:131:0: 'R44.certified_shells_complete_parents' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:132:0: 'R44.complete_parent_conflicts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:133:0: 'R44.actual_parent_crossContacts_legal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:134:0: 'R44.parent_atlas_admissibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:135:0: 'R44.halved_parent_baseline_tiling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:136:0: 'R44.registration_of_tiling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:137:0: 'R44.handedness_eq_one_or_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:138:0: 'R44.handedness_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:139:0: 'R44.Registration.handedness_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:140:0: 'R44.tiling_homochiral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:141:0: 'R44.tiling_orientation_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:142:0: 'R44.tiling_handedness_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:143:0: 'R44.no_mixed_handedness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:144:0: 'R44.tiling_chirality_corollary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:145:0: 'R44.parent_local_to_global' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:146:0: 'R44.unique_parent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:147:0: 'R44.uniqueParentPartition_translate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:148:0: 'R44.coarsening_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:149:0: 'R44.coarsening_is_tiling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:150:0: 'R44.coarsening_placements' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:151:0: 'R44.coarsening_translation_equivariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:152:0: 'R44.period_halving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ transported_role_geometry._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:153:0: 'R44.period_iterate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ transported_role_geometry._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:154:0: 'R44.carrier_hierarchy_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:155:0: 'R44.carrier_hierarchy_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:156:0: 'R44.carrier_hierarchy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:157:0: 'R44.carrierHierarchy_geometric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:158:0: 'R44.geometric_hierarchy_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:159:0: 'R44.geometric_hierarchy_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:160:0: 'R44.CarrierHierarchy.toGeometric_toCarrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:161:0: 'R44.GeometricHierarchy.toCarrier_toGeometric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:162:0: 'R44.gridVector_norm_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:163:0: 'R44.no_period' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:164:0: 'R44.sym_card_le_24' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: R44/Axioms.lean:165:0: 'R44.nested_exhaustion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ hierarchy_cell_controls._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:166:0: 'R44.existence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ contact_closure_30._native.native_decide.ax_1_1,
+ hierarchy_cell_controls._native.native_decide.ax_1_1,
+ nested_substitution_controls._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:167:0: 'R44.r44_einstein_of_hypotheses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ contact_closure_30._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ hierarchy_cell_controls._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ nested_substitution_controls._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ transported_role_geometry._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+info: R44/Axioms.lean:168:0: 'R44.r44_einstein' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ atlas_44._native.native_decide.ax_1_1,
+ central_completion._native.native_decide.ax_1_1,
+ contact_closure_30._native.native_decide.ax_1_1,
+ first_shells_33._native.native_decide.ax_1_1,
+ hierarchy_cell_controls._native.native_decide.ax_1_1,
+ mate_records_roles_nonempty._native.native_decide.ax_1_1,
+ mates_census._native.native_decide.ax_1_1,
+ mesh_angle_audit._native.native_decide.ax_1_1,
+ nested_substitution_controls._native.native_decide.ax_1_1,
+ orientation_group_24._native.native_decide.ax_1_1,
+ parent_atlas_eq_fine._native.native_decide.ax_1_1,
+ parent_conflicts_28._native.native_decide.ax_1_1,
+ profile_canonical._native.native_decide.ax_1_1,
+ registered_shell_cell_controls._native.native_decide.ax_1_1,
+ solid_mesh_exact._native.native_decide.ax_1_1,
+ transported_role_geometry._native.native_decide.ax_1_1,
+ DischargeCarrierStrata.carrier_coordinate_states_table._native.native_decide.ax_1_1,
+ DischargeMeshTrace.native_mesh_incidence_trace._native.native_decide.ax_1_1,
+ DischargeVertexData.carrier_vertex_lookup._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_index_bounds._native.native_decide.ax_1_1,
+ DischargeVertexData.feature_vertex_lookup._native.native_decide.ax_1_1]
+✔ [8637/8638] Built R44 (3.4s)
+Build completed successfully (8638 jobs).
