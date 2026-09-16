@@ -43,6 +43,7 @@ def main():
         parser.error("lake not found; install the pinned toolchain or pass --lake")
     run([sys.executable, str(HERE / "generate_input.py"), "--check"])
     run([sys.executable, str(HERE / "generate_certificates.py"), "--check"])
+    run([sys.executable, str(HERE / "generate_grouping.py"), "--check"])
     version = run([lake, "env", "lean", "--version"]).strip()
     assert "version 4.34.0," in version, f"Unexpected Lean version: {version}"
     run([lake, "build"])
@@ -65,6 +66,28 @@ def main():
         "Chair.LegalTiling.touching_contact_accepted",
         "Chair.LegalTiling.exposed_face_neighbor_accepted",
         "Chair.placed_macro_contact_recurrence",
+        "Chair.Occurrences.valid_occurrences",
+        "Chair.LocalGrouping.excluded_absent",
+        "Chair.LocalGrouping.trigger_forces_central",
+        "Chair.LocalGrouping.exceptional_axial",
+        "Chair.GroupingData.group_matches_frozen",
+        "Chair.GroupingData.group_nodup",
+        "Chair.GroupingData.group_length",
+        "Chair.ChairGrouping.universal_grouping",
+        "Chair.ChairGrouping.parent_fiber",
+        "Chair.ChairGrouping.partition_unique",
+        "Chair.ChairGrouping.group_partition_unique",
+        "Chair.ChairGrouping.group_has_eight_distinct_tiles",
+        "Chair.ChairGrouping.center_iff_group_occurs",
+        "Chair.ChairGrouping.parent_map_unique",
+        "Chair.ChairGrouping.parent_covariant",
+        "Chair.LegalTiling.assemble", "Chair.placed_macro_boundary",
+        "Chair.integer_grid_connected", "Chair.LegalSolidTiling.macro_common_parity",
+        "Chair.placed_macro_support", "Chair.sample_owned_iff",
+        "Chair.contact_deflate", "Chair.LegalSolidTiling.deflate",
+        "Chair.LegalTiling.parent_common_parity", "Chair.LegalTiling.grouping_deflation",
+        "Chair.deflateTiling_legal", "Chair.iteratedDeflation_legal",
+        "Chair.iteratedDeflation_step",
     }
     assert set(dependencies) == expected_theorems, dependencies
 
@@ -83,11 +106,11 @@ def main():
         "axiom_dependencies": dependencies,
         "lean_source_sha256": {str(p.relative_to(HERE)): hashlib.sha256(p.read_bytes()).hexdigest()
                                for p in sorted(HERE.rglob("*.lean")) if ".lake" not in p.parts},
-        "scope": "Integral-grid contact recurrence, frame covariance and coverage-derived neighbors in arbitrary legal grid tilings; not grouping, existence or the full solid/aperiodicity theorem",
+        "scope": "Integral-grid contact recurrence, universal unique grouping, common parent parity and legal deflation at every finite depth; conditional on an initial LegalTiling, not existence or the full solid/aperiodicity theorem",
     }
     if args.write_report:
         (HERE / "verification.json").write_text(json.dumps(report, indent=2) + "\n")
-    print("Lean recurrence and grid-tiling bridge: all checks passed", flush=True)
+    print("Lean recurrence, universal grouping and legal deflation: all checks passed", flush=True)
 
 
 if __name__ == "__main__":

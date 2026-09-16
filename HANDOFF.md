@@ -66,17 +66,58 @@ theorem declarations and 21 source hashes. A contributor to the boundary
 module cross-reviewed the coordinator's tiling proofs and found no material
 issue; this was internal review, not a fresh review of the whole addition.
 
-Next: derive the 14 impossible-contact exclusions from `LegalTiling`, using
-`exposed_face_neighbor_accepted` to supply actual neighbors. Then formalize
-the six forcing chains, exceptional notch case and unique parent partition,
-followed by common parity and legal deflation. Existence, arbitrary Euclidean
-grid enforcement, and the full
-finite-symmetry theorem remain separate obligations. Do not describe this
-milestone as a formalization of the complete physical monotile theorem.
+**Universal grouping completed:** read
+[`formal/UNIVERSAL_GROUPING.md`](formal/UNIVERSAL_GROUPING.md).
+`Chair.ChairGrouping.universal_grouping` proves that every actual tile of any
+`LegalTiling` belongs to a unique center's eight-child group. The intrinsic
+parent is self when triggered and otherwise the notch owner. Parent fibers
+are exactly the groups; every occurrence of the specified group has a trigger,
+and any covering by group occurrences gives this same partition. Each group
+has eight distinct decorated placements and agrees with the frozen children.
+`parent_covariant` proves that the parent map commutes with all proper grid
+motions. Coverage, the 14 exclusions, six forcing chains and exceptional
+notch case are connected using exact port/cube witnesses; no motif-rule
+equivalence or complete-star enumeration is assumed.
+
+The full uv verifier passed with 31 audited declarations and 28 Lean source
+hashes. Internal cross-reviews of the tiling bridge, local implications and
+concrete partition found no material issue. The previous bridge was committed
+as `ff440f1` at the user's request; grouping is now committed locally with
+the deflation development below.
+No push or outreach occurred. Source map, commands and review provenance are
+in the new report; `formal/generate_grouping.py --check` is now part of the
+driver. Preserve its generated `Chair/GroupingData.lean` witnesses.
+
+**Common parity and legal deflation completed:** read
+[`formal/LEGAL_DEFLATION.md`](formal/LEGAL_DEFLATION.md).
+`LegalTiling.assemble` gives a legal macro tiling of actual group centers.
+`LegalSolidTiling.macro_common_parity` propagates origin parity along unit
+cube paths using coverage and actual macro contacts. Exact doubled support
+and contact recurrence establish `LegalSolidTiling.deflate`. The combined
+`LegalTiling.grouping_deflation` assumes only the initial `LegalTiling` and
+derives both alignment and another legal fine tiling. `iteratedDeflation`
+and its legality/step theorems give a chosen sequence at every finite depth.
+No initial tiling existence or period-exclusion theorem is implied.
+
+The latest full uv verifier passed with 44 audited declarations and 36 Lean
+source hashes, using only the standard three logical axioms. Three agents
+implemented assembly, boundary/parity and scaling; contributors cross-reviewed
+the coordinator's deflation/iteration and the parity argument. No material
+issue was found. This remains internal review. At the user's request, grouping
+and deflation are committed together locally with their verification manifest
+and records. No push or outreach occurred.
+The macro-boundary finite check takes about 109 seconds and substantial memory;
+avoid duplicate builds of it. Earlier compiled proof batches were reused.
+
+Next: prove that a translation period preserves group centers, is even by
+common parity, and halves to a period of the deflated tiling. Use iteration
+or descent on an integer norm to exclude nonzero grid periods. Initial
+existence, arbitrary Euclidean grid enforcement and the full finite-symmetry
+theorem remain separate formal obligations. Do not describe legal deflation
+as a formalization of the complete physical theorem.
 The [next-milestone review](formal/NEXT_MILESTONE.md) gives the precise target
-and acceptance criteria; step A is complete. Connect the existing local
-grouping witnesses to the new definition. Reuse the proven frozen-port rules or formally bridge
-the motif encoding before relying on A/B/C rules in Lean.
+and acceptance criteria; steps A, B and C are complete. The existing proofs
+use the frozen-port rules directly.
 
 **Focused geometric scrutiny completed:**
 `strong/review/GEOMETRIC_GRID_SCRUTINY.md` rewrites the arbitrary-placement

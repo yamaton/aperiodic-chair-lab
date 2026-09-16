@@ -1,4 +1,4 @@
-# Lean proofs: chair contact recurrence and grid tilings
+# Lean proofs: chair grouping and legal deflation
 
 *16 September 2026. Lean 4.34.0, bundled Std, no Mathlib dependency.*
 
@@ -12,7 +12,17 @@ aperiodic-solid theorem.
 Arbitrary legal grid tilings now have a precise definition. Common proper
 grid motions preserve legality, coverage supplies actual face neighbors,
 and those neighbors normalize to the certified contact lists. The recurrence
-also applies to arbitrarily placed macro pairs. Grouping is the next target.
+also applies to arbitrarily placed macro pairs.
+
+**Universal grouping verified:** [proof and scope](UNIVERSAL_GROUPING.md).
+Every legal grid tiling has an intrinsic parent assignment into the specified
+eight-chair groups. The proof connects coverage to the 14 contact exclusions,
+six forcing chains and exceptional notch case using the actual frozen ports.
+**Common parity and legal deflation verified:** [proof and scope](LEGAL_DEFLATION.md).
+The assembled parents have a common origin residue modulo two; halving their
+aligned placements yields another `LegalTiling`. A chosen sequence repeats
+this operation legally at every finite depth. Translation-period exclusion
+and initial tiling existence remain separate targets.
 
 ## Precise target
 
@@ -95,14 +105,13 @@ These are **integer-grid matching and conditional tiling theorems**. They do
 not yet formalize:
 
 - The curved physical solid or the arbitrary-placement-to-grid argument.
-- The unique parent partition of every legal infinite tiling.
-- Common parity of an entire tiling, infinite iteration, existence, or the
+- Initial tiling existence, exclusion of nonzero periods, or the
   finite-symmetry conclusion.
 - Reflections, novelty, or the behavior of meshes and manufactured objects.
 
 Those statements must not be hidden in the interpretation of this result.
-The immediate next formal target is to derive the local contact exclusions
-and parent partition from the unrestricted `LegalTiling` definition.
+The immediate next formal target is transport and halving of translation
+periods through deflation, followed by their exclusion.
 The [next-milestone plan](NEXT_MILESTONE.md) specifies the unrestricted tiling
 definition, universal grouping theorem, and global parity/deflation obligations.
 
@@ -134,12 +143,15 @@ To deliberately regenerate source certificates:
 ```sh
 uv run --locked python formal/generate_input.py
 uv run --locked python formal/generate_certificates.py
+uv run --locked python formal/generate_grouping.py
 ```
 
-The latter regenerates `Witnesses.lean`, `Cache.lean`, `Checked.lean`, the
+The contact generator regenerates `Witnesses.lean`, `Cache.lean`, `Checked.lean`, the
 four `Batches/Batch*.lean` proof modules, and `certificate_summary.json`.
 The independent batches bound peak memory and run concurrently. Review diffs
 and rebuild after regeneration.
+The grouping generator emits `GroupingData.lean`; its old motif-certificate
+input supplies proposed witnesses, all checked against the actual Lean model.
 
 ## File map
 
@@ -153,6 +165,13 @@ and rebuild after regeneration.
 | [Recurrence](Chair/Recurrence.lean) | Unconditional normalized recurrence theorem and counts |
 | [Frames](Chair/Frames.lean), [Covariance](Chair/Covariance.lean) | Placement algebra and frame covariance of full contact records |
 | [Boundary](Chair/Boundary.lean), [Tiling](Chair/Tiling.lean) | Exposed-face ownership, arbitrary tilings and the contact-certificate bridge |
+| [GroupingData](Chair/GroupingData.lean), [generator](generate_grouping.py) | Checked finite grouping witnesses and exact frozen-child correspondence |
+| [Neighborhood](Chair/Neighborhood.lean), [Occurrences](Chair/Occurrences.lean) | Every legal tiling supplies complete local face options and sound conflicts |
+| [LocalRules](Chair/LocalRules.lean), [LocalGrouping](Chair/LocalGrouping.lean) | Generic propagation and concrete contact exclusions/forcing |
+| [Partition](Chair/Partition.lean), [Grouping](Chair/Grouping.lean) | Intrinsic parent assignment and universal unique grouping |
+| [SolidTiling](Chair/SolidTiling.lean), [SolidContacts](Chair/SolidContacts.lean) | Generic solid coverage, ownership and adjacency-to-contact proofs |
+| [MacroAssembly](Chair/MacroAssembly.lean), [MacroBoundary](Chair/MacroBoundary.lean), [MacroParity](Chair/MacroParity.lean) | Legal macro assembly and globally forced parity |
+| [Scaling](Chair/Scaling.lean), [Deflation](Chair/Deflation.lean), [Hierarchy](Chair/Hierarchy.lean) | Exact scaling, legal deflation and every-finite-depth iteration |
 | [Verifier](verify.py) | Source correspondence, build, axiom audit, independent comparison |
 | [Controls](Chair/Controls.lean) | Deliberately incomplete/incorrect certificates must fail |
 
@@ -196,3 +215,5 @@ documents its commands, alternative arithmetic methods, trust assumptions,
 and the fact that its Lean build reused cached artifacts.
 The later grid-tiling addition has the internal cross-review described in
 [its record](GRID_TILING_BRIDGE.md); it was not covered by that earlier review.
+The grouping addition likewise has its own [implementation and review
+record](UNIVERSAL_GROUPING.md), separate from the first milestone's review.

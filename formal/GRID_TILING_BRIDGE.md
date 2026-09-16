@@ -73,8 +73,9 @@ regeneration checks, the Lean build, comparison with the independent
 44-contact table, and an expanded audit of 16 theorem declarations. Every
 audited dependency is among `propext`, `Classical.choice`, and `Quot.sound`.
 No admitted proof, custom axiom or native-evaluation dependency was added.
-[verification.json](verification.json) records the current 21 Lean source
-hashes. Existing construction and finite-contact proof modules are unchanged.
+[verification.json](verification.json) recorded 21 Lean source hashes at this
+step; later additions extend that manifest. Existing construction and
+finite-contact proof modules were unchanged.
 
 Three subagents implemented frame algebra, contact covariance and boundary
 ownership separately. The boundary contributor then reviewed the coordinator's
@@ -93,6 +94,10 @@ The full driver reused the prior milestone's compiled proof batches while
 building the new modules; it was not a cold rebuild of the whole project.
 
 ## Next boundary
+
+**Subsequent progress:** the exclusions and universal parent partition below
+are now implemented in [the grouping development](UNIVERSAL_GROUPING.md).
+The following paragraph records the next step identified at this milestone.
 
 Next, formalize the 14 impossible-contact exclusions in
 `strong/MOTIF_GROUPING.md` as consequences of `LegalTiling`. Use the new

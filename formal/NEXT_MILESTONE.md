@@ -1,6 +1,6 @@
 # Next internal milestone: universal grouping and legal deflation
 
-*16 September 2026. Step A completed; steps B and C remain implementation targets.*
+*16 September 2026. Steps A, B and C completed and verified.*
 
 ## Assessment
 
@@ -15,8 +15,8 @@ pairwise results to **every legal infinite grid tiling**.
 | Arbitrary physical placements imply a grid | Written geometric proof, exact checks, internal reviews |
 | Normalized macrocontact recurrence | Lean theorem, kernel-checked certificates, independent agent review |
 | Arbitrary grid-tiling semantics, covariance and actual neighbors | Lean theorems; [completed step A](GRID_TILING_BRIDGE.md) |
-| Unique grouping of all legal grid tilings | Written parent rule and Python-checked local certificates |
-| Global parity and repeated legal deflation | Written argument; not yet connected in Lean |
+| Unique grouping of all legal grid tilings | [Lean universal grouping](UNIVERSAL_GROUPING.md), linked to the actual frozen ports |
+| Global parity and repeated legal deflation | [Lean deflation theorem and finite-depth iteration](LEGAL_DEFLATION.md) |
 | Existence and finite symmetry | Separate written arguments; not the completed Lean milestone |
 
 This review identifies formalization priorities. It does not identify a new
@@ -56,6 +56,10 @@ or parity premise in that definition.
 
 ## B. Universal unique parent partition
 
+**Completed:** see [the proof record](UNIVERSAL_GROUPING.md). The Lean
+development follows the local exclusions and forcing chains without relying
+on complete-star enumeration or assuming motif-rule equivalence.
+
 Use the existing [local parent argument](../strong/MOTIF_GROUPING.md) and
 [certificate](../strong/audit/motif_grouping_certificate.json):
 
@@ -81,6 +85,11 @@ enumerated stars may serve as a cross-check; they need not replace the shorter
 local parent proof.
 
 ## C. Common parity and legal deflation
+
+**Completed:** see [the proof record](LEGAL_DEFLATION.md). Coverage and unit
+cube paths establish common parent parity; exact support and contact
+recurrence prove legality after halving. The result is iterated at every
+finite depth, conditional on the initial legal tiling.
 
 Show that the groups cover the lattice without overlap and their adjacency
 graph is connected. Apply normalized recurrence through the frame-change

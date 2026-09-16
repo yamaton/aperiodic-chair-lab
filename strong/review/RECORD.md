@@ -547,3 +547,106 @@ Next: prove the 14 contact exclusions for arbitrary `LegalTiling`, then the
 forcing chains and unique parent partition. Existence, legal deflation and
 the complete aperiodic-solid theorem remain outside the completed step.
 Changes remain local; no outreach, commit or push was performed this turn.
+
+## Universal grouping formalized — 16 September 2026
+
+At the user's request, first committed the completed grid-tiling bridge as
+`ff440f1` (`Prove grid-tiling covariance and coverage-derived neighbors`).
+Then implemented step B of the formal plan, without changing frozen geometry
+or the earlier contact certificates.
+
+`Occurrences.valid_occurrences` connects arbitrary `LegalTiling` coverage
+and compatibility to the actual 44-contact catalogue. Generated grouping
+data checks face coverage, pair incompatibility witnesses and relative
+motions against the full frozen port model. `LocalRules` proves generic
+exclusion and forcing-chain soundness. `LocalGrouping` instantiates all 14
+exclusions, six central forcing chains, notch uniqueness and the exceptional
+same-orientation notch case. The proof does not assume the A/B/C rule bridge
+or enumerate the 33 complete stars.
+
+`Chair.ChairGrouping.universal_grouping` gives every actual tile a unique
+containing center. The intrinsic parent selects self when triggered and
+otherwise the unique notch owner. Its fibers are exactly the eight-chair
+groups. Further theorems identify all full group occurrences with centers,
+prove uniqueness of any covering by such occurrences, and prove covariance
+of the parent under every proper grid motion. A checked permutation identifies
+the eight distinct group placements with the frozen substitution children.
+The recognition mechanism retains its Goodman-Strauss attribution.
+
+Three subagents separately implemented finite data, generic/concrete local
+propagation, and the generic/concrete partition proofs. The coordinating agent
+implemented the tiling-to-catalogue bridge and reviewed their integration.
+Contributors cross-reviewed modules they did not author; no material issue
+was found. This is internal AI review, not fresh independent whole-proof or
+external human review.
+
+The full uv verifier passed all three deterministic regeneration checks,
+the Lean build, independent contact-table comparison and 31 theorem axiom
+audits. The 28-source manifest is updated. Dependencies remain within
+`propext`, `Classical.choice` and `Quot.sound`. Earlier compiled proof batches
+were reused; this was not a cold whole-project rebuild. Added
+`formal/UNIVERSAL_GROUPING.md` and updated handoff, README, index and plan.
+
+The grouping addition remains local and uncommitted. No push or outreach was
+performed. Next is common parent parity and legal deflation. Nonemptiness,
+iteration and the complete physical finite-symmetry theorem remain separate
+formal obligations.
+
+## Common parity and legal deflation formalized — 16 September 2026
+
+Completed step C of the formal plan. Generic `LegalSolidTiling` expresses
+coverage, unique cube ownership and interface matching for the macro solid.
+Universal grouping and complete child-boundary inheritance prove that the
+actual group centers form such a macro tiling. No supplied parent tiling or
+alignment is assumed.
+
+The macro-boundary records are checked in every proper orientation and
+transported through arbitrary translations. Unit-step induction proves
+integer-grid connectivity. Coverage supplies owners along those paths;
+distinct adjacent owners give actual macro contacts, whose recurrence forces
+equal origin parity. Hence every parent origin has the same residue modulo
+two, even when parent frames differ.
+
+Exact scaling checks include the lower-corner corrections of rotated cubes.
+Sampling one subcube transfers coverage and unique ownership to the halved
+placements. For matching, adjacent coarse owner cubes lift to adjacent macro
+owner cubes, giving a genuine macro contact; recurrence then supplies the
+fine contact and its full port match. No direct scaling identity between
+individual fine and macro decorations is assumed.
+
+`LegalTiling.grouping_deflation` combines assembly, derived parity and legal
+deflation under the sole premise `LegalTiling T`. A noncomputable choice of
+origin gives `iteratedDeflation`; legality holds at every finite depth and
+each successor is proved to be the grouping/deflation of its predecessor.
+These are conditional statements, not a proof of initial nonemptiness or
+aperiodicity.
+
+Three subagents implemented assembly, boundary/parity and scaling. The
+coordinator implemented generic contact lemmas, deflation and iteration,
+then reviewed integration. Contributors cross-reviewed the deflation proof,
+the parity argument and the final iteration statement; no material defect
+was found. This was internal AI cross-review, not external validation.
+
+The full uv verifier passed deterministic regeneration, the Lean project
+build, contact-table comparison and 44 axiom audits. The report now hashes
+36 Lean sources. Only `propext`, `Classical.choice`, and `Quot.sound` occur.
+Macro-boundary kernel checking took about 109 seconds; previous finite proof
+batches were reused. A duplicate boundary build was stopped to avoid repeating
+the memory-intensive computation. Frozen geometry and prior certificates
+are unchanged.
+
+Added `formal/LEGAL_DEFLATION.md` and updated README, index, plan and handoff.
+Changes remain local and uncommitted; no commit, push or outreach occurred.
+Next: transport and halve translation periods, then exclude nonzero periods.
+Initial existence and the complete physical finite-symmetry theorem remain
+separate formal obligations.
+
+## Grouping and deflation committed locally — 16 September 2026
+
+At the user's request, committed the completed universal grouping and legal
+deflation development together with the generated witnesses, verification
+manifest and research records. Before committing, checked that all 36 Lean
+source hashes and the frozen candidate match the successful manifest, which
+records 44 axiom audits. No proof source changed after that verification.
+Updated the active handoff and report status; historical implementation
+entries above retain their original chronology. No push or outreach occurred.

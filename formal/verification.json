@@ -69,13 +69,150 @@
       "Classical.choice",
       "Quot.sound"
     ],
+    "Chair.Occurrences.valid_occurrences": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LocalGrouping.excluded_absent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Chair.LocalGrouping.trigger_forces_central": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Chair.LocalGrouping.exceptional_axial": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Chair.GroupingData.group_matches_frozen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.GroupingData.group_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.GroupingData.group_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.ChairGrouping.universal_grouping": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.ChairGrouping.parent_fiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.ChairGrouping.partition_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.ChairGrouping.group_partition_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.ChairGrouping.group_has_eight_distinct_tiles": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.ChairGrouping.center_iff_group_occurs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.ChairGrouping.parent_map_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.ChairGrouping.parent_covariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.assemble": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.placed_macro_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.integer_grid_connected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalSolidTiling.macro_common_parity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.placed_macro_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.sample_owned_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.contact_deflate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalSolidTiling.deflate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.parent_common_parity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.grouping_deflation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.deflateTiling_legal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.iteratedDeflation_legal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.iteratedDeflation_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "Chair.child_pairs_compatible": [],
     "Chair.fine_accepted_count": [],
     "Chair.macro_accepted_count": [],
     "Chair.accepted_lists_distinct": []
   },
   "lean_source_sha256": {
-    "Audit.lean": "66bf8c50340260624450ef310877c600b8649affb5fea437637c048010e62ec6",
+    "Audit.lean": "a0b941fab5c8b4a0d020a4fe13074ada3609fe63a96662970eb383bc6c82e87e",
     "Chair/Batches/Batch0.lean": "96bcdbc2df00c7ffd177befb6c0b18736fbca79ccc9feaae691c5831b11fc422",
     "Chair/Batches/Batch1.lean": "def8fe82fb0fd02197f30dec096ec3a4c1bc2cfce7c02c54d77b24bb964b5363",
     "Chair/Batches/Batch2.lean": "17461cf60d2ab2b9f98a81cee761f7a37359f194101e0da337da022fb765b072",
@@ -87,15 +224,30 @@
     "Chair/Checked.lean": "6b25c2993600421c2553c12e80bfcdd4d4439b16adc8c19b0be97466da07048b",
     "Chair/Controls.lean": "e26a28a2e4e62215e254aa302f0fc63175e0ebc0763722b1a568bdb516a0c06c",
     "Chair/Covariance.lean": "f4ff3c7d9ecec52981a08a277b946940806730bf1a52519a2dc80162a1873279",
+    "Chair/Deflation.lean": "c98b3d46634119b0d347e4256051366eafb59f641a1b2578db9b5066449171e8",
     "Chair/Frames.lean": "a3a7e08725a768526bd40d972bfbe12197505c4f6136eaf576b29bde906965e0",
     "Chair/Geometry.lean": "cac7867af4d247e0b92941ee27f389e3186649c60e2da54f9c1b7fd4eaca2f44",
+    "Chair/Grouping.lean": "e41991745182d8f98ce6bc6584c724064ba580beeeb0d84562510862848ad13a",
+    "Chair/GroupingData.lean": "31091e618b1def9feb285f1ba62942fd1fb413fad9c39ef851b7317ef1662c2a",
+    "Chair/Hierarchy.lean": "243e33a48990d2f75100dc84844a5f6f7e3456314e7223e91f46c273c4dca97c",
     "Chair/Input.lean": "23f3daf757b33bbb0e6348c4c4c61d76f0a5f441f450a7f45bebbd89d99225ff",
     "Chair/Integrity.lean": "1fe8463b22475924454861bcc3a09d69c280597fed59c25d0d569a795aa05d35",
+    "Chair/LocalGrouping.lean": "6f332b8cfbce143446c910ee55f6fdf81555bedf82e9b7bc2e11b59b1c7f6614",
+    "Chair/LocalRules.lean": "edd650d7e490093d213f8da0a78017adc47c381ccdd6b959acb7b9e7d8f563a3",
+    "Chair/MacroAssembly.lean": "c89d22b13c6ea9fecd588f5806b4f547c2f7a98900c2dbcb8ed32b159a32e851",
+    "Chair/MacroBoundary.lean": "94da7e9bf1e721cb98d708e24008bae0f1049e3eaf88fb97e71d523a72a2532d",
+    "Chair/MacroParity.lean": "b034e34a005942447d62538576a0644887412f98e7c6b1edd54d86c043eee3b5",
     "Chair/Model.lean": "1468caca06a1bd0cc8a06b3630250e098623ad992bd1dd46c5f5c6c78767f173",
+    "Chair/Neighborhood.lean": "c4f86de1cc4faf75af71273dac84dfb11b1282890b6715a9ec1f4f5c0389e18b",
+    "Chair/Occurrences.lean": "ca1bde1f040f3d8a48aacdd03584b055c964dee9ccd118518e3efd6c15578dbf",
+    "Chair/Partition.lean": "1ded6a52f9e6bf8ccd25321da8ae5f03d4d55d1f36f9d67ac0d166db1e706f05",
     "Chair/Recurrence.lean": "1a47f14570ee78701872bcc3d645bb07c7acb3c9450c257c139e81ef0ed0aef3",
+    "Chair/Scaling.lean": "2ea48351b42c54accc3e35037af3968069b9ecdf4c80523760fb7a622d333306",
+    "Chair/SolidContacts.lean": "8ab3bf4e3e432391ff30bb86588d134e6a6d94a260efdafe753151cdfb654014",
+    "Chair/SolidTiling.lean": "543bb62e4eabb4fe3d405238797ea6941c51e6bc0ac58284f6c756d4e416fd06",
     "Chair/Tiling.lean": "19b02df2fa68a1bb72e26109ab22f96d12be56d249ba27edc0dbce07c179d464",
     "Chair/Witnesses.lean": "26fbd5665e80d90286f41937b6877326f7a6e6f86a702d0dfebcbfc947fa3f37",
-    "Chair.lean": "727a0e67be75e997d7f788deae2ee89e15e2d20f6e28df83b2a010df339e07e6"
+    "Chair.lean": "4e3ac2021e994960d04a961c057fb39129b7cc3ee116809573ea972178dc367d"
   },
-  "scope": "Integral-grid contact recurrence, frame covariance and coverage-derived neighbors in arbitrary legal grid tilings; not grouping, existence or the full solid/aperiodicity theorem"
+  "scope": "Integral-grid contact recurrence, universal unique grouping, common parent parity and legal deflation at every finite depth; conditional on an initial LegalTiling, not existence or the full solid/aperiodicity theorem"
 }

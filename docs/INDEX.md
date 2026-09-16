@@ -9,6 +9,8 @@ existing paths so older commands, citations, and frozen evidence remain usable.
 | Subject | Report | Reproduction or evidence |
 |---|---|---|
 | Lean contact recurrence and arbitrary grid tilings | [Scope and reproduction](../formal/README.md), [tiling bridge](../formal/GRID_TILING_BRIDGE.md) | [Recurrence](../formal/Chair/Recurrence.lean), [tiling theorems](../formal/Chair/Tiling.lean), [verification driver](../formal/verify.py) |
+| Universal unique grouping in Lean | [Proof record and scope](../formal/UNIVERSAL_GROUPING.md) | [Grouping theorem](../formal/Chair/Grouping.lean), [local forcing](../formal/Chair/LocalGrouping.lean) |
+| Common parity and legal deflation in Lean | [Proof record and scope](../formal/LEGAL_DEFLATION.md) | [Combined theorem and iteration](../formal/Chair/Hierarchy.lean), [deflation proof](../formal/Chair/Deflation.lean) |
 | Arbitrary placements → one grid | [Geometric scrutiny](../strong/review/GEOMETRIC_GRID_SCRUTINY.md) | [Primary checker](../strong/audit/scrutinize_grid_bridge.py), [alternate checker](../strong/audit/grid_bridge_crosscheck.py) |
 | Proposed exact solid and hierarchy | [Recut chair](../strong/RECUT_CHAIR.md) | [Frozen-coordinate audit](../strong/audit/README.md) |
 | Reflections and face patterns | [Follow-up](../strong/FOLLOWUP_REFLECTIONS.md) | [Reflection checker](../strong/audit/check_reflections.py) |
