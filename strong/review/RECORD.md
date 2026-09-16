@@ -650,3 +650,54 @@ source hashes and the frozen candidate match the successful manifest, which
 records 44 axiom audits. No proof source changed after that verification.
 Updated the active handoff and report status; historical implementation
 entries above retain their original chronology. No push or outreach occurred.
+
+## Translation periods halve and vanish — 16 September 2026
+
+Implemented the requested next proof after commit `7d84070`. The new
+`TranslationPeriod` definition requires bidirectional invariance of the
+entire decorated placement set under an integer translation. A theorem
+identifies it with equality under the existing `moveTiling` action.
+Intrinsic center recognition preserves every such period.
+
+`LegalTiling.period_even` obtains an actual center from macro coverage and
+uses the common parity of it and its translated copy to write the period
+as twice an integer vector. `LegalTiling.period_halves` then transports the
+half-period to the existing legally deflated tiling, using the exact identity
+between inflation and translation. No special alignment choice is required.
+
+The final `LegalTiling.translation_period_zero` uses well-founded descent on
+the sum of absolute coordinates. Its predicate says that the vector is a
+period of some legal tiling, so the witnessing tiling may change under
+deflation. The final theorem has only `LegalTiling T` and `TranslationPeriod T v`
+as premises and concludes `v = zero`. A second theorem states the same result
+using translated-set equality. Initial existence, general Euclidean placement
+and full finite symmetry remain outside this result.
+
+Two subagents implemented translation transport and arithmetic descent.
+The coordinator implemented the evenness/halving bridge, final exclusion,
+and verifier integration. A fresh third agent, with no authorship role in
+these modules, reviewed the new proof and traced grouping, assembly, parity
+and deflation dependencies. It found no material defect or requested change.
+It independently ran the final module and Audit.lean using cached dependencies.
+This is independent AI review of new-proof authorship, not external human
+validation or a cold rebuild of the entire dependency chain.
+
+The full uv verifier passed three deterministic regeneration checks, project
+build, independent contact-table comparison and 52 axiom audits. The manifest
+contains 40 Lean source hashes; dependencies remain restricted to `propext`,
+`Classical.choice` and `Quot.sound`. No earlier proof source or frozen geometry
+changed. Added `formal/TRANSLATION_EXCLUSION.md` and updated handoff, README,
+plan and index. Work remains local and uncommitted; no push or outreach occurred.
+
+Next: use the trivial translation stabilizer to make the proper-frame map
+injective on grid symmetries, giving a finite bound of 24. Initial tiling
+existence and the exact physical-solid bridge remain separate proof branches.
+
+## Translation exclusion committed locally — 16 September 2026
+
+At the user's request, committed the translation-period definitions,
+transport, halving and exclusion proofs with the updated verification manifest
+and research records. Before committing, checked that all 40 Lean source
+hashes and the frozen candidate match the successful manifest recording 52
+axiom audits. No proof source changed after verification. No push or outreach
+was performed.

@@ -1,4 +1,4 @@
-# Lean proofs: chair grouping and legal deflation
+# Lean proofs: grouping, deflation and translation exclusion
 
 *16 September 2026. Lean 4.34.0, bundled Std, no Mathlib dependency.*
 
@@ -21,8 +21,13 @@ six forcing chains and exceptional notch case using the actual frozen ports.
 **Common parity and legal deflation verified:** [proof and scope](LEGAL_DEFLATION.md).
 The assembled parents have a common origin residue modulo two; halving their
 aligned placements yields another `LegalTiling`. A chosen sequence repeats
-this operation legally at every finite depth. Translation-period exclusion
-and initial tiling existence remain separate targets.
+this operation legally at every finite depth.
+
+**Translation exclusion verified:** [proof and scope](TRANSLATION_EXCLUSION.md).
+Every integer translation period of any `LegalTiling` is zero. Periods
+preserve group centers, must be even by common parity, and halve under legal
+deflation; descent on an integer norm excludes nonzero periods. Initial tiling
+existence and the full finite-symmetry conclusion remain separate targets.
 
 ## Precise target
 
@@ -105,13 +110,12 @@ These are **integer-grid matching and conditional tiling theorems**. They do
 not yet formalize:
 
 - The curved physical solid or the arbitrary-placement-to-grid argument.
-- Initial tiling existence, exclusion of nonzero periods, or the
-  finite-symmetry conclusion.
+- Initial tiling existence or the finite-symmetry conclusion.
 - Reflections, novelty, or the behavior of meshes and manufactured objects.
 
 Those statements must not be hidden in the interpretation of this result.
-The immediate next formal target is transport and halving of translation
-periods through deflation, followed by their exclusion.
+The next symmetry target is injectivity of the proper-frame map on grid
+symmetries, giving a finite bound of 24. Initial existence is a separate branch.
 The [next-milestone plan](NEXT_MILESTONE.md) specifies the unrestricted tiling
 definition, universal grouping theorem, and global parity/deflation obligations.
 
@@ -172,6 +176,8 @@ input supplies proposed witnesses, all checked against the actual Lean model.
 | [SolidTiling](Chair/SolidTiling.lean), [SolidContacts](Chair/SolidContacts.lean) | Generic solid coverage, ownership and adjacency-to-contact proofs |
 | [MacroAssembly](Chair/MacroAssembly.lean), [MacroBoundary](Chair/MacroBoundary.lean), [MacroParity](Chair/MacroParity.lean) | Legal macro assembly and globally forced parity |
 | [Scaling](Chair/Scaling.lean), [Deflation](Chair/Deflation.lean), [Hierarchy](Chair/Hierarchy.lean) | Exact scaling, legal deflation and every-finite-depth iteration |
+| [Translations](Chair/Translations.lean), [PeriodHalving](Chair/PeriodHalving.lean) | Genuine translation periods, center transport and halving |
+| [IntegerDescent](Chair/IntegerDescent.lean), [TranslationExclusion](Chair/TranslationExclusion.lean) | Descent across legal tilings and exclusion of every nonzero integer period |
 | [Verifier](verify.py) | Source correspondence, build, axiom audit, independent comparison |
 | [Controls](Chair/Controls.lean) | Deliberately incomplete/incorrect certificates must fail |
 

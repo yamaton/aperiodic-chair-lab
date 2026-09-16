@@ -88,6 +88,11 @@ def main():
         "Chair.LegalTiling.parent_common_parity", "Chair.LegalTiling.grouping_deflation",
         "Chair.deflateTiling_legal", "Chair.iteratedDeflation_legal",
         "Chair.iteratedDeflation_step",
+        "Chair.translationPeriod_iff_moveTiling",
+        "Chair.TranslationPeriod.groupCenters", "Chair.TranslationPeriod.deflated",
+        "Chair.LegalTiling.period_even", "Chair.LegalTiling.period_halves",
+        "Chair.doubling_descent", "Chair.LegalTiling.translation_period_zero",
+        "Chair.LegalTiling.translation_stabilizer_trivial",
     }
     assert set(dependencies) == expected_theorems, dependencies
 
@@ -106,11 +111,11 @@ def main():
         "axiom_dependencies": dependencies,
         "lean_source_sha256": {str(p.relative_to(HERE)): hashlib.sha256(p.read_bytes()).hexdigest()
                                for p in sorted(HERE.rglob("*.lean")) if ".lake" not in p.parts},
-        "scope": "Integral-grid contact recurrence, universal unique grouping, common parent parity and legal deflation at every finite depth; conditional on an initial LegalTiling, not existence or the full solid/aperiodicity theorem",
+        "scope": "Integral-grid recurrence, unique grouping, legal deflation and exclusion of every nonzero integral translation period of any LegalTiling; not initial tiling existence, full finite symmetry or the physical-solid theorem",
     }
     if args.write_report:
         (HERE / "verification.json").write_text(json.dumps(report, indent=2) + "\n")
-    print("Lean recurrence, universal grouping and legal deflation: all checks passed", flush=True)
+    print("Lean recurrence, grouping, deflation and translation exclusion: all checks passed", flush=True)
 
 
 if __name__ == "__main__":

@@ -78,7 +78,8 @@ into the fine decoration.
 The full `formal/verify.py --write-report` run passed through `uv`: three
 deterministic regeneration checks, the complete project build, comparison
 with the independent contact table, and 44 theorem axiom audits. The updated
-manifest contains 36 Lean source hashes. All audited dependencies are among
+manifest at this step contained 36 Lean source hashes; later additions extend
+it. All audited dependencies are among
 `propext`, `Classical.choice`, and `Quot.sound`. No admitted proof, custom axiom
 or native-evaluation dependency was added. Frozen geometry and the preceding
 finite contact/grouping certificates are unchanged.
@@ -106,6 +107,10 @@ deflation work was subsequently committed together locally at the user's
 request. No push or outreach was performed.
 
 ## Next obligations
+
+**Subsequent progress:** period halving and nonzero integer-period exclusion
+are now proved in [TRANSLATION_EXCLUSION.md](TRANSLATION_EXCLUSION.md). The
+following paragraph records the next step identified at this milestone.
 
 Next, carry a translation period through the intrinsic grouping and legal
 deflation: common parity should force that period to be even, and deflation

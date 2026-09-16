@@ -1,6 +1,6 @@
 # Next internal milestone: universal grouping and legal deflation
 
-*16 September 2026. Steps A, B and C completed and verified.*
+*16 September 2026. Steps A, B and C completed; subsequent translation exclusion also verified.*
 
 ## Assessment
 
@@ -17,6 +17,7 @@ pairwise results to **every legal infinite grid tiling**.
 | Arbitrary grid-tiling semantics, covariance and actual neighbors | Lean theorems; [completed step A](GRID_TILING_BRIDGE.md) |
 | Unique grouping of all legal grid tilings | [Lean universal grouping](UNIVERSAL_GROUPING.md), linked to the actual frozen ports |
 | Global parity and repeated legal deflation | [Lean deflation theorem and finite-depth iteration](LEGAL_DEFLATION.md) |
+| Exclusion of nonzero integer translation periods | [Lean halving and descent](TRANSLATION_EXCLUSION.md) |
 | Existence and finite symmetry | Separate written arguments; not the completed Lean milestone |
 
 This review identifies formalization priorities. It does not identify a new
@@ -109,6 +110,8 @@ tiling arguments. Preserve the first milestone's frozen construction.
 
 1. Iterate the intrinsic grouping to exclude translation periods in the
    grid model. Carry symmetry preservation through the actual parent map.
+   **Completed for translations:** periods inherit center invariance and
+   halve under legal deflation; well-founded descent proves they are zero.
 2. Establish nonemptiness through legal expanding substitution patches and
    a compactness argument, so the universal conclusion is nonvacuous.
 3. Complete the finite-symmetry deduction and connect the grid theorem to the

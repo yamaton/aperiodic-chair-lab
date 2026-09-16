@@ -49,3 +49,12 @@ import Chair
 #print axioms Chair.deflateTiling_legal
 #print axioms Chair.iteratedDeflation_legal
 #print axioms Chair.iteratedDeflation_step
+#check Chair.LegalTiling.translation_period_zero
+#print axioms Chair.translationPeriod_iff_moveTiling
+#print axioms Chair.TranslationPeriod.groupCenters
+#print axioms Chair.TranslationPeriod.deflated
+#print axioms Chair.LegalTiling.period_even
+#print axioms Chair.LegalTiling.period_halves
+#print axioms Chair.doubling_descent
+#print axioms Chair.LegalTiling.translation_period_zero
+#print axioms Chair.LegalTiling.translation_stabilizer_trivial

@@ -109,12 +109,32 @@ and records. No push or outreach occurred.
 The macro-boundary finite check takes about 109 seconds and substantial memory;
 avoid duplicate builds of it. Earlier compiled proof batches were reused.
 
-Next: prove that a translation period preserves group centers, is even by
-common parity, and halves to a period of the deflated tiling. Use iteration
-or descent on an integer norm to exclude nonzero grid periods. Initial
-existence, arbitrary Euclidean grid enforcement and the full finite-symmetry
-theorem remain separate formal obligations. Do not describe legal deflation
-as a formalization of the complete physical theorem.
+**Translation periods excluded:** read
+[`formal/TRANSLATION_EXCLUSION.md`](formal/TRANSLATION_EXCLUSION.md).
+`LegalTiling.translation_period_zero` proves every integer translation period
+of any `LegalTiling` is zero. `TranslationPeriod` is bidirectional invariance
+of the decorated placement set, with a proved equivalence to `moveTiling`
+equality. Periods preserve actual group centers; common parity and macro
+coverage force each period to be even. `LegalTiling.period_halves` produces
+the half-period in the legally deflated tiling. Strong induction on the sum
+of absolute coordinates excludes nonzero periods across the class of legal
+tilings, allowing the witnessing tiling to change at each halving.
+
+The latest full uv verifier passed with 52 audited declarations and 40 Lean
+source hashes. No new axiom or finite geometric certificate was introduced.
+A third agent with no authorship role reviewed the four new modules and
+traced their dependencies, reproduced direct Lean checks and the axiom audit,
+and found no material defect. This is independent AI review of this addition,
+not external human validation of the full construction. The preceding work
+was committed as `7d84070`; translation exclusion is now committed locally
+at the user's request. No push or outreach occurred.
+
+Next: define proper grid symmetries and prove that two with the same frame
+differ by a translation. The new exclusion theorem should make their frame
+map injective and bound the symmetry group by 24. Initial tiling existence,
+arbitrary Euclidean grid enforcement and the full physical finite-symmetry
+theorem remain separate formal obligations. The conditional grid theorem
+does not yet establish a physical aperiodic monotile.
 The [next-milestone review](formal/NEXT_MILESTONE.md) gives the precise target
 and acceptance criteria; steps A, B and C are complete. The existing proofs
 use the frozen-port rules directly.

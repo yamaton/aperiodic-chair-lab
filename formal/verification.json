@@ -206,13 +206,50 @@
       "Classical.choice",
       "Quot.sound"
     ],
+    "Chair.translationPeriod_iff_moveTiling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.TranslationPeriod.groupCenters": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.TranslationPeriod.deflated": [
+      "propext"
+    ],
+    "Chair.LegalTiling.period_even": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.period_halves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.doubling_descent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.translation_period_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.translation_stabilizer_trivial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "Chair.child_pairs_compatible": [],
     "Chair.fine_accepted_count": [],
     "Chair.macro_accepted_count": [],
     "Chair.accepted_lists_distinct": []
   },
   "lean_source_sha256": {
-    "Audit.lean": "a0b941fab5c8b4a0d020a4fe13074ada3609fe63a96662970eb383bc6c82e87e",
+    "Audit.lean": "01f0398269379b16784d7ee5286a9068a41c77634c8d56ea0986282d40051650",
     "Chair/Batches/Batch0.lean": "96bcdbc2df00c7ffd177befb6c0b18736fbca79ccc9feaae691c5831b11fc422",
     "Chair/Batches/Batch1.lean": "def8fe82fb0fd02197f30dec096ec3a4c1bc2cfce7c02c54d77b24bb964b5363",
     "Chair/Batches/Batch2.lean": "17461cf60d2ab2b9f98a81cee761f7a37359f194101e0da337da022fb765b072",
@@ -231,6 +268,7 @@
     "Chair/GroupingData.lean": "31091e618b1def9feb285f1ba62942fd1fb413fad9c39ef851b7317ef1662c2a",
     "Chair/Hierarchy.lean": "243e33a48990d2f75100dc84844a5f6f7e3456314e7223e91f46c273c4dca97c",
     "Chair/Input.lean": "23f3daf757b33bbb0e6348c4c4c61d76f0a5f441f450a7f45bebbd89d99225ff",
+    "Chair/IntegerDescent.lean": "88590998740f6c4c49ecc8640708e1498b421b3cad0fa664959e6c8570290316",
     "Chair/Integrity.lean": "1fe8463b22475924454861bcc3a09d69c280597fed59c25d0d569a795aa05d35",
     "Chair/LocalGrouping.lean": "6f332b8cfbce143446c910ee55f6fdf81555bedf82e9b7bc2e11b59b1c7f6614",
     "Chair/LocalRules.lean": "edd650d7e490093d213f8da0a78017adc47c381ccdd6b959acb7b9e7d8f563a3",
@@ -241,13 +279,16 @@
     "Chair/Neighborhood.lean": "c4f86de1cc4faf75af71273dac84dfb11b1282890b6715a9ec1f4f5c0389e18b",
     "Chair/Occurrences.lean": "ca1bde1f040f3d8a48aacdd03584b055c964dee9ccd118518e3efd6c15578dbf",
     "Chair/Partition.lean": "1ded6a52f9e6bf8ccd25321da8ae5f03d4d55d1f36f9d67ac0d166db1e706f05",
+    "Chair/PeriodHalving.lean": "efeff36da4251c1cecaf6908b4bfaf11426a3c64afde0b2f879a6ca8e4d7d464",
     "Chair/Recurrence.lean": "1a47f14570ee78701872bcc3d645bb07c7acb3c9450c257c139e81ef0ed0aef3",
     "Chair/Scaling.lean": "2ea48351b42c54accc3e35037af3968069b9ecdf4c80523760fb7a622d333306",
     "Chair/SolidContacts.lean": "8ab3bf4e3e432391ff30bb86588d134e6a6d94a260efdafe753151cdfb654014",
     "Chair/SolidTiling.lean": "543bb62e4eabb4fe3d405238797ea6941c51e6bc0ac58284f6c756d4e416fd06",
     "Chair/Tiling.lean": "19b02df2fa68a1bb72e26109ab22f96d12be56d249ba27edc0dbce07c179d464",
+    "Chair/TranslationExclusion.lean": "1fda8a0f5a161e8431e5b4414e42cb47b76b4bfd021e45a9beafd00ab6bdbf9e",
+    "Chair/Translations.lean": "7419954fe409bc80dcdbc7f57aa7377d1a9fef1e011a275852662a4156d9377d",
     "Chair/Witnesses.lean": "26fbd5665e80d90286f41937b6877326f7a6e6f86a702d0dfebcbfc947fa3f37",
-    "Chair.lean": "4e3ac2021e994960d04a961c057fb39129b7cc3ee116809573ea972178dc367d"
+    "Chair.lean": "fe884d3566816a878d78d8a60eb584a3678e7a8890efc4f6c0fa5fc6b58e6d6c"
   },
-  "scope": "Integral-grid contact recurrence, universal unique grouping, common parent parity and legal deflation at every finite depth; conditional on an initial LegalTiling, not existence or the full solid/aperiodicity theorem"
+  "scope": "Integral-grid recurrence, unique grouping, legal deflation and exclusion of every nonzero integral translation period of any LegalTiling; not initial tiling existence, full finite symmetry or the physical-solid theorem"
 }
