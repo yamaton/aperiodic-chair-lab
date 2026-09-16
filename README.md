@@ -10,6 +10,7 @@ remain unestablished.**
 
 | Purpose | Entry point |
 |---|---|
+| Learn the ideas at undergraduate level | [Illustrated tutorial](docs/APERIODIC_CHAIR_TUTORIAL.html) · [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) |
 | Resume the research | [Current handoff](HANDOFF.md) |
 | Find reports, scripts, evidence, and commands | [Project index](docs/INDEX.md) |
 | Inspect the candidate | [Offline chair viewer](strong/artifacts/recut-chair.html) |

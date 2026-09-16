@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "date": "2026-09-16",
+  "browser": "Firefox",
+  "browser_version": "155.0",
+  "desktop_viewport": [
+    1200,
+    900
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "local_file_open": true,
+  "embedded_images": 2,
+  "mathml_elements": 104,
+  "visible_display_formulas": 8,
+  "local_links_checked": 13,
+  "missing_anchors": [],
+  "mobile_horizontal_overflow": false,
+  "external_requests": [],
+  "page_errors": [],
+  "sha256": {
+    "docs/APERIODIC_CHAIR_TUTORIAL.md": "b906a1bd4a412f6f3d5eaede447007bc7965795b1999cee49c750b3088b47daa",
+    "docs/APERIODIC_CHAIR_TUTORIAL.html": "1c102ea7352b66ef846d5b01bf70625ea95a8a4d40029d3485e79dc6040dd38a",
+    "docs/tutorial.css": "e8c534fbc69651cfea3a5a925b17233749db5f46ed3aed97b505cdf838397b56"
+  }
+}

@@ -4,6 +4,25 @@ Start with the [README](../README.md) for scope and the
 [handoff](../HANDOFF.md) for the latest state. This index organizes the
 existing paths so older commands, citations, and frozen evidence remain usable.
 
+## Undergraduate tutorial
+
+[How one shape can enforce order without repetition](APERIODIC_CHAIR_TUTORIAL.html)
+introduces the chair, local grouping, period halving, physical implications,
+and printable-interface proposals, with worked exercises. The HTML opens
+offline with embedded figures, styling and native MathML; links to project
+reports require the repository. [Markdown source](APERIODIC_CHAIR_TUTORIAL.md).
+[Firefox verification record](tutorial_verification.json) records desktop
+and mobile checks, local links, offline resources and artifact hashes.
+
+Rebuild the HTML from the repository root with Pandoc:
+
+```sh
+pandoc docs/APERIODIC_CHAIR_TUTORIAL.md --from=markdown --to=html5 \
+  --standalone --embed-resources --math-method=mathml --toc --toc-depth=2 \
+  --resource-path=docs --css=tutorial.css \
+  --output=docs/APERIODIC_CHAIR_TUTORIAL.html
+```
+
 ## Current chair research
 
 | Subject | Report | Reproduction or evidence |

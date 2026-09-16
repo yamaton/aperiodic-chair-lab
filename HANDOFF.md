@@ -16,6 +16,19 @@ outreach has been authorized or sent.
 
 ## Active objective
 
+**Undergraduate tutorial added:** [offline illustrated edition](docs/APERIODIC_CHAIR_TUTORIAL.html)
+and [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) explain the chair,
+local matching, unique parents, period halving, finite symmetry, the geometric
+bridge and existence, then physical observables, defects and printable ports.
+Seven exercises have answers. It distinguishes our formal grid results,
+the reproduced Chair44 physical theorem and proposed printing work. This is
+exposition, not a new proof or interface implementation. The project index
+contains the Pandoc rebuild command; frozen research artifacts are unchanged.
+The subsequent reading-flow pass defines the grid model before using it,
+introduces parity with paired intervals, explains the finite orientation
+count and scattering formula through examples, and marks specialized proof
+details optional. Common parity is explicitly a separate proved input.
+
 **Pinned Chair44 build/replay completed:** see
 [`CHAIR44_BUILD_REPRODUCTION.md`](strong/review/CHAIR44_BUILD_REPRODUCTION.md).
 The unchanged release compiled with Lean 4.31.0 and all nine pinned

@@ -829,3 +829,66 @@ All changes remain local and uncommitted; no push or outreach occurred.
 The temporary build is complete, not running. Preserve its usable caches if
 further semantic checks need Lean; avoid another cold build without a specific
 reason. Our own Lean source, verification manifest and frozen design are unchanged.
+
+## Undergraduate tutorial and physical interpretation — 16 September 2026
+
+At the user's request, added `docs/APERIODIC_CHAIR_TUTORIAL.md` and a standalone
+HTML edition generated with Pandoc. The tutorial assumes undergraduate vector
+algebra and basic calculus, with elementary thermodynamics and Fourier analysis
+for its physics sections. It explains the chair, A/B/C contacts, unique parents,
+period halving, the finite-frame symmetry bound, the separate geometry and
+existence obligations, and the distinction between exact constraints,
+equilibrium and assembly. Seven exercises include answers. Existing project
+figures are reused with their approximation and enlargement caveats.
+
+The physical discussion records the need for scattering contrast, the
+boundary-to-volume estimate for periodic approximations in a bounded-penalty
+discrete model, and the proposed sequence from printable interface coupons to
+eight- and 64-chair assemblies. It does not claim a new physical theorem,
+validated replacement interface, finite-temperature phase or self-assembly
+result. Chair44 and Goodman-Strauss are attributed, and the reproduced proof's
+trust boundary and release packaging failure are stated.
+
+Validation: 15 Markdown document/image links resolve; worked arithmetic and
+port dimensions were checked with `uv`. Firefox 155.0 opened the HTML directly
+from disk at desktop and mobile sizes: two embedded images, 68 MathML elements,
+eight visible display formulas, no missing contents anchors, no external
+requests, no page errors, and no mobile page overflow. A long inline answer
+was rewritten to fix the initial mobile overflow. Screenshots of the title,
+proof section and mobile title were inspected. Artifact hashes and browser
+results are in `docs/tutorial_verification.json`; the project index gives the
+rebuild command. README and handoff link the tutorial.
+
+Changes are local and uncommitted. Frozen geometry, Lean source, existing
+viewers and proof certificates were not changed. No outreach or push occurred.
+
+### Tutorial reading-flow revision
+
+The user requested a reread for abrupt changes in complexity. The revision
+addresses specific gaps in the teaching sequence: it defines the grid model
+and legal tilings before their first use, previews the argument in ordinary
+language, explains the face arrows with a coordinate example, and introduces
+parents before giving their recognition rule. The exceptional notch case
+is marked optional.
+
+The period proof now introduces integer-vector notation and chair reference
+points, motivates even periods with paired intervals, and identifies common
+parity as a separate alignment result rather than a consequence of group
+size. The symmetry section derives the 48/24 orientation counts and uses a
+90-degree screw example. The compactness explanation spells out successive
+infinite selections of patches on growing windows.
+
+The physics sections define coarse-graining, build the energy sum from a
+cost per violation, explain the boundary-to-volume estimate, and introduce
+wave interference before the diffraction formula. Printing vocabulary is
+defined inline; formal-proof audit details are marked optional. The text
+is longer because intermediate reasoning is now explicit. This was an
+editorial review by the authoring agent, not a student reading trial or an
+independent mathematical review. No theorem or design was changed.
+
+Regenerated the standalone HTML and refreshed `docs/tutorial_verification.json`.
+Firefox desktop/mobile checks passed with 104 MathML elements, eight visible
+display formulas, two embedded figures, working contents anchors and local
+links, no external requests or page errors, and no mobile page overflow.
+The revised proof and mobile diffraction screenshots were inspected; artifact
+hashes, Markdown links and whitespace checks passed. Changes remain local.
