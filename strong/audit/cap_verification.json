@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "implementation": "Separate frozen-coordinate arithmetic and SymPy identities; no project helper imports",
+  "scope": "Local algebraic identities, frame arithmetic, and feature bounds; global geometric lemmas remain written arguments",
+  "uniformly_normalized_height": "k*1/64",
+  "height_bound": "141/35840",
+  "minimum_face_edge_margin": "19/64",
+  "all_feature_boxes_disjoint": true,
+  "key_multiplicities": {
+    "-12": 8,
+    "-11": 8,
+    "-10": 8,
+    "-9": 8,
+    "-8": 8,
+    "-7": 8,
+    "-6": 8,
+    "-5": 8,
+    "-4": 8,
+    "-3": 8,
+    "-2": 8,
+    "-1": 8,
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8,
+    "11": 8,
+    "12": 8
+  },
+  "global_feature_box_separation_bounds": {
+    "same_unit_face": "3/32",
+    "different_coplanar_faces": "19/32",
+    "parallel_grid_planes": "17779/17920",
+    "perpendicular_grid_faces": "10499/35840"
+  },
+  "volume": "7",
+  "matching_frame_correspondences": 1536,
+  "distinct_frame_locked_poses": 86,
+  "nonintegral_frame_locked_poses": 0,
+  "polynomial_checks": {
+    "line_degree_five_coefficient_without_H": "d**2*e**2*(7*d + 5*e)/35",
+    "constant_u_degree_three_coefficient": "e**3*(x - 1)*(x + 1)/7",
+    "constant_v_degree_three_coefficient": "d**3*(y - 1)*(y + 1)/5",
+    "oblique_degree_four_coefficient": "7*d**4*(7*x + 5*y + 35)/125",
+    "five_listed_lines_on_surface": true,
+    "integral": "16/9",
+    "fifth_line_square_stabilizer": [
+      {
+        "swap": false,
+        "u_sign": 1,
+        "v_sign": 1
+      }
+    ],
+    "equal_coefficients_control_stabilizer": [
+      {
+        "swap": false,
+        "u_sign": 1,
+        "v_sign": 1
+      },
+      {
+        "swap": true,
+        "u_sign": 1,
+        "v_sign": 1
+      }
+    ]
+  },
+  "normal_and_key_only_control": {
+    "nonintegral_local_poses": 4360,
+    "example": {
+      "first_center": [
+        "-1",
+        "-11/16",
+        "-9/16"
+      ],
+      "second_center": [
+        "-9/16",
+        "-11/16",
+        "-1"
+      ],
+      "rotation": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "translation": [
+        "-2",
+        "-5/4",
+        "1/8"
+      ]
+    },
+    "scope": "Local ambiguity without ordered frames, not a tiling or a counterexample to the actual cap"
+  }
+}

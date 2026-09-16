@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A block that never repeats by translation</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#0d1723;color:#eaf2fc}
+*{box-sizing:border-box}body{margin:0}main{max-width:1400px;margin:auto;padding:32px}
+.eyebrow{color:#6cd7c3;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+h1{font-weight:550;letter-spacing:-.04em;font-size:clamp(28px,4vw,48px);margin:12px 0}
+.intro{color:#aebed1;max-width:880px;line-height:1.6;margin-bottom:24px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px}
+.stage{position:relative;border:1px solid #293749;border-radius:16px;overflow:hidden;background:radial-gradient(ellipse at 45% 30%,#1b3044,#0c1520)}
+canvas{width:100%;height:590px;display:block;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+.hint{position:absolute;left:20px;bottom:16px;font-size:12px;color:#97abc1;pointer-events:none}
+.badge{position:absolute;left:20px;top:18px;color:#b4f2e2;font-size:13px;pointer-events:none}
+aside{background:#142130;border:1px solid #293749;border-radius:16px;padding:22px}
+label{display:block;font-size:14px;margin:20px 0 10px}select,button{background:#203247;color:#edf4fc;border:1px solid #40536a;border-radius:7px;padding:10px;font:inherit;width:100%}
+input[type=range]{width:100%;accent-color:#64d6c1}output{float:right;color:#64d6c1;font-variant-numeric:tabular-nums}
+.readout{margin:24px 0;padding-top:18px;border-top:1px solid #324155;color:#aebed1;font-size:13px;line-height:1.6}
+.readout strong{color:#eaf2fc}button{cursor:pointer}button:hover{border-color:#64d6c1}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px;font-size:14px;color:#aebed1;line-height:1.6}
+.notes h2{font-size:16px;color:#eaf2fc;font-weight:550}a{color:#79d9d0}.fine{font-size:12px;color:#91a4b9;margin:30px 0 0}
+@media(max-width:800px){main{padding:20px}.layout{grid-template-columns:1fr}canvas{height:440px}.notes{grid-template-columns:1fr}aside{padding:18px}}
+</style>
+<main>
+<div class="eyebrow">Aperiodic geometry / a concrete construction</div>
+<h1>One solid. An endlessly turning stack.</h1>
+<p class="intro">The Schmitt–Conway–Danzer biprism fills three-dimensional space using identical blocks. Its crossed ridges turn successive layers through an irrational fraction of a full revolution.</p>
+<div class="layout">
+<div class="stage"><div class="badge" id="badge"></div><canvas aria-label="Interactive 3D model of interlocking biprism blocks"></canvas><div class="hint">Drag to orbit · Scroll to zoom · Layer colors identify placement, not different shapes</div></div>
+<aside>
+<label for="mode">Explore</label>
+<select id="mode"><option value="stack">Interlocking layers</option><option value="block">One block</option><option value="control">Control: a repeating 60° block</option><option value="fault">Experiment: slide the upper stack</option></select>
+<label for="layers">Layers <output id="layerValue">5</output></label><input id="layers" type="range" min="1" max="12" value="5">
+<label for="radius">Blocks per layer <output id="radiusValue">9</output></label><input id="radius" type="range" min="0" max="3" value="1">
+<label for="explode">Separate layers <output id="explodeValue">0%</output></label><input id="explode" type="range" min="0" max="100" value="0">
+<div class="readout" id="readout"></div>
+<button id="reset">Reset view</button>
+</aside></div>
+<div class="notes">
+<section><h2>Why it fills space</h2><p>Each layer has complementary ridge and valley surfaces. Turning and raising the next layer matches the entire interface exactly. With separation set to zero, the blocks meet without interior overlaps.</p></section>
+<section><h2>Why translation fails</h2><p>The angle is θ = arccos(1/3). No integer number of layers restores an orientation. A horizontal translation would have to belong to every rotated layer lattice; their infinite intersection contains only zero.</p></section>
+<section><h2>What is still allowed</h2><p>A combined turn and rise can repeat the stack. This is aperiodicity with respect to translations, rather than strong aperiodicity. The solid uses one handedness; allowing mirror-image blocks changes the claim.</p></section>
+</div>
+<p class="fine">Finite patches illustrate the infinite construction; the straight outer edges are patch boundaries. The 60° control changes the block itself. The sliding experiment changes an arrangement, and does not prove a new monotile. <a href="https://www.math.uni-bielefeld.de/~frettloe/papers/scdart.pdf">Source: Baake & Frettlöh</a> · Generated models are numerical approximations of exact geometry.</p>
+</main>
+<script>
+// Embedded so this page also works directly from file://, without a build or fetch.
+const DATA = {
+ height: 2/5,
+ faces: [[1,0,6],[7,2,3],[2,0,4],[5,1,3],[7,3,1,6],[7,6,0,2],[5,3,2,4],[4,0,1,5]],
+ colors: ['#64d6c1','#73bdec','#a49bea','#ea9bbe','#f2b78b','#e4d481','#a5d594']
+};
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');
+const mode=document.querySelector('#mode'),layers=document.querySelector('#layers'),radius=document.querySelector('#radius'),explode=document.querySelector('#explode');
+let yaw=-.65,pitch=.5,zoom=1,drag=null,scene=[],center=[0,0,0],span=4;
+const add=(a,b)=>a.map((v,i)=>v+b[i]);
+const rot=(p,t)=>[Math.cos(t)*p[0]-Math.sin(t)*p[1],Math.sin(t)*p[0]+Math.cos(t)*p[1],p[2]];
+function rebuild(){
+ const control=mode.value==='control',single=mode.value==='block',fault=mode.value==='fault';
+ const co=control?.5:1/3,si=Math.sqrt(1-co*co),theta=Math.acos(co),h=DATA.height,l=1/3;
+ const a=[1,0,0],b=[co,si,0],c=[l*co,l*si,h],d=[l,0,-h];
+ const verts=[[0,0,0],a,b,add(a,b),c,add(a,c),d,add(b,d)];
+ const n=single?1:+layers.value,r=single?0:+radius.value,gap=+explode.value/100*.9;
+ scene=[];const all=[];
+ for(let m=0;m<n;m++)for(let i=-r;i<=r;i++)for(let j=-r;j<=r;j++){
+   const v=verts.map(p=>single?p:add(rot(add(p,[i+j*co-c[0],j*si-c[1],-c[2]]),-m*theta),[fault&&m>=1?Math.sqrt(2)/10:0,0,m*(h+gap)]));
+   all.push(...v);DATA.faces.forEach(f=>scene.push({v:f.map(k=>v[k]),color:DATA.colors[m%DATA.colors.length]}));
+ }
+ const lo=[0,1,2].map(k=>Math.min(...all.map(v=>v[k]))),hi=[0,1,2].map(k=>Math.max(...all.map(v=>v[k])));
+ center=lo.map((v,k)=>(v+hi[k])/2);span=Math.max(...hi.map((v,k)=>v-lo[k]))*1.15;
+ document.querySelector('#layerValue').textContent=n;
+ document.querySelector('#radiusValue').textContent=(2*r+1)**2;
+ document.querySelector('#explodeValue').textContent=single?'0%':explode.value+'%';
+ document.querySelector('#badge').textContent=single?'8 vertices / 8 faces':`${n*(2*r+1)**2} identical blocks / ${n} layers`;
+ document.querySelector('#readout').innerHTML=control?'<strong>Periodic control</strong><br>A 60° turn returns after six layers. The vertical repeat is 6h = 2.4 units.':single?'<strong>The physical block</strong><br>Two triangular prisms share a rhombus. STL: 30 mm rhombus sides, 24 mm total height.':fault?'<strong>A freedom in the fit</strong><br>Every layer above the first slides √2/10 units along the joining ridge. The interface still fits. The shape continues to allow the regular screw stack.':'<strong>70.5287793655…° per layer</strong><br>θ/π is irrational. Individual layers repeat horizontally; the infinite stack has no translation period.';
+ for(const el of [layers,radius,explode])el.disabled=single;
+ draw();
+}
+function camera(p){const a=rot(p.map((v,i)=>v-center[i]),yaw);return[a[0],Math.cos(pitch)*a[1]-Math.sin(pitch)*a[2],Math.sin(pitch)*a[1]+Math.cos(pitch)*a[2]];}
+function draw(){
+ const box=canvas.getBoundingClientRect(),dpr=window.devicePixelRatio||1,w=box.width,h=box.height;
+ canvas.width=w*dpr;canvas.height=h*dpr;ctx.scale(dpr,dpr);ctx.clearRect(0,0,w,h);
+ const scale=Math.min(w,h)/span*zoom;
+ const polys=scene.map(f=>({...f,p:f.v.map(camera)}));
+ polys.sort((a,b)=>a.p.reduce((s,p)=>s+p[1],0)/a.p.length-b.p.reduce((s,p)=>s+p[1],0)/b.p.length);
+ for(const f of polys){
+   const [p,q,r]=f.p,u=q.map((x,i)=>x-p[i]),v=r.map((x,i)=>x-p[i]);
+   const normal=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];
+   const mag=Math.hypot(...normal),light=.65+.35*Math.abs((normal[0]*.3-normal[1]*.6+normal[2]*.74)/mag);
+   const rgb=f.color.match(/\w\w/g).map(x=>Math.min(255,Math.round(parseInt(x,16)*light)));
+   ctx.beginPath();f.p.forEach((p,k)=>{const x=w/2+p[0]*scale,y=h/2-p[2]*scale;k?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.closePath();
+   ctx.fillStyle=`rgb(${rgb})`;ctx.fill();ctx.strokeStyle='#183344';ctx.lineWidth=.7;ctx.stroke();
+ }
+}
+for(const el of [mode,layers,radius,explode])el.addEventListener('input',rebuild);
+canvas.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId)});
+canvas.addEventListener('pointermove',e=>{if(!drag)return;yaw+=(e.clientX-drag[0])*.008;pitch=Math.max(-1.5,Math.min(1.5,pitch+(e.clientY-drag[1])*.008));drag=[e.clientX,e.clientY];draw()});
+canvas.addEventListener('pointerup',()=>drag=null);canvas.addEventListener('pointercancel',()=>drag=null);
+canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.35,Math.min(4,zoom*Math.exp(-e.deltaY*.001)));draw()},{passive:false});
+document.querySelector('#reset').addEventListener('click',()=>{yaw=-.65;pitch=.5;zoom=1;draw()});
+new ResizeObserver(draw).observe(canvas);rebuild();
+</script>
+</html>

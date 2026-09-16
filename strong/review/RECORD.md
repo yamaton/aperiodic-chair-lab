@@ -1,0 +1,310 @@
+# Outside-review preparation record
+
+## 16 September 2026 — preparation chronology
+
+- User requested the next milestone and a handoff record for interruption.
+- Created repository-root `HANDOFF.md` before continuing substantive work.
+- User selected **“Prepare for Goodman-Strauss.”** No sending instruction
+  has been given; no email or other message has been sent.
+- Re-read the active cap/grid proof and finite checkers. No new mathematical
+  counterexample or identified fatal gap was found in this pass.
+- Wrote `DEPENDENCY_AUDIT.md` to separate mathematical implications from
+  machine-checked identities and finite enumerations. Made the existence
+  argument explicit with interior-ball radius `2^(m-1)-141/35840` and a
+  diagonal limit of finite-state placements.
+- Prepared a brief asking about prior equivalence and the cap-to-grid
+  passage, with explicit disclosure of substantial AI assistance.
+- Confirmed the intended address on the author's
+  [Bridges 2025 profile](https://gallery.bridgesmathart.org/exhibitions/bridges-2025-exhibition-of-mathematical-art/chaim-goodman-strauss):
+  `chaimgoodmanstrauss@gmail.com`. This is a public listed address, not a
+  delivery test. Also checked his [personal website](https://chaimgoodmanstrauss.com/).
+- Reopened the [aperiodic-pair author preprint](https://strauss.hosted.uark.edu/papers/NDimPair.pdf).
+  It explicitly distinguishes absence of infinite cyclic symmetry from
+  mere absence of translations, and describes a two-tile construction.
+  Its 1998 preprint date differs from the 1999 publication date.
+- The original twelve-depth frozen candidate is the review target. Its
+  hash, geometry, and archived proposal have not been changed.
+
+## Earlier checkpoint
+
+Build the portable PDF/HTML/source archive; run its reproduction entry
+point; test its file integrity and offline brief; record exact output
+hashes and checks here. Update `HANDOFF.md` after completion.
+
+The local preparation tasks above were subsequently completed as recorded
+below. External correctness and novelty assessment remain pending until a
+human expert actually reviews the material.
+
+## Completed delivery preparation
+
+- Wrote the exact unsent inquiry and an 840-word mathematical brief. The
+  PDF is two pages, approximately 235 KB, with no assumed author identity.
+- Added `verify_package.py`, which validates frozen inputs and archive
+  hashes when present, then runs four primary checks and two controls in a
+  disposable copy. Original supplied certificates are not overwritten.
+- All six checks passed in the working environment: coordinate hierarchy,
+  cap identities, reflected contacts, local parent rule, ordinary-chair
+  periodic control, and phase-erased periodic control.
+- Added `build_package.py`. It gathers the linked source closure and exact
+  data, preserves source paths, creates PDF and standalone MathML HTML, and
+  hashes the supplied files. The archived proposal keeps its original bytes;
+  its historical relative-link base remains `strong/`, documented in the
+  package README.
+- The first PDF attempt failed because LuaLaTeX's installed font tooling
+  was incomplete. Switched to available pdfLaTeX; the two-page PDF then
+  built successfully. No new Python dependencies were added.
+- Inspected both PDF pages and extracted their text. Formulas, scope,
+  AI-assistance disclosure, and reproduction command are readable.
+- Tested the workspace and extracted-archive HTML in headless Firefox.
+  The first mobile check found native MathML overflow; added an HTML scroll
+  container for display equations. Both final pages now pass at desktop
+  and 390-pixel mobile width with zero external requests and page errors.
+- Reran all six mathematical checks from the actual extracted archive.
+  All 63 supplied-file hashes and 124 local document links passed, and the
+  supplied files remained unchanged by the runner.
+- Updated root `AGENTS.md` to direct resuming agents to `HANDOFF.md`.
+- No outside communication was sent, no expert replied, and the candidate
+  remains a proposal. There is no new mathematical validation attributable
+  to the intended recipient.
+
+## Final artifacts and hashes
+
+| Artifact | Location |
+|---|---|
+| Initial attachment | [review-brief.pdf](../artifacts/review-brief.pdf) |
+| Offline preview | [review-brief.html](../artifacts/review-brief.html) |
+| Source/data package | [review-goodman-strauss-v1.zip](../artifacts/review-goodman-strauss-v1.zip) |
+| Build metadata | [review_package_build.json](../artifacts/review_package_build.json) |
+| Working-copy reproduction | [review_reproduction.json](../artifacts/review_reproduction.json) |
+| Extracted-package reproduction | [review_recipient_reproduction.json](../artifacts/review_recipient_reproduction.json) |
+| Delivery/integrity checks | [review_delivery_verification.json](../artifacts/review_delivery_verification.json) |
+| Firefox checks | [review_brief_firefox.json](../artifacts/review_brief_firefox.json) |
+
+Archive: 1,556,314 bytes; 63 files in its checksum manifest plus the manifest.
+
+```text
+ZIP SHA-256
+96cc6c2af19dd93622abf757ff385bcd5052e7a83a221a2dedf572b4aa628f5c
+
+PDF SHA-256
+d716f8132dc7f4e59910378bb7a0fcd142a3ff2b64857765c8dace0697f83072
+
+Workspace HTML SHA-256
+04babf3309194cf888c21eba484f5cf3ca634f7d06576218bb3798c88ac7edf9
+
+Unchanged candidate SHA-256
+95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54
+```
+
+## Outstanding external milestone
+
+The user must supply the sender signature and decide whether to send the
+prepared inquiry. The proposed initial attachment is the short PDF; the
+larger archive is available if requested. There is no agreed review date
+or commitment from Goodman-Strauss. Record any actual sending and response
+here, separating acknowledgment, suggested references, identified gaps,
+and substantive validation.
+
+If the work is interrupted now, resume from [HANDOFF.md](../../HANDOFF.md).
+A prepared and verified package does not complete the external-review milestone.
+
+## Subsequent scrutiny addendum — 16 September 2026
+
+After the user said they would review and send the inquiry personally,
+they requested further scrutiny and research connections. Preserved the
+v1 delivery artifacts and unsent inquiry; created
+`SCRUTINY_ADDENDUM.md` rather than silently revising their attachment.
+
+- Re-examined the cap-to-grid implication order, explicitly separating
+  frame rigidity, coarse ownership, and physical filling of feature boxes.
+  No new counterexample or fatal gap was identified; no external validation
+  is implied by this internal pass.
+- Read primary sources on recognizability, substitution addresses, geometric
+  FLC, and Lee–Moody's model-set treatment of n-dimensional chairs. Their
+  coincidence criterion suggested a concrete orientation-sensitive test.
+- Added `../audit/explore_cube_substitution.py`, a standalone integer
+  calculation reading the frozen candidate, and its complete JSON tables.
+- Found the three-digit synchronization word `(000),(001),(000)` with
+  image sizes `168,42,6,1`. Cross-checked all 98,112 cube labels in direct
+  coordinate expansions through depth three, covering every orientation.
+  Both calculation paths are in one program, not independent reviews.
+- Established finite primitivity exponents 2 (24 orientation states) and
+  3 (168 cube states), and a well-defined 56-state coarse quotient.
+- Wrote the conditional dyadic factor, singleton-fiber almost-everywhere,
+  unique invariant measure, and pure point measurable spectrum arguments
+  for the full grid local-rule space. Kept exceptional fibers, minimality,
+  and the equality with a substitution hull unresolved.
+- Sharpened the conditional all-tilings symmetry bound to 24 and showed
+  that nontrivial symmetries require a Haar-null set of dyadic addresses.
+- Used `uv run --locked python` for the calculations. No new dependency,
+  construction change, external message, or package rebuild.
+
+- Verified the candidate, ZIP, PDF, and HTML hashes still equal the recorded
+  v1 hashes. All five local references in the new addendum resolve.
+
+The earlier preparation record above describes the unchanged v1 package.
+
+## Further literature search — 16 September 2026
+
+User requested continued search for analogous studies. Added
+`LITERATURE_FOLLOWUP.md` with primary links, specific sections read, model
+differences, and follow-up tasks. Identified direct methodological precedents
+for the coincidence search, self-simulation, one-shape orientation coding,
+and geometric homochirality. Updated attribution in the scrutiny addendum
+and the new cube-substitution script's docstring; no algorithm changed.
+
+Especially useful findings: Frettlöh–Sing Theorem 4.4; Joshi–Yassawi's
+reverse-reading/semigroup treatment of unresolved positions; Robinson's
+full versus minimal tiling spaces; Demaine et al. §7's explicit gaps and
+imposed lattice; Spectre Lemma 2.1; and Vereshchagin's 2026 v2 Lemma 2 on
+allowed crowns. The last is a planar preprint, not an immediately applicable
+3D theorem. The report distinguishes tiling-space symmetries from individual
+tiling stabilizers and records the remaining source-hypothesis audits.
+
+No exact duplicate of the frozen system was identified in this search;
+no novelty conclusion follows. No geometry redesign, package rebuild,
+outreach, or external review occurred. Next suggested computation is a
+complete crown-language comparison, not another pair-contact count.
+
+## Direct predecessor search — 16 September 2026
+
+User emphasized that a direct predecessor may exist and asked for a deeper
+search. Added `DIRECT_PRIOR_ART_AUDIT.md` with primary sources, reading
+scopes, specific model differences, and incomplete retrieval branches.
+
+- Found Ben-Abraham–Flom (2022)'s explicit eight-color 3D chair code.
+  Added `../audit/compare_published_chair_code.py` and
+  `../audit/published_chair_code_comparison.json`. Used `uv` to verify the
+  projection `pi(R,q)=-R(2q+1)` on all 1,344 substitution transitions:
+  zero mismatches, eight colors, 21 labels per color. This is a finite
+  substitution-factor check; it does not compare full tiling spaces or
+  prove physical enforcement.
+- Found Fletcher (2010/2011), whose Example 2 uses orientations of one
+  labeled cube to represent 21 Wang cubes, retaining a one-corona atlas.
+- Found Hibma's undated chair-to-identical-cross-shapes exploration,
+  including his explicit periodicity objection to the proposed rules.
+- Revisited Goodman-Strauss's original markings, bumps/nicks statement,
+  connected pair, old circulated variants, and atlas survey. Inspected
+  Culik–Kari, Schmitt's publisher abstract, Greenfeld–Tao's nonabelian
+  model, Stade's second-tile geometric conversion, and Kim's 2026 v2
+  connected-polycube simulation. Full reading scopes are in the report.
+- Named retrieval gaps: old Goodman-Strauss versions, Schmitt full texts,
+  Fletcher thesis. No comprehensive citation-index census completed.
+- Updated the handoff, review index, and scrutiny addendum. No geometry
+  changes, dependencies, package rebuild, outgoing message, or outside review.
+
+The mathematical mechanisms have closer precedents than our first search
+showed. No full duplicate was identified among inspected sources; novelty
+remains unestablished. Next comparison target is the old markings/auxiliary
+tiles versus our actual three motifs, not just their substitution pictures.
+
+Validation: the exact comparison passed; local links in the new audit,
+review index, and scrutiny addendum resolve. Candidate/PDF/HTML/ZIP hashes
+were rechecked and equal the recorded frozen v1 values.
+
+## Actual markings and auxiliary pieces — 16 September 2026
+
+User requested the focused comparison with Goodman-Strauss's original
+markings and auxiliary pieces. Added `GOODMAN_STRAUSS_COMPARISON.md`,
+`../audit/compare_goodman_strauss.py`, and its JSON and readable matrices.
+Read the author preprint and visually inspected published pages 388–394,
+covering the coarse contact lemma, marking definitions, auxiliary-chain
+proof, grouping proof, and connected-pair modification. Recorded the
+published/preprint numbering and the inconsistent later axial offset;
+the computation uses the geometrically consistent Lemma 2.2 formula.
+
+- Translated the old diagonal-arrow rule into coordinates and checked all
+  48 signed-axis/notch-direction cases.
+- Recomputed 1,194 geometric contacts, 44 fitting contacts, and the 14
+  impossible-face exclusions directly from A/B/C descriptors, without
+  importing the project's implementation. This relies on the earlier
+  cap-to-motif validation; it is not a new arbitrary-placement audit.
+- Established exact projection onto the 26 old coarse contact pairs,
+  allowing all three root poses. Of 234 pose assignments, 132 fit the
+  immediate rules and 90 survive local exclusions. Recorded every matrix.
+- Found a three-chair coarse pair-language patch whose two contacts
+  require incompatible root poses. It is not certified extendible in the
+  old marked system and is not a counterexample to that construction.
+- Interpreted the three poses by the exceptional-sign axis of the notch
+  owner; verified same-direction owners copy the pose. In the eight-child
+  substitution, two positions copy and six reset the parent pose.
+- Recognized the central-trigger/notch-owner proof mechanism in the old
+  Proposition 4.6 and corrected attribution in `../MOTIF_GROUPING.md`.
+- Compared the auxiliary chains functionally and recorded the remaining
+  need for an exact local marking map and inverse. Neither full tiling-space
+  equivalence nor a complete duplicate has been established.
+- The existing phase-erased periodic control fails the old coarse family
+  constraints at 72 of 192 directed unit-face incidences. It cannot settle
+  whether those coarse constraints alone force aperiodicity.
+
+Used `uv run --locked python strong/audit/compare_goodman_strauss.py`.
+No dependencies, frozen geometry, delivery artifacts, or inquiry changed;
+no package rebuild, external review, or outreach. Updated the review index,
+direct prior-art audit, and handoff. The current description is a proposed
+geometric realization with extra pose constraints of a known chair-forcing
+mechanism; correctness and novelty still require review.
+
+Validation: the comparison passed, including the same-direction pose-copy
+assertion; all 44 local links across the affected documents resolve.
+Candidate, PDF, HTML, and ZIP hashes equal the recorded frozen v1 values.
+
+## Auxiliary reconstruction — 16 September 2026
+
+User requested sustained work on reconstructing the old auxiliary markings
+locally and reversing the reconstruction. Added `AUXILIARY_RECONSTRUCTION.md`,
+`../audit/reconstruct_gs_auxiliary.py`, and
+`../audit/auxiliary_reconstruction.json`.
+
+### Main findings
+
+- Found two cross slots in the same D³ patch, `(-4,0,-4)` and `(-4,0,4)`,
+  whose eight surrounding decorated chair placements agree exactly after
+  translation. Old y-chain endpoints require different arrows `(1,0,1)`
+  and `(1,0,-1)`.
+- Wrote an inflation argument preserving the conflict while enlarging
+  the common input patch without bound. Consequently no fixed-radius,
+  translation-equivariant forward conversion retaining the coarse chairs
+  exists on the decorated substitution hull. The written argument uses
+  the existing grid substitution legality/existence results; the script
+  checks the seed and depths 3, 4, 5, not all infinitely many scales.
+- Constructed an old `L/I` tiling invariant under cyclic coordinate
+  permutation, using nested patches `S^(2n)(L)+(4^n-1)/3 * (1,1,1)` and
+  equivariant choices on undetermined chains. The chair at the origin is
+  fixed, while our three poses have no fixed choice. This rules out a
+  coarse-chair-preserving rotation-equivariant inverse on the full old
+  space. It does not rule out a translation-only inverse using a fixed
+  coordinate frame. Three decorated nested limits give explicit lifts of
+  the common coarse tiling with different body-diagonal poses.
+
+### Source-model discrepancy kept separate
+
+Re-inspected published pages 389, 391, and 394 and the author preprint.
+The transcribed connected `X₂` model, with exactly one marked axis, has no
+orientation fitting the cross cavity at `(-4,-2,0)` in S³. Its x, y, z
+neighbors force respectively z, z, x axes, blocking all three choices.
+The program records the forcing endpoints and independently verifies the
+actual old cavities using exact quarter-grid CSG. It interprets the printed
+I definition according to the symmetric biprism picture (`|x₁|` in the
+width bound). This is a discrepancy to reconcile with the source, not an
+externally validated correction to the published paper. The original `L/I`
+system has independent cross axes and does not have this one-axis obstruction.
+A targeted web search did not locate clarification; no comprehensive
+erratum search was conducted and no message was sent.
+
+### Verification and preservation
+
+The standalone script imports no project implementation, checks a second
+signed-diagonal transcription of the old substitution, 5,376 matching
+unit-face pairs at depth three, the inflated witnesses, 512 nonoverlapping
+old recut chairs, six exact cross cavities, and finite symmetry/nesting
+claims. Used `uv run --locked python`; no dependency changes.
+
+Updated the comparison report, review index, and handoff to replace the
+assumption that a larger local dictionary will suffice. The frozen solid,
+v1 PDF/HTML/ZIP, and inquiry are preserved. No external mathematical review
+or novelty conclusion is implied. The main new mathematical insight is a
+specific difference in where the two systems store hierarchical information.
+
+Validation: the final reconstruction audit passed, including the nested
+patch inclusions. All 32 local links in the affected reports/index/handoff
+resolve. Candidate, PDF, HTML, and ZIP hashes match the frozen v1 values.

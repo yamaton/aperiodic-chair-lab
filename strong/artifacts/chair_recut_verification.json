@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "profiles": [
+    {
+      "profile_index": 0,
+      "closed_contact_types": 48,
+      "independent_depth_parameters": 4,
+      "all_compatible_contact_types": 186,
+      "direct_patch_check": {
+        "level": 3,
+        "chairs": 512,
+        "coarse_voxels": 3584,
+        "matched_interior_port_pairs": 43008
+      }
+    },
+    {
+      "profile_index": 1,
+      "closed_contact_types": 30,
+      "independent_depth_parameters": 12,
+      "all_compatible_contact_types": 44,
+      "direct_patch_check": {
+        "level": 3,
+        "chairs": 512,
+        "coarse_voxels": 3584,
+        "matched_interior_port_pairs": 43008
+      }
+    },
+    {
+      "profile_index": 2,
+      "closed_contact_types": 26,
+      "independent_depth_parameters": 12,
+      "all_compatible_contact_types": 62,
+      "direct_patch_check": {
+        "level": 3,
+        "chairs": 512,
+        "coarse_voxels": 3584,
+        "matched_interior_port_pairs": 43008
+      }
+    }
+  ],
+  "periodic_witnesses": [
+    {
+      "profile_index": 0,
+      "coarse_voxels": 56,
+      "matched_port_pairs": 768,
+      "chair_count": 8,
+      "signed_port_depth_sum": 0
+    },
+    {
+      "profile_index": 2,
+      "coarse_voxels": 56,
+      "matched_port_pairs": 768,
+      "chair_count": 8,
+      "signed_port_depth_sum": 0
+    }
+  ],
+  "scope": "Representative contact closures, independent signed-graph checks and direct patch/period geometry; not an all-tilings recognition proof."
+}

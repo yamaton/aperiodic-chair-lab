@@ -1,0 +1,86 @@
+solid scd_biprism
+  facet normal -0 -1 0
+    outer loop
+      vertex 30 0 12
+      vertex 0 0 12
+      vertex 10 0 0
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 20 28.2842712475 0
+      vertex 10 28.2842712475 12
+      vertex 40 28.2842712475 12
+    endloop
+  endfacet
+  facet normal -0.942809041582 0.333333333333 0
+    outer loop
+      vertex 3.33333333333 9.42809041582 24
+      vertex 10 28.2842712475 12
+      vertex 0 0 12
+    endloop
+  endfacet
+  facet normal 0.942809041582 -0.333333333333 -2.17110280371e-16
+    outer loop
+      vertex 33.3333333333 9.42809041582 24
+      vertex 30 0 12
+      vertex 40 28.2842712475 12
+    endloop
+  endfacet
+  facet normal 0.506189448732 -0.178964995882 -0.843649081219
+    outer loop
+      vertex 20 28.2842712475 0
+      vertex 40 28.2842712475 12
+      vertex 30 0 12
+    endloop
+  endfacet
+  facet normal 0.506189448732 -0.178964995882 -0.843649081219
+    outer loop
+      vertex 20 28.2842712475 0
+      vertex 30 0 12
+      vertex 10 0 0
+    endloop
+  endfacet
+  facet normal -0.741362475858 0.262111216998 -0.617802063215
+    outer loop
+      vertex 20 28.2842712475 0
+      vertex 0 0 12
+      vertex 10 28.2842712475 12
+    endloop
+  endfacet
+  facet normal -0.741362475858 0.262111216998 -0.617802063215
+    outer loop
+      vertex 20 28.2842712475 0
+      vertex 10 0 0
+      vertex 0 0 12
+    endloop
+  endfacet
+  facet normal 0 0.536894987645 0.843649081219
+    outer loop
+      vertex 33.3333333333 9.42809041582 24
+      vertex 10 28.2842712475 12
+      vertex 3.33333333333 9.42809041582 24
+    endloop
+  endfacet
+  facet normal 0 0.536894987645 0.843649081219
+    outer loop
+      vertex 33.3333333333 9.42809041582 24
+      vertex 40 28.2842712475 12
+      vertex 10 28.2842712475 12
+    endloop
+  endfacet
+  facet normal 0 -0.786333650995 0.617802063215
+    outer loop
+      vertex 33.3333333333 9.42809041582 24
+      vertex 0 0 12
+      vertex 30 0 12
+    endloop
+  endfacet
+  facet normal 0 -0.786333650995 0.617802063215
+    outer loop
+      vertex 33.3333333333 9.42809041582 24
+      vertex 3.33333333333 9.42809041582 24
+      vertex 0 0 12
+    endloop
+  endfacet
+endsolid scd_biprism

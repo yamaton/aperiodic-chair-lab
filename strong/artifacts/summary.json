@@ -1,0 +1,47 @@
+{
+  "achievement": "No strongly aperiodic monotile found.",
+  "scope": "Three explicit keyed-cube matching models on a common cubic grid, 24 proper rotations.",
+  "important_limit": "No-open-patch verdicts do not rule out unaligned Euclidean tilings of a physical solid.",
+  "families": [
+    {
+      "source": "port_search.json",
+      "tested": 3424,
+      "final_classification": {
+        "no_open_3": 2384,
+        "periodic_2": 496,
+        "periodic_4": 400,
+        "periodic_3": 140,
+        "periodic_6": 4
+      }
+    },
+    {
+      "source": "keyed_search.json",
+      "tested": 15536,
+      "final_classification": {
+        "no_open_3": 10768,
+        "periodic_2": 2544,
+        "periodic_4": 1536,
+        "periodic_3": 688
+      }
+    },
+    {
+      "source": "dipole_search.json",
+      "tested": 35184,
+      "final_classification": {
+        "periodic_2": 4512,
+        "periodic_4": 6524,
+        "no_open_7": 8,
+        "periodic_8": 4,
+        "periodic_3": 72,
+        "no_open_3": 24048,
+        "periodic_12": 8,
+        "no_open_5": 8
+      }
+    }
+  ],
+  "total_tested": 54144,
+  "periodic_counterexamples": 16928,
+  "no_aligned_tiling": 37216,
+  "unresolved": 0,
+  "positive_theoretical_result": "A synchronized crossed-plane construction is strongly aperiodic as a 121-state matching-rule system, not as a monotile."
+}

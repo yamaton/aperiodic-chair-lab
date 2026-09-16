@@ -1,0 +1,1294 @@
+{
+  "profile_index": 1,
+  "candidate_neighbor_placements": [
+    [
+      [
+        -2,
+        0,
+        0
+      ],
+      2
+    ],
+    [
+      [
+        -2,
+        0,
+        0
+      ],
+      14
+    ],
+    [
+      [
+        -2,
+        0,
+        0
+      ],
+      18
+    ],
+    [
+      [
+        -2,
+        0,
+        0
+      ],
+      21
+    ],
+    [
+      [
+        -1,
+        -1,
+        -1
+      ],
+      3
+    ],
+    [
+      [
+        -1,
+        -1,
+        1
+      ],
+      7
+    ],
+    [
+      [
+        -1,
+        1,
+        -1
+      ],
+      22
+    ],
+    [
+      [
+        -1,
+        1,
+        1
+      ],
+      14
+    ],
+    [
+      [
+        0,
+        -2,
+        0
+      ],
+      1
+    ],
+    [
+      [
+        0,
+        -2,
+        0
+      ],
+      13
+    ],
+    [
+      [
+        0,
+        -2,
+        0
+      ],
+      17
+    ],
+    [
+      [
+        0,
+        -2,
+        0
+      ],
+      22
+    ],
+    [
+      [
+        0,
+        0,
+        -2
+      ],
+      0
+    ],
+    [
+      [
+        0,
+        0,
+        -2
+      ],
+      12
+    ],
+    [
+      [
+        0,
+        0,
+        -2
+      ],
+      16
+    ],
+    [
+      [
+        0,
+        0,
+        -2
+      ],
+      23
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      0
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      7
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      11
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      12
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      16
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      23
+    ],
+    [
+      [
+        0,
+        2,
+        0
+      ],
+      1
+    ],
+    [
+      [
+        0,
+        2,
+        0
+      ],
+      6
+    ],
+    [
+      [
+        0,
+        2,
+        0
+      ],
+      10
+    ],
+    [
+      [
+        0,
+        2,
+        0
+      ],
+      13
+    ],
+    [
+      [
+        0,
+        2,
+        0
+      ],
+      17
+    ],
+    [
+      [
+        0,
+        2,
+        0
+      ],
+      22
+    ],
+    [
+      [
+        1,
+        -1,
+        -1
+      ],
+      9
+    ],
+    [
+      [
+        1,
+        -1,
+        1
+      ],
+      1
+    ],
+    [
+      [
+        1,
+        1,
+        -1
+      ],
+      16
+    ],
+    [
+      [
+        1,
+        1,
+        1
+      ],
+      1
+    ],
+    [
+      [
+        1,
+        1,
+        1
+      ],
+      3
+    ],
+    [
+      [
+        1,
+        1,
+        1
+      ],
+      6
+    ],
+    [
+      [
+        1,
+        1,
+        1
+      ],
+      10
+    ],
+    [
+      [
+        1,
+        1,
+        1
+      ],
+      13
+    ],
+    [
+      [
+        1,
+        1,
+        1
+      ],
+      17
+    ],
+    [
+      [
+        1,
+        1,
+        1
+      ],
+      22
+    ],
+    [
+      [
+        2,
+        0,
+        0
+      ],
+      2
+    ],
+    [
+      [
+        2,
+        0,
+        0
+      ],
+      5
+    ],
+    [
+      [
+        2,
+        0,
+        0
+      ],
+      9
+    ],
+    [
+      [
+        2,
+        0,
+        0
+      ],
+      14
+    ],
+    [
+      [
+        2,
+        0,
+        0
+      ],
+      18
+    ],
+    [
+      [
+        2,
+        0,
+        0
+      ],
+      21
+    ]
+  ],
+  "stars": [
+    [
+      3,
+      11,
+      15,
+      17,
+      27,
+      32,
+      40
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      22,
+      31,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      23,
+      31,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      23,
+      33,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      23,
+      35,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      23,
+      36,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      24,
+      31,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      24,
+      34,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      24,
+      35,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      24,
+      36,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      25,
+      35,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      26,
+      36,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      27,
+      31,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      27,
+      35,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      27,
+      36,
+      39
+    ],
+    [
+      3,
+      11,
+      15,
+      18,
+      27,
+      37,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      17,
+      27,
+      32,
+      40
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      22,
+      31,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      23,
+      31,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      23,
+      33,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      23,
+      35,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      23,
+      36,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      24,
+      31,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      24,
+      34,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      24,
+      35,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      24,
+      36,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      25,
+      35,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      26,
+      36,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      27,
+      31,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      27,
+      35,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      27,
+      36,
+      39
+    ],
+    [
+      1,
+      4,
+      8,
+      14,
+      18,
+      27,
+      37,
+      39
+    ],
+    [
+      4,
+      5,
+      6,
+      7,
+      28,
+      29,
+      30,
+      32
+    ]
+  ],
+  "star_count": 33,
+  "search_nodes": 105,
+  "central_stars": 1,
+  "outcomes": [
+    {
+      "star_index": 0,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            3
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 1,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 2,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 3,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            6
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 4,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            13
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 5,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            17
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 6,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 7,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            10
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 8,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            13
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 9,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            17
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 10,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            13
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 11,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            17
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 12,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 13,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            13
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 14,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            17
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 15,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            22
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 16,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            3
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 17,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 18,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 19,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            6
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 20,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            13
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 21,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            17
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 22,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 23,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            10
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 24,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            13
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 25,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            17
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 26,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            13
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 27,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            17
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 28,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 29,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            13
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 30,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            17
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 31,
+      "anchor_is_central": false,
+      "forced_parent_neighbors": [
+        {
+          "neighbor": [
+            [
+              1,
+              1,
+              1
+            ],
+            22
+          ],
+          "compatible_stars": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "star_index": 32,
+      "anchor_is_central": true,
+      "forced_parent_neighbors": []
+    }
+  ],
+  "stars_without_group_certificate": [],
+  "compatible_overlapping_group_pairs": [],
+  "limit": "Complete face stars are necessary local configurations, not certified infinite tilings; the parent test uses only one ring of star compatibility."
+}

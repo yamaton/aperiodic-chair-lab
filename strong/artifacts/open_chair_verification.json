@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "anchor_ball_chairs": 84,
+  "independently_enumerated_rooted_clusters": 587,
+  "shape_classes_checked": 206,
+  "exact_cover_cross_checks": [
+    {
+      "shape": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ]
+      ],
+      "nodes": 1,
+      "forced_placements": 4,
+      "contradictions": 1
+    },
+    {
+      "shape": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ]
+      ],
+      "nodes": 1,
+      "forced_placements": 4,
+      "contradictions": 1
+    },
+    {
+      "shape": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ]
+      ],
+      "nodes": 1,
+      "forced_placements": 4,
+      "contradictions": 1
+    }
+  ],
+  "parity_checks": {
+    "centre_recursion_exact": true,
+    "occupied_odd_interior_sites": 2232,
+    "occupied_even_interior_sites": 511,
+    "empty_even_interior_sites": 2352,
+    "signed_permutations_checked": 48
+  },
+  "scope": "Finite certificates and algebraic checks supporting the conditional whole-piece fusion exclusions."
+}

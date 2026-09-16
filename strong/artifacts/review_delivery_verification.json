@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "archive_sha256": "96cc6c2af19dd93622abf757ff385bcd5052e7a83a221a2dedf572b4aa628f5c",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "manifest_files_verified": 63,
+  "local_document_links_checked": 124,
+  "recipient_checks_passed": 6,
+  "supplied_files_unchanged": true,
+  "brief_pdf_pages": 2,
+  "pdf_text_extraction": "passed",
+  "offline_firefox": "passed",
+  "external_review_received": false,
+  "outreach_sent": false
+}

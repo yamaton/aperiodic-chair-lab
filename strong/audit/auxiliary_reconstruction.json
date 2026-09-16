@@ -1,0 +1,1096 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "face_motifs_sha256": "ce881c9c0a17d1a6f7b4dc8a739e9fd3c8c5228ecff52ccc145173d65cc82037",
+  "scope": "Finite witnesses; all-radius and infinite symmetry arguments are in the report.",
+  "depth_three_matching_unit_face_pairs": 5376,
+  "depth_three_complete_crosses_by_number_of_endpoint_forced_axes": {
+    "1": 180,
+    "0": 36
+  },
+  "forward_obstruction": {
+    "crosses": [
+      [
+        -4,
+        0,
+        -4
+      ],
+      [
+        -4,
+        0,
+        4
+      ]
+    ],
+    "forced_axis": "y",
+    "forced_arrows": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1
+      ]
+    ],
+    "endpoint_certificates": [
+      [
+        {
+          "endpoint": [
+            -4,
+            -4,
+            -4
+          ],
+          "notch": [
+            1,
+            1,
+            1
+          ],
+          "arrow": [
+            1,
+            0,
+            1
+          ],
+          "intermediate_crosses": [
+            [
+              -4,
+              -2,
+              -4
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            -4,
+            4,
+            -4
+          ],
+          "notch": [
+            1,
+            -1,
+            1
+          ],
+          "arrow": [
+            1,
+            0,
+            1
+          ],
+          "intermediate_crosses": [
+            [
+              -4,
+              2,
+              -4
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            -4,
+            -4,
+            4
+          ],
+          "notch": [
+            1,
+            1,
+            -1
+          ],
+          "arrow": [
+            1,
+            0,
+            -1
+          ],
+          "intermediate_crosses": [
+            [
+              -4,
+              -2,
+              4
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            -4,
+            4,
+            4
+          ],
+          "notch": [
+            1,
+            -1,
+            -1
+          ],
+          "arrow": [
+            1,
+            0,
+            -1
+          ],
+          "intermediate_crosses": [
+            [
+              -4,
+              2,
+              4
+            ]
+          ]
+        }
+      ]
+    ],
+    "identical_relative_chairs": [
+      {
+        "origin": [
+          -1,
+          -1,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          -1,
+          1
+        ],
+        "rotation": [
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          1,
+          -1
+        ],
+        "rotation": [
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "origin": [
+          1,
+          -1,
+          -1
+        ],
+        "rotation": [
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "origin": [
+          1,
+          -1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "origin": [
+          1,
+          1,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "origin": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "inflation_checks": [
+    {
+      "substitution_depth": 3,
+      "chairs": 512,
+      "common_chairs": 8,
+      "covered_cube_half_side": 1,
+      "crosses": [
+        [
+          -4,
+          0,
+          -4
+        ],
+        [
+          -4,
+          0,
+          4
+        ]
+      ],
+      "chains": [
+        [
+          {
+            "endpoint": [
+              -4,
+              -4,
+              -4
+            ],
+            "notch": [
+              1,
+              1,
+              1
+            ],
+            "arrow": [
+              1,
+              0,
+              1
+            ],
+            "intermediate_crosses": [
+              [
+                -4,
+                -2,
+                -4
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              -4,
+              4,
+              -4
+            ],
+            "notch": [
+              1,
+              -1,
+              1
+            ],
+            "arrow": [
+              1,
+              0,
+              1
+            ],
+            "intermediate_crosses": [
+              [
+                -4,
+                2,
+                -4
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              -4,
+              -4,
+              4
+            ],
+            "notch": [
+              1,
+              1,
+              -1
+            ],
+            "arrow": [
+              1,
+              0,
+              -1
+            ],
+            "intermediate_crosses": [
+              [
+                -4,
+                -2,
+                4
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              -4,
+              4,
+              4
+            ],
+            "notch": [
+              1,
+              -1,
+              -1
+            ],
+            "arrow": [
+              1,
+              0,
+              -1
+            ],
+            "intermediate_crosses": [
+              [
+                -4,
+                2,
+                4
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "substitution_depth": 4,
+      "chairs": 4096,
+      "common_chairs": 64,
+      "covered_cube_half_side": 2,
+      "crosses": [
+        [
+          -8,
+          0,
+          -8
+        ],
+        [
+          -8,
+          0,
+          8
+        ]
+      ],
+      "chains": [
+        [
+          {
+            "endpoint": [
+              -8,
+              -8,
+              -8
+            ],
+            "notch": [
+              1,
+              1,
+              1
+            ],
+            "arrow": [
+              1,
+              0,
+              1
+            ],
+            "intermediate_crosses": [
+              [
+                -8,
+                -2,
+                -8
+              ],
+              [
+                -8,
+                -4,
+                -8
+              ],
+              [
+                -8,
+                -6,
+                -8
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              -8,
+              8,
+              -8
+            ],
+            "notch": [
+              1,
+              -1,
+              1
+            ],
+            "arrow": [
+              1,
+              0,
+              1
+            ],
+            "intermediate_crosses": [
+              [
+                -8,
+                2,
+                -8
+              ],
+              [
+                -8,
+                4,
+                -8
+              ],
+              [
+                -8,
+                6,
+                -8
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              -8,
+              -8,
+              8
+            ],
+            "notch": [
+              1,
+              1,
+              -1
+            ],
+            "arrow": [
+              1,
+              0,
+              -1
+            ],
+            "intermediate_crosses": [
+              [
+                -8,
+                -2,
+                8
+              ],
+              [
+                -8,
+                -4,
+                8
+              ],
+              [
+                -8,
+                -6,
+                8
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              -8,
+              8,
+              8
+            ],
+            "notch": [
+              1,
+              -1,
+              -1
+            ],
+            "arrow": [
+              1,
+              0,
+              -1
+            ],
+            "intermediate_crosses": [
+              [
+                -8,
+                2,
+                8
+              ],
+              [
+                -8,
+                4,
+                8
+              ],
+              [
+                -8,
+                6,
+                8
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "substitution_depth": 5,
+      "chairs": 32768,
+      "common_chairs": 512,
+      "covered_cube_half_side": 4,
+      "crosses": [
+        [
+          -16,
+          0,
+          -16
+        ],
+        [
+          -16,
+          0,
+          16
+        ]
+      ],
+      "chains": [
+        [
+          {
+            "endpoint": [
+              -16,
+              -16,
+              -16
+            ],
+            "notch": [
+              1,
+              1,
+              1
+            ],
+            "arrow": [
+              1,
+              0,
+              1
+            ],
+            "intermediate_crosses": [
+              [
+                -16,
+                -2,
+                -16
+              ],
+              [
+                -16,
+                -4,
+                -16
+              ],
+              [
+                -16,
+                -6,
+                -16
+              ],
+              [
+                -16,
+                -8,
+                -16
+              ],
+              [
+                -16,
+                -10,
+                -16
+              ],
+              [
+                -16,
+                -12,
+                -16
+              ],
+              [
+                -16,
+                -14,
+                -16
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              -16,
+              16,
+              -16
+            ],
+            "notch": [
+              1,
+              -1,
+              1
+            ],
+            "arrow": [
+              1,
+              0,
+              1
+            ],
+            "intermediate_crosses": [
+              [
+                -16,
+                2,
+                -16
+              ],
+              [
+                -16,
+                4,
+                -16
+              ],
+              [
+                -16,
+                6,
+                -16
+              ],
+              [
+                -16,
+                8,
+                -16
+              ],
+              [
+                -16,
+                10,
+                -16
+              ],
+              [
+                -16,
+                12,
+                -16
+              ],
+              [
+                -16,
+                14,
+                -16
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              -16,
+              -16,
+              16
+            ],
+            "notch": [
+              1,
+              1,
+              -1
+            ],
+            "arrow": [
+              1,
+              0,
+              -1
+            ],
+            "intermediate_crosses": [
+              [
+                -16,
+                -2,
+                16
+              ],
+              [
+                -16,
+                -4,
+                16
+              ],
+              [
+                -16,
+                -6,
+                16
+              ],
+              [
+                -16,
+                -8,
+                16
+              ],
+              [
+                -16,
+                -10,
+                16
+              ],
+              [
+                -16,
+                -12,
+                16
+              ],
+              [
+                -16,
+                -14,
+                16
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              -16,
+              16,
+              16
+            ],
+            "notch": [
+              1,
+              -1,
+              -1
+            ],
+            "arrow": [
+              1,
+              0,
+              -1
+            ],
+            "intermediate_crosses": [
+              [
+                -16,
+                2,
+                16
+              ],
+              [
+                -16,
+                4,
+                16
+              ],
+              [
+                -16,
+                6,
+                16
+              ],
+              [
+                -16,
+                8,
+                16
+              ],
+              [
+                -16,
+                10,
+                16
+              ],
+              [
+                -16,
+                12,
+                16
+              ],
+              [
+                -16,
+                14,
+                16
+              ]
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "old_recut_geometry_check": {
+    "quarter_voxels_in_X": 80,
+    "quarter_voxels_in_recut_L": 388,
+    "nonoverlapping_recut_chairs": 512,
+    "exact_cavities_checked": [
+      [
+        -4,
+        -4,
+        0
+      ],
+      [
+        -4,
+        -2,
+        -2
+      ],
+      [
+        -4,
+        -2,
+        0
+      ],
+      [
+        -4,
+        0,
+        -4
+      ],
+      [
+        -4,
+        0,
+        4
+      ],
+      [
+        -2,
+        -2,
+        0
+      ]
+    ]
+  },
+  "connected_X2_model_discrepancy": {
+    "target": [
+      -4,
+      -2,
+      0
+    ],
+    "blockers": [
+      {
+        "rejected_axis": 0,
+        "neighbor_cross": [
+          -2,
+          -2,
+          0
+        ],
+        "neighbor_forced_axis": 2,
+        "forcing_chair_chains": [
+          {
+            "endpoint": [
+              -2,
+              -2,
+              -2
+            ],
+            "notch": [
+              1,
+              1,
+              1
+            ],
+            "arrow": [
+              1,
+              1,
+              0
+            ],
+            "intermediate_crosses": []
+          },
+          {
+            "endpoint": [
+              -2,
+              -2,
+              2
+            ],
+            "notch": [
+              1,
+              1,
+              -1
+            ],
+            "arrow": [
+              1,
+              1,
+              0
+            ],
+            "intermediate_crosses": []
+          }
+        ]
+      },
+      {
+        "rejected_axis": 1,
+        "neighbor_cross": [
+          -4,
+          -4,
+          0
+        ],
+        "neighbor_forced_axis": 2,
+        "forcing_chair_chains": [
+          {
+            "endpoint": [
+              -4,
+              -4,
+              -4
+            ],
+            "notch": [
+              1,
+              1,
+              1
+            ],
+            "arrow": [
+              1,
+              1,
+              0
+            ],
+            "intermediate_crosses": [
+              [
+                -4,
+                -4,
+                -2
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              -4,
+              -4,
+              4
+            ],
+            "notch": [
+              1,
+              1,
+              -1
+            ],
+            "arrow": [
+              1,
+              1,
+              0
+            ],
+            "intermediate_crosses": [
+              [
+                -4,
+                -4,
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "rejected_axis": 2,
+        "neighbor_cross": [
+          -4,
+          -2,
+          -2
+        ],
+        "neighbor_forced_axis": 0,
+        "forcing_chair_chains": [
+          {
+            "endpoint": [
+              -6,
+              -2,
+              -2
+            ],
+            "notch": [
+              1,
+              -1,
+              -1
+            ],
+            "arrow": [
+              0,
+              -1,
+              -1
+            ],
+            "intermediate_crosses": []
+          },
+          {
+            "endpoint": [
+              -2,
+              -2,
+              -2
+            ],
+            "notch": [
+              1,
+              1,
+              1
+            ],
+            "arrow": [
+              0,
+              -1,
+              -1
+            ],
+            "intermediate_crosses": []
+          }
+        ]
+      }
+    ],
+    "scope": "No X2 orientation fits this cavity in the transcribed fixed-chair model; source interpretation needs review."
+  },
+  "reverse_symmetry_checks": {
+    "cyclic_rotation": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "coarse_patch_invariant": true,
+    "original_I_marked_patch_invariant": true,
+    "our_root_motif_not_invariant": true,
+    "changed_decorated_chair_origins": [
+      [
+        -7,
+        -7,
+        -7
+      ],
+      [
+        -6,
+        -6,
+        -6
+      ],
+      [
+        -5,
+        -5,
+        -5
+      ],
+      [
+        -4,
+        -4,
+        -4
+      ],
+      [
+        -3,
+        -3,
+        -3
+      ],
+      [
+        -2,
+        -2,
+        -2
+      ],
+      [
+        -1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "finite_nested_patch_checks": [
+      {
+        "n": 1,
+        "shift": [
+          1,
+          1,
+          1
+        ],
+        "included_chairs": 1,
+        "larger_chairs": 64
+      },
+      {
+        "n": 2,
+        "shift": [
+          5,
+          5,
+          5
+        ],
+        "included_chairs": 64,
+        "larger_chairs": 4096
+      }
+    ],
+    "infinite_nested_patch_shifts": [
+      0,
+      1,
+      5,
+      21,
+      85,
+      341
+    ]
+  }
+}

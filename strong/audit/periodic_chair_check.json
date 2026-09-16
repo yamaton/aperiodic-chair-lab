@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "coarse_periodic_lattice": "x+2*y+4*z = 0 modulo 7",
+  "lattice_basis_columns": [
+    [
+      7,
+      0,
+      0
+    ],
+    [
+      -2,
+      1,
+      0
+    ],
+    [
+      -4,
+      0,
+      1
+    ]
+  ],
+  "coarse_cube_residues": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "tested_neighbor_shift": [
+    -2,
+    1,
+    0
+  ],
+  "all_nine_pose_pairs": [
+    {
+      "first_pose": 0,
+      "second_pose": 0,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    },
+    {
+      "first_pose": 0,
+      "second_pose": 1,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    },
+    {
+      "first_pose": 0,
+      "second_pose": 2,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    },
+    {
+      "first_pose": 1,
+      "second_pose": 0,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    },
+    {
+      "first_pose": 1,
+      "second_pose": 1,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    },
+    {
+      "first_pose": 1,
+      "second_pose": 2,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    },
+    {
+      "first_pose": 2,
+      "second_pose": 0,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    },
+    {
+      "first_pose": 2,
+      "second_pose": 1,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    },
+    {
+      "first_pose": 2,
+      "second_pose": 2,
+      "shared_ports": 16,
+      "mismatched_ports": 16
+    }
+  ],
+  "physical_overlap_witness": {
+    "base_port_center": [
+      "-1",
+      "5/16",
+      "-9/16"
+    ],
+    "keys": [
+      -7,
+      9
+    ],
+    "boundary_x_coordinates": [
+      "-4089/4096",
+      "-4087/4096"
+    ],
+    "point_in_both_tile_interiors": [
+      "-511/512",
+      "5/16",
+      "-9/16"
+    ]
+  },
+  "scope": "Plain chairs tile periodically on this lattice. Its coarse arrangement cannot be decorated by the candidate, even with arbitrary choices among its three shape-preserving proper poses. This is not an exhaustive periodicity test."
+}

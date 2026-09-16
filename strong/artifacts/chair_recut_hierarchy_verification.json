@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "profile_index": 1,
+  "independent_smt_stars": 33,
+  "stars_with_forced_group": 33,
+  "incompatible_overlapping_group_pairs": 28,
+  "macro_contacts_checked": 6801,
+  "compatible_macro_contacts": 44,
+  "deflation_preserves_rules_and_grid": true,
+  "scope": "Finite certificates for a unique, rule-preserving hierarchy in the integer-grid matching model; geometric enforcement requires a separate argument."
+}

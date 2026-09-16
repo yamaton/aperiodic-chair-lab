@@ -1,0 +1,607 @@
+{
+  "status": "passed",
+  "utc": "2026-09-16T04:44:04.972960+00:00",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "python": "3.13.1 (main, Dec 19 2024, 14:32:25) [Clang 18.1.8 ]",
+  "archive_integrity": {
+    "present": true,
+    "files_checked": 63,
+    "status": "passed"
+  },
+  "checks": [
+    {
+      "check": "coordinates and hierarchy",
+      "script": "strong/audit/verify_from_coordinates.py",
+      "script_sha256": "d1450f8a83427ab324da9f7c4f2b847fc17159a70d0bf9a7659ded3833064cfe",
+      "exit_code": 0,
+      "elapsed_seconds": 1.96,
+      "stdout": "Coordinates only: 1194 geometric contacts; 44 legal contacts\nClosed substitution contacts: 30; complete stars: 33\nMacro contacts: 6801; legal: 44; exact deflation passed\n{\n  \"status\": \"passed\",\n  \"candidate_sha256\": \"95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54\",\n  \"implementation\": \"Python standard library; no original geometry imports or solver dependencies\",\n  \"independence_limit\": \"Separate implementation by the same assistant; not external review\",\n  \"rotations\": 24,\n  \"coarse_proper_symmetries\": 3,\n  \"keyed_proper_symmetries\": 1,\n  \"geometric_contacts\": 1194,\n  \"legal_contacts\": 44,\n  \"closed_substitution_contacts\": 30,\n  \"complete_stars\": 33,\n  \"star_search_nodes\": 105,\n  \"certified_stars\": 33,\n  \"central_stars\": 1,\n  \"incompatible_group_pairs\": 28,\n  \"macro_geometric_contacts\": 6801,\n  \"macro_legal_contacts\": 44,\n  \"deflation_preserves_grid_and_rules\": true,\n  \"controls\": {\n    \"unmarked_periodic_control\": {\n      \"quotient_voxels\": 7,\n      \"residues\": [\n        0,\n        1,\n        2,\n        3,\n        4,\n        5,\n        6\n      ],\n      \"matching_lattice_contacts\": 14,\n      \"all_geometric_contacts_allowed\": true\n    },\n    \"damaged_key_control\": {\n      \"swapped_ports\": [\n        0,\n        1\n      ],\n      \"volume_preserved\": true,\n      \"broken_required_contact_count\": 4,\n      \"first_broken_contact\": [\n        [\n          -2,\n          0,\n          0\n        ],\n        [\n          0,\n          0,\n          -1,\n          0,\n          1,\n          0,\n          1,\n          0,\n          0\n        ]\n      ],\n      \"scope\": \"Rejects the original substitution certificate for this mutation; not a non-tilability claim.\"\n    }\n  },\n  \"elapsed_seconds\": 1.9202650870029174,\n  \"scope\": \"Finite lemmas for existence and unique recursive grouping in the integer-grid model\"\n}\n",
+      "stderr": "",
+      "result": {
+        "status": "passed",
+        "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+        "implementation": "Python standard library; no original geometry imports or solver dependencies",
+        "independence_limit": "Separate implementation by the same assistant; not external review",
+        "rotations": 24,
+        "coarse_proper_symmetries": 3,
+        "keyed_proper_symmetries": 1,
+        "geometric_contacts": 1194,
+        "legal_contacts": 44,
+        "closed_substitution_contacts": 30,
+        "complete_stars": 33,
+        "star_search_nodes": 105,
+        "certified_stars": 33,
+        "central_stars": 1,
+        "incompatible_group_pairs": 28,
+        "macro_geometric_contacts": 6801,
+        "macro_legal_contacts": 44,
+        "deflation_preserves_grid_and_rules": true,
+        "controls": {
+          "unmarked_periodic_control": {
+            "quotient_voxels": 7,
+            "residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "matching_lattice_contacts": 14,
+            "all_geometric_contacts_allowed": true
+          },
+          "damaged_key_control": {
+            "swapped_ports": [
+              0,
+              1
+            ],
+            "volume_preserved": true,
+            "broken_required_contact_count": 4,
+            "first_broken_contact": [
+              [
+                -2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ],
+            "scope": "Rejects the original substitution certificate for this mutation; not a non-tilability claim."
+          }
+        },
+        "elapsed_seconds": 1.9202650870029174,
+        "scope": "Finite lemmas for existence and unique recursive grouping in the integer-grid model"
+      }
+    },
+    {
+      "check": "local cap identities",
+      "script": "strong/audit/verify_caps.py",
+      "script_sha256": "359be28299faa75b91107ab294d549736df90b5bf878f07b2c24f1cbf1c82401",
+      "exit_code": 0,
+      "elapsed_seconds": 0.571,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"candidate_sha256\": \"95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54\",\n  \"implementation\": \"Separate frozen-coordinate arithmetic and SymPy identities; no project helper imports\",\n  \"scope\": \"Local algebraic identities, frame arithmetic, and feature bounds; global geometric lemmas remain written arguments\",\n  \"uniformly_normalized_height\": \"k*1/64\",\n  \"height_bound\": \"141/35840\",\n  \"minimum_face_edge_margin\": \"19/64\",\n  \"all_feature_boxes_disjoint\": true,\n  \"key_multiplicities\": {\n    \"-12\": 8,\n    \"-11\": 8,\n    \"-10\": 8,\n    \"-9\": 8,\n    \"-8\": 8,\n    \"-7\": 8,\n    \"-6\": 8,\n    \"-5\": 8,\n    \"-4\": 8,\n    \"-3\": 8,\n    \"-2\": 8,\n    \"-1\": 8,\n    \"1\": 8,\n    \"2\": 8,\n    \"3\": 8,\n    \"4\": 8,\n    \"5\": 8,\n    \"6\": 8,\n    \"7\": 8,\n    \"8\": 8,\n    \"9\": 8,\n    \"10\": 8,\n    \"11\": 8,\n    \"12\": 8\n  },\n  \"global_feature_box_separation_bounds\": {\n    \"same_unit_face\": \"3/32\",\n    \"different_coplanar_faces\": \"19/32\",\n    \"parallel_grid_planes\": \"17779/17920\",\n    \"perpendicular_grid_faces\": \"10499/35840\"\n  },\n  \"volume\": \"7\",\n  \"matching_frame_correspondences\": 1536,\n  \"distinct_frame_locked_poses\": 86,\n  \"nonintegral_frame_locked_poses\": 0,\n  \"polynomial_checks\": {\n    \"line_degree_five_coefficient_without_H\": \"d**2*e**2*(7*d + 5*e)/35\",\n    \"constant_u_degree_three_coefficient\": \"e**3*(x - 1)*(x + 1)/7\",\n    \"constant_v_degree_three_coefficient\": \"d**3*(y - 1)*(y + 1)/5\",\n    \"oblique_degree_four_coefficient\": \"7*d**4*(7*x + 5*y + 35)/125\",\n    \"five_listed_lines_on_surface\": true,\n    \"integral\": \"16/9\",\n    \"fifth_line_square_stabilizer\": [\n      {\n        \"swap\": false,\n        \"u_sign\": 1,\n        \"v_sign\": 1\n      }\n    ],\n    \"equal_coefficients_control_stabilizer\": [\n      {\n        \"swap\": false,\n        \"u_sign\": 1,\n        \"v_sign\": 1\n      },\n      {\n        \"swap\": true,\n        \"u_sign\": 1,\n        \"v_sign\": 1\n      }\n    ]\n  },\n  \"normal_and_key_only_control\": {\n    \"nonintegral_local_poses\": 4360,\n    \"example\": {\n      \"first_center\": [\n        \"-1\",\n        \"-11/16\",\n        \"-9/16\"\n      ],\n      \"second_center\": [\n        \"-9/16\",\n        \"-11/16\",\n        \"-1\"\n      ],\n      \"rotation\": [\n        [\n          0,\n          0,\n          -1\n        ],\n        [\n          -1,\n          0,\n          0\n        ],\n        [\n          0,\n          1,\n          0\n        ]\n      ],\n      \"translation\": [\n        \"-2\",\n        \"-5/4\",\n        \"1/8\"\n      ]\n    },\n    \"scope\": \"Local ambiguity without ordered frames, not a tiling or a counterexample to the actual cap\"\n  }\n}\n",
+      "stderr": "",
+      "result": {
+        "status": "passed",
+        "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+        "implementation": "Separate frozen-coordinate arithmetic and SymPy identities; no project helper imports",
+        "scope": "Local algebraic identities, frame arithmetic, and feature bounds; global geometric lemmas remain written arguments",
+        "uniformly_normalized_height": "k*1/64",
+        "height_bound": "141/35840",
+        "minimum_face_edge_margin": "19/64",
+        "all_feature_boxes_disjoint": true,
+        "key_multiplicities": {
+          "-12": 8,
+          "-11": 8,
+          "-10": 8,
+          "-9": 8,
+          "-8": 8,
+          "-7": 8,
+          "-6": 8,
+          "-5": 8,
+          "-4": 8,
+          "-3": 8,
+          "-2": 8,
+          "-1": 8,
+          "1": 8,
+          "2": 8,
+          "3": 8,
+          "4": 8,
+          "5": 8,
+          "6": 8,
+          "7": 8,
+          "8": 8,
+          "9": 8,
+          "10": 8,
+          "11": 8,
+          "12": 8
+        },
+        "global_feature_box_separation_bounds": {
+          "same_unit_face": "3/32",
+          "different_coplanar_faces": "19/32",
+          "parallel_grid_planes": "17779/17920",
+          "perpendicular_grid_faces": "10499/35840"
+        },
+        "volume": "7",
+        "matching_frame_correspondences": 1536,
+        "distinct_frame_locked_poses": 86,
+        "nonintegral_frame_locked_poses": 0,
+        "polynomial_checks": {
+          "line_degree_five_coefficient_without_H": "d**2*e**2*(7*d + 5*e)/35",
+          "constant_u_degree_three_coefficient": "e**3*(x - 1)*(x + 1)/7",
+          "constant_v_degree_three_coefficient": "d**3*(y - 1)*(y + 1)/5",
+          "oblique_degree_four_coefficient": "7*d**4*(7*x + 5*y + 35)/125",
+          "five_listed_lines_on_surface": true,
+          "integral": "16/9",
+          "fifth_line_square_stabilizer": [
+            {
+              "swap": false,
+              "u_sign": 1,
+              "v_sign": 1
+            }
+          ],
+          "equal_coefficients_control_stabilizer": [
+            {
+              "swap": false,
+              "u_sign": 1,
+              "v_sign": 1
+            },
+            {
+              "swap": true,
+              "u_sign": 1,
+              "v_sign": 1
+            }
+          ]
+        },
+        "normal_and_key_only_control": {
+          "nonintegral_local_poses": 4360,
+          "example": {
+            "first_center": [
+              "-1",
+              "-11/16",
+              "-9/16"
+            ],
+            "second_center": [
+              "-9/16",
+              "-11/16",
+              "-1"
+            ],
+            "rotation": [
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                -1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "translation": [
+              "-2",
+              "-5/4",
+              "1/8"
+            ]
+          },
+          "scope": "Local ambiguity without ordered frames, not a tiling or a counterexample to the actual cap"
+        }
+      }
+    },
+    {
+      "check": "reflections",
+      "script": "strong/audit/check_reflections.py",
+      "script_sha256": "e0163c2a92a0d2222b1462e318ad30ea55ce142f14ba26fd1e488ce134a81fa4",
+      "exit_code": 0,
+      "elapsed_seconds": 0.228,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"candidate_sha256\": \"95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54\",\n  \"implementation\": \"Raw rational ports, signed permutations, cube-center transforms, adjacency-generated offsets; no project helper imports\",\n  \"orientations\": 48,\n  \"geometric_contacts_by_determinant\": {\n    \"-1\": 1194,\n    \"1\": 1194\n  },\n  \"legal_contacts_by_determinant\": {\n    \"1\": 44,\n    \"-1\": 0\n  },\n  \"face_trials_by_determinant\": {\n    \"-1\": 2304,\n    \"1\": 2304\n  },\n  \"matching_unit_faces_by_determinant\": {\n    \"1\": 192,\n    \"-1\": 0\n  },\n  \"improper_face_rejection_witnesses\": 2304,\n  \"full_keyed_solid_stabilizer\": [\n    [\n      1,\n      0,\n      0,\n      0,\n      1,\n      0,\n      0,\n      0,\n      1\n    ]\n  ],\n  \"local_frame_chirality_by_signed_key\": {\n    \"-12\": 1,\n    \"-11\": -1,\n    \"-10\": 1,\n    \"-9\": -1,\n    \"-8\": 1,\n    \"-7\": -1,\n    \"-6\": -1,\n    \"-5\": 1,\n    \"-4\": 1,\n    \"-3\": -1,\n    \"-2\": -1,\n    \"-1\": 1,\n    \"1\": -1,\n    \"2\": 1,\n    \"3\": 1,\n    \"4\": -1,\n    \"5\": -1,\n    \"6\": 1,\n    \"7\": 1,\n    \"8\": -1,\n    \"9\": 1,\n    \"10\": -1,\n    \"11\": 1,\n    \"12\": -1\n  },\n  \"single_cap_frame_correspondences_by_determinant\": {\n    \"1\": 1536,\n    \"-1\": 0\n  },\n  \"distinct_single_cap_poses_by_determinant\": {\n    \"1\": 86,\n    \"-1\": 0\n  },\n  \"all_single_cap_translations_integral\": true,\n  \"proper_legal_set_equals_original\": true,\n  \"scope\": \"Finite contact and frame lemmas. A single opposite-key cap match already requires determinant +1. The written cap-rigidity and component-filling arguments are still needed to extend this to all Euclidean tilings.\"\n}\n",
+      "stderr": "",
+      "result": {
+        "status": "passed",
+        "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+        "implementation": "Raw rational ports, signed permutations, cube-center transforms, adjacency-generated offsets; no project helper imports",
+        "orientations": 48,
+        "geometric_contacts_by_determinant": {
+          "-1": 1194,
+          "1": 1194
+        },
+        "legal_contacts_by_determinant": {
+          "1": 44,
+          "-1": 0
+        },
+        "face_trials_by_determinant": {
+          "-1": 2304,
+          "1": 2304
+        },
+        "matching_unit_faces_by_determinant": {
+          "1": 192,
+          "-1": 0
+        },
+        "improper_face_rejection_witnesses": 2304,
+        "full_keyed_solid_stabilizer": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "local_frame_chirality_by_signed_key": {
+          "-12": 1,
+          "-11": -1,
+          "-10": 1,
+          "-9": -1,
+          "-8": 1,
+          "-7": -1,
+          "-6": -1,
+          "-5": 1,
+          "-4": 1,
+          "-3": -1,
+          "-2": -1,
+          "-1": 1,
+          "1": -1,
+          "2": 1,
+          "3": 1,
+          "4": -1,
+          "5": -1,
+          "6": 1,
+          "7": 1,
+          "8": -1,
+          "9": 1,
+          "10": -1,
+          "11": 1,
+          "12": -1
+        },
+        "single_cap_frame_correspondences_by_determinant": {
+          "1": 1536,
+          "-1": 0
+        },
+        "distinct_single_cap_poses_by_determinant": {
+          "1": 86,
+          "-1": 0
+        },
+        "all_single_cap_translations_integral": true,
+        "proper_legal_set_equals_original": true,
+        "scope": "Finite contact and frame lemmas. A single opposite-key cap match already requires determinant +1. The written cap-rigidity and component-filling arguments are still needed to extend this to all Euclidean tilings."
+      }
+    },
+    {
+      "check": "local parent rule",
+      "script": "strong/audit/motif_grouping.py",
+      "script_sha256": "e2ccbd815f40af30a98fec8b4158f1ecb7d1d5e546dae9b30e05bd197cbfa630",
+      "exit_code": 0,
+      "elapsed_seconds": 0.35,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"candidate_sha256\": \"95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54\",\n  \"scope\": \"Finite grid grouping proof in A/B/C motif language. Analytic grid enforcement and macro recurrence remain separate.\",\n  \"implementation\": \"No project imports; motif-only contacts and propagation. Cap reconstruction and previous certificate are comparison checks.\",\n  \"ports_reconstructed\": 192,\n  \"canonical_motif_handshakes_checked\": 36,\n  \"geometric_contacts\": 1194,\n  \"legal_contacts\": 44,\n  \"pruning_rounds\": 1,\n  \"unextendible_contacts_removed\": 14,\n  \"remaining_contacts\": 30,\n  \"central_trigger_contacts\": [\n    5,\n    6,\n    7,\n    28,\n    29,\n    30\n  ],\n  \"remaining_contacts_equal_substitution_closure\": true,\n  \"central_neighborhood\": [\n    4,\n    5,\n    6,\n    7,\n    28,\n    29,\n    30,\n    37\n  ],\n  \"notch_options\": [\n    31,\n    32,\n    33,\n    34,\n    35,\n    36,\n    37\n  ],\n  \"ordinary_notch_reciprocals\": {\n    \"32\": 30,\n    \"33\": 7,\n    \"34\": 6,\n    \"35\": 28,\n    \"36\": 5,\n    \"31\": 29\n  },\n  \"exceptional_case\": {\n    \"notch_candidate\": 37,\n    \"excluded_triggers\": [\n      5,\n      6,\n      7,\n      28,\n      29,\n      30\n    ],\n    \"forced_candidates\": [\n      21,\n      25,\n      37,\n      39\n    ],\n    \"steps\": [\n      {\n        \"face\": 7,\n        \"forced_candidate\": 21\n      },\n      {\n        \"face\": 10,\n        \"forced_candidate\": 25\n      },\n      {\n        \"face\": 21,\n        \"forced_candidate\": 39\n      }\n    ],\n    \"axial_witness\": 39,\n    \"witness_seen_from_notch\": 28,\n    \"single_face\": 21,\n    \"face_options_after_pruning\": [\n      28,\n      38,\n      39\n    ],\n    \"blocked_by_notch\": [\n      {\n        \"candidate\": 38,\n        \"reason\": {\n          \"mismatched_face\": [\n            [\n              3,\n              0,\n              1\n            ],\n            [\n              0,\n              -1,\n              0\n            ]\n          ],\n          \"first\": [\n            \"C\",\n            [\n              -1,\n              0,\n              0\n            ]\n          ],\n          \"second\": [\n            \"C\",\n            [\n              0,\n              0,\n              1\n            ]\n          ]\n        }\n      }\n    ]\n  },\n  \"group_size\": 8,\n  \"outer_children_select_same_parent\": 7,\n  \"derived_group_coarse_union_is_double_chair\": true,\n  \"complete_stars_crosschecked\": 33,\n  \"star_parent_counts\": {\n    \"31\": 8,\n    \"32\": 8,\n    \"33\": 8,\n    \"34\": 2,\n    \"35\": 2,\n    \"36\": 2,\n    \"37\": 2,\n    \"center\": 1\n  },\n  \"grouping_proof_uses_complete_star_enumeration\": false\n}\n",
+      "stderr": "",
+      "result": {
+        "status": "passed",
+        "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+        "scope": "Finite grid grouping proof in A/B/C motif language. Analytic grid enforcement and macro recurrence remain separate.",
+        "implementation": "No project imports; motif-only contacts and propagation. Cap reconstruction and previous certificate are comparison checks.",
+        "ports_reconstructed": 192,
+        "canonical_motif_handshakes_checked": 36,
+        "geometric_contacts": 1194,
+        "legal_contacts": 44,
+        "pruning_rounds": 1,
+        "unextendible_contacts_removed": 14,
+        "remaining_contacts": 30,
+        "central_trigger_contacts": [
+          5,
+          6,
+          7,
+          28,
+          29,
+          30
+        ],
+        "remaining_contacts_equal_substitution_closure": true,
+        "central_neighborhood": [
+          4,
+          5,
+          6,
+          7,
+          28,
+          29,
+          30,
+          37
+        ],
+        "notch_options": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "ordinary_notch_reciprocals": {
+          "32": 30,
+          "33": 7,
+          "34": 6,
+          "35": 28,
+          "36": 5,
+          "31": 29
+        },
+        "exceptional_case": {
+          "notch_candidate": 37,
+          "excluded_triggers": [
+            5,
+            6,
+            7,
+            28,
+            29,
+            30
+          ],
+          "forced_candidates": [
+            21,
+            25,
+            37,
+            39
+          ],
+          "steps": [
+            {
+              "face": 7,
+              "forced_candidate": 21
+            },
+            {
+              "face": 10,
+              "forced_candidate": 25
+            },
+            {
+              "face": 21,
+              "forced_candidate": 39
+            }
+          ],
+          "axial_witness": 39,
+          "witness_seen_from_notch": 28,
+          "single_face": 21,
+          "face_options_after_pruning": [
+            28,
+            38,
+            39
+          ],
+          "blocked_by_notch": [
+            {
+              "candidate": 38,
+              "reason": {
+                "mismatched_face": [
+                  [
+                    3,
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    -1,
+                    0
+                  ]
+                ],
+                "first": [
+                  "C",
+                  [
+                    -1,
+                    0,
+                    0
+                  ]
+                ],
+                "second": [
+                  "C",
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        "group_size": 8,
+        "outer_children_select_same_parent": 7,
+        "derived_group_coarse_union_is_double_chair": true,
+        "complete_stars_crosschecked": 33,
+        "star_parent_counts": {
+          "31": 8,
+          "32": 8,
+          "33": 8,
+          "34": 2,
+          "35": 2,
+          "36": 2,
+          "37": 2,
+          "center": 1
+        },
+        "grouping_proof_uses_complete_star_enumeration": false
+      }
+    },
+    {
+      "check": "plain-chair periodic control",
+      "script": "strong/audit/check_periodic_chair.py",
+      "script_sha256": "ab3509d7a5ff032386110ccb1dfd69ed0b7bc8b916d71c0f65aeab01ca610127",
+      "exit_code": 0,
+      "elapsed_seconds": 0.056,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"candidate_sha256\": \"95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54\",\n  \"coarse_periodic_lattice\": \"x+2*y+4*z = 0 modulo 7\",\n  \"lattice_basis_columns\": [\n    [\n      7,\n      0,\n      0\n    ],\n    [\n      -2,\n      1,\n      0\n    ],\n    [\n      -4,\n      0,\n      1\n    ]\n  ],\n  \"coarse_cube_residues\": [\n    0,\n    1,\n    2,\n    3,\n    4,\n    5,\n    6\n  ],\n  \"tested_neighbor_shift\": [\n    -2,\n    1,\n    0\n  ],\n  \"all_nine_pose_pairs\": [\n    {\n      \"first_pose\": 0,\n      \"second_pose\": 0,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    },\n    {\n      \"first_pose\": 0,\n      \"second_pose\": 1,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    },\n    {\n      \"first_pose\": 0,\n      \"second_pose\": 2,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    },\n    {\n      \"first_pose\": 1,\n      \"second_pose\": 0,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    },\n    {\n      \"first_pose\": 1,\n      \"second_pose\": 1,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    },\n    {\n      \"first_pose\": 1,\n      \"second_pose\": 2,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    },\n    {\n      \"first_pose\": 2,\n      \"second_pose\": 0,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    },\n    {\n      \"first_pose\": 2,\n      \"second_pose\": 1,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    },\n    {\n      \"first_pose\": 2,\n      \"second_pose\": 2,\n      \"shared_ports\": 16,\n      \"mismatched_ports\": 16\n    }\n  ],\n  \"physical_overlap_witness\": {\n    \"base_port_center\": [\n      \"-1\",\n      \"5/16\",\n      \"-9/16\"\n    ],\n    \"keys\": [\n      -7,\n      9\n    ],\n    \"boundary_x_coordinates\": [\n      \"-4089/4096\",\n      \"-4087/4096\"\n    ],\n    \"point_in_both_tile_interiors\": [\n      \"-511/512\",\n      \"5/16\",\n      \"-9/16\"\n    ]\n  },\n  \"scope\": \"Plain chairs tile periodically on this lattice. Its coarse arrangement cannot be decorated by the candidate, even with arbitrary choices among its three shape-preserving proper poses. This is not an exhaustive periodicity test.\"\n}\n",
+      "stderr": "",
+      "result": {
+        "status": "passed",
+        "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+        "coarse_periodic_lattice": "x+2*y+4*z = 0 modulo 7",
+        "lattice_basis_columns": [
+          [
+            7,
+            0,
+            0
+          ],
+          [
+            -2,
+            1,
+            0
+          ],
+          [
+            -4,
+            0,
+            1
+          ]
+        ],
+        "coarse_cube_residues": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "tested_neighbor_shift": [
+          -2,
+          1,
+          0
+        ],
+        "all_nine_pose_pairs": [
+          {
+            "first_pose": 0,
+            "second_pose": 0,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          },
+          {
+            "first_pose": 0,
+            "second_pose": 1,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          },
+          {
+            "first_pose": 0,
+            "second_pose": 2,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          },
+          {
+            "first_pose": 1,
+            "second_pose": 0,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          },
+          {
+            "first_pose": 1,
+            "second_pose": 1,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          },
+          {
+            "first_pose": 1,
+            "second_pose": 2,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          },
+          {
+            "first_pose": 2,
+            "second_pose": 0,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          },
+          {
+            "first_pose": 2,
+            "second_pose": 1,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          },
+          {
+            "first_pose": 2,
+            "second_pose": 2,
+            "shared_ports": 16,
+            "mismatched_ports": 16
+          }
+        ],
+        "physical_overlap_witness": {
+          "base_port_center": [
+            "-1",
+            "5/16",
+            "-9/16"
+          ],
+          "keys": [
+            -7,
+            9
+          ],
+          "boundary_x_coordinates": [
+            "-4089/4096",
+            "-4087/4096"
+          ],
+          "point_in_both_tile_interiors": [
+            "-511/512",
+            "5/16",
+            "-9/16"
+          ]
+        },
+        "scope": "Plain chairs tile periodically on this lattice. Its coarse arrangement cannot be decorated by the candidate, even with arbitrary choices among its three shape-preserving proper poses. This is not an exhaustive periodicity test."
+      }
+    },
+    {
+      "check": "altered-solid periodic control",
+      "script": "strong/audit/verify_periodic_ablation.py",
+      "script_sha256": "a7e7560ef8e749dbfc85ec98d3ce990029f710718a90e6f3166ea5f25324394a",
+      "exit_code": 0,
+      "elapsed_seconds": 0.053,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"candidate_sha256\": \"95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54\",\n  \"implementation\": \"Direct cube-residue quotient and port comparison using separate raw-coordinate reflection helpers\",\n  \"basis_columns\": [\n    [\n      14,\n      0,\n      0\n    ],\n    [\n      -4,\n      2,\n      0\n    ],\n    [\n      -8,\n      0,\n      2\n    ]\n  ],\n  \"phase_erased_solid\": {\n    \"fundamental_cubes\": 56,\n    \"tiles\": 8,\n    \"unit_face_incidences\": 192,\n    \"port_incidences_checked\": 1536,\n    \"mismatched_unit_face_incidences\": 0,\n    \"mismatched_port_incidences\": 0\n  },\n  \"original_solid_on_same_placements\": {\n    \"fundamental_cubes\": 56,\n    \"tiles\": 8,\n    \"unit_face_incidences\": 192,\n    \"port_incidences_checked\": 1536,\n    \"mismatched_unit_face_incidences\": 60,\n    \"mismatched_port_incidences\": 480\n  },\n  \"scope\": \"An explicit periodic tiling of the altered signed-key quotient; not a periodic tiling of the frozen candidate.\"\n}\n",
+      "stderr": "",
+      "result": {
+        "status": "passed",
+        "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+        "implementation": "Direct cube-residue quotient and port comparison using separate raw-coordinate reflection helpers",
+        "basis_columns": [
+          [
+            14,
+            0,
+            0
+          ],
+          [
+            -4,
+            2,
+            0
+          ],
+          [
+            -8,
+            0,
+            2
+          ]
+        ],
+        "phase_erased_solid": {
+          "fundamental_cubes": 56,
+          "tiles": 8,
+          "unit_face_incidences": 192,
+          "port_incidences_checked": 1536,
+          "mismatched_unit_face_incidences": 0,
+          "mismatched_port_incidences": 0
+        },
+        "original_solid_on_same_placements": {
+          "fundamental_cubes": 56,
+          "tiles": 8,
+          "unit_face_incidences": 192,
+          "port_incidences_checked": 1536,
+          "mismatched_unit_face_incidences": 60,
+          "mismatched_port_incidences": 480
+        },
+        "scope": "An explicit periodic tiling of the altered signed-key quotient; not a periodic tiling of the frozen candidate."
+      }
+    }
+  ],
+  "limit": "Reproduction of finite and symbolic checks. Global geometric arguments and novelty still require mathematical review."
+}

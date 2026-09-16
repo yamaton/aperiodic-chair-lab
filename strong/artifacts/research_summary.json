@@ -1,0 +1,40 @@
+{
+  "achievement": "Curved recut-chair research proposal: verified grid hierarchy and a proposed analytic grid-enforcement argument; the full construction requires mathematical review.",
+  "first_pass": "summary.json",
+  "second_pass": "offset_verification.json",
+  "designs_analyzed": 65216,
+  "new_designs_excluded_by_coarse_model": 512,
+  "periodic_counterexamples": 22132,
+  "no_aligned_tiling": 43084,
+  "unresolved_in_tested_grid_families": 0,
+  "important_limit": "No-open-patch verdicts do not rule out unaligned Euclidean tilings of a physical solid.",
+  "fusion_experiments": [
+    "chair_fusion.json",
+    "chair_clusters.json"
+  ],
+  "further_fusion_experiments": [
+    "open_chair_clusters_4_level4.json",
+    "fused_chair_level3.json",
+    "open_chair_verification.json"
+  ],
+  "further_fusion_scope": "Whole-chair cluster groupings and fixed whole-cross attachments; these exclusions do not classify general monotiles.",
+  "eight_chair_rooted_placements": 2288650,
+  "eight_chair_occurrence_survivors": 12,
+  "eight_chair_new_cover_shapes": 0,
+  "eight_chair_report": "eight_chair_verification.json",
+  "recut_chair_proposal": {
+    "report": "../RECUT_CHAIR.md",
+    "hierarchy_verification": "chair_recut_hierarchy_verification.json",
+    "exact_geometry": "recut_chair_exact.json",
+    "viewer": "recut-chair.html",
+    "pose_templates_enumerated": 6561,
+    "matching_profile_classes": 3,
+    "rejected_by_periodic_witness": 2,
+    "candidate_profile_index": 1,
+    "convention": "Arbitrary Euclidean congruent copies; proposed cap argument forces one handedness throughout each tiling",
+    "limit": "No external mathematical review; approximate meshes are not certified aperiodic.",
+    "reflection_verification": "../audit/reflection_verification.json",
+    "followup_record": "../FOLLOWUP_REFLECTIONS.md",
+    "review_note": "../REVIEW_NOTE.md"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "browser": "Firefox",
+  "version": "155.0",
+  "local_file_open": true,
+  "external_requests": [],
+  "checks": [
+    {
+      "size": "enlarged",
+      "mode": "one",
+      "count": "1 identical solid · 192 ports each",
+      "faces": 1724,
+      "gapDisabled": true
+    },
+    {
+      "size": "enlarged",
+      "mode": "eight",
+      "count": "8 identical copies · 192 ports each",
+      "faces": 13886,
+      "gapDisabled": false
+    },
+    {
+      "size": "enlarged",
+      "mode": "many",
+      "count": "64 identical copies · two substitution levels",
+      "faces": 27820,
+      "gapDisabled": true
+    },
+    {
+      "size": "enlarged",
+      "mode": "valid",
+      "count": "2 identical copies · contact inspection",
+      "faces": 3473,
+      "gapDisabled": false
+    },
+    {
+      "size": "enlarged",
+      "mode": "periodic",
+      "count": "2 identical copies · contact inspection",
+      "faces": 3476,
+      "gapDisabled": false
+    },
+    {
+      "size": "actual",
+      "mode": "one",
+      "count": "1 identical solid · 192 ports each",
+      "faces": 1740,
+      "gapDisabled": true
+    },
+    {
+      "size": "actual",
+      "mode": "eight",
+      "count": "8 identical copies · 192 ports each",
+      "faces": 13920,
+      "gapDisabled": false
+    },
+    {
+      "size": "actual",
+      "mode": "many",
+      "count": "64 identical copies · two substitution levels",
+      "faces": 27840,
+      "gapDisabled": true
+    },
+    {
+      "size": "actual",
+      "mode": "valid",
+      "count": "2 identical copies · contact inspection",
+      "faces": 3480,
+      "gapDisabled": false
+    },
+    {
+      "size": "actual",
+      "mode": "periodic",
+      "count": "2 identical copies · contact inspection",
+      "faces": 3480,
+      "gapDisabled": false
+    }
+  ],
+  "separation_control": true,
+  "orbit_control": true,
+  "zoom_control": true,
+  "mobile_no_horizontal_overflow": true,
+  "page_errors": []
+}

@@ -1,0 +1,406 @@
+{
+  "profile_index": 1,
+  "geometric_macro_contacts_checked": 6801,
+  "compatible_macro_contacts": [
+    {
+      "shift": [
+        -4,
+        0,
+        0
+      ],
+      "rotation": 2,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        -4,
+        0,
+        0
+      ],
+      "rotation": 14,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        -4,
+        0,
+        0
+      ],
+      "rotation": 18,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        -4,
+        0,
+        0
+      ],
+      "rotation": 21,
+      "unit_faces": 16
+    },
+    {
+      "shift": [
+        -2,
+        -2,
+        -2
+      ],
+      "rotation": 3,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        -2,
+        -2,
+        2
+      ],
+      "rotation": 7,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        -2,
+        2,
+        -2
+      ],
+      "rotation": 22,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        -2,
+        2,
+        2
+      ],
+      "rotation": 14,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        -4,
+        0
+      ],
+      "rotation": 1,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        -4,
+        0
+      ],
+      "rotation": 13,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        -4,
+        0
+      ],
+      "rotation": 17,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        -4,
+        0
+      ],
+      "rotation": 22,
+      "unit_faces": 16
+    },
+    {
+      "shift": [
+        0,
+        0,
+        -4
+      ],
+      "rotation": 0,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        0,
+        -4
+      ],
+      "rotation": 12,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        0,
+        -4
+      ],
+      "rotation": 16,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        0,
+        -4
+      ],
+      "rotation": 23,
+      "unit_faces": 16
+    },
+    {
+      "shift": [
+        0,
+        0,
+        4
+      ],
+      "rotation": 0,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        0,
+        4
+      ],
+      "rotation": 7,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        0,
+        4
+      ],
+      "rotation": 11,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        0,
+        4
+      ],
+      "rotation": 12,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        0,
+        4
+      ],
+      "rotation": 16,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        0,
+        4
+      ],
+      "rotation": 23,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        4,
+        0
+      ],
+      "rotation": 1,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        4,
+        0
+      ],
+      "rotation": 6,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        4,
+        0
+      ],
+      "rotation": 10,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        4,
+        0
+      ],
+      "rotation": 13,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        4,
+        0
+      ],
+      "rotation": 17,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        0,
+        4,
+        0
+      ],
+      "rotation": 22,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        -2,
+        -2
+      ],
+      "rotation": 9,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        -2,
+        2
+      ],
+      "rotation": 1,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        2,
+        -2
+      ],
+      "rotation": 16,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        2,
+        2
+      ],
+      "rotation": 1,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        2,
+        2
+      ],
+      "rotation": 3,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        2,
+        2
+      ],
+      "rotation": 6,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        2,
+        2
+      ],
+      "rotation": 10,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        2,
+        2
+      ],
+      "rotation": 13,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        2,
+        2
+      ],
+      "rotation": 17,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        2,
+        2,
+        2
+      ],
+      "rotation": 22,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        4,
+        0,
+        0
+      ],
+      "rotation": 2,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        4,
+        0,
+        0
+      ],
+      "rotation": 5,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        4,
+        0,
+        0
+      ],
+      "rotation": 9,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        4,
+        0,
+        0
+      ],
+      "rotation": 14,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        4,
+        0,
+        0
+      ],
+      "rotation": 18,
+      "unit_faces": 12
+    },
+    {
+      "shift": [
+        4,
+        0,
+        0
+      ],
+      "rotation": 21,
+      "unit_faces": 12
+    }
+  ],
+  "compatible_contact_count": 44,
+  "half_integer_deflated_contacts": [],
+  "deflated_rules_equal_original": true,
+  "scope": "Macrochairs have integer fine-grid centers and proper cube orientations; arbitrary real offsets and orientations are not covered."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "built",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "archive": "strong/artifacts/review-goodman-strauss-v1.zip",
+  "archive_sha256": "96cc6c2af19dd93622abf757ff385bcd5052e7a83a221a2dedf572b4aa628f5c",
+  "archive_bytes": 1556314,
+  "manifest_files": 63,
+  "brief_pdf_sha256": "d716f8132dc7f4e59910378bb7a0fcd142a3ff2b64857765c8dace0697f83072",
+  "brief_html_sha256": "04babf3309194cf888c21eba484f5cf3ca634f7d06576218bb3798c88ac7edf9",
+  "limit": "Build success only; reproduce and inspect before treating package as checked."
+}

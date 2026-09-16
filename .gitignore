@@ -1,0 +1,16 @@
+# Local environments and Python caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.uv-cache/
+*.egg-info/
+
+# Machine-local tools and editor state
+node_modules/
+.DS_Store
+/.agents/
+/.codex/
+
+# Research JSON, logs, meshes, figures, and frozen review packets are tracked.

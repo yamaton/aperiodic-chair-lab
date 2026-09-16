@@ -1,0 +1,52 @@
+{"examined": 1000, "periodic_2": 152, "periodic_3": 8, "periodic_4": 444, "periodic_6": 0, "no_open_3": 372, "no_open_5": 8, "unresolved": 16}
+{"examined": 2000, "periodic_2": 328, "periodic_3": 8, "periodic_4": 882, "periodic_6": 0, "no_open_3": 754, "no_open_5": 8, "unresolved": 20}
+{"examined": 3000, "periodic_2": 504, "periodic_3": 21, "periodic_4": 1122, "periodic_6": 0, "no_open_3": 1325, "no_open_5": 8, "unresolved": 20}
+{"examined": 4000, "periodic_2": 664, "periodic_3": 44, "periodic_4": 1327, "periodic_6": 0, "no_open_3": 1937, "no_open_5": 8, "unresolved": 20}
+{"examined": 5000, "periodic_2": 792, "periodic_3": 56, "periodic_4": 1532, "periodic_6": 0, "no_open_3": 2592, "no_open_5": 8, "unresolved": 20}
+{"examined": 6000, "periodic_2": 920, "periodic_3": 56, "periodic_4": 1710, "periodic_6": 0, "no_open_3": 3286, "no_open_5": 8, "unresolved": 20}
+{"examined": 7000, "periodic_2": 998, "periodic_3": 56, "periodic_4": 1988, "periodic_6": 0, "no_open_3": 3930, "no_open_5": 8, "unresolved": 20}
+{"examined": 8000, "periodic_2": 1176, "periodic_3": 56, "periodic_4": 2324, "periodic_6": 0, "no_open_3": 4416, "no_open_5": 8, "unresolved": 20}
+{"examined": 9000, "periodic_2": 1292, "periodic_3": 56, "periodic_4": 2508, "periodic_6": 0, "no_open_3": 5116, "no_open_5": 8, "unresolved": 20}
+{"examined": 10000, "periodic_2": 1304, "periodic_3": 56, "periodic_4": 2578, "periodic_6": 0, "no_open_3": 6034, "no_open_5": 8, "unresolved": 20}
+{"examined": 11000, "periodic_2": 1432, "periodic_3": 56, "periodic_4": 2760, "periodic_6": 0, "no_open_3": 6724, "no_open_5": 8, "unresolved": 20}
+{"examined": 12000, "periodic_2": 1656, "periodic_3": 56, "periodic_4": 3084, "periodic_6": 0, "no_open_3": 7176, "no_open_5": 8, "unresolved": 20}
+{"examined": 13000, "periodic_2": 1688, "periodic_3": 56, "periodic_4": 3380, "periodic_6": 0, "no_open_3": 7848, "no_open_5": 8, "unresolved": 20}
+{"examined": 14000, "periodic_2": 1904, "periodic_3": 56, "periodic_4": 3748, "periodic_6": 0, "no_open_3": 8264, "no_open_5": 8, "unresolved": 20}
+{"examined": 15000, "periodic_2": 1944, "periodic_3": 56, "periodic_4": 3828, "periodic_6": 0, "no_open_3": 9144, "no_open_5": 8, "unresolved": 20}
+{"examined": 16000, "periodic_2": 2126, "periodic_3": 56, "periodic_4": 4110, "periodic_6": 0, "no_open_3": 9680, "no_open_5": 8, "unresolved": 20}
+{"examined": 17000, "periodic_2": 2320, "periodic_3": 56, "periodic_4": 4354, "periodic_6": 0, "no_open_3": 10242, "no_open_5": 8, "unresolved": 20}
+{"examined": 18000, "periodic_2": 2448, "periodic_3": 56, "periodic_4": 4572, "periodic_6": 0, "no_open_3": 10896, "no_open_5": 8, "unresolved": 20}
+{"examined": 19000, "periodic_2": 2576, "periodic_3": 56, "periodic_4": 4757, "periodic_6": 0, "no_open_3": 11583, "no_open_5": 8, "unresolved": 20}
+{"examined": 20000, "periodic_2": 2640, "periodic_3": 56, "periodic_4": 4878, "periodic_6": 0, "no_open_3": 12398, "no_open_5": 8, "unresolved": 20}
+{"examined": 21000, "periodic_2": 2776, "periodic_3": 56, "periodic_4": 5054, "periodic_6": 0, "no_open_3": 13086, "no_open_5": 8, "unresolved": 20}
+{"examined": 22000, "periodic_2": 2904, "periodic_3": 56, "periodic_4": 5166, "periodic_6": 0, "no_open_3": 13846, "no_open_5": 8, "unresolved": 20}
+{"examined": 23000, "periodic_2": 2984, "periodic_3": 56, "periodic_4": 5254, "periodic_6": 0, "no_open_3": 14678, "no_open_5": 8, "unresolved": 20}
+{"examined": 24000, "periodic_2": 3112, "periodic_3": 56, "periodic_4": 5374, "periodic_6": 0, "no_open_3": 15430, "no_open_5": 8, "unresolved": 20}
+{"examined": 25000, "periodic_2": 3264, "periodic_3": 56, "periodic_4": 5530, "periodic_6": 0, "no_open_3": 16122, "no_open_5": 8, "unresolved": 20}
+{"examined": 26000, "periodic_2": 3384, "periodic_3": 56, "periodic_4": 5648, "periodic_6": 0, "no_open_3": 16884, "no_open_5": 8, "unresolved": 20}
+{"examined": 27000, "periodic_2": 3520, "periodic_3": 56, "periodic_4": 5760, "periodic_6": 0, "no_open_3": 17636, "no_open_5": 8, "unresolved": 20}
+{"examined": 28000, "periodic_2": 3632, "periodic_3": 64, "periodic_4": 5832, "periodic_6": 0, "no_open_3": 18444, "no_open_5": 8, "unresolved": 20}
+{"examined": 29000, "periodic_2": 3776, "periodic_3": 64, "periodic_4": 5938, "periodic_6": 0, "no_open_3": 19194, "no_open_5": 8, "unresolved": 20}
+{"examined": 30000, "periodic_2": 3888, "periodic_3": 64, "periodic_4": 6022, "periodic_6": 0, "no_open_3": 19998, "no_open_5": 8, "unresolved": 20}
+{"examined": 31000, "periodic_2": 4012, "periodic_3": 72, "periodic_4": 6136, "periodic_6": 0, "no_open_3": 20752, "no_open_5": 8, "unresolved": 20}
+{"examined": 32000, "periodic_2": 4152, "periodic_3": 72, "periodic_4": 6232, "periodic_6": 0, "no_open_3": 21516, "no_open_5": 8, "unresolved": 20}
+{"examined": 33000, "periodic_2": 4258, "periodic_3": 72, "periodic_4": 6334, "periodic_6": 0, "no_open_3": 22308, "no_open_5": 8, "unresolved": 20}
+{"examined": 34000, "periodic_2": 4386, "periodic_3": 72, "periodic_4": 6402, "periodic_6": 0, "no_open_3": 23112, "no_open_5": 8, "unresolved": 20}
+{"examined": 35000, "periodic_2": 4492, "periodic_3": 72, "periodic_4": 6508, "periodic_6": 0, "no_open_3": 23900, "no_open_5": 8, "unresolved": 20}
+{
+  "family": "one cube, six dipole faces, arbitrary face-key partition, four directions per face",
+  "scope": "aligned cubic-grid tilings with all 24 proper cube rotations",
+  "enumeration_complete": true,
+  "dual_mask": 2,
+  "stats": {
+    "examined": 35184,
+    "periodic_2": 4512,
+    "periodic_3": 72,
+    "periodic_4": 6524,
+    "periodic_6": 0,
+    "no_open_3": 24048,
+    "no_open_5": 8,
+    "unresolved": 20
+  },
+  "elapsed_seconds": 65.88601521600049
+}

@@ -1,0 +1,49 @@
+{
+  "status": "independently verified unsatisfiable",
+  "shape_index": 1,
+  "required_chairs": [
+    2641,
+    2642,
+    2644
+  ],
+  "all_placements_touching_required_chairs": [
+    [
+      2626,
+      2640,
+      2641,
+      2642,
+      2643,
+      2645,
+      2646,
+      2647
+    ],
+    [
+      2626,
+      2640,
+      2641,
+      2643,
+      2644,
+      2645,
+      2646,
+      2647
+    ],
+    [
+      2626,
+      2640,
+      2642,
+      2643,
+      2644,
+      2645,
+      2646,
+      2647
+    ]
+  ],
+  "required_count": 3,
+  "placement_count": 3,
+  "backtracking": {
+    "nodes": 3,
+    "contradictions": 2
+  },
+  "odd_required_set_even_intersections": true,
+  "limit": "A sufficient contradiction certificate, not a claim of globally minimum size."
+}

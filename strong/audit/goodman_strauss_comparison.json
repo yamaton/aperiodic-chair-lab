@@ -1,0 +1,1450 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "input_sha256": {
+    "frozen_v1/candidate.json": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+    "face_motifs.json": "ce881c9c0a17d1a6f7b4dc8a739e9fd3c8c5228ecff52ccc145173d65cc82037",
+    "motif_grouping_certificate.json": "ac0a596c1d0c6b45a8e22194e30440169d310c62e6c69439bef98db9f3404030"
+  },
+  "scope": "Grid pair relations and old axial arrow directions, not a full auxiliary-tile conjugacy.",
+  "geometric_contacts_recomputed": 1194,
+  "raw_contacts_recomputed": 44,
+  "impossible_contacts_recomputed": 14,
+  "surviving_contacts": 30,
+  "old_axial_arrow_tests": 48,
+  "old_coarse_families": {
+    "i": 6,
+    "ii": 6,
+    "iii": 14
+  },
+  "old_coarse_contacts": 26,
+  "root_poses": [
+    [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "neighbor_pose_convention": "Lexicographic order of proper matrices R with R(1,1,1)=notch.",
+  "all_possible_pose_pairs": 234,
+  "raw_pose_pairs": 132,
+  "surviving_pose_pairs": 90,
+  "surviving_lift_count_histogram": {
+    "3": 23,
+    "7": 3
+  },
+  "family_face_motif_counts_for_fixed_root": {
+    "i": {
+      "A:1 B:1 C:2": 1,
+      "A:2 B:1 C:1": 1,
+      "A:1 B:2 C:1": 1,
+      "A:1 B:1 C:1": 7
+    },
+    "ii": {
+      "A:1 B:1 C:1": 6
+    },
+    "iii": {
+      "A:1 B:1 C:1": 14
+    }
+  },
+  "notch_owner_axis_routing": [
+    {
+      "root_pose": 0,
+      "exceptional_sign_axis": "z",
+      "notch_owner_directions": [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "root_pose": 1,
+      "exceptional_sign_axis": "x",
+      "notch_owner_directions": [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "root_pose": 2,
+      "exceptional_sign_axis": "y",
+      "notch_owner_directions": [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "substitution_pose_copy_positions": [
+    [
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "substitution_pose_reset_positions": [
+    [
+      -1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      1,
+      -1
+    ],
+    [
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1
+    ]
+  ],
+  "coarse_patch_without_surviving_pose_lift": {
+    "neighbors": [
+      {
+        "origin": [
+          0,
+          0,
+          2
+        ],
+        "notch": [
+          -1,
+          -1,
+          1
+        ],
+        "family": "ii"
+      },
+      {
+        "origin": [
+          0,
+          2,
+          0
+        ],
+        "notch": [
+          -1,
+          1,
+          -1
+        ],
+        "family": "ii"
+      }
+    ],
+    "required_root_poses": [
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    "scope": "Coarse three-chair patch only; not certified extendible in the old system."
+  },
+  "contacts": [
+    {
+      "origin": [
+        -2,
+        0,
+        0
+      ],
+      "notch": [
+        -1,
+        1,
+        1
+      ],
+      "family": "i",
+      "raw_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        -2,
+        0,
+        0
+      ],
+      "notch": [
+        1,
+        -1,
+        -1
+      ],
+      "family": "ii",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        -1,
+        -1,
+        -1
+      ],
+      "notch": [
+        1,
+        1,
+        1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        -1,
+        -1,
+        1
+      ],
+      "notch": [
+        1,
+        1,
+        -1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        -1,
+        1,
+        -1
+      ],
+      "notch": [
+        1,
+        -1,
+        1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        -1,
+        1,
+        1
+      ],
+      "notch": [
+        1,
+        -1,
+        -1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        0,
+        -2,
+        0
+      ],
+      "notch": [
+        -1,
+        1,
+        -1
+      ],
+      "family": "ii",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        0,
+        -2,
+        0
+      ],
+      "notch": [
+        1,
+        -1,
+        1
+      ],
+      "family": "i",
+      "raw_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -2
+      ],
+      "notch": [
+        -1,
+        -1,
+        1
+      ],
+      "family": "ii",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -2
+      ],
+      "notch": [
+        1,
+        1,
+        -1
+      ],
+      "family": "i",
+      "raw_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        0,
+        0,
+        2
+      ],
+      "notch": [
+        -1,
+        -1,
+        1
+      ],
+      "family": "ii",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        0,
+        0,
+        2
+      ],
+      "notch": [
+        1,
+        1,
+        -1
+      ],
+      "family": "i",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        0,
+        2,
+        0
+      ],
+      "notch": [
+        -1,
+        1,
+        -1
+      ],
+      "family": "ii",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        0,
+        2,
+        0
+      ],
+      "notch": [
+        1,
+        -1,
+        1
+      ],
+      "family": "i",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        -1,
+        -1
+      ],
+      "notch": [
+        -1,
+        1,
+        1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        -1,
+        1
+      ],
+      "notch": [
+        -1,
+        1,
+        -1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        1,
+        -1
+      ],
+      "notch": [
+        -1,
+        -1,
+        1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        1,
+        1
+      ],
+      "notch": [
+        -1,
+        -1,
+        1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        1,
+        1
+      ],
+      "notch": [
+        -1,
+        1,
+        -1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        1,
+        1
+      ],
+      "notch": [
+        -1,
+        1,
+        1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        1,
+        1
+      ],
+      "notch": [
+        1,
+        -1,
+        -1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        1,
+        1
+      ],
+      "notch": [
+        1,
+        -1,
+        1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        1,
+        1
+      ],
+      "notch": [
+        1,
+        1,
+        -1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        1,
+        1,
+        1
+      ],
+      "notch": [
+        1,
+        1,
+        1
+      ],
+      "family": "iii",
+      "raw_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "origin": [
+        2,
+        0,
+        0
+      ],
+      "notch": [
+        -1,
+        1,
+        1
+      ],
+      "family": "i",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "origin": [
+        2,
+        0,
+        0
+      ],
+      "notch": [
+        1,
+        -1,
+        -1
+      ],
+      "family": "ii",
+      "raw_pose_matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "surviving_pose_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "browser": "Firefox",
+  "version": "155.0",
+  "local_file_open": true,
+  "checks": [
+    {
+      "file": "/home/vierbein/playground/Cowork/aperiodic-3d-monotile/strong/artifacts/review-brief.html",
+      "math_elements": 14,
+      "display_math_visible": true,
+      "mobile_no_horizontal_overflow": true,
+      "external_requests": [],
+      "page_errors": []
+    },
+    {
+      "file": "/tmp/chair-delivery-_91ab64u/START_HERE.html",
+      "math_elements": 14,
+      "display_math_visible": true,
+      "mobile_no_horizontal_overflow": true,
+      "external_requests": [],
+      "page_errors": []
+    }
+  ]
+}

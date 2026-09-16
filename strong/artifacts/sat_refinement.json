@@ -1,0 +1,59 @@
+[
+  {
+    "tile": [
+      4,
+      6,
+      2,
+      8,
+      0,
+      4
+    ],
+    "outcome": "no_open_7",
+    "checks": {
+      "open7": {
+        "status": "unsat",
+        "size": 7,
+        "periodic": false,
+        "elapsed_seconds": 6.443477177000204
+      }
+    }
+  },
+  {
+    "tile": [
+      4,
+      6,
+      2,
+      8,
+      6,
+      0
+    ],
+    "outcome": "no_open_7",
+    "checks": {
+      "open7": {
+        "status": "unsat",
+        "size": 7,
+        "periodic": false,
+        "elapsed_seconds": 8.977164578000156
+      }
+    }
+  },
+  {
+    "tile": [
+      4,
+      6,
+      2,
+      10,
+      4,
+      0
+    ],
+    "outcome": "no_open_7",
+    "checks": {
+      "open7": {
+        "status": "unsat",
+        "size": 7,
+        "periodic": false,
+        "elapsed_seconds": 9.08930455799964
+      }
+    }
+  }
+]

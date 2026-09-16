@@ -1,0 +1,831 @@
+{
+  "status": "passed",
+  "burnside_orbit_count": 11072,
+  "lattices_checked": 1325,
+  "sat_certificates_checked": 8856,
+  "directed_interfaces_checked": 1887600,
+  "independent_samples": [
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "classification": "inherited_no_open_3",
+      "unanchored_open3": "unsat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          0
+        ]
+      ],
+      "classification": "inherited_no_open_3",
+      "unanchored_open3": "unsat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0
+        ]
+      ],
+      "classification": "inherited_no_open_3",
+      "unanchored_open3": "unsat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "classification": "no_open_3",
+      "unanchored_open3": "unsat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ]
+      ],
+      "classification": "no_open_3",
+      "unanchored_open3": "unsat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "classification": "no_open_3",
+      "unanchored_open3": "unsat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          3,
+          1
+        ]
+      ],
+      "classification": "no_open_5",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "classification": "no_open_5",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "classification": "no_open_5",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "classification": "periodic_2",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "classification": "periodic_2",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "classification": "periodic_2",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "classification": "periodic_3",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "classification": "periodic_3",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          3
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "classification": "periodic_3",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "classification": "periodic_4",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ]
+      ],
+      "classification": "periodic_4",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "classification": "periodic_4",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "classification": "unresolved",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "classification": "unresolved",
+      "unanchored_open3": "sat"
+    },
+    {
+      "tile": [
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "classification": "unresolved",
+      "unanchored_open3": "sat"
+    }
+  ],
+  "exact_cover_example": {
+    "tile": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ],
+    "basis_columns": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    "covered_voxels": 393216,
+    "holes": 0,
+    "overlaps": 0
+  },
+  "final_classifications": {
+    "periodic_2": 1632,
+    "periodic_4": 3436,
+    "no_open_3": 5324,
+    "periodic_oblique": 16,
+    "no_open_5": 24,
+    "periodic_8": 8,
+    "periodic_3": 112,
+    "inherited_no_open_3": 512,
+    "no_open_7": 8
+  },
+  "new_family_total": 11072
+}

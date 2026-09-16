@@ -1,0 +1,16 @@
+{
+  "status": "finite coarse-cluster experiment, not a monotile result",
+  "level": 2,
+  "chair_count": 64,
+  "connected_four_chair_placements": 3173,
+  "proper_congruence_classes": 255,
+  "classes_covering_each_chair_somewhere": 3,
+  "classes_admitting_an_exact_cover": 0,
+  "solutions": [],
+  "independent_validation": {
+    "all_four_subsets_checked": true,
+    "eligible_classes_rechecked_with_z3": 3
+  },
+  "elapsed_seconds": 0.8663847190000524,
+  "scope": "One congruence class of face-connected four-chair clusters, 24 proper rotations; whole clusters lie inside this level-two supertile."
+}

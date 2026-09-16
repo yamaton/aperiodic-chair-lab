@@ -1,0 +1,8 @@
+{
+  "vertices": 10586,
+  "triangles": 21168,
+  "closed_oriented_manifold": true,
+  "euler_characteristic": 2,
+  "volume": 7.000000000000021,
+  "limit": "This triangulation approximates the curved candidate; algebraic surface rigidity is not a property verified for this mesh."
+}

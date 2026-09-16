@@ -1,0 +1,56 @@
+{
+  "status": "passed; computational checks do not classify arbitrary tilings",
+  "vertices": 8,
+  "polygonal_faces": 8,
+  "stl_triangles": 12,
+  "watertight_edge_incidence": true,
+  "angle_degrees": 70.52877936550931,
+  "volume": 0.3771236166328254,
+  "analytic_volume": "4 sqrt(2) / 15",
+  "seam_samples_per_interface": 20000,
+  "interfaces_checked": 17,
+  "max_seam_error": 1.4654943925052066e-14,
+  "single_fault_seam_error": 2.4980018054066022e-15,
+  "wrong_angle_control_seam_error": 0.17889704148513633,
+  "patch_tiles": 175,
+  "overlap_linear_programs": 947,
+  "max_overlap_inscribed_radius": 0.0,
+  "interior_coverage_samples": 12000,
+  "all_coverage_counts_equal_one": true,
+  "exact_lattice_rotation": "Matrix([[2/3, 1], [-1, 0]])",
+  "finite_lattice_search": [
+    {
+      "layers": 1,
+      "nonzero_vectors_in_coordinate_box_60": 14640
+    },
+    {
+      "layers": 2,
+      "nonzero_vectors_in_coordinate_box_60": 4960
+    },
+    {
+      "layers": 3,
+      "nonzero_vectors_in_coordinate_box_60": 1652
+    },
+    {
+      "layers": 4,
+      "nonzero_vectors_in_coordinate_box_60": 550
+    },
+    {
+      "layers": 5,
+      "nonzero_vectors_in_coordinate_box_60": 182
+    },
+    {
+      "layers": 6,
+      "nonzero_vectors_in_coordinate_box_60": 60
+    },
+    {
+      "layers": 7,
+      "nonzero_vectors_in_coordinate_box_60": 20
+    },
+    {
+      "layers": 8,
+      "nonzero_vectors_in_coordinate_box_60": 6
+    }
+  ],
+  "rational_angle_control": "60 degrees repeats vertically after 6 layers"
+}

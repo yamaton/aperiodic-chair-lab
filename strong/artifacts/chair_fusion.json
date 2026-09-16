@@ -1,0 +1,29 @@
+{
+  "source": "https://doi.org/10.1006/eujc.1998.0282",
+  "status": "necessary conditions and finite cluster test; not a monotile",
+  "volumes": {
+    "I": "5/12",
+    "X": "5/4",
+    "L": "97/16"
+  },
+  "necessary_filler_ratios": {
+    "X_per_L": "3/4",
+    "I_per_L": "9/4"
+  },
+  "smallest_integral_fusion": {
+    "L": 4,
+    "X": 3
+  },
+  "level_one_coarse_test": {
+    "bipartitions": 35,
+    "both_connected": 19,
+    "congruent_proper": 0,
+    "congruent_with_reflections": 0
+  },
+  "witnesses": [],
+  "limits": [
+    "Only whole-tile fusion with a fixed number of L and X pieces is addressed.",
+    "The cluster test requires four whole coarse chairs inside one level-one supertile.",
+    "Cross-boundary clusters, re-cut pieces, and other constructions are not excluded."
+  ]
+}

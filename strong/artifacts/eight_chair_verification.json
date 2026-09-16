@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "enumeration_controls": [
+    {
+      "size": 4,
+      "rooted_clusters": 587
+    },
+    {
+      "size": 5,
+      "rooted_clusters": 5050
+    }
+  ],
+  "rooted_eight_clusters": 2288650,
+  "rejected_placement_witnesses_checked": 31,
+  "surviving_occurrence_classes": 12,
+  "independent_exact_cover_exclusions": [
+    {
+      "shape_index": 0,
+      "required_chairs_checked": 3351,
+      "nodes": 7,
+      "contradictions": 4
+    },
+    {
+      "shape_index": 1,
+      "required_chairs_checked": 3,
+      "nodes": 3,
+      "contradictions": 2
+    },
+    {
+      "shape_index": 2,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    },
+    {
+      "shape_index": 3,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    },
+    {
+      "shape_index": 4,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    },
+    {
+      "shape_index": 5,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    },
+    {
+      "shape_index": 6,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    },
+    {
+      "shape_index": 7,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    },
+    {
+      "shape_index": 8,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    },
+    {
+      "shape_index": 9,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    },
+    {
+      "shape_index": 10,
+      "required_chairs_checked": 3351,
+      "nodes": 1,
+      "forced_placements": 1,
+      "contradictions": 1
+    }
+  ],
+  "valid_cover_shape_index": 11,
+  "survivor_is_standard_supertile": true,
+  "unmarked_survivor_periodic_control": {
+    "voxel_volume": 56,
+    "lattice_basis_columns": [
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        -4,
+        2,
+        0
+      ],
+      [
+        -8,
+        0,
+        2
+      ]
+    ],
+    "distinct_quotient_voxels": 56,
+    "holes": 0,
+    "overlaps": 0,
+    "limit": "This periodic certificate concerns the unmarked coarse polycube, not a hypothetical keyed fusion."
+  },
+  "scope": "Whole-chair groups with proper rotations and sufficient halo; not arbitrary 3D monotiles."
+}

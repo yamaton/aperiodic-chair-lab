@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "implementation": "Direct cube-residue quotient and port comparison using separate raw-coordinate reflection helpers",
+  "basis_columns": [
+    [
+      14,
+      0,
+      0
+    ],
+    [
+      -4,
+      2,
+      0
+    ],
+    [
+      -8,
+      0,
+      2
+    ]
+  ],
+  "phase_erased_solid": {
+    "fundamental_cubes": 56,
+    "tiles": 8,
+    "unit_face_incidences": 192,
+    "port_incidences_checked": 1536,
+    "mismatched_unit_face_incidences": 0,
+    "mismatched_port_incidences": 0
+  },
+  "original_solid_on_same_placements": {
+    "fundamental_cubes": 56,
+    "tiles": 8,
+    "unit_face_incidences": 192,
+    "port_incidences_checked": 1536,
+    "mismatched_unit_face_incidences": 60,
+    "mismatched_port_incidences": 480
+  },
+  "scope": "An explicit periodic tiling of the altered signed-key quotient; not a periodic tiling of the frozen candidate."
+}

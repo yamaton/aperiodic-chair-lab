@@ -1,0 +1,12 @@
+{
+  "status": "unsat",
+  "level": 3,
+  "macrochairs": 512,
+  "interior_vertices": 1685,
+  "attachment_site_count": 25,
+  "attached_crosses_per_block": 6,
+  "base_chairs_per_block": 8,
+  "proper_internal_orientations": 3,
+  "scope": "Identical eight-chair substitution clusters with six whole X fillers chosen from 25 nearby sites. Markings not included; arbitrary cuts not included.",
+  "elapsed_seconds": 1.226130884999293
+}

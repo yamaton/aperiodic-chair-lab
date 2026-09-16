@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.11" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2026-09-16" />
+  <title>A one-chair 3D matching system: request for assessment</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">
+body {max-width: 850px; margin: 3rem auto; padding: 0 1.4rem; color: #172737;
+font: 17px/1.6 Georgia, serif; background: #fcfcfa;}
+h1,h2,h3 {font-family: system-ui,sans-serif; line-height: 1.25;}
+h1 {font-size: 2rem;} h2 {margin-top: 2rem; font-size: 1.4rem;}
+a {color: #075984;} table {border-collapse: collapse; width:100%;}
+th,td {border-bottom:1px solid #ccd4da; padding:.5rem; text-align:left;}
+pre {padding:1rem; background:#edf1f3; overflow:auto;}
+code {font-size:.85em; overflow-wrap:anywhere;} img {max-width:100%;}
+.equation {overflow-x:auto; max-width:100%; padding:1rem 0;}
+math[display="block"] {min-width:max-content;}
+@media print {body {max-width:none; margin:0; font-size:11pt;} h2 {break-after:avoid;}}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">A one-chair 3D matching system: request for
+assessment</h1>
+<p class="date">16 September 2026</p>
+</header>
+<p><strong>Research proposal, not an established theorem.</strong>
+Developed with substantial AI assistance, including computation and
+proof drafting. No external mathematical review or novelty determination
+has occurred.</p>
+<h2 id="question-and-proposed-distinction">Question and proposed
+distinction</h2>
+<p>Can one compact solid with connected interior tile
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="double-struck">ℝ</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^3</annotation></semantics></math>
+while every tiling by congruent copies has a <strong>finite symmetry
+group</strong>, even when reflections are allowed? This explicitly
+excludes translations and infinite-order screws; it does not require a
+trivial symmetry group.</p>
+<p>The candidate uses Goodman-Strauss’s familiar seven-cube chair and
+eight-child hierarchy. Those are not new. The proposed distinction is to
+encode the hierarchy using the chair’s three distinguishable internal
+rotational poses, without a second prototile. Whether this rule system
+is already known is one of the questions for review.</p>
+<h2 id="the-finite-matching-system">The finite matching system</h2>
+<p>Each of the chair’s 24 exposed unit faces carries one oriented
+pattern A, B, or C, occurring eight times each. Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+for its arrow,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+for the outward normal, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>n</mi><mo>×</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">V=n\times U</annotation></semantics></math>.
+Opposing faces allow exactly:</p>
+<table>
+<thead>
+<tr>
+<th>Patterns</th>
+<th>Required second arrow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A / A</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mn>2</mn></msub><mo>=</mo><msub><mi>V</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">U_2=V_1</annotation></semantics></math></td>
+</tr>
+<tr>
+<td>B / C or C / B</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mn>2</mn></msub><mo>=</mo><mi>−</mi><msub><mi>U</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">U_2=-U_1</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<p>These patterns are shorthand for physical surface profiles, not extra
+assembly conditions. The complete face layout and local proof are
+supplied in the <a href="../MOTIF_GROUPING.md">grouping note</a>.</p>
+<p>There are 1,194 nonoverlapping geometric directed contacts in the
+proper cubic frame; 44 fit. Fourteen leave a nearby face impossible to
+cover. The remaining 30 equal the contact set closed under
+substitution.</p>
+<p>A local recognition rule groups any valid grid tiling: six specified
+mixed-sign diagonal contacts mark a central chair; otherwise the chair
+occupying its notch is its parent. The one same-orientation notch case
+is resolved by a forced axial neighbor. Every outer child selects the
+same center, so the groups partition the tiling uniquely. A separate
+enumeration reproduces the earlier 33 complete neighborhoods.</p>
+<p>Among 6,801 possible group contacts, including odd fine-grid offsets,
+exactly 44 fit. Their offsets are even, and deflation recovers exactly
+the original contact rules. The grouped physical boundary need not be a
+scaled copy of the small boundary; it is the matching language that
+recurs.</p>
+<h2 id="exact-solid-and-the-geometric-step">Exact solid and the
+geometric step</h2>
+<p>Begin with unit cubes whose lower corners are in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>0</mn><msup><mo stretchy="false" form="postfix">}</mo><mn>3</mn></msup><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{-1,0\}^3\setminus\{(0,0,0)\}</annotation></semantics></math>.
+On each exposed face, eight disjoint small squares are replaced by graph
+patches</p>
+<div class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>+</mo><mfrac><mi>u</mi><mn>64</mn></mfrac><msub><mi>e</mi><mi>u</mi></msub><mo>+</mo><mfrac><mi>v</mi><mn>64</mn></mfrac><msub><mi>e</mi><mi>v</mi></msub><mo>+</mo><mfrac><mi>k</mi><mn>4096</mn></mfrac><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>v</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>u</mi><mn>5</mn></mfrac><mo>+</mo><mfrac><mi>v</mi><mn>7</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi><mo>,</mo><mspace width="2.0em"></mspace><mo>−</mo><mn>1</mn><mo>≤</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>≤</mo><mn>1</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+p+\frac{u}{64}e_u+\frac{v}{64}e_v+
+\frac{k}{4096}(1-u^2)(1-v^2)
+\left(1+\frac{u}{5}+\frac{v}{7}\right)n,
+\qquad -1\leq u,v\leq1,
+</annotation></semantics></math></div>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>f</mi><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><msub><mi>e</mi><mi>u</mi></msub><mo>+</mo><msub><mi>e</mi><mi>v</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>16</mn></mrow><annotation encoding="application/x-tex">p=f+(3e_u+e_v)/16</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is the unit-face center, and the signed depth key satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><mo stretchy="false" form="prefix">|</mo><mi>k</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">1\leq |k|\leq12</annotation></semantics></math>.
+Each signed key occurs eight times. The tile occupies the inward side of
+each graph. The signed volume corrections cancel; the volume is 7 and
+the cube cores remain connected. The exact <a href="../audit/frozen_v1/candidate.json">coordinate file</a> specifies
+all 192 ports and eight child placements. The STL is not the defining
+solid.</p>
+<p>The proposed geometric argument is:</p>
+<ol type="1">
+<li>Local finiteness and boundary coverage force an open cap coincidence
+somewhere on each cap.</li>
+<li>Polynomial continuation turns open coincidence into equality of
+whole algebraic graphs. Their five straight lines identify the base
+square and ordered tangent axes, fixing an integral relative
+placement.</li>
+<li>Each signed key has a fixed local frame determinant; opposite keys
+have opposite determinants. A matching pair therefore has a proper
+relative orientation. A cap-contact component has one handedness.</li>
+<li>Every exposed coarse face supplies a matched neighbor owning the
+adjacent grid cube. Such a component owns the entire lattice. Disjoint
+feature boxes and complementary graph sides make it fill space
+physically, excluding a second component on a different grid.</li>
+</ol>
+<p>These are written geometric arguments supported by symbolic and
+finite checks, not automatically verified statements about every
+Euclidean tiling. The detailed <a href="../review/DEPENDENCY_AUDIT.md">dependency audit</a> and <a href="../audit/README.md">cap proof</a> expose the assumptions.</p>
+<h2 id="consequence-if-those-steps-hold">Consequence, if those steps
+hold</h2>
+<p>Substituted patches contain balls of unbounded radius; compactness
+gives a tiling. Unique grouping and exact recurrence force a translation
+period into
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>⋂</mo><mrow><mi>m</mi><mo>≥</mo><mn>0</mn></mrow></msub><msup><mn>2</mn><mi>m</mi></msup><msup><mi mathvariant="double-struck">ℤ</mi><mn>3</mn></msup><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\bigcap_{m\geq0}2^m\mathbb{Z}^3=\{0\}</annotation></semantics></math>.
+Open planar boundary patches restrict symmetry linear parts to the
+finite cubic group, so the full tile-preserving symmetry group is
+finite. Globally mirrored tilings give the same conclusion.</p>
+<h2 id="what-would-be-most-useful-to-assess">What would be most useful
+to assess</h2>
+<ol type="1">
+<li><strong>Prior art:</strong> is this oriented one-chair system
+equivalent to a known construction, particularly the markings in the
+aperiodic-pair work?</li>
+<li><strong>Geometry:</strong> does the open-cap/component argument
+actually exclude non-grid tilings, or does it assume the alignment it
+needs to prove?</li>
+</ol>
+<p>The primary comparison is Goodman-Strauss, <em>An Aperiodic Pair of
+Tiles in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>E</mi><mi>n</mi></msup><annotation encoding="application/x-tex">E^n</annotation></semantics></math>
+for All
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n\geq3</annotation></semantics></math></em>,
+European Journal of Combinatorics 20 (1999), 385–395 (<a href="https://strauss.hosted.uark.edu/papers/NDimPair.pdf">author
+preprint</a>). The brief asks for an initial assessment or reference,
+not a full referee report.</p>
+<h2 id="evidence-and-reproduction">Evidence and reproduction</h2>
+<p>The source archive includes the <a href="../REVIEW_NOTE.md">review
+note</a>, exact data, independent implementations of several finite
+checks, certificates, and controls. In particular, the plain chair tiles
+periodically, and a specified modified decoration also has a periodic
+tiling; neither is a periodic tiling of the reference decorated
+solid.</p>
+<p>From the extracted archive root:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run <span class="at">--locked</span> python strong/review/verify_package.py</span></code></pre></div>
+<p>Candidate SHA-256:
+<code>95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54</code>.
+The reference remains the original twelve-depth solid; an exploratory
+six-depth reduction is not substituted for it.</p>
+</body>
+</html>

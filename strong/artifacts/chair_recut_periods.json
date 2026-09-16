@@ -1,0 +1,313 @@
+{
+  "profiles": [
+    {
+      "profile_index": 0,
+      "checks": [
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "quotient_voxels": 56,
+          "possible_placements": 1344,
+          "build_seconds": 1.0221556769993185,
+          "elapsed_seconds": 1.1636832599997433
+        },
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "quotient_voxels": 112,
+          "possible_placements": 2688,
+          "build_seconds": 2.279618070999277,
+          "elapsed_seconds": 2.8807756369988056
+        },
+        {
+          "status": "unknown",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "quotient_voxels": 224,
+          "possible_placements": 5376,
+          "build_seconds": 5.010032129001047,
+          "elapsed_seconds": 25.013814518999425,
+          "reason_unknown": "timeout"
+        },
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              0,
+              7
+            ]
+          ],
+          "quotient_voxels": 343,
+          "possible_placements": 8232,
+          "build_seconds": 7.649750030999712,
+          "elapsed_seconds": 15.35587755099914
+        }
+      ],
+      "outcome": "unresolved"
+    },
+    {
+      "profile_index": 1,
+      "checks": [
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "quotient_voxels": 56,
+          "possible_placements": 0,
+          "build_seconds": 0.034308045000216225,
+          "elapsed_seconds": 0.03448654500061821
+        },
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "quotient_voxels": 112,
+          "possible_placements": 0,
+          "build_seconds": 0.06274140200002876,
+          "elapsed_seconds": 0.06290791200081003
+        },
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "quotient_voxels": 224,
+          "possible_placements": 5376,
+          "build_seconds": 5.142516842000987,
+          "elapsed_seconds": 6.453848082999684
+        },
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              0,
+              7
+            ]
+          ],
+          "quotient_voxels": 343,
+          "possible_placements": 8232,
+          "build_seconds": 8.035558196999773,
+          "elapsed_seconds": 11.101845798000795
+        }
+      ],
+      "outcome": "unresolved"
+    },
+    {
+      "profile_index": 2,
+      "checks": [
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "quotient_voxels": 56,
+          "possible_placements": 1344,
+          "build_seconds": 1.027728193999792,
+          "elapsed_seconds": 1.2154166329983127
+        },
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "quotient_voxels": 112,
+          "possible_placements": 2688,
+          "build_seconds": 2.311113474001104,
+          "elapsed_seconds": 2.8227761810012453
+        },
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              14,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "quotient_voxels": 224,
+          "possible_placements": 5376,
+          "build_seconds": 5.1386926300001505,
+          "elapsed_seconds": 18.290455430000293
+        },
+        {
+          "status": "unsat",
+          "basis_columns": [
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              0,
+              7
+            ]
+          ],
+          "quotient_voxels": 343,
+          "possible_placements": 8232,
+          "build_seconds": 7.8578555320000305,
+          "elapsed_seconds": 20.47343087400077
+        }
+      ],
+      "outcome": "unresolved"
+    }
+  ],
+  "scope": "Periodic integer-grid packings with all 24 proper rotations; no orientation anchor on rectangular quotients.",
+  "limit": "Failure on the tested quotients does not establish aperiodicity."
+}

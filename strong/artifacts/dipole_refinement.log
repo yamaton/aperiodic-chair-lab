@@ -1,0 +1,88 @@
+Candidate [4, 4, 0, 8, 0, 6]
+open7 unsat 7928
+Candidate [4, 4, 0, 8, 2, 4]
+open7 sat 4211
+torus8 sat 480
+Candidate [4, 4, 0, 10, 4, 2]
+open7 sat 4106
+torus8 sat 45
+Candidate [4, 4, 0, 10, 6, 0]
+open7 unsat 6965
+Candidate [4, 4, 8, 0, 4, 2]
+open7 sat 8835
+torus8 sat 12
+Candidate [4, 4, 8, 0, 6, 0]
+open7 unsat 6222
+Candidate [4, 4, 8, 2, 4, 0]
+open7 sat 6487
+torus8 sat 53
+Candidate [4, 4, 8, 2, 6, 2]
+open7 unsat 7560
+Candidate [4, 6, 2, 8, 0, 4]
+open7 unknown 22942
+torus8 unknown 13305
+open9 unknown 22286
+torus10 unknown 14062
+torus12 unknown 15012
+Candidate [4, 6, 2, 8, 6, 0]
+open7 unknown 23302
+torus8 unsat 9744
+open9 unknown 22546
+torus10 unsat 11065
+torus12 unknown 10503
+Candidate [4, 6, 2, 10, 0, 6]
+open7 unsat 23334
+Candidate [4, 6, 2, 10, 4, 0]
+open7 unknown 23907
+torus8 unsat 9627
+open9 unknown 22157
+torus10 unsat 10742
+torus12 unknown 10720
+Candidate [4, 4, 0, 20, 0, 4]
+open7 sat 7
+torus8 unsat 1
+open9 sat 13
+torus10 unsat 1
+torus12 sat 3
+Candidate [4, 4, 0, 22, 0, 4]
+open7 sat 7
+torus8 unsat 1
+open9 sat 13
+torus10 unsat 1
+torus12 sat 3
+Candidate [4, 4, 20, 2, 2, 4]
+open7 sat 14
+torus8 unsat 1
+open9 sat 14
+torus10 unsat 1
+torus12 sat 3
+Candidate [4, 4, 20, 0, 4, 0]
+open7 sat 9
+torus8 unsat 1
+open9 sat 14
+torus10 unsat 1
+torus12 sat 3
+Candidate [4, 4, 0, 22, 4, 0]
+open7 sat 14
+torus8 unsat 1
+open9 sat 14
+torus10 unsat 1
+torus12 sat 3
+Candidate [4, 4, 0, 20, 4, 0]
+open7 sat 14
+torus8 unsat 1
+open9 sat 14
+torus10 unsat 1
+torus12 sat 3
+Candidate [4, 4, 20, 0, 0, 4]
+open7 sat 14
+torus8 unsat 1
+open9 sat 14
+torus10 unsat 1
+torus12 sat 3
+Candidate [4, 4, 20, 2, 4, 2]
+open7 sat 9
+torus8 unsat 1
+open9 sat 14
+torus10 unsat 1
+torus12 sat 3

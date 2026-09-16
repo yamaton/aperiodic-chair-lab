@@ -1,0 +1,15 @@
+{
+  "snapshot": "frozen_v1",
+  "date": "2026-09-15",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "archived_proposal_sha256": "d7280e4c04ddeaf2db51a06da057137d9a42b720755b274a7e8350eafbf8c701",
+  "source_geometry_sha256": "f4ff311229700c13f3281ba8de9f9a452164a354b01d84a019667533492a125b",
+  "source_files": {
+    "chair_recut.py": "d2e6341a1ac4f8617c38b33f9ead0cc9ca43ac39b3d13abf0b0740c60f0bd1fd",
+    "chair_recut_screen.cpp": "b63d06ede103e4b2cc424ff31dd5b364054dce3396ad904d09c7dc85bcc9ce5d",
+    "chair_recut_stars.py": "663cc724a7c957a246e7829600093e57142474812939d8631d8b7eb920cd9704",
+    "chair_recut_macro.py": "c0f4ffc74dca6eac9c95fc578be3a4cf3da0bed061def4729f28118a468e3563",
+    "verify_chair_recut_hierarchy.py": "509043a4fb82076331f53249aaad06fb4bec2ba56969e5392bbe1a97f815fd98",
+    "chair_recut_geometry.py": "86ee82e50952c68e4661c2d7d8dd27447e4c6526c890a4d225beeed53f515f42"
+  }
+}

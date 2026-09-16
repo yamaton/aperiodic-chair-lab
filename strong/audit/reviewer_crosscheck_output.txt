@@ -1,0 +1,8 @@
+Independent adjacency catalogue equals audit: 1194 geometric; 44 legal
+Independent first-face exact cover equals audit: 33 stars
+Independent macro catalogue: 6801 geometric; 44 legal; exact allowed placements equal audit
+Independent neighborhood forcing and all 28 group incompatibilities passed
+Direct substitution level 1 : 8 tiles, 56 cubes, 48 matching internal unit faces
+Direct substitution level 2 : 64 tiles, 448 cubes, 576 matching internal unit faces
+Direct substitution level 3 : 512 tiles, 3584 cubes, 5376 matching internal unit faces
+All macro placements and fit flags match audit; all offsets even and deflated legal set equals fine legal set
