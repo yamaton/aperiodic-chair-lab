@@ -17,8 +17,8 @@ established discovery priority. See the [exact comparison](strong/review/TSIOKOS
 
 | Purpose | Entry point |
 |---|---|
-| Learn the ideas | [Undergraduate tutorial](docs/APERIODIC_CHAIR_TUTORIAL.md) · [offline HTML edition](docs/APERIODIC_CHAIR_TUTORIAL.html) |
-| Inspect the candidate | [Offline chair viewer](strong/artifacts/recut-chair.html) |
+| Learn the ideas | [Read the illustrated tutorial](https://tritonlab.io/aperiodic-chair-lab/tutorial/) · [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) · [download HTML](https://tritonlab.io/aperiodic-chair-lab/downloads/tutorial.html) |
+| Inspect the candidate | [Interactive chair viewer](https://tritonlab.io/aperiodic-chair-lab/viewer/) · [repository edition](strong/artifacts/recut-chair.html) |
 | Compare the constructions | [Geometry and proof comparison](strong/review/CHAIR44_PROOF_COMPARISON.md) |
 | Inspect reproduced evidence | [Chair44 build record](strong/review/CHAIR44_BUILD_REPRODUCTION.md) · [independent finite replay](strong/review/CHAIR44_COMPANION_REPLAY.md) |
 | Follow our formal argument | [Lean project](formal/README.md) · [grid symmetry bound](formal/GRID_SYMMETRY.md) |
@@ -26,9 +26,10 @@ established discovery priority. See the [exact comparison](strong/review/TSIOKOS
 | Find reports and commands | [Project index](docs/INDEX.md) |
 | Understand attribution and AI use | [Provenance](docs/PROVENANCE.md) · [third-party notices](THIRD_PARTY_NOTICES.md) |
 
-Download or clone the repository, then open the HTML files directly in a
-browser. Their figures, styles and scripts are embedded for offline use;
-GitHub's file view displays their source. The viewers and meshes approximate
+The [project site](https://tritonlab.io/aperiodic-chair-lab/) opens directly
+in a browser. Its tutorial download includes figures, styles and scripts
+for offline reading. You can also clone the repository and open its HTML
+files locally; GitHub's file view displays their source. The viewers and meshes approximate
 exact surfaces and do not certify the aperiodicity of a printed object.
 
 ## What is established?

@@ -19,6 +19,10 @@ the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
 
 ## Undergraduate tutorial
 
+[Read online](https://tritonlab.io/aperiodic-chair-lab/tutorial/) ·
+[Download HTML](https://tritonlab.io/aperiodic-chair-lab/downloads/tutorial.html) ·
+[Site build and deployment](PAGES.md).
+
 [How one shape can enforce order without repetition](APERIODIC_CHAIR_TUTORIAL.html)
 develops the local parent proof, parity and legal deflation, period halving,
 the five-step curved-surface registration argument, and the existence limit.

@@ -17,4 +17,7 @@ node_modules/
 # Lean build outputs; source certificates and verification records are tracked.
 /formal/.lake/
 
+# Generated GitHub Pages deployment artifact.
+/_site/
+
 # Research JSON, logs, meshes, figures, and frozen review packets are tracked.

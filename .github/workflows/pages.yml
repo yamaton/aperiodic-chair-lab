@@ -1,0 +1,63 @@
+name: Publish tutorial site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/APERIODIC_CHAIR_TUTORIAL.md'
+      - 'docs/tutorial.css'
+      - 'docs/tutorial-controls.html'
+      - 'docs/figures/**'
+      - 'docs/site-index.md'
+      - 'docs/pages-links.lua'
+      - 'docs/build-site.mjs'
+      - 'strong/artifacts/recut-chair.html'
+      - 'strong/artifacts/recut-chair-placements.png'
+      - 'strong/artifacts/motif-face-layout.png'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Install pinned Pandoc
+        run: |
+          curl --fail --location --retry 3 https://github.com/jgm/pandoc/releases/download/3.11/pandoc-3.11-1-amd64.deb --output /tmp/pandoc.deb
+          echo '89d4c9d97818c62a97157f0072844e4602c6cee795bf84abd1aee7273abcda99  /tmp/pandoc.deb' | sha256sum --check
+          sudo dpkg --install /tmp/pandoc.deb
+      - name: Build and check the project site
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: node docs/build-site.mjs
+      - name: Upload site
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
