@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-17T16:16:35.107Z",
+  "checked_at": "2026-09-17T16:36:11.570Z",
   "scope": "Presentation, navigation, artifact hashes and offline download; not mathematical verification",
-  "base_url": "http://127.0.0.1:44119/aperiodic-chair-lab/",
+  "base_url": "http://127.0.0.1:38321/aperiodic-chair-lab/",
   "manifest": {
     "site_url": "https://tritonlab.io/aperiodic-chair-lab/",
-    "source_revision": "2e37aca375db082b9859131255ddf040148147a1",
+    "source_revision": "d1a9265c28a3ff8969e359b45bc83416b4fe40ec",
     "tutorial_source_sha256": "6ab0e2b20d087552fc007571c984d1443ff91acb0f6cb8bc45439c26234df3aa",
     "local_links_checked": 85,
     "tutorial_counts": {
@@ -12,11 +12,11 @@
       "images": 10
     },
     "files": {
-      "index.html": "e7b350d76036e300cf8a9ea7e15b722c127906ed1b80387b8450b1fa3e32cfe6",
-      "assembly/index.html": "56eb57cbb12c269eb57262bd3d2fc1b20f903a896ae66b7b9b16b03f4027f319",
-      "tutorial/index.html": "2156b2acea001cf8369b022b2001039862fe0695fbca7fb44b7f8d4341f8a09f",
-      "viewer/index.html": "e5fc8bfaa71eecde1a106f5dd673d1204338811d342a286c13706e49f849bdb8",
-      "downloads/tutorial.html": "14b48dd7aed7f1295d6596a452f2c63be1b4dedba9660891ce44313976ec29e5"
+      "index.html": "a083842b8f429f9d6f0b478d25b93a283f20bf50bb48c199bb8614c721d08d24",
+      "assembly/index.html": "b145ee2a74f13b635128f9f39fa67119f4600bae578ec39ed185bc9feb685ff0",
+      "tutorial/index.html": "f8a71ddfcb7b4c8abd034d4fa750cb59a4303bdcdec74b8d64aa775b1be82392",
+      "viewer/index.html": "2c237cc9b6c46511d0a382c456118127d45943b2deadd58e1fcca5f7b4f2f941",
+      "downloads/tutorial.html": "8abc1f5332b8b0ce9cbd5745b51c7afb4f98009eb10884ce1c52f41e0fe0381c"
     }
   },
   "layouts": [

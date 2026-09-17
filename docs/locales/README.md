@@ -43,7 +43,9 @@ Keep `en.json` as the fallback catalog. Translate message values, preserving
 keys and placeholders such as `{count}`. Home keys are English source messages;
 assembly keys retain the Japanese source messages used by the app. Use named
 placeholders for dynamic values rather than assembling translated sentence
-fragments. Translations are text, not HTML. Maintained translations are embedded
+fragments. Headings omit terminal periods/full stops; body text and demo
+captions retain sentence punctuation. Keep meaningful internal punctuation and
+question marks. Translations are text, not HTML. Maintained translations are embedded
 in the generated HTML and work offline without a translation service.
 
 Language selection uses a supported URL language, then a supported saved

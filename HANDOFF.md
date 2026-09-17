@@ -21,6 +21,13 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Heading punctuation adjusted locally:** remove terminal periods/full stops
+from home and assembly headings in Japanese, English and Simplified Chinese.
+Body sentences, demo captions, internal punctuation and question marks are
+preserved. Inactive translations remain untouched. This follow-up to commit
+`d1a9265` is being recorded in a local commit at the user’s request; publication
+remains pending.
+
 **Three maintained UI languages:** the user chose Japanese, English and
 Simplified Chinese to limit ongoing maintenance. Only top-level JSON files in
 `docs/locales/` enter the menu, generated HTML and required validation.
