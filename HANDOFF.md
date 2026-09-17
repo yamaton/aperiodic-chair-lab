@@ -21,6 +21,23 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**README cover with enlarged features rendered locally:** at the user's
+request, the README now uses `docs/figures/aperiodic-chair-cover-enlarged.png`,
+with the prescribed ports widened 3× and deepened 12× for visibility. The
+caption and image disclose these factors. It shows one chair, a close-up of
+the recorded +7/-7 pair with the same enlarged profile, and the eight-child
+assembly. The original-proportion Blender image is preserved separately.
+The uv driver
+`docs/render_chair_cover.py` invokes Blender through WSL paths; its companion
+worker renders with Cycles. The figure's `.md` documents reproduction and
+mesh scope; its `.json` records source hashes, sampled surface checks, exact
+contact checks, positive feature-box clearance bounds and the 56-cell carrier
+partition. This is a visualization variant, not a newly certified physical
+solid or a change to frozen v1. The earlier AI concept
+image and prompts remain as a superseded draft, unused by README.
+Frozen evidence is unchanged. The user requested a local commit of the cover,
+rendering scripts and provenance; publication remains pending.
+
 **README now leads with the interactive builder:** the opening explains the
 activity and links directly to `assembly/`, its `?demo=1` demonstration and
 the project home. The entry table starts with building; research background

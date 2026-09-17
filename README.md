@@ -1,5 +1,11 @@
 # Aperiodic Chair Lab
 
+[![The chair with enlarged tabs and pockets, a close-up of matching surfaces, and the eight-chair assembly.](docs/figures/aperiodic-chair-cover-enlarged.png)](https://tritonlab.io/aperiodic-chair-lab/assembly/)
+
+*Curved tabs and pockets carry the matching rules. The frozen port layout is
+shown with features enlarged **3× in width and 12× in depth** for visibility.
+[Rendering details](docs/figures/aperiodic-chair-cover-enlarged.md).*
+
 Match face patterns and arrows, connect 3D blocks, and discover how eight
 pieces can form a larger block of the same shape.
 

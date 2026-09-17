@@ -1,0 +1,53 @@
+{
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "ports": 192,
+  "unit_faces": 24,
+  "feature_width_multiplier": 3,
+  "feature_depth_multiplier": 12,
+  "rendered_half_width": "3/64",
+  "rendered_height_unit": "3/1024",
+  "feature_reach_bound": "423/8960",
+  "minimum_face_edge_margin": "17/64",
+  "feature_box_separation_bounds": {
+    "same_unit_face": "1/32",
+    "coplanar_faces": "17/32",
+    "parallel_planes": "4057/4480",
+    "perpendicular_faces": "1957/8960"
+  },
+  "retains_middle_half_of_carrier_cubes": true,
+  "cap_divisions_per_axis": 24,
+  "maximum_sampled_surface_error": 1.214306433183765e-16,
+  "vertex_coordinate_rounding_digits": 12,
+  "contact_source_port_indices": [
+    48,
+    187
+  ],
+  "contact_signed_keys": [
+    -7,
+    7
+  ],
+  "contact_shared_frames_and_opposite_keys": true,
+  "exact_contact_samples": 81,
+  "eight_children_partition_scale_two_carrier": true,
+  "coarse_cells": 56,
+  "blender_version": "5.2.1 LTS",
+  "engine": "Cycles",
+  "device": "OPTIX: NVIDIA GeForce RTX 3090, NVIDIA GeForce RTX 3090",
+  "samples": 64,
+  "detail_uniform_magnification_relative_to_single_chair": 10.666666666666666,
+  "detail_view": "Cropped neighborhoods of the recorded +/-7 contact ports; each independently rigidly reoriented to expose its surface. Artificial flat crop boundaries; the same disclosed feature scales as the whole-chair views.",
+  "assembly_display_scale_relative_to_single_chair": 0.5,
+  "surface_modifiers": [],
+  "smooth_shading": "Cap normals only; no displaced vertices.",
+  "status": "passed",
+  "image_sha256": "453c362b80ae87e4e8893015e4d90b02090289a0f71a7f4ae499ca93dfc56b35",
+  "composition_font": "DejaVuSans.ttf",
+  "image_dimensions": [
+    2400,
+    1060
+  ],
+  "driver_sha256": "1787d3a5fc7321f4a4e4de55ac7c33bf613ba4ae7a205ffad8174ecd4b402327",
+  "blender_script_sha256": "4386d3453848f102edd588b21b98b1bb85a2764f3ff86304534aa2ae6accf16d",
+  "mesh_exporter_sha256": "06807f38f7ab6a09856010b891d6c21ef5c58eae6cb00436520d12b671625a75",
+  "scope": "Rendering provenance and finite geometry checks; no new tiling theorem or mesh certification."
+}

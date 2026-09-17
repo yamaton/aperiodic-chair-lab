@@ -1,0 +1,42 @@
+{
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "ports": 192,
+  "unit_faces": 24,
+  "feature_width_multiplier": 1,
+  "feature_depth_multiplier": 1,
+  "cap_divisions_per_axis": 24,
+  "maximum_sampled_surface_error": 1.1763593571467723e-16,
+  "vertex_coordinate_rounding_digits": 12,
+  "contact_source_port_indices": [
+    48,
+    187
+  ],
+  "contact_signed_keys": [
+    -7,
+    7
+  ],
+  "contact_shared_frames_and_opposite_keys": true,
+  "exact_contact_samples": 81,
+  "eight_children_partition_scale_two_carrier": true,
+  "coarse_cells": 56,
+  "blender_version": "5.2.1 LTS",
+  "engine": "Cycles",
+  "device": "OPTIX: NVIDIA GeForce RTX 3090, NVIDIA GeForce RTX 3090",
+  "samples": 64,
+  "detail_uniform_magnification_relative_to_single_chair": 32,
+  "detail_view": "Cropped neighborhoods of the recorded +/-7 contact ports; each independently rigidly reoriented to expose its surface. Artificial flat crop boundaries, no relief exaggeration.",
+  "assembly_display_scale_relative_to_single_chair": 0.5,
+  "surface_modifiers": [],
+  "smooth_shading": "Cap normals only; no displaced vertices.",
+  "status": "passed",
+  "image_sha256": "6920944fee2b6f18fbd3dd21b3dae60d01e9fd0361fcab3ddfee99bf53727f71",
+  "composition_font": "DejaVuSans.ttf",
+  "image_dimensions": [
+    2400,
+    1060
+  ],
+  "driver_sha256": "2ce6279a78eb3c10039843ba56ac2da5d6c18828ebf35b25cd21f18dbd55cc88",
+  "blender_script_sha256": "a20bfb803a4bb88f440210c9f31943f17c440cb69d7142139a656d712c1283b4",
+  "mesh_exporter_sha256": "06807f38f7ab6a09856010b891d6c21ef5c58eae6cb00436520d12b671625a75",
+  "scope": "Rendering provenance and finite geometry checks; no new tiling theorem or mesh certification."
+}
