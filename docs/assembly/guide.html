@@ -1,0 +1,46 @@
+<dialog id="play-guide" aria-labelledby="guide-title">
+<div class="guide-heading"><div><p class="eyebrow">CHAIR LAB</p><h2 id="guide-title">操作チュートリアル</h2></div><button id="guide-close" autofocus>閉じる</button></div>
+<p class="guide-intro">まずは1個、接着してみましょう。予備知識はいりません。</p>
+<button id="demo-open" class="primary">▶ 実際の操作を見る</button>
+<p id="guide-progress" class="pill" role="status"></p>
+<section class="guide-step" data-guide-step="0">
+<h3>1. 接着済みの組立で、面を選ぶ</h3>
+<p>接着済みの組立が対象物、オレンジが取り付ける部品です。組立の面をクリックすると、部品の取り付け候補が現れます。</p>
+<div class="guide-pair" aria-hidden="true"><div class="guide-face fixed"><span>接着済み</span><strong>A →</strong><span class="guide-click">クリック</span></div><span>＋</span><div class="guide-face moving"><span>取り付け中</span><strong>?</strong></div></div>
+<p class="guide-tip">面が見えないときは、3D表示をドラッグして見回します。接着済みの部品は外れません。</p>
+</section>
+<section class="guide-step" data-guide-step="1" hidden>
+<h3>2. 取り付ける部品の面を選ぶ</h3>
+<p>「取り付ける部品の面をクリック」の小窓で、使いたい面をクリックします。組立の3D表示にあるオレンジの部品からも選べます。</p>
+<div class="guide-pair" aria-hidden="true"><div class="guide-face moving"><span>見回す</span><strong>↶ ◇ ↷</strong></div><span>→</span><div class="guide-face moving selected"><span>面を選ぶ</span><strong>A ↑</strong></div></div>
+<p class="guide-tip">小窓のドラッグや視点ボタンは、見る方向だけを変えます。面を選ぶと取り付け候補が変わります。番号を覚える必要はありません。</p>
+</section>
+<section class="guide-step" data-guide-step="2" hidden>
+<h3>3. 比較窓で、模様と矢印を合わせる</h3>
+<p>「接触面を比べる」は、両面を同じ向きから見た図です。左の矢印を右向きとして、右の矢印を下の例に合わせます。</p>
+<div class="guide-matches" aria-label="適合する模様と矢印の例">
+<div class="guide-match"><span class="guide-face fixed">A →</span><span>＋</span><span class="guide-face moving">A ↑</span><span>✓</span></div>
+<div class="guide-match"><span class="guide-face fixed">B →</span><span>＋</span><span class="guide-face moving">C ←</span><span>✓</span></div>
+<div class="guide-match"><span class="guide-face fixed">C →</span><span>＋</span><span class="guide-face moving">B ←</span><span>✓</span></div>
+</div>
+<p>比較窓の下の「この図で左へ90°」「この図で右へ90°」で、部品の向きを変えられます。</p>
+<p class="guide-tip">接着できないときは、別の面や向きも試しましょう。重なりがなく、触れるすべての面が合う必要があります。「なぜ？」で理由を確認できます。</p>
+</section>
+<section class="guide-step" data-guide-step="3" hidden>
+<h3>4. 接着して、次の1個へ</h3>
+<p>条件がそろうと「接着する」を押せます。押すまでは仮置きです。接着した部品は組立と一体になります。</p>
+<div class="guide-flow" aria-hidden="true"><span>接着する</span><span>→</span><span>次の1個</span></div>
+<p>やり直したいときは「元に戻す」。接着直前の部品に戻せます。「親を一つ作る」では、「ヒントを見る」を押すと、場所・矢印・具体的な候補の順に案内します。</p>
+<details><summary>1個できたら、次は？</summary><p>「親を一つ作る」では、ヒントを使って8個の組立を目指せます。決まった形ができたら「親にまとめる」、続いて「この親で次を組む」で、ひと回り大きな組立に進めます。「自由に組む」では、別の組み合わせも試せます。</p></details>
+</section>
+<div class="guide-navigation"><button id="guide-prev">前へ</button><button id="guide-next" class="primary">次へ</button></div>
+<p class="muted guide-preserved">閉じると、開く前の組立から続けられます。</p>
+</dialog>
+<dialog id="play-demo" aria-labelledby="demo-title">
+<div class="guide-heading"><h2 id="demo-title">最初の1個を接着する</h2><button id="demo-close" autofocus>デモを閉じる</button></div>
+<p id="demo-caption" role="status" aria-live="polite"></p>
+<div id="demo-stage"><iframe id="demo-frame" title="組立操作の実演" tabindex="-1" inert aria-hidden="true"></iframe>
+<div id="demo-mark" aria-hidden="true"></div><svg id="demo-cursor" width="32" height="40" viewBox="0 0 32 40" aria-hidden="true"><path d="M 3 2 L 3 31 L 11 24 L 17 37 L 23 34 L 17 22 L 29 21 Z" fill="#172d32" stroke="white" stroke-width="2.5" stroke-linejoin="round"/></svg></div>
+<div class="demo-controls"><button id="demo-toggle">一時停止</button><button id="demo-next">次の操作</button><button id="demo-restart">もう一度</button></div>
+<p class="muted">これはデモ専用の画面です。あなたの組立はそのままです。</p>
+</dialog>

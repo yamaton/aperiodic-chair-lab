@@ -1,6 +1,6 @@
 # Research handoff
 
-*Updated 16 September 2026. Read this first when resuming.*
+*Updated 17 September 2026. Read this first when resuming.*
 
 ## Repository organization
 
@@ -20,6 +20,77 @@ disclosure. Keep unrelated future changes local unless publishing is
 authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
+
+**Interactive assembly prototype implemented locally:** the user requested
+starting the prototype after the UX reviews. Open `docs/assembly.html` in a
+browser; [prototype notes](docs/assembly/README.md) cover the build and scope.
+It has exact grid contact checks, a rigid target plus one moving piece,
+shared-frame face comparison, guided/free assembly, Undo/Redo, eight-child
+recognition, parent promotion and nested read-only inspection. The UI is
+available in Japanese and English, and the HTML is standalone/offline. Rebuild with
+`node docs/build-assembly.cjs`; verify using the verification scripts in `docs/assembly/`.
+The finite verifier reproduces 1,194/44 base contacts and 6,801/44 macro
+contacts. Firefox exercises two parent levels and desktop/mobile interactions.
+These checks are not player trials or new mathematical proofs. Candidate
+thumbnails and curved surfaces are among the documented simplifications.
+The prototype has not been deployed; existing published viewers are unchanged.
+Following the user's face-selection feedback, both target and moving-piece
+faces can be clicked. A separate rotatable moving-piece view exposes hidden
+faces and supports keyboard selection; numbered dropdowns are now collapsed
+fallbacks. Viewing the piece preserves placement and Undo/Redo. The offline
+Firefox checks cover desktop/mobile selection and these state invariants.
+The language selector translates controls, hints, contact results, and
+accessibility labels without changing the assembly or history. It uses the
+browser language initially and remembers an explicit choice when storage is
+available. `docs/assembly/i18n.js` holds the extensible message catalog.
+The header now opens a short four-step Japanese/English operation guide,
+embedded from `docs/assembly/guide.html`: choose the two faces, compare arrows,
+then attach. Diagrams show the A/A and B/C matching examples. Parent assembly
+is an optional next step; opening help preserves the pending piece and history.
+The English undergraduate mathematics text is linked separately at the bottom,
+not presented as the play tutorial. Browser checks cover both guide languages,
+mobile fit, focus return, and Escape while inspecting children.
+The guide now includes “Watch the actions”: a Japanese/English cursor demo
+of target/piece face selection, comparison, rotation and the first attachment.
+An embedded isolated copy of the same application performs the real UI actions;
+the player's state, camera and history stay intact. Pause, step, replay, closing
+during playback, reduced motion and mobile layout are covered by
+`node docs/assembly/verify-demo.cjs` and `docs/assembly_demo_verification.json`.
+`docs/assembly/demo.js` controls playback; the build embeds both documents offline.
+At the user's request, two independent agents reviewed demo UX and state handling.
+[Review record](docs/assembly/DEMO_REVIEW.md) tracks a narrow-viewport SVG picking
+failure, off-screen controls, and an undersized comparison highlight. Fixes use
+measured face centering, a viewport-height dialog with a landscape layout, and
+a highlight spanning both comparison cards. Regression checks include 667×375,
+750×600 and 320×568; independent follow-up confirmed the original picking issue fixed.
+The user requested a local commit of the specification, prototype, guides,
+demo and review fixes. Publishing this prototype has not been authorized.
+
+**Interactive assembly teaching draft:** the user requested a specification
+after brainstorming a matching-rule assembly activity. The central clarified
+interaction is a fixed bonded assembly plus one moving piece, not a global
+eight-object display limit. [The draft](docs/INTERACTIVE_ASSEMBLY_SPEC.md)
+sets out contact comparison in a shared frame, explicit attachment and Undo,
+eight-child recognition, effective-parent visualization, scale changes and
+read-only inspection of children. It separates agreed direction, recommended
+initial behavior, mathematical scope and later features. The draft and
+reviews preceded the local implementation described above.
+At the user's request to prioritize player UX, the draft was revised to
+guide the first complete parent, separate guidance from free exploration,
+offer placement candidates from a target-face selection, reveal explanations
+progressively, and preserve the work while browsing parent/child levels.
+The Undo/Redo contradiction was corrected: undoing a bond restores a movable
+piece without preventing immediate Redo. Acceptance criteria now include
+history branching, returning from inspection and early first-time-player trials.
+The user then requested another self-review and independent reviews with
+player UX as the priority. Two agents reviewed first-time interaction and
+state transitions separately. The [review record](docs/INTERACTIVE_ASSEMBLY_REVIEW.md)
+tracks findings and revisions: identifiable candidates, comparison-frame
+rotation, honest guidance progress, paused editing during inspection,
+mode changes that preserve history, and explicit material/level transitions.
+Both reviewers confirmed their findings were addressed in bounded follow-ups;
+a further contact-explanation/rotation-axis ambiguity was also corrected and
+rechecked. These are specification reviews, not implemented UI tests or player trials.
 
 **Tutorial project-site publication:** the user authorized publishing the
 tutorial as a GitHub Pages project site. The published inherited address is

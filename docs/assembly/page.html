@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chair Lab — 組み立てて、階層を見つける</title>
+<style>/* STYLE */</style></head>
+<body>
+<noscript><p>この組立教材の操作にはJavaScriptが必要です。数学的な背景は <a href="APERIODIC_CHAIR_TUTORIAL.html">学部生向け解説（英語）</a> から読めます。</p></noscript>
+<header class="mast"><div><p class="eyebrow">APERIODIC CHAIR LAB · INTERACTIVE PROTOTYPE</p><h1>組み立てて、階層を見つける。</h1><p>面の模様と矢印を合わせると、同じ形のブロックを接着できます。</p></div>
+<div class="mast-actions"><button id="guide-open">操作チュートリアル</button>
+<div class="language-control"><label for="language">表示言語</label><select id="language"><option value="ja" lang="ja">日本語</option><option value="en" lang="en">English</option></select></div></div></header>
+<main>
+<div class="topbar"><div class="modes" aria-label="遊び方"><button id="guided" aria-pressed="true">親を一つ作る</button><button id="free" aria-pressed="false">自由に組む</button></div>
+<div class="history"><button id="undo">↶ 元に戻す</button><button id="redo">↷ やり直す</button><button id="restart">はじめから</button></div></div>
+<div class="workspace">
+<section class="stage" aria-label="組立の作業面">
+<div class="stage-top"><span id="level" class="pill"></span><strong id="progress"></strong></div>
+<div class="canvas-wrap"><canvas id="scene" tabindex="0" aria-label="3Dの組立。面をクリックして選択。ドラッグで視点を回転。面選択は右の一覧からも行えます。"></canvas>
+<div class="legend"><span class="solid-dot"></span> 接着済み <span class="moving-dot"></span> 取り付け中</div></div>
+<div class="view-controls" aria-label="視点の操作"><span>視点</span><button id="view-left" aria-label="視点を左へ">←</button><button id="view-right" aria-label="視点を右へ">→</button><button id="view-up" aria-label="視点を上へ">↑</button><button id="view-down" aria-label="視点を下へ">↓</button><button id="view-zoom-in" aria-label="拡大">＋</button><button id="view-zoom-out" aria-label="縮小">−</button><button id="view-reset">全体を見る</button><button id="view-face">選択・ヒントの面を見る</button><button id="view-back" hidden>元の視点に戻る</button></div>
+<div class="stage-bottom"><p id="scene-caption">接着済みの組立は一体です。視点を回しても、部品は外れません。</p><div id="inspection-path"></div><button id="inspect" hidden>子を見る</button><button id="inspect-deeper" hidden>選んだ子の内部を見る</button><button id="inspect-up" hidden>一つ上を見る</button><button id="inspect-return" hidden>組立に戻る</button></div>
+</section>
+<aside class="panel" aria-label="取り付けの操作">
+<div class="step"><h2 id="instruction-title">取り付けたい面を選ぶ</h2><p id="instruction"></p></div>
+<div id="editing">
+<details id="target-list"><summary>対象物の面を一覧から選ぶ</summary><label for="target-face">対象物の面 <small>基本は3D上でクリック</small></label><select id="target-face"><option value="">面を選んでください</option></select></details>
+<div id="candidate-controls" hidden>
+<div class="piece-picker"><h3>取り付ける部品の面をクリック</h3><p class="muted">部品だけを回して、隠れた面も選べます。</p>
+<svg id="piece-picker" viewBox="0 0 300 220" role="group" aria-label="取り付ける部品の面選択。面をクリック、またはキーボードで選択。ドラッグで見回す。"></svg>
+<div class="piece-view-controls" aria-label="取り付ける部品だけを見回す"><button id="piece-left" aria-label="部品を左から見る">←</button><button id="piece-right" aria-label="部品を右から見る">→</button><button id="piece-up" aria-label="部品を上から見る">↑</button><button id="piece-down" aria-label="部品を下から見る">↓</button><button id="piece-reset">視点を戻す</button></div>
+<p id="piece-selection" class="muted" aria-live="polite"></p></div>
+<details id="candidate-list"><summary>面と向きを一覧から選ぶ</summary><div class="label-row"><label for="candidate">取り付ける部品の面と向き</label><label class="check"><input id="all-faces" type="checkbox">全模様</label></div>
+<select id="candidate"></select><p id="candidate-note" class="muted"></p></details></div>
+<div class="comparison" aria-label="同じ座標で接触面を比較"><div class="compare-heading"><h3>接触面を比べる</h3><span>同じ向きから投影</span></div><div id="compare-content"><p class="muted">面を選ぶと、二つの矢印がここに並びます。</p></div></div>
+<div class="rotation"><button id="rotate-left">↶ この図で左へ90°</button><button id="rotate-right">↷ この図で右へ90°</button><button id="return-face" hidden>取り付け面に戻る</button></div>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+<details id="why"><summary>なぜ？ 接触の詳細を見る</summary><p id="why-text"></p><div id="contacts"></div><button id="problem-view" hidden>問題の面を見る</button><details><summary>座標で詳しく見る</summary><p>対象側の矢印を右、外向き法線 n と矢印 U の外積 n × U を上にします。A/Aは相手の矢印が上、B/Cは左なら適合。両面の法線は反対向きです。</p></details></details>
+<div class="actions"><button id="attach" class="primary">接着する</button><button id="add" class="primary" hidden>次の1個</button><button id="cancel">追加を取り消す</button></div>
+<button id="hint" class="hint-button">ヒントを見る</button><p id="hint-text" class="hint-text" role="status"></p>
+</div>
+<div id="parent-actions" hidden><p>8個が、一つの大きなchairになりました。</p><button id="group" class="primary">親にまとめる</button><div id="parent-summary" hidden><p>外形は大きなchair。外側の接触条件を、親のルールとして表します。</p><div class="parent-views"><button id="show-boundary">子の境界を見る</button><button id="show-shell">外周を見る</button><button id="show-parent">親のルールを見る</button></div><button id="promote" class="primary">この親で次を組む</button></div></div>
+<p id="inspection-note" hidden>内部を観察中です。接着はそのまま。<br>「組立に戻る」で、先ほどの取り付けを再開できます。</p>
+<div id="inspect-choice" hidden><label for="inspect-tile">内部を見る部品</label><select id="inspect-tile"></select></div>
+</aside></div>
+<section class="footnote"><h2>小さなルールから、大きな構造へ。</h2><p>AはA、BはCと接触できます。矢印の条件も、触れているすべての面で満たす必要があります。8個の決まった組立ができたら、親としてまとめて次の階層へ進めます。</p><p class="muted">試作版 · 格子上の模様と矢印を扱う教材です。曲面の凹凸や実物の差し込み経路は再現していません。局所的に接着できることは、無限に組み続けられることを意味しません。材料8個はこの試作の作業単位です。</p></section>
+<p class="background-reading"><a href="APERIODIC_CHAIR_TUTORIAL.html" target="_blank" rel="noopener">背景の数学を読む（英語・学部生向け） ↗</a></p>
+</main>
+<!-- GUIDE -->
+<dialog id="confirm"><form method="dialog"><h2>新しく始めますか？</h2><p>現在の組立、取り付け中の部品、元に戻す履歴を置き換えます。</p><div class="actions"><button value="cancel">今の作業を続ける</button><button value="start" class="primary">新しく始める</button></div></form></dialog>
+<script>/* DATA */</script><script>/* ENGINE */</script><script>/* I18N */</script><script>/* APP */</script>
+</body></html>

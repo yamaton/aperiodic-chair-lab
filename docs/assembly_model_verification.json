@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "geometric_contacts": 1194,
+  "compatible_contacts": 44,
+  "canonical_handshakes": 36,
+  "rotation_checks": 1056,
+  "group_cubes": 56,
+  "macrocontact_positive_checks": 44,
+  "macro_geometric_contacts": 6801,
+  "macro_compatible_contacts": 44,
+  "grouping_rotations": 24,
+  "whole_interface_rejection": true,
+  "history_branching": true
+}

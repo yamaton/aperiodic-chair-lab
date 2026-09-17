@@ -19,9 +19,24 @@ the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
 
 ## Undergraduate tutorial
 
+[Interactive assembly prototype](assembly.html) opens offline in a browser:
+face matching, a fixed assembly plus one moving piece, undo, and parent/child
+exploration. Its Japanese/English interface includes a short illustrated
+“How to play” guide; the longer mathematics tutorial is a separate resource.
+The guide also offers a cursor demonstration with pause, step and replay.
+[Build, checks and current limitations](assembly/README.md).
+
 [Read online](https://tritonlab.io/aperiodic-chair-lab/tutorial/) ·
 [Download HTML](https://tritonlab.io/aperiodic-chair-lab/downloads/tutorial.html) ·
 [Site build and deployment](PAGES.md).
+
+[Interactive assembly specification draft](INTERACTIVE_ASSEMBLY_SPEC.md)
+records the proposed fixed assembly + moving piece interaction, contact-face
+comparison, guided first-parent construction, reversible editing, and
+eight-child/parent inspection that preserves ongoing work. The prototype
+implements the core interaction; its notes distinguish remaining design work.
+The [player UX review record](INTERACTIVE_ASSEMBLY_REVIEW.md) records the
+coordinator's reread, two independent AI reviews and the resulting clarifications.
 
 [How one shape can enforce order without repetition](APERIODIC_CHAIR_TUTORIAL.html)
 develops the local parent proof, parity and legal deflation, period halving,

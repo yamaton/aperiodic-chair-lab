@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-09-17T14:51:40.932Z",
+  "scope": "Prototype presentation and scripted interactions; not player testing or a mathematical proof",
+  "guide_checks": [
+    "four-step Japanese/English operation guide",
+    "desktop/mobile fit",
+    "pending piece and Redo preserved",
+    "keyboard and focus return",
+    "Escape preserves inspection",
+    "mathematics link separated"
+  ],
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "language_checks": [
+    "in-progress state and Undo/Redo preserved",
+    "hints, contact results and accessibility labels translated",
+    "desktop/mobile layout",
+    "saved preference",
+    "browser language detection",
+    "blocked storage fallback"
+  ],
+  "status": "pass",
+  "html_sha256": "fd1298c4d847392cbf47b1bccbe7ddf40ca253bbc78aa90fa1baf39417a83381",
+  "offline": true,
+  "levels_completed": 2,
+  "layouts": [
+    {
+      "width": 1280,
+      "scroll": 1280
+    },
+    {
+      "width": 390,
+      "scroll": 390
+    }
+  ],
+  "checks": [
+    "canvas face picking",
+    "moving-piece face click and keyboard selection",
+    "moving-piece view drag preserves pose and history",
+    "mobile moving-piece face click",
+    "attachment and rigid target",
+    "invalid rotation",
+    "Undo/Redo",
+    "mode change preserves Redo",
+    "restart cancellation",
+    "eight-child recognition",
+    "parent inspection",
+    "keyboard-accessible nested inspection",
+    "inspection blocks edits",
+    "promotion Undo/Redo",
+    "pending piece survives inspection",
+    "history branch",
+    "other-contact rotation guard",
+    "mobile controls with visible model"
+  ],
+  "page_errors": []
+}

@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-17T14:51:58.179Z",
+  "scope": "Scripted offline UI demonstration checks; not player trials",
+  "html_sha256": "fd1298c4d847392cbf47b1bccbe7ddf40ca253bbc78aa90fa1baf39417a83381",
+  "checks": [
+    "real target and piece clicks",
+    "mismatched arrows become valid after rotation",
+    "timed playback attaches two pieces",
+    "pause and manual stepping",
+    "close during playback and replay",
+    "player pending piece, camera and Redo preserved",
+    "Japanese and English",
+    "390px layout and visible cursor",
+    "667×375, 750×600 and 320×568 face picking and reachable controls",
+    "reduced motion",
+    "offline, no external requests"
+  ],
+  "page_errors": []
+}
