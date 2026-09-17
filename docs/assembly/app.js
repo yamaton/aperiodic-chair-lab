@@ -89,7 +89,7 @@
     setOptions($('inspect-tile'),(inspecting?rules.group:s.tiles).map((p,i)=>[String(i),t('部品{number}',{number:i+1})]),choice||'0');
     $('inspection-path').textContent=inspecting?t('作業中の組立')+' → '+inspection.path.map(p=>t('部品{number}の内部',{number:p.tile+1})).join(' → '):'';
     $('scene-caption').textContent=inspecting?t('各部品自身の座標で内部を表示しています。子の選択は3Dまたは一覧から。接着と履歴の操作は「組立に戻る」で再開できます。'):s.grouped?t('子の境界 → 外周 → 親の有効なルール。形の対応を比べてみましょう。'):t('面をクリックで選択 · ドラッグで視点を回転 · 接着済みの群は固定されています');
-    $('instruction-title').textContent=inspecting?t('作業を保ったまま、内部を見る'):s.grouped?t('同じルールで、次の階層へ'):parent?t('一つの大きなchairを発見'):!s.pending?t('次の部品を用意する'):s.op?t('向きを合わせて接着する'):t('取り付けたい面を選ぶ');
+    $('instruction-title').textContent=inspecting?t('作業を保ったまま、内部を見る'):s.grouped?t('同じルールで、次の階層へ'):parent?t('大きなブロックができました'):!s.pending?t('次の部品を用意する'):s.op?t('向きを合わせて接着する'):t('取り付けたい面を選ぶ');
     $('instruction').textContent=inspecting?t('戻るだけで先ほどの操作を再開できます。'):s.grouped?t('親の細かい曲面が拡大コピーになる、という意味ではありません。'):parent?t('8個の位置と向きが、親の配置に一致しました。'):mode==='guided'&&!inGuide?t('案内の完成例とは異なる配置です。Undoで戻るか、自由に組み続けられます。'):s.pending?t('AはA、BはC。矢印の向きも比べてみましょう。'):s.tiles.length===8?t('材料をすべて使用中です。この8個は一つの親の配置ではありません。Undoで組み替えられます。'):t('接着した部品は組立の一部になります。');
     const boundary=selectable();
     $('view-face').disabled=inspecting||!boundary.some(f=>f.ref===(highlight||s.ref));

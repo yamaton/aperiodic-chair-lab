@@ -21,6 +21,13 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Japanese home introduction revised locally:** replace the mixed Japanese/
+English “chair” wording with “ブロック” and describe connecting pieces followed
+by the goal of building a larger block of the same shape. The remaining four
+generic “chair” mentions in Japanese UI copy (metadata and parent completion/
+shape messages) also use “ブロック”; proper names remain intact. The user
+requested a local commit of these edits. Publication remains pending.
+
 **Heading punctuation adjusted locally:** remove terminal periods/full stops
 from home and assembly headings in Japanese, English and Simplified Chinese.
 Body sentences, demo captions, internal punctuation and question marks are
