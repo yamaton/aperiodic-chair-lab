@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-17T14:51:40.932Z",
+  "checked_at": "2026-09-17T16:15:17.606Z",
   "scope": "Prototype presentation and scripted interactions; not player testing or a mathematical proof",
   "guide_checks": [
     "four-step Japanese/English operation guide",
@@ -22,7 +22,7 @@
     "blocked storage fallback"
   ],
   "status": "pass",
-  "html_sha256": "fd1298c4d847392cbf47b1bccbe7ddf40ca253bbc78aa90fa1baf39417a83381",
+  "html_sha256": "309609ec4cabeec9680f66b3d703cef2d6e259973ec8d322713233cc8552a83b",
   "offline": true,
   "levels_completed": 2,
   "layouts": [

@@ -16,3 +16,17 @@
 #play-guide{width:min(620px,calc(100% - 24px));max-width:620px;max-height:calc(100dvh - 24px);padding:24px;overflow-y:auto;overscroll-behavior:contain}
 .guide-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}.guide-heading h2{font-size:22px}.guide-heading button{flex-shrink:0}.guide-heading .eyebrow{margin:0 0 4px}#play-guide .guide-intro{margin:12px 0;color:var(--muted)}#guide-progress{display:inline-block;margin:0 0 16px;font-size:12px}.guide-step h3{font-size:18px}.guide-step p{margin:12px 0}.guide-tip{background:#edf6f2;padding:12px;border-radius:8px}.guide-pair{display:flex;justify-content:center;align-items:center;gap:16px;margin:20px 0}.guide-face{border:1px solid #aabfb4;border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;gap:5px}.guide-face.fixed{background:#dceee6}.guide-face.moving{background:#f7e2bf;border-color:#d6bc92}.guide-face.selected{outline:3px solid #ad4c13;outline-offset:2px}.guide-face strong{font-size:28px}.guide-face span{font-size:12px}.guide-click{color:#075c61;font-weight:700}.guide-matches{display:grid;gap:8px;margin:18px 0}.guide-match{display:grid;grid-template-columns:1fr 20px 1fr 20px;gap:8px;align-items:center;text-align:center}.guide-match .guide-face{padding:8px;font-size:22px;font-weight:600}.guide-flow{display:flex;align-items:center;justify-content:center;gap:14px;margin:20px 0}.guide-flow span:not(:nth-child(2)){padding:10px 16px;border-radius:8px;background:#dceee6;color:#075c61;font-size:14px;font-weight:600}.guide-navigation{display:flex;justify-content:space-between;gap:12px;margin-top:24px}.guide-navigation button{min-width:100px}#play-guide .guide-preserved{font-size:12px;margin:12px 0 0}
 @media(max-width:750px){.mast-actions{margin-top:14px;gap:10px;flex-wrap:wrap}#play-guide{padding:18px}.guide-heading h2{font-size:20px}.guide-pair{gap:10px}}
+/* Spatial comparisons and rotation controls keep their physical left/right meaning. */
+.workspace,.face-pair,.rotation,.view-controls,.piece-view-controls,.guide-pair,.guide-matches,.guide-flow,svg,canvas{direction:ltr}
+[dir=rtl] :is(.stage,.panel,.face-card,.guide-face span,.guide-flow span:not(:nth-child(2)),.view-controls>span){direction:rtl}
+[dir=rtl] :is(.eyebrow,h1){letter-spacing:normal}
+[dir=rtl] #contacts button{text-align:start}
+[dir=rtl] .legend{left:auto;right:20px}
+[dir=rtl] .moving-dot{margin-left:0;margin-right:12px}
+.mast{direction:ltr}.mast>div{min-width:0}html[dir=rtl] .mast>div{direction:rtl}
+.language-control select{direction:ltr;max-width:160px}
+@media(max-width:750px){[dir=rtl] .legend{right:8px}.stage-top{flex-wrap:wrap}.pill{white-space:normal}}
+/* Long translated headings must not push the close button outside a dialog. */
+.guide-heading{flex-wrap:wrap}.guide-heading>button{margin-inline-start:auto}
+.guide-flow span:not(:nth-child(2)){min-width:0;overflow-wrap:anywhere;hyphens:auto}
+@media(max-width:380px){.guide-flow{gap:8px}.guide-flow span:not(:nth-child(2)){padding:10px 8px}}

@@ -21,13 +21,36 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Three maintained UI languages:** the user chose Japanese, English and
+Simplified Chinese to limit ongoing maintenance. Only top-level JSON files in
+`docs/locales/` enter the menu, generated HTML and required validation.
+Arabic, German, Spanish, French and Russian catalogs are preserved unchanged
+in `docs/locales/inactive/`; routine UI work need not update them. See
+`docs/locales/README.md` for reactivation and fallback behavior. Shared RTL
+support is retained. Chinese has not had native-speaker review. The user
+requested a local commit of the project home and localization changes;
+publication remains pending.
+
+**Interactive-first project home prepared locally:** the user requested a
+multilingual Pages landing page focused on entering the assembly activity.
+`docs/site-index.html`, `site.css`, `site.js` and `site-preview.cjs` replace
+the old Markdown landing page. Three-language calls to action lead to
+`assembly/` or directly to its demonstration; mathematical reading, the
+curved-shape viewer and research evidence remain secondary resources.
+`docs/site-language.js` shares language preferences, with query parameters
+preserving the selected language even without storage. `build-site.mjs`
+packages the activity alongside the existing tutorial, viewer and download,
+and the Pages workflow watches the new sources. The generated `_site/` is
+local only; `docs/site_preview_verification.json` records navigation and
+language checks under the project subpath. This update has not been deployed. The original live record in `docs/pages_verification.json` is unchanged.
+
 **Interactive assembly prototype implemented locally:** the user requested
 starting the prototype after the UX reviews. Open `docs/assembly.html` in a
 browser; [prototype notes](docs/assembly/README.md) cover the build and scope.
 It has exact grid contact checks, a rigid target plus one moving piece,
 shared-frame face comparison, guided/free assembly, Undo/Redo, eight-child
 recognition, parent promotion and nested read-only inspection. The UI is
-available in Japanese and English, and the HTML is standalone/offline. Rebuild with
+available in Japanese, English and Simplified Chinese, and the HTML is standalone/offline. Rebuild with
 `node docs/build-assembly.cjs`; verify using the verification scripts in `docs/assembly/`.
 The finite verifier reproduces 1,194/44 base contacts and 6,801/44 macro
 contacts. Firefox exercises two parent levels and desktop/mobile interactions.
@@ -42,15 +65,15 @@ Firefox checks cover desktop/mobile selection and these state invariants.
 The language selector translates controls, hints, contact results, and
 accessibility labels without changing the assembly or history. It uses the
 browser language initially and remembers an explicit choice when storage is
-available. `docs/assembly/i18n.js` holds the extensible message catalog.
-The header now opens a short four-step Japanese/English operation guide,
+available. `docs/locales/*.json` holds the shared message catalogs; `docs/build-locales.cjs` validates and embeds them.
+The header now opens a short four-step multilingual operation guide,
 embedded from `docs/assembly/guide.html`: choose the two faces, compare arrows,
 then attach. Diagrams show the A/A and B/C matching examples. Parent assembly
 is an optional next step; opening help preserves the pending piece and history.
 The English undergraduate mathematics text is linked separately at the bottom,
 not presented as the play tutorial. Browser checks cover both guide languages,
 mobile fit, focus return, and Escape while inspecting children.
-The guide now includes “Watch the actions”: a Japanese/English cursor demo
+The guide now includes “Watch the actions”: a multilingual cursor demo
 of target/piece face selection, comparison, rotation and the first attachment.
 An embedded isolated copy of the same application performs the real UI actions;
 the player's state, camera and history stay intact. Pause, step, replay, closing

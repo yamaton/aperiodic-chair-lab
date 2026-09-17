@@ -1,4 +1,4 @@
-name: Publish tutorial site
+name: Publish Chair Lab project site
 
 on:
   push:
@@ -8,7 +8,16 @@ on:
       - 'docs/tutorial.css'
       - 'docs/tutorial-controls.html'
       - 'docs/figures/**'
-      - 'docs/site-index.md'
+      - 'docs/site-index.html'
+      - 'docs/site.css'
+      - 'docs/site.js'
+      - 'docs/site-language.js'
+      - 'docs/locales/**'
+      - 'docs/build-locales.cjs'
+      - 'docs/site-preview.cjs'
+      - 'docs/assembly/**'
+      - 'docs/build-assembly.cjs'
+      - 'strong/audit/motif_grouping_certificate.json'
       - 'docs/pages-links.lua'
       - 'docs/build-site.mjs'
       - 'strong/artifacts/recut-chair.html'

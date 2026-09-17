@@ -6,6 +6,11 @@ import path from 'node:path';
 import os from 'node:os';
 import crypto from 'node:crypto';
 import {execFileSync} from 'node:child_process';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url);
+const buildAssembly=require('./build-assembly.cjs');
+const buildPreview=require('./site-preview.cjs');
+const {embedLocales}=require('./build-locales.cjs');
 
 const root = process.cwd();
 const output = path.join(root, '_site');
@@ -21,12 +26,18 @@ assert.match(execFileSync(pandoc, ['--version'], {encoding: 'utf8'}), /^pandoc 3
 const scratch = fs.mkdtempSync(path.join(os.tmpdir(), 'chair-pages-'));
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
 const sha256 = data => crypto.createHash('sha256').update(data).digest('hex');
-const files = ['index.html', 'tutorial/index.html', 'viewer/index.html', 'downloads/tutorial.html'];
-for (const dir of ['tutorial', 'viewer', 'downloads']) fs.mkdirSync(path.join(output, dir), {recursive: true});
+const files = ['index.html', 'assembly/index.html', 'tutorial/index.html', 'viewer/index.html', 'downloads/tutorial.html'];
+for (const dir of ['assembly', 'tutorial', 'viewer', 'downloads']) fs.mkdirSync(path.join(output, dir), {recursive: true});
 const common = ['--from=markdown-implicit_figures', '--to=html5', '--standalone',
   '--embed-resources', '--math-method=mathml', '--resource-path=docs', '--css=tutorial.css', '--fail-if-warnings'];
 try {
-  execFileSync(pandoc, ['docs/site-index.md', ...common, '--output=' + path.join(output, 'index.html')], {stdio: 'inherit'});
+  let home=fs.readFileSync('docs/site-index.html','utf8');
+  for(const [marker,file] of [['STYLE','site.css'],['SCRIPT','site.js']])
+    home=home.replace(`/* ${marker} */`,()=>fs.readFileSync('docs/'+file,'utf8'));
+  home=embedLocales(home,'home');
+  home=home.replace('<!-- PREVIEW -->',()=>buildPreview());
+  fs.writeFileSync(path.join(output,'index.html'),home);
+  fs.writeFileSync(path.join(output,'assembly/index.html'),buildAssembly({tutorialHref:'../tutorial/',homeHref:'../'}));
   for (const edition of ['online', 'download']) {
     const home = edition === 'online' ? '../' : site.href;
     const extra = edition === 'online'

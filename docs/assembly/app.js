@@ -64,6 +64,7 @@
     return `<div class="face-card">${label}<svg viewBox="0 0 104 115" role="img" aria-label="${t('{label} {motif}、矢印{arrow}',{label,motif:face.motif,arrow:arrowName(face.u,base)})}"><rect x="3" y="4" width="98" height="106" rx="7" fill="#edf3ea" stroke="#c4d7c9"/><text x="52" y="38" text-anchor="middle" font-size="25" fill="#213c45">${face.motif}</text>${wanted?line(wanted,true):''}${line(uv,false)}</svg></div>`;
   }
   function render(){
+    const home=$('project-home');if(home)home.href='../?lang='+document.documentElement.lang;
     const s=state(), result=currentResult(), parent=rules.parent(s.tiles), inspecting=!!inspection;
     const remaining=8-s.tiles.length-Number(s.pending);
     const inGuide=mode==='guided'&&guideMatches();

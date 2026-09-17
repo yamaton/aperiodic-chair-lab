@@ -1,9 +1,11 @@
-# Tutorial project site
+# Chair Lab project site
 
 The public reading edition lives at
 <https://tritonlab.io/aperiodic-chair-lab/>:
 
 - `tutorial/`: illustrated tutorial, contents and figure enlargement.
+- `index.html`: Japanese/English/Simplified Chinese home page, with the assembly activity as the primary entry.
+- `assembly/`: Japanese/English/Simplified Chinese interactive assembly, operation guide and cursor demonstration.
 - `viewer/`: interactive curved-chair viewer.
 - `downloads/tutorial.html`: a self-contained download for offline reading.
 - `build.json`: source commit, tutorial source hash, output hashes and checks.
@@ -28,6 +30,24 @@ MathML and enlargement controls, checks site links and anchors, and writes
 the manifest. No Python environment or Lean build is needed to publish
 already generated teaching assets.
 
+The home page is authored in `site-index.html`, `site.css` and `site.js`.
+`site-preview.cjs` draws its illustration from two legal chair placements in
+the preserved motif certificate. The primary link opens `assembly/`; the
+secondary link opens `assembly/?demo=1` to show the operation demonstration.
+`site-language.js` shares language preferences with the activity. Links carry
+`lang=ja`, `en` or `zh`, so navigation also works when browser storage is blocked.
+The mathematics tutorial and geometric viewer remain English.
+Translations live in `locales/*.json`; `build-locales.cjs` validates complete
+catalogs and generates language options for both pages. See
+[the localization guide](locales/README.md) for maintenance and reactivation.
+Five inactive translations are preserved in `locales/inactive/` and excluded
+from the generated site and routine validation.
+
+The builder packages the activity directly from `assembly/` sources through
+`build-assembly.cjs`, with hosted links back to the home and mathematics guide.
+It does not overwrite the standalone repository edition `assembly.html`.
+The activity and its isolated demonstration need no CDN or external scripts.
+
 The tutorial's authoritative text remains `APERIODIC_CHAIR_TUTORIAL.md`.
 `pages-links.lua` rewrites research links to GitHub at the source commit
 used by the build. The online tutorial links to the hosted viewer; the
@@ -46,15 +66,19 @@ node docs/verify-pages.cjs https://tritonlab.io/aperiodic-chair-lab/ /tmp/pages-
 
 Set `PLAYWRIGHT_MODULE` and `FIREFOX_PATH` for installations other than the
 script's defaults. The local check serves `_site/` under the project
-subpath, then checks desktop/mobile layout, figure keyboard controls,
+subpath, then checks Japanese/English/Simplified Chinese home pages, activity/demo entry points,
+language handoff with blocked storage, desktop/mobile layout, figure keyboard controls,
 navigation, viewer controls, output hashes and the actual HTML download
 with networking disabled. This verifies presentation, not mathematics.
+The redesigned home and activity are currently verified locally in
+[`site_preview_verification.json`](site_preview_verification.json); this is not
+a live deployment record. The original publication record below is preserved.
 
 ## Deployment
 
 Repository Settings → Pages uses **GitHub Actions**, with HTTPS enforced.
 `.github/workflows/pages.yml` builds and deploys on changes to tutorial
-source, styles, controls, figures, the viewer or the site build machinery
+source, styles, controls, figures, the viewer, activity or the site build machinery
 on `main`. It also supports manual `workflow_dispatch`. Documentation-only
 deployment records do not trigger another build.
 

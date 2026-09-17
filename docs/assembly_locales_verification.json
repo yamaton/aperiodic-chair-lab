@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-17T16:14:53.281Z",
+  "scope": "Automated translation coverage, offline UI and RTL interaction checks; not native-speaker review",
+  "html_sha256": "309609ec4cabeec9680f66b3d703cef2d6e259973ec8d322713233cc8552a83b",
+  "checks": [
+    {
+      "language": "en",
+      "width": 1280,
+      "height": 900,
+      "direction": "ltr"
+    },
+    {
+      "language": "ja",
+      "width": 1280,
+      "height": 900,
+      "direction": "ltr"
+    },
+    {
+      "language": "zh",
+      "width": 1280,
+      "height": 900,
+      "direction": "ltr"
+    },
+    {
+      "language": "en",
+      "width": 320,
+      "height": 900,
+      "direction": "ltr"
+    },
+    {
+      "language": "ja",
+      "width": 320,
+      "height": 900,
+      "direction": "ltr"
+    },
+    {
+      "language": "zh",
+      "width": 320,
+      "height": 900,
+      "direction": "ltr"
+    },
+    {
+      "language": "en",
+      "width": 667,
+      "height": 375,
+      "direction": "ltr"
+    },
+    {
+      "language": "ja",
+      "width": 667,
+      "height": 375,
+      "direction": "ltr"
+    },
+    {
+      "language": "zh",
+      "width": 667,
+      "height": 375,
+      "direction": "ltr"
+    }
+  ],
+  "state_and_arrows_preserved": true,
+  "demos_attach": true,
+  "page_errors": []
+}

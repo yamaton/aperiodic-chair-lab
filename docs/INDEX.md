@@ -21,7 +21,7 @@ the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
 
 [Interactive assembly prototype](assembly.html) opens offline in a browser:
 face matching, a fixed assembly plus one moving piece, undo, and parent/child
-exploration. Its Japanese/English interface includes a short illustrated
+exploration. Its interface supports [Japanese, English and Simplified Chinese](locales/README.md) and includes a short illustrated
 “How to play” guide; the longer mathematics tutorial is a separate resource.
 The guide also offers a cursor demonstration with pause, step and replay.
 [Build, checks and current limitations](assembly/README.md).
@@ -29,6 +29,10 @@ The guide also offers a cursor demonstration with pause, step and replay.
 [Read online](https://tritonlab.io/aperiodic-chair-lab/tutorial/) ·
 [Download HTML](https://tritonlab.io/aperiodic-chair-lab/downloads/tutorial.html) ·
 [Site build and deployment](PAGES.md).
+
+The local Pages build now starts with a three-language home page whose
+primary links open the assembly activity and its operation demonstration.
+This redesign has not yet been deployed; [local browser checks](site_preview_verification.json).
 
 [Interactive assembly specification draft](INTERACTIVE_ASSEMBLY_SPEC.md)
 records the proposed fixed assembly + moving piece interaction, contact-face
