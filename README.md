@@ -1,13 +1,26 @@
 # Aperiodic Chair Lab
 
+We study a three-dimensional **monotile**: one block shape whose identical
+copies can fill space. Our target is a shape that forces **every tiling to
+have only finitely many symmetries**—no nonzero translations or infinite-order
+screw motions—even when reflected copies are allowed.
+
+Explore the matching rules in the interactive builder below. Lean proves
+hierarchy and symmetry bounds for legal grid tilings in our model. Existence
+and the curved block's full geometric argument remain written mathematics
+outside these Lean proofs and await mathematical review.
+
 [![The chair with enlarged tabs and pockets, a close-up of matching surfaces, and the eight-chair assembly.](docs/figures/aperiodic-chair-cover-enlarged.png)](https://tritonlab.io/aperiodic-chair-lab/assembly/)
 
 *Curved tabs and pockets carry the matching rules. The frozen port layout is
 shown with features enlarged **3× in width and 12× in depth** for visibility.
 [Rendering details](docs/figures/aperiodic-chair-cover-enlarged.md).*
 
-Match face patterns and arrows, connect 3D blocks, and discover how eight
-pieces can form a larger block of the same shape.
+Match face patterns and arrows, connect identical copies of the chair block,
+and discover how eight pieces form a larger chair-shaped assembly.
+The builder represents the curved matching features with face patterns and
+arrows. The tutorial explains [how the larger shape and its matching rules
+recur](docs/APERIODIC_CHAIR_TUTORIAL.md#44-why-grouping-can-be-repeated).
 
 **[Try the interactive builder →](https://tritonlab.io/aperiodic-chair-lab/assembly/)**
 
@@ -38,9 +51,13 @@ the file or use the online links above to open the interactive version.
 
 ## Research background
 
-This repository is also a computational research notebook on three-dimensional
-aperiodic chair tilings: comparisons with Chair44, reproducible verification,
-undergraduate explanations, and investigations toward printable realizations.
+This repository records our study of three-dimensional aperiodic monotiles
+through a decorated chair construction: comparisons with Chair44,
+reproducible verification, undergraduate explanations, and investigations
+toward printable realizations.
+
+The undecorated chair can tile periodically; the matching features are
+essential to the proposed aperiodicity.
 
 **Relationship to Chair44.** Ioannis Tsiokos's
 [*A Strongly Aperiodic Monotile in Three Dimensions*](https://zenodo.org/records/22792358)
