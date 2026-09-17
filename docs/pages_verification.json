@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-09-17T03:47:25.005Z",
+  "scope": "Presentation, navigation, artifact hashes and offline download; not mathematical verification",
+  "base_url": "https://tritonlab.io/aperiodic-chair-lab/",
+  "manifest": {
+    "site_url": "https://tritonlab.io/aperiodic-chair-lab/",
+    "source_revision": "179848c90ca0318eacdb756251e11706ce31024f",
+    "tutorial_source_sha256": "6ab0e2b20d087552fc007571c984d1443ff91acb0f6cb8bc45439c26234df3aa",
+    "local_links_checked": 85,
+    "tutorial_counts": {
+      "math": 635,
+      "images": 10
+    },
+    "files": {
+      "index.html": "3f96a78eb313b787a6679c3f81a365119b83f815bb4ec888651a9a4669cf2208",
+      "tutorial/index.html": "6db1dee7018cf37dcf5e3fcda3aa83e98a329dbb30a202b0b823db4d4ea15141",
+      "viewer/index.html": "eb1d0bde1a725fe75908f158b28f1bfbb914456fe382c6318642af7b68e8279f",
+      "downloads/tutorial.html": "923c72f6ecaf99c2e8999a7ac0526ced6045160f55ceceadbc86efd1f77557e7"
+    }
+  },
+  "layouts": [
+    {
+      "width": 1200,
+      "tutorial_scroll_width": 1200,
+      "figure_keyboard_control": true
+    },
+    {
+      "width": 390,
+      "tutorial_scroll_width": 390,
+      "figure_keyboard_control": true
+    }
+  ],
+  "viewer_controls": true,
+  "offline_download": true,
+  "page_errors": []
+}

@@ -22,12 +22,17 @@ authorized. No reviewer outreach has been authorized or sent.
 ## Active objective
 
 **Tutorial project-site publication:** the user authorized publishing the
-tutorial as a GitHub Pages project site. The expected inherited address is
+tutorial as a GitHub Pages project site. The published inherited address is
 `https://tritonlab.io/aperiodic-chair-lab/`; the existing user site owns the
 custom domain. [Deployment documentation](docs/PAGES.md) records the build,
 link rewriting, offline edition and browser checks. Publication includes
 the previously local tutorial commit `497d73e`. Only this repository's
 Pages configuration is involved; user-site configuration remains untouched.
+Deployment of `179848c` succeeded in
+[Actions run 35179418123](https://github.com/yamaton/aperiodic-chair-lab/actions/runs/35179418123).
+The [live Firefox record](docs/pages_verification.json) confirms output hashes,
+desktop/mobile presentation, navigation, viewer controls and offline download.
+The existing root site still returns HTTP 200 with unchanged Pages settings.
 The local-only descriptions below record earlier stages, before this
 publication authorization. No reviewer outreach is authorized.
 
