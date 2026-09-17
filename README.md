@@ -1,8 +1,40 @@
 # Aperiodic Chair Lab
 
-A computational research notebook on three-dimensional aperiodic chair
-tilings: comparisons with Chair44, reproducible verification, undergraduate
-explanations, and investigations toward printable realizations.
+Match face patterns and arrows, connect 3D blocks, and discover how eight
+pieces can form a larger block of the same shape.
+
+**[Try the interactive builder →](https://tritonlab.io/aperiodic-chair-lab/assembly/)**
+
+[Watch a quick demo](https://tritonlab.io/aperiodic-chair-lab/assembly/?demo=1) ·
+[Project home](https://tritonlab.io/aperiodic-chair-lab/)
+
+No installation or prior knowledge needed. Follow hints or build freely,
+and undo whenever you like. Available in Japanese, English and Simplified Chinese.
+
+## Start here
+
+| Purpose | Entry point |
+|---|---|
+| Build and explore | [Interactive builder](https://tritonlab.io/aperiodic-chair-lab/assembly/) · [guided demo](https://tritonlab.io/aperiodic-chair-lab/assembly/?demo=1) · [standalone HTML](docs/assembly.html) |
+| Learn the ideas | [Read the illustrated tutorial](https://tritonlab.io/aperiodic-chair-lab/tutorial/) · [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) · [download HTML](https://tritonlab.io/aperiodic-chair-lab/downloads/tutorial.html) |
+| Inspect the candidate | [Interactive chair viewer](https://tritonlab.io/aperiodic-chair-lab/viewer/) · [repository edition](strong/artifacts/recut-chair.html) |
+| Compare the constructions | [Geometry and proof comparison](strong/review/CHAIR44_PROOF_COMPARISON.md) |
+| Inspect reproduced evidence | [Chair44 build record](strong/review/CHAIR44_BUILD_REPRODUCTION.md) · [independent finite replay](strong/review/CHAIR44_COMPANION_REPLAY.md) |
+| Follow our formal argument | [Lean project](formal/README.md) · [grid symmetry bound](formal/GRID_SYMMETRY.md) |
+| Assess the proof dependencies | [Current claim table](docs/PROOF_STATUS.md) · [short geometric manuscript](strong/review/CURVED_GRID_NOTE.md) |
+| Find reports and commands | [Project index](docs/INDEX.md) |
+| Understand attribution and AI use | [Provenance](docs/PROVENANCE.md) · [third-party notices](THIRD_PARTY_NOTICES.md) |
+
+For offline play, clone the repository and open `docs/assembly.html` in a
+browser. The tutorial download also includes its figures, styles and scripts
+for offline reading. GitHub's HTML file view displays source code; download
+the file or use the online links above to open the interactive version.
+
+## Research background
+
+This repository is also a computational research notebook on three-dimensional
+aperiodic chair tilings: comparisons with Chair44, reproducible verification,
+undergraduate explanations, and investigations toward printable realizations.
 
 **Relationship to Chair44.** Ioannis Tsiokos's
 [*A Strongly Aperiodic Monotile in Three Dimensions*](https://zenodo.org/records/22792358)
@@ -13,24 +45,8 @@ caps. We reproduced the pinned Chair44 proof build and investigated that
 correspondence. We do not claim a distinct matching-system discovery or
 established discovery priority. See the [exact comparison](strong/review/TSIOKOS_CHAIR44_COMPARISON.md).
 
-## Start here
-
-| Purpose | Entry point |
-|---|---|
-| Learn the ideas | [Read the illustrated tutorial](https://tritonlab.io/aperiodic-chair-lab/tutorial/) · [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) · [download HTML](https://tritonlab.io/aperiodic-chair-lab/downloads/tutorial.html) |
-| Inspect the candidate | [Interactive chair viewer](https://tritonlab.io/aperiodic-chair-lab/viewer/) · [repository edition](strong/artifacts/recut-chair.html) |
-| Compare the constructions | [Geometry and proof comparison](strong/review/CHAIR44_PROOF_COMPARISON.md) |
-| Inspect reproduced evidence | [Chair44 build record](strong/review/CHAIR44_BUILD_REPRODUCTION.md) · [independent finite replay](strong/review/CHAIR44_COMPANION_REPLAY.md) |
-| Follow our formal argument | [Lean project](formal/README.md) · [grid symmetry bound](formal/GRID_SYMMETRY.md) |
-| Assess the proof dependencies | [Current claim table](docs/PROOF_STATUS.md) · [short geometric manuscript](strong/review/CURVED_GRID_NOTE.md) |
-| Find reports and commands | [Project index](docs/INDEX.md) |
-| Understand attribution and AI use | [Provenance](docs/PROVENANCE.md) · [third-party notices](THIRD_PARTY_NOTICES.md) |
-
-The [project site](https://tritonlab.io/aperiodic-chair-lab/) opens directly
-in a browser. Its tutorial download includes figures, styles and scripts
-for offline reading. You can also clone the repository and open its HTML
-files locally; GitHub's file view displays their source. The viewers and meshes approximate
-exact surfaces and do not certify the aperiodicity of a printed object.
+The viewers and meshes approximate exact surfaces and do not certify the
+aperiodicity of a printed object.
 
 ## What is established?
 
@@ -54,6 +70,8 @@ records both outcomes rather than treating the whole control suite as passing.
 
 ## What this repository contributes
 
+- An interactive builder with face matching, guided assembly and exploration
+  of parent and child blocks at successive scales.
 - Independently implemented finite checks and a precise comparison of the
   two geometric realizations of the shared matching system.
 - A separate formal development of the grid argument and an illustrated

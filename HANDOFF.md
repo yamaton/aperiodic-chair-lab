@@ -21,6 +21,14 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**README now leads with the interactive builder:** the opening explains the
+activity and links directly to `assembly/`, its `?demo=1` demonstration and
+the project home. The entry table starts with building; research background
+and the unchanged Chair44 attribution follow the entry routes. Offline play
+instructions and the three maintained languages are included. This README
+reorganization is being committed locally at the user’s request; publication
+remains pending.
+
 **Japanese home introduction revised locally:** replace the mixed Japanese/
 English “chair” wording with “ブロック” and describe connecting pieces followed
 by the goal of building a larger block of the same shape. The remaining four
