@@ -20,21 +20,49 @@ the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
 ## Undergraduate tutorial
 
 [How one shape can enforce order without repetition](APERIODIC_CHAIR_TUTORIAL.html)
-introduces the chair, local grouping, period halving, physical implications,
-and printable-interface proposals, with worked exercises. The HTML opens
+develops the local parent proof, parity and legal deflation, period halving,
+the five-step curved-surface registration argument, and the existence limit.
+Ten figures and 19 worked exercises connect these to physical implications
+and printable-interface proposals. Finite census data remain in the linked
+complete tables. The HTML opens
 offline with embedded figures, styling and native MathML; links to project
 reports require the repository. [Markdown source](APERIODIC_CHAIR_TUTORIAL.md).
 [Firefox verification record](tutorial_verification.json) records desktop
 and mobile checks, local links, offline resources and artifact hashes.
+The [independent tutorial review](TUTORIAL_REVIEW.md) records mathematical,
+first-reader, and presentation findings, the applied changes, and follow-up
+checks. It is AI review, not a student comprehension trial.
 
-Rebuild the HTML from the repository root with Pandoc:
+Rebuild the eight new vector diagrams and HTML from the repository root:
 
 ```sh
-pandoc docs/APERIODIC_CHAIR_TUTORIAL.md --from=markdown --to=html5 \
+uv run --locked python docs/draw_tutorial_figures.py
+pandoc docs/APERIODIC_CHAIR_TUTORIAL.md --from=markdown-implicit_figures --to=html5 \
   --standalone --embed-resources --math-method=mathml --toc --toc-depth=2 \
   --resource-path=docs --css=tutorial.css \
+  --include-after-body=docs/tutorial-controls.html \
   --output=docs/APERIODIC_CHAIR_TUTORIAL.html
 ```
+
+Optional Firefox presentation check (requires an existing Playwright and
+Firefox installation; configure `PLAYWRIGHT_MODULE` and `FIREFOX_PATH` if
+they differ from the script's local defaults):
+
+```sh
+node docs/verify_tutorial.cjs
+```
+
+This regenerates `tutorial_verification.json` with file hashes and checks
+embedded images, MathML, local links, and desktop/mobile layout. It does not
+verify the mathematical claims. The figure generator checks the 56-cube
+partition used in its group diagram; diagrams omit the curved decorations
+or exaggerate dimensions wherever their captions say so.
+The Pandoc input option keeps the explicit captions visible in both Markdown
+and HTML without also turning image alt text into a duplicate caption.
+The embedded controls let readers enlarge and pan diagrams offline, with
+keyboard activation, Escape/Close, and focus restoration. Without JavaScript,
+the text, original figures, and formulas remain readable; the extra controls
+are absent.
 
 ## Current chair research
 

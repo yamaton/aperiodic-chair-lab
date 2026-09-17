@@ -21,5 +21,19 @@ blockquote { margin: 1.3rem 0; padding: 0.3rem 1.2rem; border-left: 4px solid #2
 pre { padding: 1rem; overflow-x: auto; background: #f1f4f6; border-radius: 0.4rem; }
 code { font-size: 0.9em; }
 math[display="block"] { overflow-x: auto; padding: 0.5rem 0; }
+p:has(> math[display="block"]) { overflow-x: auto; }
+.figure-preview { display: block; width: 100%; padding: 0.6rem; margin: 1.5rem 0; border: 1px solid #ccdce2; border-radius: 0.4rem; background: white; cursor: zoom-in; }
+.figure-preview img { margin: 0 auto; }
+.figure-enlarge-label { display: block; padding-top: 0.5rem; color: #096b80; font: 0.95rem system-ui, sans-serif; text-decoration: underline; }
+button:focus-visible, .figure-scroll:focus-visible { outline: 3px solid #df9500; outline-offset: 3px; }
+.figure-viewer { box-sizing: border-box; width: min(96vw, 1150px); max-width: 96vw; max-height: 96dvh; padding: 1rem; border: 1px solid #657782; border-radius: 0.5rem; color: #172b3a; }
+.figure-viewer::backdrop { background: rgb(15 30 40 / 65%); }
+.figure-toolbar { display: flex; gap: 1rem; align-items: center; justify-content: space-between; }
+.figure-toolbar h2 { margin: 0; font-size: 1.15rem; }
+.figure-close { padding: 0.6rem 1rem; border: 1px solid #657782; border-radius: 0.3rem; background: #eef6f7; color: #143f55; font: inherit; cursor: pointer; }
+#figure-viewer-help { margin: 0.6rem 0; font-size: 0.9rem; }
+.figure-scroll { max-height: 72dvh; overflow: auto; border: 1px solid #d7e0e4; }
+.figure-scroll img { max-width: none; height: auto; margin: 0; }
 @media (max-width: 600px) { body { padding: 1.4rem 1rem; } h1.title { font-size: 2rem; } th, td { padding: 0.5rem; } }
 @media print { body { max-width: none; padding: 0; font-size: 10pt; } #TOC { break-after: page; } h1, h2, h3 { break-after: avoid; } figure, blockquote { break-inside: avoid; } a { color: inherit; } }
+@media print { .figure-preview { border: none; padding: 0; } .figure-enlarge-label, .figure-viewer { display: none !important; } }

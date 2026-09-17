@@ -21,6 +21,41 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Undergraduate tutorial expanded after review:**
+[`docs/APERIODIC_CHAIR_TUTORIAL.md`](docs/APERIODIC_CHAIR_TUTORIAL.md) now
+works through coordinate conventions, contact enumeration, the six triggers,
+the exceptional notch case, the parent-map partition, macrocontact recurrence,
+global parity and legal deflation. It develops the five-step curved-cap
+registration argument and the expanding-ball/diagonal-selection existence
+argument, while retaining their written-versus-Lean scope. Physics additions
+define a soft bit-state model, compare canonical weights, bound seam costs,
+and derive two-marker interference. The status table includes the proper-grid
+24-symmetry bound. There are 19 exercises with answers and, at the user's
+request for more diagrams, ten figures (eight new reproducible SVGs).
+[`docs/INDEX.md`](docs/INDEX.md#undergraduate-tutorial) records the figure/HTML
+build and optional Firefox check. The figure generator checks its exact
+56-cube carrier partition; the motif grouping and curved-grid-note audit
+both pass without changing their preserved evidence. The HTML edition is
+regenerated with embedded figures and MathML; its presentation check records
+desktop/mobile layout, local links, and artifact hashes. These are teaching
+and presentation changes, not new formal theorems or independent human
+review. The user subsequently requested a local commit of this tutorial
+revision. No push or outreach was authorized or performed for it.
+
+At the user's further request, three agents independently reviewed
+mathematical correctness, first-time undergraduate progression, and
+figures/exercises/mobile presentation. The
+[review and disposition record](docs/TUTORIAL_REVIEW.md) preserves their
+findings and bounded follow-up assessments. No major mathematical error
+was reported; revisions supply the first forced-contact elimination,
+explicit changes of coordinates, elementary polynomial-factor/degree steps,
+a geometric roadmap and wave/complex-number prerequisites. Exercises now
+have a reading route and in-text checkpoints. Ten figures can be enlarged
+and panned in the offline HTML with keyboard support; the verifier tests
+all ten at both viewport widths, focus restoration, and the no-JavaScript
+fallback. Follow-up reviewers found the main explanation gaps addressed.
+Actual undergraduate reading trials remain separate from these AI reviews.
+
 **Dependency consolidation and grid symmetry completed:**
 [`docs/PROOF_STATUS.md`](docs/PROOF_STATUS.md) is now the current claim table,
 with exact assumptions, evidence classes, dependencies and remaining scope.

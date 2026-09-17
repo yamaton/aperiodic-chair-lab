@@ -1,0 +1,46 @@
+<script>
+(() => {
+  const pictures = [...document.querySelectorAll('img')];
+  const dialog = document.createElement('dialog');
+  dialog.className = 'figure-viewer';
+  dialog.setAttribute('aria-labelledby', 'figure-viewer-title');
+  dialog.innerHTML = `
+    <div class="figure-toolbar">
+      <h2 id="figure-viewer-title"></h2>
+      <button type="button" class="figure-close">Close</button>
+    </div>
+    <p id="figure-viewer-help">Scroll or swipe to explore the full-size diagram. Press Escape or Close to return.</p>
+    <div class="figure-scroll" tabindex="0" role="region" aria-label="Full-size diagram" aria-describedby="figure-viewer-help">
+      <img alt="">
+    </div>`;
+  document.body.append(dialog);
+  const full = dialog.querySelector('img');
+  const close = dialog.querySelector('.figure-close');
+  const region = dialog.querySelector('.figure-scroll');
+  let opener;
+  close.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('close', () => opener?.focus());
+  pictures.forEach((picture, index) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'figure-preview';
+    button.setAttribute('aria-haspopup', 'dialog');
+    button.setAttribute('aria-label', `Enlarge figure ${index + 1}`);
+    const label = document.createElement('span');
+    label.className = 'figure-enlarge-label';
+    label.textContent = `Enlarge figure ${index + 1}`;
+    picture.replaceWith(button);
+    button.append(picture, label);
+    button.addEventListener('click', () => {
+      opener = button;
+      full.src = picture.src;
+      full.alt = picture.alt;
+      full.style.width = `${Math.max(1000, picture.naturalWidth)}px`;
+      dialog.querySelector('h2').textContent = `Figure ${index + 1} — full-size view`;
+      dialog.showModal();
+      region.scrollTo(Math.max(0, (region.scrollWidth - region.clientWidth) / 2), 0);
+      close.focus();
+    });
+  });
+})();
+</script>

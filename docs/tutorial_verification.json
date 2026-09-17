@@ -1,6 +1,7 @@
 {
   "status": "passed",
-  "date": "2026-09-16",
+  "date": "2026-09-17",
+  "scope": "Presentation and local links only; not mathematical verification",
   "browser": "Firefox",
   "browser_version": "155.0",
   "desktop_viewport": [
@@ -12,17 +13,211 @@
     844
   ],
   "local_file_open": true,
-  "embedded_images": 2,
-  "mathml_elements": 104,
-  "visible_display_formulas": 8,
-  "local_links_checked": 13,
+  "embedded_images": 10,
+  "mathml_elements": 635,
+  "visible_display_formulas": 29,
+  "local_links_checked": 49,
   "missing_anchors": [],
   "mobile_horizontal_overflow": false,
   "external_requests": [],
   "page_errors": [],
   "sha256": {
-    "docs/APERIODIC_CHAIR_TUTORIAL.md": "b906a1bd4a412f6f3d5eaede447007bc7965795b1999cee49c750b3088b47daa",
-    "docs/APERIODIC_CHAIR_TUTORIAL.html": "1c102ea7352b66ef846d5b01bf70625ea95a8a4d40029d3485e79dc6040dd38a",
-    "docs/tutorial.css": "e8c534fbc69651cfea3a5a925b17233749db5f46ed3aed97b505cdf838397b56"
-  }
+    "docs/APERIODIC_CHAIR_TUTORIAL.md": "6ab0e2b20d087552fc007571c984d1443ff91acb0f6cb8bc45439c26234df3aa",
+    "docs/APERIODIC_CHAIR_TUTORIAL.html": "59076ea91725083c68139fa7abe724f03bb7ad1bb0b73731dd3cb52b4e0aaf0a",
+    "docs/tutorial.css": "7a2faa5822ad342e144c2d100d6b3eefd45f3e62d4df1c787ef518a2e1564960",
+    "docs/tutorial-controls.html": "d45c8706d3286da70e4426899292c7ccc20fde3bfd44eb1d1848ecaf4cbb0d99",
+    "docs/draw_tutorial_figures.py": "0245633f6905ec306d58f5041a5b14a0b0fef0c423ddfbdc9427752608c5b862",
+    "docs/verify_tutorial.cjs": "484b5793bb24aae1255acd9a9238c58fe835df7b68fd5301597d88e69de3d02f",
+    "docs/figures/tutorial-cap-rigidity.svg": "588b2b23bcfec0a672fced04768be3365313e0e1872756e8fb3d6cf3ec9457a1",
+    "docs/figures/tutorial-handshakes.svg": "536aa54dff5d7813601bf6a17470ee6e98e265cb5f0e4d2a8e82be7bddbf8b5b",
+    "docs/figures/tutorial-interference.svg": "e3f936bc6c5ccbc151541952dc22831c6828a17026d0c11560887377ffd7e498",
+    "docs/figures/tutorial-interior-bounds.svg": "54948552b1acd83cf4e4bf21c8285a152791860dca8b5eebed9aac9f6f3313ec",
+    "docs/figures/tutorial-parent-flow.svg": "5135bb69c1fb95b817ef1e479d8be0269773f60ac94cc3669af92a5a3c0d0f3d",
+    "docs/figures/tutorial-parent-layers.svg": "6e753b3466734b3e1c815f6d2787508c954e6e56cf7ec4f2c93d4e02b0c3e65a",
+    "docs/figures/tutorial-parity-descent.svg": "758a007a06ab0288de97ee6b2e66a2da7d704c35b307c77a0c7d13dd4a1fc418",
+    "docs/figures/tutorial-seam-cost.svg": "3706c453a0d20c512011da9a457c918f5d9199d1c14604f271d14dad0cd3c355"
+  },
+  "figure_enlargement": [
+    {
+      "figure": 1,
+      "viewport_width": 1200,
+      "image_width": 2100,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 2,
+      "viewport_width": 1200,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 3,
+      "viewport_width": 1200,
+      "image_width": 2040,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 4,
+      "viewport_width": 1200,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 5,
+      "viewport_width": 1200,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 6,
+      "viewport_width": 1200,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 7,
+      "viewport_width": 1200,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 8,
+      "viewport_width": 1200,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 9,
+      "viewport_width": 1200,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 10,
+      "viewport_width": 1200,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 1,
+      "viewport_width": 390,
+      "image_width": 2100,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 2,
+      "viewport_width": 390,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 3,
+      "viewport_width": 390,
+      "image_width": 2040,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 4,
+      "viewport_width": 390,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 5,
+      "viewport_width": 390,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 6,
+      "viewport_width": 390,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 7,
+      "viewport_width": 390,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 8,
+      "viewport_width": 390,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 9,
+      "viewport_width": 390,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    },
+    {
+      "figure": 10,
+      "viewport_width": 390,
+      "image_width": 1000,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
+    }
+  ],
+  "without_javascript": "All ten figures and all formulas remain available; enlargement controls require JavaScript"
 }

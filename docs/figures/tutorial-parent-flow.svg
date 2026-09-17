@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="656.39952pt" height="440.39952pt" viewBox="0 0 656.39952 440.39952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 440.39952 
+L 656.39952 440.39952 
+L 656.39952 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <g id="patch_2">
+     <path d="M 235.344291 61.900382 
+L 421.055229 61.900382 
+Q 427.655229 61.900382 427.655229 55.300382 
+L 427.655229 44.299522 
+Q 427.655229 37.699522 421.055229 37.699522 
+L 235.344291 37.699522 
+Q 228.744291 37.699522 228.744291 44.299522 
+L 228.744291 55.300382 
+Q 228.744291 61.900382 235.344291 61.900382 
+z
+" style="fill: #eef6f7; stroke: #217b83; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="328.19976" y="52.657804" transform="rotate(-0 328.19976 52.657804)">Inspect a chair Q in its own frame</text>
+   </g>
+   <g id="text_2">
+    <g id="patch_3">
+     <path d="M 216.215463 136.450298 
+L 440.184057 136.450298 
+Q 446.784057 136.450298 446.784057 129.850298 
+L 446.784057 118.849438 
+Q 446.784057 112.249438 440.184057 112.249438 
+L 216.215463 112.249438 
+Q 209.615463 112.249438 209.615463 118.849438 
+L 209.615463 129.850298 
+Q 209.615463 136.450298 216.215463 136.450298 
+z
+" style="fill: #eef6f7; stroke: #217b83; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="328.19976" y="127.20772" transform="rotate(-0 328.19976 127.20772)">One of the six oriented triggers present?</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 328.19976 73.100701 
+Q 328.19976 87.075406 328.19976 99.37306 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 330.39976 94.97306 
+L 328.19976 99.37306 
+L 325.99976 94.97306 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <g id="patch_5">
+     <path d="M 75.248507 224.027356 
+L 170.27132 224.027356 
+Q 176.87132 224.027356 176.87132 217.427356 
+L 176.87132 191.0222 
+Q 176.87132 184.4222 170.27132 184.4222 
+L 75.248507 184.4222 
+Q 68.648507 184.4222 68.648507 191.0222 
+L 68.648507 217.427356 
+Q 68.648507 224.027356 75.248507 224.027356 
+z
+" style="fill: #c6e3d2; stroke: #217b83; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(75.248507 200.481555)">Yes: Q is a center</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(83.676398 213.683704)">parent(Q) = Q</text>
+   </g>
+   <g id="text_4">
+    <g id="patch_6">
+     <path d="M 416.612687 216.325208 
+L 560.786593 216.325208 
+Q 567.386593 216.325208 567.386593 209.725208 
+L 567.386593 198.724348 
+Q 567.386593 192.124348 560.786593 192.124348 
+L 416.612687 192.124348 
+Q 410.012687 192.124348 410.012687 198.724348 
+L 410.012687 209.725208 
+Q 410.012687 216.325208 416.612687 216.325208 
+z
+" style="fill: #eef6f7; stroke: #217b83; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="488.69964" y="207.08263" transform="rotate(-0 488.69964 207.08263)">No: inspect notch owner P</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 229.958042 146.123549 
+Q 177.328956 158.962553 126.32914 171.404092 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 131.125185 172.498602 
+L 126.32914 171.404092 
+L 130.082376 168.223962 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <g id="patch_8">
+     <path d="M 166.689248 165.962329 
+L 187.970498 165.962329 
+L 187.970498 151.962329 
+L 166.689248 151.962329 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="177.329873" y="161.559985" transform="rotate(-0 177.329873 161.559985)">yes</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 426.227726 146.653156 
+Q 456.600042 164.287543 485.52204 181.079864 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 482.82155 176.968009 
+L 485.52204 181.079864 
+L 480.612261 180.773143 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <g id="patch_10">
+     <path d="M 448.371539 171.287323 
+L 464.827789 171.287323 
+L 464.827789 157.287323 
+L 448.371539 157.287323 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="456.599664" y="166.884979" transform="rotate(-0 456.599664 166.884979)">no</text>
+   </g>
+   <g id="text_7">
+    <g id="patch_11">
+     <path d="M 302.511064 309.22769 
+L 418.088408 309.22769 
+Q 424.688408 309.22769 424.688408 302.62769 
+L 424.688408 276.221674 
+Q 424.688408 269.621674 418.088408 269.621674 
+L 302.511064 269.621674 
+Q 295.911064 269.621674 295.911064 276.221674 
+L 295.911064 302.62769 
+Q 295.911064 309.22769 302.511064 309.22769 
+z
+" style="fill: #eef6f7; stroke: #217b83; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(302.511064 285.68103)">Different orientation:</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(310.014267 298.884037)">Q is a trigger for P</text>
+   </g>
+   <g id="text_8">
+    <g id="patch_12">
+     <path d="M 510.029275 393.041607 
+L 608.6099 393.041607 
+Q 615.2099 393.041607 615.2099 386.441607 
+L 615.2099 346.832583 
+Q 615.2099 340.232583 608.6099 340.232583 
+L 510.029275 340.232583 
+Q 503.429275 340.232583 503.429275 346.832583 
+L 503.429275 386.441607 
+Q 503.429275 393.041607 510.029275 393.041607 
+z
+" style="fill: #eef6f7; stroke: #217b83; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(510.029275 356.291939)">Same orientation:</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(510.497634 369.494947)">forced neighbor S</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(515.111618 382.697954)">is a trigger for P</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 441.933478 226.340371 
+Q 402.029655 244.162255 363.657102 261.300242 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 368.571775 261.514693 
+L 363.657102 261.300242 
+L 366.777467 257.497174 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 565.616347 227.51797 
+Q 562.529747 277.44082 559.546637 325.689814 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 562.013967 321.433961 
+L 559.546637 325.689814 
+L 557.622352 321.162439 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <g id="patch_15">
+     <path d="M 220.409471 408.024992 
+L 371.790096 408.024992 
+Q 378.390096 408.024992 378.390096 401.424992 
+L 378.390096 390.424132 
+Q 378.390096 383.824132 371.790096 383.824132 
+L 220.409471 383.824132 
+Q 213.809471 383.824132 213.809471 390.424132 
+L 213.809471 401.424992 
+Q 213.809471 408.024992 220.409471 408.024992 
+z
+" style="fill: #c6e3d2; stroke: #217b83; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="296.099784" y="398.782414" transform="rotate(-0 296.099784 398.782414)">P is a center; parent(Q) = P</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 358.82052 317.399264 
+Q 328.198032 345.338696 298.814429 372.147791 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 303.547641 370.807379 
+L 298.814429 372.147791 
+L 300.582027 367.556974 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 477.08593 382.875337 
+Q 438.944044 387.937155 402.464634 392.778346 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 407.115817 394.380375 
+L 402.464634 392.778346 
+L 406.536967 390.018617 
+" style="fill: none; stroke: #46545d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+</svg>
