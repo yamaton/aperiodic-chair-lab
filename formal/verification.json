@@ -243,13 +243,63 @@
       "Classical.choice",
       "Quot.sound"
     ],
+    "Chair.moveTiling_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.moveTiling_comp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.GridSymmetry.identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.GridSymmetry.comp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.GridSymmetry.inv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.GridMotion.same_frame_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.GridSymmetry.same_frame_period": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.symmetry_frame_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.symmetry_list_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Chair.LegalTiling.symmetries_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "Chair.child_pairs_compatible": [],
     "Chair.fine_accepted_count": [],
     "Chair.macro_accepted_count": [],
     "Chair.accepted_lists_distinct": []
   },
   "lean_source_sha256": {
-    "Audit.lean": "01f0398269379b16784d7ee5286a9068a41c77634c8d56ea0986282d40051650",
+    "Audit.lean": "6c84d1ef0b6c6ddce26a4c3fd2c7683087e449c89ad6bc40d3fb28be7aa68cf5",
     "Chair/Batches/Batch0.lean": "96bcdbc2df00c7ffd177befb6c0b18736fbca79ccc9feaae691c5831b11fc422",
     "Chair/Batches/Batch1.lean": "def8fe82fb0fd02197f30dec096ec3a4c1bc2cfce7c02c54d77b24bb964b5363",
     "Chair/Batches/Batch2.lean": "17461cf60d2ab2b9f98a81cee761f7a37359f194101e0da337da022fb765b072",
@@ -284,11 +334,12 @@
     "Chair/Scaling.lean": "2ea48351b42c54accc3e35037af3968069b9ecdf4c80523760fb7a622d333306",
     "Chair/SolidContacts.lean": "8ab3bf4e3e432391ff30bb86588d134e6a6d94a260efdafe753151cdfb654014",
     "Chair/SolidTiling.lean": "543bb62e4eabb4fe3d405238797ea6941c51e6bc0ac58284f6c756d4e416fd06",
+    "Chair/Symmetry.lean": "510d72e3679ce931c544ba8d8a14efdd06d3bc8820a39dca40406c91975db9dd",
     "Chair/Tiling.lean": "19b02df2fa68a1bb72e26109ab22f96d12be56d249ba27edc0dbce07c179d464",
     "Chair/TranslationExclusion.lean": "1fda8a0f5a161e8431e5b4414e42cb47b76b4bfd021e45a9beafd00ab6bdbf9e",
     "Chair/Translations.lean": "7419954fe409bc80dcdbc7f57aa7377d1a9fef1e011a275852662a4156d9377d",
     "Chair/Witnesses.lean": "26fbd5665e80d90286f41937b6877326f7a6e6f86a702d0dfebcbfc947fa3f37",
-    "Chair.lean": "fe884d3566816a878d78d8a60eb584a3678e7a8890efc4f6c0fa5fc6b58e6d6c"
+    "Chair.lean": "b30ef669b6f2b6aa08e847f693fc2f0d398faf41411b5a0673998350db5175f1"
   },
-  "scope": "Integral-grid recurrence, unique grouping, legal deflation and exclusion of every nonzero integral translation period of any LegalTiling; not initial tiling existence, full finite symmetry or the physical-solid theorem"
+  "scope": "Integral-grid recurrence, unique grouping, legal deflation, exclusion of every nonzero integral translation period and at most 24 proper grid symmetries of any LegalTiling; not initial tiling existence, arbitrary Euclidean symmetries, reflections or the physical-solid theorem"
 }

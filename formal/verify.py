@@ -93,6 +93,11 @@ def main():
         "Chair.LegalTiling.period_even", "Chair.LegalTiling.period_halves",
         "Chair.doubling_descent", "Chair.LegalTiling.translation_period_zero",
         "Chair.LegalTiling.translation_stabilizer_trivial",
+        "Chair.moveTiling_identity", "Chair.moveTiling_comp",
+        "Chair.GridSymmetry.identity", "Chair.GridSymmetry.comp", "Chair.GridSymmetry.inv",
+        "Chair.GridMotion.same_frame_difference", "Chair.GridSymmetry.same_frame_period",
+        "Chair.LegalTiling.symmetry_frame_injective", "Chair.LegalTiling.symmetry_list_bound",
+        "Chair.LegalTiling.symmetries_finite",
     }
     assert set(dependencies) == expected_theorems, dependencies
 
@@ -111,11 +116,11 @@ def main():
         "axiom_dependencies": dependencies,
         "lean_source_sha256": {str(p.relative_to(HERE)): hashlib.sha256(p.read_bytes()).hexdigest()
                                for p in sorted(HERE.rglob("*.lean")) if ".lake" not in p.parts},
-        "scope": "Integral-grid recurrence, unique grouping, legal deflation and exclusion of every nonzero integral translation period of any LegalTiling; not initial tiling existence, full finite symmetry or the physical-solid theorem",
+        "scope": "Integral-grid recurrence, unique grouping, legal deflation, exclusion of every nonzero integral translation period and at most 24 proper grid symmetries of any LegalTiling; not initial tiling existence, arbitrary Euclidean symmetries, reflections or the physical-solid theorem",
     }
     if args.write_report:
         (HERE / "verification.json").write_text(json.dumps(report, indent=2) + "\n")
-    print("Lean recurrence, grouping, deflation and translation exclusion: all checks passed", flush=True)
+    print("Lean recurrence, grouping, deflation, translation exclusion and grid symmetry bound: all checks passed", flush=True)
 
 
 if __name__ == "__main__":

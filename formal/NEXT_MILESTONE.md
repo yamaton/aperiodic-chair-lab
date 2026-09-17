@@ -1,6 +1,10 @@
 # Next internal milestone: universal grouping and legal deflation
 
-*16 September 2026. Steps A, B and C completed; subsequent translation exclusion also verified.*
+*16 September 2026. Steps A–C, translation exclusion and the proper grid symmetry bound completed.*
+
+The planning narrative below records the earlier sequence. Consult the
+[current dependency table](../docs/PROOF_STATUS.md) for present obligations;
+initial existence is the next formal branch.
 
 ## Assessment
 
@@ -18,7 +22,8 @@ pairwise results to **every legal infinite grid tiling**.
 | Unique grouping of all legal grid tilings | [Lean universal grouping](UNIVERSAL_GROUPING.md), linked to the actual frozen ports |
 | Global parity and repeated legal deflation | [Lean deflation theorem and finite-depth iteration](LEGAL_DEFLATION.md) |
 | Exclusion of nonzero integer translation periods | [Lean halving and descent](TRANSLATION_EXCLUSION.md) |
-| Existence and finite symmetry | Separate written arguments; not the completed Lean milestone |
+| At most 24 proper grid symmetries | [Lean frame injection and exhaustive finite list](GRID_SYMMETRY.md) |
+| Existence and physical finite symmetry | Written arguments; outside the completed Lean scope |
 
 This review identifies formalization priorities. It does not identify a new
 counterexample or establish a defect in the existing written grouping proof.
@@ -114,8 +119,9 @@ tiling arguments. Preserve the first milestone's frozen construction.
    halve under legal deflation; well-founded descent proves they are zero.
 2. Establish nonemptiness through legal expanding substitution patches and
    a compactness argument, so the universal conclusion is nonvacuous.
-3. Complete the finite-symmetry deduction and connect the grid theorem to the
-   exact physical solid through the geometric bridge.
+3. **Completed for proper grid symmetries:** the finite-symmetry deduction.
+   Connecting it to the exact physical solid through the geometric and
+   representation bridge remains separate work.
 
 Existence can be developed alongside grouping because it is a separate proof
 branch. Full classification of the tiling space, further dynamical deductions,

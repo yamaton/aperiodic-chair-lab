@@ -16,6 +16,15 @@ before use. They remain preserved as historical material.
 
 ## Start here
 
+- [Current proof dependencies](../../docs/PROOF_STATUS.md): exact claims,
+  evidence classes, completed Lean steps and remaining physical obligations.
+- [Short curved-to-grid manuscript](CURVED_GRID_NOTE.md): one theorem and
+  five lemmas, using the attributed retained-core argument.
+- [Proper grid symmetry bound](../../formal/GRID_SYMMETRY.md): the full
+  grid stabilizer has at most 24 elements; existence remains separate.
+- [Independent follow-up review](FOLLOWUP_INDEPENDENT_REVIEW.md): two fresh
+  agents reviewed grid symmetry and the short geometric manuscript; includes
+  their checks, limitations and the coordinator's self-review.
 - [Chair44 exact comparison](TSIOKOS_CHAIR44_COMPARISON.md): source versions,
   coordinate equivalence, actual Lean scope, chronology limits and revised work.
 - [Chair44 proof comparison](CHAIR44_PROOF_COMPARISON.md): independent atlas
@@ -28,10 +37,11 @@ before use. They remain preserved as historical material.
 - [Historical draft inquiry](INQUIRY_GOODMAN_STRAUSS.md): unsent and superseded
   by the overlap assessment; not a current request ready for sending.
 - [Historical mathematical brief](BRIEF.md): initial attachment source.
-- [Lean recurrence milestone](../../formal/README.md): formal contact semantics,
-  exhaustive certificate checking, and the precise normalized-grid scope.
-  A [fresh independent agent review](../../formal/INDEPENDENT_REVIEW.md)
-  found no material defect and supplies a separate geometric reconstruction.
+- [Lean development](../../formal/README.md): contact recurrence, universal
+  grouping, legal deflation, translation exclusion and finite grid symmetry.
+  The [earlier independent agent review](../../formal/INDEPENDENT_REVIEW.md)
+  covered the normalized recurrence milestone, found no material defect
+  within that scope and supplied a separate geometric reconstruction.
   This development is separate from the frozen v1 review packet.
 - [Geometric grid scrutiny](GEOMETRIC_GRID_SCRUTINY.md): expanded arbitrary-
   placement proof, exact ownership and feature-box checks, and three

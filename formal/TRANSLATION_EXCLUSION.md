@@ -91,10 +91,14 @@ committed locally at the user's request; no push or outreach was performed.
 
 ## Next obligations
 
+**Subsequent completion:** [the grid symmetry theorem](GRID_SYMMETRY.md)
+now proves the frame injection and bound of 24 described below. The
+remaining obligations concern existence and physical geometry.
+
 The next symmetry deduction in the grid model is that two symmetries with
 the same proper frame differ by a translation. Translation exclusion should
 then make the frame map injective, bounding the symmetry group by the
-24 proper cubic frames. This has not yet been formalized here.
+24 proper cubic frames. This subsequent step is now formalized.
 
 Initial tiling existence remains a separate necessary proof branch. Connecting
 the discrete model to the exact curved solid and establishing its full

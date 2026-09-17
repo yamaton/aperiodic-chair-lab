@@ -21,7 +21,8 @@ established discovery priority. See the [exact comparison](strong/review/TSIOKOS
 | Inspect the candidate | [Offline chair viewer](strong/artifacts/recut-chair.html) |
 | Compare the constructions | [Geometry and proof comparison](strong/review/CHAIR44_PROOF_COMPARISON.md) |
 | Inspect reproduced evidence | [Chair44 build record](strong/review/CHAIR44_BUILD_REPRODUCTION.md) · [independent finite replay](strong/review/CHAIR44_COMPANION_REPLAY.md) |
-| Follow our formal argument | [Lean project](formal/README.md) · [translation exclusion](formal/TRANSLATION_EXCLUSION.md) |
+| Follow our formal argument | [Lean project](formal/README.md) · [grid symmetry bound](formal/GRID_SYMMETRY.md) |
+| Assess the proof dependencies | [Current claim table](docs/PROOF_STATUS.md) · [short geometric manuscript](strong/review/CURVED_GRID_NOTE.md) |
 | Find reports and commands | [Project index](docs/INDEX.md) |
 | Understand attribution and AI use | [Provenance](docs/PROVENANCE.md) · [third-party notices](THIRD_PARTY_NOTICES.md) |
 
@@ -38,7 +39,7 @@ infinite-order screw symmetry. Our evidence has several distinct scopes:
 
 | Work | Established scope | Remaining limitations |
 |---|---|---|
-| Our discrete chair model | Lean proofs of contact recurrence, universal eight-chair grouping, legal deflation and exclusion of every nonzero integer translation period of a legal tiling | Assumes the defined proper integer-grid model; initial existence, arbitrary Euclidean placement, reflections and the full physical symmetry bound are outside these Lean results |
+| Our discrete chair model | Lean proofs of contact recurrence, universal eight-chair grouping, legal deflation, exclusion of every nonzero integer translation period and at most 24 proper grid symmetries | Assumes the defined proper integer-grid model; initial existence, arbitrary Euclidean placement, reflections and the full physical symmetry bound are outside these Lean results |
 | Our exact curved-cap solid | Written geometric and existence arguments, with exact finite checks | Full physical-solid theorem awaits mathematical review; mesh and manufacturing approximations do not inherit it |
 | Chair44 reproduction | Unchanged pinned Lean release builds; its endpoint includes physical tiling existence and a symmetry bound of 24 for arbitrary Euclidean tilings | Disclosed native-evaluation trust boundary; not a complete independent semantic audit or human review |
 | Printable replacement interfaces | Proposed broad relief patterns, contact coupons and hierarchy experiments | No replacement design or printing experiment has yet been validated |

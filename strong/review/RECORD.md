@@ -948,3 +948,62 @@ were retained; no force-push, history rewrite or reviewer outreach occurred.
 Updated the handoff and repository/publication records to distinguish the
 completed public release from the preserved pre-release audit snapshots.
 No mathematical source, frozen input, evidence log or license was changed.
+
+## Current dependency table, grid symmetry and short geometry manuscript — 16 September 2026
+
+The user requested the three follow-ups proposed in the repository assessment.
+Added `docs/PROOF_STATUS.md` as a current claim/dependency table, separating
+finite checks, written geometric arguments, Lean results, existence and
+faithful transport of physical symmetries. Updated current entry points and
+the older dependency audit's superseded formal-scope statements.
+
+Added `formal/Chair/Symmetry.lean`. Symmetry is equality of the complete
+decorated placement set under a proper integer-grid motion. Identity,
+composition and inverse closure are proved. Two equal-frame symmetries
+differ by a translation, whose vector vanishes by the existing theorem.
+Frame injectivity gives both a bound on distinct lists and an exhaustive
+list containing every symmetry, of length at most 24. Classical choice
+selects a representative when a frame occurs; this is not a symmetry-finding
+algorithm for arbitrary infinite tilings. The `LegalTiling` premises,
+geometry and finite certificates were unchanged.
+
+The full pinned Lean verifier passed deterministic regeneration, incremental
+build, independent contact comparison and 62 theorem axiom audits. All
+dependencies are within the standard three logical axioms; the updated
+manifest has 41 Lean source hashes. Added the result report
+`formal/GRID_SYMMETRY.md`. Initial existence, arbitrary Euclidean placement
+and the physical-solid finite-symmetry theorem remain outside this result.
+
+Added `strong/review/CURVED_GRID_NOTE.md`, a short registration manuscript
+with the exact frozen data, five lemmas and explicit analytic/finite-check
+boundaries. The final component argument is attributed to Tsiokos's
+Chair44 retained-core proof. Both the primary and alternate geometric
+arithmetic checkers passed with unchanged JSON results.
+
+All work in this addition was performed by the coordinating AI assistant;
+no independent subagent or human review is claimed. Frozen artifacts and
+the earlier Chair44 build were not regenerated. No commit, push or outreach
+was performed for this addition.
+
+## Independent follow-up review and coordinator self-review — 16 September 2026
+
+At the user's request, two fresh agents without implementation roles reviewed
+the new Lean symmetry module and short geometric manuscript. Neither found
+a material defect. The [preserved review](FOLLOWUP_INDEPENDENT_REVIEW.md)
+records the separate scopes, exact input hashes, commands and limitations.
+The Lean reviewer reproduced direct elaboration and the axiom audit, and
+confirmed all 62 declarations and 41 source hashes against the manifest.
+The geometry reviewer independently reconstructed the finite hypotheses and
+symbolic identities in a new probe, preserved unchanged as
+`strong/audit/review_curved_grid_note.py`. The coordinator reran it successfully;
+its output and source hash are recorded in `curved_grid_note_review.json`
+under the same audit directory.
+
+The coordinator also revisited the definitions, cancellation, enumeration
+and analytic registration steps. Two small documentation ambiguities were
+clarified: rotation-list inclusion does not require sublist order, and the
+older independent review covered normalized recurrence rather than the
+whole subsequently extended development. Current review-provenance statements
+were updated. No Lean source, proof manifest, frozen coordinate or existing
+geometric result changed during this review. No cold rebuild, human review,
+commit, push or outreach is claimed.

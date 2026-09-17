@@ -4,6 +4,10 @@ Start with the [README](../README.md) for scope and the
 [handoff](../HANDOFF.md) for the latest state. This index organizes the
 existing paths so older commands, citations, and frozen evidence remain usable.
 
+For the present mathematical claims, read the [dependency table](PROOF_STATUS.md),
+the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
+[short curved-to-grid manuscript](../strong/review/CURVED_GRID_NOTE.md).
+
 ## Public presentation and provenance
 
 - [AI assistance, attribution and chronology](PROVENANCE.md).
@@ -43,6 +47,10 @@ pandoc docs/APERIODIC_CHAIR_TUTORIAL.md --from=markdown --to=html5 \
 | Universal unique grouping in Lean | [Proof record and scope](../formal/UNIVERSAL_GROUPING.md) | [Grouping theorem](../formal/Chair/Grouping.lean), [local forcing](../formal/Chair/LocalGrouping.lean) |
 | Common parity and legal deflation in Lean | [Proof record and scope](../formal/LEGAL_DEFLATION.md) | [Combined theorem and iteration](../formal/Chair/Hierarchy.lean), [deflation proof](../formal/Chair/Deflation.lean) |
 | Translation-period exclusion in Lean | [Proof record and scope](../formal/TRANSLATION_EXCLUSION.md) | [Final theorem](../formal/Chair/TranslationExclusion.lean), [period halving](../formal/Chair/PeriodHalving.lean) |
+| Proper grid symmetry bound in Lean | [At most 24 symmetries](../formal/GRID_SYMMETRY.md) | [Frame injection and exhaustive list](../formal/Chair/Symmetry.lean) |
+| Current proof dependencies | [Claim/evidence table](PROOF_STATUS.md) | [Lean manifest](../formal/verification.json) |
+| Short geometric manuscript | [From curved contacts to one grid](../strong/review/CURVED_GRID_NOTE.md) | Frozen coordinates and finite checks linked in the manuscript |
+| Independent review of the symmetry/geometric follow-up | [Review findings and limits](../strong/review/FOLLOWUP_INDEPENDENT_REVIEW.md) | [Independent geometric probe](../strong/audit/review_curved_grid_note.py), [result](../strong/audit/curved_grid_note_review.json) |
 | Arbitrary placements → one grid | [Geometric scrutiny](../strong/review/GEOMETRIC_GRID_SCRUTINY.md) | [Primary checker](../strong/audit/scrutinize_grid_bridge.py), [alternate checker](../strong/audit/grid_bridge_crosscheck.py) |
 | Proposed exact solid and hierarchy | [Recut chair](../strong/RECUT_CHAIR.md) | [Frozen-coordinate audit](../strong/audit/README.md) |
 | Reflections and face patterns | [Follow-up](../strong/FOLLOWUP_REFLECTIONS.md) | [Reflection checker](../strong/audit/check_reflections.py) |

@@ -1,4 +1,4 @@
-# Lean proofs: grouping, deflation and translation exclusion
+# Lean proofs: grouping, deflation and finite grid symmetry
 
 *16 September 2026. Lean 4.34.0, bundled Std, no Mathlib dependency.*
 
@@ -27,7 +27,15 @@ this operation legally at every finite depth.
 Every integer translation period of any `LegalTiling` is zero. Periods
 preserve group centers, must be even by common parity, and halve under legal
 deflation; descent on an integer norm excludes nonzero periods. Initial tiling
-existence and the full finite-symmetry conclusion remain separate targets.
+existence and the physical finite-symmetry conclusion remain separate targets.
+
+**Proper grid symmetry bound verified:** [result and exact scope](GRID_SYMMETRY.md).
+Symmetries with the same frame differ by a translation, hence coincide.
+All proper grid symmetries therefore form an exhaustive list of at most
+24 elements. Identity, composition and inverse closure are proved for the
+whole decorated placement set. The current audit covers 62 declarations
+and 41 Lean source hashes. The [dependency table](../docs/PROOF_STATUS.md)
+separates these completed grid results from the written geometric bridge.
 
 ## Precise target
 
@@ -110,12 +118,12 @@ These are **integer-grid matching and conditional tiling theorems**. They do
 not yet formalize:
 
 - The curved physical solid or the arbitrary-placement-to-grid argument.
-- Initial tiling existence or the finite-symmetry conclusion.
+- Initial tiling existence or the full physical finite-symmetry conclusion.
 - Reflections, novelty, or the behavior of meshes and manufactured objects.
 
 Those statements must not be hidden in the interpretation of this result.
-The next symmetry target is injectivity of the proper-frame map on grid
-symmetries, giving a finite bound of 24. Initial existence is a separate branch.
+The proper-frame injection and bound of 24 are now proved for grid
+symmetries. Initial existence is the next separate formal branch.
 The [next-milestone plan](NEXT_MILESTONE.md) specifies the unrestricted tiling
 definition, universal grouping theorem, and global parity/deflation obligations.
 
@@ -178,6 +186,7 @@ input supplies proposed witnesses, all checked against the actual Lean model.
 | [Scaling](Chair/Scaling.lean), [Deflation](Chair/Deflation.lean), [Hierarchy](Chair/Hierarchy.lean) | Exact scaling, legal deflation and every-finite-depth iteration |
 | [Translations](Chair/Translations.lean), [PeriodHalving](Chair/PeriodHalving.lean) | Genuine translation periods, center transport and halving |
 | [IntegerDescent](Chair/IntegerDescent.lean), [TranslationExclusion](Chair/TranslationExclusion.lean) | Descent across legal tilings and exclusion of every nonzero integer period |
+| [Symmetry](Chair/Symmetry.lean) | Symmetry closure, frame injectivity and an exhaustive list of at most 24 proper grid symmetries |
 | [Verifier](verify.py) | Source correspondence, build, axiom audit, independent comparison |
 | [Controls](Chair/Controls.lean) | Deliberately incomplete/incorrect certificates must fail |
 

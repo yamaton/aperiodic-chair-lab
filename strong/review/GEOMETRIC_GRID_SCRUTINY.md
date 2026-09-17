@@ -2,6 +2,11 @@
 
 *16 September 2026. Exact frozen candidate; internal mathematical scrutiny.*
 
+The [short manuscript](CURVED_GRID_NOTE.md) consolidates the registration
+argument into five lemmas using the attributed §8a route. The
+[current dependency table](../../docs/PROOF_STATUS.md) records how this
+written geometry relates to the completed Lean grid theorems.
+
 ## Outcome and scope
 
 I have not found a counterexample or an unfilled logical step in the

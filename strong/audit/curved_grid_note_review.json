@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "probe": "strong/audit/review_curved_grid_note.py",
+  "probe_sha256": "da0878ddd92602b73017edbef65f1401b78e5ef5d2bbf4f15cfd6f58a32ce1d9",
+  "command": "uv run --locked python strong/audit/review_curved_grid_note.py",
+  "exit_code": 0,
+  "stdout": "PASS: frozen hash, carrier cells, all 192 faces/frames/keys, separation, 1536 proper integral adjacent-owner matches, 86 poses, four line-coefficient identities, trivial D4 fifth-line stabilizer, retention and diameter bounds.\n",
+  "ports": 192,
+  "opposite_key_matches": 1536,
+  "distinct_single_cap_poses": 86,
+  "provenance": "Written by fresh review_curved_note agent, preserved byte-for-byte and rerun by coordinator; imports no project implementation.",
+  "scope": "Exact finite coordinate checks and symbolic identities supporting the written registration argument; not a formal proof about arbitrary Euclidean tilings. Assertions must be enabled."
+}

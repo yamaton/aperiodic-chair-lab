@@ -2,6 +2,13 @@
 
 *16 September 2026. Preparation audit, not external validation.*
 
+**Current status:** the [claim/dependency table](../../docs/PROOF_STATUS.md)
+is the consolidated status reference. Grouping, legal deflation,
+translation exclusion and the bound of 24 proper grid symmetries are now
+proved in Lean. The [short geometric manuscript](CURVED_GRID_NOTE.md)
+uses the later retained-core proof. This audit retains the earlier expanded
+arguments and questions; frozen review artifacts remain unchanged.
+
 The [brief](BRIEF.md) states the proposed finite-symmetry theorem. This
 record separates the mathematical implications from what the programs
 establish. It also makes the existence argument more explicit. No new
@@ -139,9 +146,10 @@ scaled original boundary, or nested recentered patches.
 
 ## E. Grouping, recurrence, and representation of physical orientations
 
-The [Lean milestone](../../formal/README.md) formalizes normalized-grid
-macrocontact recurrence and its exhaustive enumeration. Consult its current
-validation status; it does not formalize grouping or iteration for all tilings.
+The [Lean development](../../formal/README.md) now formalizes normalized-grid
+macrocontact recurrence, universal grouping, common parity and legal
+deflation for every `LegalTiling`. The earlier gap between the finite
+contact census and those universal grid implications has been discharged.
 
 The [local parent proof](../MOTIF_GROUPING.md) proves unique grouping in
 the common grid. Its six trigger implications use finite enumeration of
@@ -162,9 +170,10 @@ Thus the orientation-sensitive parent rule is intrinsic to physical tile
 placements, rather than to an arbitrary choice of labels.
 
 **Checked:** all contact sets, local implications, macro offsets, and keyed
-frame stabilizer. **Written:** applicability to every infinite tiling,
-connectivity of the grouped face graph, and iteration without a hidden
-global alignment assumption.
+frame stabilizer. **Lean:** applicability to every legal grid tiling,
+common parity from coverage and lattice connectivity, and iteration without
+an initial alignment premise. **Written:** passage from physical geometry
+to this model and the faithful representation of physical tile orientations.
 
 ## F. Periods and screws
 
@@ -175,10 +184,17 @@ the finite signed-permutation group. Two symmetries with the same linear
 part differ by a translation. Absence of nonzero translations therefore
 makes the whole symmetry group finite, excluding infinite-order screws.
 
-This is a written implication, not the outcome of searching a bounded list
-of screw motions. It does not assert that every stabilizer is trivial.
+The translation exclusion and bound of 24 proper grid symmetries are now
+[Lean theorems](../../formal/GRID_SYMMETRY.md), including an exhaustive finite
+list of all such symmetries. Applying them to physical symmetries still
+uses the written geometry and representation argument above. No bounded
+screw search is used, and trivial stabilizers are not asserted.
 
 ## Novelty assessment is a separate dependency
+
+The later [Chair44 comparison](TSIOKOS_CHAIR44_COMPARISON.md) found the same
+discrete matching system. The earlier comparison question below must now
+be read with that result; a distinct matching-system claim is not supported.
 
 Goodman-Strauss already supplies the chair and hierarchy, marked recutting,
 and a two-tile realization. General substitution-enforcement methods are

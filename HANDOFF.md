@@ -21,6 +21,38 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Dependency consolidation and grid symmetry completed:**
+[`docs/PROOF_STATUS.md`](docs/PROOF_STATUS.md) is now the current claim table,
+with exact assumptions, evidence classes, dependencies and remaining scope.
+[`formal/GRID_SYMMETRY.md`](formal/GRID_SYMMETRY.md) records the new Lean
+result: every `LegalTiling` has an exhaustive list of at most 24 proper grid
+symmetries. `Chair/Symmetry.lean` proves identity/composition/inverse closure,
+same-frame cancellation to a translation, frame injectivity and both a
+distinct-list bound and full finite enumeration. No additional premise was
+added to `LegalTiling`. The full verifier passed with 62 audited declarations
+and 41 Lean source hashes, using only the standard three logical axioms.
+Earlier compiled modules were reused. At the user's subsequent request,
+two fresh agents independently reviewed the Lean addition and geometric
+manuscript, finding no material defect. See the
+[review record](strong/review/FOLLOWUP_INDEPENDENT_REVIEW.md). The Lean reviewer
+reproduced the direct checks and all 62 axiom entries/41 hashes; the geometry
+reviewer supplied an independent finite/symbolic probe, preserved and rerun
+as `strong/audit/review_curved_grid_note.py`. The coordinator also reviewed
+the work and clarified two minor wording/provenance points. No proof source
+or frozen geometry changed during review. This is AI review, not human review.
+
+[`CURVED_GRID_NOTE.md`](strong/review/CURVED_GRID_NOTE.md) is a short manuscript
+of the physical-to-grid registration theorem, with five explicit lemmas,
+the frozen data specification and the attributed Chair44 retained-core step.
+Its analytic geometry remains written mathematics, separate from Lean;
+it does not prove initial existence or certify meshes. Both geometric
+arithmetic checkers were rerun successfully with unchanged results.
+README, formal scope and review navigation point to these current documents;
+older frozen artifacts are preserved. Changes are local; no publication or
+outreach was authorized for this work. Next formal branch: initial tiling
+existence. Next geometric obligations: semantic review and faithful transport
+of physical symmetries, as separated in the new dependency table.
+
 **Repository published:** https://github.com/yamaton/aperiodic-chair-lab.
 The initial public preparation commit is `ab17536`; GitHub confirmed PUBLIC
 visibility and the matching remote commit. The publication record is in
@@ -265,9 +297,10 @@ not external human validation of the full construction. The preceding work
 was committed as `7d84070`; translation exclusion is now committed locally
 at the user's request. No push or outreach occurred.
 
-Next within our existing Lean plan: define proper grid symmetries and prove that two with the same frame
-differ by a translation. The new exclusion theorem should make their frame
-map injective and bound the symmetry group by 24. Initial tiling existence,
+The subsequently completed [grid symmetry step](formal/GRID_SYMMETRY.md)
+defines proper grid symmetries and proves that two with the same frame
+differ by a translation. Their frame map is injective, bounding the group
+by 24. Initial tiling existence,
 arbitrary Euclidean grid enforcement and the full physical finite-symmetry
 theorem remain separate formal obligations. The conditional grid theorem
 does not yet establish a physical aperiodic monotile.

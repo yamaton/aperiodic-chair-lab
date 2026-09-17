@@ -58,3 +58,16 @@ import Chair
 #print axioms Chair.doubling_descent
 #print axioms Chair.LegalTiling.translation_period_zero
 #print axioms Chair.LegalTiling.translation_stabilizer_trivial
+#check Chair.GridSymmetry
+#print axioms Chair.moveTiling_identity
+#print axioms Chair.moveTiling_comp
+#print axioms Chair.GridSymmetry.identity
+#print axioms Chair.GridSymmetry.comp
+#print axioms Chair.GridSymmetry.inv
+#print axioms Chair.GridMotion.same_frame_difference
+#print axioms Chair.GridSymmetry.same_frame_period
+#check Chair.LegalTiling.symmetry_frame_injective
+#print axioms Chair.LegalTiling.symmetry_frame_injective
+#print axioms Chair.LegalTiling.symmetry_list_bound
+#check Chair.LegalTiling.symmetries_finite
+#print axioms Chair.LegalTiling.symmetries_finite
