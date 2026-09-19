@@ -107,6 +107,12 @@ uv run --locked python -m http.server 8765 --bind 127.0.0.1 --directory docs
 | `page.html`, `style.css` | 画面とレスポンシブ配置 |
 | `../build-assembly.cjs` | 既存証明書の面情報・子配置とソースを一つのHTMLに埋め込む |
 
+状態の `commit` / `adjust` は履歴更新のみを行う。操作に付随する状態を更新してから `render` を呼ぶ。
+`displayState` で1回の表示更新に必要な正確な判定・露出面・選択面を共有し、
+`updateScene` が移動完了と接着ボタンを更新して `drawScene` に渡す。
+部品選択窓の再生成は通常のUI更新時だけに行い、アニメーション完了時のフォーカスを保つ。
+整理の経緯・各コミット前の独立レビューは [リファクタリング記録](REFACTOR_REVIEW.md) に記載する。
+
 生成元は既存の `strong/audit/motif_grouping_certificate.json`。
 生成HTMLには候補のハッシュと証明書ファイルのSHA-256を含める。
 元の研究データ、曲面、凍結済みの成果物は変更しない。

@@ -17,8 +17,26 @@
   const camera=()=>({yaw,pitch,zoom,viewCenter:viewCenter.slice()});
   function restoreCamera(c){({yaw,pitch,zoom,viewCenter}=clone(c));}
   const samePose=(a,b)=>a&&b&&poseKey(a)===poseKey(b);
-  function commit(label,fn){if(inspection)return;const s=clone(state());fn(s);history.commit(label,s);explainRef=null;highlight=null;render();}
-  function adjust(fn){if(inspection)return;const s=clone(state());fn(s);history.adjust(s);explainRef=null;highlight=null;render();}
+  function commit(label, fn) {
+    if (inspection) return;
+    const next = clone(state());
+    fn(next);
+    history.commit(label, next);
+    explainRef = null;
+    highlight = null;
+  }
+  function adjust(fn) {
+    if (inspection) return;
+    const next = clone(state());
+    fn(next);
+    history.adjust(next);
+    explainRef = null;
+    highlight = null;
+  }
+  function resetHint() {
+    hintStep = 0;
+    hintMessage = '';
+  }
   function selectable(){return rules.exposed(state().tiles);}
   function currentResult(){const s=state();return rules.check(s.tiles,s.pending?s.op:null);}
   function resultMessage(result){
@@ -37,10 +55,11 @@
   function selectTarget(ref){
     const s=state();if(inspection||s.grouped||s.tiles.length>=8)return;
     if(!selectable().some(f=>f.ref===ref))return;
-    hintStep=0;hintMessage='';
+    resetHint();
     // Selecting the bonded face does not choose or position the moving face.
     const fn=d=>{d.pending=true;d.ref=ref;d.op=null;};
     if(!s.pending)commit('部品の追加',fn);else adjust(fn);
+    render();
   }
   function selectMovingFace(faceId){
     const s=state();if(inspection||!s.pending||!s.ref)return;
@@ -53,9 +72,10 @@
     if(!rules.handshake(target,rules.placedFaces(chosen.p)[faceId]).patterns)allFaces=true;
     if(samePose(chosen.p,s.op)){explainRef=null;render();return;}
     adjust(d=>{d.op=chosen.p;});
+    render();
   }
-  function movingFaceId(){
-    const s=state(),target=selectable().find(f=>f.ref===s.ref);
+  function movingFaceId(boundary=selectable()){
+    const s=state(),target=boundary.find(f=>f.ref===s.ref);
     if(!s.op||!target)return null;
     return rules.placedFaces(s.op).find(f=>eq(f.c,target.c)&&eq(f.n,mul(target.n,-1)))?.id??null;
   }
@@ -66,8 +86,14 @@
     const wanted=expected?[dot(expected,base.u),dot(expected,cross(base.n,base.u))]:null;
     return `<div class="face-card">${label}<svg viewBox="0 0 104 115" role="img" aria-label="${t('{label} {motif}、矢印{arrow}',{label,motif:face.motif,arrow:arrowName(face.u,base)})}"><rect x="3" y="4" width="98" height="106" rx="7" fill="#edf3ea" stroke="#c4d7c9"/><text x="52" y="38" text-anchor="middle" font-size="25" fill="#213c45">${face.motif}</text>${wanted?line(wanted,true):''}<g class="face-arrow">${line(uv,false)}</g></svg></div>`;
   }
-  function renderContactFeedback(){
-    const s=state(),result=currentResult(),inspecting=!!inspection;
+  // One exact snapshot per UI/frame update. Camera and hover share these results.
+  function displayState() {
+    const s = state();
+    const boundary = selectable();
+    return {s, boundary, result: currentResult(), movingFaceId: movingFaceId(boundary)};
+  }
+  function renderContactFeedback(frame){
+    const {s,result}=frame,inspecting=!!inspection;
     const remaining=8-s.tiles.length-Number(s.pending);
     // Preserve control positions while the comparison temporarily shows progress.
     $('compare-content').style.minHeight=motion?Math.max(150,$('compare-content').getBoundingClientRect().height)+'px':'';
@@ -90,12 +116,12 @@
       button.onclick=()=>{explainRef=c.a.ref;render();};return button;
     }));
     $('problem-view').hidden=!!motion||!result.contacts.some(c=>!c.ok);
-    $('attach').hidden=!s.pending;$('attach').disabled=!result.ok||inspecting||!!motion;
+    $('attach').hidden=!s.pending;
   }
   function render(){
     syncMotion();
     const home=$('project-home');if(home)home.href='../?lang='+document.documentElement.lang;
-    const s=state(), parent=rules.parent(s.tiles), inspecting=!!inspection;
+    const frame=displayState(),{s}=frame, parent=rules.parent(s.tiles), inspecting=!!inspection;
     const remaining=8-s.tiles.length-Number(s.pending);
     const inGuide=mode==='guided'&&guideMatches();
     $('level').textContent=t('階層 {level} · 基準長 {scale}倍',{level:s.level,scale:2**s.level});
@@ -121,7 +147,7 @@
     $('scene-caption').textContent=inspecting?t('各部品自身の座標で内部を表示しています。子の選択は3Dまたは一覧から。接着と履歴の操作は「組立に戻る」で再開できます。'):s.grouped?t('子の境界 → 外周 → 親の有効なルール。形の対応を比べてみましょう。'):t('面をクリックで選択 · ドラッグで視点を回転 · 接着済みの群は固定されています');
     $('instruction-title').textContent=inspecting?t('作業を保ったまま、内部を見る'):s.grouped?t('同じルールで、次の階層へ'):parent?t('大きなブロックができました'):!s.pending?t('次の部品を用意する'):s.ref?t('向きを合わせて接着する'):t('取り付けたい面を選ぶ');
     $('instruction').textContent=inspecting?t('戻るだけで先ほどの操作を再開できます。'):s.grouped?t('親の細かい曲面が拡大コピーになる、という意味ではありません。'):parent?t('8個の位置と向きが、親の配置に一致しました。'):mode==='guided'&&!inGuide?t('案内の完成例とは異なる配置です。Undoで戻るか、自由に組み続けられます。'):s.pending?t('AはA、BはC。矢印の向きも比べてみましょう。'):s.tiles.length===8?t('材料をすべて使用中です。この8個は一つの親の配置ではありません。Undoで組み替えられます。'):t('接着した部品は組立の一部になります。');
-    const boundary=selectable();
+    const {boundary}=frame;
     $('view-face').disabled=inspecting||!boundary.some(f=>f.ref===(highlight||s.ref));
     setOptions($('target-face'),[['',t('面を選んでください')],...boundary.map(f=>[f.ref,t('部品{piece} · 面{face} {motif} · ({position})',{piece:f.tile+1,face:f.id+1,motif:f.motif,position:mul(f.c,.5).join(', ')})])],s.ref);
     $('target-face').disabled=inspecting||s.grouped||s.tiles.length>=8;
@@ -132,14 +158,14 @@
     const a=boundary.find(f=>f.ref===s.ref);
     setOptions($('candidate'),list.map(c=>[poseKey(c.p),t('{motif} · 面{face} · 矢印{arrow}{overlap}',{motif:c.motif,face:c.face+1,arrow:arrowName(rules.placedFaces(c.p)[c.face].u,a),overlap:c.result.overlap.length?t(' · 重なり'):''})]),s.op?poseKey(s.op):'');
     $('candidate-note').textContent=allFaces?t('全模様を表示中。模様が違う候補も調べられます。'):t('組み合わせ可能な模様を優先。候補を選ぶと3D上の位置も変わります。');
-    renderContactFeedback();
+    renderContactFeedback(frame);
     $('add').hidden=s.pending;$('add').disabled=s.tiles.length>=8||inspecting;
     $('cancel').hidden=!s.pending;$('cancel').disabled=inspecting;
     $('hint').hidden=mode!=='guided';$('hint').disabled=inspecting||!inGuide||s.tiles.length>=8;
     $('hint').textContent=[t('ヒントを見る'),t('矢印のヒントを見る'),t('具体的な候補を表示'),t('候補を表示しました')][Math.min(hintStep,3)];
     $('hint-text').textContent=(hintMessage?hintMessage():'')||(!inGuide&&mode==='guided'?t('完成例へ戻るには「元に戻す」を使います。接着そのものが間違いとは限りません。'):'');
     for(const [id,value] of [['show-boundary','children'],['show-shell','shell'],['show-parent','rules']])$(id).setAttribute('aria-pressed',String(parentView===value));
-    drawPiecePicker();draw();
+    drawPiecePicker(frame.movingFaceId);updateScene(frame);
   }
 
   // A simple orthographic canvas renderer with face hit testing; no network/GPU dependencies.
@@ -156,7 +182,13 @@
   let motion=null,motionState=null,motionPausedAt=null;
   function motionSample(){return motion?ChairMotion.sample(motion,(motionPausedAt??performance.now())-motion.started):null;}
   function clearMotion(){motion=null;motionState=null;motionPausedAt=null;}
-  function finishMotion(){motion=null;motionPausedAt=null;renderContactFeedback();draw();}
+  function finishMotion() {
+    motion = null;
+    motionPausedAt = null;
+    const frame = displayState();
+    renderContactFeedback(frame);
+    updateScene(frame);
+  }
   function pauseMotion(){if(motion&&motionPausedAt===null)motionPausedAt=performance.now();draw();}
   function resumeMotion(){if(motion&&motionPausedAt!==null)motion.started+=performance.now()-motionPausedAt;motionPausedAt=null;draw();}
   function syncMotion(){
@@ -181,14 +213,14 @@
   function activeFace(f){return f&&!!f[interactionPhase()];}
   function faceAt(x,y){return hitFaces.slice().reverse().find(f=>pointInside(x,y,f.points));}
   function panelActive(){return !!sceneHover||interactionPhase()==='moving'&&(pickerHover!==null||pickerFocus!==null);}
-  function syncEffects(){
+  function syncEffects(sample=motionSample()){
     const phase=interactionPhase(),pulse=!!phase&&!motion&&!panelActive()&&!drag?.moved&&!pieceDrag?.moved;
     picker.classList.toggle('attention',phase==='moving'&&pulse);
     picker.classList.toggle('dragging',!!pieceDrag?.moved);
     canvas.dataset.phase=phase;
     canvas.dataset.effect=phase?(panelActive()?'panel':pulse?'block':''):'';
     // Keep the last phase until draw settles both the scene and contact feedback.
-    canvas.dataset.motion=motion?(motionSample().phase||motion.segments.at(-1).phase):'';
+    canvas.dataset.motion=motion?(sample.phase||motion.segments.at(-1).phase):'';
     canvas.style.cursor=drag?.moved?'grabbing':sceneHover?'pointer':'grab';
     if((pulse||motion&&motionPausedAt===null)&&!reducedMotion.matches&&!document.hidden){
       if(!effectFrame)effectFrame=requestAnimationFrame(animateEffects);
@@ -211,18 +243,17 @@
     return s.op||{t:[Math.max(...s.tiles.flatMap(rules.placedCubes).map(c=>c[0]))*.5+2.5,s.anchor.t[1]-1,s.anchor.t[2]],r:I};
   }
   function movingPose(){return motionSample()?.pose||placementPose();}
-  function sceneFaces(){
-    const s=state();
+  function sceneFaces(frame,pose){
+    const {s,boundary}=frame;
     if(inspection){const item=inspectScene();return rules.exposed(item.unit.children.map(p=>({t:mul(p.t,2),r:p.r})))
       .map(f=>({...f,c:mul(f.c,.5),scale:.5,ref:`i:${f.tile}`,inspectTile:f.tile,displayOnly:true}));}
     if(s.grouped&&parentView==='rules'){
       const p=rules.parent(s.tiles);
       return rules.placedFaces({t:[0,0,0],r:p.r}).map(f=>({...f,c:add(mul(f.c,2),mul(p.t,2)),scale:2,ref:'parent',displayOnly:true,tile:0}));
     }
-    const target=rules.exposed(s.tiles).map(f=>({...f,target:true,unmarked:s.grouped&&parentView==='shell'}));
+    const target=boundary.map(f=>({...f,target:true,unmarked:s.grouped&&parentView==='shell'}));
     if(s.pending){
-      const p=movingPose();
-      target.push(...rules.placedFaces(p).map(f=>({...f,moving:true,tile:-1})));
+      target.push(...rules.placedFaces(pose).map(f=>({...f,moving:true,tile:-1})));
     }
     return target;
   }
@@ -236,17 +267,29 @@
     ctx.beginPath();ctx.moveTo(end[0]-dx/len*5+dy/len*3,end[1]-dy/len*5-dx/len*3);ctx.lineTo(end[0],end[1]);ctx.lineTo(end[0]-dx/len*5-dy/len*3,end[1]-dy/len*5+dx/len*3);ctx.stroke();ctx.restore();
     return {p,dx,dy};
   }
-  function draw(){
-    if(motion&&!motionSample().phase){motion=null;motionPausedAt=null;renderContactFeedback();}
-    $('attach').disabled=!!motion||!!inspection||!currentResult().ok;
+  function draw() {
+    updateScene(displayState());
+  }
+  // Settle motion and DOM feedback before painting; never rebuild the face picker here.
+  function updateScene(frame) {
+    const sample = motionSample();
+    if (motion && !sample.phase) {
+      motion = null;
+      motionPausedAt = null;
+      renderContactFeedback(frame);
+    }
+    $('attach').disabled = !!motion || !!inspection || !frame.result.ok;
+    drawScene(frame, sample?.pose || placementPose(), sample);
+  }
+  function drawScene(frame, pose, sample) {
     const w=canvas.clientWidth,h=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);
     if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}
     ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);hitFaces=[];
     const ground=project([0,0,-2.5]);ctx.fillStyle='#526b6211';ctx.beginPath();ctx.ellipse(ground[0],ground[1],w*.28,h*.075,0,0,Math.PI*2);ctx.fill();
-    const result=currentResult(),showFeedback=!motion&&!inspection;
+    const {s,result,movingFaceId:selectedMovingId}=frame,showFeedback=!motion&&!inspection;
     const contacts=showFeedback?result.contacts:[];
     const targetContacts=new Map(contacts.map(c=>[c.a.ref,c])),movingContacts=new Map(contacts.map(c=>[c.b.id,c]));
-    const faces=sceneFaces().filter(f=>view(f.n)[2]>.001).map(f=>{
+    const faces=sceneFaces(frame,pose).filter(f=>view(f.n)[2]>.001).map(f=>{
       const center=mul(f.c,.5),u=mul(f.u,(f.scale||1)*.5),v=mul(cross(f.n,f.u),(f.scale||1)*.5);
       const corners=[[-1,-1],[1,-1],[1,1],[-1,1]].map(([a,b])=>add(center,add(mul(u,a),mul(v,b))));
       return {...f,center,points:corners.map(project),depth:project(center)[2]};
@@ -255,10 +298,10 @@
     const rect=canvas.getBoundingClientRect();
     const underPointer=scenePointer&&!drag?.moved?faceAt(scenePointer.x-rect.left,scenePointer.y-rect.top):null;
     sceneHover=activeFace(underPointer)?underPointer:null;
-    const pulse=syncEffects(),glow=reducedMotion.matches?.16:.09+.15*(.5+.5*Math.sin(performance.now()*Math.PI/1400));
+    const pulse=syncEffects(sample),glow=reducedMotion.matches?.16:.09+.15*(.5+.5*Math.sin(performance.now()*Math.PI/1400));
     const contactFaces=[];
     for(const f of faces){
-      const selected=f.target&&(f.ref===state().ref||f.ref===highlight||f.ref===explainRef)||f.moving&&f.id===movingFaceId();
+      const selected=f.target&&(f.ref===s.ref||f.ref===highlight||f.ref===explainRef)||f.moving&&f.id===selectedMovingId;
       const contact=f.target?targetContacts.get(f.ref):f.moving?movingContacts.get(f.id):null;
       const issue=contact&&!contact.ok;
       ctx.globalAlpha=f.moving?.67:1;
@@ -288,15 +331,14 @@
       ctx.restore();
       if(appearance.dashed)drawFaceArrow(f,true);
     }
-    if(showFeedback&&result.overlap.length&&state().op){ctx.fillStyle='#a13730';ctx.font='600 13px system-ui';ctx.fillText(t('重なりあり · この位置には接着できません'),w/2,h-45);}
+    if(showFeedback&&result.overlap.length&&s.op){ctx.fillStyle='#a13730';ctx.font='600 13px system-ui';ctx.fillText(t('重なりあり · この位置には接着できません'),w/2,h-45);}
   }
   function pointInside(x,y,points){let inside=false;for(let i=0,j=points.length-1;i<points.length;j=i++){
     const a=points[i],b=points[j];if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])inside=!inside;
   }return inside;}
-  function drawPiecePicker(){
+  function drawPiecePicker(selected=movingFaceId()){
     pickerHover=null;pickerFocus=null;
     if($('candidate-controls').hidden){$('piece-picker').replaceChildren();$('piece-selection').textContent='';return;}
-    const selected=movingFaceId();
     const view=v=>{const x=Math.cos(pieceYaw)*v[0]-Math.sin(pieceYaw)*v[1],d=Math.sin(pieceYaw)*v[0]+Math.cos(pieceYaw)*v[1];return [x,Math.sin(piecePitch)*d-Math.cos(piecePitch)*v[2],Math.cos(piecePitch)*d+Math.sin(piecePitch)*v[2]];};
     const project=v=>{const p=view(sub(v,[-.35,-.35,-.35]));return [150+p[0]*58,108+p[1]*58,p[2]];};
     const visible=rules.placedFaces({t:[0,0,0],r:I}).filter(f=>view(f.n)[2]>.001).map(f=>{
@@ -360,11 +402,12 @@
   window.addEventListener('scroll',()=>{scenePointer=null;pickerPointer=null;pickerHover=null;draw();},{passive:true});
   canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.45,Math.min(3,zoom*Math.exp(-e.deltaY*.001)));draw();},{passive:false});
   new ResizeObserver(draw).observe(canvas);
-  function resetView(){yaw=.8;pitch=.6;zoom=1;viewCenter=[0,0,0];if(!inspection){
+  function fitView(){yaw=.8;pitch=.6;zoom=1;viewCenter=[0,0,0];if(!inspection){
     const points=state().tiles.flatMap(rules.placedCubes).map(c=>mul(c,.5));
     const lo=[0,1,2].map(i=>Math.min(...points.map(p=>p[i]))),hi=[0,1,2].map(i=>Math.max(...points.map(p=>p[i])));
     viewCenter=mul(add(lo,hi),.5);zoom=Math.min(1,5/(Math.max(...sub(hi,lo))+2));
-  }draw();}
+  }}
+  function resetView(){fitView();draw();}
   for(const [id,axis,delta] of [['view-left','yaw',-.25],['view-right','yaw',.25],['view-up','pitch',.18],['view-down','pitch',-.18]])$(id).onclick=()=>{if(axis==='yaw')yaw+=delta;else pitch=Math.max(-1.1,Math.min(1.3,pitch+delta));draw();};
   $('view-reset').onclick=resetView;
   $('view-zoom-in').onclick=()=>{zoom=Math.min(3,zoom*1.2);draw();};
@@ -374,24 +417,24 @@
     pitch=Math.asin(n[2]*.85);yaw=Math.atan2(n[0],n[1]);viewCenter=mul(face.c,.5);zoom=1.1;$('view-back').hidden=false;render();}
   $('view-face').onclick=()=>viewFace(selectable().find(f=>f.ref===(highlight||state().ref)));
   $('target-face').onchange=e=>selectTarget(e.target.value);
-  $('candidate').onchange=e=>{const entry=rules.candidates(state().tiles,state().ref,true).find(c=>poseKey(c.p)===e.target.value);if(entry)adjust(s=>{s.op=entry.p;});};
+  $('candidate').onchange=e=>{const entry=rules.candidates(state().tiles,state().ref,true).find(c=>poseKey(c.p)===e.target.value);if(entry){adjust(s=>{s.op=entry.p;});render();}};
   $('all-faces').onchange=e=>{allFaces=e.target.checked;render();};
-  for(const [id,sign] of [['rotate-left',1],['rotate-right',-1]])$(id).onclick=()=>{if(state().op&&!inspection)adjust(s=>{s.op=rules.rotateAt(s.tiles,s.op,s.ref,sign);});};
+  for(const [id,sign] of [['rotate-left',1],['rotate-right',-1]])$(id).onclick=()=>{if(state().op&&!inspection){adjust(s=>{s.op=rules.rotateAt(s.tiles,s.op,s.ref,sign);});render();}};
   $('return-face').onclick=()=>{explainRef=null;render();};
   $('why').addEventListener('toggle',()=>render());
   $('problem-view').onclick=()=>{const bad=currentResult().contacts.find(c=>!c.ok);if(!bad)return;explainRef=bad.a.ref;viewFace(bad.a);};
-  $('attach').onclick=()=>{if(motion||!currentResult().ok||inspection)return;commit('接着',s=>{s.tiles.push(s.op);s.pending=false;s.op=null;s.ref='';});hintStep=0;hintMessage='';render();(rules.parent(state().tiles)?$('group'):$('add')).focus();};
-  $('add').onclick=()=>{if(state().tiles.length>=8||state().pending||state().grouped||inspection)return;commit('部品の追加',s=>{s.pending=true;s.op=null;s.ref='';});$('target-face').focus();};
-  $('cancel').onclick=()=>commit('追加の取消',s=>{s.pending=false;s.op=null;s.ref='';});
-  $('undo').onclick=()=>{if(inspection)return;clearMotion();history.undo();hintStep=0;hintMessage='';explainRef=null;highlight=null;render();};
-  $('redo').onclick=()=>{if(inspection)return;clearMotion();history.redo();hintStep=0;hintMessage='';explainRef=null;highlight=null;render();};
+  $('attach').onclick=()=>{if(motion||!currentResult().ok||inspection)return;commit('接着',s=>{s.tiles.push(s.op);s.pending=false;s.op=null;s.ref='';});resetHint();render();(rules.parent(state().tiles)?$('group'):$('add')).focus();};
+  $('add').onclick=()=>{if(state().tiles.length>=8||state().pending||state().grouped||inspection)return;commit('部品の追加',s=>{s.pending=true;s.op=null;s.ref='';});render();$('target-face').focus();};
+  $('cancel').onclick=()=>{if(inspection)return;commit('追加の取消',s=>{s.pending=false;s.op=null;s.ref='';});render();};
+  $('undo').onclick=()=>{if(inspection)return;clearMotion();history.undo();resetHint();explainRef=null;highlight=null;render();};
+  $('redo').onclick=()=>{if(inspection)return;clearMotion();history.redo();resetHint();explainRef=null;highlight=null;render();};
   $('free').onclick=()=>{if(inspection)return;mode='free';hintMessage='';render();};
   function confirmRestart(nextMode){if(inspection)return;restartMode=nextMode;$('confirm').showModal();}
   $('guided').onclick=()=>{if(mode!=='guided')confirmRestart('guided');};
   $('restart').onclick=()=>confirmRestart(mode);
   $('confirm').addEventListener('close',()=>{if($('confirm').returnValue!=='start')return;
     clearMotion();
-    mode=restartMode;history=new E.History(initial());hintStep=0;hintMessage='';explainRef=null;highlight=null;parentView='rules';allFaces=false;oldView=null;$('view-back').hidden=true;resetView();render();});
+    mode=restartMode;history=new E.History(initial());resetHint();explainRef=null;highlight=null;parentView='rules';allFaces=false;oldView=null;$('view-back').hidden=true;fitView();render();});
   $('hint').onclick=()=>{
     const s=state(),hint=rules.nextHint(s.tiles,s.anchor);if(!hint||inspection)return;
     hintStep=Math.min(hintStep+1,3);highlight=hint.ref;
@@ -401,11 +444,11 @@
       const fn=d=>{d.pending=true;d.op=hint.p;d.ref=hint.ref;};if(s.pending)adjust(fn);else commit('部品の追加',fn);}
     render();
   };
-  $('group').onclick=()=>{if(rules.parent(state().tiles))commit('親への集約',s=>{s.grouped=true;});};
+  $('group').onclick=()=>{if(!inspection&&rules.parent(state().tiles)){commit('親への集約',s=>{s.grouped=true;});render();}};
   for(const [id,value] of [['show-boundary','children'],['show-shell','shell'],['show-parent','rules']])$(id).onclick=()=>{parentView=value;render();};
   function makeUnit(s){return {children:rules.group.map(p=>({t:mul(p.t,.5),r:p.r})),childUnit:s.unit};}
   $('promote').onclick=()=>{const p=rules.parent(state().tiles);if(!p||!state().grouped||inspection)return;
-    commit('次の階層',s=>{s.unit=makeUnit(s);s.level++;s.tiles=[{t:[0,0,0],r:p.r}];s.anchor=clone(s.tiles[0]);s.grouped=false;s.pending=false;s.op=null;s.ref='';});hintStep=0;hintMessage='';parentView='rules';resetView();render();};
+    commit('次の階層',s=>{s.unit=makeUnit(s);s.level++;s.tiles=[{t:[0,0,0],r:p.r}];s.anchor=clone(s.tiles[0]);s.grouped=false;s.pending=false;s.op=null;s.ref='';});resetHint();parentView='rules';fitView();render();};
   function openInspection(){if(inspection)return;const s=state(),unit=s.grouped?makeUnit(s):s.unit;if(!unit)return;
     inspection={path:[{unit,tile:s.grouped?0:Number($('inspect-tile').value)||0}],rootChoice:$('inspect-tile').value,camera:camera(),explainRef,oldView};viewCenter=[0,0,0];zoom=1.5;oldView=null;$('view-back').hidden=true;render();}
   function deeper(tile){if(!inspection||!inspectScene().unit.childUnit)return;inspection.path.push({unit:inspectScene().unit.childUnit,tile});viewCenter=[0,0,0];zoom=1.5;render();}
@@ -440,7 +483,7 @@
       reset(){
         clearMotion();
         const s=initial();s.pending=false;history=new E.History(s);mode='guided';inspection=null;
-        allFaces=false;hintStep=0;hintMessage='';explainRef=null;highlight=null;oldView=null;
+        allFaces=false;resetHint();explainRef=null;highlight=null;oldView=null;
         const target=selectable().find(f=>f.ref===targetRef);
         yaw=Math.atan2(target.n[0],target.n[1])+.55;pitch=Math.asin(target.n[2]*.85)+.38;
         viewCenter=mul(target.c,.5);zoom=1.7;
@@ -475,7 +518,7 @@
           const button=$(kind);if(button.disabled)throw new Error(`Demo action is disabled: ${kind}`);button.click();
         }
         if(kind==='rotate-right'&&!currentResult().ok)throw new Error('Demo rotation failed to match');
-        if(kind==='attach'){if(state().tiles.length!==2)throw new Error('Demo attachment failed');resetView();zoom=1.5;draw();canvas.scrollIntoView({block:'center',behavior:'instant'});}
+        if(kind==='attach'){if(state().tiles.length!==2)throw new Error('Demo attachment failed');fitView();zoom=1.5;draw();canvas.scrollIntoView({block:'center',behavior:'instant'});}
       }
     };
   }

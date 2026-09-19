@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T19:02:23.480Z",
+  "checked_at": "2026-09-19T19:05:39.271Z",
   "scope": "Prototype presentation and scripted interactions; not player testing or a mathematical proof",
   "hint_checks": [
     "same/different target reselection clears stale attachment advice",
@@ -26,7 +26,7 @@
     "blocked storage fallback"
   ],
   "status": "pass",
-  "html_sha256": "a8a51cc33833f2bfdc2e6a13bd92ae42d192a55aaed97d4b6c9266e6556dc59e",
+  "html_sha256": "0c037f98a077a561b4e5f7e1dd29326a6a55038b5ef5259a257dbdabc3b4b06f",
   "offline": true,
   "levels_completed": 2,
   "layouts": [

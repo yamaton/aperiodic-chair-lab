@@ -26,8 +26,10 @@ sequential refactoring with an independent review before each local commit.
 Stage 1 extracts contact presentation to `feedback.js` and shares CSS colors with
 Canvas. Six browser suites passed; the reviewer confirmed 54 equivalent
 classifications with no required fixes. See `docs/assembly/REFACTOR_REVIEW.md`.
-Next: state-update/render sequencing and repeated frame calculations, then shared
-browser-check setup. Keep exact engine/history behavior and standalone packaging.
+Stage 2 separates state updates from rendering and shares exact results per frame.
+Camera-only direct rule calls fell from check/exposed/placedFaces=2/13/13 to 1/1/2.
+Six browser suites passed and the independent reviewer found no required fixes.
+Next: shared browser-check setup. Keep exact engine/history behavior and standalone packaging.
 
 **Valid contact feedback added locally (19 September):** the user's follow-up
 confirmed that valid unselected contacts had no dedicated overlay. All valid
