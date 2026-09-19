@@ -1,7 +1,5 @@
 const assert=require('node:assert/strict');
-const fs=require('node:fs');
-const crypto=require('node:crypto');
-const {pathToFileURL}=require('node:url');
+const {withBrowser,monitorPage,htmlURL,htmlHash,writeReport}=require('./browser-check.cjs');
 const E=require('./engine.js'),M=require('./motion.js');
 const near=(a,b,message)=>assert(a.every((v,i)=>Math.abs(v-b[i])<1e-8),message);
 const center=p=>E.mul(E.cubes.map(c=>E.add(p.t,E.act(p.r,E.mul(c,.5)))).reduce(E.add,[0,0,0]),1/E.cubes.length);
@@ -19,14 +17,11 @@ for(const a of E.rotations)for(const b of E.rotations){
   }
   pairs++;
 }
-const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browser/node_modules/playwright');
-(async()=>{
- const browser=await firefox.launch({headless:true,executablePath:process.env.FIREFOX_PATH||'/tmp/kanpo-review-browser/browsers/firefox-1543/firefox/firefox'});
- try{
+withBrowser(async browser=>{
   const context=await browser.newContext({viewport:{width:1280,height:1000},offline:true,locale:'ja-JP'});
-  const page=await context.newPage(),errors=[],requests=[];
-  page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
-  await page.goto(pathToFileURL(process.cwd()+'/docs/assembly.html').href);
+  const page=await context.newPage();
+  const {errors,requests}=monitorPage(page);
+  await page.goto(htmlURL);
   const snap=()=>page.evaluate(()=>ChairPrototype.snapshot());
   const pose=()=>page.evaluate(()=>ChairPrototype.movingPose());
   const settled=()=>page.waitForFunction(()=>!document.getElementById('scene').dataset.motion);
@@ -105,8 +100,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   assert(await page.locator('#attach').isEnabled());await page.locator('#attach').click();assert.equal((await snap()).state.tiles.length,2);
   assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);
   const report={status:'pass',checked_at:new Date().toISOString(),rotation_pairs:pairs,offline:true,
-    html_sha256:crypto.createHash('sha256').update(fs.readFileSync('docs/assembly.html')).digest('hex'),
+    html_sha256:htmlHash(),
     checks:['rigid interpolation including 180-degree turns','stationary centroid during rotation','exact endpoints','first selection rotates then approaches','preview rotation separates, rotates, approaches','visible frames under panel hover','commit disabled until arrival','no frame history or automatic bond','continuous retargeting mid-turn','target reselection returns to staging without preselection','Undo/Redo and cancellation stop stale motion','restart during motion','live reduced-motion change','mobile attachment'],page_errors:errors};
-  fs.writeFileSync('docs/assembly_motion_verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
- }finally{await browser.close();}
-})().catch(e=>{console.error(e);process.exitCode=1;});
+  writeReport('docs/assembly_motion_verification.json',report);
+}).catch(e=>{console.error(e);process.exitCode=1;});

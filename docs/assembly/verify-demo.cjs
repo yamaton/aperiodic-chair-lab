@@ -1,16 +1,11 @@
 const assert=require('node:assert/strict');
-const fs=require('node:fs');
-const crypto=require('node:crypto');
-const {pathToFileURL}=require('node:url');
-const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browser/node_modules/playwright');
-(async()=>{
- const browser=await firefox.launch({headless:true,executablePath:process.env.FIREFOX_PATH||'/tmp/kanpo-review-browser/browsers/firefox-1543/firefox/firefox'});
- try{
+const {withBrowser,monitorPage,htmlURL,htmlHash,writeReport}=require('./browser-check.cjs');
+withBrowser(async browser=>{
   const context=await browser.newContext({viewport:{width:1280,height:1000},locale:'ja-JP',offline:true});
-  const page=await context.newPage(),errors=[],requests=[];
-  page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
-  page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
-  await page.goto(pathToFileURL(process.cwd()+'/docs/assembly.html').href);
+  const page=await context.newPage();
+
+  const {errors,requests}=monitorPage(page,{consoleErrors:true});
+  await page.goto(htmlURL);
   for(let i=0;i<3;i++)await page.locator('#hint').click();
   await page.locator('#attach').click();await page.locator('#undo').click();
   // Attention effects animate pixels independently of the player's camera and work.
@@ -98,8 +93,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   }
   assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);
   const report={status:'pass',checked_at:new Date().toISOString(),scope:'Scripted offline UI demonstration checks; not player trials',
-    html_sha256:crypto.createHash('sha256').update(fs.readFileSync('docs/assembly.html')).digest('hex'),
+    html_sha256:htmlHash(),
     checks:['real target and piece clicks','mismatched arrows become valid after rotation','timed playback attaches two pieces','pause and manual stepping','pause freezes placement animation','close during playback and replay','player pending piece, camera and Redo preserved','Japanese and English','390px layout and visible cursor','667×375, 750×600 and 320×568 face picking and reachable controls','reduced motion','offline, no external requests'],page_errors:errors};
-  fs.writeFileSync('docs/assembly_demo_verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
- }finally{await browser.close();}
-})().catch(error=>{console.error(error);process.exitCode=1;});
+  writeReport('docs/assembly_demo_verification.json',report);
+}).catch(error=>{console.error(error);process.exitCode=1;});

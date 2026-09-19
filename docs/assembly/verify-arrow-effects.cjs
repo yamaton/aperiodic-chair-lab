@@ -1,19 +1,15 @@
 const assert=require('node:assert/strict');
-const fs=require('node:fs'),crypto=require('node:crypto');
-const {pathToFileURL}=require('node:url');
-const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browser/node_modules/playwright');
-(async()=>{
- const browser=await firefox.launch({headless:true,executablePath:process.env.FIREFOX_PATH||'/tmp/kanpo-review-browser/browsers/firefox-1543/firefox/firefox'});
- try{
-  const page=await browser.newPage({viewport:{width:1280,height:1000},locale:'ja-JP',offline:true,reducedMotion:'reduce'}),errors=[],requests=[];
-  page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
+const {withBrowser,monitorPage,htmlURL,htmlHash,writeReport}=require('./browser-check.cjs');
+withBrowser(async browser=>{
+  const page=await browser.newPage({viewport:{width:1280,height:1000},locale:'ja-JP',offline:true,reducedMotion:'reduce'});
+  const {errors,requests}=monitorPage(page);
   // Observe actual canvas drawing, not just diagnostic state or CSS classes.
   await page.addInitScript(()=>{
     const p=CanvasRenderingContext2D.prototype,clear=p.clearRect,stroke=p.stroke;
     p.clearRect=function(...args){if(this.canvas.id==='scene')window.arrowStrokes=[];return clear.apply(this,args);};
     p.stroke=function(...args){if(this.canvas.id==='scene')window.arrowStrokes.push({color:this.strokeStyle,width:this.lineWidth,dash:this.getLineDash()});return stroke.apply(this,args);};
   });
-  await page.goto(pathToFileURL(process.cwd()+'/docs/assembly.html').href);
+  await page.goto(htmlURL);
   const cases=await page.evaluate(()=>{
     const r=ChairPrototype.rules,s=ChairPrototype.snapshot().state,out={};
     for(const face of r.exposed(s.tiles))for(const c of r.candidates(s.tiles,face.ref,true)){
@@ -182,8 +178,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   await page.locator('#rotate-right').click();assert.equal(await hasEffect(),0);assert(await page.locator('#attach').isEnabled());
   assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);
   const report={status:'pass',checked_at:new Date().toISOString(),offline:true,
-    html_sha256:crypto.createHash('sha256').update(fs.readFileSync('docs/assembly.html')).digest('hex'),
+    html_sha256:htmlHash(),
     checks:["all valid contact faces have green borders including unselected faces","both camera sides preserve per-contact green and red feedback","matching feedback survives hover and focus without state changes","valid contacts remain green alongside failures and overlap","attachment clears preview green and Undo restores it",'A/A and B/C arrow-only mismatch','all six invalid motif pairings show red panels and comparison','B-target/A-picker click, focus and hover regression','actual canvas dashed borders and emphasized arrows','comparison card styles','selection, hover and keyboard focus preserve warning','reduced motion static rendering','no state/history changes from rendering','overlap warning and per-face arrow mismatch coexist','comparison follows each contact','mixed interface retains overall failure','matching, Undo/Redo and cancellation clear/restore effect','three languages and mobile width','four-turn cycle through overlapping placements','no matching feedback during motion','scene, comparison and status update together on arrival','live reduced-motion completion updates feedback'],page_errors:errors};
-  fs.writeFileSync('docs/assembly_arrow_effects_verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
- }finally{await browser.close();}
-})().catch(e=>{console.error(e);process.exitCode=1;});
+  writeReport('docs/assembly_arrow_effects_verification.json',report);
+}).catch(e=>{console.error(e);process.exitCode=1;});

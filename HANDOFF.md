@@ -21,7 +21,7 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
-**Interactive refactoring in progress (19 September):** the user authorized
+**Interactive refactoring completed locally (19 September):** the user authorized
 sequential refactoring with an independent review before each local commit.
 Stage 1 extracts contact presentation to `feedback.js` and shares CSS colors with
 Canvas. Six browser suites passed; the reviewer confirmed 54 equivalent
@@ -29,7 +29,11 @@ classifications with no required fixes. See `docs/assembly/REFACTOR_REVIEW.md`.
 Stage 2 separates state updates from rendering and shares exact results per frame.
 Camera-only direct rule calls fell from check/exposed/placedFaces=2/13/13 to 1/1/2.
 Six browser suites passed and the independent reviewer found no required fixes.
-Next: shared browser-check setup. Keep exact engine/history behavior and standalone packaging.
+Stage 3 shares browser lifecycle, monitoring, HTML/hash and reporting helpers in
+`browser-check.cjs`; all six suites passed again. The independent reviewer checked
+success/failure cleanup, environment overrides and suite-specific diagnostics.
+All three stages were reviewed before their local commits. Exact engine/history
+behavior and standalone packaging are preserved. No publication was requested.
 
 **Valid contact feedback added locally (19 September):** the user's follow-up
 confirmed that valid unselected contacts had no dedicated overlay. All valid

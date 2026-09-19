@@ -1,21 +1,16 @@
 // Offline UI checks for every registered language, including RTL geometry and demos.
 const assert=require('node:assert/strict');
-const fs=require('node:fs');
-const crypto=require('node:crypto');
-const {pathToFileURL}=require('node:url');
+const {withBrowser,monitorPage,htmlURL,htmlHash,writeReport}=require('./browser-check.cjs');
 const {readCatalogs}=require('../build-locales.cjs');
-const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browser/node_modules/playwright');
-(async()=>{
- const catalogs=readCatalogs(),errors=[],checks=[];
- const browser=await firefox.launch({headless:true,executablePath:process.env.FIREFOX_PATH||'/tmp/kanpo-review-browser/browsers/firefox-1543/firefox/firefox'});
- try{
+withBrowser(async browser=>{
+ const catalogs=readCatalogs(),checks=[];
   const context=await browser.newContext({locale:'en-US',offline:true,reducedMotion:'reduce'});
-  const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
-  page.on('request',r=>{if(/^https?:/.test(r.url()))errors.push('Unexpected request: '+r.url());});
+  const page=await context.newPage();
+  const {errors}=monitorPage(page,{requestsAsErrors:true});
   for(const width of [1280,320,667]){
    const height=width===667?375:900;
    await page.setViewportSize({width,height});
-   await page.goto(pathToFileURL(process.cwd()+'/docs/assembly.html').href+'?lang=en');
+   await page.goto(htmlURL+'?lang=en');
    for(let i=0;i<3;i++)await page.locator('#hint').click();
    const before=await page.evaluate(()=>ChairPrototype.snapshot());
    const arrows=await page.locator('.face-card svg').evaluateAll(els=>els.map(el=>el.innerHTML));
@@ -60,7 +55,6 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
    await page.locator('#attach').click();assert.equal(await page.evaluate(()=>ChairPrototype.snapshot().state.tiles.length),2);
   }
   assert.deepEqual(errors,[]);
-  const report={status:'pass',checked_at:new Date().toISOString(),scope:'Automated translation coverage, offline UI and RTL interaction checks; not native-speaker review',html_sha256:crypto.createHash('sha256').update(fs.readFileSync('docs/assembly.html')).digest('hex'),checks,state_and_arrows_preserved:true,demos_attach:true,page_errors:errors};
-  fs.writeFileSync('docs/assembly_locales_verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
- }finally{await browser.close();}
-})().catch(e=>{console.error(e);process.exitCode=1;});
+  const report={status:'pass',checked_at:new Date().toISOString(),scope:'Automated translation coverage, offline UI and RTL interaction checks; not native-speaker review',html_sha256:htmlHash(),checks,state_and_arrows_preserved:true,demos_attach:true,page_errors:errors};
+  writeReport('docs/assembly_locales_verification.json',report);
+}).catch(e=>{console.error(e);process.exitCode=1;});

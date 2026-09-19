@@ -81,10 +81,13 @@ node docs/assembly/verify-demo.cjs
 node docs/assembly/verify-effects.cjs
 node docs/assembly/verify-motion.cjs
 node docs/assembly/verify-arrow-effects.cjs
+node docs/assembly/verify-locales.cjs
 ```
 
 ブラウザー確認だけは既存のPlaywrightとFirefoxを使う。
 `PLAYWRIGHT_MODULE` と `FIREFOX_PATH` で配置を指定できる。
+6つのブラウザー検証は `browser-check.cjs` で起動・終了、エラー収集、HTML参照、
+ハッシュと記録出力を共有する。操作・期待値・画面サイズ・言語設定は各検証ファイルが管理する。
 ローカルHTTPで試す場合:
 
 ```sh

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T19:05:39.271Z",
+  "checked_at": "2026-09-19T19:09:32.061Z",
   "scope": "Prototype presentation and scripted interactions; not player testing or a mathematical proof",
   "hint_checks": [
     "same/different target reselection clears stale attachment advice",

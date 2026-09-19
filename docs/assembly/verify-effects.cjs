@@ -1,16 +1,11 @@
 const assert=require('node:assert/strict');
-const fs=require('node:fs');
-const crypto=require('node:crypto');
-const {pathToFileURL}=require('node:url');
-const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browser/node_modules/playwright');
-(async()=>{
- const browser=await firefox.launch({headless:true,executablePath:process.env.FIREFOX_PATH||'/tmp/kanpo-review-browser/browsers/firefox-1543/firefox/firefox'});
- try{
+const {withBrowser,monitorPage,htmlURL,htmlHash,writeReport}=require('./browser-check.cjs');
+withBrowser(async browser=>{
   const context=await browser.newContext({viewport:{width:1280,height:1000},locale:'ja-JP',offline:true});
-  const page=await context.newPage(),errors=[],requests=[];
-  page.on('pageerror',e=>errors.push(e.message));
-  page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
-  await page.goto(pathToFileURL(process.cwd()+'/docs/assembly.html').href);
+  const page=await context.newPage();
+
+  const {errors,requests}=monitorPage(page);
+  await page.goto(htmlURL);
   const scene=page.locator('#scene'),picker=page.locator('#piece-picker');
   const snap=()=>page.evaluate(()=>ChairPrototype.snapshot());
   const movingPose=()=>page.evaluate(()=>ChairPrototype.movingPose());
@@ -91,8 +86,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   assert.equal(await effect(),'block','Touch must not leave a sticky hover');assert.deepEqual(await snap(),beforeTouch);
   assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);
   const report={checked_at:new Date().toISOString(),status:'pass',offline:true,
-   html_sha256:crypto.createHash('sha256').update(fs.readFileSync('docs/assembly.html')).digest('hex'),
+   html_sha256:htmlHash(),
    checks:['target and moving-block attention','visible pulse and static panel hover','shared main/picker attention','picker hover and keyboard focus','target selection preserves detached rendered pose','no moving-face preselection or contact before second face selection','second face selection moves piece into contact without bonding','hover preserves placement and history','explicit attachment and next-piece phase','cancel and Undo restore effects','reduced motion stops animation','mobile touch has no sticky hover'],page_errors:errors};
-  fs.writeFileSync('docs/assembly_effects_verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
- }finally{await browser.close();}
-})().catch(e=>{console.error(e);process.exitCode=1;});
+  writeReport('docs/assembly_effects_verification.json',report);
+}).catch(e=>{console.error(e);process.exitCode=1;});

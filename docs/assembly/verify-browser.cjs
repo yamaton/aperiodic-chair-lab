@@ -1,16 +1,10 @@
 const assert=require('node:assert/strict');
-const fs=require('node:fs');
-const path=require('node:path');
-const crypto=require('node:crypto');
-const {pathToFileURL}=require('node:url');
-const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browser/node_modules/playwright');
-(async()=>{
- const browser=await firefox.launch({headless:true,executablePath:process.env.FIREFOX_PATH||'/tmp/kanpo-review-browser/browsers/firefox-1543/firefox/firefox'});
- try{
+const {withBrowser,monitorPage,htmlURL,htmlHash,writeReport}=require('./browser-check.cjs');
+withBrowser(async browser=>{
   const context=await browser.newContext({viewport:{width:1280,height:900},offline:true,locale:'ja-JP'});
-  const page=await context.newPage(),errors=[],requests=[];
-  page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
-  await page.goto(pathToFileURL(path.resolve('docs/assembly.html')).href);
+  const page=await context.newPage();
+  const {errors,requests}=monitorPage(page);
+  await page.goto(htmlURL);
   const snap=()=>page.evaluate(()=>ChairPrototype.snapshot());
   const english=async()=>{
     const before=await snap();
@@ -183,7 +177,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   }
   await english();await page.reload();assert.equal(await page.locator('#language').inputValue(),'en','Remember the chosen language');
   const automatic=await browser.newContext({locale:'en-US',offline:true});
-  const englishPage=await automatic.newPage();await englishPage.goto(pathToFileURL(path.resolve('docs/assembly.html')).href);
+  const englishPage=await automatic.newPage();await englishPage.goto(htmlURL);
   assert.equal(await englishPage.locator('#language').inputValue(),'en','Use a supported browser language on first visit');
   // Storage may be unavailable when opening standalone files under restrictive browser settings.
   await englishPage.addInitScript(()=>{Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage blocked');}});});
@@ -194,8 +188,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
    hint_checks:['same/different target reselection clears stale attachment advice','hint sequence restarts without moving the unselected piece'],
    guide_checks:['four-step Japanese/English operation guide','desktop/mobile fit','pending piece and Redo preserved','keyboard and focus return','Escape preserves inspection','mathematics link separated'],
    languages:['ja','en'],language_checks:['in-progress state and Undo/Redo preserved','hints, contact results and accessibility labels translated','desktop/mobile layout','saved preference','browser language detection','blocked storage fallback'],
-   status:'pass',html_sha256:crypto.createHash('sha256').update(fs.readFileSync('docs/assembly.html')).digest('hex'),
+   status:'pass',html_sha256:htmlHash(),
    offline:true,levels_completed:2,layouts,checks:['canvas face picking','moving-piece face click and keyboard selection','moving-piece view drag preserves pose and history','mobile moving-piece face click','attachment and rigid target','invalid rotation','Undo/Redo','mode change preserves Redo','restart cancellation','eight-child recognition','parent inspection','keyboard-accessible nested inspection','inspection blocks edits','promotion Undo/Redo','pending piece survives inspection','history branch','other-contact rotation guard','mobile controls with visible model'],page_errors:errors};
-  fs.writeFileSync('docs/assembly_verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
- }finally{await browser.close();}
-})().catch(e=>{console.error(e);process.exitCode=1;});
+  writeReport('docs/assembly_verification.json',report);
+}).catch(e=>{console.error(e);process.exitCode=1;});
