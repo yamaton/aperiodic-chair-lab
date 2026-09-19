@@ -21,6 +21,46 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Arrow-only mismatch effect added locally (19 September):** pending contacts
+with compatible motifs (A/A or B/C) but incompatible arrows now have red
+dashed borders, a light face tint and thick emphasized arrows in the main 3D
+view and comparison cards. At the user's latest request, arrow-only failures
+use the same red border and tint as motif failures; dashed versus solid borders
+distinguish the two. Contact annotations are drawn over the pieces and
+selection/hover so they stay visible. Overall failure status is red for both.
+The user's B-target/A-moving report also reproduced a missed motif-failure cue:
+selection green won in the scene, and comparison cards kept their default green.
+Motif-invalid contacts now have red solid borders and tint above selection/hover
+on both contacting sides and red comparison cards. Checks cover all six invalid
+ordered motif pairs and the real B-target/A-picker click, focus and hover sequence.
+Following the user's rotation feedback, overlap no longer suppresses per-face
+arrow warnings: dashed red contact cues coexist with the red overlap warning
+and disabled Attach button. During separation/rotation/approach, all contact
+feedback is withheld and the comparison/status show a localized adjusting
+message. Arrival updates scene and DOM feedback together without replacing
+the piece picker or its keyboard focus; comparison height is preserved.
+Reduced-motion and hidden-tab completion also refresh the DOM feedback.
+The cue is static, including reduced motion; orientation, placement rules and
+history are unchanged. `node docs/assembly/verify-arrow-effects.cjs` exercises
+actual canvas strokes, both motif pairings, per-contact comparison, mixed
+failures, overlap, hover/focus, motion, history and locales. The regression also
+rotates the first guided placement four times, checking three overlapping
+arrow-mismatch poses, arrival timing and return to the original valid pose.
+Updated sources,
+standalone HTML and verification records remain local and unpublished. The new
+arrow-effect checks and existing effects, motion, browser, demo and locale
+suites passed; all six browser records match the final standalone HTML.
+
+Two independent AI agents reviewed the contact effects at the user's request;
+see `docs/assembly/EFFECT_REVIEW.md`. No reproducible product defect was reported.
+The rendering reviewer checked 523 representative candidates across all 24 initial
+target faces, 1,236 contact comparisons and 1,046 views. The state reviewer checked
+24 rotations/interruptions, history, language changes, reduced motion, simulated
+hidden-tab completion and inspection during motion after parent promotion.
+The review did not change application code or publish/commit the pending work.
+The user subsequently requested a local commit of the contact-effect changes,
+generated HTML, verification records and review notes. Publication remains pending.
+
 **Assembly placement animation implemented locally (19 September):** selecting
 the second face now rotates the pending piece about its centroid (360 ms), then
 moves it into preview contact (300 ms). Changing an existing preview or using

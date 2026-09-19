@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-19T18:02:35.603Z",
+  "offline": true,
+  "html_sha256": "fce6cf71f9bf4fc1e65e1e6d87279d56e1555e9aada82711f54b3f7895ff0486",
+  "checks": [
+    "A/A and B/C arrow-only mismatch",
+    "all six invalid motif pairings show red panels and comparison",
+    "B-target/A-picker click, focus and hover regression",
+    "actual canvas dashed borders and emphasized arrows",
+    "comparison card styles",
+    "selection, hover and keyboard focus preserve warning",
+    "reduced motion static rendering",
+    "no state/history changes from rendering",
+    "overlap warning and per-face arrow mismatch coexist",
+    "comparison follows each contact",
+    "mixed interface retains overall failure",
+    "matching, Undo/Redo and cancellation clear/restore effect",
+    "three languages and mobile width",
+    "four-turn cycle through overlapping placements",
+    "no matching feedback during motion",
+    "scene, comparison and status update together on arrival",
+    "live reduced-motion completion updates feedback"
+  ],
+  "page_errors": []
+}

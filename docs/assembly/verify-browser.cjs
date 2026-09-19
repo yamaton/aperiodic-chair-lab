@@ -111,7 +111,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   await page.locator('#hint').click();await page.waitForFunction(()=>!document.getElementById('attach').disabled);
   const before=(await snap()).state;
   await page.locator('#rotate-left').click();assert(await page.locator('#attach').isDisabled());
-  await english();assert.match(await page.locator('#status').innerText(),/Mismatched|overlap/);
+  await english();await page.waitForFunction(()=>!document.getElementById('scene').dataset.motion);assert.match(await page.locator('#status').innerText(),/Mismatched|overlap/);
   assert.deepEqual((await snap()).state.tiles,before.tiles);
   await page.locator('#rotate-right').click();await page.waitForFunction(()=>!document.getElementById('attach').disabled);
   await page.locator('#attach').click();assert.equal((await snap()).state.tiles.length,2);
@@ -153,6 +153,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   // Inspecting another contact must not change the attachment axis.
   const candidate=await goodCandidate();assert(candidate);await page.locator('#candidate-list').evaluate(el=>el.open=true);await page.locator('#candidate').selectOption(candidate);
   await page.locator('#why').evaluate(el=>el.open=true);
+  await page.waitForFunction(()=>!document.getElementById('scene').dataset.motion);
   const count=await page.locator('#contacts button').count();assert(count>1);
   const ref=(await snap()).state.ref;
   const other=await page.evaluate(ref=>ChairPrototype.rules.check(ChairPrototype.snapshot().state.tiles,ChairPrototype.snapshot().state.op).contacts.findIndex(c=>c.a.ref!==ref),ref);

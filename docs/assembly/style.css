@@ -28,6 +28,12 @@
 @media(max-width:750px){[dir=rtl] .legend{right:8px}.stage-top{flex-wrap:wrap}.pill{white-space:normal}}
 /* Long translated headings must not push the close button outside a dialog. */
 .attention{animation:piece-attention 2.8s ease-in-out infinite}
+.face-pair.arrow-mismatch rect{fill:#fff0ed;stroke:#b43b32;stroke-width:2;stroke-dasharray:5 3}
+.face-pair.arrow-mismatch .face-arrow path{stroke:#a12e27;stroke-width:4}
+.face-pair.arrow-mismatch .face-arrow{filter:drop-shadow(0 0 3px #f0b9b3)}
+.status.arrow-mismatch{color:#a23f34}
+.face-pair.symbol-mismatch rect{fill:#fff0ed;stroke:#b43b32;stroke-width:2}
+.face-pair.symbol-mismatch text{fill:#a12e27;font-weight:700}
 @keyframes piece-attention{0%,100%{filter:brightness(1.02) drop-shadow(0 0 2px #b5e8d5)}50%{filter:brightness(1.16) drop-shadow(0 0 7px #a0ddcc)}}
 #piece-picker:not(.dragging) [role=button]:hover polygon,#piece-picker [role=button]:focus-visible polygon{fill:#fff2ce;stroke:#087f80;stroke-width:3;filter:drop-shadow(0 0 4px #38bdb499)}
 @media(prefers-reduced-motion:reduce){.attention{animation:none;filter:brightness(1.09) drop-shadow(0 0 4px #b5e8d5)}}

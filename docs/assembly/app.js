@@ -28,6 +28,7 @@
     return bad?t('{total}面中 {bad}面が不適合',{total:result.contacts.length,bad}):t('接触{count}面すべて適合',{count:result.contacts.length});
   }
   function chosenContact(result){return result.contacts.find(c=>c.a.ref===(explainRef||state().ref))||result.contacts[0];}
+  const arrowMismatch=contact=>contact.patterns&&!contact.arrow;
   function guideMatches(tiles=state().tiles){return rules.onGoal(tiles,state().anchor);}
   function setOptions(select,options,value){
     const signature=JSON.stringify(options);
@@ -64,12 +65,38 @@
     const uv=[dot(face.u,base.u),dot(face.u,cross(base.n,base.u))];
     const line=(u,dashed)=>`<path d="M 52 76 L ${52+u[0]*29} ${76-u[1]*29}" stroke="${dashed?'#a87747':'#176b64'}" stroke-width="${dashed?2:3}" ${dashed?'stroke-dasharray="3 3"':''}/><path d="M ${52+u[0]*29-u[0]*8-u[1]*4} ${76-u[1]*29+u[1]*8-u[0]*4} L ${52+u[0]*29} ${76-u[1]*29} L ${52+u[0]*29-u[0]*8+u[1]*4} ${76-u[1]*29+u[1]*8+u[0]*4}" fill="none" stroke="${dashed?'#a87747':'#176b64'}" stroke-width="2"/>`;
     const wanted=expected?[dot(expected,base.u),dot(expected,cross(base.n,base.u))]:null;
-    return `<div class="face-card">${label}<svg viewBox="0 0 104 115" role="img" aria-label="${t('{label} {motif}、矢印{arrow}',{label,motif:face.motif,arrow:arrowName(face.u,base)})}"><rect x="3" y="4" width="98" height="106" rx="7" fill="#edf3ea" stroke="#c4d7c9"/><text x="52" y="38" text-anchor="middle" font-size="25" fill="#213c45">${face.motif}</text>${wanted?line(wanted,true):''}${line(uv,false)}</svg></div>`;
+    return `<div class="face-card">${label}<svg viewBox="0 0 104 115" role="img" aria-label="${t('{label} {motif}、矢印{arrow}',{label,motif:face.motif,arrow:arrowName(face.u,base)})}"><rect x="3" y="4" width="98" height="106" rx="7" fill="#edf3ea" stroke="#c4d7c9"/><text x="52" y="38" text-anchor="middle" font-size="25" fill="#213c45">${face.motif}</text>${wanted?line(wanted,true):''}<g class="face-arrow">${line(uv,false)}</g></svg></div>`;
+  }
+  function renderContactFeedback(){
+    const s=state(),result=currentResult(),inspecting=!!inspection;
+    const remaining=8-s.tiles.length-Number(s.pending);
+    // Preserve control positions while the comparison temporarily shows progress.
+    $('compare-content').style.minHeight=motion?Math.max(150,$('compare-content').getBoundingClientRect().height)+'px':'';
+    const contact=motion?null:chosenContact(result);
+    if(contact){
+      const effect=inspecting?'':!contact.patterns?' symbol-mismatch':arrowMismatch(contact)?' arrow-mismatch':'';
+      $('compare-content').innerHTML=`<div class="face-pair${effect}">${faceSVG(contact.a,contact.a,t('接着済み'))}${faceSVG(contact.b,contact.a,t('取り付け中'),$('why').open&&contact.patterns?contact.expected:null)}</div><p class="muted">${t('この面: {result}',{result:contact.ok?t('適合'):contact.patterns?t('矢印の向きが違います'):t('模様が違います')})}</p>`;
+    }else $('compare-content').innerHTML=`<p class="muted">${motion?t('位置と向きを調整中…'):t('面を選ぶと、二つの矢印がここに並びます。')}</p>`;
+    const other=contact&&contact.a.ref!==s.ref;
+    $('rotate-left').hidden=!!other;$('rotate-right').hidden=!!other;$('return-face').hidden=!other;
+    for(const id of ['rotate-left','rotate-right'])$(id).disabled=!s.op||!s.pending||inspecting;
+    $('status').textContent=motion?t('位置と向きを調整中…'):s.pending?(s.ref&&!s.op?t('取り付ける部品の面をクリック'):resultMessage(result)):s.tiles.length===8?t('この作業面の材料はすべて使用中です。'):t('接着済み{count}個。残り材料{remaining}個。',{count:s.tiles.length,remaining});
+    if(!motion&&mode==='guided'&&s.op&&result.ok&&!guideMatches([...s.tiles,s.op]))$('status').textContent+=t(' 案内中の完成例とは異なる配置です。');
+    const arrowsOnly=result.contacts.some(arrowMismatch)&&result.contacts.every(c=>c.patterns)&&!result.overlap.length;
+    $('status').className='status '+(!motion&&s.pending?(result.ok?'good':arrowsOnly?'arrow-mismatch':s.op?'bad':''):'');
+    $('why-text').textContent=motion?t('位置と向きを調整中…'):result.overlap.length?t('内部が重なる単位立方体が{count}個あります。別の候補を試してください。',{count:result.overlap.length}):t('選んだ一面だけでなく、触れているすべての面を確認します。');
+    $('contacts').replaceChildren(...(motion?[]:result.contacts).map((c,i)=>{
+      const button=document.createElement('button');button.textContent=t('接触{number} · {a}/{b} · {result}',{number:i+1,a:c.a.motif,b:c.b.motif,result:c.ok?t('適合'):c.patterns?t('矢印違い'):t('模様違い')});
+      button.setAttribute('aria-pressed',String(c.a.ref===(explainRef||s.ref)));
+      button.onclick=()=>{explainRef=c.a.ref;render();};return button;
+    }));
+    $('problem-view').hidden=!!motion||!result.contacts.some(c=>!c.ok);
+    $('attach').hidden=!s.pending;$('attach').disabled=!result.ok||inspecting||!!motion;
   }
   function render(){
     syncMotion();
     const home=$('project-home');if(home)home.href='../?lang='+document.documentElement.lang;
-    const s=state(), result=currentResult(), parent=rules.parent(s.tiles), inspecting=!!inspection;
+    const s=state(), parent=rules.parent(s.tiles), inspecting=!!inspection;
     const remaining=8-s.tiles.length-Number(s.pending);
     const inGuide=mode==='guided'&&guideMatches();
     $('level').textContent=t('階層 {level} · 基準長 {scale}倍',{level:s.level,scale:2**s.level});
@@ -106,24 +133,7 @@
     const a=boundary.find(f=>f.ref===s.ref);
     setOptions($('candidate'),list.map(c=>[poseKey(c.p),t('{motif} · 面{face} · 矢印{arrow}{overlap}',{motif:c.motif,face:c.face+1,arrow:arrowName(rules.placedFaces(c.p)[c.face].u,a),overlap:c.result.overlap.length?t(' · 重なり'):''})]),s.op?poseKey(s.op):'');
     $('candidate-note').textContent=allFaces?t('全模様を表示中。模様が違う候補も調べられます。'):t('組み合わせ可能な模様を優先。候補を選ぶと3D上の位置も変わります。');
-    const contact=chosenContact(result);
-    if(contact){
-      $('compare-content').innerHTML=`<div class="face-pair">${faceSVG(contact.a,contact.a,t('接着済み'))}${faceSVG(contact.b,contact.a,t('取り付け中'),$('why').open&&contact.patterns?contact.expected:null)}</div><p class="muted">${t('この面: {result}',{result:contact.ok?t('適合'):contact.patterns?t('矢印の向きが違います'):t('模様が違います')})}</p>`;
-    }else $('compare-content').innerHTML=`<p class="muted">${t('面を選ぶと、二つの矢印がここに並びます。')}</p>`;
-    const other=contact&&contact.a.ref!==s.ref;
-    $('rotate-left').hidden=!!other;$('rotate-right').hidden=!!other;$('return-face').hidden=!other;
-    for(const id of ['rotate-left','rotate-right'])$(id).disabled=!s.op||!s.pending||inspecting;
-    $('status').textContent=s.pending?(s.ref&&!s.op?t('取り付ける部品の面をクリック'):resultMessage(result)):s.tiles.length===8?t('この作業面の材料はすべて使用中です。'):t('接着済み{count}個。残り材料{remaining}個。',{count:s.tiles.length,remaining});
-    if(mode==='guided'&&s.op&&result.ok&&!guideMatches([...s.tiles,s.op]))$('status').textContent+=t(' 案内中の完成例とは異なる配置です。');
-    $('status').className='status '+(s.pending?(result.ok?'good':s.op?'bad':''):'');
-    $('why-text').textContent=result.overlap.length?t('内部が重なる単位立方体が{count}個あります。別の候補を試してください。',{count:result.overlap.length}):t('選んだ一面だけでなく、触れているすべての面を確認します。');
-    $('contacts').replaceChildren(...result.contacts.map((c,i)=>{
-      const button=document.createElement('button');button.textContent=t('接触{number} · {a}/{b} · {result}',{number:i+1,a:c.a.motif,b:c.b.motif,result:c.ok?t('適合'):c.patterns?t('矢印違い'):t('模様違い')});
-      button.setAttribute('aria-pressed',String(c.a.ref===(explainRef||s.ref)));
-      button.onclick=()=>{explainRef=c.a.ref;render();};return button;
-    }));
-    $('problem-view').hidden=!result.contacts.some(c=>!c.ok);
-    $('attach').hidden=!s.pending;$('attach').disabled=!result.ok||inspecting||!!motion;
+    renderContactFeedback();
     $('add').hidden=s.pending;$('add').disabled=s.tiles.length>=8||inspecting;
     $('cancel').hidden=!s.pending;$('cancel').disabled=inspecting;
     $('hint').hidden=mode!=='guided';$('hint').disabled=inspecting||!inGuide||s.tiles.length>=8;
@@ -139,7 +149,7 @@
   let motion=null,motionState=null,motionPausedAt=null;
   function motionSample(){return motion?ChairMotion.sample(motion,(motionPausedAt??performance.now())-motion.started):null;}
   function clearMotion(){motion=null;motionState=null;motionPausedAt=null;}
-  function finishMotion(){motion=null;motionPausedAt=null;draw();}
+  function finishMotion(){motion=null;motionPausedAt=null;renderContactFeedback();draw();}
   function pauseMotion(){if(motion&&motionPausedAt===null)motionPausedAt=performance.now();draw();}
   function resumeMotion(){if(motion&&motionPausedAt!==null)motion.started+=performance.now()-motionPausedAt;motionPausedAt=null;draw();}
   function syncMotion(){
@@ -170,7 +180,8 @@
     picker.classList.toggle('dragging',!!pieceDrag?.moved);
     canvas.dataset.phase=phase;
     canvas.dataset.effect=phase?(panelActive()?'panel':pulse?'block':''):'';
-    canvas.dataset.motion=motionSample()?.phase||'';
+    // Keep the last phase until draw settles both the scene and contact feedback.
+    canvas.dataset.motion=motion?(motionSample().phase||motion.segments.at(-1).phase):'';
     canvas.style.cursor=drag?.moved?'grabbing':sceneHover?'pointer':'grab';
     if((pulse||motion&&motionPausedAt===null)&&!reducedMotion.matches&&!document.hidden){
       if(!effectFrame)effectFrame=requestAnimationFrame(animateEffects);
@@ -209,14 +220,25 @@
     return target;
   }
   function polygon(points,fill,stroke,width=1){ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.closePath();ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke();}
+  function drawFaceArrow(f,emphasized=false){
+    const p=project(f.center),end=project(add(f.center,mul(f.u,(f.scale||1)*.27)));
+    const dx=end[0]-p[0],dy=end[1]-p[1],len=Math.hypot(dx,dy)||1;
+    ctx.save();ctx.strokeStyle=emphasized?'#a12e27':'#173f3d';ctx.lineWidth=emphasized?3:1.7;
+    if(emphasized){ctx.shadowColor='#f0b9b3';ctx.shadowBlur=5;}
+    ctx.beginPath();ctx.moveTo(p[0]-dx*.15,p[1]-dy*.15);ctx.lineTo(end[0],end[1]);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(end[0]-dx/len*5+dy/len*3,end[1]-dy/len*5-dx/len*3);ctx.lineTo(end[0],end[1]);ctx.lineTo(end[0]-dx/len*5-dy/len*3,end[1]-dy/len*5+dx/len*3);ctx.stroke();ctx.restore();
+    return {p,dx,dy};
+  }
   function draw(){
-    if(motion&&!motionSample().phase){motion=null;motionPausedAt=null;}
+    if(motion&&!motionSample().phase){motion=null;motionPausedAt=null;renderContactFeedback();}
     $('attach').disabled=!!motion||!!inspection||!currentResult().ok;
     const w=canvas.clientWidth,h=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);
     if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}
     ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);hitFaces=[];
     const ground=project([0,0,-2.5]);ctx.fillStyle='#526b6211';ctx.beginPath();ctx.ellipse(ground[0],ground[1],w*.28,h*.075,0,0,Math.PI*2);ctx.fill();
-    const result=currentResult(),bad=new Set(result.contacts.filter(c=>!c.ok).map(c=>c.a.ref));
+    const result=currentResult(),showFeedback=!motion&&!inspection;
+    const contacts=showFeedback?result.contacts:[];
+    const targetContacts=new Map(contacts.map(c=>[c.a.ref,c])),movingContacts=new Map(contacts.map(c=>[c.b.id,c]));
     const faces=sceneFaces().filter(f=>view(f.n)[2]>.001).map(f=>{
       const center=mul(f.c,.5),u=mul(f.u,(f.scale||1)*.5),v=mul(cross(f.n,f.u),(f.scale||1)*.5);
       const corners=[[-1,-1],[1,-1],[1,1],[-1,1]].map(([a,b])=>add(center,add(mul(u,a),mul(v,b))));
@@ -227,11 +249,13 @@
     const underPointer=scenePointer&&!drag?.moved?faceAt(scenePointer.x-rect.left,scenePointer.y-rect.top):null;
     sceneHover=activeFace(underPointer)?underPointer:null;
     const pulse=syncEffects(),glow=reducedMotion.matches?.16:.09+.15*(.5+.5*Math.sin(performance.now()*Math.PI/1400));
+    const mismatchFaces=[];
     for(const f of faces){
       const selected=f.target&&(f.ref===state().ref||f.ref===highlight||f.ref===explainRef)||f.moving&&f.id===movingFaceId();
-      const issue=f.target&&bad.has(f.ref);
+      const contact=f.target?targetContacts.get(f.ref):f.moving?movingContacts.get(f.id):null;
+      const issue=contact&&!contact.ok;
       ctx.globalAlpha=f.moving?.67:1;
-      polygon(f.points,f.moving?(result.overlap.length?'#e1a39a':'#efc17e'):colors[Math.max(0,f.tile)%colors.length],selected?'#075c61':issue?'#bd4236':'#486b6270',selected?3:issue?2:1);
+      polygon(f.points,f.moving?(showFeedback&&result.overlap.length?'#e1a39a':'#efc17e'):colors[Math.max(0,f.tile)%colors.length],selected?'#075c61':issue?'#bd4236':'#486b6270',selected?3:issue?2:1);
       ctx.globalAlpha=1;
       if(activeFace(f)){
         const hovered=f===sceneHover||f.moving&&(f.id===pickerHover||f.id===pickerFocus);
@@ -241,15 +265,24 @@
           ctx.restore();
         }
       }
+      if(issue)mismatchFaces.push({f,selected,symbolMismatch:!contact.patterns});
       if(!f.unmarked){
-        const p=project(f.center),end=project(add(f.center,mul(f.u,(f.scale||1)*.27)));
-        const dx=end[0]-p[0],dy=end[1]-p[1],len=Math.hypot(dx,dy)||1;
-        ctx.strokeStyle='#173f3d';ctx.lineWidth=1.7;ctx.beginPath();ctx.moveTo(p[0]-dx*.15,p[1]-dy*.15);ctx.lineTo(end[0],end[1]);ctx.stroke();
-        ctx.beginPath();ctx.moveTo(end[0]-dx/len*5+dy/len*3,end[1]-dy/len*5-dx/len*3);ctx.lineTo(end[0],end[1]);ctx.lineTo(end[0]-dx/len*5-dy/len*3,end[1]-dy/len*5+dx/len*3);ctx.stroke();
+        const {p,dx,dy}=drawFaceArrow(f);
         ctx.font='600 11px system-ui';ctx.textAlign='center';ctx.fillStyle='#163d38';ctx.fillText(f.motif,p[0]-dx*.65,p[1]-dy*.65+3);
       }
     }
-    if(result.overlap.length&&state().op&&!inspection){ctx.fillStyle='#a13730';ctx.font='600 13px system-ui';ctx.fillText(t('重なりあり · この位置には接着できません'),w/2,h-45);}
+    // Contact annotations stay visible through the pending piece and over hover.
+    for(const {f,selected,symbolMismatch} of mismatchFaces){
+      ctx.save();
+      if(symbolMismatch){
+        polygon(f.points,'rgba(230,100,90,.25)','#b43b32',selected?3.5:2.5);
+      }else{
+        ctx.setLineDash([5,3]);
+        polygon(f.points,'rgba(230,100,90,.25)','#b43b32',selected?3.5:2.5);
+      }
+      ctx.restore();if(!symbolMismatch)drawFaceArrow(f,true);
+    }
+    if(showFeedback&&result.overlap.length&&state().op){ctx.fillStyle='#a13730';ctx.font='600 13px system-ui';ctx.fillText(t('重なりあり · この位置には接着できません'),w/2,h-45);}
   }
   function pointInside(x,y,points){let inside=false;for(let i=0,j=points.length-1;i<points.length;j=i++){
     const a=points[i],b=points[j];if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])inside=!inside;

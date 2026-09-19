@@ -242,6 +242,7 @@
     "ブロックの内部が重なっています": "The block interiors overlap",
     "{total}面中 {bad}面が不適合": "Mismatched faces: {bad} of {total}",
     "接触{count}面すべて適合": "All {count} contact faces match",
-    "{step} / {total}": "{step} / {total}"
+    "{step} / {total}": "{step} / {total}",
+    "位置と向きを調整中…": "Adjusting position and orientation…"
   }
 }
