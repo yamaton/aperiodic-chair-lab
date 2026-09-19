@@ -21,6 +21,25 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Valid contact feedback added locally (19 September):** the user's follow-up
+confirmed that valid unselected contacts had no dedicated overlay. All valid
+preview contacts now have green solid borders and a light green tint, visible
+from either contacting side through the pieces and selection/hover. The selected
+face retains a thicker border. Invalid overlays are drawn after green overlays
+so shared edges retain the warning. Per-face green can coexist with invalid
+contacts and overlap; overall attachment rules are unchanged. Motion/inspection
+withhold all contact overlays, and attachment removes the preview effects.
+The expanded `verify-arrow-effects.cjs` checks visible contact-side counts from
+opposite views, four valid contacts, mixed validity/overlap, hover/focus, completion
+of rotation, and attachment/Undo. Sources and standalone HTML are updated locally.
+All six browser suites passed on the rebuilt standalone HTML, including the
+expanded contact-effect checks. Two independent agents subsequently reviewed this
+follow-up; see the addendum in `docs/assembly/EFFECT_REVIEW.md`. No reproducible
+defect was reported. Rendering checks covered 40 frames/121 contact borders across
+base and parent levels; state checks covered 151 assertions across two levels,
+rotation, history and inspection. The user requested a local commit, with this
+review completed first. Publication remains pending.
+
 **Arrow-only mismatch effect added locally (19 September):** pending contacts
 with compatible motifs (A/A or B/C) but incompatible arrows now have red
 dashed borders, a light face tint and thick emphasized arrows in the main 3D

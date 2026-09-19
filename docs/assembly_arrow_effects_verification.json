@@ -1,9 +1,14 @@
 {
   "status": "pass",
-  "checked_at": "2026-09-19T18:02:35.603Z",
+  "checked_at": "2026-09-19T18:40:18.902Z",
   "offline": true,
-  "html_sha256": "fce6cf71f9bf4fc1e65e1e6d87279d56e1555e9aada82711f54b3f7895ff0486",
+  "html_sha256": "13d5d98e4f0897ab87f39ad51a007260d2efa20d3d99b7edae68356e98f1eb4e",
   "checks": [
+    "all valid contact faces have green borders including unselected faces",
+    "both camera sides preserve per-contact green and red feedback",
+    "matching feedback survives hover and focus without state changes",
+    "valid contacts remain green alongside failures and overlap",
+    "attachment clears preview green and Undo restores it",
     "A/A and B/C arrow-only mismatch",
     "all six invalid motif pairings show red panels and comparison",
     "B-target/A-picker click, focus and hover regression",

@@ -249,7 +249,7 @@
     const underPointer=scenePointer&&!drag?.moved?faceAt(scenePointer.x-rect.left,scenePointer.y-rect.top):null;
     sceneHover=activeFace(underPointer)?underPointer:null;
     const pulse=syncEffects(),glow=reducedMotion.matches?.16:.09+.15*(.5+.5*Math.sin(performance.now()*Math.PI/1400));
-    const mismatchFaces=[];
+    const contactFaces=[];
     for(const f of faces){
       const selected=f.target&&(f.ref===state().ref||f.ref===highlight||f.ref===explainRef)||f.moving&&f.id===movingFaceId();
       const contact=f.target?targetContacts.get(f.ref):f.moving?movingContacts.get(f.id):null;
@@ -265,22 +265,25 @@
           ctx.restore();
         }
       }
-      if(issue)mismatchFaces.push({f,selected,symbolMismatch:!contact.patterns});
+      if(contact)contactFaces.push({f,selected,contact});
       if(!f.unmarked){
         const {p,dx,dy}=drawFaceArrow(f);
         ctx.font='600 11px system-ui';ctx.textAlign='center';ctx.fillStyle='#163d38';ctx.fillText(f.motif,p[0]-dx*.65,p[1]-dy*.65+3);
       }
     }
-    // Contact annotations stay visible through the pending piece and over hover.
-    for(const {f,selected,symbolMismatch} of mismatchFaces){
+    // Show every contact through the pieces and hover; keep warnings above matches.
+    contactFaces.sort((a,b)=>Number(b.contact.ok)-Number(a.contact.ok));
+    for(const {f,selected,contact} of contactFaces){
       ctx.save();
-      if(symbolMismatch){
+      if(contact.ok){
+        polygon(f.points,'rgba(80,190,135,.24)','#16845b',selected?3.5:2.5);
+      }else if(!contact.patterns){
         polygon(f.points,'rgba(230,100,90,.25)','#b43b32',selected?3.5:2.5);
       }else{
         ctx.setLineDash([5,3]);
         polygon(f.points,'rgba(230,100,90,.25)','#b43b32',selected?3.5:2.5);
       }
-      ctx.restore();if(!symbolMismatch)drawFaceArrow(f,true);
+      ctx.restore();if(arrowMismatch(contact))drawFaceArrow(f,true);
     }
     if(showFeedback&&result.overlap.length&&state().op){ctx.fillStyle='#a13730';ctx.font='600 13px system-ui';ctx.fillText(t('重なりあり · この位置には接着できません'),w/2,h-45);}
   }
