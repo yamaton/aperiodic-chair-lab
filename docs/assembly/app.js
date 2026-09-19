@@ -1,7 +1,7 @@
 /* Offline interaction prototype; rendering never decides contact validity. */
 (() => {
   'use strict';
-  const E=ChairEngine, rules=E.create(CHAIR_DATA), $=id=>document.getElementById(id);
+  const E=ChairEngine, F=ChairFeedback, rules=E.create(CHAIR_DATA), $=id=>document.getElementById(id);
   const {t}=ChairI18n, translateTemplate=ChairI18n.bind(document.documentElement);
   ChairI18n.setLanguage(window.CHAIR_DEMO?parent.document.documentElement.lang:ChairI18n.initialLanguage());
   $('language').value=document.documentElement.lang;translateTemplate();
@@ -28,7 +28,6 @@
     return bad?t('{total}面中 {bad}面が不適合',{total:result.contacts.length,bad}):t('接触{count}面すべて適合',{count:result.contacts.length});
   }
   function chosenContact(result){return result.contacts.find(c=>c.a.ref===(explainRef||state().ref))||result.contacts[0];}
-  const arrowMismatch=contact=>contact.patterns&&!contact.arrow;
   function guideMatches(tiles=state().tiles){return rules.onGoal(tiles,state().anchor);}
   function setOptions(select,options,value){
     const signature=JSON.stringify(options);
@@ -74,19 +73,19 @@
     $('compare-content').style.minHeight=motion?Math.max(150,$('compare-content').getBoundingClientRect().height)+'px':'';
     const contact=motion?null:chosenContact(result);
     if(contact){
-      const effect=inspecting?'':!contact.patterns?' symbol-mismatch':arrowMismatch(contact)?' arrow-mismatch':'';
-      $('compare-content').innerHTML=`<div class="face-pair${effect}">${faceSVG(contact.a,contact.a,t('接着済み'))}${faceSVG(contact.b,contact.a,t('取り付け中'),$('why').open&&contact.patterns?contact.expected:null)}</div><p class="muted">${t('この面: {result}',{result:contact.ok?t('適合'):contact.patterns?t('矢印の向きが違います'):t('模様が違います')})}</p>`;
+      const appearance=F.describe(contact);
+      const effect=!inspecting&&appearance.className?' '+appearance.className:'';
+      $('compare-content').innerHTML=`<div class="face-pair${effect}">${faceSVG(contact.a,contact.a,t('接着済み'))}${faceSVG(contact.b,contact.a,t('取り付け中'),$('why').open&&contact.patterns?contact.expected:null)}</div><p class="muted">${t('この面: {result}',{result:t(appearance.detail)})}</p>`;
     }else $('compare-content').innerHTML=`<p class="muted">${motion?t('位置と向きを調整中…'):t('面を選ぶと、二つの矢印がここに並びます。')}</p>`;
     const other=contact&&contact.a.ref!==s.ref;
     $('rotate-left').hidden=!!other;$('rotate-right').hidden=!!other;$('return-face').hidden=!other;
     for(const id of ['rotate-left','rotate-right'])$(id).disabled=!s.op||!s.pending||inspecting;
     $('status').textContent=motion?t('位置と向きを調整中…'):s.pending?(s.ref&&!s.op?t('取り付ける部品の面をクリック'):resultMessage(result)):s.tiles.length===8?t('この作業面の材料はすべて使用中です。'):t('接着済み{count}個。残り材料{remaining}個。',{count:s.tiles.length,remaining});
     if(!motion&&mode==='guided'&&s.op&&result.ok&&!guideMatches([...s.tiles,s.op]))$('status').textContent+=t(' 案内中の完成例とは異なる配置です。');
-    const arrowsOnly=result.contacts.some(arrowMismatch)&&result.contacts.every(c=>c.patterns)&&!result.overlap.length;
-    $('status').className='status '+(!motion&&s.pending?(result.ok?'good':arrowsOnly?'arrow-mismatch':s.op?'bad':''):'');
+    $('status').className='status '+(!motion&&s.pending?(s.op?F.status(result):''):'');
     $('why-text').textContent=motion?t('位置と向きを調整中…'):result.overlap.length?t('内部が重なる単位立方体が{count}個あります。別の候補を試してください。',{count:result.overlap.length}):t('選んだ一面だけでなく、触れているすべての面を確認します。');
     $('contacts').replaceChildren(...(motion?[]:result.contacts).map((c,i)=>{
-      const button=document.createElement('button');button.textContent=t('接触{number} · {a}/{b} · {result}',{number:i+1,a:c.a.motif,b:c.b.motif,result:c.ok?t('適合'):c.patterns?t('矢印違い'):t('模様違い')});
+      const button=document.createElement('button');button.textContent=t('接触{number} · {a}/{b} · {result}',{number:i+1,a:c.a.motif,b:c.b.motif,result:t(F.describe(c).label)});
       button.setAttribute('aria-pressed',String(c.a.ref===(explainRef||s.ref)));
       button.onclick=()=>{explainRef=c.a.ref;render();};return button;
     }));
@@ -145,6 +144,14 @@
 
   // A simple orthographic canvas renderer with face hit testing; no network/GPU dependencies.
   const canvas=$('scene'),ctx=canvas.getContext('2d');
+  // Read the shared CSS palette once; camera/animation frames do not read styles.
+  const contactCSS=getComputedStyle(document.documentElement);
+  const contactColor=name=>contactCSS.getPropertyValue('--contact-'+name).trim();
+  const contactPalette={
+    goodBorder:contactColor('good-border'), goodFill:contactColor('good-fill'),
+    badBorder:contactColor('bad-border'), badFill:contactColor('bad-fill'),
+    emphasis:contactColor('emphasis'), glow:contactColor('glow'),
+  };
   const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
   let motion=null,motionState=null,motionPausedAt=null;
   function motionSample(){return motion?ChairMotion.sample(motion,(motionPausedAt??performance.now())-motion.started):null;}
@@ -223,8 +230,8 @@
   function drawFaceArrow(f,emphasized=false){
     const p=project(f.center),end=project(add(f.center,mul(f.u,(f.scale||1)*.27)));
     const dx=end[0]-p[0],dy=end[1]-p[1],len=Math.hypot(dx,dy)||1;
-    ctx.save();ctx.strokeStyle=emphasized?'#a12e27':'#173f3d';ctx.lineWidth=emphasized?3:1.7;
-    if(emphasized){ctx.shadowColor='#f0b9b3';ctx.shadowBlur=5;}
+    ctx.save();ctx.strokeStyle=emphasized?contactPalette.emphasis:'#173f3d';ctx.lineWidth=emphasized?3:1.7;
+    if(emphasized){ctx.shadowColor=contactPalette.glow;ctx.shadowBlur=5;}
     ctx.beginPath();ctx.moveTo(p[0]-dx*.15,p[1]-dy*.15);ctx.lineTo(end[0],end[1]);ctx.stroke();
     ctx.beginPath();ctx.moveTo(end[0]-dx/len*5+dy/len*3,end[1]-dy/len*5-dx/len*3);ctx.lineTo(end[0],end[1]);ctx.lineTo(end[0]-dx/len*5-dy/len*3,end[1]-dy/len*5+dx/len*3);ctx.stroke();ctx.restore();
     return {p,dx,dy};
@@ -265,25 +272,21 @@
           ctx.restore();
         }
       }
-      if(contact)contactFaces.push({f,selected,contact});
+      if(contact)contactFaces.push({f,selected,contact,appearance:F.describe(contact)});
       if(!f.unmarked){
         const {p,dx,dy}=drawFaceArrow(f);
         ctx.font='600 11px system-ui';ctx.textAlign='center';ctx.fillStyle='#163d38';ctx.fillText(f.motif,p[0]-dx*.65,p[1]-dy*.65+3);
       }
     }
     // Show every contact through the pieces and hover; keep warnings above matches.
-    contactFaces.sort((a,b)=>Number(b.contact.ok)-Number(a.contact.ok));
-    for(const {f,selected,contact} of contactFaces){
+    contactFaces.sort((a,b)=>a.appearance.priority-b.appearance.priority);
+    for(const {f,selected,contact,appearance} of contactFaces){
       ctx.save();
-      if(contact.ok){
-        polygon(f.points,'rgba(80,190,135,.24)','#16845b',selected?3.5:2.5);
-      }else if(!contact.patterns){
-        polygon(f.points,'rgba(230,100,90,.25)','#b43b32',selected?3.5:2.5);
-      }else{
-        ctx.setLineDash([5,3]);
-        polygon(f.points,'rgba(230,100,90,.25)','#b43b32',selected?3.5:2.5);
-      }
-      ctx.restore();if(arrowMismatch(contact))drawFaceArrow(f,true);
+      if(appearance.dashed)ctx.setLineDash([5,3]);
+      polygon(f.points,contact.ok?contactPalette.goodFill:contactPalette.badFill,
+        contact.ok?contactPalette.goodBorder:contactPalette.badBorder,selected?3.5:2.5);
+      ctx.restore();
+      if(appearance.dashed)drawFaceArrow(f,true);
     }
     if(showFeedback&&result.overlap.length&&state().op){ctx.fillStyle='#a13730';ctx.font='600 13px system-ui';ctx.fillText(t('重なりあり · この位置には接着できません'),w/2,h-45);}
   }

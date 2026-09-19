@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "checked_at": "2026-09-19T18:40:18.902Z",
+  "checked_at": "2026-09-19T19:02:12.863Z",
   "offline": true,
-  "html_sha256": "13d5d98e4f0897ab87f39ad51a007260d2efa20d3d99b7edae68356e98f1eb4e",
+  "html_sha256": "a8a51cc33833f2bfdc2e6a13bd92ae42d192a55aaed97d4b6c9266e6556dc59e",
   "checks": [
     "all valid contact faces have green borders including unselected faces",
     "both camera sides preserve per-contact green and red feedback",

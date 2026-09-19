@@ -21,6 +21,14 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Interactive refactoring in progress (19 September):** the user authorized
+sequential refactoring with an independent review before each local commit.
+Stage 1 extracts contact presentation to `feedback.js` and shares CSS colors with
+Canvas. Six browser suites passed; the reviewer confirmed 54 equivalent
+classifications with no required fixes. See `docs/assembly/REFACTOR_REVIEW.md`.
+Next: state-update/render sequencing and repeated frame calculations, then shared
+browser-check setup. Keep exact engine/history behavior and standalone packaging.
+
 **Valid contact feedback added locally (19 September):** the user's follow-up
 confirmed that valid unselected contacts had no dedicated overlay. All valid
 preview contacts now have green solid borders and a light green tint, visible

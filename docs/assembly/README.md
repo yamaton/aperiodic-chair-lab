@@ -99,6 +99,7 @@ uv run --locked python -m http.server 8765 --bind 127.0.0.1 --directory docs
 | `engine.js` | 格子・回転・全共有面の判定、親の認識、案内配置、履歴 |
 | `app.js` | 操作と状態の接続、Canvasの描画、比較図、親子の閲覧 |
 | `motion.js` | 表示専用の離脱・剛体回転・接近の補間 |
+| `feedback.js` | 接触結果の表示分類と全体ステータス。色はCSSの共通変数から初期化時に取得 |
 | `i18n.js` | 共通の翻訳処理と画面テンプレートの接続 |
 | `../locales/*.json`, `../site-language.js` | 言語別の翻訳、表示方向、値の差し込み、言語設定と保存 |
 | `guide.html` | 図付きの短い操作ガイド。各言語の訳文を翻訳辞書に収録し、同じHTMLに内蔵 |

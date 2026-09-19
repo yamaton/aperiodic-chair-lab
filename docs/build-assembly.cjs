@@ -13,7 +13,7 @@ html=html.replace('<!-- GUIDE -->',()=>fs.readFileSync(input+'guide.html','utf8'
 html=html.replaceAll('APERIODIC_CHAIR_TUTORIAL.html',tutorialHref);
 if(homeHref)html=html.replace('<p class="eyebrow">APERIODIC CHAIR LAB · INTERACTIVE PROTOTYPE</p>',`<a id="project-home" class="eyebrow" href="${homeHref}" aria-label="プロジェクトのトップへ">APERIODIC CHAIR LAB</a>`);
 html=require('./build-locales.cjs').embedLocales(html,'assembly');
-for(const [marker,file] of [['STYLE','style.css'],['ENGINE','engine.js'],['MOTION','motion.js'],['I18N','i18n.js'],['APP','app.js']])
+for(const [marker,file] of [['STYLE','style.css'],['ENGINE','engine.js'],['MOTION','motion.js'],['I18N','i18n.js'],['FEEDBACK','feedback.js'],['APP','app.js']])
   html=html.replace(`/* ${marker} */`,()=>fs.readFileSync(input+file,'utf8'));
 html=html.replace('/* DATA */',()=>`const CHAIR_DATA=${JSON.stringify(data)};`);
 // An isolated copy uses the same renderer, rules and handlers; no recursive demo.
