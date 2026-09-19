@@ -23,6 +23,9 @@ the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
 face matching, a fixed assembly plus one moving piece, undo, and parent/child
 exploration. Its interface supports [Japanese, English and Simplified Chinese](locales/README.md) and includes a short illustrated
 “How to play” guide; the longer mathematics tutorial is a separate resource.
+After grouping, a face experiment compares the four child-panel contacts with
+the effective parent symbol, using quarter-turn controls and a Boolean-product
+equation. [Aligned panel checks and UI record](assembly_parent_verification.json).
 The guide also offers a cursor demonstration with pause, step and replay.
 Selecting both faces animates separation (for an existing preview), rotation,
 and approach; bonding still requires the explicit Attach button.

@@ -51,3 +51,26 @@
   --contact-emphasis: #a12e27;
   --contact-glow: #f0b9b3;
 }
+
+/* Four-panel substitution and its contact predicate, in a shared face frame. */
+#parent-lab{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+#parent-lab h3{font-size:15px;margin:10px 0 6px}
+#parent-lab h4{font-size:12px;text-align:center;margin:8px 0}
+#parent-lab p{font-size:12px;margin:8px 0}
+.parent-word{display:flex;align-items:center;justify-content:center;gap:18px;direction:ltr;margin:14px 0 20px}
+#parent-word-diagram{width:138px}.parent-word>strong{font-size:30px}
+.parent-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;direction:ltr}
+.parent-coarse{display:grid;justify-items:center;margin:6px 0}.parent-coarse strong{font-size:27px;border:1px solid;border-radius:6px;padding:0 14px}
+.parent-coarse .parent-good{color:#116854;background:#eef8f1}.parent-coarse .parent-bad{color:#a23f34;background:#fff5f2}
+#parent-lab svg{display:block;width:100%;height:auto}
+.parent-glyph{font:600 24px system-ui;fill:#213c45}.parent-mark{font:12px system-ui;fill:#213c45}
+.parent-verdict{font:10px system-ui;fill:#213c45}
+.parent-neutral rect{fill:#edf3ea;stroke:#8aa999}
+.parent-good rect{fill:#e0f2e5;stroke:var(--contact-good-border);stroke-width:2}
+.parent-bad rect{fill:#fff0ed;stroke:var(--contact-bad-border);stroke-width:2;stroke-dasharray:4 2}
+#parent-equivalence{padding:8px 12px;margin:12px 0;border:1px solid;border-radius:8px;font-weight:600;overflow-wrap:anywhere}
+#parent-equivalence.parent-good{color:#116854;background:#eef8f1}
+#parent-equivalence.parent-bad{color:#a23f34;background:#fff5f2}
+#parent-dictionary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center;direction:ltr}
+#parent-dictionary strong{font-size:16px}.parent-next{margin-top:16px}
+@media(max-width:750px){.studying-parent .stage{position:static}}

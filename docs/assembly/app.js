@@ -9,7 +9,16 @@
   const initial=()=>({tiles:[{t:[0,0,0],r:I.slice()}],pending:true,op:null,ref:'',level:0,
     grouped:false,unit:null,anchor:{t:[0,0,0],r:I.slice()}});
   let history=new E.History(initial()), mode='guided', allFaces=false, explainRef=null;
-  let hintStep=0, hintMessage='', highlight=null, parentView='rules', inspection=null;
+  let hintStep=0, hintMessage='', highlight=null, parentView='children', inspection=null;
+  const parentModel=ChairParentRules.create(E,rules);
+  const parentLab=ChairParentLab.create(parentModel,t,(id,focusView)=>{
+    if(focusView){
+      const p=rules.parent(state().tiles),f=parentModel.faces[id];
+      if(p){const n=act(p.r,f.n);pitch=Math.asin(n[2]*.85);yaw=Math.atan2(n[0],n[1]);
+        viewCenter=add(p.t,act(p.r,f.c));zoom=1.1;}
+    }
+    draw();
+  });
   let yaw=.8,pitch=.6, zoom=1, viewCenter=[0,0,0], oldView=null, hitFaces=[];
   let pieceYaw=.8,piecePitch=.6;
   let restartMode=null;
@@ -144,9 +153,11 @@
     const choice=$('inspect-tile').value;
     setOptions($('inspect-tile'),(inspecting?rules.group:s.tiles).map((p,i)=>[String(i),t('部品{number}',{number:i+1})]),choice||'0');
     $('inspection-path').textContent=inspecting?t('作業中の組立')+' → '+inspection.path.map(p=>t('部品{number}の内部',{number:p.tile+1})).join(' → '):'';
-    $('scene-caption').textContent=inspecting?t('各部品自身の座標で内部を表示しています。子の選択は3Dまたは一覧から。接着と履歴の操作は「組立に戻る」で再開できます。'):s.grouped?t('子の境界 → 外周 → 親の有効なルール。形の対応を比べてみましょう。'):t('面をクリックで選択 · ドラッグで視点を回転 · 接着済みの群は固定されています');
+    document.querySelector('.workspace').classList.toggle('studying-parent',s.grouped&&!inspecting);
+    parentLab.render();
+    $('scene-caption').textContent=inspecting?t('各部品自身の座標で内部を表示しています。子の選択は3Dまたは一覧から。接着と履歴の操作は「組立に戻る」で再開できます。'):s.grouped?t('面をクリックすると、対応する4枚と親の記号を比べられます。金色の枠が選んだ面です。'):t('面をクリックで選択 · ドラッグで視点を回転 · 接着済みの群は固定されています');
     $('instruction-title').textContent=inspecting?t('作業を保ったまま、内部を見る'):s.grouped?t('同じルールで、次の階層へ'):parent?t('大きなブロックができました'):!s.pending?t('次の部品を用意する'):s.ref?t('向きを合わせて接着する'):t('取り付けたい面を選ぶ');
-    $('instruction').textContent=inspecting?t('戻るだけで先ほどの操作を再開できます。'):s.grouped?t('親の細かい曲面が拡大コピーになる、という意味ではありません。'):parent?t('8個の位置と向きが、親の配置に一致しました。'):mode==='guided'&&!inGuide?t('案内の完成例とは異なる配置です。Undoで戻るか、自由に組み続けられます。'):s.pending?t('AはA、BはC。矢印の向きも比べてみましょう。'):s.tiles.length===8?t('材料をすべて使用中です。この8個は一つの親の配置ではありません。Undoで組み替えられます。'):t('接着した部品は組立の一部になります。');
+    $('instruction').textContent=inspecting?t('戻るだけで先ほどの操作を再開できます。'):s.grouped?t('まず4枚の接触条件を調べ、親の記号と比べてみましょう。'):parent?t('8個の位置と向きが、親の配置に一致しました。'):mode==='guided'&&!inGuide?t('案内の完成例とは異なる配置です。Undoで戻るか、自由に組み続けられます。'):s.pending?t('AはA、BはC。矢印の向きも比べてみましょう。'):s.tiles.length===8?t('材料をすべて使用中です。この8個は一つの親の配置ではありません。Undoで組み替えられます。'):t('接着した部品は組立の一部になります。');
     const {boundary}=frame;
     $('view-face').disabled=inspecting||!boundary.some(f=>f.ref===(highlight||s.ref));
     setOptions($('target-face'),[['',t('面を選んでください')],...boundary.map(f=>[f.ref,t('部品{piece} · 面{face} {motif} · ({position})',{piece:f.tile+1,face:f.id+1,motif:f.motif,position:mul(f.c,.5).join(', ')})])],s.ref);
@@ -249,9 +260,10 @@
       .map(f=>({...f,c:mul(f.c,.5),scale:.5,ref:`i:${f.tile}`,inspectTile:f.tile,displayOnly:true}));}
     if(s.grouped&&parentView==='rules'){
       const p=rules.parent(s.tiles);
-      return rules.placedFaces({t:[0,0,0],r:p.r}).map(f=>({...f,c:add(mul(f.c,2),mul(p.t,2)),scale:2,ref:'parent',displayOnly:true,tile:0}));
+      return rules.placedFaces({t:[0,0,0],r:p.r}).map(f=>({...f,c:add(mul(f.c,2),mul(p.t,2)),scale:2,ref:'parent',parentFace:f.id,displayOnly:true,tile:0}));
     }
     const target=boundary.map(f=>({...f,target:true,unmarked:s.grouped&&parentView==='shell'}));
+    if(s.grouped){const p=rules.parent(s.tiles);for(const f of target)f.parentFace=parentModel.faceFor(f,p);}
     if(s.pending){
       target.push(...rules.placedFaces(pose).map(f=>({...f,moving:true,tile:-1})));
     }
@@ -320,6 +332,8 @@
         const {p,dx,dy}=drawFaceArrow(f);
         ctx.font='600 11px system-ui';ctx.textAlign='center';ctx.fillStyle='#163d38';ctx.fillText(f.motif,p[0]-dx*.65,p[1]-dy*.65+3);
       }
+      if(s.grouped&&!inspection&&f.parentFace===parentLab.face)
+        polygon(f.points,'rgba(240,189,75,.14)','#9a6417',3);
     }
     // Show every contact through the pieces and hover; keep warnings above matches.
     contactFaces.sort((a,b)=>a.appearance.priority-b.appearance.priority);
@@ -394,7 +408,7 @@
     const rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;
     const f=faceAt(x,y);if(!f)return;
     if(inspection)deeper(f.inspectTile);
-    else if(state().grouped)openInspection();else if(f.moving)selectMovingFace(f.id);else selectTarget(f.ref);
+    else if(state().grouped)parentLab.select(f.parentFace);else if(f.moving)selectMovingFace(f.id);else selectTarget(f.ref);
   });
   canvas.addEventListener('pointercancel',()=>{drag=null;scenePointer=null;draw();});
   canvas.addEventListener('pointerleave',()=>{scenePointer=null;draw();});
@@ -444,7 +458,7 @@
       const fn=d=>{d.pending=true;d.op=hint.p;d.ref=hint.ref;};if(s.pending)adjust(fn);else commit('部品の追加',fn);}
     render();
   };
-  $('group').onclick=()=>{if(!inspection&&rules.parent(state().tiles)){commit('親への集約',s=>{s.grouped=true;});render();}};
+  $('group').onclick=()=>{if(!inspection&&rules.parent(state().tiles)){commit('親への集約',s=>{s.grouped=true;});parentView='children';render();}};
   for(const [id,value] of [['show-boundary','children'],['show-shell','shell'],['show-parent','rules']])$(id).onclick=()=>{parentView=value;render();};
   function makeUnit(s){return {children:rules.group.map(p=>({t:mul(p.t,.5),r:p.r})),childUnit:s.unit};}
   $('promote').onclick=()=>{const p=rules.parent(state().tiles);if(!p||!state().grouped||inspection)return;

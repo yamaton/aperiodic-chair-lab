@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "html_sha256": "3b24abb9e4dccd28cdccfb8e036b47c795f4a80f726a6bcb212955fc61592936",
+  "scope": "Aligned four-panel interfaces and offline UI; not an infinite-tiling proof",
+  "comparisons": 2304,
+  "compatible": 192,
+  "patterns": 3,
+  "selection_rotation_checks": 2304,
+  "layouts": [
+    {
+      "width": 1280,
+      "lang": "ja"
+    },
+    {
+      "width": 1280,
+      "lang": "en"
+    },
+    {
+      "width": 1280,
+      "lang": "zh"
+    },
+    {
+      "width": 320,
+      "lang": "ja"
+    },
+    {
+      "width": 320,
+      "lang": "en"
+    },
+    {
+      "width": 320,
+      "lang": "zh"
+    },
+    {
+      "width": 667,
+      "lang": "ja"
+    },
+    {
+      "width": 667,
+      "lang": "en"
+    },
+    {
+      "width": 667,
+      "lang": "zh"
+    }
+  ],
+  "history_preserved": true,
+  "levels": 2,
+  "page_errors": []
+}

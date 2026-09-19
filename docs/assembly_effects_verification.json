@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-09-19T19:09:27.037Z",
+  "checked_at": "2026-09-19T20:28:56.243Z",
   "status": "pass",
   "offline": true,
-  "html_sha256": "0c037f98a077a561b4e5f7e1dd29326a6a55038b5ef5259a257dbdabc3b4b06f",
+  "html_sha256": "765835a9d6a7bd77e710981aa722f935ad68e36eab1d9543cf6b3d5199500a97",
   "checks": [
     "target and moving-block attention",
     "visible pulse and static panel hover",

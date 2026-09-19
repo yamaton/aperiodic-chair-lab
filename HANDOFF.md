@@ -21,6 +21,35 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Parent four-panel experiment implemented locally (19 September):** the user
+found deflation abrupt and requested an interactive algebraic explanation.
+Grouping now initially retains child markings. Selecting a parent face in 3D
+or the face list highlights its four panels and shows their normalized word
+beside the parent symbol. Choosing the opposing motif and quarter-turns updates
+four panel results and the coarse result together, with a Boolean-product
+equation and the three-pattern dictionary. Opposing panels share one viewing
+frame; the second is viewed through its back. `parent-rules.js` derives words
+from the preserved child boundary, rather than storing a new motif table.
+`parent-lab.js` / `.html` implement read-only choices separate from history.
+Parent face clicks select the experiment; the existing child-inspection button
+still opens interiors. Japanese, English and Simplified Chinese are maintained.
+`node docs/assembly/verify-parent.cjs` checks all 2,304 aligned panel comparisons
+(192 fitting), all 24 rotated selection maps, three languages/screen widths,
+two levels and preserved history. This aligned-panel check does not replace
+the complete macrocontact census, parity argument or physical geometry proof.
+See `docs/assembly/README.md` for operation and reproduction. The user requested
+a local commit of the experiment and language-specific judgments. Publication
+was not requested.
+The engine check and all seven browser suites passed on the initial experiment
+HTML. Desktop and narrow-screen parent diagrams were visually inspected.
+The user's localization follow-up now uses locale-specific judgments on panels:
+Japanese “○ 合う / × 合わない”, English “✓ Match / ✕ No match”, and Chinese
+“✓ 对得上 / ✕ 对不上”. This supersedes the intermediate all-numeric panel labels.
+Equations keep 1/0, with a translated legend linking each judgment to its number.
+Accessible descriptions use the same translated words. Multiplication signs in
+equations retain their arithmetic meaning. The parent and locale suites cover this update;
+the other five browser records refer to the preceding experiment build.
+
 **Interactive refactoring completed locally (19 September):** the user authorized
 sequential refactoring with an independent review before each local commit.
 Stage 1 extracts contact presentation to `feedback.js` and shares CSS colors with

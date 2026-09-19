@@ -1,0 +1,16 @@
+<section id="parent-lab" aria-labelledby="parent-lab-title">
+<h3 id="parent-lab-title">4枚を、ひとつの記号で読む</h3>
+<p class="muted">大きな面をクリックして、外側の4枚を選びます。同じ配置を、親の模様と矢印で表せます。</p>
+<label for="parent-face">調べる親の面</label><select id="parent-face"></select>
+<p class="muted">選んだ面は、親の矢印が右を向くようにそろえています。</p>
+<div class="parent-word"><div id="parent-word-diagram"></div><span aria-hidden="true">⇔</span><strong id="parent-word-symbol"></strong></div>
+<h3>相手を回して、接触条件を比べる</h3>
+<label for="parent-partner">相手の親の模様</label><select id="parent-partner"><option>A</option><option>B</option><option>C</option></select>
+<p class="muted">両面を同じ向きから見ています。相手の面は裏側から透かして表示します。</p>
+<p class="muted">○ 合う → 1、× 合わない → 0。m₁〜m₄は、4組それぞれの判定です。</p>
+<div class="parent-pair"><div><h4>選んだ4枚</h4><div id="parent-left"></div><div class="parent-coarse"><span aria-hidden="true">⇕</span><strong id="parent-left-symbol"></strong></div></div><div><h4>相手の4枚</h4><div id="parent-right"></div><div class="parent-coarse"><span aria-hidden="true">⇕</span><strong id="parent-right-symbol"></strong></div></div></div>
+<div class="rotation"><button id="parent-turn-left">↶ この図で左へ90°</button><button id="parent-turn-right">↷ この図で右へ90°</button></div>
+<div id="parent-equivalence" role="status" aria-live="polite"></div>
+<p class="muted">4組すべてが合う ⇔ 親の模様と矢印が合う。相手や向きを変えても、この対応は保たれます。</p>
+<details><summary>式と3種類の対応を見る</summary><p>m₁ × m₂ × m₃ × m₄ = m親。4組の判定を掛け合わせた結果が、親の判定です。</p><div id="parent-dictionary"></div><p class="muted">対応表は各面を外側から見て、親の矢印を右にそろえています。4枚の四隅を合わせた接触を比較します。ブロック全体の接着には、ほかの接触面と重なりも確認します。</p></details>
+</section>
