@@ -1,6 +1,10 @@
 {
-  "checked_at": "2026-09-19T16:05:41.637Z",
+  "checked_at": "2026-09-19T16:38:29.162Z",
   "scope": "Prototype presentation and scripted interactions; not player testing or a mathematical proof",
+  "hint_checks": [
+    "same/different target reselection clears stale attachment advice",
+    "hint sequence restarts without moving the unselected piece"
+  ],
   "guide_checks": [
     "four-step Japanese/English operation guide",
     "desktop/mobile fit",
@@ -22,7 +26,7 @@
     "blocked storage fallback"
   ],
   "status": "pass",
-  "html_sha256": "0c188299686fb3353e15b14fd2df0ada98810e76eb458fa2e005b1002130a5bd",
+  "html_sha256": "8c8dfd06a7f586a28c19a7b92f8a9c95afc8ac07debfde4e19724da888b4e4be",
   "offline": true,
   "levels_completed": 2,
   "layouts": [
@@ -55,9 +59,5 @@
     "other-contact rotation guard",
     "mobile controls with visible model"
   ],
-  "page_errors": [],
-  "hint_checks": [
-    "same/different target reselection clears stale attachment advice",
-    "hint sequence restarts without moving the unselected piece"
-  ]
+  "page_errors": []
 }

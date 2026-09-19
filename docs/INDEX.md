@@ -24,6 +24,8 @@ face matching, a fixed assembly plus one moving piece, undo, and parent/child
 exploration. Its interface supports [Japanese, English and Simplified Chinese](locales/README.md) and includes a short illustrated
 “How to play” guide; the longer mathematics tutorial is a separate resource.
 The guide also offers a cursor demonstration with pause, step and replay.
+Selecting both faces animates separation (for an existing preview), rotation,
+and approach; bonding still requires the explicit Attach button.
 [Build, checks and current limitations](assembly/README.md).
 
 [Read online](https://tritonlab.io/aperiodic-chair-lab/tutorial/) ·

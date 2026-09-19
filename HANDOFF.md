@@ -21,6 +21,33 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Assembly placement animation implemented locally (19 September):** selecting
+the second face now rotates the pending piece about its centroid (360 ms), then
+moves it into preview contact (300 ms). Changing an existing preview or using
+the 90-degree controls first separates it along the old target normal (200 ms).
+Target reselection clears the moving face and animates back to staging. New
+requests start from the current displayed pose; Attach waits until arrival.
+`docs/assembly/motion.js` interpolates display-only rigid poses; grid checks and
+history keep exact destination poses. Undo/Redo, cancellation, restart and
+inspection discard stale motion. Reduced motion skips it; hidden tabs settle it.
+The embedded demo pauses piece motion and finishes the previous animation when
+manually stepping. `node docs/assembly/verify-motion.cjs` checks all 576 discrete
+rotation pairs plus browser motion/state regressions. The motion, engine,
+browser, effects, demo and locale suites passed; all five HTML-based records
+match the rebuilt standalone artifact. This is a visual explanation of placement,
+not collision-free physical path planning. Changes remain local and unpublished.
+
+Two independent AI agents reviewed the animation at the user's request; see
+`docs/assembly/MOTION_REVIEW.md`. Neither reported a reproducible product defect
+in the checked scope. Additional checks covered 30 rapid target/candidate changes,
+inspection during motion after parent promotion, and 10,000 deterministic
+interrupted rotations. The motion and demo suites also passed independently.
+One test-coverage suggestion was applied: demo pause verification now requires
+an active motion phase before asserting that the paused pose stays fixed.
+The strengthened demo suite passed on the same standalone HTML.
+Application code is unchanged by this review; physical mobile devices, other
+browser engines and player trials remain outside the checked scope.
+
 **Assembly attention effects added locally (19 September):** the face-selection
 phase gently pulses the bonded assembly; after a target-face click, the
 orientation phase pulses the pending piece. Hover replaces whole-block

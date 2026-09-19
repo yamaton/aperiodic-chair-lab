@@ -67,6 +67,7 @@
     return `<div class="face-card">${label}<svg viewBox="0 0 104 115" role="img" aria-label="${t('{label} {motif}、矢印{arrow}',{label,motif:face.motif,arrow:arrowName(face.u,base)})}"><rect x="3" y="4" width="98" height="106" rx="7" fill="#edf3ea" stroke="#c4d7c9"/><text x="52" y="38" text-anchor="middle" font-size="25" fill="#213c45">${face.motif}</text>${wanted?line(wanted,true):''}${line(uv,false)}</svg></div>`;
   }
   function render(){
+    syncMotion();
     const home=$('project-home');if(home)home.href='../?lang='+document.documentElement.lang;
     const s=state(), result=currentResult(), parent=rules.parent(s.tiles), inspecting=!!inspection;
     const remaining=8-s.tiles.length-Number(s.pending);
@@ -122,7 +123,7 @@
       button.onclick=()=>{explainRef=c.a.ref;render();};return button;
     }));
     $('problem-view').hidden=!result.contacts.some(c=>!c.ok);
-    $('attach').hidden=!s.pending;$('attach').disabled=!result.ok||inspecting;
+    $('attach').hidden=!s.pending;$('attach').disabled=!result.ok||inspecting||!!motion;
     $('add').hidden=s.pending;$('add').disabled=s.tiles.length>=8||inspecting;
     $('cancel').hidden=!s.pending;$('cancel').disabled=inspecting;
     $('hint').hidden=mode!=='guided';$('hint').disabled=inspecting||!inGuide||s.tiles.length>=8;
@@ -135,6 +136,26 @@
   // A simple orthographic canvas renderer with face hit testing; no network/GPU dependencies.
   const canvas=$('scene'),ctx=canvas.getContext('2d');
   const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+  let motion=null,motionState=null,motionPausedAt=null;
+  function motionSample(){return motion?ChairMotion.sample(motion,(motionPausedAt??performance.now())-motion.started):null;}
+  function clearMotion(){motion=null;motionState=null;motionPausedAt=null;}
+  function finishMotion(){motion=null;motionPausedAt=null;draw();}
+  function pauseMotion(){if(motion&&motionPausedAt===null)motionPausedAt=performance.now();draw();}
+  function resumeMotion(){if(motion&&motionPausedAt!==null)motion.started+=performance.now()-motionPausedAt;motionPausedAt=null;draw();}
+  function syncMotion(){
+    const s=state(),pose=placementPose(),previous=motionState;
+    const next={pose,op:s.op,ref:s.ref,assembly:JSON.stringify([s.tiles,s.level])};
+    if(!pose||inspection||s.grouped||!previous?.pose||previous.assembly!==next.assembly){
+      motion=null;motionPausedAt=null;
+    }else if(!samePose(previous.pose,pose)){
+      const from=motionSample()?.pose||previous.pose;
+      const oldFace=previous.op&&!motion?selectable().find(f=>f.ref===previous.ref):null;
+      motion=reducedMotion.matches||document.hidden?null:{...ChairMotion.transition(from,pose,oldFace?.n),started:performance.now()};
+      if(!motion?.duration)motion=null;
+      motionPausedAt=null;
+    }
+    motionState=next;
+  }
   let scenePointer=null,sceneHover=null,pickerPointer=null,pickerHover=null,pickerFocus=null,effectFrame=0,lastEffectDraw=0;
   function interactionPhase(){
     const s=state();
@@ -144,32 +165,34 @@
   function faceAt(x,y){return hitFaces.slice().reverse().find(f=>pointInside(x,y,f.points));}
   function panelActive(){return !!sceneHover||interactionPhase()==='moving'&&(pickerHover!==null||pickerFocus!==null);}
   function syncEffects(){
-    const phase=interactionPhase(),pulse=!!phase&&!panelActive()&&!drag?.moved&&!pieceDrag?.moved;
+    const phase=interactionPhase(),pulse=!!phase&&!motion&&!panelActive()&&!drag?.moved&&!pieceDrag?.moved;
     picker.classList.toggle('attention',phase==='moving'&&pulse);
     picker.classList.toggle('dragging',!!pieceDrag?.moved);
     canvas.dataset.phase=phase;
     canvas.dataset.effect=phase?(panelActive()?'panel':pulse?'block':''):'';
+    canvas.dataset.motion=motionSample()?.phase||'';
     canvas.style.cursor=drag?.moved?'grabbing':sceneHover?'pointer':'grab';
-    if(pulse&&!reducedMotion.matches&&!document.hidden){
+    if((pulse||motion&&motionPausedAt===null)&&!reducedMotion.matches&&!document.hidden){
       if(!effectFrame)effectFrame=requestAnimationFrame(animateEffects);
     }else if(effectFrame){cancelAnimationFrame(effectFrame);effectFrame=0;}
     return pulse;
   }
   function animateEffects(now){
     effectFrame=0;
-    if(now-lastEffectDraw>=32){lastEffectDraw=now;draw();}else syncEffects();
+    if(motion||now-lastEffectDraw>=32){lastEffectDraw=now;draw();}else syncEffects();
   }
-  reducedMotion.addEventListener('change',()=>draw());
-  document.addEventListener('visibilitychange',()=>draw());
+  reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches)finishMotion();else draw();});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)finishMotion();else draw();});
   const colors=['#83ae9e','#a4b7d0','#c5ad82','#a7a1c4','#b1c596','#ccaaa1','#8cbcc0','#c4bb8e'];
   function view(v){const x=Math.cos(yaw)*v[0]-Math.sin(yaw)*v[1],d=Math.sin(yaw)*v[0]+Math.cos(yaw)*v[1];return [x,Math.sin(pitch)*d-Math.cos(pitch)*v[2],Math.cos(pitch)*d+Math.sin(pitch)*v[2]];}
   function project(v){const w=canvas.clientWidth,h=canvas.clientHeight,q=view(sub(v,viewCenter)),scale=Math.min(w,h)/8*zoom;return [w/2+q[0]*scale,h*.49+q[1]*scale,q[2]];}
   function inspectScene(){return inspection.path[inspection.path.length-1];}
-  function movingPose(){
+  function placementPose(){
     const s=state();if(!s.pending)return null;
     // Keep the unselected piece outside the whole bonded assembly, with a unit gap.
     return s.op||{t:[Math.max(...s.tiles.flatMap(rules.placedCubes).map(c=>c[0]))*.5+2.5,s.anchor.t[1]-1,s.anchor.t[2]],r:I};
   }
+  function movingPose(){return motionSample()?.pose||placementPose();}
   function sceneFaces(){
     const s=state();
     if(inspection){const item=inspectScene();return rules.exposed(item.unit.children.map(p=>({t:mul(p.t,2),r:p.r})))
@@ -187,6 +210,8 @@
   }
   function polygon(points,fill,stroke,width=1){ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.closePath();ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke();}
   function draw(){
+    if(motion&&!motionSample().phase){motion=null;motionPausedAt=null;}
+    $('attach').disabled=!!motion||!!inspection||!currentResult().ok;
     const w=canvas.clientWidth,h=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);
     if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}
     ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);hitFaces=[];
@@ -316,16 +341,17 @@
   $('return-face').onclick=()=>{explainRef=null;render();};
   $('why').addEventListener('toggle',()=>render());
   $('problem-view').onclick=()=>{const bad=currentResult().contacts.find(c=>!c.ok);if(!bad)return;explainRef=bad.a.ref;viewFace(bad.a);};
-  $('attach').onclick=()=>{if(!currentResult().ok||inspection)return;commit('接着',s=>{s.tiles.push(s.op);s.pending=false;s.op=null;s.ref='';});hintStep=0;hintMessage='';render();(rules.parent(state().tiles)?$('group'):$('add')).focus();};
+  $('attach').onclick=()=>{if(motion||!currentResult().ok||inspection)return;commit('接着',s=>{s.tiles.push(s.op);s.pending=false;s.op=null;s.ref='';});hintStep=0;hintMessage='';render();(rules.parent(state().tiles)?$('group'):$('add')).focus();};
   $('add').onclick=()=>{if(state().tiles.length>=8||state().pending||state().grouped||inspection)return;commit('部品の追加',s=>{s.pending=true;s.op=null;s.ref='';});$('target-face').focus();};
   $('cancel').onclick=()=>commit('追加の取消',s=>{s.pending=false;s.op=null;s.ref='';});
-  $('undo').onclick=()=>{if(inspection)return;history.undo();hintStep=0;hintMessage='';explainRef=null;highlight=null;render();};
-  $('redo').onclick=()=>{if(inspection)return;history.redo();hintStep=0;hintMessage='';explainRef=null;highlight=null;render();};
+  $('undo').onclick=()=>{if(inspection)return;clearMotion();history.undo();hintStep=0;hintMessage='';explainRef=null;highlight=null;render();};
+  $('redo').onclick=()=>{if(inspection)return;clearMotion();history.redo();hintStep=0;hintMessage='';explainRef=null;highlight=null;render();};
   $('free').onclick=()=>{if(inspection)return;mode='free';hintMessage='';render();};
   function confirmRestart(nextMode){if(inspection)return;restartMode=nextMode;$('confirm').showModal();}
   $('guided').onclick=()=>{if(mode!=='guided')confirmRestart('guided');};
   $('restart').onclick=()=>confirmRestart(mode);
   $('confirm').addEventListener('close',()=>{if($('confirm').returnValue!=='start')return;
+    clearMotion();
     mode=restartMode;history=new E.History(initial());hintStep=0;hintMessage='';explainRef=null;highlight=null;parentView='rules';allFaces=false;oldView=null;$('view-back').hidden=true;resetView();render();});
   $('hint').onclick=()=>{
     const s=state(),hint=rules.nextHint(s.tiles,s.anchor);if(!hint||inspection)return;
@@ -371,7 +397,9 @@
     document.documentElement.classList.add('demo-document');
     const targetRef='0:11',pieceFace=20;
     window.ChairDemoScene={
+      finishMotion,pauseMotion,resumeMotion,
       reset(){
+        clearMotion();
         const s=initial();s.pending=false;history=new E.History(s);mode='guided';inspection=null;
         allFaces=false;hintStep=0;hintMessage='';explainRef=null;highlight=null;oldView=null;
         const target=selectable().find(f=>f.ref===targetRef);

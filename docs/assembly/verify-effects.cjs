@@ -60,6 +60,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   await page.locator('#target-list').evaluate(el=>el.open=true);
   await page.locator('#target-face').selectOption(pending.state.ref);
   assert.equal((await snap()).state.op,null,'Reselecting the target requires a new moving-face selection');
+  await page.waitForFunction(()=>!document.getElementById('scene').dataset.motion);
   assert.deepEqual(await movingPose(),detached);
   await page.locator('#target-list').evaluate(el=>el.open=false);
   const face=picker.locator('[data-face]').last();await face.hover();

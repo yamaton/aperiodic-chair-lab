@@ -1,13 +1,14 @@
 {
   "status": "pass",
-  "checked_at": "2026-09-19T16:06:20.524Z",
+  "checked_at": "2026-09-19T16:45:50.274Z",
   "scope": "Scripted offline UI demonstration checks; not player trials",
-  "html_sha256": "0c188299686fb3353e15b14fd2df0ada98810e76eb458fa2e005b1002130a5bd",
+  "html_sha256": "8c8dfd06a7f586a28c19a7b92f8a9c95afc8ac07debfde4e19724da888b4e4be",
   "checks": [
     "real target and piece clicks",
     "mismatched arrows become valid after rotation",
     "timed playback attaches two pieces",
     "pause and manual stepping",
+    "pause freezes placement animation",
     "close during playback and replay",
     "player pending piece, camera and Redo preserved",
     "Japanese and English",

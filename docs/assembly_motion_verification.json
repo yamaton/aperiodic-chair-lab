@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-19T16:38:22.727Z",
+  "rotation_pairs": 576,
+  "offline": true,
+  "html_sha256": "8c8dfd06a7f586a28c19a7b92f8a9c95afc8ac07debfde4e19724da888b4e4be",
+  "checks": [
+    "rigid interpolation including 180-degree turns",
+    "stationary centroid during rotation",
+    "exact endpoints",
+    "first selection rotates then approaches",
+    "preview rotation separates, rotates, approaches",
+    "visible frames under panel hover",
+    "commit disabled until arrival",
+    "no frame history or automatic bond",
+    "continuous retargeting mid-turn",
+    "target reselection returns to staging without preselection",
+    "Undo/Redo and cancellation stop stale motion",
+    "restart during motion",
+    "live reduced-motion change",
+    "mobile attachment"
+  ],
+  "page_errors": []
+}

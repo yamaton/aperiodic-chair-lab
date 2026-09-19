@@ -24,7 +24,7 @@
     const step=steps[index];
     $('demo-caption').textContent=`${t('{step} / {total}',{step:index+1,total:steps.length})} · ${t(acted&&step.after?step.after:step.text)}`;
   }
-  function pause(){playing=false;cancelAnimationFrame(raf);raf=0;controls();}
+  function pause(){playing=false;cancelAnimationFrame(raf);raf=0;if(ready)scene()?.pauseMotion();controls();}
   function fail(error){
     console.error(error);failed=true;pause();cursor.toggleAttribute('hidden',true);mark.hidden=true;
     $('demo-caption').textContent=t('デモを再生できませんでした。「もう一度」で再読み込みできます。');
@@ -44,6 +44,7 @@
     cursor.style.transform=`translate(${position.x}px,${position.y}px)`;cursor.toggleAttribute('hidden',false);
   }
   function perform(){
+    if(!playing)scene().finishMotion();
     // Recompute after scrolling or resizing so the illustrated click hits the real control.
     locate();drawCursor(1);
     if(steps[index].kind!=='compare'){
@@ -66,7 +67,7 @@
       if(playing)raf=requestAnimationFrame(tick);
     }catch(error){fail(error);}
   }
-  function play(){if(!ready||failed)return;playing=true;last=performance.now();controls();raf=requestAnimationFrame(tick);}
+  function play(){if(!ready||failed)return;scene().resumeMotion();playing=true;last=performance.now();controls();raf=requestAnimationFrame(tick);}
   function restart(){
     pause();failed=false;ended=false;index=0;position={x:24,y:24};
     try{scene().reset();beginStep();play();}catch(error){fail(error);}

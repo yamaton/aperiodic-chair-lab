@@ -66,7 +66,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   assert((await snap()).state.ref,'Clicking a target face should select the target');
   assert.equal((await snap()).state.op,null,'Do not place the piece before its face is selected');
   for(let step=0;step<3;step++){await page.locator('#hint').click();await english();await japanese();}
-  assert(await page.locator('#attach').isEnabled());
+  await page.waitForFunction(()=>!document.getElementById('attach').disabled);
   await english();assert.match(await page.locator('#hint-text').innerText(),/placement is shown/);await japanese();
   // Reselecting either the same or a different target discards the old placement hint.
   const hintedRef=(await snap()).state.ref;
@@ -85,7 +85,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
     assert.equal((await snap()).state.op,null,'The first hint after reselection must not move the piece');
     assert.equal(await page.locator('#hint').innerText(),'矢印のヒントを見る');
     await page.locator('#hint').click();await page.locator('#hint').click();
-    assert(await page.locator('#attach').isEnabled());
+    await page.waitForFunction(()=>!document.getElementById('attach').disabled);
   }
   // Click the moving piece's face directly, without the candidate dropdown.
   const beforeFacePick=(await snap()).state;
@@ -108,12 +108,12 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   const keyId=await keyFace.getAttribute('data-face');await keyFace.focus();await page.keyboard.press('Enter');
   assert.equal(await page.locator(`#piece-picker [data-face="${keyId}"]`).getAttribute('aria-pressed'),'true');
   // Restore the suggested placement without changing the target.
-  await page.locator('#hint').click();assert(await page.locator('#attach').isEnabled());
+  await page.locator('#hint').click();await page.waitForFunction(()=>!document.getElementById('attach').disabled);
   const before=(await snap()).state;
   await page.locator('#rotate-left').click();assert(await page.locator('#attach').isDisabled());
   await english();assert.match(await page.locator('#status').innerText(),/Mismatched|overlap/);
   assert.deepEqual((await snap()).state.tiles,before.tiles);
-  await page.locator('#rotate-right').click();assert(await page.locator('#attach').isEnabled());
+  await page.locator('#rotate-right').click();await page.waitForFunction(()=>!document.getElementById('attach').disabled);
   await page.locator('#attach').click();assert.equal((await snap()).state.tiles.length,2);
   await page.locator('#undo').click();assert.equal((await snap()).state.tiles.length,1);assert(await page.locator('#redo').isEnabled());
   await playGuide('en');await japanese();assert(await page.locator('#redo').isEnabled());
@@ -123,7 +123,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   await page.locator('#redo').click();assert.equal((await snap()).mode,'free');assert.equal((await snap()).state.tiles.length,2);
   await page.locator('#guided').click();await page.getByRole('button',{name:'今の作業を続ける'}).click();assert.equal((await snap()).mode,'free');
   await page.locator('#guided').click();await page.getByRole('button',{name:'新しく始める',exact:true}).click();
-  for(let i=1;i<8;i++){await hint();assert(await page.locator('#attach').isEnabled());await page.locator('#attach').click();assert.equal((await snap()).state.tiles.length,i+1);}
+  for(let i=1;i<8;i++){await hint();await page.waitForFunction(()=>!document.getElementById('attach').disabled);await page.locator('#attach').click();assert.equal((await snap()).state.tiles.length,i+1);}
   await page.screenshot({path:'/tmp/chair-assembly-eight.png',fullPage:true});
   assert(await page.locator('#group').isVisible());await page.locator('#group').click();
   const grouped=await snap();await page.locator('#inspect').click();assert((await snap()).inspection);

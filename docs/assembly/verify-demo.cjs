@@ -28,6 +28,11 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   const stopped=await demo();await page.waitForTimeout(1700);assert.deepEqual(await demo(),stopped,'Pause must stop pending clicks');
   await next();assert.equal((await demo()).state.op,null);assert.equal((await demo()).state.ref,'0:11');
   await next();
+  await page.locator('#demo-toggle').click();await pause();
+  assert(await page.locator('#demo-frame').evaluate(el=>el.contentDocument.getElementById('scene').dataset.motion),'Pause regression must stop an active placement animation');
+  const pausedPose=await page.locator('#demo-frame').evaluate(el=>el.contentWindow.ChairPrototype.movingPose());
+  await page.waitForTimeout(750);
+  assert.deepEqual(await page.locator('#demo-frame').evaluate(el=>el.contentWindow.ChairPrototype.movingPose()),pausedPose,'Pause also freezes the piece animation');
   const beforeTurn=await page.locator('#demo-frame').evaluate(el=>{
     const w=el.contentWindow,s=w.ChairPrototype.snapshot().state;return w.ChairPrototype.rules.check(s.tiles,s.op);
   });
@@ -94,7 +99,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);
   const report={status:'pass',checked_at:new Date().toISOString(),scope:'Scripted offline UI demonstration checks; not player trials',
     html_sha256:crypto.createHash('sha256').update(fs.readFileSync('docs/assembly.html')).digest('hex'),
-    checks:['real target and piece clicks','mismatched arrows become valid after rotation','timed playback attaches two pieces','pause and manual stepping','close during playback and replay','player pending piece, camera and Redo preserved','Japanese and English','390px layout and visible cursor','667×375, 750×600 and 320×568 face picking and reachable controls','reduced motion','offline, no external requests'],page_errors:errors};
+    checks:['real target and piece clicks','mismatched arrows become valid after rotation','timed playback attaches two pieces','pause and manual stepping','pause freezes placement animation','close during playback and replay','player pending piece, camera and Redo preserved','Japanese and English','390px layout and visible cursor','667×375, 750×600 and 320×568 face picking and reachable controls','reduced motion','offline, no external requests'],page_errors:errors};
   fs.writeFileSync('docs/assembly_demo_verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
