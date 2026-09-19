@@ -21,6 +21,32 @@ authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
 
+**Assembly attention effects added locally (19 September):** the face-selection
+phase gently pulses the bonded assembly; after a target-face click, the
+orientation phase pulses the pending piece. Hover replaces whole-block
+attention with a bright panel outline and fill. After the user's clarification,
+target selection leaves the pending piece in its separate staging pose, with
+no moving face preselected. Only selecting the second face (in the main view,
+picker or explicit candidate list) positions it against the assembly. The
+staging pose stays clear of the whole bonded group. The isolated piece picker
+shares attention suppression and supports keyboard focus; reduced motion
+uses a static highlight. Selecting both faces only previews a placement;
+the explicit Attach button commits the bond. Sources and standalone
+`docs/assembly.html` are updated. `node docs/assembly/verify-effects.cjs`
+checks visible animation, hover, uncommitted selection, history, phase
+transitions, reduced motion and mobile touch. Existing browser, demo and
+locale checks cover the remaining interactions. Changes remain local.
+
+Two independent AI agents reviewed the face-selection flow and effects.
+They confirmed all 24 initial target choices preserve the detached pose,
+second-face placement, Undo/Redo, and Firefox pointer/touch-emulation/keyboard
+behavior. One P2 finding was stale attachment advice after target reselection.
+Target selection now clears the old hint and restarts its sequence; the
+browser regression covers both the same and a different target, and confirms
+the first renewed hint leaves the piece detached. No other product issue was
+confirmed in their checked scope; real-device touch and other browsers remain
+unchecked. This is an AI implementation review, not a player trial.
+
 **README cover with enlarged features rendered locally:** at the user's
 request, the README now uses `docs/figures/aperiodic-chair-cover-enlarged.png`,
 with the prescribed ports widened 3× and deepened 12× for visibility. The

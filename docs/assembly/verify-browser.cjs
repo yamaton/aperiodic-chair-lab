@@ -63,10 +63,30 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   assert.equal((await snap()).state.tiles.length,1);
   const canvas=await page.locator('#scene').boundingBox();
   await page.locator('#scene').click({position:{x:canvas.width*.49,y:canvas.height*.5}});
-  assert((await snap()).state.op,'Clicking a target face should create a preview');
+  assert((await snap()).state.ref,'Clicking a target face should select the target');
+  assert.equal((await snap()).state.op,null,'Do not place the piece before its face is selected');
   for(let step=0;step<3;step++){await page.locator('#hint').click();await english();await japanese();}
   assert(await page.locator('#attach').isEnabled());
   await english();assert.match(await page.locator('#hint-text').innerText(),/placement is shown/);await japanese();
+  // Reselecting either the same or a different target discards the old placement hint.
+  const hintedRef=(await snap()).state.ref;
+  const otherRef=await page.locator('#target-face option').evaluateAll((options,ref)=>options.find(o=>o.value&&o.value!==ref).value,hintedRef);
+  for(const ref of [hintedRef,otherRef]){
+    const tiles=(await snap()).state.tiles;
+    await page.locator('#target-list').evaluate(el=>el.open=true);
+    await page.locator('#target-face').selectOption(ref);
+    assert.equal((await snap()).state.op,null);
+    assert.deepEqual((await snap()).state.tiles,tiles);
+    assert(await page.locator('#attach').isDisabled());
+    assert.equal(await page.locator('#hint-text').innerText(),'');
+    assert.equal(await page.locator('#hint').innerText(),'ヒントを見る');
+    await page.locator('#target-list').evaluate(el=>el.open=false);
+    await page.locator('#hint').click();
+    assert.equal((await snap()).state.op,null,'The first hint after reselection must not move the piece');
+    assert.equal(await page.locator('#hint').innerText(),'矢印のヒントを見る');
+    await page.locator('#hint').click();await page.locator('#hint').click();
+    assert(await page.locator('#attach').isEnabled());
+  }
   // Click the moving piece's face directly, without the candidate dropdown.
   const beforeFacePick=(await snap()).state;
   const faceButton=page.locator('#piece-picker [data-face][aria-pressed="false"]').last();
@@ -170,6 +190,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   assert.equal(await englishPage.locator('html').getAttribute('lang'),'ja');await automatic.close();
   assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);
   const report={checked_at:new Date().toISOString(),scope:'Prototype presentation and scripted interactions; not player testing or a mathematical proof',
+   hint_checks:['same/different target reselection clears stale attachment advice','hint sequence restarts without moving the unselected piece'],
    guide_checks:['four-step Japanese/English operation guide','desktop/mobile fit','pending piece and Redo preserved','keyboard and focus return','Escape preserves inspection','mathematics link separated'],
    languages:['ja','en'],language_checks:['in-progress state and Undo/Redo preserved','hints, contact results and accessibility labels translated','desktop/mobile layout','saved preference','browser language detection','blocked storage fallback'],
    status:'pass',html_sha256:crypto.createHash('sha256').update(fs.readFileSync('docs/assembly.html')).digest('hex'),

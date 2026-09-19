@@ -27,6 +27,10 @@
 .language-control select{direction:ltr;max-width:160px}
 @media(max-width:750px){[dir=rtl] .legend{right:8px}.stage-top{flex-wrap:wrap}.pill{white-space:normal}}
 /* Long translated headings must not push the close button outside a dialog. */
+.attention{animation:piece-attention 2.8s ease-in-out infinite}
+@keyframes piece-attention{0%,100%{filter:brightness(1.02) drop-shadow(0 0 2px #b5e8d5)}50%{filter:brightness(1.16) drop-shadow(0 0 7px #a0ddcc)}}
+#piece-picker:not(.dragging) [role=button]:hover polygon,#piece-picker [role=button]:focus-visible polygon{fill:#fff2ce;stroke:#087f80;stroke-width:3;filter:drop-shadow(0 0 4px #38bdb499)}
+@media(prefers-reduced-motion:reduce){.attention{animation:none;filter:brightness(1.09) drop-shadow(0 0 4px #b5e8d5)}}
 .guide-heading{flex-wrap:wrap}.guide-heading>button{margin-inline-start:auto}
 .guide-flow span:not(:nth-child(2)){min-width:0;overflow-wrap:anywhere;hyphens:auto}
 @media(max-width:380px){.guide-flow{gap:8px}.guide-flow span:not(:nth-child(2)){padding:10px 8px}}

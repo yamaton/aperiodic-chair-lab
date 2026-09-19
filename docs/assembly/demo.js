@@ -4,8 +4,8 @@
   const $=id=>document.getElementById(id),{t}=ChairI18n;
   const dialog=$('play-demo'),frame=$('demo-frame'),cursor=$('demo-cursor'),mark=$('demo-mark');
   const steps=[
-    {kind:'target',text:'接着済みの組立で、この面をクリックします。',after:'取り付ける部品が現れました。まだ仮置きです。'},
-    {kind:'piece',text:'小窓で、取り付ける部品の面をクリックします。',after:'使う面が変わりました。次に矢印を合わせます。'},
+    {kind:'target',text:'接着済みの組立で、この面をクリックします。',after:'接着済み側の面を選びました。次に、離れている部品の面を選びます。'},
+    {kind:'piece',text:'小窓で、取り付ける部品の面をクリックします。',after:'両方の面を選ぶと、部品が移動して面が合います。次に矢印を合わせます。'},
     {kind:'compare',text:'模様は合っていますが、矢印はまだ違います。比較窓で見比べましょう。'},
     {kind:'rotate-right',text:'「この図で右へ90°」をクリックします。',after:'矢印が合い、すべての接触面が適合しました。'},
     {kind:'attach',text:'「接着する」をクリックして、仮置きを確定します。',after:'接着できました。この2個は一体になりました。'}

@@ -13,7 +13,8 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   await page.goto(pathToFileURL(process.cwd()+'/docs/assembly.html').href);
   for(let i=0;i<3;i++)await page.locator('#hint').click();
   await page.locator('#attach').click();await page.locator('#undo').click();
-  const player=()=>page.evaluate(()=>({snapshot:ChairPrototype.snapshot(),canvas:document.querySelector('#scene').toDataURL()}));
+  // Attention effects animate pixels independently of the player's camera and work.
+  const player=()=>page.evaluate(()=>({snapshot:ChairPrototype.snapshot(),camera:ChairPrototype.camera()}));
   const preserved=await player();assert(preserved.snapshot.canRedo);
   const demo=()=>page.locator('#demo-frame').evaluate(el=>el.contentWindow.ChairPrototype.snapshot());
   const open=async()=>{
@@ -25,7 +26,7 @@ const {firefox}=require(process.env.PLAYWRIGHT_MODULE||'/tmp/kanpo-review-browse
   const close=async()=>{await page.locator('#demo-close').click();assert.deepEqual(await player(),preserved);};
   await page.locator('#guide-open').click();await open();await pause();
   const stopped=await demo();await page.waitForTimeout(1700);assert.deepEqual(await demo(),stopped,'Pause must stop pending clicks');
-  await next();assert((await demo()).state.op);assert.equal((await demo()).state.ref,'0:11');
+  await next();assert.equal((await demo()).state.op,null);assert.equal((await demo()).state.ref,'0:11');
   await next();
   const beforeTurn=await page.locator('#demo-frame').evaluate(el=>{
     const w=el.contentWindow,s=w.ChairPrototype.snapshot().state;return w.ChairPrototype.rules.check(s.tiles,s.op);

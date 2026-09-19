@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-17T16:45:27.456Z",
+  "checked_at": "2026-09-19T16:05:41.637Z",
   "scope": "Prototype presentation and scripted interactions; not player testing or a mathematical proof",
   "guide_checks": [
     "four-step Japanese/English operation guide",
@@ -22,7 +22,7 @@
     "blocked storage fallback"
   ],
   "status": "pass",
-  "html_sha256": "5c621dd482b3c9ed8550f3fcc272686bafed3024928b31c0b601c356560d5044",
+  "html_sha256": "0c188299686fb3353e15b14fd2df0ada98810e76eb458fa2e005b1002130a5bd",
   "offline": true,
   "levels_completed": 2,
   "layouts": [
@@ -55,5 +55,9 @@
     "other-contact rotation guard",
     "mobile controls with visible model"
   ],
-  "page_errors": []
+  "page_errors": [],
+  "hint_checks": [
+    "same/different target reselection clears stale attachment advice",
+    "hint sequence restarts without moving the unselected piece"
+  ]
 }

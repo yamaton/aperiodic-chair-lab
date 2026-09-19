@@ -36,15 +36,18 @@
   }
   function selectTarget(ref){
     const s=state();if(inspection||s.grouped||s.tiles.length>=8)return;
-    const list=rules.candidates(s.tiles,ref,allFaces);if(!list.length)return;
-    const fn=d=>{d.pending=true;d.ref=ref;d.op=clone(list[0].p);};
+    if(!selectable().some(f=>f.ref===ref))return;
+    hintStep=0;hintMessage='';
+    // Selecting the bonded face does not choose or position the moving face.
+    const fn=d=>{d.pending=true;d.ref=ref;d.op=null;};
     if(!s.pending)commit('部品の追加',fn);else adjust(fn);
   }
   function selectMovingFace(faceId){
-    const s=state();if(inspection||!s.pending||!s.op||!s.ref)return;
+    const s=state();if(inspection||!s.pending||!s.ref)return;
     const options=rules.candidates(s.tiles,s.ref,true).filter(c=>c.face===faceId);
     // Keep the closest orientation, without selecting a correct handshake for the player.
-    options.sort((a,b)=>dot(b.p.r,s.op.r)-dot(a.p.r,s.op.r));
+    const orientation=s.op?.r||I;
+    options.sort((a,b)=>dot(b.p.r,orientation)-dot(a.p.r,orientation));
     const chosen=options[0];if(!chosen)return;
     const target=selectable().find(f=>f.ref===s.ref);
     if(!rules.handshake(target,rules.placedFaces(chosen.p)[faceId]).patterns)allFaces=true;
@@ -89,13 +92,13 @@
     setOptions($('inspect-tile'),(inspecting?rules.group:s.tiles).map((p,i)=>[String(i),t('部品{number}',{number:i+1})]),choice||'0');
     $('inspection-path').textContent=inspecting?t('作業中の組立')+' → '+inspection.path.map(p=>t('部品{number}の内部',{number:p.tile+1})).join(' → '):'';
     $('scene-caption').textContent=inspecting?t('各部品自身の座標で内部を表示しています。子の選択は3Dまたは一覧から。接着と履歴の操作は「組立に戻る」で再開できます。'):s.grouped?t('子の境界 → 外周 → 親の有効なルール。形の対応を比べてみましょう。'):t('面をクリックで選択 · ドラッグで視点を回転 · 接着済みの群は固定されています');
-    $('instruction-title').textContent=inspecting?t('作業を保ったまま、内部を見る'):s.grouped?t('同じルールで、次の階層へ'):parent?t('大きなブロックができました'):!s.pending?t('次の部品を用意する'):s.op?t('向きを合わせて接着する'):t('取り付けたい面を選ぶ');
+    $('instruction-title').textContent=inspecting?t('作業を保ったまま、内部を見る'):s.grouped?t('同じルールで、次の階層へ'):parent?t('大きなブロックができました'):!s.pending?t('次の部品を用意する'):s.ref?t('向きを合わせて接着する'):t('取り付けたい面を選ぶ');
     $('instruction').textContent=inspecting?t('戻るだけで先ほどの操作を再開できます。'):s.grouped?t('親の細かい曲面が拡大コピーになる、という意味ではありません。'):parent?t('8個の位置と向きが、親の配置に一致しました。'):mode==='guided'&&!inGuide?t('案内の完成例とは異なる配置です。Undoで戻るか、自由に組み続けられます。'):s.pending?t('AはA、BはC。矢印の向きも比べてみましょう。'):s.tiles.length===8?t('材料をすべて使用中です。この8個は一つの親の配置ではありません。Undoで組み替えられます。'):t('接着した部品は組立の一部になります。');
     const boundary=selectable();
     $('view-face').disabled=inspecting||!boundary.some(f=>f.ref===(highlight||s.ref));
     setOptions($('target-face'),[['',t('面を選んでください')],...boundary.map(f=>[f.ref,t('部品{piece} · 面{face} {motif} · ({position})',{piece:f.tile+1,face:f.id+1,motif:f.motif,position:mul(f.c,.5).join(', ')})])],s.ref);
     $('target-face').disabled=inspecting||s.grouped||s.tiles.length>=8;
-    $('candidate-controls').hidden=!s.op||!s.pending;
+    $('candidate-controls').hidden=!s.ref||!s.pending;
     $('all-faces').checked=allFaces;
     let list=s.ref?rules.candidates(s.tiles,s.ref,allFaces):[];
     if(s.op&&!list.some(c=>samePose(c.p,s.op)))list=rules.candidates(s.tiles,s.ref,true);
@@ -109,7 +112,7 @@
     const other=contact&&contact.a.ref!==s.ref;
     $('rotate-left').hidden=!!other;$('rotate-right').hidden=!!other;$('return-face').hidden=!other;
     for(const id of ['rotate-left','rotate-right'])$(id).disabled=!s.op||!s.pending||inspecting;
-    $('status').textContent=s.pending?resultMessage(result):s.tiles.length===8?t('この作業面の材料はすべて使用中です。'):t('接着済み{count}個。残り材料{remaining}個。',{count:s.tiles.length,remaining});
+    $('status').textContent=s.pending?(s.ref&&!s.op?t('取り付ける部品の面をクリック'):resultMessage(result)):s.tiles.length===8?t('この作業面の材料はすべて使用中です。'):t('接着済み{count}個。残り材料{remaining}個。',{count:s.tiles.length,remaining});
     if(mode==='guided'&&s.op&&result.ok&&!guideMatches([...s.tiles,s.op]))$('status').textContent+=t(' 案内中の完成例とは異なる配置です。');
     $('status').className='status '+(s.pending?(result.ok?'good':s.op?'bad':''):'');
     $('why-text').textContent=result.overlap.length?t('内部が重なる単位立方体が{count}個あります。別の候補を試してください。',{count:result.overlap.length}):t('選んだ一面だけでなく、触れているすべての面を確認します。');
@@ -126,15 +129,47 @@
     $('hint').textContent=[t('ヒントを見る'),t('矢印のヒントを見る'),t('具体的な候補を表示'),t('候補を表示しました')][Math.min(hintStep,3)];
     $('hint-text').textContent=(hintMessage?hintMessage():'')||(!inGuide&&mode==='guided'?t('完成例へ戻るには「元に戻す」を使います。接着そのものが間違いとは限りません。'):'');
     for(const [id,value] of [['show-boundary','children'],['show-shell','shell'],['show-parent','rules']])$(id).setAttribute('aria-pressed',String(parentView===value));
-    draw();drawPiecePicker();
+    drawPiecePicker();draw();
   }
 
   // A simple orthographic canvas renderer with face hit testing; no network/GPU dependencies.
   const canvas=$('scene'),ctx=canvas.getContext('2d');
+  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+  let scenePointer=null,sceneHover=null,pickerPointer=null,pickerHover=null,pickerFocus=null,effectFrame=0,lastEffectDraw=0;
+  function interactionPhase(){
+    const s=state();
+    return inspection||s.grouped||s.tiles.length>=8||!s.pending?'':s.ref?'moving':'target';
+  }
+  function activeFace(f){return f&&!!f[interactionPhase()];}
+  function faceAt(x,y){return hitFaces.slice().reverse().find(f=>pointInside(x,y,f.points));}
+  function panelActive(){return !!sceneHover||interactionPhase()==='moving'&&(pickerHover!==null||pickerFocus!==null);}
+  function syncEffects(){
+    const phase=interactionPhase(),pulse=!!phase&&!panelActive()&&!drag?.moved&&!pieceDrag?.moved;
+    picker.classList.toggle('attention',phase==='moving'&&pulse);
+    picker.classList.toggle('dragging',!!pieceDrag?.moved);
+    canvas.dataset.phase=phase;
+    canvas.dataset.effect=phase?(panelActive()?'panel':pulse?'block':''):'';
+    canvas.style.cursor=drag?.moved?'grabbing':sceneHover?'pointer':'grab';
+    if(pulse&&!reducedMotion.matches&&!document.hidden){
+      if(!effectFrame)effectFrame=requestAnimationFrame(animateEffects);
+    }else if(effectFrame){cancelAnimationFrame(effectFrame);effectFrame=0;}
+    return pulse;
+  }
+  function animateEffects(now){
+    effectFrame=0;
+    if(now-lastEffectDraw>=32){lastEffectDraw=now;draw();}else syncEffects();
+  }
+  reducedMotion.addEventListener('change',()=>draw());
+  document.addEventListener('visibilitychange',()=>draw());
   const colors=['#83ae9e','#a4b7d0','#c5ad82','#a7a1c4','#b1c596','#ccaaa1','#8cbcc0','#c4bb8e'];
   function view(v){const x=Math.cos(yaw)*v[0]-Math.sin(yaw)*v[1],d=Math.sin(yaw)*v[0]+Math.cos(yaw)*v[1];return [x,Math.sin(pitch)*d-Math.cos(pitch)*v[2],Math.cos(pitch)*d+Math.sin(pitch)*v[2]];}
   function project(v){const w=canvas.clientWidth,h=canvas.clientHeight,q=view(sub(v,viewCenter)),scale=Math.min(w,h)/8*zoom;return [w/2+q[0]*scale,h*.49+q[1]*scale,q[2]];}
   function inspectScene(){return inspection.path[inspection.path.length-1];}
+  function movingPose(){
+    const s=state();if(!s.pending)return null;
+    // Keep the unselected piece outside the whole bonded assembly, with a unit gap.
+    return s.op||{t:[Math.max(...s.tiles.flatMap(rules.placedCubes).map(c=>c[0]))*.5+2.5,s.anchor.t[1]-1,s.anchor.t[2]],r:I};
+  }
   function sceneFaces(){
     const s=state();
     if(inspection){const item=inspectScene();return rules.exposed(item.unit.children.map(p=>({t:mul(p.t,2),r:p.r})))
@@ -145,7 +180,7 @@
     }
     const target=rules.exposed(s.tiles).map(f=>({...f,target:true,unmarked:s.grouped&&parentView==='shell'}));
     if(s.pending){
-      const p=s.op||{t:[3,-1,0],r:I};
+      const p=movingPose();
       target.push(...rules.placedFaces(p).map(f=>({...f,moving:true,tile:-1})));
     }
     return target;
@@ -162,12 +197,25 @@
       const corners=[[-1,-1],[1,-1],[1,1],[-1,1]].map(([a,b])=>add(center,add(mul(u,a),mul(v,b))));
       return {...f,center,points:corners.map(project),depth:project(center)[2]};
     }).sort((a,b)=>a.depth-b.depth||Number(a.moving)-Number(b.moving));
+    hitFaces=faces.filter(f=>f.target||f.displayOnly||f.moving);
+    const rect=canvas.getBoundingClientRect();
+    const underPointer=scenePointer&&!drag?.moved?faceAt(scenePointer.x-rect.left,scenePointer.y-rect.top):null;
+    sceneHover=activeFace(underPointer)?underPointer:null;
+    const pulse=syncEffects(),glow=reducedMotion.matches?.16:.09+.15*(.5+.5*Math.sin(performance.now()*Math.PI/1400));
     for(const f of faces){
       const selected=f.target&&(f.ref===state().ref||f.ref===highlight||f.ref===explainRef)||f.moving&&f.id===movingFaceId();
       const issue=f.target&&bad.has(f.ref);
       ctx.globalAlpha=f.moving?.67:1;
       polygon(f.points,f.moving?(result.overlap.length?'#e1a39a':'#efc17e'):colors[Math.max(0,f.tile)%colors.length],selected?'#075c61':issue?'#bd4236':'#486b6270',selected?3:issue?2:1);
       ctx.globalAlpha=1;
+      if(activeFace(f)){
+        const hovered=f===sceneHover||f.moving&&(f.id===pickerHover||f.id===pickerFocus);
+        if(hovered||pulse){
+          ctx.save();ctx.shadowColor=hovered?'#38bdb4':'#b5f5df';ctx.shadowBlur=hovered?13:7;
+          polygon(f.points,`rgba(255,255,240,${hovered?.42:glow})`,hovered?'#087f80':`rgba(223,255,241,${glow*2})`,hovered?3:1.5);
+          ctx.restore();
+        }
+      }
       if(!f.unmarked){
         const p=project(f.center),end=project(add(f.center,mul(f.u,(f.scale||1)*.27)));
         const dx=end[0]-p[0],dy=end[1]-p[1],len=Math.hypot(dx,dy)||1;
@@ -175,8 +223,6 @@
         ctx.beginPath();ctx.moveTo(end[0]-dx/len*5+dy/len*3,end[1]-dy/len*5-dx/len*3);ctx.lineTo(end[0],end[1]);ctx.lineTo(end[0]-dx/len*5-dy/len*3,end[1]-dy/len*5+dx/len*3);ctx.stroke();
         ctx.font='600 11px system-ui';ctx.textAlign='center';ctx.fillStyle='#163d38';ctx.fillText(f.motif,p[0]-dx*.65,p[1]-dy*.65+3);
       }
-      // Include the moving solid in hit testing: clicking it must not select a hidden target face.
-      if(f.target||f.displayOnly||f.moving)hitFaces.push(f);
     }
     if(result.overlap.length&&state().op&&!inspection){ctx.fillStyle='#a13730';ctx.font='600 13px system-ui';ctx.fillText(t('重なりあり · この位置には接着できません'),w/2,h-45);}
   }
@@ -184,6 +230,7 @@
     const a=points[i],b=points[j];if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])inside=!inside;
   }return inside;}
   function drawPiecePicker(){
+    pickerHover=null;pickerFocus=null;
     if($('candidate-controls').hidden){$('piece-picker').replaceChildren();$('piece-selection').textContent='';return;}
     const selected=movingFaceId();
     const view=v=>{const x=Math.cos(pieceYaw)*v[0]-Math.sin(pieceYaw)*v[1],d=Math.sin(pieceYaw)*v[0]+Math.cos(pieceYaw)*v[1];return [x,Math.sin(piecePitch)*d-Math.cos(piecePitch)*v[2],Math.cos(piecePitch)*d+Math.sin(piecePitch)*v[2]];};
@@ -197,39 +244,56 @@
       const c=project(f.center),end=project(add(f.center,mul(f.u,.29))),dx=end[0]-c[0],dy=end[1]-c[1],length=Math.hypot(dx,dy)||1;
       return `<g role="button" tabindex="0" data-face="${f.id}" aria-label="${t('{motif}模様の面を使う（面{face}）',{motif:f.motif,face:f.id+1})}" aria-pressed="${selected===f.id}"><polygon points="${f.points.map(p=>p.slice(0,2).join(',')).join(' ')}" fill="#f2d9ac" stroke="#89745c" stroke-width="1"/><text x="${c[0]-dx*.7}" y="${c[1]-dy*.7+4}" text-anchor="middle" font-size="13" font-weight="600" fill="#31483e">${f.motif}</text><path d="M ${c[0]} ${c[1]} L ${end[0]} ${end[1]} M ${end[0]-dx/length*6+dy/length*3} ${end[1]-dy/length*6-dx/length*3} L ${end[0]} ${end[1]} L ${end[0]-dx/length*6-dy/length*3} ${end[1]-dy/length*6+dx/length*3}" stroke="#31483e" stroke-width="2" fill="none"/></g>`;
     }).join('');
+    if(pickerPointer&&!pieceDrag?.moved){
+      const face=document.elementFromPoint(pickerPointer.x,pickerPointer.y)?.closest('#piece-picker [data-face]');
+      pickerHover=face?Number(face.dataset.face):null;
+    }
     $('piece-selection').textContent=selected===null?t('使いたい面を選んでください。'):t('選択中: {motif}模様の面。枠の濃い面を対象物に合わせます。',{motif:rules.faces[selected].motif});
   }
   const picker=$('piece-picker');let pieceDrag=null,suppressPieceClick=false;
+  function updatePickerHover(e){
+    pickerPointer=e.pointerType==='touch'?null:{x:e.clientX,y:e.clientY};
+    pickerHover=e.pointerType==='touch'||pieceDrag?.moved?null:Number(e.target.closest('[data-face]')?.dataset.face??NaN);
+    if(Number.isNaN(pickerHover))pickerHover=null;
+    draw();
+  }
+  picker.addEventListener('pointerover',updatePickerHover);
+  picker.addEventListener('pointerout',()=>{pickerPointer=null;pickerHover=null;draw();});
+  picker.addEventListener('focusin',e=>{pickerFocus=Number(e.target.closest('[data-face]')?.dataset.face??NaN);if(Number.isNaN(pickerFocus))pickerFocus=null;draw();});
+  picker.addEventListener('focusout',()=>{pickerFocus=null;draw();});
   picker.addEventListener('pointerdown',e=>{pieceDrag={x:e.clientX,y:e.clientY,lastX:e.clientX,lastY:e.clientY,moved:false};suppressPieceClick=false;});
   picker.addEventListener('pointermove',e=>{
-    if(!pieceDrag)return;
+    if(!pieceDrag){updatePickerHover(e);return;}
     if(Math.hypot(e.clientX-pieceDrag.x,e.clientY-pieceDrag.y)>5)pieceDrag.moved=true;
-    if(pieceDrag.moved){picker.setPointerCapture(e.pointerId);pieceYaw+=(e.clientX-pieceDrag.lastX)*.012;piecePitch=Math.max(-1.5,Math.min(1.5,piecePitch+(e.clientY-pieceDrag.lastY)*.01));drawPiecePicker();}
+    if(pieceDrag.moved){picker.setPointerCapture(e.pointerId);pieceYaw+=(e.clientX-pieceDrag.lastX)*.012;piecePitch=Math.max(-1.5,Math.min(1.5,piecePitch+(e.clientY-pieceDrag.lastY)*.01));drawPiecePicker();draw();}
     pieceDrag.lastX=e.clientX;pieceDrag.lastY=e.clientY;
   });
-  picker.addEventListener('pointerup',()=>{suppressPieceClick=!!pieceDrag?.moved;pieceDrag=null;});
-  picker.addEventListener('pointercancel',()=>{pieceDrag=null;suppressPieceClick=true;});
-  picker.addEventListener('pointerleave',()=>{if(pieceDrag&&!pieceDrag.moved)pieceDrag=null;});
+  picker.addEventListener('pointerup',e=>{suppressPieceClick=!!pieceDrag?.moved;pieceDrag=null;updatePickerHover(e);});
+  picker.addEventListener('pointercancel',()=>{pieceDrag=null;suppressPieceClick=true;pickerPointer=null;pickerHover=null;draw();});
+  picker.addEventListener('pointerleave',()=>{if(pieceDrag&&!pieceDrag.moved)pieceDrag=null;pickerPointer=null;pickerHover=null;draw();});
   picker.addEventListener('click',e=>{if(suppressPieceClick){suppressPieceClick=false;return;}const face=e.target.closest('[data-face]');if(face)selectMovingFace(Number(face.dataset.face));});
   picker.addEventListener('keydown',e=>{const face=e.target.closest('[data-face]');if(!face||!['Enter',' '].includes(e.key))return;
     e.preventDefault();const id=Number(face.dataset.face);selectMovingFace(id);picker.querySelector(`[data-face="${id}"]`)?.focus();});
   for(const [id,axis,delta] of [['piece-left','yaw',-.4],['piece-right','yaw',.4],['piece-up','pitch',.3],['piece-down','pitch',-.3]])$(id).onclick=()=>{
-    if(axis==='yaw')pieceYaw+=delta;else piecePitch=Math.max(-1.5,Math.min(1.5,piecePitch+delta));drawPiecePicker();
+    if(axis==='yaw')pieceYaw+=delta;else piecePitch=Math.max(-1.5,Math.min(1.5,piecePitch+delta));drawPiecePicker();draw();
   };
-  $('piece-reset').onclick=()=>{pieceYaw=.8;piecePitch=.6;drawPiecePicker();};
+  $('piece-reset').onclick=()=>{pieceYaw=.8;piecePitch=.6;drawPiecePicker();draw();};
   let drag=null;
   canvas.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,lastX:e.clientX,lastY:e.clientY,moved:false};if(e.isTrusted)canvas.setPointerCapture(e.pointerId);});
-  canvas.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-drag.lastX,dy=e.clientY-drag.lastY;
+  canvas.addEventListener('pointermove',e=>{scenePointer=e.pointerType==='touch'?null:{x:e.clientX,y:e.clientY};if(!drag){draw();return;}const dx=e.clientX-drag.lastX,dy=e.clientY-drag.lastY;
     if(Math.hypot(e.clientX-drag.x,e.clientY-drag.y)>5)drag.moved=true;
     if(drag.moved){yaw+=dx*.009;pitch=Math.max(-1.1,Math.min(1.3,pitch+dy*.007));draw();}drag.lastX=e.clientX;drag.lastY=e.clientY;
   });
-  canvas.addEventListener('pointerup',e=>{if(!drag)return;const moved=drag.moved;drag=null;if(moved)return;
+  canvas.addEventListener('pointerup',e=>{if(!drag)return;const moved=drag.moved;drag=null;if(moved){draw();return;}
     const rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;
-    const f=hitFaces.slice().reverse().find(f=>pointInside(x,y,f.points));if(!f)return;
+    const f=faceAt(x,y);if(!f)return;
     if(inspection)deeper(f.inspectTile);
     else if(state().grouped)openInspection();else if(f.moving)selectMovingFace(f.id);else selectTarget(f.ref);
   });
-  canvas.addEventListener('pointercancel',()=>{drag=null;});
+  canvas.addEventListener('pointercancel',()=>{drag=null;scenePointer=null;draw();});
+  canvas.addEventListener('pointerleave',()=>{scenePointer=null;draw();});
+  window.addEventListener('blur',()=>{scenePointer=null;pickerPointer=null;pickerHover=null;draw();});
+  window.addEventListener('scroll',()=>{scenePointer=null;pickerPointer=null;pickerHover=null;draw();},{passive:true});
   canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.45,Math.min(3,zoom*Math.exp(-e.deltaY*.001)));draw();},{passive:false});
   new ResizeObserver(draw).observe(canvas);
   function resetView(){yaw=.8;pitch=.6;zoom=1;viewCenter=[0,0,0];if(!inspection){
@@ -301,11 +365,11 @@
   });
   $('language').onchange=e=>{ChairI18n.setLanguage(e.target.value,true);translateTemplate();renderGuide();render();};
   // Read-only diagnostic snapshot for reproducible prototype checks.
-  window.ChairPrototype={snapshot:()=>clone({state:state(),mode,inspection:!!inspection,canUndo:history.canUndo,canRedo:history.canRedo}),rules};
+  window.ChairPrototype={snapshot:()=>clone({state:state(),mode,inspection:!!inspection,canUndo:history.canUndo,canRedo:history.canRedo}),camera,movingPose:()=>clone(movingPose()),rules};
   // Only the isolated demonstration document exposes scripted controls.
   if(window.CHAIR_DEMO){
     document.documentElement.classList.add('demo-document');
-    const targetRef='0:11',pieceFace=19;
+    const targetRef='0:11',pieceFace=20;
     window.ChairDemoScene={
       reset(){
         const s=initial();s.pending=false;history=new E.History(s);mode='guided';inspection=null;
