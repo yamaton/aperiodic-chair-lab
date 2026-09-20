@@ -28,8 +28,8 @@ level. Recursive parent legality remains open.
 and [repeated propagation](../strong/quaquaversal/PARENT_PROPAGATION.md)
 now leave 246 nonlanguage parent covers, with audited domain reductions.
 [Optional-neighbor experiments](../strong/quaquaversal/OPTIONAL_NEIGHBOR_RULES.md)
-provide 123 binary choice cuts and five further arc-derived cuts with exact
-certificates. These exclude finite assignments, not additional parent cases.
+provide 162 choice cuts with exact certificates. Applying them narrows 18
+of the 246 remaining parent cases, but excludes no further parent case.
 
 ## Public presentation and provenance
 

@@ -29,7 +29,9 @@ results in `artifacts/` with a reproduction command.
 | Q019 | Add sampled interior non-overlap | Pilot insufficient | 209,371 audited pair clauses; all six pilot cases remain satisfiable |
 | Q020 | Complete-star extension of optional neighbors | Six verified choice cuts | All six Q019 assignments fail; each yields a two-choice forbidden conjunction, not a parent exclusion |
 | Q021 | Learn immediate complete-neighbor-star cuts | Six revised assignments survive | 117 new audited binary cuts; original 246 parent cases remain unresolved |
-| Q022 | Propagate between optional neighbors | Five revised assignments rejected | Audited cuts of lengths 3, 3, 3, 5, 2; one finite assignment remains unresolved |
+| Q022 | Propagate between optional neighbors | All six Q021 assignments eventually rejected | Five immediate arc cuts of lengths 3, 3, 3, 5, 2; the last assignment fails a deeper layer |
+| Q023 | Integrate neighbor arcs into SAT refinement | Six revised finite models survive | 34 further audited cuts; all 45,403 final domains independently agree |
+| Q024 | Apply learned cuts to the full parent frontier | Domains narrowed; no new parent exclusions | 77 star values removed in 18 cases, followed by 150 arc reductions; 246 cases remain |
 
 ## Q000 — geometry
 
@@ -151,11 +153,12 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Continue Q022 by adding five arc-derived cuts in `neighbor_arc_cuts.json`
-  to the 123 Q021 cuts. Integrate optional-neighbor arc propagation and
-  replayable choice-dependency certificates into the next SAT refinement.
-  Extend the one surviving frozen assignment. Preserve finite limits as unknown.
-  The full 246-case frontier is `expanded_arcs_2_seed.json`; the SAT pilot
+- Continue propagation from `choice_cut_frontier_seed.json`, the narrowed
+  full frontier. Extend the six Q023 assignments and generalize dependency
+  certificates through forced-neighbor as well as arc operations. The one
+  formerly surviving Q022 model now fails at the next arc layer, but its
+  deeper failure has not yet become a small original-choice cut.
+  Preserve finite limits as unknown. The full frontier still has 246 cases; the SAT pilot
   covers only six of those cases. [OPTIONAL_NEIGHBOR_RULES.md](OPTIONAL_NEIGHBOR_RULES.md)
   gives the exact scope and continuation details.
 - Q003: construct explicit skeleton/vertex-wire labels for the multiple-type
@@ -227,7 +230,14 @@ One frozen assignment remains unresolved; none of these cuts excludes an
 original parent case without further choices. The Q021 duplicate-cut
 implementation failure and its correction are preserved in the artifacts.
 
-This now runs 83 commands in dependency order and checks input hashes. Expected
+Q023 integrates the arc oracle and learns 34 more cuts (162 total). All six
+revised assignments pass, with full independent domain comparison. Q024
+uses these cuts on the full frontier, removing 77 star values in 18 cases;
+150 further arc reductions leave all 246 parent cases unresolved. The new
+full seed is `choice_cut_frontier_seed.json`. The last frozen Q022 model
+has separately failed one layer farther out (38 audited arc reductions).
+
+This now runs 100 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.

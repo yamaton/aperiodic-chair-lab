@@ -156,6 +156,56 @@ less infinite extension. Its narrowed domains are in
 `neighbor_star_cut_arcs.json`, using the pose table in
 `neighbor_star_cut_layer_1.json`.
 
+That remaining frozen assignment has now also failed: another forced layer
+survives, but the subsequent arc run rejects it after 38 reductions. All
+292,009 forced intersections/placements and all 38 arc steps have independent
+audits. `neighbor_star_cut_layer_2.json` and `neighbor_star_cut_arcs_2.json`
+preserve the extension and failure. This last failure has **not** yet been
+lifted through both propagation layers into a small original-choice cut.
+
+## Q023: integrate optional-neighbor arcs into SAT refinement
+
+`neighbor_arc_cut_sat.py` starts with the 123 Q021 and five Q022 cuts.
+`neighbor_arc_oracle.py` applies necessary arc consistency after the immediate
+complete-star test passes. An empty domain yields a backward-sliced proof;
+choice deletion is allowed only while every proof tile remains forced.
+Round limits and solver timeouts remain unknown, and UNSAT would still await
+certificate audit. This run has none of those outcomes.
+
+The six cases pass after **3, 4, 2, 4, 12, and 1** SAT calls. There are
+**34 new cuts**: 20 immediate-neighbor contradictions and 14 arc-derived
+contradictions. Including inherited cuts there are 162: 155 of length two,
+three of length three, one of length four, and three of length five.
+`audit_neighbor_arc_sat.py` independently verifies every new certificate
+with explicit sets and rational geometry: 139 placements and 38 arc steps.
+Direct parent exclusions remain zero.
+
+The six final assignments are frozen in `neighbor_arc_sat_seed.json`.
+A separate generic forced/arc run independently checks 980,036 domain
+intersections, 657,809 distinct placements, and 13,606 arc reductions on
+11,025 distinct edges. `compare_arc_oracle.py` compares all **45,403** final
+domain records against the oracle output; every domain agrees. Thus the
+reported finite arc fixed points are checked, but joint star choices at the
+optional neighbors and infinite extension remain open.
+
+## Q024: return the learned cuts to the full frontier
+
+The fixed-center cuts also constrain cases outside the six-case SAT pilot.
+If all but one antecedent of a forbidden conjunction are already fixed,
+the remaining star choice can be removed. An absent center is never silently
+assumed present. `choice_cut_domains.py` applies this unit propagation to
+all 246 unresolved parent cases, removing **77 star values in 18 cases**.
+`audit_choice_cut_domains.py` independently replays every removal, checks all
+retained domains, and verifies that no further unit consequence remains.
+
+Only the changed 18 cases are sent to another arc run. They all survive,
+with 150 additional reductions on 83 distinct used edges, independently
+audited. The updated domains are merged with the 228 unchanged cases in
+`choice_cut_frontier_seed.json`, the new full frontier. It has the same
+128,780-position pose table and still **246 unresolved parent cases**.
+The merge checks domain containment and the current audit hashes; it is not
+an additional search or proof of infinite extension.
+
 ## Next attempt
 
 The Q021 implementation now adds the verified center-choice cuts to Q019. For a cut
@@ -165,12 +215,13 @@ the same pose table; if a center is absent from a pilot problem, do not
 silently assert that it exists. A star unavailable in a center's domain makes
 that conjunction impossible already.
 
-Add the five Q022 cuts from `neighbor_arc_cuts.json`, together with the 123
-Q021 cuts, to a new SAT experiment snapshot and repeat. Generalize the
-optional-neighbor arc check into its refinement loop, keeping a replayable
-choice-dependency certificate for each learned cut. Also extend the one
-surviving frozen assignment farther outward. Preserve timeouts and a finite
-cut-round limit as unknown.
+Continue forced-neighbor/arc propagation from `choice_cut_frontier_seed.json`,
+including another unit-cut pass if arc propagation has fixed new premises.
+For the SAT route, extend the six Q023 finite assignments and lift deeper
+failures through both forced and arc operations into original-choice
+certificates. The existing arc-only certificate cannot silently treat
+derived domains or optional tile presence as unconditional. Preserve limits
+and timeouts as unknown.
 An unsatisfiable parent instance will require an appropriately checked solver
 certificate or an independently replayable exhaustive argument; do not infer
 it merely because several sampled assignments fail.
@@ -178,7 +229,8 @@ it merely because several sampled assignments fail.
 The original Q018 and Q019 producers remain separate, source-bound experiment
 snapshots. Prefer a new cut-enabled producer rather than silently changing
 the meaning of their retained artifacts. The six-case pilot is not the whole
-246-case frontier. The current full frontier remains `expanded_arcs_2_seed.json`.
+246-case frontier. The current full frontier is `choice_cut_frontier_seed.json`;
+`expanded_arcs_2_seed.json` remains the original Q018–Q023 SAT input snapshot.
 
 ## Reproduction and scope
 
@@ -191,6 +243,8 @@ and `audit_incidence_star_cuts.py`. Exact arguments appear in the reproduction
 list. Q021–Q022 add `neighbor_star_cut_sat.py`, `audit_neighbor_star_cuts.py`,
 one forced layer and its full audit, expanded arcs and their audit,
 `audit_neighbor_arc_cuts.py`, and `verify_neighbor_arc_cut_certificate.py`.
+Q023–Q024 and the deeper old-model failure are also in the dependency list,
+which now has 100 commands. All are finite experiments.
 All were run separately; the enlarged combined sequence was not rerun
 from the beginning. No publication, outside review, Lean proof, or solid
 realization is claimed.

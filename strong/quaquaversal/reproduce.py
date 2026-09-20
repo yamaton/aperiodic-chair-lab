@@ -110,6 +110,29 @@ COMMANDS = [
      '--output',ARTIFACTS+'neighbor_star_cut_arcs_audit.json'],
     ['audit_neighbor_arc_cuts.py'],
     ['verify_neighbor_arc_cut_certificate.py'],
+    ['prepare_forced_seed.py','--input',ARTIFACTS+'neighbor_star_cut_arcs.json','--poses-source',ARTIFACTS+'neighbor_star_cut_layer_1.json',
+     '--output',ARTIFACTS+'neighbor_star_cut_arc_seed.json'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'neighbor_star_cut_arc_seed.json','--output',ARTIFACTS+'neighbor_star_cut_layer_2.json'],
+    ['audit_forced_domains_complete.py','--input',ARTIFACTS+'neighbor_star_cut_layer_2.json','--source',ARTIFACTS+'neighbor_star_cut_arc_seed.json',
+     '--output',ARTIFACTS+'neighbor_star_cut_layer_2_audit.json'],
+    ['expanded_arc_consistency.py','--input',ARTIFACTS+'neighbor_star_cut_layer_2.json','--output',ARTIFACTS+'neighbor_star_cut_arcs_2.json'],
+    ['audit_expanded_arcs.py','--input',ARTIFACTS+'neighbor_star_cut_arcs_2.json','--source',ARTIFACTS+'neighbor_star_cut_layer_2.json',
+     '--output',ARTIFACTS+'neighbor_star_cut_arcs_2_audit.json'],
+    ['neighbor_arc_cut_sat.py'],
+    ['audit_neighbor_arc_sat.py'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'neighbor_arc_sat_seed.json','--output',ARTIFACTS+'neighbor_arc_sat_layer_1.json'],
+    ['audit_forced_domains_complete.py','--input',ARTIFACTS+'neighbor_arc_sat_layer_1.json','--source',ARTIFACTS+'neighbor_arc_sat_seed.json',
+     '--output',ARTIFACTS+'neighbor_arc_sat_layer_1_audit.json'],
+    ['expanded_arc_consistency.py','--input',ARTIFACTS+'neighbor_arc_sat_layer_1.json','--output',ARTIFACTS+'neighbor_arc_sat_arcs.json'],
+    ['audit_expanded_arcs.py','--input',ARTIFACTS+'neighbor_arc_sat_arcs.json','--source',ARTIFACTS+'neighbor_arc_sat_layer_1.json',
+     '--output',ARTIFACTS+'neighbor_arc_sat_arcs_audit.json'],
+    ['compare_arc_oracle.py'],
+    ['choice_cut_domains.py'],
+    ['audit_choice_cut_domains.py'],
+    ['expanded_arc_consistency.py','--input',ARTIFACTS+'choice_cut_changed_seed.json','--output',ARTIFACTS+'choice_cut_arcs.json'],
+    ['audit_expanded_arcs.py','--input',ARTIFACTS+'choice_cut_arcs.json','--source',ARTIFACTS+'choice_cut_changed_seed.json',
+     '--output',ARTIFACTS+'choice_cut_arcs_audit.json'],
+    ['merge_choice_cut_frontier.py'],
 ]
 
 
@@ -188,6 +211,15 @@ def main():
     assert read('neighbor_star_cut_arcs_audit.json')['survivors'] == 1
     assert read('neighbor_arc_cuts.json')['direct_parent_exclusions'] == 0
     assert read('neighbor_arc_cut_certificate_audit.json')['verified_cuts'] == 5
+    assert read('neighbor_star_cut_arcs_2_audit.json')['rejected'] == 1
+    assert read('neighbor_arc_sat_audit.json')['cut_kinds'] == {'audited_initial':128,'neighbor_arc_failure':14,'empty_neighbor_domain':20}
+    assert read('neighbor_arc_sat_audit.json')['direct_parent_exclusions'] == 0
+    assert read('neighbor_arc_sat_layer_1_audit.json')['survivors'] == 6
+    assert read('neighbor_arc_sat_arcs_audit.json')['survivors'] == 6
+    assert read('arc_oracle_comparison.json')['domain_records'] == 45403
+    assert read('choice_cut_domain_audit.json')['star_removals'] == 77
+    assert read('choice_cut_arcs_audit.json')['survivors'] == 18
+    assert read('choice_cut_frontier_seed.json')['status_counts'] == {'survivor':246,'rejected':0}
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

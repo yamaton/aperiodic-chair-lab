@@ -1,0 +1,14 @@
+{
+  "scope": "Equality of every Q023 reported final arc domain with the independently audited generic run",
+  "assignments": 6,
+  "domain_records": 45403,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "neighbor_arc_cut_sat.json": "67f9f8cc9536e5b2f8a6fb3146a523e41d6ecd458e681951ffac64bd6137d3c4",
+    "neighbor_arc_sat_layer_1.json": "ec84ba094ce054f00e58db6532a88a947f5addd36a8132491165297ac290346d",
+    "neighbor_arc_sat_arcs.json": "31b67756f8d5c014f46939c71f8e2f0288325144850198b581a4ba15e7837444",
+    "neighbor_arc_sat_arcs_audit.json": "00141a48cb7dbe9bdcbce81e0242c82d9843acbea3349a05d145dd75fc554c73",
+    "compare_arc_oracle.py": "d46f68ffe7a5f8331ead2db95c3752c625a72da3ddb1bcd4e2d089370429c75e"
+  }
+}

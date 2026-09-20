@@ -96,7 +96,7 @@ counts, commands and the next step.
 **Current full frontier: 246 unresolved covers.** The next forced layer
 (`forced_after_arcs_1.json`) rejects 35 of 350, and `expanded_arcs_2.json`
 rejects 69 of the remaining 315. Full audits check retained domains and all
-512,877 arc reductions. The current seed is `expanded_arcs_2_seed.json`,
+512,877 arc reductions. That baseline seed is `expanded_arcs_2_seed.json`,
 with 128,780 shared positions and the narrowed domains of 246 live records.
 Keep `boundary_index`/`cover_index` as the fixed parent-case keys.
 
@@ -135,17 +135,42 @@ lengths 3, 3, 3, 5, 2. `neighbor_arc_cuts.json` holds their full certificates;
 `verify_neighbor_arc_cut_certificate.py` separately verifies 48 placements
 and 21 arc steps. All new cuts still have zero direct parent exclusions.
 
-**Resume with a new SAT snapshot accepting all 123 Q021 cuts plus the five
-Q022 cuts.** Add optional-neighbor arc checking and replayable dependency
-cuts to its refinement loop. Preserve prior producer snapshots. Apply cuts
-across cases only where the same fixed center poses/IDs and choices exist.
-Also extend the lone surviving frozen assignment: model index 5, original
-frontier source index 6, parent key `(515,0)`. Its current domains are in
-`neighbor_star_cut_arcs.json`; poses come from `neighbor_star_cut_layer_1.json`.
-Neither that assignment nor the full 246-case frontier is proved extendible.
-Keep finite limits/timeouts unknown and audit any eventual UNSAT certificate.
-The six-case pilot is not the full frontier. `OPTIONAL_NEIGHBOR_RULES.md`
-records scopes, failures and continuation details. No worker is left running.
+**Q023–Q024 completed; new full seed: `choice_cut_frontier_seed.json`.**
+`neighbor_arc_cut_sat.py` and `neighbor_arc_oracle.py` integrate necessary
+optional-neighbor arcs and replayable backward-sliced choice certificates.
+Starting from 128 cuts, they learn 34 more: 20 immediate-star and 14 arc
+contradictions. All 162 cuts have checked provenance; new certificates have
+139 exact placements and 38 arc steps. The six cases yield revised finite
+assignments in 3, 4, 2, 4, 12, 1 SAT calls; no limit, timeout or UNSAT.
+`neighbor_arc_sat_seed.json` freezes these assignments. A generic forced/arc
+replay audits 980,036 intersections, 657,809 distinct placements and 13,606
+arc reductions. `compare_arc_oracle.py` confirms every one of the 45,403
+final domain records agrees with the integrated oracle.
+
+The last surviving Q022 frozen assignment `(515,0)` also now fails: another
+forced layer passes (292,009 audited intersections/placements), then
+`neighbor_star_cut_arcs_2.json` rejects it after 38 audited reductions.
+Its deeper failure has not yet been lifted through both propagation layers
+to a small original-choice cut. It is not a parent exclusion.
+
+Q024 applies the 162 cuts by unit propagation to all 246 unresolved parents.
+It removes 77 star values in 18 cases, with every domain/removal audited.
+`choice_cut_changed_seed.json` contains only those 18 changed cases. Their
+arc run has 150 reductions on 83 distinct edges; all 18 still survive.
+`merge_choice_cut_frontier.py` combines them with the unchanged 228 cases.
+The new full seed `choice_cut_frontier_seed.json` has the same 128,780 poses
+and 246 live cases. Its row indices are new; `original_source_index` and
+the stable `boundary_index`/`cover_index` identify the old baseline cases.
+Cuts refer to pose IDs, which have not changed.
+
+**Resume necessary forced/arc propagation on that new full seed.** If further
+unit-cut propagation is needed, use a new parameterized snapshot: the current
+`choice_cut_domains.py` is bound to the old baseline input hash. Also extend
+the six Q023 frozen models and generalize choice proofs through forced-domain
+union/intersection operations as well as arcs. Do not treat derived optional
+positions as unconditional. Keep timeouts/finite limits unknown and audit
+any UNSAT certificate. The six-case SAT pilot is not the full frontier;
+`OPTIONAL_NEIGHBOR_RULES.md` has scopes and commands. No worker is left running.
 **Q010 completed:** affine whole-panel groupoids give periodic witnesses for
 all 256 stationary handedness words, for arbitrary pointwise equality or
 real scalar opposite-sign functions. Only equality words 111/144 require
@@ -154,7 +179,7 @@ derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
 scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
 independent edge labels are not covered. The constructive Q003 skeleton/
 vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` now lists 83
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 100
 dependency-ordered commands; `--audit-only` checks retained hashes and result
 expectations. The original 18-command replay passed, and all subsequent
 commands have also run separately; the expanded combined replay has not yet
