@@ -1,0 +1,16 @@
+{
+  "scope": "Standalone exact replay of Q022 necessary forbidden-conjunction certificates",
+  "verified_cuts": 5,
+  "exact_placements": 48,
+  "arc_steps": 21,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "closed_contact_atlas.json": "f25a57d98f389a63934b5c3b01cbbaf2ffe876a52d8dd3c3c57959611b5dc1e2",
+    "closed_star_language.json": "65545bf354a81ebe1b5157c09c008aa7c4dfe96523ec5764d1e0bd72c90292e8",
+    "closed_star_compatibility.json": "00aa8a139e4027deba0b0a2c366278c60c07dfc8c9ee445bc504ef23e3d4b693",
+    "neighbor_star_cut_layer_1.json": "5423d6d22f6194396384784ea2ee67f4a8dfa534a304ca914d9bf4206db42a72",
+    "neighbor_arc_cuts.json": "57e66377f493ddfb09c249cf96ad8ca7593930f445cf6f228dc056e47162f52f",
+    "verify_neighbor_arc_cut_certificate.py": "a8fc780be0476156deff5173f6d0fc82f74d58296fbca3eae3b7aabc6ca9d2ce"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "Preserved implementation failure, not a matching-rule contradiction",
+  "exit_code": 1,
+  "failure": "Duplicate cut from another empty neighbor in the same SAT model was incorrectly treated as an already installed cut",
+  "repair": "Distinguish installed cuts from cuts newly discovered in the current iteration; deduplicate the latter",
+  "sources": {
+    "neighbor_star_cut_initial.py": "5920fd7e36c791fe16a138e2e7f4eabd139427101fd0b668f065937948d1986b"
+  }
+}

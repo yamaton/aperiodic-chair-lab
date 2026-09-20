@@ -115,23 +115,37 @@ six independently verified forbidden conjunctions, each involving exactly
 two `(center tile ID, selected star ID)` choices. None excludes its original
 parent case without an additional choice, so the full count remains 246.
 
-**Resume by adding those verified choice cuts to the Q019 SAT pilot.** Use
-a new cut-enabled producer based on `neighbor_incidence_geometry_sat.py` to
-preserve earlier experiment snapshots. For each cut, disallow the conjunction
-of its two selectors; apply across cases only where the same fixed center
-poses/IDs and choices are represented. Check each new satisfying assignment
-by complete-neighbor-star extension, then extract further audited cuts.
-Keep finite iteration limits and solver timeouts unknown; any UNSAT parent
-claim still needs an appropriate certificate/exhaustive audit. The pilot
-covers six cases, not the full frontier. `OPTIONAL_NEIGHBOR_RULES.md` explains
-the proof of each cut and the preserved failures.
+**Q021–Q022 completed:** `neighbor_star_cut_sat.py` adds the initial six cuts
+and learns 117 more, all binary. Exact placement/set audits pass. The six
+pilot cases yield revised assignments passing the immediate complete-star
+test in 4, 5, 3, 2, 2, 3 SAT calls. No timeout, UNSAT, or round cap occurs.
+The initial duplicate-cut assertion failure is preserved with its source;
+it was an implementation bug, not a mathematical exclusion.
+`neighbor_star_cut_seed.json` freezes the revised assignments. Their first
+forced layer (`neighbor_star_cut_layer_1.json`) has six survivors, with all
+979,677 intersections and 661,624 distinct placements independently audited.
+`audit_forced_domains_complete.py` is a snapshot handling absent zero-count
+status categories; preserve the historical auditor's source hash.
+`neighbor_star_cut_arcs.json` rejects five assignments, leaving one; all
+2,829 reductions and 2,799 distinct used edges are independently audited.
+`audit_neighbor_arc_cuts.py` backward-slices these failures, reconstructs
+initial domains from selected center stars, and greedily removes premises
+while still forcing every tile used in each proof. The five cuts have
+lengths 3, 3, 3, 5, 2. `neighbor_arc_cuts.json` holds their full certificates;
+`verify_neighbor_arc_cut_certificate.py` separately verifies 48 placements
+and 21 arc steps. All new cuts still have zero direct parent exclusions.
 
-Source paths: `neighbor_incidence_geometry_sat.json` supplies the six models;
-`incidence_model_star_seed.json` freezes them; `incidence_model_star_extension.json`
-records their six empty neighbor domains; `audit_incidence_star_cuts.py`
-checks those failures and writes the minimized two-choice cuts. These latter
-scripts currently use the fixed Q019 filenames; make the next experiment's
-provenance explicit. No worker is left running at this checkpoint.
+**Resume with a new SAT snapshot accepting all 123 Q021 cuts plus the five
+Q022 cuts.** Add optional-neighbor arc checking and replayable dependency
+cuts to its refinement loop. Preserve prior producer snapshots. Apply cuts
+across cases only where the same fixed center poses/IDs and choices exist.
+Also extend the lone surviving frozen assignment: model index 5, original
+frontier source index 6, parent key `(515,0)`. Its current domains are in
+`neighbor_star_cut_arcs.json`; poses come from `neighbor_star_cut_layer_1.json`.
+Neither that assignment nor the full 246-case frontier is proved extendible.
+Keep finite limits/timeouts unknown and audit any eventual UNSAT certificate.
+The six-case pilot is not the full frontier. `OPTIONAL_NEIGHBOR_RULES.md`
+records scopes, failures and continuation details. No worker is left running.
 **Q010 completed:** affine whole-panel groupoids give periodic witnesses for
 all 256 stationary handedness words, for arbitrary pointwise equality or
 real scalar opposite-sign functions. Only equality words 111/144 require
@@ -140,7 +154,7 @@ derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
 scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
 independent edge labels are not covered. The constructive Q003 skeleton/
 vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` now lists 75
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 83
 dependency-ordered commands; `--audit-only` checks retained hashes and result
 expectations. The original 18-command replay passed, and all subsequent
 commands have also run separately; the expanded combined replay has not yet

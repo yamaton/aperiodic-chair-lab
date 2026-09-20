@@ -100,6 +100,16 @@ COMMANDS = [
     ['incidence_model_star_seed.py'],
     ['propagate_forced_domains.py','--input',ARTIFACTS+'incidence_model_star_seed.json','--output',ARTIFACTS+'incidence_model_star_extension.json'],
     ['audit_incidence_star_cuts.py'],
+    ['neighbor_star_cut_sat.py'],
+    ['audit_neighbor_star_cuts.py'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'neighbor_star_cut_seed.json','--output',ARTIFACTS+'neighbor_star_cut_layer_1.json'],
+    ['audit_forced_domains_complete.py','--input',ARTIFACTS+'neighbor_star_cut_layer_1.json','--source',ARTIFACTS+'neighbor_star_cut_seed.json',
+     '--output',ARTIFACTS+'neighbor_star_cut_layer_1_audit.json'],
+    ['expanded_arc_consistency.py','--input',ARTIFACTS+'neighbor_star_cut_layer_1.json','--output',ARTIFACTS+'neighbor_star_cut_arcs.json'],
+    ['audit_expanded_arcs.py','--input',ARTIFACTS+'neighbor_star_cut_arcs.json','--source',ARTIFACTS+'neighbor_star_cut_layer_1.json',
+     '--output',ARTIFACTS+'neighbor_star_cut_arcs_audit.json'],
+    ['audit_neighbor_arc_cuts.py'],
+    ['verify_neighbor_arc_cut_certificate.py'],
 ]
 
 
@@ -169,6 +179,15 @@ def main():
     assert all(r['status'] == 'sat' for r in read('neighbor_incidence_geometry_sat.json')['results'])
     assert read('incidence_star_cuts.json')['assignment_rejections'] == 6
     assert read('incidence_star_cuts.json')['direct_parent_exclusions'] == 0
+    assert read('neighbor_star_cut_initial_failure.json')['exit_code'] == 1
+    assert read('neighbor_star_cut_audit.json')['new_cuts'] == 117
+    assert read('neighbor_star_cut_audit.json')['direct_parent_exclusions'] == 0
+    assert all(r['status'] == 'sat_passes_neighbor_star_test' for r in read('neighbor_star_cut_sat.json')['results'])
+    assert read('neighbor_star_cut_layer_1_audit.json')['survivors'] == 6
+    assert read('neighbor_star_cut_arcs_audit.json')['rejected'] == 5
+    assert read('neighbor_star_cut_arcs_audit.json')['survivors'] == 1
+    assert read('neighbor_arc_cuts.json')['direct_parent_exclusions'] == 0
+    assert read('neighbor_arc_cut_certificate_audit.json')['verified_cuts'] == 5
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

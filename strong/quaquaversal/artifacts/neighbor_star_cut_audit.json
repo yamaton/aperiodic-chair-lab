@@ -1,0 +1,22 @@
+{
+  "scope": "Exact necessary-cut audit and membership check of final finite assignments; not a tiling certificate",
+  "inherited_cuts": 6,
+  "new_cuts": 117,
+  "cut_lengths": {
+    "2": 123
+  },
+  "exact_placements": 234,
+  "direct_parent_exclusions": 0,
+  "frozen_assignments": 6,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "closed_contact_atlas.json": "f25a57d98f389a63934b5c3b01cbbaf2ffe876a52d8dd3c3c57959611b5dc1e2",
+    "closed_star_language.json": "65545bf354a81ebe1b5157c09c008aa7c4dfe96523ec5764d1e0bd72c90292e8",
+    "closed_star_compatibility.json": "00aa8a139e4027deba0b0a2c366278c60c07dfc8c9ee445bc504ef23e3d4b693",
+    "expanded_arcs_2_seed.json": "75b7ffd46d9a414c0b78841a76e49b4254477cfaefcb052dad36ba251be16da8",
+    "incidence_star_cuts.json": "38c94aaa41f38c56a3b0c53bb6a5f937bb82ccdf938d03ada97393aaa68e3612",
+    "neighbor_star_cut_sat.json": "f52be31804f1f74eae52a7f1afdf0238ae936ed06fea4fca0bc7f182b39426dc",
+    "audit_neighbor_star_cuts.py": "31e42ff67bc9b2c68b7273c2cf2f113c01ac28b6bc80ed99d99652b697ef26c3"
+  }
+}

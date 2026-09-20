@@ -28,6 +28,8 @@ results in `artifacts/` with a reproduction command.
 | Q018 | Simultaneous optional-neighbor presence | Pilot insufficient | Six satisfiable assignments each have a certified forbidden geometric pair |
 | Q019 | Add sampled interior non-overlap | Pilot insufficient | 209,371 audited pair clauses; all six pilot cases remain satisfiable |
 | Q020 | Complete-star extension of optional neighbors | Six verified choice cuts | All six Q019 assignments fail; each yields a two-choice forbidden conjunction, not a parent exclusion |
+| Q021 | Learn immediate complete-neighbor-star cuts | Six revised assignments survive | 117 new audited binary cuts; original 246 parent cases remain unresolved |
+| Q022 | Propagate between optional neighbors | Five revised assignments rejected | Audited cuts of lengths 3, 3, 3, 5, 2; one finite assignment remains unresolved |
 
 ## Q000 — geometry
 
@@ -149,10 +151,10 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Continue Q020 by adding the six verified cuts in `incidence_star_cuts.json`
-  to the sampled-overlap SAT pilot. Recheck new assignments by requiring
-  complete stars at their selected neighbors, extracting further witnessed
-  cuts if necessary. Preserve an explicit finite iteration budget as unknown.
+- Continue Q022 by adding five arc-derived cuts in `neighbor_arc_cuts.json`
+  to the 123 Q021 cuts. Integrate optional-neighbor arc propagation and
+  replayable choice-dependency certificates into the next SAT refinement.
+  Extend the one surviving frozen assignment. Preserve finite limits as unknown.
   The full 246-case frontier is `expanded_arcs_2_seed.json`; the SAT pilot
   covers only six of those cases. [OPTIONAL_NEIGHBOR_RULES.md](OPTIONAL_NEIGHBOR_RULES.md)
   gives the exact scope and continuation details.
@@ -217,7 +219,15 @@ complete neighbor stars are requested, yielding six verified binary choice
 cuts for the next attempt. [OPTIONAL_NEIGHBOR_RULES.md](OPTIONAL_NEIGHBOR_RULES.md)
 distinguishes these assignment rejections from whole-parent exclusions.
 
-This now runs 75 commands in dependency order and checks input hashes. Expected
+Q021 learns 117 additional audited binary cuts; all six pilot cases admit
+revised assignments passing the immediate complete-neighbor-star check.
+Q022 rejects five of those assignments when optional neighbors constrain
+each other, yielding five separately checked cuts of lengths 3, 3, 3, 5, 2.
+One frozen assignment remains unresolved; none of these cuts excludes an
+original parent case without further choices. The Q021 duplicate-cut
+implementation failure and its correction are preserved in the artifacts.
+
+This now runs 83 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.

@@ -93,18 +93,84 @@ no possible complete star. None of these six cuts has both antecedents
 already fixed in the original parent-domain problem. Thus they reject the
 six model assignments, with **zero direct parent exclusions** at this stage.
 
+## Q021: necessary cuts change the models but do not exclude the cases
+
+`neighbor_star_cut_sat.py` adds the six audited Q020 cuts to the same six
+Q019 pilot problems. Each satisfying assignment is checked for a nonempty
+complete-star domain at every tile it requires. An empty intersection gives
+a necessary forbidden conjunction of selected center stars; those cuts are
+added before asking for another assignment. A cut is applied in another
+case only when its fixed center IDs and selected star values are present.
+
+This adds **117 cuts**, all of length two, giving 123 including Q020.
+`audit_neighbor_star_cuts.py` independently checks the 234 rational neighbor
+placements and the empty intersections using explicit sets. None of the
+new cuts excludes its source parent without additional choices. All six
+cases eventually pass the immediate complete-neighbor-star test, after
+4, 5, 3, 2, 2, and 3 SAT calls respectively. No solver timeout, UNSAT, or
+16-round cap occurs. These are finite assignments, not tilings: compatible
+stars at different optional neighbors have not yet been chosen jointly.
+
+The first implementation stopped on an assertion because the same newly
+found cut could be discovered at several neighbors in one model. It wrongly
+treated a cut discovered earlier in that model as already installed in the
+solver. `neighbor_star_cut_initial.py` and
+`neighbor_star_cut_initial_failure.json` preserve this implementation failure.
+The repaired producer distinguishes previously installed cuts from newly
+discovered duplicates. This was not a mathematical contradiction.
+
+The final selected stars are frozen in `neighbor_star_cut_seed.json` for
+deeper extension. The first forced layer has six survivors. A dedicated
+snapshot, `audit_forced_domains_complete.py`, handles a missing zero-count
+category in the producer's status dictionary; the original audit source is
+preserved because older artifacts bind its hash.
+
+## Q022: compatibility between optional neighbors gives stronger cuts
+
+The first forced layer is independently checked in full: 979,677 domain
+intersections and 661,624 distinct exact placements, with all six assignments
+surviving. Expanded arc consistency on those patches then rejects **five
+assignments**, leaving one. Its 2,829 logged reductions and 2,799 distinct
+used edges are independently replayed. These are assignment counts, not
+reductions of the 246-case parent frontier.
+
+`audit_neighbor_arc_cuts.py` traces each empty domain backward through the
+recorded reductions. It reconstructs the relevant initial domains from the
+original selected center stars, then deletes unnecessary choice premises.
+Crucially, after deleting a premise, every tile used in the proof must still
+be forced present by at least one remaining premise. A domain calculation
+at an unforced optional position would not justify a cut.
+
+The five resulting cuts have lengths **3, 3, 3, 5, and 2**. Their certificates
+use 3, 2, 2, 12, and 2 arc steps, respectively. Each contains its selected
+center-star hypotheses, geometric neighbor requirements, and the reduction
+trace leading to an empty domain. `verify_neighbor_arc_cut_certificate.py`
+checks these certificates separately from the extraction search, using
+Fraction geometry and explicit sets. None has all hypotheses fixed in the
+original parent problem: direct parent exclusions remain zero.
+
+The single surviving frozen assignment is model 5, original full-frontier
+`source_index=6`, parent key `(boundary_index=515, cover_index=0)`. Surviving
+arc consistency does not assert a consistent joint star assignment, still
+less infinite extension. Its narrowed domains are in
+`neighbor_star_cut_arcs.json`, using the pose table in
+`neighbor_star_cut_layer_1.json`.
+
 ## Next attempt
 
-Add the verified center-choice cuts to the Q019 SAT model. For a cut
+The Q021 implementation now adds the verified center-choice cuts to Q019. For a cut
 `[(i,s),(j,t)]`, forbid choosing star `s` at center `i` together with star `t`
 at center `j`. Apply a cut only when its fixed geometric center IDs refer to
 the same pose table; if a center is absent from a pilot problem, do not
 silently assert that it exists. A star unavailable in a center's domain makes
 that conjunction impossible already.
 
-Recheck the model. For a new satisfying assignment, repeat complete-neighbor
-extension and extract more verified cuts; optionally check exact geometric
-conflicts too. Preserve timeouts and a finite cut-round limit as unknown.
+Add the five Q022 cuts from `neighbor_arc_cuts.json`, together with the 123
+Q021 cuts, to a new SAT experiment snapshot and repeat. Generalize the
+optional-neighbor arc check into its refinement loop, keeping a replayable
+choice-dependency certificate for each learned cut. Also extend the one
+surviving frozen assignment farther outward. Preserve timeouts and a finite
+cut-round limit as unknown.
 An unsatisfiable parent instance will require an appropriately checked solver
 certificate or an independently replayable exhaustive argument; do not infer
 it merely because several sampled assignments fail.
@@ -122,7 +188,10 @@ are `neighbor_incidence_sat.py`, `incidence_model_geometry.py`,
 `audit_incidence_samples.py`, `neighbor_incidence_geometry_sat.py`,
 `incidence_model_star_seed.py`, the generic forced propagator on that seed,
 and `audit_incidence_star_cuts.py`. Exact arguments appear in the reproduction
-list. All were run separately; the enlarged combined sequence was not rerun
+list. Q021–Q022 add `neighbor_star_cut_sat.py`, `audit_neighbor_star_cuts.py`,
+one forced layer and its full audit, expanded arcs and their audit,
+`audit_neighbor_arc_cuts.py`, and `verify_neighbor_arc_cut_certificate.py`.
+All were run separately; the enlarged combined sequence was not rerun
 from the beginning. No publication, outside review, Lean proof, or solid
 realization is claimed.
 

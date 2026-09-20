@@ -44,8 +44,10 @@ one parent level. Recursive parent legality remains open. Subsequent
 [repeated propagation](PARENT_PROPAGATION.md) reduce the unresolved
 possibilities to 246 nonlanguage parent covers. The retained domains and
 exclusion traces have been audited. [Optional-neighbor pilots](OPTIONAL_NEIGHBOR_RULES.md)
-now provide six verified forbidden combinations of center-star choices for
-a stronger SAT attempt. These reject assignments, not whole parent cases.
+now provide 123 verified binary forbidden combinations of center-star choices,
+plus five stronger arc-derived choice cuts. Six revised assignments pass an
+immediate neighbor-star test; five fail further arc propagation. These reject
+assignments, not whole parent cases; one frozen assignment remains unresolved.
 See [attempts and commands](ATTEMPTS.md) and [primary sources](LITERATURE.md).
 No novelty, external review, or fabrication claim is made.
 
