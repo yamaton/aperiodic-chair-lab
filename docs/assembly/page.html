@@ -2,11 +2,11 @@
 <html lang="ja">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chair Lab — 組み立てて、階層を見つける</title>
-<style>/* STYLE */</style></head>
+<style>/* STYLE */</style><style>/* RULE_STYLE */</style></head>
 <body>
 <noscript><p>この組立教材の操作にはJavaScriptが必要です。数学的な背景は <a href="APERIODIC_CHAIR_TUTORIAL.html">学部生向け解説（英語）</a> から読めます。</p></noscript>
 <header class="mast"><div><p class="eyebrow">APERIODIC CHAIR LAB · INTERACTIVE PROTOTYPE</p><h1>組み立てて、階層を見つける</h1><p>面の模様と矢印を合わせると、同じ形のブロックを接着できます。</p></div>
-<div class="mast-actions"><button id="guide-open">操作チュートリアル</button>
+<div class="mast-actions"><button id="guide-open">操作チュートリアル</button><button id="rule-open">接着ルールの実験室</button>
 <div class="language-control"><label for="language">表示言語</label><select id="language"><option value="ja" lang="ja">日本語</option><option value="en" lang="en">English</option></select></div></div></header>
 <main>
 <div class="topbar"><div class="modes" aria-label="遊び方"><button id="guided" aria-pressed="true">親を一つ作る</button><button id="free" aria-pressed="false">自由に組む</button></div>
@@ -45,6 +45,8 @@
 <p class="background-reading"><a href="APERIODIC_CHAIR_TUTORIAL.html" target="_blank" rel="noopener">背景の数学を読む（英語・学部生向け） ↗</a></p>
 </main>
 <!-- GUIDE -->
+<!-- RULE LAB -->
 <dialog id="confirm"><form method="dialog"><h2>新しく始めますか？</h2><p>現在の組立、取り付け中の部品、元に戻す履歴を置き換えます。</p><div class="actions"><button value="cancel">今の作業を続ける</button><button value="start" class="primary">新しく始める</button></div></form></dialog>
 <script>/* DATA */</script><script>/* ENGINE */</script><script>/* PARENT_RULES */</script><script>/* PARENT_LAB */</script><script>/* MOTION */</script><script>/* LANGUAGE */</script><script>/* I18N */</script><script>/* FEEDBACK */</script><script>/* APP */</script>
+<script>/* RULE_DATA */</script><script>/* RULE_MODEL */</script><script>/* RULE_LAB */</script>
 </body></html>

@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "checked_at": "2026-09-19T20:29:11.502Z",
+  "checked_at": "2026-09-19T22:53:34.862Z",
   "scope": "Scripted offline UI demonstration checks; not player trials",
-  "html_sha256": "765835a9d6a7bd77e710981aa722f935ad68e36eab1d9543cf6b3d5199500a97",
+  "html_sha256": "5587213cce3814001084d8d9cc81cb44bd783aa0e9e7aeaf0092ea08e50dabb0",
   "checks": [
     "real target and piece clicks",
     "mismatched arrows become valid after rotation",

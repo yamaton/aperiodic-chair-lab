@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "reference_candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "triangular_candidate_sha256": "b1237ab5c2b7c75c565fb4f837a886aa2aafa990927bdbcda399a440cd68b3ce",
+  "symbolic": {
+    "polynomial": "-27*(u + 1)*(v + 1)*(u + 2*v + 1)/4",
+    "degree": 3,
+    "barycentric_polynomial": "27*u*v*(-u - v + 1)",
+    "leading_line_coefficient": "-27*d*e*(d + e)",
+    "quadratic_branch_coefficients": [
+      "-27*e**2*x",
+      "-27*d**2*y",
+      "27*d**2*(x + y - 1)"
+    ],
+    "integral_over_normalized_triangle": "9/20",
+    "maximum": "1",
+    "maximum_reason": "AM-GM for three nonnegative barycentric coordinates summing to one",
+    "side_squared_lengths": [
+      1,
+      4,
+      5
+    ],
+    "triangle_vertex_stabilizer": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "degree_two_triangle_boundary_kernel_dimension": 0,
+    "degree_three_triangle_boundary_basis": [
+      "(u + 1)*(v + 1)*(u + 2*v + 1)"
+    ],
+    "degree_four_square_boundary_basis": [
+      "(u - 1)*(u + 1)*(v - 1)*(v + 1)"
+    ],
+    "degree_four_square_symmetries": 8,
+    "isosceles_triangle_control_symmetries": 2,
+    "pyramid_control": {
+      "barycentric_point": [
+        "1/12",
+        "1/3"
+      ],
+      "local_uv_translation": [
+        "0",
+        "1/100"
+      ],
+      "world_translation_length": "1/6400",
+      "scope": "Open planar-facet coincidence only, not a disjoint whole-tile placement"
+    }
+  },
+  "finite": {
+    "ports": 192,
+    "exposed_faces": 24,
+    "key_counts": {
+      "-2": 16,
+      "-1": 80,
+      "1": 80,
+      "2": 16
+    },
+    "opposite_key_frame_pairs": 13312,
+    "distinct_frame_locked_poses": 1410,
+    "all_frame_maps_proper_integral": true,
+    "actual_triangle_vertices_match": true,
+    "adjacent_owner_checks": 13312,
+    "height_bound": "1/2048",
+    "minimum_face_edge_margin_lower_bound": "19/64",
+    "signed_cap_volume_sum": "0",
+    "total_volume": "7",
+    "periodic_box_pair_checks": 15528,
+    "all_frame_box_memberships": 9216,
+    "feature_boxes_within_reference_boxes": true,
+    "minimum_periodic_box_gap": "3/32",
+    "far_box_reason": "A coordinate shift of magnitude >=2 has center distance >1; summed radii <=1/32.",
+    "fine_geometric_contacts": 1194,
+    "full_macro_geometric_contacts": 6801,
+    "fine_fitting_contacts": 44,
+    "full_macro_fitting_contacts": 44,
+    "odd_macro_fitting_contacts": 0,
+    "reference_fine_contact_sets_equal": true,
+    "macro_contacts_equal_doubled_reference": true,
+    "contact_scope": "Exact frame/key contact atlas; equivalence to curved-surface matching uses the written rigidity lemma."
+  },
+  "implementation": "SymPy identities and rational port geometry; contact atlas uses verify_from_coordinates helpers.",
+  "scope": "Local algebraic identities and finite geometric hypotheses. Universal rigidity and registration are written deductions, not formal verification or independent review."
+}

@@ -1,11 +1,8 @@
 {
   "status": "pass",
   "html_sha256": "5587213cce3814001084d8d9cc81cb44bd783aa0e9e7aeaf0092ea08e50dabb0",
-  "scope": "Aligned four-panel interfaces and offline UI; not an infinite-tiling proof",
-  "comparisons": 2304,
-  "compatible": 192,
-  "patterns": 3,
-  "selection_rotation_checks": 2304,
+  "raw_port_comparisons": 14328,
+  "scope": "Six assignments replayed from raw port coordinates at all 1,194 aligned fine and parent poses; graph freedom and offline browser controls. No misregistration or infinite-tiling claim.",
   "layouts": [
     {
       "width": 1280,
@@ -44,7 +41,6 @@
       "lang": "zh"
     }
   ],
-  "history_preserved": true,
-  "levels": 2,
+  "assembly_history_preserved": true,
   "page_errors": []
 }

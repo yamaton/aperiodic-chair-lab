@@ -17,6 +17,13 @@ three face motifs, and a periodic control. The [review note](REVIEW_NOTE.md)
 summarizes the proposed theorem and its dependencies.
 The [local parent proof](MOTIF_GROUPING.md) explains forced grouping through
 three face patterns, with an illustrated layout and a smaller certificate.
+The later [port simplification](PORT_SIMPLIFICATION.md) proposes a cubic
+scalene-triangle cap with two depth levels, a written rigidity argument and
+the same checked contact atlas. It is a separate research snapshot, not a
+replacement for the frozen square-cap reference or a fabrication certificate.
+The [movable-anchor dimension study](PORT_DIMENSIONS.md) then gives a separate
+12×-width, 256×-depth witness, exact packing bounds in a specified family,
+and curved-zone clearance conditions that improve on rectangular boxes.
 
 The research reflection [What the search taught us](../FINDINGS.md) collects
 the main insights and distinguishes verified results from future directions.

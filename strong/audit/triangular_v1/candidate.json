@@ -1,0 +1,4876 @@
+{
+  "schema": 2,
+  "convention": "Proposed triangular cubic variant; all affine isometries considered in written registration argument.",
+  "coarse_cubes": [
+    [
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      0
+    ],
+    [
+      -1,
+      0,
+      -1
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      -1
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "ports": [
+    {
+      "center": [
+        "-1",
+        "-11/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 1
+    },
+    {
+      "center": [
+        "-1",
+        "-11/16",
+        "-7/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 2
+    },
+    {
+      "center": [
+        "-1",
+        "-9/16",
+        "-11/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 3
+    },
+    {
+      "center": [
+        "-1",
+        "-9/16",
+        "-5/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 4
+    },
+    {
+      "center": [
+        "-1",
+        "-7/16",
+        "-11/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 5
+    },
+    {
+      "center": [
+        "-1",
+        "-7/16",
+        "-5/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 6
+    },
+    {
+      "center": [
+        "-1",
+        "-5/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 7
+    },
+    {
+      "center": [
+        "-1",
+        "-5/16",
+        "-7/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 8
+    },
+    {
+      "center": [
+        "-11/16",
+        "-1",
+        "-9/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 9
+    },
+    {
+      "center": [
+        "-11/16",
+        "-1",
+        "-7/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 10
+    },
+    {
+      "center": [
+        "-9/16",
+        "-1",
+        "-11/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -9
+    },
+    {
+      "center": [
+        "-9/16",
+        "-1",
+        "-5/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 11
+    },
+    {
+      "center": [
+        "-7/16",
+        "-1",
+        "-11/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -10
+    },
+    {
+      "center": [
+        "-7/16",
+        "-1",
+        "-5/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 12
+    },
+    {
+      "center": [
+        "-5/16",
+        "-1",
+        "-9/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -11
+    },
+    {
+      "center": [
+        "-5/16",
+        "-1",
+        "-7/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -12
+    },
+    {
+      "center": [
+        "-11/16",
+        "-9/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -3
+    },
+    {
+      "center": [
+        "-11/16",
+        "-7/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -5
+    },
+    {
+      "center": [
+        "-9/16",
+        "-11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -1
+    },
+    {
+      "center": [
+        "-9/16",
+        "-5/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -7
+    },
+    {
+      "center": [
+        "-7/16",
+        "-11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -2
+    },
+    {
+      "center": [
+        "-7/16",
+        "-5/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -8
+    },
+    {
+      "center": [
+        "-5/16",
+        "-9/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -4
+    },
+    {
+      "center": [
+        "-5/16",
+        "-7/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -6
+    },
+    {
+      "center": [
+        "-1",
+        "-11/16",
+        "7/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 5
+    },
+    {
+      "center": [
+        "-1",
+        "-11/16",
+        "9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 3
+    },
+    {
+      "center": [
+        "-1",
+        "-9/16",
+        "5/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 7
+    },
+    {
+      "center": [
+        "-1",
+        "-9/16",
+        "11/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 1
+    },
+    {
+      "center": [
+        "-1",
+        "-7/16",
+        "5/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 8
+    },
+    {
+      "center": [
+        "-1",
+        "-7/16",
+        "11/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 2
+    },
+    {
+      "center": [
+        "-1",
+        "-5/16",
+        "7/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 6
+    },
+    {
+      "center": [
+        "-1",
+        "-5/16",
+        "9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 4
+    },
+    {
+      "center": [
+        "-11/16",
+        "-1",
+        "7/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -5
+    },
+    {
+      "center": [
+        "-11/16",
+        "-1",
+        "9/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -3
+    },
+    {
+      "center": [
+        "-9/16",
+        "-1",
+        "5/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -7
+    },
+    {
+      "center": [
+        "-9/16",
+        "-1",
+        "11/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -1
+    },
+    {
+      "center": [
+        "-7/16",
+        "-1",
+        "5/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -8
+    },
+    {
+      "center": [
+        "-7/16",
+        "-1",
+        "11/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -2
+    },
+    {
+      "center": [
+        "-5/16",
+        "-1",
+        "7/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -6
+    },
+    {
+      "center": [
+        "-5/16",
+        "-1",
+        "9/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -4
+    },
+    {
+      "center": [
+        "-11/16",
+        "-9/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 9
+    },
+    {
+      "center": [
+        "-11/16",
+        "-7/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 10
+    },
+    {
+      "center": [
+        "-9/16",
+        "-11/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -9
+    },
+    {
+      "center": [
+        "-9/16",
+        "-5/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 11
+    },
+    {
+      "center": [
+        "-7/16",
+        "-11/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -10
+    },
+    {
+      "center": [
+        "-7/16",
+        "-5/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 12
+    },
+    {
+      "center": [
+        "-5/16",
+        "-9/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -11
+    },
+    {
+      "center": [
+        "-5/16",
+        "-7/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -12
+    },
+    {
+      "center": [
+        "-1",
+        "5/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -7
+    },
+    {
+      "center": [
+        "-1",
+        "5/16",
+        "-7/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -8
+    },
+    {
+      "center": [
+        "-1",
+        "7/16",
+        "-11/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -5
+    },
+    {
+      "center": [
+        "-1",
+        "7/16",
+        "-5/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -6
+    },
+    {
+      "center": [
+        "-1",
+        "9/16",
+        "-11/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -3
+    },
+    {
+      "center": [
+        "-1",
+        "9/16",
+        "-5/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -4
+    },
+    {
+      "center": [
+        "-1",
+        "11/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -1
+    },
+    {
+      "center": [
+        "-1",
+        "11/16",
+        "-7/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -2
+    },
+    {
+      "center": [
+        "-11/16",
+        "1",
+        "-9/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -9
+    },
+    {
+      "center": [
+        "-11/16",
+        "1",
+        "-7/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -10
+    },
+    {
+      "center": [
+        "-9/16",
+        "1",
+        "-11/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 9
+    },
+    {
+      "center": [
+        "-9/16",
+        "1",
+        "-5/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -11
+    },
+    {
+      "center": [
+        "-7/16",
+        "1",
+        "-11/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 10
+    },
+    {
+      "center": [
+        "-7/16",
+        "1",
+        "-5/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -12
+    },
+    {
+      "center": [
+        "-5/16",
+        "1",
+        "-9/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 11
+    },
+    {
+      "center": [
+        "-5/16",
+        "1",
+        "-7/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 12
+    },
+    {
+      "center": [
+        "-11/16",
+        "7/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 5
+    },
+    {
+      "center": [
+        "-11/16",
+        "9/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 3
+    },
+    {
+      "center": [
+        "-9/16",
+        "5/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 7
+    },
+    {
+      "center": [
+        "-9/16",
+        "11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 1
+    },
+    {
+      "center": [
+        "-7/16",
+        "5/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 8
+    },
+    {
+      "center": [
+        "-7/16",
+        "11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 2
+    },
+    {
+      "center": [
+        "-5/16",
+        "7/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 6
+    },
+    {
+      "center": [
+        "-5/16",
+        "9/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 4
+    },
+    {
+      "center": [
+        "-1",
+        "5/16",
+        "7/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 12
+    },
+    {
+      "center": [
+        "-1",
+        "5/16",
+        "9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 11
+    },
+    {
+      "center": [
+        "-1",
+        "7/16",
+        "5/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -12
+    },
+    {
+      "center": [
+        "-1",
+        "7/16",
+        "11/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 10
+    },
+    {
+      "center": [
+        "-1",
+        "9/16",
+        "5/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -11
+    },
+    {
+      "center": [
+        "-1",
+        "9/16",
+        "11/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 9
+    },
+    {
+      "center": [
+        "-1",
+        "11/16",
+        "7/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -10
+    },
+    {
+      "center": [
+        "-1",
+        "11/16",
+        "9/16"
+      ],
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -9
+    },
+    {
+      "center": [
+        "0",
+        "5/16",
+        "7/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -1
+    },
+    {
+      "center": [
+        "0",
+        "5/16",
+        "9/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -2
+    },
+    {
+      "center": [
+        "0",
+        "7/16",
+        "5/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -3
+    },
+    {
+      "center": [
+        "0",
+        "7/16",
+        "11/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -4
+    },
+    {
+      "center": [
+        "0",
+        "9/16",
+        "5/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -5
+    },
+    {
+      "center": [
+        "0",
+        "9/16",
+        "11/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -6
+    },
+    {
+      "center": [
+        "0",
+        "11/16",
+        "7/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -7
+    },
+    {
+      "center": [
+        "0",
+        "11/16",
+        "9/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -8
+    },
+    {
+      "center": [
+        "-11/16",
+        "1",
+        "7/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -2
+    },
+    {
+      "center": [
+        "-11/16",
+        "1",
+        "9/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -1
+    },
+    {
+      "center": [
+        "-9/16",
+        "1",
+        "5/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -4
+    },
+    {
+      "center": [
+        "-9/16",
+        "1",
+        "11/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -3
+    },
+    {
+      "center": [
+        "-7/16",
+        "1",
+        "5/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -6
+    },
+    {
+      "center": [
+        "-7/16",
+        "1",
+        "11/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -5
+    },
+    {
+      "center": [
+        "-5/16",
+        "1",
+        "7/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -8
+    },
+    {
+      "center": [
+        "-5/16",
+        "1",
+        "9/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -7
+    },
+    {
+      "center": [
+        "-11/16",
+        "7/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 2
+    },
+    {
+      "center": [
+        "-11/16",
+        "9/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 1
+    },
+    {
+      "center": [
+        "-9/16",
+        "5/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 4
+    },
+    {
+      "center": [
+        "-9/16",
+        "11/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 3
+    },
+    {
+      "center": [
+        "-7/16",
+        "5/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 6
+    },
+    {
+      "center": [
+        "-7/16",
+        "11/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 5
+    },
+    {
+      "center": [
+        "-5/16",
+        "7/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 8
+    },
+    {
+      "center": [
+        "-5/16",
+        "9/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 7
+    },
+    {
+      "center": [
+        "1",
+        "-11/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 9
+    },
+    {
+      "center": [
+        "1",
+        "-11/16",
+        "-7/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 10
+    },
+    {
+      "center": [
+        "1",
+        "-9/16",
+        "-11/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -9
+    },
+    {
+      "center": [
+        "1",
+        "-9/16",
+        "-5/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 11
+    },
+    {
+      "center": [
+        "1",
+        "-7/16",
+        "-11/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -10
+    },
+    {
+      "center": [
+        "1",
+        "-7/16",
+        "-5/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 12
+    },
+    {
+      "center": [
+        "1",
+        "-5/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -11
+    },
+    {
+      "center": [
+        "1",
+        "-5/16",
+        "-7/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -12
+    },
+    {
+      "center": [
+        "5/16",
+        "-1",
+        "-9/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 7
+    },
+    {
+      "center": [
+        "5/16",
+        "-1",
+        "-7/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 8
+    },
+    {
+      "center": [
+        "7/16",
+        "-1",
+        "-11/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 5
+    },
+    {
+      "center": [
+        "7/16",
+        "-1",
+        "-5/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 6
+    },
+    {
+      "center": [
+        "9/16",
+        "-1",
+        "-11/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 3
+    },
+    {
+      "center": [
+        "9/16",
+        "-1",
+        "-5/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 4
+    },
+    {
+      "center": [
+        "11/16",
+        "-1",
+        "-9/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 1
+    },
+    {
+      "center": [
+        "11/16",
+        "-1",
+        "-7/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 2
+    },
+    {
+      "center": [
+        "5/16",
+        "-9/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -7
+    },
+    {
+      "center": [
+        "5/16",
+        "-7/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -8
+    },
+    {
+      "center": [
+        "7/16",
+        "-11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -5
+    },
+    {
+      "center": [
+        "7/16",
+        "-5/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -6
+    },
+    {
+      "center": [
+        "9/16",
+        "-11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -3
+    },
+    {
+      "center": [
+        "9/16",
+        "-5/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -4
+    },
+    {
+      "center": [
+        "11/16",
+        "-9/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -1
+    },
+    {
+      "center": [
+        "11/16",
+        "-7/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -2
+    },
+    {
+      "center": [
+        "1",
+        "-11/16",
+        "7/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 2
+    },
+    {
+      "center": [
+        "1",
+        "-11/16",
+        "9/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 1
+    },
+    {
+      "center": [
+        "1",
+        "-9/16",
+        "5/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 4
+    },
+    {
+      "center": [
+        "1",
+        "-9/16",
+        "11/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 3
+    },
+    {
+      "center": [
+        "1",
+        "-7/16",
+        "5/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 6
+    },
+    {
+      "center": [
+        "1",
+        "-7/16",
+        "11/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 5
+    },
+    {
+      "center": [
+        "1",
+        "-5/16",
+        "7/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 8
+    },
+    {
+      "center": [
+        "1",
+        "-5/16",
+        "9/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 7
+    },
+    {
+      "center": [
+        "5/16",
+        "-1",
+        "7/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -12
+    },
+    {
+      "center": [
+        "5/16",
+        "-1",
+        "9/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -11
+    },
+    {
+      "center": [
+        "7/16",
+        "-1",
+        "5/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 12
+    },
+    {
+      "center": [
+        "7/16",
+        "-1",
+        "11/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -10
+    },
+    {
+      "center": [
+        "9/16",
+        "-1",
+        "5/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 11
+    },
+    {
+      "center": [
+        "9/16",
+        "-1",
+        "11/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -9
+    },
+    {
+      "center": [
+        "11/16",
+        "-1",
+        "7/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 10
+    },
+    {
+      "center": [
+        "11/16",
+        "-1",
+        "9/16"
+      ],
+      "outward_normal": [
+        0,
+        -1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 9
+    },
+    {
+      "center": [
+        "5/16",
+        "0",
+        "7/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -9
+    },
+    {
+      "center": [
+        "5/16",
+        "0",
+        "9/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -10
+    },
+    {
+      "center": [
+        "7/16",
+        "0",
+        "5/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 9
+    },
+    {
+      "center": [
+        "7/16",
+        "0",
+        "11/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -11
+    },
+    {
+      "center": [
+        "9/16",
+        "0",
+        "5/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 10
+    },
+    {
+      "center": [
+        "9/16",
+        "0",
+        "11/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -12
+    },
+    {
+      "center": [
+        "11/16",
+        "0",
+        "7/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 11
+    },
+    {
+      "center": [
+        "11/16",
+        "0",
+        "9/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 12
+    },
+    {
+      "center": [
+        "5/16",
+        "-9/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -4
+    },
+    {
+      "center": [
+        "5/16",
+        "-7/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -6
+    },
+    {
+      "center": [
+        "7/16",
+        "-11/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -2
+    },
+    {
+      "center": [
+        "7/16",
+        "-5/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -8
+    },
+    {
+      "center": [
+        "9/16",
+        "-11/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -1
+    },
+    {
+      "center": [
+        "9/16",
+        "-5/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -7
+    },
+    {
+      "center": [
+        "11/16",
+        "-9/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -3
+    },
+    {
+      "center": [
+        "11/16",
+        "-7/16",
+        "1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -5
+    },
+    {
+      "center": [
+        "1",
+        "5/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -4
+    },
+    {
+      "center": [
+        "1",
+        "5/16",
+        "-7/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -6
+    },
+    {
+      "center": [
+        "1",
+        "7/16",
+        "-11/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -2
+    },
+    {
+      "center": [
+        "1",
+        "7/16",
+        "-5/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -8
+    },
+    {
+      "center": [
+        "1",
+        "9/16",
+        "-11/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -1
+    },
+    {
+      "center": [
+        "1",
+        "9/16",
+        "-5/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -7
+    },
+    {
+      "center": [
+        "1",
+        "11/16",
+        "-9/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -3
+    },
+    {
+      "center": [
+        "1",
+        "11/16",
+        "-7/16"
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -5
+    },
+    {
+      "center": [
+        "5/16",
+        "1",
+        "-9/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 4
+    },
+    {
+      "center": [
+        "5/16",
+        "1",
+        "-7/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 6
+    },
+    {
+      "center": [
+        "7/16",
+        "1",
+        "-11/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 2
+    },
+    {
+      "center": [
+        "7/16",
+        "1",
+        "-5/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 8
+    },
+    {
+      "center": [
+        "9/16",
+        "1",
+        "-11/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        -1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 1
+    },
+    {
+      "center": [
+        "9/16",
+        "1",
+        "-5/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        0,
+        0,
+        1
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 7
+    },
+    {
+      "center": [
+        "11/16",
+        "1",
+        "-9/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        -1
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 3
+    },
+    {
+      "center": [
+        "11/16",
+        "1",
+        "-7/16"
+      ],
+      "outward_normal": [
+        0,
+        1,
+        0
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        0,
+        1
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 5
+    },
+    {
+      "center": [
+        "5/16",
+        "7/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 12
+    },
+    {
+      "center": [
+        "5/16",
+        "9/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 11
+    },
+    {
+      "center": [
+        "7/16",
+        "5/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -12
+    },
+    {
+      "center": [
+        "7/16",
+        "11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 10
+    },
+    {
+      "center": [
+        "9/16",
+        "5/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": -11
+    },
+    {
+      "center": [
+        "9/16",
+        "11/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 9
+    },
+    {
+      "center": [
+        "11/16",
+        "7/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": -10
+    },
+    {
+      "center": [
+        "11/16",
+        "9/16",
+        "-1"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        -1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -2,
+      "reference_signed_key": -9
+    },
+    {
+      "center": [
+        "5/16",
+        "7/16",
+        "0"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 3
+    },
+    {
+      "center": [
+        "5/16",
+        "9/16",
+        "0"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        -1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 5
+    },
+    {
+      "center": [
+        "7/16",
+        "5/16",
+        "0"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 1
+    },
+    {
+      "center": [
+        "7/16",
+        "11/16",
+        "0"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        -1,
+        0,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 7
+    },
+    {
+      "center": [
+        "9/16",
+        "5/16",
+        "0"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        -1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": 2,
+      "reference_signed_key": 2
+    },
+    {
+      "center": [
+        "9/16",
+        "11/16",
+        "0"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        0,
+        1,
+        0
+      ],
+      "v_axis": [
+        1,
+        0,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 8
+    },
+    {
+      "center": [
+        "11/16",
+        "7/16",
+        "0"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        -1,
+        0
+      ],
+      "signed_key": -1,
+      "reference_signed_key": 4
+    },
+    {
+      "center": [
+        "11/16",
+        "9/16",
+        "0"
+      ],
+      "outward_normal": [
+        0,
+        0,
+        1
+      ],
+      "u_axis": [
+        1,
+        0,
+        0
+      ],
+      "v_axis": [
+        0,
+        1,
+        0
+      ],
+      "signed_key": 1,
+      "reference_signed_key": 6
+    }
+  ],
+  "half_width": "1/64",
+  "height_unit": "1/4096",
+  "children": [
+    {
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "center": [
+        1,
+        1,
+        -1
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "center": [
+        1,
+        -1,
+        1
+      ],
+      "matrix": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "center": [
+        1,
+        -1,
+        -1
+      ],
+      "matrix": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "center": [
+        -1,
+        1,
+        1
+      ],
+      "matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "center": [
+        -1,
+        1,
+        -1
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "center": [
+        -1,
+        -1,
+        1
+      ],
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "center": [
+        -1,
+        -1,
+        -1
+      ],
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "reference_candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "port_anchor_convention": "center is the old port frame anchor, not the new triangle centroid",
+  "port_profile": {
+    "kind": "scalene_triangle_cubic_bubble",
+    "normalized_vertices": [
+      [
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "barycentric_coordinates": [
+      "(u+1)/2",
+      "v+1",
+      "-(u+2*v+1)/2"
+    ],
+    "polynomial": "27*lambda0*lambda1*lambda2",
+    "outside_triangle": "0",
+    "surface": "p + w*u*U + w*v*V + signed_key*delta*phi(u,v)*N",
+    "maximum": "1",
+    "normalized_integral": "9/20"
+  }
+}

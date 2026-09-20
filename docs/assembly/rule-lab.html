@@ -1,0 +1,41 @@
+<dialog id="rule-lab" aria-labelledby="rule-title">
+<div class="rule-heading"><div><p class="eyebrow">CHAIR LAB · RULES</p><h2 id="rule-title">同じルールに戻るのは、なぜ？</h2></div><button id="rule-close" autofocus>組立に戻る</button></div>
+<p>接着が自由度をまとめ、数値を変えても関係が残り、大きな面へ受け継がれる。その過程を試します。</p>
+<nav class="rule-tabs" aria-label="接着ルールの実験"><button id="rule-tab-0" aria-pressed="true">1 · 条件をつなぐ</button><button id="rule-tab-1" aria-pressed="false">2 · 深さを変える</button><button id="rule-tab-2" aria-pressed="false">3 · 親にまとめる</button></nav>
+<div class="rule-score" aria-live="polite"><div><span>子の接着</span><strong id="rule-fine-count"></strong></div><span aria-hidden="true">→</span><div><span>親の接着</span><strong id="rule-parent-count"></strong></div></div>
+<p id="rule-score-note" class="muted"></p>
+<section id="rule-step-0">
+<h3>一つを決めると、どこまで決まる？</h3>
+<p>線で結ばれた2か所は、同じ深さの突起とくぼみになります。条件を1本ずつ加えてみてください。</p>
+<div class="rule-tools"><button id="rule-edge-next">条件を1本つなぐ</button><button id="rule-edge-all">全部つなぐ</button><button id="rule-edge-reset">ほどく</button></div>
+<p class="muted">線の表示は説明用です。設計の深さを変えるのは次の段階です。</p>
+<div class="rule-graph-layout"><div id="rule-graph"></div><div><p class="rule-number" id="rule-freedom" role="status"></p><p>点は実際のポート、線は置換が要求する接着条件です。位置は見やすく並べ替えています。</p><p>この図は、独立した群のうち一つを表示しています。線でつながった群には、深さを決めるつまみが一つ残ります。</p><p id="rule-graph-total"></p></div></div>
+</section>
+<section id="rule-step-1" hidden>
+<h3>深さは一つに決まらなくても、接着相手は決まる</h3>
+<p>群を選んでつまみを動かすと、その群の突起とくぼみが一緒に変わります。別の群と同じ深さになると、接着相手が増えることがあります。</p>
+<label for="rule-family">動かす群</label><select id="rule-family"></select>
+<label for="rule-depth">深さ（相対値）</label><div class="rule-slider"><input id="rule-depth" type="range" min="1" max="24" step="1"><output id="rule-depth-value" for="rule-depth"></output><button id="rule-flip">突起とくぼみを反転</button></div>
+<div id="rule-relief"></div>
+<div id="rule-values" class="rule-values"></div>
+<div class="rule-tools"><button id="rule-reset">元の深さ</button><button id="rule-six">6種類でも同じ規則</button><button id="rule-collapse">すべて同じ深さにする</button></div>
+<p id="rule-depth-status" role="status"></p>
+<p>6種類の例では、一部の群の突起とくぼみも反転します。深さの種類が減っても、面全体の判定が同じになる例です。</p>
+</section>
+<section id="rule-step-2" hidden>
+<h3>小さいルールと、大きいルールを比べる</h3>
+<p>同じ相対配置について、子1個同士と、8個をまとめた親同士の接着を比較します。</p>
+<div class="rule-candidates" role="group" aria-label="保存された3種類の候補"><button id="rule-profile-0" aria-pressed="false">候補0 · 6,555配置</button><button id="rule-profile-1" aria-pressed="true">候補1 · 3配置</button><button id="rule-profile-2" aria-pressed="false">候補2 · 3配置</button></div>
+<p class="muted">候補を選ぶと、その候補の元の深さに戻ります。配置数は、固定した分割での子の向きの選び方です。</p>
+<button id="rule-group" class="primary">親にまとめて判定する</button>
+<div id="rule-parent-result" hidden>
+<p id="rule-fixed" class="rule-number" role="status"></p>
+<div class="rule-witness-controls"><button id="rule-witness-extra">親だけ合う例</button><button id="rule-witness-lost">子だけ合う例</button><button id="rule-witness-both">両方合う例</button><button id="rule-witness-next">別の接触を見る</button></div>
+<div id="rule-witness"></div>
+<p>親だけが接着できるなら、まとめることで禁止条件が失われています。両方向で同じ接触が許されるとき、接着規則は粗視化の不動点です。</p>
+</div>
+<details><summary>「唯一」といえる範囲</summary><p>固定した8個への分割とポート位置で、各階層に同じ子の向きを使う6,561配置を調べた記録です。独立した群を別の深さで区別すると3種類のパターンになり、その代表のうち同じ接触規則に戻るのは候補1です。任意の形状や、群をまとめた全設計の唯一性は示していません。</p></details>
+</section>
+<div class="rule-tools rule-bottom"><button id="rule-prev">前へ</button><button id="rule-next" class="primary">次へ</button><button id="rule-done">組立に戻る</button></div>
+<details class="rule-scope"><summary>この実験の範囲</summary><p>整数格子上で位置をそろえた1,194種類の接触を、保存済みの符号付き深さの条件から再計算しています。任意に変更した設計のずれた接触、親への一意な分割、無限タイリングはここでは判定しません。元の組立のルールと履歴は変わりません。</p></details>
+</dialog>

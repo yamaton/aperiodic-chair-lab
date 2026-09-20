@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "triangular_candidate_sha256": "b1237ab5c2b7c75c565fb4f837a886aa2aafa990927bdbcda399a440cd68b3ce",
+  "reference_candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "implementation": "Standalone integer-coordinate JavaScript, no project geometry imports.",
+  "triangle_stabilizer": [
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "opposite_key_triangle_pairs": 13312,
+  "distinct_frame_locked_poses": 1410,
+  "fine_geometric_contacts": 1194,
+  "full_macro_geometric_contacts": 6801,
+  "fine_fitting_contacts": 44,
+  "full_macro_fitting_contacts": 44,
+  "exact_reference_contact_sets_preserved": true,
+  "odd_macro_fitting_contacts": 0,
+  "aligned_panel_comparisons": 2304,
+  "aligned_panel_fits": 192,
+  "exact_reference_panel_rules_preserved": true,
+  "signed_frames_checked_for_self_symmetry": 48,
+  "self_symmetries": [
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "scope": "Independent finite frame/triangle/contact replay; universal open-patch rigidity remains a written polynomial argument."
+}

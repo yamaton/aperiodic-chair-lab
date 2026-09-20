@@ -31,6 +31,38 @@ of the star enumeration. Run `uv run --locked python strong/audit/motif_grouping
 
 ## 1. What is frozen
 
+**Later constraint analysis, 19 September:** [cycle balance](../CONSTRAINT_BALANCE.md)
+uses the local frame chirality to explain why redundant signed-depth equations
+cannot force a nonzero component to zero in the proper grid model. The
+standalone `check_constraint_balance.py` reconstructs all geometric port pairs,
+audits component ranks/cycles and volume-neutral sign counts, and checks an
+artificial odd-cycle control. It does not change the frozen data or establish
+contact recurrence for new designs.
+
+**Information transfer, 19 September:** the [symbolic follow-up](../INFORMATION_TRANSFER.md)
+classifies all twelve-component recodings preserving the fine and full macro
+contact sets by five forbidden equality patterns. Two depth magnitudes suffice.
+`analyze_information_transfer.py` checks the symbolic aligned scale fixed point;
+the standalone `crosscheck_information_transfer.cjs` independently reconstructs
+all contact predicates and actual 64-child boundaries. The frozen candidate
+is unchanged; the new witness has no separate arbitrary-placement proof.
+
+**Port simplification, 19 September:** [the triangular cubic candidate](../PORT_SIMPLIFICATION.md)
+uses that two-depth assignment on a new scalene triangular support. A written
+three-line continuation proof gives open-patch frame rigidity and transfers
+the existing registration argument. Separate finite implementations check
+the new coordinates and contact atlas. See `simplify_ports.py`,
+`crosscheck_triangular_ports.cjs` and the new `triangular_v1/` research snapshot.
+It does not modify the reference below or add a real-geometry Lean theorem.
+
+**Movable dimensions, 19 September:** [the dimension study](../PORT_DIMENSIONS.md)
+allows common or depth-dependent anchor offsets rather than freezing the old
+positions. `investigate_port_dimensions.py` records exact packing, unchanged
+frame maps and curved-zone clearance in `port_dimensions.json`. A strictly
+separated witness has 12× width and 256× depth. The 16× width supremum is
+restricted to the stated orbit family; depth bounds are sufficient, not
+necessary. No snapshot or manufacturing design is replaced.
+
 - [Candidate](frozen_v1/candidate.json): seven coarse cubes, 192 signed ports,
   their rational positions and ordered frames, the polynomial, its scale,
   and eight explicit child placements.

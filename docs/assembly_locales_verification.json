@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "checked_at": "2026-09-19T21:09:43.807Z",
+  "checked_at": "2026-09-19T22:53:19.636Z",
   "scope": "Automated translation coverage, offline UI and RTL interaction checks; not native-speaker review",
-  "html_sha256": "3b24abb9e4dccd28cdccfb8e036b47c795f4a80f726a6bcb212955fc61592936",
+  "html_sha256": "5587213cce3814001084d8d9cc81cb44bd783aa0e9e7aeaf0092ea08e50dabb0",
   "checks": [
     {
       "language": "en",

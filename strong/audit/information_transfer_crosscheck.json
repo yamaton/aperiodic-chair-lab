@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "candidate_sha256": "95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54",
+  "implementation": "Standalone JavaScript raw integer ports, cube centers, and signed-permutation rotations; no project geometry imports.",
+  "symbolic_contact_predicates_crosschecked": 9189,
+  "second_level_aligned_predicates_crosschecked": 1194,
+  "second_level_children": 64,
+  "second_level_symbolic_predicates_identical": true,
+  "fine_contacts": 1194,
+  "macro_contacts": 6801,
+  "two_depth_fine": 44,
+  "two_depth_macro": 44,
+  "two_depth_odd_macro": 0,
+  "reference_contact_sets_identical": true,
+  "one_gauge_value_contacts": [
+    1194,
+    6801
+  ],
+  "opposite_key_cap_pairs": 13312,
+  "all_cap_maps_proper_and_integral": true,
+  "scope": "Finite proper-grid symbolic contact census and one two-depth cap-frame witness; not an arbitrary-placement or infinite-tiling proof."
+}

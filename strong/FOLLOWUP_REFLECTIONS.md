@@ -191,6 +191,12 @@ Data: [phase analysis and explicit witness](audit/orientation_information.json),
 
 ## 5. Six depths suffice for the checked contact language
 
+**Later refinement, 19 September:** [the information-transfer analysis](INFORMATION_TRANSFER.md)
+provides a **two-depth** recoding with exactly the same fine and full macro
+contact sets, and classifies the whole twelve-component family by five
+forbidden equality patterns. The six-depth witness below remains a valid
+historical result; neither recoding replaces the frozen reference.
+
 A different recoding preserves phase but merges some families. Using the
 same `(g,q,s)` and `c=(-1)^g s`, set
 

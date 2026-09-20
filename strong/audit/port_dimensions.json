@@ -1,0 +1,299 @@
+{
+  "scope": "Movable anchors in the common D4 orbit; exact sufficient depth conditions, not unrestricted optimality.",
+  "source_candidate_sha256": "b1237ab5c2b7c75c565fb4f837a886aa2aafa990927bdbcda399a440cd68b3ce",
+  "frozen_files_unchanged": true,
+  "width_optimization": {
+    "wedge_cases": [
+      {
+        "U": [
+          -1,
+          0
+        ],
+        "V": [
+          0,
+          -1
+        ],
+        "anchor_over_width": [
+          2,
+          0
+        ],
+        "outer_coordinate_over_width": 3,
+        "maximum_width": "1/6"
+      },
+      {
+        "U": [
+          -1,
+          0
+        ],
+        "V": [
+          0,
+          1
+        ],
+        "anchor_over_width": [
+          1,
+          1
+        ],
+        "outer_coordinate_over_width": 2,
+        "maximum_width": "1/4"
+      },
+      {
+        "U": [
+          1,
+          0
+        ],
+        "V": [
+          0,
+          -1
+        ],
+        "anchor_over_width": [
+          2,
+          0
+        ],
+        "outer_coordinate_over_width": 3,
+        "maximum_width": "1/6"
+      },
+      {
+        "U": [
+          1,
+          0
+        ],
+        "V": [
+          0,
+          1
+        ],
+        "anchor_over_width": [
+          2,
+          1
+        ],
+        "outer_coordinate_over_width": 3,
+        "maximum_width": "1/6"
+      },
+      {
+        "U": [
+          0,
+          -1
+        ],
+        "V": [
+          -1,
+          0
+        ],
+        "anchor_over_width": [
+          2,
+          1
+        ],
+        "outer_coordinate_over_width": 3,
+        "maximum_width": "1/6"
+      },
+      {
+        "U": [
+          0,
+          -1
+        ],
+        "V": [
+          1,
+          0
+        ],
+        "anchor_over_width": [
+          3,
+          1
+        ],
+        "outer_coordinate_over_width": 3,
+        "maximum_width": "1/6"
+      },
+      {
+        "U": [
+          0,
+          1
+        ],
+        "V": [
+          -1,
+          0
+        ],
+        "anchor_over_width": [
+          1,
+          1
+        ],
+        "outer_coordinate_over_width": 2,
+        "maximum_width": "1/4"
+      },
+      {
+        "U": [
+          0,
+          1
+        ],
+        "V": [
+          1,
+          0
+        ],
+        "anchor_over_width": [
+          3,
+          1
+        ],
+        "outer_coordinate_over_width": 3,
+        "maximum_width": "1/6"
+      }
+    ],
+    "supremum": "1/4",
+    "explanation": "Upper bound attained with touching edges; strict clearances for every 0 < w < 1/4."
+  },
+  "witness": {
+    "a": "-1/4",
+    "b": "7/32",
+    "width": "3/16",
+    "maximum_depth": "1/8",
+    "height_unit": "1/16",
+    "width_multiplier": "12",
+    "depth_multiplier": "256",
+    "short_side": "3/16",
+    "long_side": "3/8",
+    "support_area_per_face": "9/32",
+    "face_edge_clearance": "1/16",
+    "same_face_triangle_pairs": 28,
+    "strict_separating_axis_minimum": "9/512",
+    "contact_frame_checks": {
+      "opposite_key_pairs": 13312,
+      "distinct_local_poses": 1410,
+      "same_translation_as_reference": true,
+      "actual_vertices_match": true,
+      "all_signed_frame_memberships": 9216
+    },
+    "curved_zone_certificate": {
+      "maximum_in_v": "(1 - u)**2*(27*u/32 + 27/32)",
+      "square_identity": "27*(u + 1)*(u + 4*v + 3)**2/32",
+      "edge_minus_height_polynomial": "-(27*u**3 - 27*u**2 - 75*u - 37)/256",
+      "intervals": [
+        {
+          "u_interval": [
+            "-1",
+            "-1/2"
+          ],
+          "bernstein_coefficients": [
+            "1/16",
+            "3/128",
+            "5/256",
+            "77/2048"
+          ]
+        },
+        {
+          "u_interval": [
+            "-1/2",
+            "0"
+          ],
+          "bernstein_coefficients": [
+            "77/2048",
+            "57/1024",
+            "49/512",
+            "37/256"
+          ]
+        },
+        {
+          "u_interval": [
+            "0",
+            "1/2"
+          ],
+          "bernstein_coefficients": [
+            "37/256",
+            "99/512",
+            "257/1024",
+            "623/2048"
+          ]
+        },
+        {
+          "u_interval": [
+            "1/2",
+            "1"
+          ],
+          "bernstein_coefficients": [
+            "623/2048",
+            "183/512",
+            "13/32",
+            "7/16"
+          ]
+        }
+      ],
+      "uniform_clearance_lower_bound": "5/256",
+      "thicker_zone_height": "9/64",
+      "thicker_zone_clearance_lower_bound": "1/256",
+      "retained_core_radius": "1/4",
+      "exhaustion_inset": "1/7"
+    }
+  },
+  "old_anchor_depth_limits": [
+    {
+      "width": "1/64",
+      "u_at_minimum": "59/4 - sqrt(3633)/4",
+      "exact_height": "10427/65664 + 173*sqrt(3633)/65664",
+      "height": 0.31759360487963556
+    },
+    {
+      "width": "3/64",
+      "u_at_minimum": "19/4 - sqrt(3657)/12",
+      "exact_height": "1067/6528 + 53*sqrt(3657)/19584",
+      "height": 0.32710764553416366
+    },
+    {
+      "width": "1/16",
+      "u_at_minimum": "7/2 - sqrt(57)/2",
+      "exact_height": "143/864 + 19*sqrt(57)/864",
+      "height": 0.3315357109608151
+    }
+  ],
+  "relocated_depth_limits": [
+    {
+      "width": "1/64",
+      "u_at_minimum": "-49/4 + sqrt(2265)/4",
+      "exact_height": "151*sqrt(2265)/58752 + 7187/58752",
+      "height": 0.24464519397997753
+    },
+    {
+      "width": "1/8",
+      "u_at_minimum": "-1/2",
+      "exact_height": "16/81",
+      "height": 0.19753086419753085
+    },
+    {
+      "width": "3/16",
+      "u_at_minimum": "-5/4 + sqrt(57)/12",
+      "exact_height": "19*sqrt(57)/2016 + 59/672",
+      "height": 0.15895181263400013
+    },
+    {
+      "width": "15/64",
+      "u_at_minimum": "-21/20 + sqrt(249)/60",
+      "exact_height": "83*sqrt(249)/35712 + 923/11904",
+      "height": 0.11421141096995235
+    }
+  ],
+  "relocated_limit_as_width_tends_to_quarter": "2/27",
+  "depth_dependent_anchor_witness": {
+    "low_anchor": [
+      "-1/4",
+      "7/32"
+    ],
+    "high_anchor": [
+      "-31/128",
+      "7/32"
+    ],
+    "same_face_pair_checks": 672,
+    "all_strictly_separated": true,
+    "faces_by_number_of_high_ports": {
+      "1": 16,
+      "2": 8
+    },
+    "contact_frame_checks": {
+      "opposite_key_pairs": 13312,
+      "distinct_local_poses": 1410,
+      "same_translation_as_reference": true,
+      "actual_vertices_match": true,
+      "all_signed_frame_memberships": 9216
+    },
+    "depth_clearance_reason": "High ports move inward by U/128; nearest-edge distance increases by 1/128. The common-witness certificate still suffices."
+  },
+  "atlas_transfer": "Frame-pose equality plus disjoint local modification zones preserves the existing fine and full macro predicates. This script does not rerun the atlas enumeration.",
+  "not_claimed": [
+    "global optimum over independently placed or reshaped ports",
+    "necessary upper bound on depth",
+    "new Lean proof",
+    "tolerance or manufacturing certification"
+  ]
+}

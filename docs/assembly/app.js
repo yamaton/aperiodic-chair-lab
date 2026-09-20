@@ -481,7 +481,7 @@
   $('guide-close').onclick=()=>$('play-guide').close();
   $('guide-prev').onclick=()=>{guideStep=Math.max(0,guideStep-1);renderGuide();$('play-guide').scrollTop=0;};
   $('guide-next').onclick=()=>{if(guideStep===3){$('play-guide').close();return;}guideStep++;renderGuide();$('play-guide').scrollTop=0;};
-  document.addEventListener('keydown',e=>{if($('confirm').open||$('play-guide').open)return;if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){
+  document.addEventListener('keydown',e=>{if(document.querySelector('dialog[open]'))return;if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){
     e.preventDefault();if(!inspection)(e.shiftKey?$('redo'):$('undo')).click();}
     if(e.key==='Escape'&&inspection)$('inspect-return').click();
   });

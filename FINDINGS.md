@@ -20,6 +20,23 @@ recognition rule: six diagonal contacts mark a group center; otherwise the
 notch owner is the parent. Agreement of every child on that parent proves
 unique grouping. Fourteen locally fitting contacts fail a nearby face-cover
 test, leaving exactly the 30-contact substitution language.
+The [information-transfer analysis](strong/INFORMATION_TRANSFER.md) now shows
+that preserving those rules does not require twelve distinct numerical depths:
+two suffice in an explicit recoding. Five forbidden equality patterns exactly
+describe the admissible twelve-amplitude family. Some distinctions govern
+aligned parent contacts; others prevent parents from matching at odd offsets.
+The aligned substitution reaches a symbolic fixed point after one grouping.
+The [port-shape follow-up](strong/PORT_SIMPLIFICATION.md) moves orientation
+information from an asymmetric polynomial factor into a scalene triangular
+footprint. This lowers the surface degree from five to three while retaining
+open-patch rigidity by a written argument and the same finite contact atlas.
+The [dimension study](strong/PORT_DIMENSIONS.md) then removes the arbitrary
+anchor coordinates from the constraints: they cancel from every cap match.
+Moving the eight triangular ports yields a strictly separated 12×-width,
+256×-depth witness. Width approaches 16× within the common D4 orbit family;
+curved-zone inequalities permit much greater depths than the old box bounds.
+These are exact-design deductions, not manufacturing tolerances or a global
+optimization over all possible placements and shapes.
 
 We set out to find one three-dimensional block that fills space but forces
 every tiling to have no nonzero translation and no infinite-order screw
