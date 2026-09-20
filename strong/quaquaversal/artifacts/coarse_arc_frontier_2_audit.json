@@ -1,0 +1,16 @@
+{
+  "scope": "Full fine-case coverage and equality of all retained domains after coarse intersection",
+  "survivor": 82,
+  "fine_rejection": 40,
+  "coarse_rejection": 48,
+  "domain_records": 845776,
+  "sources": {
+    "coarse_parent_language.json": "8980bebe7b9a712213784f40064de61b8da8c213e0d2cbcabe3f967bf6ed6228",
+    "coarse_arc_frontier_1.json": "5f4f50ce82626f1d8f8e53de3a7ba8ceae67e463bf3c646a754bdcc0441a7384",
+    "coarse_arc_frontier_1_audit.json": "9d495ebfdf8eb23b38ec0057957b77c2a3aa6f2272d7675ad6776d3c48303c94",
+    "coarse_star_arc_filter_2.json": "df342f6954532f2590d28cfc205cd66505c30bd4341a3593bb7b559b9779bd79",
+    "coarse_star_arc_audit_2.json": "2901e72e5fd516f398f704160f2db15b81305c6653b9d1a47b75878f5ebaa57b",
+    "coarse_arc_frontier_2.json": "2e4e61880ea31c7dd50e2e58626edf793c13381e26ad9a1e5581aa8dc7429838",
+    "audit_merged_coarse_frontier.py": "d66e4af7d058f6b31feabdcd019849c6525371b5daa87fb7e07eaa7a8a8d1e3e"
+  }
+}

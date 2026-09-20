@@ -4,7 +4,8 @@ This preserved checkpoint ends at 350 covers. The subsequent
 [optional-neighbor investigation](OPTIONAL_NEIGHBOR_RULES.md) reduces the
 full frontier to 246 and records six verified choice cuts for a new SAT trial.
 Later [fine and coarse parent constraints](COARSE_PARENT_RULES.md) reduce
-the full frontier to 177; [layered proofs](DOMAIN_CERTIFICATES.md) bring
+the full frontier to 177, then [conditional parent patches](CONDITIONAL_PARENT_PATCHES.md)
+leave 82; [layered proofs](DOMAIN_CERTIFICATES.md) bring
 the audited choice-cut catalog to 163.
 
 Continuation of [PARENT_EXTENSION.md](PARENT_EXTENSION.md). The objective

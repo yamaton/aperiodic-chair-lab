@@ -93,7 +93,7 @@ Its 1,054,536 logged reductions and 242,468 distinct used geometric edges
 were replayed with sets and rational poses. Combining earlier geometric
 exclusions rejects none additionally. `PARENT_PROPAGATION.md` gives scopes,
 counts, commands and the next step.
-**Historical Q016 frontier: 246 covers; current frontier is 177 (below).** The next forced layer
+**Historical Q016 frontier: 246 covers; current frontier is 82 (below).** The next forced layer
 (`forced_after_arcs_1.json`) rejects 35 of 350, and `expanded_arcs_2.json`
 rejects 69 of the remaining 315. Full audits check retained domains and all
 512,877 arc reductions. That baseline seed is `expanded_arcs_2_seed.json`,
@@ -163,8 +163,8 @@ and 246 live cases. Its row indices are new; `original_source_index` and
 the stable `boundary_index`/`cover_index` identify the old baseline cases.
 Cuts refer to pose IDs, which have not changed.
 
-**Q025–Q027 completed; current full seed: `coarse_refined_frontier.json`,
-177 live cases.** Q025 extends all 246 Q024 cases: 11 fail the forced layer
+**Q025–Q027 checkpoint: `coarse_refined_frontier.json`, 177 live cases.**
+Q025 extends all 246 Q024 cases: 11 fail the forced layer
 (`choice_cut_forced_1.json`), leaving 235. Full independent replay checks
 39,563,364 intersections and 6,370,963 distinct placements. Fine arc
 propagation (`choice_cut_expanded_arcs_1.json`) then rejects 30, leaving 205;
@@ -195,17 +195,53 @@ tilings, not a selected pilot and not a new proved hierarchical rule.
 The new seed uses `choice_cut_forced_1.json`'s 195,032-pose table and the fine
 arc domain pool, with 235 records of which 177 have `domains`. Pose IDs keep
 the old 128,780-prefix; keep parent keys stable, not result indices.
-**Resume with necessary unit consequences of the 163-cut catalog, then fine
-forced/arc propagation and coarse feedback.** A read-only diagnostic found
-two currently unit clauses (catalog indices 66 and 135) in parent `(259,1)`;
-no immediate all-fixed cut contradiction. Use a new parameterized unit-pass
-snapshot: `choice_cut_domains.py` is bound to the old baseline hash. Verify
-the catalog's pose-table prefix instead of confusing whole-input hashes.
-For later coarse refinement reuse the audited 7,075-star vocabulary and maps,
-but initialize live extra stars from the complete new fine frontier. Never
-initialize it from a selected SAT subset. The current coarse producer/merger
-use fixed Q025 filenames; preserve those snapshots and make new provenance
-explicit. Keep limits/timeouts unknown. No worker is left running.
+**Q028–Q031 completed; current full seed: `coarse_arc_frontier_2.json`,
+82 live cases.** Parameterized `propagate_choice_cuts.py` and
+`audit_choice_cut_pass.py` validate the catalog's pose prefix and remove two
+star values in `(259,1)`; all 177 cases remain. The forced layer leaves 170
+(seven exclusions), with 45,887,796 intersections and 8,942,668 distinct
+placements audited. Fine arcs leave 130 (40 further exclusions), with
+614,903 reductions and 288,767 edges audited. Files are `choice_cut_pass_2`,
+`choice_cut_forced_2`, `choice_cut_expanded_arcs_2` JSONs and named audits.
+
+Q029 audits ALL coarse support sets (300,497 incidences, 16,334 domains),
+then fixes each extra parent star and constrains its required neighbors
+against one another. `coarse_star_arc_filter.py` removes failed root stars
+globally and repeats. On 177 extras it removes nine then eight, leaving 160;
+`audit_coarse_star_arcs.py` replays all 505 conditional patches, 14,442
+reductions and 1,104 distinct edges. These 17 exclusions overlap the fine
+ones entirely. `merge_coarse_star_filter.py` and its separate auditor retain
+130 in `coarse_arc_frontier_1.json`. Repeating the conditional coarse filter
+on that complete frontier removes 48, then stabilizes at 82; see
+`coarse_star_arc_filter_2.json` and `coarse_star_arc_audit_2.json` (212 patches,
+4,004 reductions, 692 edges). The final merge/audit retains 845,776 fine
+domain records exactly. Net reduction: 177 − 7 − 40 − 48 = 82.
+
+Q030 checks one recognizable grouping for the enlarged 7,000-star language
+(6,840 original + earlier 160 extras): 42,658 sibling incidences and 811,528
+target alternatives agree on roles. Exact child geometry checks connectivity.
+`enlarged_sibling_roles.json` and `CONDITIONAL_PARENT_PATCHES.md` support TWO
+nested grouping levels of original-rule tilings, with supports 2P and 4P.
+Closure of the enlarged rule under its own parents and all-scale grouping
+remain open. Q031 fixes each of 160 extras in an eight-sibling CSP; all 160
+find tuples (452 search nodes), independently checked on 8,000 incidences.
+This adds no exclusions and is not a geometric/global tiling witness. Those
+tuples belong to the older 7,000-star relaxation, not the smaller current one.
+
+The fine full seed has 170 records, 82 with `domains`, and 274,091 poses.
+Parent-case keys remain stable; pose IDs retain the original fine prefix.
+**Next: expand the 82 conditional COARSE patches outward.** Their current
+domains are in the LAST round of `coarse_star_arc_filter_2.json`. Use
+`coarse_parent_language.json`'s 1,295 poses and 7,075-star support table,
+restricted to `final_active_stars` (6,840 + 82). Position -1 is identity and
+needs a world-pose ID in the new seed. Prepare explicit coarse atlas/rule
+adapters and parameterized forced/arc producers/auditors: older scripts
+hard-code the fine 6,840-star rules. Coarse tiles have scale 1 in this frame,
+while existing fine world tiles have scale 1/2. Keep namespaces separate;
+NEVER apply fine pose-index cuts to coarse seed IDs. Track forced presence.
+Wider fine propagation from the 82-case seed remains available. Any global
+coarse removal must use a complete necessary frontier, not a selected pilot.
+Keep limits unknown. No worker is running.
 **Q010 completed:** affine whole-panel groupoids give periodic witnesses for
 all 256 stationary handedness words, for arbitrary pointwise equality or
 real scalar opposite-sign functions. Only equality words 111/144 require
@@ -214,7 +250,7 @@ derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
 scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
 independent edge labels are not covered. The constructive Q003 skeleton/
 vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` now lists 111
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 129
 dependency-ordered commands; `--audit-only` checks retained hashes and result
 expectations. The original 18-command replay passed, and all subsequent
 commands have also run separately; the expanded combined replay has not yet

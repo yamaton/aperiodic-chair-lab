@@ -1,0 +1,15 @@
+{
+  "scope": "Independent replay of unit-choice reductions and all retained frontier domains",
+  "parent_cases": 177,
+  "parent_rejections": 0,
+  "changed_cases": 1,
+  "star_removals": 2,
+  "sources": {
+    "coarse_refined_frontier.json": "d53b72b9d6d94aa767908d6bd4a982843d726567594e37657354bc570dd3074e",
+    "choice_cut_catalog_163.json": "cd790030308927a4b3785d070f4c0e9e6bdf6977a00887cdb091d06e1505c96e",
+    "choice_cut_pass_2.json": "7dc1333a0a345a05db8d08a115f5917529bc9ae7322147f544438ccd6a8355b5",
+    "choice_cut_pass_2_changed.json": "8bd7581926e276904689bca54a7487a0afeb1e59d3853d54be0c949b1d78f5a3",
+    "expanded_arcs_2_seed.json": "75b7ffd46d9a414c0b78841a76e49b4254477cfaefcb052dad36ba251be16da8",
+    "audit_choice_cut_pass.py": "daf720985147f21e38bddc16f6d3c7082959cbb9d4774a560ecb34944fe741c0"
+  }
+}

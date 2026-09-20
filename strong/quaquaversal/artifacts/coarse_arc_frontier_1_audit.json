@@ -1,0 +1,17 @@
+{
+  "scope": "Full fine-case coverage and equality of all retained domains after coarse intersection",
+  "survivor": 130,
+  "fine_rejection": 40,
+  "coarse_rejection": 0,
+  "domain_records": 1348506,
+  "sources": {
+    "coarse_parent_language.json": "8980bebe7b9a712213784f40064de61b8da8c213e0d2cbcabe3f967bf6ed6228",
+    "choice_cut_expanded_arcs_2.json": "14e8a2c43c7cd1c611741d8bdf52d6f85e8d03098b65f71a296ed652deee9f2b",
+    "choice_cut_expanded_arcs_2_audit.json": "4678ed2d14020ecd3b847e3d1cd5157f190bae74371c14931241b0d340563885",
+    "choice_cut_forced_2.json": "12ab1dfa9f67632b38fab5d6f23fae11634205d1ed45d5da6d5b3865e6887649",
+    "coarse_star_arc_filter.json": "f717517789bd83aef8752a09f81483b6061039d964525e5ebfed28ee373fe51e",
+    "coarse_star_arc_audit.json": "73d39b2902d51f927d2dd3637285801ce8f37f7d6dcf5ff6e4be2b2a41b67127",
+    "coarse_arc_frontier_1.json": "5f4f50ce82626f1d8f8e53de3a7ba8ceae67e463bf3c646a754bdcc0441a7384",
+    "audit_merged_coarse_frontier.py": "d66e4af7d058f6b31feabdcd019849c6525371b5daa87fb7e07eaa7a8a8d1e3e"
+  }
+}

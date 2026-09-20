@@ -22,12 +22,12 @@ has a checked 60-panel boundary structure; no successful monotile is claimed.
 [Pointwise panel-map obstructions](../strong/quaquaversal/POINTWISE_GROUPOIDS.md)
 now cover all 256 stationary handedness words in the stated matching models.
 The [closed-star rule](../strong/quaquaversal/CLOSED_STAR_RULES.md) instead has
-6,840 allowed neighborhoods and supports recognizable grouping of one parent
-level. Recursive parent legality remains open.
+6,840 allowed neighborhoods. [Conditional parent patches](../strong/quaquaversal/CONDITIONAL_PARENT_PATCHES.md)
+now support two recognizable grouping levels; arbitrary-depth hierarchy remains open.
 [Exterior extension checks](../strong/quaquaversal/PARENT_EXTENSION.md)
 and [repeated propagation](../strong/quaquaversal/PARENT_PROPAGATION.md)
 led to 246 nonlanguage parent covers; [fine and coarse parent constraints](../strong/quaquaversal/COARSE_PARENT_RULES.md)
-now leave **177**, with audited domains and exclusions.
+led to 177; the conditional parent-patch continuation now leaves **82**, with audited domains and exclusions.
 [Optional-neighbor experiments](../strong/quaquaversal/OPTIONAL_NEIGHBOR_RULES.md)
 and [layered domain proofs](../strong/quaquaversal/DOMAIN_CERTIFICATES.md)
 provide 163 choice cuts with exact certificates. A full hierarchy proof remains open.

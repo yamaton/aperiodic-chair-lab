@@ -146,6 +146,30 @@ COMMANDS = [
     ['audit_coarse_parent_language.py'],
     ['refine_coarse_frontier.py'],
     ['audit_coarse_refinement.py'],
+    ['propagate_choice_cuts.py'],
+    ['audit_choice_cut_pass.py'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'choice_cut_pass_2.json','--output',ARTIFACTS+'choice_cut_forced_2.json'],
+    ['audit_forced_domains_complete.py','--input',ARTIFACTS+'choice_cut_forced_2.json','--source',ARTIFACTS+'choice_cut_pass_2.json',
+     '--output',ARTIFACTS+'choice_cut_forced_2_audit.json'],
+    ['expanded_arc_consistency.py','--input',ARTIFACTS+'choice_cut_forced_2.json','--output',ARTIFACTS+'choice_cut_expanded_arcs_2.json'],
+    ['audit_expanded_arcs.py','--input',ARTIFACTS+'choice_cut_expanded_arcs_2.json','--source',ARTIFACTS+'choice_cut_forced_2.json',
+     '--output',ARTIFACTS+'choice_cut_expanded_arcs_2_audit.json'],
+    ['audit_coarse_support_domains.py'],
+    ['coarse_star_arc_filter.py'],
+    ['audit_coarse_star_arcs.py'],
+    ['enlarged_sibling_roles.py'],
+    ['enlarged_sibling_probe.py'],
+    ['audit_enlarged_sibling_probe.py'],
+    ['merge_coarse_star_filter.py'],
+    ['audit_merged_coarse_frontier.py'],
+    ['coarse_star_arc_filter.py','--input',ARTIFACTS+'coarse_arc_frontier_1.json','--input-audit',ARTIFACTS+'coarse_arc_frontier_1_audit.json',
+     '--output',ARTIFACTS+'coarse_star_arc_filter_2.json'],
+    ['audit_coarse_star_arcs.py','--input',ARTIFACTS+'coarse_star_arc_filter_2.json','--source',ARTIFACTS+'coarse_arc_frontier_1.json',
+     '--output',ARTIFACTS+'coarse_star_arc_audit_2.json'],
+    ['merge_coarse_star_filter.py','--fine',ARTIFACTS+'coarse_arc_frontier_1.json','--fine-audit',ARTIFACTS+'coarse_arc_frontier_1_audit.json',
+     '--poses-source',ARTIFACTS+'coarse_arc_frontier_1.json','--filter',ARTIFACTS+'coarse_star_arc_filter_2.json',
+     '--filter-audit',ARTIFACTS+'coarse_star_arc_audit_2.json','--output',ARTIFACTS+'coarse_arc_frontier_2.json'],
+    ['audit_merged_coarse_frontier.py','--input',ARTIFACTS+'coarse_arc_frontier_2.json','--output',ARTIFACTS+'coarse_arc_frontier_2_audit.json'],
 ]
 
 
@@ -243,6 +267,19 @@ def main():
     assert all(len(r) == 1 for r in read('coarse_parent_language.json')['child_roles'])
     assert read('coarse_refinement_audit.json')['survivor'] == 177
     assert read('coarse_refinement_audit.json')['coarse_rejection'] == 28
+    assert read('choice_cut_pass_2_audit.json')['star_removals'] == 2
+    assert read('choice_cut_forced_2_audit.json')['survivors'] == 170
+    assert read('choice_cut_expanded_arcs_2_audit.json')['survivors'] == 130
+    assert read('coarse_support_domain_audit.json')['incidences'] == 300497
+    assert read('coarse_star_arc_audit.json')['remaining_extras'] == 160
+    assert read('enlarged_sibling_roles.json')['all_sibling_roles_agree']
+    assert read('enlarged_sibling_roles.json')['checked_incidences'] == 42658
+    assert read('enlarged_sibling_probe_audit.json')['witnesses'] == 160
+    assert read('enlarged_sibling_probe_audit.json')['additional_parent_exclusions'] == 0
+    assert read('coarse_arc_frontier_1_audit.json')['survivor'] == 130
+    assert read('coarse_star_arc_audit_2.json')['remaining_extras'] == 82
+    assert read('coarse_arc_frontier_2_audit.json')['survivor'] == 82
+    assert read('coarse_arc_frontier_2_audit.json')['coarse_rejection'] == 48
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

@@ -4,7 +4,8 @@ This continues [PARENT_PROPAGATION.md](PARENT_PROPAGATION.md). Recursive
 parent legality remains unproved. This checkpoint ends at **246** unresolved
 parent covers; its six-case pilots reject assignments or branches, not whole
 parent cases. Subsequent [fine and coarse propagation](COARSE_PARENT_RULES.md)
-reduces the full frontier to **177**. [Layered choice proofs](DOMAIN_CERTIFICATES.md)
+reduces the full frontier to 177, and [conditional parent patches](CONDITIONAL_PARENT_PATCHES.md)
+now leave **82**. [Layered choice proofs](DOMAIN_CERTIFICATES.md)
 also add a 163rd verified cut.
 
 ## Main continuation: 350 to 246

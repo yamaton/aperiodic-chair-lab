@@ -43,9 +43,11 @@ one parent level. Recursive parent legality remains open. Subsequent
 [exterior-neighborhood checks](PARENT_EXTENSION.md) and
 [repeated propagation](PARENT_PROPAGATION.md) reduce the unresolved
 possibilities to 246 nonlanguage parent covers. Further [fine and coarse
-parent constraints](COARSE_PARENT_RULES.md) now leave **177**, with audited
-domain and exclusion certificates. The current full seed is
-`coarse_refined_frontier.json`. [Optional-neighbor pilots](OPTIONAL_NEIGHBOR_RULES.md)
+parent constraints](COARSE_PARENT_RULES.md), followed by [conditional parent
+patches](CONDITIONAL_PARENT_PATCHES.md), now leave **82**, with audited
+domains and exclusions. The current full seed is `coarse_arc_frontier_2.json`.
+The enlarged parent language supports a second recognizable grouping step;
+closure at all scales remains open. [Optional-neighbor pilots](OPTIONAL_NEIGHBOR_RULES.md)
 and [layered domain proofs](DOMAIN_CERTIFICATES.md) provide 163 verified
 forbidden combinations of center-star choices. Finite SAT models still
 require deeper extension checks. Infinite extension of the remaining cases

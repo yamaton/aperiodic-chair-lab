@@ -1,7 +1,8 @@
 # Fine propagation and direct parent-star constraints
 
-Q025–Q027 reduce the full unresolved parent-cover frontier from **246 to
-177**. These are necessary exclusions of parent neighborhoods in original
+This Q025–Q027 checkpoint reduces the full unresolved frontier from **246 to
+177**. The [conditional parent-patch continuation](CONDITIONAL_PARENT_PATCHES.md)
+now leaves **82**. These are necessary exclusions of parent neighborhoods in original
 closed-star-rule tilings. No surviving cover is asserted to extend to a
 tiling, and recursive hierarchy enforcement remains open.
 

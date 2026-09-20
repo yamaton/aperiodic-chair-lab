@@ -1,0 +1,14 @@
+{
+  "scope": "Witness audit for the eight-sibling compatibility CSP, not a geometric/global extension certificate",
+  "witnesses": 160,
+  "checked_directed_incidences": 8000,
+  "additional_parent_exclusions": 0,
+  "sources": {
+    "coarse_parent_language.json": "8980bebe7b9a712213784f40064de61b8da8c213e0d2cbcabe3f967bf6ed6228",
+    "coarse_support_domain_audit.json": "9d3eb9edb5acfb8aa3426792df291057e6f7d66de31dcfb24c1975411885d194",
+    "coarse_star_arc_filter.json": "f717517789bd83aef8752a09f81483b6061039d964525e5ebfed28ee373fe51e",
+    "enlarged_sibling_roles.json": "301e53b5f9e0b59bb269d07f928bd60ae1d86e8fedd40ba28daf6c31c0eb0d17",
+    "enlarged_sibling_probe.json": "3e6648c9af5c9500cf2039de552faab8184d4d253c191aa2d1a656a39fa663de",
+    "audit_enlarged_sibling_probe.py": "84b989d219441534a775d3d6c49fdd555a38571c309d1f659f559deb4e29d5df"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Replay of every conditional coarse-patch rejection and retained domain with exact geometry",
+  "initial_extras": 130,
+  "remaining_extras": 82,
+  "conditional_patches": 212,
+  "reductions": 4004,
+  "distinct_geometric_edges": 692,
+  "rejection_rounds": [
+    48,
+    0
+  ],
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "coarse_parent_language.json": "8980bebe7b9a712213784f40064de61b8da8c213e0d2cbcabe3f967bf6ed6228",
+    "coarse_support_domain_audit.json": "9d3eb9edb5acfb8aa3426792df291057e6f7d66de31dcfb24c1975411885d194",
+    "coarse_arc_frontier_1.json": "5f4f50ce82626f1d8f8e53de3a7ba8ceae67e463bf3c646a754bdcc0441a7384",
+    "coarse_star_arc_filter_2.json": "df342f6954532f2590d28cfc205cd66505c30bd4341a3593bb7b559b9779bd79",
+    "audit_coarse_star_arcs.py": "14bfec5e4717f8a7f2e4181939e38320fbe8420d55041423ff2c1cc96d84e18a"
+  }
+}

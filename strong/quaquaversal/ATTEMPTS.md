@@ -35,6 +35,10 @@ results in `artifacts/` with a reproduction command.
 | Q025 | Extend the narrowed full fine frontier | Partial exclusion | Forced layer rejects 11 and fine arcs reject 30 more: 246 → 235 → 205 |
 | Q026 | Choice proofs through multiple forced/arc layers | Eight-choice cut independently verified | 163 cuts total; the new proof also rejects Q023 model 5, not its whole parent case |
 | Q027 | Necessary compatibility in the parent-star vocabulary | Partial exclusion | Coarse support removes 28 further cases after Q025, leaving 177 unresolved parents |
+| Q028 | Reapply cuts and extend the full fine frontier | Partial exclusion | Two star values removed; forced layer leaves 170 and fine arcs leave 130 |
+| Q029 | Conditional arcs among neighbors of each parent star | Partial exclusion | Initial 17 exclusions overlap fine results; feedback on 130 extras removes 48 more, leaving 82 |
+| Q030 | Recognize siblings in the enlarged parent language | One grouping step verified for 7,000-star rule | Supports two nested groupings for original-rule tilings; all-scale closure remains open |
+| Q031 | Eight-sibling CSP for each of 160 extra stars | No additional exclusions | All 160 have checked tuples in the finite relaxation; no tiling claim |
 
 ## Q000 — geometry
 
@@ -156,11 +160,13 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Continue from `coarse_refined_frontier.json`, with 177 live parent cases.
-  Apply remaining unit consequences of the 163-cut catalog, continue fine
-  forced/arc propagation, and feed full-frontier exclusions back into the
-  parent-star vocabulary. [COARSE_PARENT_RULES.md](COARSE_PARENT_RULES.md)
-  explains why coarse pruning must use a complete necessary frontier.
+- Continue from `coarse_arc_frontier_2.json`, with 82 live parent cases.
+  A promising next test expands the final conditional coarse patches in
+  `coarse_star_arc_filter_2.json` beyond their first neighbor layer. Prepare
+  explicit coarse geometry/rule inputs and keep coarse world IDs separate
+  from fine cut IDs. [CONDITIONAL_PARENT_PATCHES.md](CONDITIONAL_PARENT_PATCHES.md)
+  gives the verified two-level grouping and the failed sibling-CSP attempt.
+  Any coarse feedback must use a complete necessary frontier.
 - Extend the SAT models using [layered domain certificates](DOMAIN_CERTIFICATES.md).
   Q026 now lifts the old two-layer failure to eight original choices, also
   refuting Q023 model 5. Preserve finite limits as unknown and retain tile
@@ -248,7 +254,14 @@ independent audit. Q026 supplies an eight-choice layered certificate and
 the 163-cut catalog. See [coarse constraints](COARSE_PARENT_RULES.md) and
 [the proof format](DOMAIN_CERTIFICATES.md); the main objective remains open.
 
-This now runs 111 commands in dependency order and checks input hashes. Expected
+Q028–Q031 now leave 82 cases. Fine propagation removes seven then 40, and
+conditional coarse feedback removes 48 more. The earlier standalone 17
+coarse exclusions overlap fine ones and are not added twice. The enlarged
+7,000-star language has one verified recognizable grouping step, giving
+two nested steps for original-rule tilings. All 160 eight-sibling probes
+remain satisfiable in their finite relaxation. None proves infinite extension.
+
+This now runs 129 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.

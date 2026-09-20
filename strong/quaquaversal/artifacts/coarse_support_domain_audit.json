@@ -1,0 +1,12 @@
+{
+  "scope": "Independent complete recomputation of every coarse neighbor-star support domain",
+  "stars": 7075,
+  "support_domains": 16334,
+  "incidences": 300497,
+  "sources": {
+    "closed_star_compatibility.json": "00aa8a139e4027deba0b0a2c366278c60c07dfc8c9ee445bc504ef23e3d4b693",
+    "coarse_parent_language.json": "8980bebe7b9a712213784f40064de61b8da8c213e0d2cbcabe3f967bf6ed6228",
+    "coarse_parent_language_audit.json": "5fd8750fb5b5db64eb58f7a77c250661865cc248e33d46c870f7049de3e34822",
+    "audit_coarse_support_domains.py": "914a8e3726187000f6e0bbce02d939715f34990283f40fa92ac53e2d91c52c41"
+  }
+}
