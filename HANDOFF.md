@@ -195,7 +195,7 @@ tilings, not a selected pilot and not a new proved hierarchical rule.
 The new seed uses `choice_cut_forced_1.json`'s 195,032-pose table and the fine
 arc domain pool, with 235 records of which 177 have `domains`. Pose IDs keep
 the old 128,780-prefix; keep parent keys stable, not result indices.
-**Q028–Q031 completed; current full seed: `coarse_arc_frontier_2.json`,
+**Q028–Q032 completed; current fine full seed: `coarse_arc_frontier_2.json`,
 82 live cases.** Parameterized `propagate_choice_cuts.py` and
 `audit_choice_cut_pass.py` validate the catalog's pose prefix and remove two
 star values in `(259,1)`; all 177 cases remain. The forced layer leaves 170
@@ -230,18 +230,30 @@ tuples belong to the older 7,000-star relaxation, not the smaller current one.
 
 The fine full seed has 170 records, 82 with `domains`, and 274,091 poses.
 Parent-case keys remain stable; pose IDs retain the original fine prefix.
-**Next: expand the 82 conditional COARSE patches outward.** Their current
-domains are in the LAST round of `coarse_star_arc_filter_2.json`. Use
-`coarse_parent_language.json`'s 1,295 poses and 7,075-star support table,
-restricted to `final_active_stars` (6,840 + 82). Position -1 is identity and
-needs a world-pose ID in the new seed. Prepare explicit coarse atlas/rule
-adapters and parameterized forced/arc producers/auditors: older scripts
-hard-code the fine 6,840-star rules. Coarse tiles have scale 1 in this frame,
-while existing fine world tiles have scale 1/2. Keep namespaces separate;
-NEVER apply fine pose-index cuts to coarse seed IDs. Track forced presence.
-Wider fine propagation from the 82-case seed remains available. Any global
+**Q032 complete; paused at the user's requested review checkpoint.**
+See `strong/quaquaversal/RESEARCH_STATUS_JA.md` for the consolidated account.
+The 82 conditional COARSE patches were expanded one forced layer outward,
+then arc-propagated: zero further root exclusions. New explicit adapters
+`coarse_expansion_{atlas,rules,seed}.json` restrict the 7,075-star support
+table to 6,922 active stars. The adapter audit checks 82 cases, 3,572 initial
+domain records and 1,291 used inverse pairs. Forced audit checks 140,525
+intersections and 36,676 placements; arc audit checks 15,782 reductions and
+6,850 distinct edges. These are separate finite-check scripts, not external
+review. All 82 surviving patches remain unknown for infinite extension.
+
+The COARSE continuation is `coarse_arc_seed_1.json`, with 4,648 parent-scale
+world poses, from `coarse_forced_1.json` and `coarse_expanded_arcs_1.json`.
+New `propagate_rule_domains.py`, `audit_rule_domains.py`,
+`rule_arc_consistency.py`, `audit_rule_arcs.py`, and
+`prepare_rule_arc_seed.py` accept explicit paths and coordinate-level tags.
+The fine frontier is unchanged. Coarse tiles have scale 1 and fine world
+tiles scale 1/2: NEVER apply fine pose-index cuts to coarse seed IDs.
+No second coarse layer has run. On resumption, either extend this coarse
+seed, or investigate exact overlap constraints between the parents inferred
+by Q030; the latter idea is unimplemented and must not assume grandparent
+star legality. Wider fine propagation also remains available. Any global
 coarse removal must use a complete necessary frontier, not a selected pilot.
-Keep limits unknown. No worker is running.
+Keep limits unknown. No worker is running; do not restart before resumption.
 **Q010 completed:** affine whole-panel groupoids give periodic witnesses for
 all 256 stationary handedness words, for arbitrary pointwise equality or
 real scalar opposite-sign functions. Only equality words 111/144 require
@@ -250,7 +262,7 @@ derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
 scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
 independent edge labels are not covered. The constructive Q003 skeleton/
 vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` now lists 129
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 136
 dependency-ordered commands; `--audit-only` checks retained hashes and result
 expectations. The original 18-command replay passed, and all subsequent
 commands have also run separately; the expanded combined replay has not yet

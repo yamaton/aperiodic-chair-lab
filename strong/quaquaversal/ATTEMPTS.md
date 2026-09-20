@@ -39,6 +39,7 @@ results in `artifacts/` with a reproduction command.
 | Q029 | Conditional arcs among neighbors of each parent star | Partial exclusion | Initial 17 exclusions overlap fine results; feedback on 130 extras removes 48 more, leaving 82 |
 | Q030 | Recognize siblings in the enlarged parent language | One grouping step verified for 7,000-star rule | Supports two nested groupings for original-rule tilings; all-scale closure remains open |
 | Q031 | Eight-sibling CSP for each of 160 extra stars | No additional exclusions | All 160 have checked tuples in the finite relaxation; no tiling claim |
+| Q032 | Expand all 82 conditional parent patches by one forced layer, then propagate arcs | No additional exclusions | 15,782 audited domain reductions; all 82 survive; explicit parent-scale continuation saved |
 
 ## Q000 — geometry
 
@@ -160,12 +161,14 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Continue from `coarse_arc_frontier_2.json`, with 82 live parent cases.
-  A promising next test expands the final conditional coarse patches in
-  `coarse_star_arc_filter_2.json` beyond their first neighbor layer. Prepare
-  explicit coarse geometry/rule inputs and keep coarse world IDs separate
-  from fine cut IDs. [CONDITIONAL_PARENT_PATCHES.md](CONDITIONAL_PARENT_PATCHES.md)
-  gives the verified two-level grouping and the failed sibling-CSP attempt.
+- Research is held at the Q032 checkpoint for the user's requested review;
+  see [the Japanese status note](RESEARCH_STATUS_JA.md).
+- On resumption, continue the parent-scale `coarse_arc_seed_1.json`, with
+  82 live cases, using the explicit atlas/rule propagators. The first wider
+  layer excluded none. Keep coarse world IDs separate from fine cut IDs;
+  the fine frontier is still `coarse_arc_frontier_2.json`.
+  [CONDITIONAL_PARENT_PATCHES.md](CONDITIONAL_PARENT_PATCHES.md) gives the
+  two-level grouping, failed sibling-CSP attempt and wider-layer result.
   Any coarse feedback must use a complete necessary frontier.
 - Extend the SAT models using [layered domain certificates](DOMAIN_CERTIFICATES.md).
   Q026 now lifts the old two-layer failure to eight original choices, also
@@ -261,7 +264,12 @@ coarse exclusions overlap fine ones and are not added twice. The enlarged
 two nested steps for original-rule tilings. All 160 eight-sibling probes
 remain satisfiable in their finite relaxation. None proves infinite extension.
 
-This now runs 129 commands in dependency order and checks input hashes. Expected
+Q032 expands the complete 82-case parent-scale frontier by one forced layer
+and arc consistency. All 82 survive; 15,782 reductions have separate replay.
+The adapters and retained domains are audited, and the continuation seed is
+`coarse_arc_seed_1.json`. Finite survival is still unknown, not a tiling witness.
+
+This now runs 136 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.

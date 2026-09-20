@@ -170,6 +170,13 @@ COMMANDS = [
      '--poses-source',ARTIFACTS+'coarse_arc_frontier_1.json','--filter',ARTIFACTS+'coarse_star_arc_filter_2.json',
      '--filter-audit',ARTIFACTS+'coarse_star_arc_audit_2.json','--output',ARTIFACTS+'coarse_arc_frontier_2.json'],
     ['audit_merged_coarse_frontier.py','--input',ARTIFACTS+'coarse_arc_frontier_2.json','--output',ARTIFACTS+'coarse_arc_frontier_2_audit.json'],
+    ['prepare_coarse_expansion.py'],
+    ['audit_coarse_expansion_inputs.py'],
+    ['propagate_rule_domains.py'],
+    ['audit_rule_domains.py'],
+    ['rule_arc_consistency.py'],
+    ['audit_rule_arcs.py'],
+    ['prepare_rule_arc_seed.py'],
 ]
 
 
@@ -280,6 +287,15 @@ def main():
     assert read('coarse_star_arc_audit_2.json')['remaining_extras'] == 82
     assert read('coarse_arc_frontier_2_audit.json')['survivor'] == 82
     assert read('coarse_arc_frontier_2_audit.json')['coarse_rejection'] == 48
+    assert read('coarse_expansion_input_audit.json')['root_cases'] == 82
+    assert read('coarse_expansion_input_audit.json')['active_stars'] == 6922
+    assert read('coarse_forced_1_audit.json')['survivors'] == 82
+    assert read('coarse_forced_1_audit.json')['rejections'] == 0
+    assert read('coarse_expanded_arcs_1_audit.json')['survivors'] == 82
+    assert read('coarse_expanded_arcs_1_audit.json')['reductions'] == 15782
+    assert read('coarse_expanded_arcs_1_audit.json')['rejected'] == 0
+    assert read('coarse_arc_seed_1.json')['coordinate_level'] == 'parent'
+    assert read('coarse_arc_seed_1.json')['status_counts'] == {'survivor':82}
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

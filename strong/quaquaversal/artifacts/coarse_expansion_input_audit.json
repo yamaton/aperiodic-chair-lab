@@ -1,0 +1,21 @@
+{
+  "scope": "Exact parent-scale pose/rule adapter and complete conditional-domain census",
+  "root_cases": 82,
+  "active_stars": 6922,
+  "seed_domain_records": 3572,
+  "used_inverse_pairs": 1291,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "coarse_parent_language.json": "8980bebe7b9a712213784f40064de61b8da8c213e0d2cbcabe3f967bf6ed6228",
+    "coarse_star_arc_filter_2.json": "df342f6954532f2590d28cfc205cd66505c30bd4341a3593bb7b559b9779bd79",
+    "coarse_star_arc_audit_2.json": "2901e72e5fd516f398f704160f2db15b81305c6653b9d1a47b75878f5ebaa57b",
+    "coarse_arc_frontier_2.json": "2e4e61880ea31c7dd50e2e58626edf793c13381e26ad9a1e5581aa8dc7429838",
+    "coarse_arc_frontier_2_audit.json": "17fa7b00f8d14243fad918938cccb75834435f218629bb68065193df7e666f4c",
+    "coarse_support_domain_audit.json": "9d3eb9edb5acfb8aa3426792df291057e6f7d66de31dcfb24c1975411885d194",
+    "coarse_expansion_atlas.json": "3b8d057d320a4269701c971b377aa30b3218c50926ea773fe65899b575ab1deb",
+    "coarse_expansion_rules.json": "4098b972912115331f6b1e5294d782130acc8bb122ba115c773f03cac11274cc",
+    "coarse_expansion_seed.json": "debd3d37595ea0f30f4fec03b40443033c929041c25509c51c1209bba6553ea4",
+    "audit_coarse_expansion_inputs.py": "0b4b4332619d9d8e5809e9a13ee5bd38a50bbb08e15a116014fc40b9da6612db"
+  }
+}

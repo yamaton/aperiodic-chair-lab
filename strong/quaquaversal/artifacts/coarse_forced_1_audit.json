@@ -1,0 +1,16 @@
+{
+  "scope": "Explicit-set replay of all retained domains and every rejected witness in one forced layer",
+  "survivors": 82,
+  "rejections": 0,
+  "domain_intersections": 140525,
+  "exact_relative_placements": 36676,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "coarse_expansion_atlas.json": "3b8d057d320a4269701c971b377aa30b3218c50926ea773fe65899b575ab1deb",
+    "coarse_expansion_rules.json": "4098b972912115331f6b1e5294d782130acc8bb122ba115c773f03cac11274cc",
+    "coarse_expansion_seed.json": "debd3d37595ea0f30f4fec03b40443033c929041c25509c51c1209bba6553ea4",
+    "coarse_forced_1.json": "5035fc96306a8dfc6ad2cd255c7f4379f88f9c0bfe8502986a17755cbf52317e",
+    "audit_rule_domains.py": "2ad3b1b37583f89c90d1f5eba5c9f9838f5423921c2ae65b6999003e274e743a"
+  }
+}

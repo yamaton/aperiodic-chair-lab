@@ -1,6 +1,8 @@
 # Quaquaversal matching-rule investigation
 
 Started 20 September 2026 (UTC), at the user's request. Work remains local.
+The Q032 checkpoint is paused for the user's requested review; see the
+[consolidated Japanese status note](RESEARCH_STATUS_JA.md).
 
 ## Target and boundaries
 
@@ -46,6 +48,9 @@ possibilities to 246 nonlanguage parent covers. Further [fine and coarse
 parent constraints](COARSE_PARENT_RULES.md), followed by [conditional parent
 patches](CONDITIONAL_PARENT_PATCHES.md), now leave **82**, with audited
 domains and exclusions. The current full seed is `coarse_arc_frontier_2.json`.
+One wider parent-scale layer adds no exclusions; its 15,782 domain reductions
+are separately audited and `coarse_arc_seed_1.json` preserves the coarse
+continuation. Coarse and fine pose IDs belong to different coordinate tables.
 The enlarged parent language supports a second recognizable grouping step;
 closure at all scales remains open. [Optional-neighbor pilots](OPTIONAL_NEIGHBOR_RULES.md)
 and [layered domain proofs](DOMAIN_CERTIFICATES.md) provide 163 verified

@@ -13,6 +13,8 @@ the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
 [Research entry point](../strong/quaquaversal/README.md),
 [attempt register and commands](../strong/quaquaversal/ATTEMPTS.md), and
 [primary-source notes](../strong/quaquaversal/LITERATURE.md).
+[Current Japanese status review](../strong/quaquaversal/RESEARCH_STATUS_JA.md)
+summarizes the Q032 pause checkpoint, failed attempts and remaining proof gap.
 The first result is a [periodic obstruction for one fixed
 decoration](../strong/quaquaversal/PERIODIC_OBSTRUCTION.md), with exact
 contact-path certificates. [Stronger pose and face-star rules](../strong/quaquaversal/RELATIVE_POSE_RULES.md)
@@ -28,6 +30,8 @@ now support two recognizable grouping levels; arbitrary-depth hierarchy remains 
 and [repeated propagation](../strong/quaquaversal/PARENT_PROPAGATION.md)
 led to 246 nonlanguage parent covers; [fine and coarse parent constraints](../strong/quaquaversal/COARSE_PARENT_RULES.md)
 led to 177; the conditional parent-patch continuation now leaves **82**, with audited domains and exclusions.
+One wider parent-scale layer excludes none; its 15,782 domain reductions
+and all retained domains have separate finite-check replays.
 [Optional-neighbor experiments](../strong/quaquaversal/OPTIONAL_NEIGHBOR_RULES.md)
 and [layered domain proofs](../strong/quaquaversal/DOMAIN_CERTIFICATES.md)
 provide 163 choice cuts with exact certificates. A full hierarchy proof remains open.

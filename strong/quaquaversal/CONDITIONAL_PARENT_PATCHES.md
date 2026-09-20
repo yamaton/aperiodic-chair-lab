@@ -122,15 +122,49 @@ describe possible grandparents of `E`-tilings, or continue the complementary
 fine-domain propagation. Simply showing two grouping levels is insufficient
 to conclude finite symmetry groups.
 
-A concrete next experiment can expand the final Q029 conditional patches
-outward: their last-round domains are in `coarse_star_arc_filter_2.json`.
-Here stars range over the original 6,840 plus 82 extras, and coarse neighbor
-poses come from the 1,295-entry vocabulary. This is a different coordinate
-level and star catalog from the fine propagator's defaults. Prepare explicit
-coarse atlas/compatibility inputs, restrict target domains to the audited
-current vocabulary, and keep coarse world-pose IDs separate from the fine
-pose IDs used by the 163 choice cuts. The stored 160 sibling witnesses belong
-to the earlier 7,000-star relaxation, not automatically to this smaller one.
+## Q032: one wider parent-scale layer adds no exclusions
+
+The final Q029 conditional patches have now been expanded one forced-neighbor
+layer outward. `prepare_coarse_expansion.py` creates explicit parent-scale
+atlas, compatibility and seed inputs. The active vocabulary is the original
+6,840 plus 82 extras, restricted from the audited 7,075-star support table.
+The separate adapter audit checks all 82 cases, 3,572 seed-domain records,
+and 1,291 used inverse pairs. The atlas retains all 1,295 poses for stable
+indices; the four extra poses are unused by this active vocabulary.
+
+The new generic producers/auditors accept explicit atlas and rule paths and
+check coordinate-level tags. Parent world tiles have scale 1, unlike the
+scale-1/2 fine world. Their pose IDs must never receive the fine 163-choice
+cuts. The 160 sibling witnesses from Q031 still belong to the older
+7,000-star relaxation, not automatically to the current 6,922-star language.
+
+`propagate_rule_domains.py` adds only neighbors present in every possible
+star at a known tile, unions possible target stars for each source, and
+intersects constraints from different sources. All **82** cases survive.
+Its separate explicit-set/rational audit checks 140,525 domain intersections
+and 36,676 distinct placements. The shared world table grows to 4,648 poses.
+
+`rule_arc_consistency.py` then constrains the already forced tiles against
+one another. All **82** again survive: **zero additional parent exclusions**.
+The separate replay checks 15,782 domain reductions and 6,850 distinct
+geometric edges. These counts are reductions of possible stars at individual
+tiles, not numbers of parent cases excluded. Surviving domains are necessary
+conditions only; no infinite extension or geometric patch witness is claimed.
+
+The lossless continuation artifact is `coarse_arc_seed_1.json`, using the
+arc domains and the forced layer's parent-scale pose table. The fine frontier
+remains `coarse_arc_frontier_2.json`; neither replaces the other's coordinate
+namespace. Both have 82 live case keys. No second coarse expansion has run.
+At the user's request, research is being held at this checkpoint for a
+[status review](RESEARCH_STATUS_JA.md).
+
+On resumption, another coarse forced layer and arc replay can use the same
+parameterized scripts. A separate, unimplemented strengthening could exploit
+Q030's recognizable grouping to exclude compatible star pairs whose proposed
+parents overlap in their interiors. That test would need exact overlap
+witnesses and a separate checker; it cannot assume that grandparents already
+obey the same star rule. Any global elimination must cover the full necessary
+frontier, not just selected SAT assignments.
 
 ## Reproduction
 
@@ -139,5 +173,8 @@ are `audit_coarse_support_domains.py`, `coarse_star_arc_filter.py`,
 `audit_coarse_star_arcs.py`, `enlarged_sibling_roles.py`,
 `enlarged_sibling_probe.py`, and `audit_enlarged_sibling_probe.py`.
 All results retain input hashes. Original snapshot files are preserved.
-The enlarged reproduction list has 129 commands. Each new command was run
+Q032 adds `prepare_coarse_expansion.py`, `audit_coarse_expansion_inputs.py`,
+`propagate_rule_domains.py`, `audit_rule_domains.py`, `rule_arc_consistency.py`,
+`audit_rule_arcs.py`, and `prepare_rule_arc_seed.py`, in that order with their
+default paths. The enlarged reproduction list has 136 commands. Each new command was run
 separately; the entire historical sequence has not been rerun from scratch.
