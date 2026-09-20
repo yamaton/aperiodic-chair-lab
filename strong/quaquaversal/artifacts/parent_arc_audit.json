@@ -1,0 +1,21 @@
+{
+  "scope": "Fraction edge-pose checks and independent synchronous arc-consistency replay",
+  "directed_pose_checks": 159272,
+  "neighborhoods": 11560,
+  "synchronous_rounds": 36916,
+  "status_counts": {
+    "survivor": 9280,
+    "empty_star_domain": 2280
+  },
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "closed_contact_atlas.json": "f25a57d98f389a63934b5c3b01cbbaf2ffe876a52d8dd3c3c57959611b5dc1e2",
+    "closed_star_compatibility.json": "00aa8a139e4027deba0b0a2c366278c60c07dfc8c9ee445bc504ef23e3d4b693",
+    "parent_external_domains.json": "561708d0a5cff928ba830a9ea54663a2b5e3b47d72e5c597b881deeae0e6a186",
+    "parent_join_filter.json": "c92fe40affebc6e2d526f40de4004fd34e97b74387a11d3187b594f6692d6349",
+    "parent_neighbor_graph.json": "bb9a3bbaa41a6fdf23a12e60528ab36b1afe4005441360febca25911d5fa0af6",
+    "parent_star_arc_consistency.json": "dd9c6af405af005abae0bad8bfeca67219258f5dece28f97eea4de7f4697b701",
+    "audit_parent_arcs.py": "1af249faeb7627124e350cd6a0d8f6e442cfb6722378ecab3fd4d9e703755d1b"
+  }
+}

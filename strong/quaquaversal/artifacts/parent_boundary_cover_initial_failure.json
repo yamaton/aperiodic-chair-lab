@@ -1,0 +1,17 @@
+{
+  "scope": "Preserved failed implementation run, not a mathematical exclusion",
+  "command": "uv run --locked python strong/quaquaversal/parent_boundary_cover.py",
+  "exit_code": 1,
+  "failure": "Final genuine_seen assertion expected 6840, enumerated 6838",
+  "observed_cover_limit_cases_at_11000": 1,
+  "last_progress": {
+    "processed": 11000,
+    "nonlanguage_covers_remain": 10333,
+    "all_covers_legal": 666,
+    "unknown_at_cover_limit": 1
+  },
+  "repair": "Check all genuine covers directly; incomplete capped enumeration must remain unknown. Continue using stronger arc-consistency domains.",
+  "sources": {
+    "parent_boundary_cover_initial.py": "66ffd0194657c21e424eff19230f7dd4182dccfc3b9988c8acbcaabfc86744fa"
+  }
+}

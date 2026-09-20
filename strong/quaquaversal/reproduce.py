@@ -46,6 +46,17 @@ COMMANDS = [
     ['star_parent_consistency.py'],
     ['parent_star_join.py'],
     ['parent_join_filter.py'],
+    ['closed_star_compatibility.py'],
+    ['audit_star_compatibility.py'],
+    ['parent_external_domains.py'],
+    ['audit_external_domains.py'],
+    ['parent_neighbor_graph.py'],
+    ['parent_star_arc_consistency.py'],
+    ['audit_parent_arcs.py'],
+    ['parent_boundary_cover.py','--arcs','--output',ARTIFACTS+'parent_boundary_cover_arcs.json'],
+    ['parent_cover_star_constraints.py'],
+    ['forced_outer_layer.py'],
+    ['audit_outer_rejections.py'],
 ]
 
 
@@ -92,6 +103,12 @@ def main():
     assert read('star_parent_consistency.json')['all_sibling_roles_agree']
     assert read('pointwise_groupoid_audit.json')['families'] == 512
     assert len(read('parent_join_filter.json')['extra_tuples']) == 52485
+    assert read('parent_external_domains_audit.json')['survivors'] == 11560
+    assert read('parent_arc_audit.json')['status_counts'] == {'survivor':9280,'empty_star_domain':2280}
+    assert len(read('parent_boundary_cover_arcs.json')['genuine_parent_witnesses']) == 6840
+    assert read('parent_cover_star_constraints.json')['status_counts'] == {'survivor':5984,'rejected':3373}
+    assert read('forced_outer_layer.json')['status_counts'] == {'survivor':4035,'rejected':1949}
+    assert read('outer_rejection_audit.json')['rejected_covers_checked'] == 1949
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

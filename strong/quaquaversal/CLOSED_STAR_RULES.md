@@ -111,12 +111,12 @@ extra tuples remain. Adding common-neighbor checks between disjoint sibling
 centers rejects none of these extras. These are preserved necessary local
 candidates, not realized counterexamples and not infinite tilings.
 
-Next: require that every external neighbor of these eight children also
-extend to an allowed closed star, including consistent role assignments.
-Then recover the entire parent star and test its language membership. If
-extra configurations survive, retain them and test wider neighborhoods or
-explicit hierarchy labels. A finite-symmetry conclusion needs grouping at
-arbitrarily many scales, as explained in `SYMMETRY_LEMMA.md`.
+The follow-up [exterior-neighborhood experiments](PARENT_EXTENSION.md) now
+apply these extension and role constraints, leaving 4,035 nonlanguage parent
+covers after one additional forced layer. They remain unresolved finite
+candidates. Work continues with wider propagation and, if needed, explicit
+hierarchy labels. A finite-symmetry conclusion needs grouping at arbitrarily
+many scales, as explained in `SYMMETRY_LEMMA.md`.
 
 ## Reproduction
 

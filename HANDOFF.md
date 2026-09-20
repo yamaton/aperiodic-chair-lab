@@ -62,10 +62,31 @@ partition. **Recursive parent legality is still unproved.** The eight-child
 star join enumerates 58,740 necessary tuples, including all 6,255 genuine
 tuples; 52,485 extras remain unknown. Comparing disjoint siblings rejects
 none of them. `CLOSED_STAR_RULES.md` gives the arguments and precise gap.
-**Resume with Q012:** extend these parent-neighborhood candidates through
-the allowed closed stars of every external neighbor; propagate their roles,
-recover parent stars, and check language membership. Do not call the extras
-realizable counterexamples. All evidence is retained in exact JSON.
+**Q012–Q014 subsequently advanced these extension checks:** all 290,189
+closed-star incidences now have compatibility domains, audited with rational
+arithmetic. Simultaneous external domains reduce 58,740 root tuples to
+11,560; external arc consistency reduces them to 9,280 (3,025 extra).
+Independent synchronous propagation agrees on all 11,560 cases. Boundary
+exact covers from the narrowed roles produce all 6,840 genuine parent stars
+plus 9,357 distinct nonlanguage covers. Fixing all roles of each cover at
+once rejects 3,373; adding one forced outer layer rejects another 1,949.
+**4,035 nonlanguage covers remain unresolved.** The final rejections have
+explicit empty-domain witnesses checked with sets and exact placements.
+`PARENT_EXTENSION.md` records counts, arguments, commands and audit scope.
+An initial boundary enumeration hit a cover cap and failed its final
+genuine-count assertion; its source/failure are preserved. The repaired,
+stronger arc-domain run completes without a cap and separately checks all
+6,840 genuine cover witnesses.
+**Resume with Q014's next layer**, from `artifacts/forced_outer_layer.json`:
+survivors use its shared `poses` (10,240 positions) and `domain_pool`
+(17,747 lists), and identify their parent cover by `boundary_index` and
+`cover_index` in `parent_boundary_cover_arcs.json`. Repeat necessary forced
+neighbor propagation on narrowed domains with explicit finite bounds.
+Most old domains were singleton, so their exterior consequences matter.
+Then add pairwise compatibility in the expanded patch or branch on domains
+if propagation stalls. Do not call survivors realizable counterexamples.
+All evidence is retained in exact JSON. No worker is left running at this
+checkpoint.
 **Q010 completed:** affine whole-panel groupoids give periodic witnesses for
 all 256 stationary handedness words, for arbitrary pointwise equality or
 real scalar opposite-sign functions. Only equality words 111/144 require
@@ -74,7 +95,7 @@ derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
 scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
 independent edge labels are not covered. The constructive Q003 skeleton/
 vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` now lists 30
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 41
 dependency-ordered commands; `--audit-only` checks retained hashes and result
 expectations. The original 18-command replay passed, and all subsequent
 commands have also run separately; the expanded combined replay has not yet

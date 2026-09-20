@@ -23,8 +23,10 @@ has a checked 60-panel boundary structure; no successful monotile is claimed.
 now cover all 256 stationary handedness words in the stated matching models.
 The [closed-star rule](../strong/quaquaversal/CLOSED_STAR_RULES.md) instead has
 6,840 allowed neighborhoods and supports recognizable grouping of one parent
-level. Recursive parent legality remains open; the next experiments extend
-52,485 unresolved local neighborhood candidates.
+level. Recursive parent legality remains open.
+[Exterior extension checks](../strong/quaquaversal/PARENT_EXTENSION.md)
+now leave 4,035 nonlanguage parent covers after one additional forced layer;
+the next experiments propagate these domains farther.
 
 ## Public presentation and provenance
 

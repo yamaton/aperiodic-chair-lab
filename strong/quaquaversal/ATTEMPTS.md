@@ -19,7 +19,9 @@ results in `artifacts/` with a reproduction command.
 | Q009 | Closed contacts and complete closed-star language | Pair rules rejected; stronger star rule remains open | 1,291 pairs admit the periodic control; 6,840 closed stars exclude it at every subdivision level >=2 |
 | Q010 | Pointwise function groupoids for reflected words | Rejected for all 512 stated families | Arbitrary equality/scalar-opposite functions admit two- or four-prism periodic witnesses |
 | Q011 | Recognize and desubstitute the closed-star rule | One-level grouping supported; recursive legality open | 41,719 sibling checks pass; 52,485 extra parent-neighborhood tuples remain unresolved |
-| Q012 | Extend candidate parent neighborhoods through external stars | Next attempt | Propagate allowed stars and child roles outside each eight-child group |
+| Q012 | Extend candidate parent neighborhoods through external stars | Exact filters reduce extras; recursive legality open | 3,025 extra root tuples and 9,357 nonlanguage parent covers remain |
+| Q013 | Condition exterior stars on each complete parent cover | Partial exclusion | 3,373 covers rejected; 5,984 remain unresolved |
+| Q014 | Add a layer of necessarily present exterior neighbors | Partial exclusion | 1,949 more covers rejected; 4,035 remain unresolved |
 
 ## Q000 — geometry
 
@@ -141,10 +143,10 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Q012: extend the surviving Q011 parent-neighborhood candidates through
-  every external neighbor's allowed closed star, and check consistent roles
-  and parent-star legality. The weaker disjoint-sibling filter rejected none
-  of the 52,485 extra tuples; those candidates remain unknown.
+- Continue Q014 from `forced_outer_layer.json`: propagate narrowed domains
+  through further necessarily present neighbors, preserving finite bounds
+  and unresolved survivors. Then test pairwise consistency in the enlarged
+  patches or branch on the remaining star domains.
 - Q003: construct explicit skeleton/vertex-wire labels for the multiple-type
   route, then investigate a recut which preserves that information.
 
@@ -185,9 +187,16 @@ is preserved in `parent_join_filter.json`; Q012 now extends the neighborhood.
 
 ## Full checkpoint reproduction
 
+[PARENT_EXTENSION.md](PARENT_EXTENSION.md) records Q012–Q014, their audit
+scope, the preserved capped-run assertion failure, and all commands. Exterior
+domain intersections leave 11,560 root tuples; arc consistency leaves 9,280.
+Their 16,197 boundary covers contain all 6,840 genuine parent stars and 9,357
+nonlanguage covers. Fixing each cover's roles leaves 5,984 nonlanguage covers;
+one additional forced layer leaves 4,035. None is claimed to be a tiling.
+
 `uv run --locked python strong/quaquaversal/reproduce.py`
 
-This now runs 30 commands in dependency order and checks input hashes. Expected
+This now runs 41 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.
