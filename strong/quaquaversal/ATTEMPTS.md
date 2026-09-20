@@ -32,6 +32,9 @@ results in `artifacts/` with a reproduction command.
 | Q022 | Propagate between optional neighbors | All six Q021 assignments eventually rejected | Five immediate arc cuts of lengths 3, 3, 3, 5, 2; the last assignment fails a deeper layer |
 | Q023 | Integrate neighbor arcs into SAT refinement | Six revised finite models survive | 34 further audited cuts; all 45,403 final domains independently agree |
 | Q024 | Apply learned cuts to the full parent frontier | Domains narrowed; no new parent exclusions | 77 star values removed in 18 cases, followed by 150 arc reductions; 246 cases remain |
+| Q025 | Extend the narrowed full fine frontier | Partial exclusion | Forced layer rejects 11 and fine arcs reject 30 more: 246 → 235 → 205 |
+| Q026 | Choice proofs through multiple forced/arc layers | Eight-choice cut independently verified | 163 cuts total; the new proof also rejects Q023 model 5, not its whole parent case |
+| Q027 | Necessary compatibility in the parent-star vocabulary | Partial exclusion | Coarse support removes 28 further cases after Q025, leaving 177 unresolved parents |
 
 ## Q000 — geometry
 
@@ -153,14 +156,15 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Continue propagation from `choice_cut_frontier_seed.json`, the narrowed
-  full frontier. Extend the six Q023 assignments and generalize dependency
-  certificates through forced-neighbor as well as arc operations. The one
-  formerly surviving Q022 model now fails at the next arc layer, but its
-  deeper failure has not yet become a small original-choice cut.
-  Preserve finite limits as unknown. The full frontier still has 246 cases; the SAT pilot
-  covers only six of those cases. [OPTIONAL_NEIGHBOR_RULES.md](OPTIONAL_NEIGHBOR_RULES.md)
-  gives the exact scope and continuation details.
+- Continue from `coarse_refined_frontier.json`, with 177 live parent cases.
+  Apply remaining unit consequences of the 163-cut catalog, continue fine
+  forced/arc propagation, and feed full-frontier exclusions back into the
+  parent-star vocabulary. [COARSE_PARENT_RULES.md](COARSE_PARENT_RULES.md)
+  explains why coarse pruning must use a complete necessary frontier.
+- Extend the SAT models using [layered domain certificates](DOMAIN_CERTIFICATES.md).
+  Q026 now lifts the old two-layer failure to eight original choices, also
+  refuting Q023 model 5. Preserve finite limits as unknown and retain tile
+  presence dependencies when removing premises.
 - Q003: construct explicit skeleton/vertex-wire labels for the multiple-type
   route, then investigate a recut which preserves that information.
 
@@ -237,7 +241,14 @@ uses these cuts on the full frontier, removing 77 star values in 18 cases;
 full seed is `choice_cut_frontier_seed.json`. The last frozen Q022 model
 has separately failed one layer farther out (38 audited arc reductions).
 
-This now runs 100 commands in dependency order and checks input hashes. Expected
+Q025–Q027 now leave 177 parent cases: 11 exclusions in a forced layer,
+30 in fine arc propagation, and 28 additional exclusions from the possible
+parent-star vocabulary. Every survivor domain and exclusion has its stated
+independent audit. Q026 supplies an eight-choice layered certificate and
+the 163-cut catalog. See [coarse constraints](COARSE_PARENT_RULES.md) and
+[the proof format](DOMAIN_CERTIFICATES.md); the main objective remains open.
+
+This now runs 111 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.

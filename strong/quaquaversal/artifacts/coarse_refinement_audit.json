@@ -1,0 +1,19 @@
+{
+  "scope": "Full-frontier coverage and retained-domain audit with exhaustive support checks for coarse rejections",
+  "survivor": 177,
+  "fine_rejection": 30,
+  "coarse_rejection": 28,
+  "explicit_target_comparisons": 28171,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "contact_atlas.py": "50ea2b29d700f49af40e0d20b20bb2624ea5d76c00524776a0429568db91147f",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "closed_star_compatibility.json": "00aa8a139e4027deba0b0a2c366278c60c07dfc8c9ee445bc504ef23e3d4b693",
+    "choice_cut_forced_1.json": "1a443465238b22e2f1d49443b73ea832da3d34f2ea884e8e61923e0a3ac2549a",
+    "choice_cut_expanded_arcs_1.json": "9a9bd90cfbbc87461e171b16019071d31880d5db4f80e124fd6c4520450de14e",
+    "coarse_parent_language.json": "8980bebe7b9a712213784f40064de61b8da8c213e0d2cbcabe3f967bf6ed6228",
+    "coarse_parent_language_audit.json": "5fd8750fb5b5db64eb58f7a77c250661865cc248e33d46c870f7049de3e34822",
+    "coarse_refined_frontier.json": "d53b72b9d6d94aa767908d6bd4a982843d726567594e37657354bc570dd3074e",
+    "audit_coarse_refinement.py": "aaab49f14e788885dc1a65a0f6dd718da12627adf00c2d13ede23862c76b924a"
+  }
+}

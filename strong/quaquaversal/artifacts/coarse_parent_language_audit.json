@@ -1,0 +1,23 @@
+{
+  "scope": "Exact fingerprint relations and exhaustive live-target comparisons for every coarse-star exclusion",
+  "original_stars": 6840,
+  "extra_stars": 235,
+  "extra_rejections": 40,
+  "extra_survivors": 195,
+  "added_geometric_entries": 452,
+  "reciprocal_entries": 93494,
+  "explicit_target_comparisons": 59585,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "contact_atlas.py": "50ea2b29d700f49af40e0d20b20bb2624ea5d76c00524776a0429568db91147f",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "audit_closed_atlas.py": "d8e4cae2380a8515e5e7918e776a606489acb287de0757c36debcdfde1afcc6c",
+    "closed_contact_atlas.json": "f25a57d98f389a63934b5c3b01cbbaf2ffe876a52d8dd3c3c57959611b5dc1e2",
+    "closed_star_language.json": "65545bf354a81ebe1b5157c09c008aa7c4dfe96523ec5764d1e0bd72c90292e8",
+    "closed_star_compatibility.json": "00aa8a139e4027deba0b0a2c366278c60c07dfc8c9ee445bc504ef23e3d4b693",
+    "parent_boundary_cover_arcs.json": "01b44f88acf2b75204f3a9c1251bcb2af552f3fbf6bba7b83a85c7aa3ed6abc1",
+    "choice_cut_forced_1.json": "1a443465238b22e2f1d49443b73ea832da3d34f2ea884e8e61923e0a3ac2549a",
+    "coarse_parent_language.json": "8980bebe7b9a712213784f40064de61b8da8c213e0d2cbcabe3f967bf6ed6228",
+    "audit_coarse_parent_language.py": "1d33904fb3bcddd2b1f932d97863559690441f80366219e8431ac9e3192260b7"
+  }
+}

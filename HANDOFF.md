@@ -93,7 +93,7 @@ Its 1,054,536 logged reductions and 242,468 distinct used geometric edges
 were replayed with sets and rational poses. Combining earlier geometric
 exclusions rejects none additionally. `PARENT_PROPAGATION.md` gives scopes,
 counts, commands and the next step.
-**Current full frontier: 246 unresolved covers.** The next forced layer
+**Historical Q016 frontier: 246 covers; current frontier is 177 (below).** The next forced layer
 (`forced_after_arcs_1.json`) rejects 35 of 350, and `expanded_arcs_2.json`
 rejects 69 of the remaining 315. Full audits check retained domains and all
 512,877 arc reductions. That baseline seed is `expanded_arcs_2_seed.json`,
@@ -135,7 +135,7 @@ lengths 3, 3, 3, 5, 2. `neighbor_arc_cuts.json` holds their full certificates;
 `verify_neighbor_arc_cut_certificate.py` separately verifies 48 placements
 and 21 arc steps. All new cuts still have zero direct parent exclusions.
 
-**Q023–Q024 completed; new full seed: `choice_cut_frontier_seed.json`.**
+**Q023–Q024 checkpoint: `choice_cut_frontier_seed.json` (246 cases).**
 `neighbor_arc_cut_sat.py` and `neighbor_arc_oracle.py` integrate necessary
 optional-neighbor arcs and replayable backward-sliced choice certificates.
 Starting from 128 cuts, they learn 34 more: 20 immediate-star and 14 arc
@@ -163,14 +163,49 @@ and 246 live cases. Its row indices are new; `original_source_index` and
 the stable `boundary_index`/`cover_index` identify the old baseline cases.
 Cuts refer to pose IDs, which have not changed.
 
-**Resume necessary forced/arc propagation on that new full seed.** If further
-unit-cut propagation is needed, use a new parameterized snapshot: the current
-`choice_cut_domains.py` is bound to the old baseline input hash. Also extend
-the six Q023 frozen models and generalize choice proofs through forced-domain
-union/intersection operations as well as arcs. Do not treat derived optional
-positions as unconditional. Keep timeouts/finite limits unknown and audit
-any UNSAT certificate. The six-case SAT pilot is not the full frontier;
-`OPTIONAL_NEIGHBOR_RULES.md` has scopes and commands. No worker is left running.
+**Q025–Q027 completed; current full seed: `coarse_refined_frontier.json`,
+177 live cases.** Q025 extends all 246 Q024 cases: 11 fail the forced layer
+(`choice_cut_forced_1.json`), leaving 235. Full independent replay checks
+39,563,364 intersections and 6,370,963 distinct placements. Fine arc
+propagation (`choice_cut_expanded_arcs_1.json`) then rejects 30, leaving 205;
+all 620,066 reductions and 240,751 distinct edges have exact audits.
+
+Q026 adds proof DAGs with choice, forced-neighbor union, intersection and arc
+nodes. Unknown presence differs from an empty domain. The last Q022 frozen
+failure now has an eight-choice certificate through two forced and two arc
+layers: 1,070 nodes, reduced from 158 choice premises; a separate checker
+verifies 820 compositions. This also rejects Q023 SAT model 5. The new
+`choice_cut_catalog_163.json` combines 163 audited fixed-pose cuts. It does
+not directly exclude a whole parent case. `DOMAIN_CERTIFICATES.md` explains
+soundness and the source-bound extraction/checker scripts.
+
+Q027 treats the parent tiling directly. Original stars plus the 235 Q025
+extra covers give a complete necessary vocabulary of 7,075 parent stars,
+using 1,295 poses. `coarse_parent_language.py` prunes stars with no compatible
+neighbor: 40 extras disappear in two rounds. Exact new map relations,
+inverse reciprocity, and EVERY still-live candidate target for each rejection
+are independently checked (59,585 comparisons). With the fine arc exclusions
+already applied, 28 further extras disappear (26 then 2), leaving 177.
+`audit_coarse_refinement.py` checks 28,171 target comparisons, coverage, and
+every retained fine domain. Do not add the standalone 40 to the fine counts;
+the total reduction is 11 + 30 + 28 = 69. `COARSE_PARENT_RULES.md` gives the
+necessity argument: this is a vocabulary of possible parents of original-rule
+tilings, not a selected pilot and not a new proved hierarchical rule.
+
+The new seed uses `choice_cut_forced_1.json`'s 195,032-pose table and the fine
+arc domain pool, with 235 records of which 177 have `domains`. Pose IDs keep
+the old 128,780-prefix; keep parent keys stable, not result indices.
+**Resume with necessary unit consequences of the 163-cut catalog, then fine
+forced/arc propagation and coarse feedback.** A read-only diagnostic found
+two currently unit clauses (catalog indices 66 and 135) in parent `(259,1)`;
+no immediate all-fixed cut contradiction. Use a new parameterized unit-pass
+snapshot: `choice_cut_domains.py` is bound to the old baseline hash. Verify
+the catalog's pose-table prefix instead of confusing whole-input hashes.
+For later coarse refinement reuse the audited 7,075-star vocabulary and maps,
+but initialize live extra stars from the complete new fine frontier. Never
+initialize it from a selected SAT subset. The current coarse producer/merger
+use fixed Q025 filenames; preserve those snapshots and make new provenance
+explicit. Keep limits/timeouts unknown. No worker is left running.
 **Q010 completed:** affine whole-panel groupoids give periodic witnesses for
 all 256 stationary handedness words, for arbitrary pointwise equality or
 real scalar opposite-sign functions. Only equality words 111/144 require
@@ -179,7 +214,7 @@ derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
 scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
 independent edge labels are not covered. The constructive Q003 skeleton/
 vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` now lists 100
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 111
 dependency-ordered commands; `--audit-only` checks retained hashes and result
 expectations. The original 18-command replay passed, and all subsequent
 commands have also run separately; the expanded combined replay has not yet

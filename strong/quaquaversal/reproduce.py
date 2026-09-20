@@ -133,6 +133,19 @@ COMMANDS = [
     ['audit_expanded_arcs.py','--input',ARTIFACTS+'choice_cut_arcs.json','--source',ARTIFACTS+'choice_cut_changed_seed.json',
      '--output',ARTIFACTS+'choice_cut_arcs_audit.json'],
     ['merge_choice_cut_frontier.py'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'choice_cut_frontier_seed.json','--output',ARTIFACTS+'choice_cut_forced_1.json'],
+    ['audit_forced_domains_complete.py','--input',ARTIFACTS+'choice_cut_forced_1.json','--source',ARTIFACTS+'choice_cut_frontier_seed.json',
+     '--output',ARTIFACTS+'choice_cut_forced_1_audit.json'],
+    ['expanded_arc_consistency.py','--input',ARTIFACTS+'choice_cut_forced_1.json','--output',ARTIFACTS+'choice_cut_expanded_arcs_1.json'],
+    ['audit_expanded_arcs.py','--input',ARTIFACTS+'choice_cut_expanded_arcs_1.json','--source',ARTIFACTS+'choice_cut_forced_1.json',
+     '--output',ARTIFACTS+'choice_cut_expanded_arcs_1_audit.json'],
+    ['layered_choice_certificate.py'],
+    ['verify_layered_choice_certificate.py'],
+    ['extend_choice_cut_catalog.py'],
+    ['coarse_parent_language.py'],
+    ['audit_coarse_parent_language.py'],
+    ['refine_coarse_frontier.py'],
+    ['audit_coarse_refinement.py'],
 ]
 
 
@@ -220,6 +233,16 @@ def main():
     assert read('choice_cut_domain_audit.json')['star_removals'] == 77
     assert read('choice_cut_arcs_audit.json')['survivors'] == 18
     assert read('choice_cut_frontier_seed.json')['status_counts'] == {'survivor':246,'rejected':0}
+    assert read('choice_cut_forced_1_audit.json')['survivors'] == 235
+    assert read('choice_cut_expanded_arcs_1_audit.json')['survivors'] == 205
+    assert read('layered_choice_certificate_audit.json')['cut_length'] == 8
+    assert read('layered_choice_certificate_audit.json')['direct_parent_exclusions'] == 0
+    assert len(read('choice_cut_catalog_163.json')['cuts']) == 163
+    assert read('choice_cut_catalog_163.json')['rejected_q023_models'] == [5]
+    assert read('coarse_parent_language_audit.json')['extra_rejections'] == 40
+    assert all(len(r) == 1 for r in read('coarse_parent_language.json')['child_roles'])
+    assert read('coarse_refinement_audit.json')['survivor'] == 177
+    assert read('coarse_refinement_audit.json')['coarse_rejection'] == 28
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

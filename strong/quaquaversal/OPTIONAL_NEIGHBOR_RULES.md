@@ -1,9 +1,11 @@
 # Optional neighbors, pilot branches and verified choice cuts
 
 This continues [PARENT_PROPAGATION.md](PARENT_PROPAGATION.md). Recursive
-parent legality remains unproved. The global unresolved parent-cover count
-is **246**; all later six-case pilots described here reject assignments or
-branches, not these parent cases as a whole.
+parent legality remains unproved. This checkpoint ends at **246** unresolved
+parent covers; its six-case pilots reject assignments or branches, not whole
+parent cases. Subsequent [fine and coarse propagation](COARSE_PARENT_RULES.md)
+reduces the full frontier to **177**. [Layered choice proofs](DOMAIN_CERTIFICATES.md)
+also add a 163rd verified cut.
 
 ## Main continuation: 350 to 246
 
@@ -15,7 +17,7 @@ Its 512,877 reductions and 185,698 distinct used geometric edges are
 independently replayed. There are 47,234,830 directed edge occurrences
 across these finite patches.
 
-`expanded_arcs_2_seed.json` is the latest full continuation seed. It retains
+`expanded_arcs_2_seed.json` is this stage's baseline continuation seed. It retains
 128,780 shared positions, the narrowed domain pool and the 246 live cases.
 These position counts include older cases and are not patch tile counts.
 
@@ -160,8 +162,8 @@ That remaining frozen assignment has now also failed: another forced layer
 survives, but the subsequent arc run rejects it after 38 reductions. All
 292,009 forced intersections/placements and all 38 arc steps have independent
 audits. `neighbor_star_cut_layer_2.json` and `neighbor_star_cut_arcs_2.json`
-preserve the extension and failure. This last failure has **not** yet been
-lifted through both propagation layers into a small original-choice cut.
+preserve the extension and failure. Q026 has now lifted this failure through
+both layers to an eight-choice certificate; see [the proof and audit](DOMAIN_CERTIFICATES.md).
 
 ## Q023: integrate optional-neighbor arcs into SAT refinement
 

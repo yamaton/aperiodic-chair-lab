@@ -26,10 +26,11 @@ The [closed-star rule](../strong/quaquaversal/CLOSED_STAR_RULES.md) instead has
 level. Recursive parent legality remains open.
 [Exterior extension checks](../strong/quaquaversal/PARENT_EXTENSION.md)
 and [repeated propagation](../strong/quaquaversal/PARENT_PROPAGATION.md)
-now leave 246 nonlanguage parent covers, with audited domain reductions.
+led to 246 nonlanguage parent covers; [fine and coarse parent constraints](../strong/quaquaversal/COARSE_PARENT_RULES.md)
+now leave **177**, with audited domains and exclusions.
 [Optional-neighbor experiments](../strong/quaquaversal/OPTIONAL_NEIGHBOR_RULES.md)
-provide 162 choice cuts with exact certificates. Applying them narrows 18
-of the 246 remaining parent cases, but excludes no further parent case.
+and [layered domain proofs](../strong/quaquaversal/DOMAIN_CERTIFICATES.md)
+provide 163 choice cuts with exact certificates. A full hierarchy proof remains open.
 
 ## Public presentation and provenance
 

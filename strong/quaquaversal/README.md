@@ -42,14 +42,14 @@ excludes the known periodic control and supports recognizable grouping of
 one parent level. Recursive parent legality remains open. Subsequent
 [exterior-neighborhood checks](PARENT_EXTENSION.md) and
 [repeated propagation](PARENT_PROPAGATION.md) reduce the unresolved
-possibilities to 246 nonlanguage parent covers. The retained domains and
-exclusion traces have been audited. [Optional-neighbor pilots](OPTIONAL_NEIGHBOR_RULES.md)
-now provide 162 verified forbidden combinations of center-star choices.
-Applying them to the full frontier narrows 18 cases but excludes no further
-parent. The new full seed is `choice_cut_frontier_seed.json`. Six revised
-SAT assignments pass the finite arc test with independently checked domains;
-all six earlier frozen assignments eventually fail. Infinite extension and
-recursive hierarchy remain open.
+possibilities to 246 nonlanguage parent covers. Further [fine and coarse
+parent constraints](COARSE_PARENT_RULES.md) now leave **177**, with audited
+domain and exclusion certificates. The current full seed is
+`coarse_refined_frontier.json`. [Optional-neighbor pilots](OPTIONAL_NEIGHBOR_RULES.md)
+and [layered domain proofs](DOMAIN_CERTIFICATES.md) provide 163 verified
+forbidden combinations of center-star choices. Finite SAT models still
+require deeper extension checks. Infinite extension of the remaining cases
+and recursive hierarchy remain open.
 See [attempts and commands](ATTEMPTS.md) and [primary sources](LITERATURE.md).
 No novelty, external review, or fabrication claim is made.
 
