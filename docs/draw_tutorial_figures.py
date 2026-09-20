@@ -5,13 +5,15 @@ These are explanatory carrier/estimate diagrams, not curved-solid meshes.
 """
 
 from itertools import product
+import json
 from pathlib import Path
 
 import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, Rectangle
+import matplotlib.tri as mtri
+from matplotlib.patches import Circle, Polygon, Rectangle
 import numpy as np
 
 
@@ -75,7 +77,7 @@ def parent_layers():
     save(fig, "tutorial-parent-layers.svg")
 
 
-def cap_rigidity():
+def square_cap_rigidity():
     fig = plt.figure(figsize=(10, 4.7), layout="constrained")
     ax = fig.add_subplot(121, projection="3d")
     u, v = np.meshgrid(np.linspace(-1, 1, 61), np.linspace(-1, 1, 61))
@@ -98,6 +100,46 @@ def cap_rigidity():
     ax.set(xlim=(-8, 4), ylim=(-8, 4), aspect="equal", xlabel="u", ylabel="v",
            title="Five lines on the continued graph (z = 0)")
     save(fig, "tutorial-cap-rigidity.svg")
+
+
+def cap_rigidity():
+    candidate = json.loads((OUT.parent.parent / "strong/audit/triangular_v1/candidate.json").read_text())
+    vertices = candidate["port_profile"]["normalized_vertices"]
+    assert vertices == [[-1, -1], [1, -1], [-1, 0]]
+    fig = plt.figure(figsize=(11, 5), layout="constrained")
+    ax = fig.add_subplot(121, projection="3d")
+    n = 36
+    xy = np.array([(i/n, j/n) for i in range(n+1) for j in range(n+1-i)])
+    x, y = xy.T
+    u, v = 2*x-1, y-1
+    height = 27*x*y*(1-x-y)
+    ax.plot_trisurf(mtri.Triangulation(u, v), height, cmap="viridis", linewidth=0, alpha=.95)
+    ax.set(xlabel="u", ylabel="v", zlabel="height / (kδ)",
+           title="Physical triangular cap (k > 0)", zlim=(0, 1.1))
+    ax.set_box_aspect((1, .7, .65))
+    ax.set_xticks([-1, 0, 1])
+    ax.set_yticks([-1, -.5, 0])
+    ax.set_zticks([0, .5, 1])
+    ax.view_init(elev=27, azim=-63)
+    ax = fig.add_subplot(122)
+    ax.add_patch(Polygon(vertices, facecolor="#d9edef", edgecolor="none"))
+    ax.axvline(-1, color="#217b83", linestyle="--", linewidth=1)
+    ax.axhline(-1, color="#217b83", linestyle="--", linewidth=1)
+    line_u = np.linspace(-1.7, 1.65, 100)
+    ax.plot(line_u, -(line_u+1)/2, color="#217b83", linestyle="--", linewidth=1)
+    ax.plot([-1, 1, -1, -1], [-1, -1, 0, -1], color="#217b83", linewidth=2.5)
+    ax.text(-1.13, -1.15, "A", ha="right")
+    ax.text(1.1, -1.15, "B")
+    ax.text(-1.1, .08, "C", ha="right")
+    ax.text(0, -1.23, "long leg 2w", ha="center", va="top")
+    ax.text(-1.13, -.5, "w", ha="right", va="center")
+    ax.text(.24, -.5, "√5w", rotation=-27)
+    ax.scatter([0], [0], color="#bd5c3b", marker="x", s=50, label="anchor p: (0, 0)")
+    ax.scatter([-1/3], [-2/3], color="#172b3a", s=30, label="centroid: (−1/3, −2/3)")
+    ax.legend(loc="upper center", bbox_to_anchor=(.5, -.16), frameon=False, fontsize=10)
+    ax.set(xlim=(-1.65, 1.65), ylim=(-1.55, .65), aspect="equal", xlabel="u", ylabel="v",
+           title="Three lines recover the unequal sides")
+    save(fig, "tutorial-triangular-cap-rigidity.svg")
 
 
 def interior_bounds():
@@ -287,6 +329,7 @@ def interference():
 
 if __name__ == "__main__":
     parent_layers()
+    square_cap_rigidity()
     cap_rigidity()
     interior_bounds()
     handshakes()
@@ -294,4 +337,4 @@ if __name__ == "__main__":
     parity_descent()
     seam_cost()
     interference()
-    print("Wrote eight tutorial SVG diagrams; the 56-cube partition was checked.")
+    print("Wrote nine tutorial SVG diagrams, including the preserved square comparison; the 56-cube partition was checked.")

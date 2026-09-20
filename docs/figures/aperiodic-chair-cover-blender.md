@@ -1,7 +1,9 @@
 # Cover rendered from the frozen chair
 
-**Original-proportion reference:** the README now uses the
-[version with enlarged features](aperiodic-chair-cover-enlarged.md).
+**Original-proportion square reference:** the README now uses the
+[triangular cubic cover](aperiodic-chair-cover-triangular.md). The earlier
+[square version with enlarged features](aperiodic-chair-cover-enlarged.md)
+is also preserved.
 This image and its original receipt are preserved; its source hashes record
 the scripts at the time of rendering, before display-scale options were added.
 

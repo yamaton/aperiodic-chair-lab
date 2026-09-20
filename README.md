@@ -10,11 +10,13 @@ hierarchy and symmetry bounds for legal grid tilings in our model. Existence
 and the curved block's full geometric argument remain written mathematics
 outside these Lean proofs and await mathematical review.
 
-[![The chair with enlarged tabs and pockets, a close-up of matching surfaces, and the eight-chair assembly.](docs/figures/aperiodic-chair-cover-enlarged.png)](https://tritonlab.io/aperiodic-chair-lab/assembly/)
+[![The relocated triangular-port candidate, a matching +2/-2 surface pair, and the eight-chair assembly.](docs/figures/aperiodic-chair-cover-relocated.png)](https://tritonlab.io/aperiodic-chair-lab/assembly/)
 
-*Curved tabs and pockets carry the matching rules. The frozen port layout is
-shown with features enlarged **3× in width and 12× in depth** for visibility.
-[Rendering details](docs/figures/aperiodic-chair-cover-enlarged.md).*
+*The relocated triangular candidate uses two depth magnitudes, shown at its
+**actual design proportions**. Its ports have 12× the width and 256× the
+depth of the recorded small candidate, with no additional feature exaggeration.
+[Rendering details](docs/figures/aperiodic-chair-cover-relocated.md) ·
+[Dimensions and verification scope](strong/PORT_DIMENSIONS.md).*
 
 Match face patterns and arrows, connect identical copies of the chair block,
 and discover how eight pieces form a larger chair-shaped assembly.
@@ -36,7 +38,7 @@ and undo whenever you like. Available in Japanese, English and Simplified Chines
 |---|---|
 | Build and explore | [Interactive builder](https://tritonlab.io/aperiodic-chair-lab/assembly/) · [guided demo](https://tritonlab.io/aperiodic-chair-lab/assembly/?demo=1) · [standalone HTML](docs/assembly.html) |
 | Learn the ideas | [Read the illustrated tutorial](https://tritonlab.io/aperiodic-chair-lab/tutorial/) · [Markdown source](docs/APERIODIC_CHAIR_TUTORIAL.md) · [download HTML](https://tritonlab.io/aperiodic-chair-lab/downloads/tutorial.html) |
-| Inspect the candidate | [Interactive chair viewer](https://tritonlab.io/aperiodic-chair-lab/viewer/) · [repository edition](strong/artifacts/recut-chair.html) |
+| Inspect the square-port reference | [Interactive chair viewer](https://tritonlab.io/aperiodic-chair-lab/viewer/) · [repository edition](strong/artifacts/recut-chair.html) |
 | Compare the constructions | [Geometry and proof comparison](strong/review/CHAIR44_PROOF_COMPARISON.md) |
 | Inspect reproduced evidence | [Chair44 build record](strong/review/CHAIR44_BUILD_REPRODUCTION.md) · [independent finite replay](strong/review/CHAIR44_COMPANION_REPLAY.md) |
 | Follow our formal argument | [Lean project](formal/README.md) · [grid symmetry bound](formal/GRID_SYMMETRY.md) |

@@ -1,5 +1,9 @@
 # README cover with enlarged surface features
 
+**Earlier square-port cover:** the README now uses the
+[triangular cubic version](aperiodic-chair-cover-triangular.md). This image
+and its receipt are preserved as a comparison with the frozen reference.
+
 [Cover image](aperiodic-chair-cover-enlarged.png) ·
 [Rendering receipt](aperiodic-chair-cover-enlarged.json) ·
 [Original-proportion reference](aperiodic-chair-cover-blender.md)

@@ -1,4 +1,4 @@
-"""Render the frozen chair using Blender; run this driver with uv from the root."""
+"""Render a square, triangular, or relocated chair in Blender; run with uv."""
 
 import argparse
 from fractions import Fraction as Q
@@ -116,12 +116,15 @@ def prepare(folder, width_scale, depth_scale):
 
 
 def compose(folder, output, width_scale, depth_scale):
+    data = json.loads((folder / 'scene.json').read_text())
+    triangular = data.get('profile') == 'triangular'
+    relocated = data.get('variant') == 'relocated'
     canvas = Image.new("RGB", (2400, 1060), "#0c1725")
     draw = ImageDraw.Draw(canvas)
     font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
     regular = ImageFont.truetype(font_path, 27)
     small = ImageFont.truetype(font_path, 21)
-    headings = [("01  /  ONE BLOCK", "192 curved tabs and pockets"),
+    headings = [("01  /  ONE BLOCK", "Relocated ports / actual proportions" if relocated else "Triangular ports / two depth levels" if triangular else "192 curved tabs and pockets"),
                 ("02  /  MATCHING SURFACES", "One recorded tab / pocket pair"),
                 ("03  /  EIGHT COPIES", "The recorded parent assembly")]
     for i, (heading, subtitle) in enumerate(headings):
@@ -130,14 +133,16 @@ def compose(folder, output, width_scale, depth_scale):
         draw.text((x+48, 97), subtitle, font=small, fill="#a8bacb")
         panel = Image.open(folder / f"panel-{i}.png").convert("RGBA")
         canvas.paste(panel, (x, 155), panel)
-    draw.text((1010, 760), "TAB  +7", font=small, fill="#65d6ba", anchor="mt")
-    draw.text((1400, 760), "POCKET  -7", font=small, fill="#e9b875", anchor="mt")
-    detail_label = "32x close-up / uniform magnification" if (width_scale, depth_scale) == (1, 1) else "Close-up / same enlarged surface profile"
+    key = data['detail_ports'][0]['key']
+    draw.text((1010, 790 if triangular else 760), f"TAB  +{key}", font=small, fill="#65d6ba", anchor="mt")
+    draw.text((1400, 790 if triangular else 760), f"POCKET  -{key}", font=small, fill="#e9b875", anchor="mt")
+    detail_label = "2.67x close-up / uniform magnification" if relocated else "32x close-up / uniform magnification" if (width_scale, depth_scale) == (1, 1) else "Close-up / same enlarged surface profile"
     draw.text((1200, 875), detail_label, font=small, fill="#a8bacb", anchor="mt")
     draw.line((800, 45, 800, 970), fill="#26374a", width=1)
     draw.line((1600, 45, 1600, 970), fill="#26374a", width=1)
-    proportions = "original feature proportions" if (width_scale, depth_scale) == (1, 1) else f"features enlarged: width {width_scale}x, depth {depth_scale}x"
-    draw.text((48, 994), f"Frozen port layout  /  {proportions}  /  visualization mesh",
+    proportions = "exact design proportions" if relocated else "original feature proportions" if (width_scale, depth_scale) == (1, 1) else f"features enlarged: width {width_scale}x, depth {depth_scale}x"
+    label = "Relocated triangular candidate" if relocated else "Triangular cubic candidate" if triangular else "Frozen port layout"
+    draw.text((48, 994), f"{label}  /  {proportions}  /  visualization mesh",
               font=small, fill="#a8bacb")
     canvas.save(output, optimize=True)
 
@@ -146,20 +151,33 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--blender", default="/mnt/d/apps/blender/5.2.1/blender.exe")
     parser.add_argument("--samples", type=int, default=64)
+    parser.add_argument("--variant", choices=['square','triangular','relocated'], default='square')
     parser.add_argument("--feature-width-scale", type=int, default=1)
     parser.add_argument("--feature-depth-scale", type=int, default=1)
-    parser.add_argument("--output", type=Path, default=ROOT / "docs/figures/aperiodic-chair-cover-blender.png")
+    parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     if min(args.feature_width_scale, args.feature_depth_scale, args.samples) <= 0:
         parser.error("Feature scales and sample count must be positive")
-    output = args.output.resolve()
+    if args.variant == 'relocated' and (args.feature_width_scale, args.feature_depth_scale) != (1, 1):
+        parser.error('The relocated witness uses its checked design dimensions; leave both display scales at 1')
+    default_name = {'square':'aperiodic-chair-cover-blender.png',
+                    'triangular':'aperiodic-chair-cover-triangular.png',
+                    'relocated':'aperiodic-chair-cover-relocated.png'}[args.variant]
+    output = (args.output or ROOT / 'docs/figures' / default_name).resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
     windows = args.blender.lower().endswith(".exe")
     def native(path):
         return subprocess.check_output(["wslpath", "-w", str(path)], text=True).strip() if windows else str(path)
     with tempfile.TemporaryDirectory(prefix="chair-cover-") as temporary:
         folder = Path(temporary)
-        report = prepare(folder, args.feature_width_scale, args.feature_depth_scale)
+        if args.variant == 'relocated':
+            from relocated_cover_mesh import prepare_relocated
+            report = prepare_relocated(folder)
+        elif args.variant == 'triangular':
+            from triangular_cover_mesh import prepare_triangular
+            report = prepare_triangular(folder, args.feature_width_scale, args.feature_depth_scale)
+        else:
+            report = prepare(folder, args.feature_width_scale, args.feature_depth_scale)
         worker = ROOT / "docs/blender_chair_cover.py"
         subprocess.run([args.blender, "--background", "--factory-startup", "--python-exit-code", "1",
                         "--python", native(worker), "--", native(folder), str(args.samples)], check=True)
@@ -170,6 +188,10 @@ def main():
                    "driver_sha256": sha(Path(__file__)), "blender_script_sha256": sha(worker),
                    "mesh_exporter_sha256": sha(ROOT / "strong/build_recut_visualization.py"),
                    "scope": "Rendering provenance and finite geometry checks; no new tiling theorem or mesh certification."})
+    if args.variant in ('triangular', 'relocated'):
+        report['triangular_mesh_exporter_sha256'] = sha(ROOT / 'docs/triangular_cover_mesh.py')
+    if args.variant == 'relocated':
+        report['relocated_mesh_exporter_sha256'] = sha(ROOT / 'docs/relocated_cover_mesh.py')
     output.with_suffix(".json").write_text(json.dumps(report, indent=2)+"\n")
     print(output)
 

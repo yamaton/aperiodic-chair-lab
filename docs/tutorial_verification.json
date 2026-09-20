@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "date": "2026-09-17",
+  "date": "2026-09-20",
   "scope": "Presentation and local links only; not mathematical verification",
   "browser": "Firefox",
   "browser_version": "155.0",
@@ -13,21 +13,24 @@
     844
   ],
   "local_file_open": true,
-  "embedded_images": 10,
-  "mathml_elements": 635,
-  "visible_display_formulas": 29,
-  "local_links_checked": 49,
+  "embedded_images": 11,
+  "mathml_elements": 732,
+  "visible_display_formulas": 37,
+  "local_links_checked": 58,
   "missing_anchors": [],
   "mobile_horizontal_overflow": false,
   "external_requests": [],
   "page_errors": [],
   "sha256": {
-    "docs/APERIODIC_CHAIR_TUTORIAL.md": "6ab0e2b20d087552fc007571c984d1443ff91acb0f6cb8bc45439c26234df3aa",
-    "docs/APERIODIC_CHAIR_TUTORIAL.html": "59076ea91725083c68139fa7abe724f03bb7ad1bb0b73731dd3cb52b4e0aaf0a",
+    "docs/APERIODIC_CHAIR_TUTORIAL.md": "8498c9b18cf706dfa2d1ea24521604fc9bddb4421e5f6911faa8dc9b5438f8c8",
+    "docs/APERIODIC_CHAIR_TUTORIAL.html": "03ceeb7e903be6958c5d36317159cb8c641def08252e883e1895286d2fe11b5f",
     "docs/tutorial.css": "7a2faa5822ad342e144c2d100d6b3eefd45f3e62d4df1c787ef518a2e1564960",
     "docs/tutorial-controls.html": "d45c8706d3286da70e4426899292c7ccc20fde3bfd44eb1d1848ecaf4cbb0d99",
-    "docs/draw_tutorial_figures.py": "0245633f6905ec306d58f5041a5b14a0b0fef0c423ddfbdc9427752608c5b862",
-    "docs/verify_tutorial.cjs": "484b5793bb24aae1255acd9a9238c58fe835df7b68fd5301597d88e69de3d02f",
+    "docs/draw_tutorial_figures.py": "9105b790209b06a849d070b498396e2cde51f9a7fe0f37f77222256746fcbed8",
+    "docs/verify_tutorial.cjs": "546ece5ed338a54d39a4478858a621c7430ad80cb78959b2ccee2114732a5912",
+    "strong/artifacts/port-dimensions.svg": "db7273d661292cf59ccb4464c88c5ddaa053fcc373412ea555f09304adc6feea",
+    "strong/audit/investigate_port_dimensions.py": "1810d7eca83fb3e961797a1dadf3ed5cf99b0d6bb7a87a42bf8856f94fcb3667",
+    "strong/audit/port_dimensions.json": "4bbb0a0b50ef70bd7af51d0fd7fb8b835d068cc175a284098c90699bc9bf8716",
     "docs/figures/tutorial-cap-rigidity.svg": "588b2b23bcfec0a672fced04768be3365313e0e1872756e8fb3d6cf3ec9457a1",
     "docs/figures/tutorial-handshakes.svg": "536aa54dff5d7813601bf6a17470ee6e98e265cb5f0e4d2a8e82be7bddbf8b5b",
     "docs/figures/tutorial-interference.svg": "e3f936bc6c5ccbc151541952dc22831c6828a17026d0c11560887377ffd7e498",
@@ -35,7 +38,8 @@
     "docs/figures/tutorial-parent-flow.svg": "5135bb69c1fb95b817ef1e479d8be0269773f60ac94cc3669af92a5a3c0d0f3d",
     "docs/figures/tutorial-parent-layers.svg": "6e753b3466734b3e1c815f6d2787508c954e6e56cf7ec4f2c93d4e02b0c3e65a",
     "docs/figures/tutorial-parity-descent.svg": "758a007a06ab0288de97ee6b2e66a2da7d704c35b307c77a0c7d13dd4a1fc418",
-    "docs/figures/tutorial-seam-cost.svg": "3706c453a0d20c512011da9a457c918f5d9199d1c14604f271d14dad0cd3c355"
+    "docs/figures/tutorial-seam-cost.svg": "3706c453a0d20c512011da9a457c918f5d9199d1c14604f271d14dad0cd3c355",
+    "docs/figures/tutorial-triangular-cap-rigidity.svg": "99fe382e63b3be1ddc015874fc15bc77f825ee4ab6a6ef7ee1a48e4998960393"
   },
   "figure_enlargement": [
     {
@@ -95,7 +99,7 @@
     {
       "figure": 7,
       "viewport_width": 1200,
-      "image_width": 1000,
+      "image_width": 1025,
       "keyboard_open": true,
       "close_and_focus_restore": true,
       "horizontal_pan": false,
@@ -126,6 +130,15 @@
       "keyboard_open": true,
       "close_and_focus_restore": true,
       "horizontal_pan": false,
+      "initially_centered": true
+    },
+    {
+      "figure": 11,
+      "viewport_width": 1200,
+      "image_width": 1440,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
       "initially_centered": true
     },
     {
@@ -185,7 +198,7 @@
     {
       "figure": 7,
       "viewport_width": 390,
-      "image_width": 1000,
+      "image_width": 1025,
       "keyboard_open": true,
       "close_and_focus_restore": true,
       "horizontal_pan": true,
@@ -217,7 +230,16 @@
       "close_and_focus_restore": true,
       "horizontal_pan": true,
       "initially_centered": true
+    },
+    {
+      "figure": 11,
+      "viewport_width": 390,
+      "image_width": 1440,
+      "keyboard_open": true,
+      "close_and_focus_restore": true,
+      "horizontal_pan": true,
+      "initially_centered": true
     }
   ],
-  "without_javascript": "All ten figures and all formulas remain available; enlargement controls require JavaScript"
+  "without_javascript": "All eleven figures and all formulas remain available; enlargement controls require JavaScript"
 }

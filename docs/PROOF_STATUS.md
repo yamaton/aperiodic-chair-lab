@@ -1,6 +1,6 @@
 # Current claims and proof dependencies
 
-*16 September 2026. Current status after the proper grid symmetry bound.*
+*Updated 19 September 2026. Grid proof status and separate triangular variant.*
 
 This is the current dependency table, rather than a development chronology.
 Older reports retain their historical results and plans. The exact object is
@@ -8,6 +8,14 @@ the [frozen curved-cap chair](../strong/audit/frozen_v1/candidate.json), SHA-256
 `95284fd672945936a383b046f67f5d4b11ab34d05909d0548f4ac95a565b3e54`.
 Chair44's square-pyramid solid is a different geometric object with the same
 discrete matching system under the [recorded correspondence](../strong/review/TSIOKOS_CHAIR44_COMPARISON.md).
+
+The tutorial now uses a separate [triangular cubic candidate](../strong/PORT_SIMPLIFICATION.md)
+as its geometric main example. Its full fine/macro contact sets and A/B/C
+panel rules match the reference; a written three-line rigidity proof
+transfers the registration argument. The main dependency table below still
+specifies the frozen square-cap object and its Lean inputs. The triangular
+variant has no new real-geometry Lean endpoint; its separate evidence is
+listed in the comparison table.
 
 **Evidence classes:** “Lean” means a checked theorem in the stated formal
 model; “exact checks” means finite arithmetic or symbolic identities;
@@ -43,6 +51,8 @@ until the real-solid interpretation is connected to the formal cell/port model.
 | Claim | Evidence | Limit |
 |---|---|---|
 | Same discrete system as Chair44 | Exact coordinate/key bijection, including all contact sets and children | Does not make the two physical solids congruent or transfer their geometric proofs |
+| Two-depth triangular cubic candidate | [Written rigidity and registration transfer](../strong/PORT_SIMPLIFICATION.md), [exact snapshot](../strong/audit/triangular_v1/README.md), [independent replay](../strong/audit/triangular_ports_crosscheck.json): same full contact sets, all 2,304 aligned panel comparisons, trivial stabilizer among 48 signed frames | The all-isometries reduction and geometric interpretation remain written; this is not a new Lean build, independent human review or fabrication result |
+| Movable-anchor width/depth family | [Packing and curved-zone argument](../strong/PORT_DIMENSIONS.md), [rational frame/clearance evidence](../strong/audit/port_dimensions.json): 12× width / 256× depth witness, w supremum 1/4 in the stated family | Written geometric transfer, no new Lean theorem; depth conditions are sufficient, not a global optimum or tolerance specification; snapshots unchanged |
 | Chair44 physical theorem reproduced | [Pinned build and axiom audit](../strong/review/CHAIR44_BUILD_REPRODUCTION.md), 169 matching axiom lines | Final endpoint has 21 disclosed native-evaluation hooks; not a full independent semantic review; release controls retain the missing-archive failure |
 | Dyadic address/synchronization deductions | [168-state calculation and written deductions](../strong/review/SCRUTINY_ADDENDUM.md) | Not part of our Lean endpoint; exceptional fibers and equality with the substitution hull remain open |
 | Printable interfaces and defect response | [Experimental proposal](APERIODIC_CHAIR_TUTORIAL.md#10-bringing-the-rules-to-a-3d-printer) | No validated replacement geometry, tolerance study or physical theorem |

@@ -33,7 +33,7 @@ palette = [material(f"Child {i}", c) for i, c in enumerate([
     (0.28, 0.53, 0.68), (0.79, 0.49, 0.16), (0.46, 0.36, 0.70),
     (0.29, 0.57, 0.39), (0.71, 0.34, 0.43), (0.24, 0.61, 0.60),
     (0.57, 0.65, 0.27), (0.69, 0.38, 0.24)])]
-mesh = bpy.data.meshes.new("Frozen port layout: specified display scales")
+mesh = bpy.data.meshes.new("Candidate port layout: specified display scales")
 mesh.from_pydata(arrays["vertices"].tolist(), [], arrays["faces"].tolist())
 mesh.update()
 for m in (body, tab, pocket):
@@ -127,9 +127,23 @@ render(0, (6, 8, 5.4), 3.65)
 one.hide_render = True
 
 
-def detail(port, x):
+def detail(port, x, index):
     # A cropped neighborhood, rigidly reoriented using a right-handed basis.
     # Uniform camera magnification is applied AFTER the disclosed feature scales.
+    if data.get('profile') == 'triangular':
+        detail_arrays = np.load(folder / f'detail-{index}.npz')
+        local_mesh = bpy.data.meshes.new(f"Cropped triangular port {port['key']}")
+        local_mesh.from_pydata(detail_arrays['vertices'].tolist(), [], detail_arrays['faces'].tolist())
+        local_mesh.update()
+        for m in (body, tab, pocket):
+            local_mesh.materials.append(m)
+        for poly, kind in zip(local_mesh.polygons, detail_arrays['kinds']):
+            poly.material_index = int(kind)
+            poly.use_smooth = bool(kind)
+        obj = bpy.data.objects.new(local_mesh.name, local_mesh)
+        scene.collection.objects.link(obj)
+        obj.location = (x, 0, 0)
+        return obj
     scale = data["detail_magnification"]
     width, depth = data["width"], data["depth"]
     edge = width * 1.45
@@ -175,7 +189,7 @@ def detail(port, x):
     return obj
 
 
-details = [detail(port, x) for port, x in zip(data["detail_ports"], (-0.90, 0.90))]
+details = [detail(port, x, i) for i, (port, x) in enumerate(zip(data["detail_ports"], (-0.90, 0.90)))]
 original_lights = [obj for obj in scene.objects if obj.type == "LIGHT"]
 for obj in original_lights:
     obj.hide_render = True
@@ -184,7 +198,7 @@ tab.node_tree.nodes["Principled BSDF"].inputs["Roughness"].default_value = 0.20
 pocket.node_tree.nodes["Principled BSDF"].inputs["Roughness"].default_value = 0.20
 light("Raking detail light", (-1, -3, 0.85), 180, 1.0, (0.80, 0.91, 1.0))
 light("Detail rim", (0, 3, 1.5), 110, 1.8, (1.0, 0.88, 0.69))
-render(1, (0.7, -5, 2.6), 3.65)
+render(1, (0.7, -4.5, 4) if data.get('profile') == 'triangular' else (0.7, -5, 2.6), 3.65)
 for obj in details:
     obj.hide_render = True
 for obj in scene.objects:
@@ -201,7 +215,7 @@ render(2, (6, 8, 5.4), 3.65)
 (folder / "render.json").write_text(json.dumps({
     "blender_version": bpy.app.version_string, "engine": "Cycles", "device": device,
     "samples": samples, "detail_uniform_magnification_relative_to_single_chair": data["detail_magnification"],
-    "detail_view": "Cropped neighborhoods of the recorded +/-7 contact ports; each independently rigidly reoriented to expose its surface. Artificial flat crop boundaries; the same disclosed feature scales as the whole-chair views.",
+    "detail_view": f"Cropped neighborhoods of recorded +/-{abs(data['detail_ports'][0]['key'])} contact ports; each independently rigidly reoriented to expose its surface. Artificial flat crop boundaries; the same disclosed feature scales as the whole-chair views.",
     "assembly_display_scale_relative_to_single_chair": 0.5,
     "surface_modifiers": [], "smooth_shading": "Cap normals only; no displaced vertices."
 }, indent=2))

@@ -1,0 +1,102 @@
+{
+  "design": "Relocated common-offset witness from PORT_DIMENSIONS.md",
+  "source_candidate_file": "strong/audit/triangular_v1/candidate.json",
+  "source_candidate_sha256": "b1237ab5c2b7c75c565fb4f837a886aa2aafa990927bdbcda399a440cd68b3ce",
+  "dimension_evidence_file": "strong/audit/port_dimensions.json",
+  "dimension_evidence_sha256": "4bbb0a0b50ef70bd7af51d0fd7fb8b835d068cc175a284098c90699bc9bf8716",
+  "anchor_offsets": [
+    "-1/4",
+    "7/32"
+  ],
+  "rendered_width_parameter": "3/16",
+  "rendered_height_unit": "1/16",
+  "feature_reach_bound": "1/8",
+  "design_width_relative_to_recorded_snapshot": "12",
+  "design_depth_relative_to_recorded_snapshot": "256",
+  "additional_feature_display_scaling": false,
+  "minimum_face_edge_margin": "1/16",
+  "curved_zone_clearance_lower_bound": "5/256",
+  "cap_edge_divisions": 48,
+  "cap_triangles": 442368,
+  "maximum_sampled_surface_error": 1.9428902930940242e-16,
+  "chair_mesh": {
+    "vertices": 235298,
+    "triangles": 470592,
+    "edges": 705888,
+    "every_edge_has_two_oppositely_directed_incidents": true,
+    "euler_characteristic": 2,
+    "oriented_mesh_volume": 7.000000000000007
+  },
+  "detail_meshes": [
+    {
+      "vertices": 3327,
+      "triangles": 6650,
+      "edges": 9975,
+      "every_edge_has_two_oppositely_directed_incidents": true,
+      "euler_characteristic": 2,
+      "oriented_mesh_volume": 0.19567383178710937
+    },
+    {
+      "vertices": 3327,
+      "triangles": 6650,
+      "edges": 9975,
+      "every_edge_has_two_oppositely_directed_incidents": true,
+      "euler_characteristic": 2,
+      "oriented_mesh_volume": 0.12073241821289062
+    }
+  ],
+  "flat_face_method": "Eight wedges, each filled by one triangular cap and three flat polygon strips",
+  "flat_and_curved_projected_area_per_face": "1",
+  "exact_wedge_area": "1/8",
+  "exact_cap_area": "9/256",
+  "retains_middle_half_of_carrier_cubes": true,
+  "vertex_coordinate_rounding_digits": 12,
+  "contact_source_port_indices": [
+    40,
+    56
+  ],
+  "contact_child_indices": [
+    7,
+    6
+  ],
+  "contact_signed_keys": [
+    2,
+    -2
+  ],
+  "contact_frame_anchor": [
+    "-5/4",
+    "-55/32",
+    "0"
+  ],
+  "checked_internal_port_pairs": 384,
+  "contact_shared_frames_and_opposite_keys": true,
+  "exact_contact_samples": 91,
+  "detail_edge_divisions": 80,
+  "detail_crop": "Triangle expanded by 9/8 about its centroid; artificial backing and sides",
+  "detail_crop_inside_actual_port_wedge": true,
+  "detail_frames_properly_reoriented": true,
+  "eight_children_partition_scale_two_carrier": true,
+  "coarse_cells": 56,
+  "blender_version": "5.2.1 LTS",
+  "engine": "Cycles",
+  "device": "OPTIX: NVIDIA GeForce RTX 3090, NVIDIA GeForce RTX 3090",
+  "samples": 64,
+  "detail_uniform_magnification_relative_to_single_chair": 2.6666666666666665,
+  "detail_view": "Cropped neighborhoods of recorded +/-2 contact ports; each independently rigidly reoriented to expose its surface. Artificial flat crop boundaries; the same disclosed feature scales as the whole-chair views.",
+  "assembly_display_scale_relative_to_single_chair": 0.5,
+  "surface_modifiers": [],
+  "smooth_shading": "Cap normals only; no displaced vertices.",
+  "status": "passed",
+  "image_sha256": "f2032ee2e3206254f8b1d1d382da806da437607ab302dee012ea00688bf3f562",
+  "composition_font": "DejaVuSans.ttf",
+  "image_dimensions": [
+    2400,
+    1060
+  ],
+  "driver_sha256": "c6a9fef1a4053d8cd7f573d02081561fe2f3ada01e92559d34f0125b7f038610",
+  "blender_script_sha256": "e0c869b43fcc346c7e6ba0e1f953098573b47cdc42926a361e371fd8599adfac",
+  "mesh_exporter_sha256": "06807f38f7ab6a09856010b891d6c21ef5c58eae6cb00436520d12b671625a75",
+  "scope": "Rendering provenance and finite geometry checks; no new tiling theorem or mesh certification.",
+  "triangular_mesh_exporter_sha256": "8e8381157fb71d13e93a1edea7f5ad7985338ba114842e31b8ef565094521a51",
+  "relocated_mesh_exporter_sha256": "424db628299e27f393d56dcafc75e571613aacea4ee886fa3ef7b06409a9eba3"
+}

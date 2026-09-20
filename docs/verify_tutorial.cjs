@@ -21,7 +21,8 @@ const {firefox} = require(process.env.PLAYWRIGHT_MODULE || '/tmp/kanpo-review-br
       embedded: n.src.startsWith('data:'), loaded: n.complete && n.naturalWidth > 0,
       alt: n.alt,
     })));
-    assert.equal(images.length, 10);
+    assert.equal(images.length, 11);
+    assert.match(images[10].alt, /Recorded and relocated triangular port footprints/);
     assert(images.every(n => n.embedded && n.loaded && n.alt));
     const mathCount = await page.locator('math').count();
     assert(mathCount > 250, 'Expected native MathML throughout the expanded tutorial.');
@@ -61,6 +62,11 @@ const {firefox} = require(process.env.PLAYWRIGHT_MODULE || '/tmp/kanpo-review-br
       assert(layout.display_formulas.every(r => r.width > 0 && r.height > 15));
       layouts.push(layout);
       await page.screenshot({path: `/tmp/chair-tutorial-${width}.png`});
+      await page.getByRole('heading', {name: '10.1 Move and enlarge the ports while preserving the rules', exact: true}).scrollIntoViewIfNeeded();
+      await page.screenshot({path: `/tmp/chair-tutorial-dimensions-${width}.png`});
+      const dimensions = page.locator('table').filter({hasText: 'Relocated candidate'});
+      assert.equal(await dimensions.count(), 1);
+      await dimensions.screenshot({path: `/tmp/chair-tutorial-dimension-table-${width}.png`});
       for (const [index, picture] of (await page.locator('.figure-preview img').all()).entries()) {
         await picture.screenshot({path: `/tmp/chair-tutorial-figure-${index + 1}-${width}.png`});
       }
@@ -86,9 +92,11 @@ const {firefox} = require(process.env.PLAYWRIGHT_MODULE || '/tmp/kanpo-review-br
           return region.scrollLeft;
         });
         if (width === 390) assert(horizontalPan > 0, 'Full-size diagram cannot be panned.');
-        if (width === 390 && index === 4) {
+        if (width === 390 && (index === 4 || index === 6 || index === 10)) {
           await page.locator('.figure-scroll').evaluate((region, left) => {region.scrollLeft = left;}, initialPan.actual);
-          await page.screenshot({path: '/tmp/chair-tutorial-enlarged-mobile.png'});
+          await page.screenshot({path: index === 4 ? '/tmp/chair-tutorial-enlarged-mobile.png'
+            : index === 6 ? '/tmp/chair-tutorial-cap-enlarged-mobile.png'
+              : '/tmp/chair-tutorial-dimensions-enlarged-mobile.png'});
         }
         if (index % 2 === 0) await page.keyboard.press('Escape');
         else await page.getByRole('button', {name: 'Close', exact: true}).click();
@@ -101,13 +109,15 @@ const {firefox} = require(process.env.PLAYWRIGHT_MODULE || '/tmp/kanpo-review-br
     }
     const noScript = await browser.newPage({javaScriptEnabled: false});
     await noScript.goto(pathToFileURL(path.resolve('docs/APERIODIC_CHAIR_TUTORIAL.html')).href);
-    assert.equal(await noScript.locator('img').count(), 10);
+    assert.equal(await noScript.locator('img').count(), 11);
     assert(await noScript.locator('img').evaluateAll(nodes => nodes.every(n => n.complete && n.naturalWidth > 0)));
     assert.equal(await noScript.locator('math').count(), mathCount);
     await noScript.close();
     assert.deepEqual(requests, []); assert.deepEqual(errors, []);
     const files = ['docs/APERIODIC_CHAIR_TUTORIAL.md', 'docs/APERIODIC_CHAIR_TUTORIAL.html',
       'docs/tutorial.css', 'docs/tutorial-controls.html', 'docs/draw_tutorial_figures.py', 'docs/verify_tutorial.cjs',
+      'strong/artifacts/port-dimensions.svg', 'strong/audit/investigate_port_dimensions.py',
+      'strong/audit/port_dimensions.json',
       ...fs.readdirSync('docs/figures').filter(f => f.startsWith('tutorial-')).map(f => `docs/figures/${f}`)];
     const sha256 = Object.fromEntries(files.map(f => [f,
       crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex')]));
@@ -120,7 +130,7 @@ const {firefox} = require(process.env.PLAYWRIGHT_MODULE || '/tmp/kanpo-review-br
       local_links_checked: local.length, missing_anchors: missingAnchors,
       mobile_horizontal_overflow: false, external_requests: requests, page_errors: errors, sha256};
     report.figure_enlargement = enlarged;
-    report.without_javascript = 'All ten figures and all formulas remain available; enlargement controls require JavaScript';
+    report.without_javascript = 'All eleven figures and all formulas remain available; enlargement controls require JavaScript';
     fs.writeFileSync('docs/tutorial_verification.json', JSON.stringify(report, null, 2) + '\n');
     console.log(JSON.stringify(report, null, 2));
   } finally {await browser.close();}

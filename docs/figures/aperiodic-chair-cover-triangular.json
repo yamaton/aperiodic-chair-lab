@@ -1,0 +1,79 @@
+{
+  "candidate_sha256": "b1237ab5c2b7c75c565fb4f837a886aa2aafa990927bdbcda399a440cd68b3ce",
+  "candidate_file": "strong/audit/triangular_v1/candidate.json",
+  "profile": "scalene triangle cubic bubble",
+  "ports": 192,
+  "unit_faces": 24,
+  "signed_depth_keys": [
+    -2,
+    -1,
+    1,
+    2
+  ],
+  "feature_width_multiplier": 3,
+  "feature_depth_multiplier": 64,
+  "rendered_width_parameter": "3/64",
+  "rendered_height_unit": "1/64",
+  "feature_reach_bound": "1/32",
+  "minimum_face_edge_margin": "17/64",
+  "feature_box_separation_bounds": {
+    "same_unit_face": "1/32",
+    "coplanar_faces": "17/32",
+    "parallel_planes": "15/16",
+    "perpendicular_faces": "15/64"
+  },
+  "retains_middle_half_of_carrier_cubes": true,
+  "cap_edge_divisions": 24,
+  "cap_triangles": 110592,
+  "mesh_vertices": 63042,
+  "mesh_triangles": 116208,
+  "maximum_sampled_surface_error": 4.1633363423443376e-17,
+  "patch_projected_area_checked": true,
+  "triangle_support_area_fraction_of_old_square": "1/4",
+  "vertex_coordinate_rounding_digits": 12,
+  "contact_source_port_indices": [
+    40,
+    56
+  ],
+  "contact_child_indices": [
+    7,
+    6
+  ],
+  "contact_signed_keys": [
+    2,
+    -2
+  ],
+  "contact_frame_anchor": [
+    "-27/16",
+    "-25/16",
+    "0"
+  ],
+  "contact_shared_frames_and_opposite_keys": true,
+  "exact_contact_samples": 91,
+  "checked_internal_port_pairs": 384,
+  "detail_edge_divisions": 80,
+  "detail_frames_properly_reoriented": true,
+  "eight_children_partition_scale_two_carrier": true,
+  "coarse_cells": 56,
+  "blender_version": "5.2.1 LTS",
+  "engine": "Cycles",
+  "device": "OPTIX: NVIDIA GeForce RTX 3090, NVIDIA GeForce RTX 3090",
+  "samples": 64,
+  "detail_uniform_magnification_relative_to_single_chair": 10.666666666666666,
+  "detail_view": "Cropped neighborhoods of recorded +/-2 contact ports; each independently rigidly reoriented to expose its surface. Artificial flat crop boundaries; the same disclosed feature scales as the whole-chair views.",
+  "assembly_display_scale_relative_to_single_chair": 0.5,
+  "surface_modifiers": [],
+  "smooth_shading": "Cap normals only; no displaced vertices.",
+  "status": "passed",
+  "image_sha256": "f62f5b9d865159d567a6929ce2c9e322dcc438758bbb95d797709061a478670e",
+  "composition_font": "DejaVuSans.ttf",
+  "image_dimensions": [
+    2400,
+    1060
+  ],
+  "driver_sha256": "a1ecc70c8458d3a0b66fc1d5852a847add4fa0af028379fc874d68d3cb47aa00",
+  "blender_script_sha256": "e0c869b43fcc346c7e6ba0e1f953098573b47cdc42926a361e371fd8599adfac",
+  "mesh_exporter_sha256": "06807f38f7ab6a09856010b891d6c21ef5c58eae6cb00436520d12b671625a75",
+  "scope": "Rendering provenance and finite geometry checks; no new tiling theorem or mesh certification.",
+  "triangular_mesh_exporter_sha256": "8e8381157fb71d13e93a1edea7f5ad7985338ba114842e31b8ef565094521a51"
+}
