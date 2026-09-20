@@ -26,8 +26,9 @@ The [closed-star rule](../strong/quaquaversal/CLOSED_STAR_RULES.md) instead has
 level. Recursive parent legality remains open.
 [Exterior extension checks](../strong/quaquaversal/PARENT_EXTENSION.md)
 and [repeated propagation](../strong/quaquaversal/PARENT_PROPAGATION.md)
-now leave 350 nonlanguage parent covers, with audited domain reductions;
-the next experiments propagate those domains farther.
+now leave 246 nonlanguage parent covers, with audited domain reductions.
+[Optional-neighbor experiments](../strong/quaquaversal/OPTIONAL_NEIGHBOR_RULES.md)
+provide verified choice cuts for a stronger finite SAT investigation.
 
 ## Public presentation and provenance
 

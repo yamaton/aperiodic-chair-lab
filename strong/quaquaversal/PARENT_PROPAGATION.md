@@ -1,5 +1,9 @@
 # Repeated exterior propagation and expanded-patch constraints
 
+This preserved checkpoint ends at 350 covers. The subsequent
+[optional-neighbor investigation](OPTIONAL_NEIGHBOR_RULES.md) reduces the
+full frontier to 246 and records six verified choice cuts for a new SAT trial.
+
 Continuation of [PARENT_EXTENSION.md](PARENT_EXTENSION.md). The objective
 is still open: recursive parent legality and finite symmetry of every
 admitted tiling have not been proved. The counts below concern unresolved
@@ -103,7 +107,7 @@ uv run --locked python strong/quaquaversal/audit_forced_domains.py --input stron
 Then, if survivors remain, repeat expanded-patch arc consistency using its
 `--input`/`--output` arguments, audit with the corresponding `--source`, and
 prepare a continuation seed with the corresponding `--poses-source`. These
-next propagation commands have not run at this checkpoint.
+next propagation commands were run in the subsequent checkpoint linked above.
 
 ## Reproduction
 

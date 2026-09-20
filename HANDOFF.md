@@ -77,7 +77,7 @@ An initial boundary enumeration hit a cover cap and failed its final
 genuine-count assertion; its source/failure are preserved. The repaired,
 stronger arc-domain run completes without a cap and separately checks all
 6,840 genuine cover witnesses.
-**Q014–Q016 continuation now leaves 350 unresolved covers.** Three further
+**The first Q014–Q016 continuation left 350 unresolved covers.** Three further
 forced layers reduced 4,035 to 1,554, then 1,076, then 744. Independent
 explicit-set audits replay every retained domain as well as every rejection
 at all four layers. The previously unaudited Q013 role-conditioned domains
@@ -93,16 +93,45 @@ Its 1,054,536 logged reductions and 242,468 distinct used geometric edges
 were replayed with sets and rational poses. Combining earlier geometric
 exclusions rejects none additionally. `PARENT_PROPAGATION.md` gives scopes,
 counts, commands and the next step.
-**Resume from `artifacts/expanded_arc_seed.json`:** 74,903 shared positions,
-22,558 domain lists, 350 records with `domains`; the other 394 records retain
-rejection references. Parent-cover keys remain `boundary_index`/`cover_index`
-into `parent_boundary_cover_arcs.json`. First run
-`uv run --locked python strong/quaquaversal/propagate_forced_domains.py --input strong/quaquaversal/artifacts/expanded_arc_seed.json --output strong/quaquaversal/artifacts/forced_after_arcs_1.json`,
-then the full-domain audit with that input and `--source` set to the seed.
-If survivors remain, the expanded-arc producer/auditor and seed preparer
-accept input/output arguments for further rounds. Preserve explicit finite
-bounds and interpret survival as unknown. Do not call candidates realizable
-counterexamples. No worker is left running at this checkpoint.
+**Current full frontier: 246 unresolved covers.** The next forced layer
+(`forced_after_arcs_1.json`) rejects 35 of 350, and `expanded_arcs_2.json`
+rejects 69 of the remaining 315. Full audits check retained domains and all
+512,877 arc reductions. The current seed is `expanded_arcs_2_seed.json`,
+with 128,780 shared positions and the narrowed domains of 246 live records.
+Keep `boundary_index`/`cover_index` as the fixed parent-case keys.
+
+**Q017–Q020 pilots and next action:** six binary splits (12 branches) add no
+parent exclusion; the only two failed branches belong to a parent already
+rejected without branching. Q018 tests six current cases with finite SAT
+constraints requiring centers to agree on optional neighbor presence. All
+six are SAT, but all six selected assignments have independently certified
+forbidden contacts: three point-only, one face, two positive-volume.
+Q019 adds 209,371 sampled interior-overlap exclusions on the 33,601-position
+pilot catalog; every clause has a rational common-interior-point audit.
+All six instances remain SAT. These are finite assignments, not tilings.
+Q020 freezes each selected Q019 assignment and requests complete allowed
+stars at its neighbors. All six fail. `incidence_star_cuts.json` contains
+six independently verified forbidden conjunctions, each involving exactly
+two `(center tile ID, selected star ID)` choices. None excludes its original
+parent case without an additional choice, so the full count remains 246.
+
+**Resume by adding those verified choice cuts to the Q019 SAT pilot.** Use
+a new cut-enabled producer based on `neighbor_incidence_geometry_sat.py` to
+preserve earlier experiment snapshots. For each cut, disallow the conjunction
+of its two selectors; apply across cases only where the same fixed center
+poses/IDs and choices are represented. Check each new satisfying assignment
+by complete-neighbor-star extension, then extract further audited cuts.
+Keep finite iteration limits and solver timeouts unknown; any UNSAT parent
+claim still needs an appropriate certificate/exhaustive audit. The pilot
+covers six cases, not the full frontier. `OPTIONAL_NEIGHBOR_RULES.md` explains
+the proof of each cut and the preserved failures.
+
+Source paths: `neighbor_incidence_geometry_sat.json` supplies the six models;
+`incidence_model_star_seed.json` freezes them; `incidence_model_star_extension.json`
+records their six empty neighbor domains; `audit_incidence_star_cuts.py`
+checks those failures and writes the minimized two-choice cuts. These latter
+scripts currently use the fixed Q019 filenames; make the next experiment's
+provenance explicit. No worker is left running at this checkpoint.
 **Q010 completed:** affine whole-panel groupoids give periodic witnesses for
 all 256 stationary handedness words, for arbitrary pointwise equality or
 real scalar opposite-sign functions. Only equality words 111/144 require
@@ -111,7 +140,7 @@ derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
 scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
 independent edge labels are not covered. The constructive Q003 skeleton/
 vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` now lists 55
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 75
 dependency-ordered commands; `--audit-only` checks retained hashes and result
 expectations. The original 18-command replay passed, and all subsequent
 commands have also run separately; the expanded combined replay has not yet

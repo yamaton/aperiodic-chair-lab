@@ -113,7 +113,8 @@ candidates, not realized counterexamples and not infinite tilings.
 
 The follow-up [exterior-neighborhood experiments](PARENT_EXTENSION.md) and
 [repeated propagation](PARENT_PROPAGATION.md) now apply these extension and
-role constraints, leaving 350 nonlanguage parent covers. They remain
+role constraints, followed by [optional-neighbor experiments](OPTIONAL_NEIGHBOR_RULES.md),
+leaving 246 nonlanguage parent covers. They remain
 unresolved finite candidates. Work continues with wider propagation and, if needed, explicit
 hierarchy labels. A finite-symmetry conclusion needs grouping at arbitrarily
 many scales, as explained in `SYMMETRY_LEMMA.md`.

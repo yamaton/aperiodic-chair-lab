@@ -39,6 +39,17 @@ translations and infinite-order screws. It also excludes infinite groups
 of finite-order symmetries without requiring a separate crystallographic
 group argument.
 
+## Proper-isometry variant
+
+For the current closed-star recognizer, equivariance has only been asserted
+for proper isometries. This is enough for the same finiteness conclusion
+**if** recognizable grouping can be iterated to all scales. Apply the packing
+argument to the orientation-preserving subgroup H+ of the full symmetry
+group H. The subgroup H+ is then finite. The determinant homomorphism from
+H to {+1,-1} has kernel H+, so [H:H+] is at most two and H is also finite.
+No equivariance of the hierarchy under a reflection is required for this
+variant. It does not fill the still-open recursive-grouping hypothesis.
+
 ## Why the hypotheses matter
 
 Merely displaying an infinite hierarchy is insufficient: the hierarchy must

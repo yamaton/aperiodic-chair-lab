@@ -75,6 +75,31 @@ COMMANDS = [
     ['expanded_arc_consistency.py'],
     ['audit_expanded_arcs.py'],
     ['prepare_forced_seed.py'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'expanded_arc_seed.json','--output',ARTIFACTS+'forced_after_arcs_1.json'],
+    ['audit_forced_domains.py','--input',ARTIFACTS+'forced_after_arcs_1.json','--source',ARTIFACTS+'expanded_arc_seed.json',
+     '--output',ARTIFACTS+'forced_after_arcs_1_audit.json'],
+    ['expanded_arc_consistency.py','--input',ARTIFACTS+'forced_after_arcs_1.json','--output',ARTIFACTS+'expanded_arcs_2.json'],
+    ['audit_expanded_arcs.py','--input',ARTIFACTS+'expanded_arcs_2.json','--source',ARTIFACTS+'forced_after_arcs_1.json',
+     '--output',ARTIFACTS+'expanded_arcs_2_audit.json'],
+    ['prepare_forced_seed.py','--input',ARTIFACTS+'expanded_arcs_2.json','--poses-source',ARTIFACTS+'forced_after_arcs_1.json',
+     '--output',ARTIFACTS+'expanded_arcs_2_seed.json'],
+    ['branch_probe_seed.py'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'branch_probe_seed.json','--output',ARTIFACTS+'branch_probe_layer_1.json'],
+    ['audit_forced_domains.py','--input',ARTIFACTS+'branch_probe_layer_1.json','--source',ARTIFACTS+'branch_probe_seed.json',
+     '--output',ARTIFACTS+'branch_probe_layer_1_audit.json'],
+    ['expanded_arc_consistency.py','--input',ARTIFACTS+'branch_probe_seed.json','--output',ARTIFACTS+'branch_probe_arcs.json'],
+    ['audit_expanded_arcs.py','--input',ARTIFACTS+'branch_probe_arcs.json','--source',ARTIFACTS+'branch_probe_seed.json',
+     '--output',ARTIFACTS+'branch_probe_arcs_audit.json'],
+    ['audit_branch_probe.py'],
+    ['neighbor_incidence_sat.py'],
+    ['incidence_model_geometry.py'],
+    ['audit_incidence_collisions.py'],
+    ['incidence_sample_exclusions.py'],
+    ['audit_incidence_samples.py'],
+    ['neighbor_incidence_geometry_sat.py'],
+    ['incidence_model_star_seed.py'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'incidence_model_star_seed.json','--output',ARTIFACTS+'incidence_model_star_extension.json'],
+    ['audit_incidence_star_cuts.py'],
 ]
 
 
@@ -135,6 +160,15 @@ def main():
     assert read('forced_geometry_audit.json')['rejected_patches'] == 17
     assert read('expanded_arc_audit.json')['survivors'] == 350
     assert read('expanded_arc_seed.json')['status_counts']['survivor'] == 350
+    assert read('forced_after_arcs_1_audit.json')['survivors'] == 315
+    assert read('expanded_arcs_2_audit.json')['survivors'] == 246
+    assert read('expanded_arcs_2_seed.json')['status_counts']['survivor'] == 246
+    assert read('branch_probe_audit.json')['additional_parent_exclusions'] == 0
+    assert all(r['status'] == 'sat' for r in read('neighbor_incidence_sat.json')['results'])
+    assert read('incidence_sample_audit.json')['overlap_clauses'] == 209371
+    assert all(r['status'] == 'sat' for r in read('neighbor_incidence_geometry_sat.json')['results'])
+    assert read('incidence_star_cuts.json')['assignment_rejections'] == 6
+    assert read('incidence_star_cuts.json')['direct_parent_exclusions'] == 0
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

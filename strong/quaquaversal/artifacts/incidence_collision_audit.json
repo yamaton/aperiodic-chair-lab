@@ -1,0 +1,136 @@
+{
+  "scope": "Independent sponsor and contact certificate replay for selected incidence assignments only",
+  "results": [
+    {
+      "model_index": 0,
+      "witness": 0,
+      "sponsors": [
+        {
+          "position": 6820,
+          "center": 11543,
+          "star": 187,
+          "pair": 7
+        },
+        {
+          "position": 16161,
+          "center": 52326,
+          "star": 2274,
+          "pair": 874
+        }
+      ],
+      "intersection_dimension": 0
+    },
+    {
+      "model_index": 1,
+      "witness": 1,
+      "sponsors": [
+        {
+          "position": 20200,
+          "center": 51711,
+          "star": 4145,
+          "pair": 99
+        },
+        {
+          "position": 20519,
+          "center": 56147,
+          "star": 1333,
+          "pair": 191
+        }
+      ],
+      "intersection_dimension": 3
+    },
+    {
+      "model_index": 2,
+      "witness": 2,
+      "sponsors": [
+        {
+          "position": 15556,
+          "center": 66718,
+          "star": 760,
+          "pair": 209
+        },
+        {
+          "position": 21293,
+          "center": 76449,
+          "star": 1329,
+          "pair": 495
+        }
+      ],
+      "intersection_dimension": 2
+    },
+    {
+      "model_index": 3,
+      "witness": 3,
+      "sponsors": [
+        {
+          "position": 22915,
+          "center": 13041,
+          "star": 98,
+          "pair": 67
+        },
+        {
+          "position": 25781,
+          "center": 72894,
+          "star": 2071,
+          "pair": 165
+        }
+      ],
+      "intersection_dimension": 0
+    },
+    {
+      "model_index": 4,
+      "witness": 4,
+      "sponsors": [
+        {
+          "position": 11092,
+          "center": 50620,
+          "star": 2251,
+          "pair": 4
+        },
+        {
+          "position": 20159,
+          "center": 78349,
+          "star": 851,
+          "pair": 690
+        }
+      ],
+      "intersection_dimension": 0
+    },
+    {
+      "model_index": 5,
+      "witness": 5,
+      "sponsors": [
+        {
+          "position": 30236,
+          "center": 78331,
+          "star": 3708,
+          "pair": 147
+        },
+        {
+          "position": 33406,
+          "center": 79042,
+          "star": 81,
+          "pair": 261
+        }
+      ],
+      "intersection_dimension": 3
+    }
+  ],
+  "dimensions": {
+    "0": 3,
+    "3": 2,
+    "2": 1
+  },
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "contact_atlas.py": "50ea2b29d700f49af40e0d20b20bb2624ea5d76c00524776a0429568db91147f",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "audit_closed_atlas.py": "d8e4cae2380a8515e5e7918e776a606489acb287de0757c36debcdfde1afcc6c",
+    "closed_contact_atlas.json": "f25a57d98f389a63934b5c3b01cbbaf2ffe876a52d8dd3c3c57959611b5dc1e2",
+    "closed_star_language.json": "65545bf354a81ebe1b5157c09c008aa7c4dfe96523ec5764d1e0bd72c90292e8",
+    "expanded_arcs_2_seed.json": "75b7ffd46d9a414c0b78841a76e49b4254477cfaefcb052dad36ba251be16da8",
+    "neighbor_incidence_sat.json": "ab1be86cd230da0bb5308179b254557c3607721ab7f4dd2f03a5dc37b1a750eb",
+    "incidence_model_geometry.json": "3e7198077fca486ecde2f2dbb7e49a77b73d1a499e3c3ec4acf2eff20ec62f58",
+    "audit_incidence_collisions.py": "cf022525705167632ded82cd1af0a5bcba370f6870bbba10832f634f1bb379ea"
+  }
+}

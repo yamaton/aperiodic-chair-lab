@@ -1,0 +1,11 @@
+{
+  "scope": "Independent strict common-interior-point proof for each sampled non-overlap clause",
+  "overlap_clauses": 209371,
+  "distinct_sample_points": 125375,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "neighbor_incidence_sat.json": "ab1be86cd230da0bb5308179b254557c3607721ab7f4dd2f03a5dc37b1a750eb",
+    "incidence_sample_exclusions.json": "979905dd954331c889dd18dfcb8a32dd450460d172273651efc90d110d0b584d",
+    "audit_incidence_samples.py": "8bec2ba5e9bfc54552aededc501b666016410fac44fd7c8ecdb933aa097e7d27"
+  }
+}

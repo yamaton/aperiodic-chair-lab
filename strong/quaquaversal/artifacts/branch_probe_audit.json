@@ -1,0 +1,67 @@
+{
+  "scope": "Exhaustive binary split and finite outcome audit; surviving branches do not prove extension",
+  "groups": [
+    {
+      "original_source_index": 6,
+      "surviving_branches": [
+        0,
+        1
+      ],
+      "parent_excluded": false,
+      "already_excluded_without_branching": false
+    },
+    {
+      "original_source_index": 7,
+      "surviving_branches": [
+        2,
+        3
+      ],
+      "parent_excluded": false,
+      "already_excluded_without_branching": false
+    },
+    {
+      "original_source_index": 8,
+      "surviving_branches": [
+        4,
+        5
+      ],
+      "parent_excluded": false,
+      "already_excluded_without_branching": false
+    },
+    {
+      "original_source_index": 9,
+      "surviving_branches": [
+        6,
+        7
+      ],
+      "parent_excluded": false,
+      "already_excluded_without_branching": false
+    },
+    {
+      "original_source_index": 13,
+      "surviving_branches": [],
+      "parent_excluded": true,
+      "already_excluded_without_branching": true
+    },
+    {
+      "original_source_index": 17,
+      "surviving_branches": [
+        10,
+        11
+      ],
+      "parent_excluded": false,
+      "already_excluded_without_branching": false
+    }
+  ],
+  "parent_cases": 6,
+  "branches": 12,
+  "additional_parent_exclusions": 0,
+  "sources": {
+    "expanded_arc_seed.json": "c7adf7de0f2018907239696e3bc2eaec792a3e65fb705b7231cb6ce2c58b74b1",
+    "branch_probe_seed.json": "c9eda4355cc131d022bfc1dbadcee29b4a174a08aa3a99fd4d5f046e67c2e5ab",
+    "branch_probe_layer_1.json": "bee1f27865cf4b3a3c0b467586e441a2e278d7ea66ed36577239e18a8bc6b8ec",
+    "branch_probe_arcs.json": "83499b50dc1dedde74a717f60a6affbb3d7e53dc1edd5841857ae909583a2ed8",
+    "forced_after_arcs_1.json": "292a8df80153de009affe03e16ed3705b17423ccf4023b771b28c59bbc363e56",
+    "audit_branch_probe.py": "fac3ac70150a1c0a4309f6fcd3f476a06ad981bb112336dc52b9fef499e4f7e2"
+  }
+}

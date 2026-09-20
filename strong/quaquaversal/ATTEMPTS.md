@@ -23,7 +23,11 @@ results in `artifacts/` with a reproduction command.
 | Q013 | Condition exterior stars on each complete parent cover | Partial exclusion | 3,373 covers rejected; 5,984 remain unresolved |
 | Q014 | Repeated necessarily present exterior neighbors | Partial exclusion | Four layers leave 744 covers, with full survivor-domain audits |
 | Q015 | Geometric pair tests in expanded forced patches | Partial exclusion | 17 of the 1,076 layer-3 patches rejected by eight intersection witnesses |
-| Q016 | Arc consistency in expanded forced patches | Partial exclusion | 394 of 744 covers rejected; 350 remain unresolved |
+| Q016 | Arc consistency in expanded forced patches | Partial exclusion | A further forced layer and arc round now leave 246 covers |
+| Q017 | Six binary-choice pilot cases | No additional parent exclusions | 12 branches; two failures belong to a parent already rejected without branching |
+| Q018 | Simultaneous optional-neighbor presence | Pilot insufficient | Six satisfiable assignments each have a certified forbidden geometric pair |
+| Q019 | Add sampled interior non-overlap | Pilot insufficient | 209,371 audited pair clauses; all six pilot cases remain satisfiable |
+| Q020 | Complete-star extension of optional neighbors | Six verified choice cuts | All six Q019 assignments fail; each yields a two-choice forbidden conjunction, not a parent exclusion |
 
 ## Q000 — geometry
 
@@ -145,10 +149,13 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Continue Q014 from `expanded_arc_seed.json`: propagate the narrowed
-  domains of its 350 survivors through another forced layer, audit every
-  surviving domain, then repeat Q016 or branch on remaining star choices.
-  [PARENT_PROPAGATION.md](PARENT_PROPAGATION.md) gives the next exact commands.
+- Continue Q020 by adding the six verified cuts in `incidence_star_cuts.json`
+  to the sampled-overlap SAT pilot. Recheck new assignments by requiring
+  complete stars at their selected neighbors, extracting further witnessed
+  cuts if necessary. Preserve an explicit finite iteration budget as unknown.
+  The full 246-case frontier is `expanded_arcs_2_seed.json`; the SAT pilot
+  covers only six of those cases. [OPTIONAL_NEIGHBOR_RULES.md](OPTIONAL_NEIGHBOR_RULES.md)
+  gives the exact scope and continuation details.
 - Q003: construct explicit skeleton/vertex-wire labels for the multiple-type
   route, then investigate a recut which preserves that information.
 
@@ -204,7 +211,13 @@ exclusions and expanded arc propagation. The latter leaves 350 unresolved
 parent covers. Every retained domain and every logged reduction has now
 been audited; this does not establish infinite extension or aperiodicity.
 
-This now runs 55 commands in dependency order and checks input hashes. Expected
+Further continuation now leaves 246 covers. The binary pilot adds no parent
+exclusions. Optional-presence and sampled-overlap SAT assignments fail when
+complete neighbor stars are requested, yielding six verified binary choice
+cuts for the next attempt. [OPTIONAL_NEIGHBOR_RULES.md](OPTIONAL_NEIGHBOR_RULES.md)
+distinguishes these assignment rejections from whole-parent exclusions.
+
+This now runs 75 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.

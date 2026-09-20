@@ -1,6 +1,6 @@
 {
   "scope": "Reproduction of finite research results, including counterexamples; objective remains open",
   "commands": [],
-  "input_hash_checks": 355,
-  "source_sha256": "20f32c3c73f36e0fa2a6262c46f253b71f19f0ce5f703eb7274d7ba6c5f30b80"
+  "input_hash_checks": 480,
+  "source_sha256": "b274484511dd1dd120b3fadc974221f858e1355a67301ee599d852492e1ff401"
 }

@@ -42,9 +42,10 @@ excludes the known periodic control and supports recognizable grouping of
 one parent level. Recursive parent legality remains open. Subsequent
 [exterior-neighborhood checks](PARENT_EXTENSION.md) and
 [repeated propagation](PARENT_PROPAGATION.md) reduce the unresolved
-possibilities to 350 nonlanguage parent covers. The retained domains and
-exclusion traces have been audited. Work continues by extending those
-domains and with constructive hierarchy labels.
+possibilities to 246 nonlanguage parent covers. The retained domains and
+exclusion traces have been audited. [Optional-neighbor pilots](OPTIONAL_NEIGHBOR_RULES.md)
+now provide six verified forbidden combinations of center-star choices for
+a stronger SAT attempt. These reject assignments, not whole parent cases.
 See [attempts and commands](ATTEMPTS.md) and [primary sources](LITERATURE.md).
 No novelty, external review, or fabrication claim is made.
 
