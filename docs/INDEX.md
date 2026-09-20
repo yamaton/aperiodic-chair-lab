@@ -19,6 +19,12 @@ contact-path certificates. [Stronger pose and face-star rules](../strong/quaquav
 also have explicit periodic counterexamples. The
 [multiple-decoration route](../strong/quaquaversal/MULTITYPE_ROUTE.md)
 has a checked 60-panel boundary structure; no successful monotile is claimed.
+[Pointwise panel-map obstructions](../strong/quaquaversal/POINTWISE_GROUPOIDS.md)
+now cover all 256 stationary handedness words in the stated matching models.
+The [closed-star rule](../strong/quaquaversal/CLOSED_STAR_RULES.md) instead has
+6,840 allowed neighborhoods and supports recognizable grouping of one parent
+level. Recursive parent legality remains open; the next experiments extend
+52,485 unresolved local neighborhood candidates.
 
 ## Public presentation and provenance
 

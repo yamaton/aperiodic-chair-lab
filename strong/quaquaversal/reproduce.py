@@ -4,6 +4,7 @@ Run: uv run --locked python strong/quaquaversal/reproduce.py
 This is a finite reproduction command, not an unattended discovery loop.
 """
 
+import argparse
 import hashlib
 import json
 import subprocess
@@ -33,14 +34,29 @@ COMMANDS = [
     ['atlas_periodic_reflections.py'],
     ['atlas_stars.py'],
     ['star_language.py'],
+    ['closed_stars.py','--sample-level','3','--periodic-level','1'],
+    ['closed_stars.py','--sample-level','4','--periodic-level','2'],
+    ['closed_contact_atlas.py'],
+    ['audit_closed_atlas.py'],
+    ['closed_star_language.py'],
+    ['audit_star_language.py'],
+    ['pointwise_groupoid.py'],
+    ['pointwise_groupoid.py','--all','--output',ARTIFACTS+'pointwise_groupoid_all.json'],
+    ['audit_pointwise_groupoid.py'],
+    ['star_parent_consistency.py'],
+    ['parent_star_join.py'],
+    ['parent_join_filter.py'],
 ]
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--audit-only',action='store_true',help='Check retained artifacts and hashes without rerunning searches')
+    options = parser.parse_args()
     runs = ROOT/'artifacts'/'runs'
     runs.mkdir(exist_ok=True)
     records = []
-    for i,args in enumerate(COMMANDS,1):
+    for i,args in enumerate([] if options.audit_only else COMMANDS,1):
         command = ['uv','run','--locked','python',PREFIX+args[0],*args[1:]]
         print(f'[{i}/{len(COMMANDS)}] '+ ' '.join(command),flush=True)
         result = subprocess.run(command,cwd=REPO,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
@@ -52,7 +68,7 @@ def main():
             raise SystemExit(result.returncode)
     checks = 0
     for p in sorted((ROOT/'artifacts').glob('*.json')):
-        if p.name == 'reproduction.json':
+        if p.name in ('reproduction.json','reproduction_hash_audit.json'):
             continue
         data = json.loads(p.read_text())
         for name,expected in data.get('sources',{}).items():
@@ -68,10 +84,19 @@ def main():
     assert read('contact_atlas.json')['status'] == 'closed'
     assert read('atlas_periodic_reflections.json')['volume_ratio'] == '1'
     assert read('star_language_3_1.json')['periodic_control_uses_only_observed_stars']
+    assert read('closed_contact_atlas.json')['status'] == 'closed'
+    assert read('closed_contact_audit.json')['dimensions'] == {'0':953,'1':247,'2':91}
+    assert read('closed_star_language.json')['status'] == 'closed'
+    assert read('closed_star_audit.json')['role_multiplicities'] == {'1':6840}
+    assert read('closed_star_audit.json')['periodic_bad_cycle']
+    assert read('star_parent_consistency.json')['all_sibling_roles_agree']
+    assert read('pointwise_groupoid_audit.json')['families'] == 512
+    assert len(read('parent_join_filter.json')['extra_tuples']) == 52485
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
-    (ROOT/'artifacts'/'reproduction.json').write_text(json.dumps(receipt,indent=2)+'\n')
+    filename = 'reproduction.json' if records else 'reproduction_hash_audit.json'
+    (ROOT/'artifacts'/filename).write_text(json.dumps(receipt,indent=2)+'\n')
     print(f'PASS: {len(records)} commands and {checks} input hashes; expected failures preserved.',flush=True)
 
 

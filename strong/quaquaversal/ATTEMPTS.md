@@ -16,8 +16,10 @@ results in `artifacts/` with a reproduction command.
 | Q006 | Substitution-compatible pair poses | Rejected | Closed 91-pose atlas admits a 24-prism periodic tiling |
 | Q007 | Root-star overapproximation | Unknown at 10,000-model limit | Preserved as incomplete; not needed to reject Q006 |
 | Q008 | Complete face-star rules | Rejected for rules accepting the quaquaversal language | A periodic 192-prism cell uses only observed stars |
-| Q009 | Closed stars including edge/vertex contacts | In progress | Level-4 sample has 741 stars; 31 of 62 periodic control stars remain unobserved, hence unresolved |
-| Q010 | Pointwise function groupoids for reflected words | Next attempt | Retain panel-frame permutations, not just constant values |
+| Q009 | Closed contacts and complete closed-star language | Pair rules rejected; stronger star rule remains open | 1,291 pairs admit the periodic control; 6,840 closed stars exclude it at every subdivision level >=2 |
+| Q010 | Pointwise function groupoids for reflected words | Rejected for all 512 stated families | Arbitrary equality/scalar-opposite functions admit two- or four-prism periodic witnesses |
+| Q011 | Recognize and desubstitute the closed-star rule | One-level grouping supported; recursive legality open | 41,719 sibling checks pass; 52,485 extra parent-neighborhood tuples remain unresolved |
+| Q012 | Extend candidate parent neighborhoods through external stars | Next attempt | Propagate allowed stars and child roles outside each eight-child group |
 
 ## Q000 — geometry
 
@@ -139,23 +141,53 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Q009: include edge-only and vertex-only neighbors. Test closed root stars
-  against the subdivided periodic controls. If every closed star of a
-  periodic tiling occurs in the intended language, try proving that further
-  subdivisions give legal patches at every fixed radius. This could reject
-  finite-radius rules on the unmarked language; it is not established yet.
-- Q010: extend Q002b to reflected words by retaining the actual affine map
-  between panels. Compose these identifications, with domain certificates,
-  to try deriving periodic target maps for arbitrary functions. First check
-  whole-panel compatibility for reflected words; do not assume it.
+- Q012: extend the surviving Q011 parent-neighborhood candidates through
+  every external neighbor's allowed closed star, and check consistent roles
+  and parent-star legality. The weaker disjoint-sibling filter rejected none
+  of the 52,485 extra tuples; those candidates remain unknown.
 - Q003: construct explicit skeleton/vertex-wire labels for the multiple-type
   route, then investigate a recut which preserves that information.
+
+## Q009 follow-up — closed contact and star closure
+
+[CLOSED_STAR_RULES.md](CLOSED_STAR_RULES.md) gives definitions, the written
+closure argument, audit scope and commands. Pair closure stabilizes at
+1,291 poses (91 face, 247 edge-only, 953 point-only), independently checked
+by edge clipping. The 24-prism periodic control satisfies this entire atlas.
+The interior-supertiling closed-star language instead closes at 6,840 types.
+The periodic control has a reachable bad-star self-loop, so no subdivision
+at level >=2 makes it legal for the closed-star rule. This rejects one
+control family, not all periodic tilings.
+
+## Q010 — pointwise identifications retain frame information
+
+[POINTWISE_GROUPOIDS.md](POINTWISE_GROUPOIDS.md) records the stronger
+obstruction for arbitrary equality functions and real scalar opposite-sign
+functions. All 256 stationary reflected words, in both matching conventions,
+have exact periodic witnesses. Equality words 111/144 require four prisms;
+the other 510 cases require two. Certificate replay checks 243,360 map
+derivations and 5,140 periodic contacts. Arbitrary involutions with multiple
+fixed symbols are outside the scalar zero-cycle argument.
+
+## Q011 — one recognizable level, not yet recursive legality
+
+Each of 6,840 allowed closed stars determines a unique child role. All
+41,719 root/touching-sibling cases agree on the sibling role after comparing
+common-neighbor fingerprints. The connected sibling graph then gives one
+partition into eight-child parents, as argued in CLOSED_STAR_RULES.md.
+The parent tiling has not been proved to obey the same rule.
+
+A complete join of the eight child-star domains produces 58,740 tuples,
+including all 6,255 tuples arising from legal parent stars. The remaining
+52,485 are necessary local candidates, not tilings. Adding fingerprints
+between disjoint sibling centers rejects none. This failed strengthening
+is preserved in `parent_join_filter.json`; Q012 now extends the neighborhood.
 
 ## Full checkpoint reproduction
 
 `uv run --locked python strong/quaquaversal/reproduce.py`
 
-This runs 18 commands in dependency order and checks input hashes. Expected
+This now runs 30 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.

@@ -48,19 +48,38 @@ rule to full positive-area face-stars: a 512-prism proper patch supplies
 Thus this stronger rule still fails. `RELATIVE_POSE_RULES.md` explains both
 witnesses. Q007's 10,000 root-star models are a capped overapproximation,
 not an exhaustive or realizable-star count.
-**Resume with Q009**, full closed stars including edge/vertex neighbors:
-`closed_stars.py` has now checked (sample level 3, periodic level 1), giving
-95/8 stars with all 8 control stars unobserved, and (4,2), giving 741/62
-stars with 31 unobserved. This is unknown, not exclusion. Next try closing
-the atlas of all closed contacts, including lower-dimensional contacts, to
-distinguish forbidden from unobserved pairs. **Q010** is another next route:
-pointwise identification groupoids retaining affine panel-frame maps for
-reflected words. ATTEMPTS.md records details and reproduction commands.
-The constructive Q003 skeleton/vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` replays the 18
-checkpoint commands and verifies input hashes; it is not a discovery loop.
-The 18-command checkpoint passed with 92 input-hash checks. Q009's two
-subsequent probes are separately recorded. `SYMMETRY_LEMMA.md` supplies a
+**Q009/Q011 now have a stronger positive intermediate result:** closed-pair
+closure has 1,291 poses (91 face, 247 edge, 953 point contacts); an independent
+edge-clipping audit agrees, but the 24-prism periodic control satisfies all
+these pair rules. Full interior-supertiling closed stars instead stabilize
+at 6,840 types. The audited descendant closure makes this a complete language
+for the stated interior-supertiling definition, not merely a sample. The
+periodic control has a reachable bad-star self-loop, so every subdivision
+at level >=2 remains forbidden for this stronger rule. Each legal star
+recognizes exactly one child role. All 41,719 common-neighbor sibling tests
+force the expected sibling role, supporting a recognizable one-level parent
+partition. **Recursive parent legality is still unproved.** The eight-child
+star join enumerates 58,740 necessary tuples, including all 6,255 genuine
+tuples; 52,485 extras remain unknown. Comparing disjoint siblings rejects
+none of them. `CLOSED_STAR_RULES.md` gives the arguments and precise gap.
+**Resume with Q012:** extend these parent-neighborhood candidates through
+the allowed closed stars of every external neighbor; propagate their roles,
+recover parent stars, and check language membership. Do not call the extras
+realizable counterexamples. All evidence is retained in exact JSON.
+**Q010 completed:** affine whole-panel groupoids give periodic witnesses for
+all 256 stationary handedness words, for arbitrary pointwise equality or
+real scalar opposite-sign functions. Only equality words 111/144 require
+four prisms; the other 510 families require two. The audit replays 243,360
+derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
+scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
+independent edge labels are not covered. The constructive Q003 skeleton/
+vertex-wire inventory remains another route.
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 30
+dependency-ordered commands; `--audit-only` checks retained hashes and result
+expectations. The original 18-command replay passed, and all subsequent
+commands have also run separately; the expanded combined replay has not yet
+been run. It is a finite reproduction command, not a discovery loop.
+`SYMMETRY_LEMMA.md` supplies a
 conditional packing proof of finite symmetry groups from recognizable
 prism supertiles, without assuming finitely many orientations.
 The target is NOT achieved; no all-tilings hierarchy proof, single-solid

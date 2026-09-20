@@ -1,0 +1,49 @@
+{
+  "scope": "Exact replay of all 512 arbitrary-scalar-function periodic obstructions",
+  "masks": 256,
+  "families": 512,
+  "maps": 1112,
+  "checked_derivations": 243360,
+  "checked_periodic_contacts": 5140,
+  "witness_sizes": [
+    {
+      "condition": "equal",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "count": 254
+    },
+    {
+      "condition": "opposite",
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "count": 256
+    },
+    {
+      "condition": "equal",
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "count": 2
+    }
+  ],
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_search.py": "0794d2b64f4b12540a4b77ec43221bc0e1e92390756a44dc323f1aaec897541f",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "polynomial_rules.py": "be3bd8e2c5e7b9b0965fdb65832168b4241a01283660ecd40798c9b7b60bcfe4",
+    "periodic_obstruction.py": "fd7ac62de21b9ef9df7358e1c5e57abc4df1f8e41887cd1655fff89102431667",
+    "pointwise_groupoid.py": "22a30f91c75d532fe89c6221b8142268e6e54cefb50d2e6613dcd6982b3986cb",
+    "pointwise_groupoid_all.json": "19684332ec27e0effd618c78801205294a9605f927c9c50d6dc65f74de8e234d",
+    "panel_refinement_v2.json": "dcd5ea900ada5ffd1ea5aad979339cc1704dd1df86849b9dcf32e0c59a562a3e",
+    "geometry_and_constant_rules.json": "cbe4666bb9018fdc7d97f495448f2a1651d70048fba7f07f49e44169f12b99a5",
+    "audit_pointwise_groupoid.py": "ff778b1890fe5e146d15272f8304cc56c439bbc09e950202d348bf2a754c21a3"
+  }
+}

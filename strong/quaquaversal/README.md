@@ -35,8 +35,13 @@ complete face-star rules admit explicit periodic fillings; see
 [relative-pose rules](RELATIVE_POSE_RULES.md).
 The [60-panel hierarchy route](MULTITYPE_ROUTE.md) supplies verified geometric
 data for multiple decorated types; its explicit label inventory is pending.
-Work continues with edge/vertex neighborhoods, more general function
-identifications, and constructive hierarchy labels.
+[Pointwise map certificates](POINTWISE_GROUPOIDS.md) now reject all 256
+stationary reflected words for equality and real scalar opposite-sign
+markings. A stronger [6,840-type closed-star rule](CLOSED_STAR_RULES.md)
+excludes the known periodic control and supports recognizable grouping of
+one parent level. Recursive parent legality remains open; 52,485 extra
+local parent-neighborhood candidates await extension checks. Work continues
+with these checks and with constructive hierarchy labels.
 See [attempts and commands](ATTEMPTS.md) and [primary sources](LITERATURE.md).
 No novelty, external review, or fabrication claim is made.
 
@@ -49,6 +54,8 @@ uv run --locked python strong/quaquaversal/reproduce.py
 This replays both positive checks and expected failures. Exact JSON witnesses,
 search results and replay logs are in `artifacts/`. No script silently treats
 an incomplete search as aperiodicity or impossibility.
+For a quick check of retained source hashes and result expectations, add
+`--audit-only`; that mode does not rerun the geometric/search calculations.
 
 ## Coordinates
 
