@@ -1,0 +1,3 @@
+extracting sample contacts on 512 tiles
+checking 192 periodic tiles against 80 observed stars
+{"observed": 80, "periodic_stars": 8, "not_observed": 0, "counterexample": true}

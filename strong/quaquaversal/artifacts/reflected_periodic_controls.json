@@ -1,0 +1,6562 @@
+{
+  "scope": "All 256 child words; scalar face polynomials total degree <=2; two-prism periodic cells",
+  "families": 512,
+  "not_rejected_by_control": 40,
+  "results": [
+    {
+      "mask": 0,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 1,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 2,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 3,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 4,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 5,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 6,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 7,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 8,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 9,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 10,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 11,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 12,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 13,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 14,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 15,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 16,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 17,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 18,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 19,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 - a*b/2 + a/4 + b**2/4 - b/4 - 1/2",
+          "a**2 + a*b - 3*a/2 + b**2/4 - 3*b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 20,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + a*b/2 - a/4 + b**2/4 - b/4",
+          "a**2 - a*b - a/2 + b**2/4 + b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 21,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 22,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 23,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 24,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 25,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 26,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 27,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 - a*b/2 + a/4 + b**2/4 - b/4 - 1/2",
+          "a**2 + a*b - 3*a/2 + b**2/4 - 3*b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 28,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + a*b/2 - a/4 + b**2/4 - b/4",
+          "a**2 - a*b - a/2 + b**2/4 + b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 29,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 30,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 31,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 32,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 33,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 34,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 35,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 - a*b/2 + a/4 + b**2/4 - b/4",
+          "a**2 - a*b - a/2 + b**2/4 + b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 36,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + a*b/2 - a/4 + b**2/4 - b/4 - 1/2",
+          "a**2 + a*b - 3*a/2 + b**2/4 - 3*b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 37,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 38,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 39,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 40,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 41,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 42,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 43,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 - a*b/2 + a/4 + b**2/4 - b/4",
+          "a**2 - a*b - a/2 + b**2/4 + b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 44,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + a*b/2 - a/4 + b**2/4 - b/4 - 1/2",
+          "a**2 + a*b - 3*a/2 + b**2/4 - 3*b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 45,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 46,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 47,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 48,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 49,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 50,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 51,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 52,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 53,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 54,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 55,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 56,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 57,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 58,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 59,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 60,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 61,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 62,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 63,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 64,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 65,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 66,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 67,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 68,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 69,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 70,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 71,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 72,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 73,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 74,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 75,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 76,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 77,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "a**2 - 2*a/3 + b**2/3",
+          "a**2 - 4*a/3 + b**2/3 - 2*b/3 + 2/3",
+          "a**2 - 2*a/3 + b**2/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 78,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 79,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 80,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - 1/2",
+          "a**2 - a + b**2/4 - b/2"
+        ]
+      ]
+    },
+    {
+      "mask": 81,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 82,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 83,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 84,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 85,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 86,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 87,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - b/2",
+          "a**2 - a + b**2/4"
+        ]
+      ]
+    },
+    {
+      "mask": 88,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - 1/2",
+          "a**2 - a + b**2/4 - b/2"
+        ]
+      ]
+    },
+    {
+      "mask": 89,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 90,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 91,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 92,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "a**2 - 2*a/3 + b**2/3",
+          "a**2 - 4*a/3 + b**2/3 - 2*b/3 + 2/3",
+          "a**2 - 2*a/3 + b**2/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 93,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 94,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 95,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - b/2",
+          "a**2 - a + b**2/4"
+        ]
+      ]
+    },
+    {
+      "mask": 96,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - 1/4",
+          "a**2 - a + b**2/4"
+        ]
+      ]
+    },
+    {
+      "mask": 97,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 98,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 99,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 100,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 101,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 102,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 103,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - b/2 - 1/4",
+          "a**2 - a + b**2/4 - b/2"
+        ]
+      ]
+    },
+    {
+      "mask": 104,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - 1/4",
+          "a**2 - a + b**2/4"
+        ]
+      ]
+    },
+    {
+      "mask": 105,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 106,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 107,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 108,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 109,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 110,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 111,
+      "condition": "equal",
+      "dimension": 9,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "b",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "b**2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a*b",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a**2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - b/2 - 1/4",
+          "a**2 - a + b**2/4 - b/2"
+        ]
+      ]
+    },
+    {
+      "mask": 112,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 113,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 114,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 115,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 116,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 117,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 118,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 119,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 120,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 121,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 122,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 123,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 124,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 125,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 126,
+      "condition": "equal",
+      "dimension": 8,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "b",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "b**2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a*b",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a**2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 127,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 128,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 129,
+      "condition": "equal",
+      "dimension": 8,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "b",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "b**2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a*b",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a**2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 130,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 131,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 132,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 133,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 134,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 135,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 136,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 137,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 138,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 139,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 140,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 141,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 142,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 143,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 144,
+      "condition": "equal",
+      "dimension": 9,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "b",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "b**2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a*b",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a**2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - 1/4",
+          "a**2 - a + b**2/4"
+        ]
+      ]
+    },
+    {
+      "mask": 145,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 146,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 147,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 148,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 149,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 150,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 151,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - b/2 - 1/4",
+          "a**2 - a + b**2/4 - b/2"
+        ]
+      ]
+    },
+    {
+      "mask": 152,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - 1/4",
+          "a**2 - a + b**2/4"
+        ]
+      ]
+    },
+    {
+      "mask": 153,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 154,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 155,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 156,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 157,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 158,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 159,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - b/2 - 1/4",
+          "a**2 - a + b**2/4 - b/2"
+        ]
+      ]
+    },
+    {
+      "mask": 160,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - 1/2",
+          "a**2 - a + b**2/4 - b/2"
+        ]
+      ]
+    },
+    {
+      "mask": 161,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 162,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 163,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "a**2 - 4*a/3 + b**2/3 - 2*b/3 + 1/3",
+          "a**2 - 2*a/3 + b**2/3 - 1/3",
+          "a**2 - 2*a/3 + b**2/3 - 2*b/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 164,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 165,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 166,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 167,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - b/2",
+          "a**2 - a + b**2/4"
+        ]
+      ]
+    },
+    {
+      "mask": 168,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - 1/2",
+          "a**2 - a + b**2/4 - b/2"
+        ]
+      ]
+    },
+    {
+      "mask": 169,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 170,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 171,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 172,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 173,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 174,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 175,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + b**2/4 - b/2",
+          "a**2 - a + b**2/4"
+        ]
+      ]
+    },
+    {
+      "mask": 176,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 177,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 178,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "a**2 - 4*a/3 + b**2/3 - 2*b/3 + 1/3",
+          "a**2 - 2*a/3 + b**2/3 - 1/3",
+          "a**2 - 2*a/3 + b**2/3 - 2*b/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 179,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 180,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 181,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 182,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 183,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 184,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 185,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 186,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 187,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 188,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 189,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 190,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 191,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 192,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 193,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 194,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 195,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 196,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 197,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 198,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 199,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 200,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 201,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 202,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 203,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 204,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 205,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 206,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 207,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 208,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 209,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 210,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 211,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 - a*b/2 + a/4 + b**2/4 - b/4",
+          "a**2 - a*b - a/2 + b**2/4 + b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 212,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + a*b/2 - a/4 + b**2/4 - b/4 - 1/2",
+          "a**2 + a*b - 3*a/2 + b**2/4 - 3*b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 213,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 214,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 215,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 216,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 217,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 218,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 219,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 - a*b/2 + a/4 + b**2/4 - b/4",
+          "a**2 - a*b - a/2 + b**2/4 + b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 220,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + a*b/2 - a/4 + b**2/4 - b/4 - 1/2",
+          "a**2 + a*b - 3*a/2 + b**2/4 - 3*b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 221,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 222,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 223,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 224,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 225,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 226,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 227,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 - a*b/2 + a/4 + b**2/4 - b/4 - 1/2",
+          "a**2 + a*b - 3*a/2 + b**2/4 - 3*b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 228,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + a*b/2 - a/4 + b**2/4 - b/4",
+          "a**2 - a*b - a/2 + b**2/4 + b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 229,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 230,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 231,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 232,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 233,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 234,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 235,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 - a*b/2 + a/4 + b**2/4 - b/4 - 1/2",
+          "a**2 + a*b - 3*a/2 + b**2/4 - 3*b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 236,
+      "condition": "equal",
+      "dimension": 3,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "a**2/4 + a*b/2 - a/4 + b**2/4 - b/4",
+          "a**2 - a*b - a/2 + b**2/4 + b/4"
+        ]
+      ]
+    },
+    {
+      "mask": 237,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 238,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 239,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 240,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 241,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 242,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 243,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 244,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 245,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 246,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 247,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 248,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 249,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 250,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 251,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 252,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 253,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 254,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 255,
+      "condition": "equal",
+      "dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 0,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 1,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 2,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 3,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 4,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 5,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 6,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 7,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 8,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 9,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 10,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 11,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 12,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 13,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 14,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 15,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 16,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 17,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 18,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 19,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 20,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 21,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 22,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 23,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 24,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 25,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 26,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 27,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 28,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 29,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 30,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 31,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 32,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 33,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 34,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 35,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 36,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 37,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 38,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 39,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 40,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 41,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 42,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 43,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 44,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 45,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 46,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 47,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 48,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 49,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 50,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 51,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 52,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 53,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 54,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 55,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 56,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 57,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 58,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 59,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 60,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 61,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 62,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 63,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 64,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 65,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 66,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 67,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 68,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 69,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 70,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 71,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 72,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 73,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 74,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 75,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 76,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 77,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 78,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 79,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 80,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 81,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 82,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 83,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 84,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 85,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 86,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 87,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 88,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 89,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 90,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 91,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 92,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 93,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 94,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 95,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 96,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 97,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 98,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 99,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 100,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 101,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 102,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 103,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 104,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 105,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 106,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 107,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 108,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 109,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 110,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 111,
+      "condition": "opposite",
+      "dimension": 6,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "b",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "b**2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a*b",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "a**2",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "mask": 112,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 113,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 114,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 115,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 116,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 117,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 118,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 119,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 120,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 121,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 122,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 123,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 124,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 125,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 126,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 127,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 128,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 129,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 130,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 131,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 132,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 133,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 134,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 135,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 136,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 137,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 138,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 139,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 140,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 141,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 142,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 143,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 144,
+      "condition": "opposite",
+      "dimension": 6,
+      "universally_accepted_cell_masks": [],
+      "basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "b",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "b**2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a*b",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "a**2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "mask": 145,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 146,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 147,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 148,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 149,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 150,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 151,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 152,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 153,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 154,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 155,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 156,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 157,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 158,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 159,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 160,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 161,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 162,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 163,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 164,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 165,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 166,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 167,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 168,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 169,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 170,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 171,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 172,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 173,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 174,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 175,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 176,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 177,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 178,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 179,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 180,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 181,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 182,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 183,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 184,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 185,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 186,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 187,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 188,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 189,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 190,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 191,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 192,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 193,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 194,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 195,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 196,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 197,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 198,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 199,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 200,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 201,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 202,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 203,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 204,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 205,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 206,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 207,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 208,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 209,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 210,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 211,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 212,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 213,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 214,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 215,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 216,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 217,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 218,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 219,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 220,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 221,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 222,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 223,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 224,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 225,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 226,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 227,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 228,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 229,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 230,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 231,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 232,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 233,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 234,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 235,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 236,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 237,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 238,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 239,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 240,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 241,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 242,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 243,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 244,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 245,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 246,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 247,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 248,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 249,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 250,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 251,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 252,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 253,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 254,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 255,
+      "condition": "opposite",
+      "dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "polynomial_rules.py": "be3bd8e2c5e7b9b0965fdb65832168b4241a01283660ecd40798c9b7b60bcfe4",
+    "reflected_search.py": "0794d2b64f4b12540a4b77ec43221bc0e1e92390756a44dc323f1aaec897541f",
+    "geometry_and_constant_rules.json": "cbe4666bb9018fdc7d97f495448f2a1651d70048fba7f07f49e44169f12b99a5",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09"
+  }
+}

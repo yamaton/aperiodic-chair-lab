@@ -1,0 +1,14 @@
+{"degree": 0, "condition": "equal", "variables": 5, "equations": 9, "distinct_maps": 14, "kernel_dimension": 2, "basis": [["1", "1", "1", "0", "0"], ["0", "0", "0", "1", "1"]]}
+{"degree": 0, "condition": "opposite", "variables": 5, "equations": 14, "distinct_maps": 14, "kernel_dimension": 0, "basis": []}
+{"degree": 1, "condition": "equal", "variables": 15, "equations": 38, "distinct_maps": 14, "kernel_dimension": 2, "basis": [["1", "1", "1", "0", "0"], ["0", "0", "0", "1", "1"]]}
+{"degree": 1, "condition": "opposite", "variables": 15, "equations": 39, "distinct_maps": 14, "kernel_dimension": 0, "basis": []}
+{"degree": 2, "condition": "equal", "variables": 30, "equations": 76, "distinct_maps": 14, "kernel_dimension": 2, "basis": [["1", "1", "1", "0", "0"], ["0", "0", "0", "1", "1"]]}
+{"degree": 2, "condition": "opposite", "variables": 30, "equations": 81, "distinct_maps": 14, "kernel_dimension": 0, "basis": []}
+{"degree": 3, "condition": "equal", "variables": 50, "equations": 132, "distinct_maps": 14, "kernel_dimension": 2, "basis": [["1", "1", "1", "0", "0"], ["0", "0", "0", "1", "1"]]}
+{"degree": 3, "condition": "opposite", "variables": 50, "equations": 134, "distinct_maps": 14, "kernel_dimension": 0, "basis": []}
+{"degree": 4, "condition": "equal", "variables": 75, "equations": 198, "distinct_maps": 14, "kernel_dimension": 2, "basis": [["1", "1", "1", "0", "0"], ["0", "0", "0", "1", "1"]]}
+{"degree": 4, "condition": "opposite", "variables": 75, "equations": 204, "distinct_maps": 14, "kernel_dimension": 0, "basis": []}
+{"degree": 5, "condition": "equal", "variables": 105, "equations": 282, "distinct_maps": 14, "kernel_dimension": 2, "basis": [["1", "1", "1", "0", "0"], ["0", "0", "0", "1", "1"]]}
+{"degree": 5, "condition": "opposite", "variables": 105, "equations": 285, "distinct_maps": 14, "kernel_dimension": 0, "basis": []}
+{"degree": 6, "condition": "equal", "variables": 140, "equations": 376, "distinct_maps": 14, "kernel_dimension": 2, "basis": [["1", "1", "1", "0", "0"], ["0", "0", "0", "1", "1"]]}
+{"degree": 6, "condition": "opposite", "variables": 140, "equations": 383, "distinct_maps": 14, "kernel_dimension": 0, "basis": []}

@@ -1,0 +1,1761 @@
+{
+  "scope": "Exact carrier geometry and whole-face constant-rule controls only",
+  "metric": [
+    [
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "face_names": [
+    "bottom",
+    "top",
+    "long_rectangle",
+    "square",
+    "hypotenuse_rectangle"
+  ],
+  "children": [
+    {
+      "name": "1A",
+      "rotation": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "translation": [
+        "1/2",
+        "0",
+        "0"
+      ],
+      "scale": "1/2"
+    },
+    {
+      "name": "2A",
+      "rotation": [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "translation": [
+        "1/2",
+        "0",
+        "0"
+      ],
+      "scale": "1/2"
+    },
+    {
+      "name": "3A",
+      "rotation": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "translation": [
+        "0",
+        "0",
+        "1/2"
+      ],
+      "scale": "1/2"
+    },
+    {
+      "name": "4A",
+      "rotation": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "translation": [
+        "0",
+        "1/2",
+        "0"
+      ],
+      "scale": "1/2"
+    },
+    {
+      "name": "1B",
+      "rotation": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "translation": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "scale": "1/2"
+    },
+    {
+      "name": "2B",
+      "rotation": [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "translation": [
+        "1/2",
+        "0",
+        "1"
+      ],
+      "scale": "1/2"
+    },
+    {
+      "name": "3B",
+      "rotation": [
+        [
+          "-1/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "3/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "translation": [
+        "1/4",
+        "1/4",
+        "1"
+      ],
+      "scale": "1/2"
+    },
+    {
+      "name": "4B",
+      "rotation": [
+        [
+          "-1/2",
+          "-1/2",
+          "0"
+        ],
+        [
+          "3/2",
+          "-1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "translation": [
+        "1/4",
+        "1/4",
+        "1/2"
+      ],
+      "scale": "1/2"
+    }
+  ],
+  "all_proper_isometries": true,
+  "contained": true,
+  "volume_ratio_sum": 1,
+  "separating_axes": [
+    {
+      "i": 0,
+      "j": 1,
+      "certificate": [
+        [
+          "-1/4",
+          "0",
+          "0"
+        ],
+        "-1/8",
+        "-1/8"
+      ]
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "certificate": [
+        [
+          "-1/4",
+          "0",
+          "0"
+        ],
+        "-1/8",
+        "-1/8"
+      ]
+    },
+    {
+      "i": 0,
+      "j": 3,
+      "certificate": [
+        [
+          "0",
+          "1/4",
+          "0"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 0,
+      "j": 4,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 0,
+      "j": 5,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 0,
+      "j": 6,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 0,
+      "j": 7,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "certificate": [
+        [
+          "-1/4",
+          "0",
+          "1/4"
+        ],
+        "0",
+        "0"
+      ]
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "certificate": [
+        [
+          "0",
+          "1/4",
+          "0"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 1,
+      "j": 4,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 1,
+      "j": 5,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 1,
+      "j": 6,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 1,
+      "j": 7,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "certificate": [
+        [
+          "0",
+          "1/4",
+          "0"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 2,
+      "j": 5,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 2,
+      "j": 6,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 2,
+      "j": 7,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 3,
+      "j": 5,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 3,
+      "j": 6,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 3,
+      "j": 7,
+      "certificate": [
+        [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "i": 4,
+      "j": 5,
+      "certificate": [
+        [
+          "-1/4",
+          "0",
+          "0"
+        ],
+        "-1/8",
+        "-1/8"
+      ]
+    },
+    {
+      "i": 4,
+      "j": 6,
+      "certificate": [
+        [
+          "-1/4",
+          "0",
+          "0"
+        ],
+        "-1/8",
+        "-1/8"
+      ]
+    },
+    {
+      "i": 4,
+      "j": 7,
+      "certificate": [
+        [
+          "-1/4",
+          "0",
+          "0"
+        ],
+        "-1/8",
+        "-1/16"
+      ]
+    },
+    {
+      "i": 5,
+      "j": 6,
+      "certificate": [
+        [
+          "-1/4",
+          "1/4",
+          "0"
+        ],
+        "0",
+        "0"
+      ]
+    },
+    {
+      "i": 5,
+      "j": 7,
+      "certificate": [
+        [
+          "-1/4",
+          "1/4",
+          "0"
+        ],
+        "0",
+        "0"
+      ]
+    },
+    {
+      "i": 6,
+      "j": 7,
+      "certificate": [
+        [
+          "-3/8",
+          "-1/8",
+          "0"
+        ],
+        "-1/8",
+        "-1/8"
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "i": 0,
+      "j": 1,
+      "fi": 3,
+      "fj": 3,
+      "polygon": [
+        [
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ]
+      ]
+    },
+    {
+      "i": 0,
+      "j": 4,
+      "fi": 1,
+      "fj": 0,
+      "polygon": [
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ],
+        [
+          "1",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "fi": 4,
+      "fj": 4,
+      "polygon": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "0",
+          "1/2",
+          "0"
+        ]
+      ]
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "fi": 1,
+      "fj": 2,
+      "polygon": [
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "fi": 1,
+      "fj": 2,
+      "polygon": [
+        [
+          "0",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "0",
+          "1/2",
+          "0"
+        ]
+      ]
+    },
+    {
+      "i": 2,
+      "j": 5,
+      "fi": 2,
+      "fj": 1,
+      "polygon": [
+        [
+          "0",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 2,
+      "j": 6,
+      "fi": 2,
+      "fj": 1,
+      "polygon": [
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/6",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 2,
+      "j": 7,
+      "fi": 2,
+      "fj": 0,
+      "polygon": [
+        [
+          "0",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        [
+          "1/6",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "0",
+          "1/2",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 3,
+      "j": 6,
+      "fi": 1,
+      "fj": 1,
+      "polygon": [
+        [
+          "1/6",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "0",
+          "1",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 3,
+      "j": 7,
+      "fi": 1,
+      "fj": 0,
+      "polygon": [
+        [
+          "0",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/6",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "0",
+          "1",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 4,
+      "j": 5,
+      "fi": 3,
+      "fj": 3,
+      "polygon": [
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "0",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 5,
+      "j": 6,
+      "fi": 4,
+      "fj": 3,
+      "polygon": [
+        [
+          "1/4",
+          "1/4",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 5,
+      "j": 7,
+      "fi": 4,
+      "fj": 3,
+      "polygon": [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        [
+          "0",
+          "0",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "i": 6,
+      "j": 7,
+      "fi": 2,
+      "fj": 2,
+      "polygon": [
+        [
+          "1/4",
+          "1/4",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2"
+        ]
+      ]
+    }
+  ],
+  "face_coverage": [
+    {
+      "child": 0,
+      "face": 0,
+      "area2_projected": "1/4",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 0,
+      "face": 1,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 0,
+      "face": 2,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 0,
+      "face": 3,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 0,
+      "face": 4,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 1,
+      "face": 0,
+      "area2_projected": "1/4",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 1,
+      "face": 1,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 1,
+      "face": 2,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 1,
+      "face": 3,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 1,
+      "face": 4,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 2,
+      "face": 0,
+      "area2_projected": "1/4",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 2,
+      "face": 1,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 2,
+      "face": 2,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 2,
+      "face": 3,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 2,
+      "face": 4,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 3,
+      "face": 0,
+      "area2_projected": "1/4",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 3,
+      "face": 1,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 3,
+      "face": 2,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 3,
+      "face": 3,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 3,
+      "face": 4,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 4,
+      "face": 0,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 4,
+      "face": 1,
+      "area2_projected": "1/4",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 4,
+      "face": 2,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 4,
+      "face": 3,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 4,
+      "face": 4,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 5,
+      "face": 0,
+      "area2_projected": "1/4",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 5,
+      "face": 1,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 5,
+      "face": 2,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 5,
+      "face": 3,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 5,
+      "face": 4,
+      "area2_projected": "1/2",
+      "internal_area2": "1/2",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 6,
+      "face": 0,
+      "area2_projected": "1/4",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 6,
+      "face": 1,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 6,
+      "face": 2,
+      "area2_projected": "3/4",
+      "internal_area2": "3/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 6,
+      "face": 3,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 6,
+      "face": 4,
+      "area2_projected": "1/2",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 7,
+      "face": 0,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 7,
+      "face": 1,
+      "area2_projected": "1/4",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    },
+    {
+      "child": 7,
+      "face": 2,
+      "area2_projected": "3/4",
+      "internal_area2": "3/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 7,
+      "face": 3,
+      "area2_projected": "1/4",
+      "internal_area2": "1/4",
+      "on_parent_boundary": false
+    },
+    {
+      "child": 7,
+      "face": 4,
+      "area2_projected": "1",
+      "internal_area2": 0,
+      "on_parent_boundary": true
+    }
+  ],
+  "interior_address": {
+    "address": [
+      "2B",
+      "2B",
+      "4A"
+    ],
+    "pose": [
+      [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      [
+        "1/4",
+        "1/8",
+        "1/2"
+      ],
+      "1/8"
+    ],
+    "fixed_point": [
+      "2/7",
+      "1/7",
+      "4/7"
+    ]
+  },
+  "periodic_control": {
+    "cell": [
+      [
+        [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        "1"
+      ],
+      [
+        [
+          [
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          "1",
+          "1",
+          "0"
+        ],
+        "1"
+      ]
+    ],
+    "lattice_basis": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "contacts": [
+      {
+        "tile": 0,
+        "neighbor": 1,
+        "offset": [
+          -1,
+          0,
+          0
+        ],
+        "fi": 3,
+        "fj": 3,
+        "polygon": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ]
+        ]
+      },
+      {
+        "tile": 0,
+        "neighbor": 1,
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "fi": 2,
+        "fj": 2,
+        "polygon": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      {
+        "tile": 0,
+        "neighbor": 0,
+        "offset": [
+          0,
+          0,
+          -1
+        ],
+        "fi": 0,
+        "fj": 1,
+        "polygon": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "tile": 0,
+        "neighbor": 1,
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "fi": 4,
+        "fj": 4,
+        "polygon": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      {
+        "tile": 0,
+        "neighbor": 0,
+        "offset": [
+          0,
+          0,
+          1
+        ],
+        "fi": 1,
+        "fj": 0,
+        "polygon": [
+          [
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "1"
+          ]
+        ]
+      },
+      {
+        "tile": 1,
+        "neighbor": 1,
+        "offset": [
+          0,
+          0,
+          -1
+        ],
+        "fi": 0,
+        "fj": 1,
+        "polygon": [
+          [
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ]
+        ]
+      },
+      {
+        "tile": 1,
+        "neighbor": 0,
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "fi": 4,
+        "fj": 4,
+        "polygon": [
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "1"
+          ]
+        ]
+      },
+      {
+        "tile": 1,
+        "neighbor": 1,
+        "offset": [
+          0,
+          0,
+          1
+        ],
+        "fi": 1,
+        "fj": 0,
+        "polygon": [
+          [
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      {
+        "tile": 1,
+        "neighbor": 0,
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "fi": 2,
+        "fj": 2,
+        "polygon": [
+          [
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "1",
+            "1"
+          ]
+        ]
+      },
+      {
+        "tile": 1,
+        "neighbor": 0,
+        "offset": [
+          1,
+          0,
+          0
+        ],
+        "fi": 3,
+        "fj": 3,
+        "polygon": [
+          [
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ]
+        ]
+      }
+    ],
+    "carrier_coverage": "two nonoverlapping equal triangular prisms fill the unit box"
+  },
+  "Q001": {
+    "equality_classes": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "periodic_control_accepted": true,
+    "observed_face_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "periodic_face_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "arbitrary_face_pair_predicate_accepts_control": true,
+    "signed_kernel": [],
+    "signed_control_accepted": true
+  },
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "verify_geometry.py": "c2c2c026c7e8ad3fa7f0f56fc01992c3adf8bfd765a9c1cc4b7e42050c203b58"
+  }
+}

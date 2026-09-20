@@ -1,0 +1,3877 @@
+{
+  "scope": "256 reflected child words; scalar polynomial markings degree <=2; sibling compatibility only",
+  "summary": {
+    "equal_degree_0": [
+      2,
+      3
+    ],
+    "opposite_degree_0": [
+      0,
+      1
+    ],
+    "equal_degree_1": [
+      2,
+      5
+    ],
+    "opposite_degree_1": [
+      0,
+      3
+    ],
+    "equal_degree_2": [
+      2,
+      3,
+      8,
+      9
+    ],
+    "opposite_degree_2": [
+      0,
+      6
+    ]
+  },
+  "results": [
+    {
+      "mask": 0,
+      "reflected_children": [],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 1,
+      "reflected_children": [
+        "1A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 2,
+      "reflected_children": [
+        "2A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 3,
+      "reflected_children": [
+        "1A",
+        "2A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 4,
+      "reflected_children": [
+        "3A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 5,
+      "reflected_children": [
+        "1A",
+        "3A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 6,
+      "reflected_children": [
+        "2A",
+        "3A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 7,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 8,
+      "reflected_children": [
+        "4A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 9,
+      "reflected_children": [
+        "1A",
+        "4A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 10,
+      "reflected_children": [
+        "2A",
+        "4A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 11,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 12,
+      "reflected_children": [
+        "3A",
+        "4A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 13,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 14,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 15,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 16,
+      "reflected_children": [
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 17,
+      "reflected_children": [
+        "1A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 18,
+      "reflected_children": [
+        "2A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 19,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 20,
+      "reflected_children": [
+        "3A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 21,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 22,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 23,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 24,
+      "reflected_children": [
+        "4A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 25,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 26,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 27,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 28,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 29,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 30,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 31,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "1B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 32,
+      "reflected_children": [
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 33,
+      "reflected_children": [
+        "1A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 34,
+      "reflected_children": [
+        "2A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 35,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 36,
+      "reflected_children": [
+        "3A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 37,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 38,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 39,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 40,
+      "reflected_children": [
+        "4A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 41,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 42,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 43,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 44,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 45,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 46,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 47,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 48,
+      "reflected_children": [
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 49,
+      "reflected_children": [
+        "1A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 50,
+      "reflected_children": [
+        "2A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 51,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 52,
+      "reflected_children": [
+        "3A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 53,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 54,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 55,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 56,
+      "reflected_children": [
+        "4A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 57,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 58,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 59,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 60,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 61,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 62,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 63,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "2B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 64,
+      "reflected_children": [
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 65,
+      "reflected_children": [
+        "1A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 66,
+      "reflected_children": [
+        "2A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 67,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 68,
+      "reflected_children": [
+        "3A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 69,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 70,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 71,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 72,
+      "reflected_children": [
+        "4A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 73,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 74,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 75,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 76,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 77,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 78,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 79,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 80,
+      "reflected_children": [
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 81,
+      "reflected_children": [
+        "1A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 82,
+      "reflected_children": [
+        "2A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 83,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 84,
+      "reflected_children": [
+        "3A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 85,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 86,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 87,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 88,
+      "reflected_children": [
+        "4A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 89,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 90,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 91,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 92,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 93,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 94,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 95,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 96,
+      "reflected_children": [
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 97,
+      "reflected_children": [
+        "1A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 98,
+      "reflected_children": [
+        "2A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 99,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 100,
+      "reflected_children": [
+        "3A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 101,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 102,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 103,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 104,
+      "reflected_children": [
+        "4A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 105,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 106,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 107,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 108,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 109,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 110,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 111,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 3,
+      "opposite_degree_0": 1,
+      "equal_degree_1": 5,
+      "opposite_degree_1": 3,
+      "equal_degree_2": 9,
+      "opposite_degree_2": 6
+    },
+    {
+      "mask": 112,
+      "reflected_children": [
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 113,
+      "reflected_children": [
+        "1A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 114,
+      "reflected_children": [
+        "2A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 115,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 116,
+      "reflected_children": [
+        "3A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 117,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 118,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 119,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 120,
+      "reflected_children": [
+        "4A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 121,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 122,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 123,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 124,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 125,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 126,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 3,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 5,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 8,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 127,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "3B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 128,
+      "reflected_children": [
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 129,
+      "reflected_children": [
+        "1A",
+        "4B"
+      ],
+      "equal_degree_0": 3,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 5,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 8,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 130,
+      "reflected_children": [
+        "2A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 131,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 132,
+      "reflected_children": [
+        "3A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 133,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 134,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 135,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 136,
+      "reflected_children": [
+        "4A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 137,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 138,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 139,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 140,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 141,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 142,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 143,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 144,
+      "reflected_children": [
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 3,
+      "opposite_degree_0": 1,
+      "equal_degree_1": 5,
+      "opposite_degree_1": 3,
+      "equal_degree_2": 9,
+      "opposite_degree_2": 6
+    },
+    {
+      "mask": 145,
+      "reflected_children": [
+        "1A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 146,
+      "reflected_children": [
+        "2A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 147,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 148,
+      "reflected_children": [
+        "3A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 149,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 150,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 151,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 152,
+      "reflected_children": [
+        "4A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 153,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 154,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 155,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 156,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 157,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 158,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 159,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 160,
+      "reflected_children": [
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 161,
+      "reflected_children": [
+        "1A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 162,
+      "reflected_children": [
+        "2A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 163,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 164,
+      "reflected_children": [
+        "3A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 165,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 166,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 167,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 168,
+      "reflected_children": [
+        "4A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 169,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 170,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 171,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 172,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 173,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 174,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 175,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 176,
+      "reflected_children": [
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 177,
+      "reflected_children": [
+        "1A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 178,
+      "reflected_children": [
+        "2A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 179,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 180,
+      "reflected_children": [
+        "3A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 181,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 182,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 183,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 184,
+      "reflected_children": [
+        "4A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 185,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 186,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 187,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 188,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 189,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 190,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 191,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 192,
+      "reflected_children": [
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 193,
+      "reflected_children": [
+        "1A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 194,
+      "reflected_children": [
+        "2A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 195,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 196,
+      "reflected_children": [
+        "3A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 197,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 198,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 199,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 200,
+      "reflected_children": [
+        "4A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 201,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 202,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 203,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 204,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 205,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 206,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 207,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 208,
+      "reflected_children": [
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 209,
+      "reflected_children": [
+        "1A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 210,
+      "reflected_children": [
+        "2A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 211,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 212,
+      "reflected_children": [
+        "3A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 213,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 214,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 215,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 216,
+      "reflected_children": [
+        "4A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 217,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 218,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 219,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 220,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 221,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 222,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 223,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 224,
+      "reflected_children": [
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 225,
+      "reflected_children": [
+        "1A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 226,
+      "reflected_children": [
+        "2A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 227,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 228,
+      "reflected_children": [
+        "3A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 229,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 230,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 231,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 232,
+      "reflected_children": [
+        "4A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 233,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 234,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 235,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 236,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 3,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 237,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 238,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 239,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 240,
+      "reflected_children": [
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 241,
+      "reflected_children": [
+        "1A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 242,
+      "reflected_children": [
+        "2A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 243,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 244,
+      "reflected_children": [
+        "3A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 245,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 246,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 247,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 248,
+      "reflected_children": [
+        "4A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 249,
+      "reflected_children": [
+        "1A",
+        "4A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 250,
+      "reflected_children": [
+        "2A",
+        "4A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 251,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "4A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 252,
+      "reflected_children": [
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 253,
+      "reflected_children": [
+        "1A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 254,
+      "reflected_children": [
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    },
+    {
+      "mask": 255,
+      "reflected_children": [
+        "1A",
+        "2A",
+        "3A",
+        "4A",
+        "1B",
+        "2B",
+        "3B",
+        "4B"
+      ],
+      "equal_degree_0": 2,
+      "opposite_degree_0": 0,
+      "equal_degree_1": 2,
+      "opposite_degree_1": 0,
+      "equal_degree_2": 2,
+      "opposite_degree_2": 0
+    }
+  ],
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "polynomial_rules.py": "be3bd8e2c5e7b9b0965fdb65832168b4241a01283660ecd40798c9b7b60bcfe4",
+    "reflected_search.py": "0794d2b64f4b12540a4b77ec43221bc0e1e92390756a44dc323f1aaec897541f"
+  }
+}

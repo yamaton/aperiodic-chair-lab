@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "sibling_positive_pairs": 240,
+    "hereditary_positive_pairs": 240,
+    "vertex_incidences": 346,
+    "sibling_edge_incidences": 536,
+    "hereditary_edges": 96
+  },
+  "vertices": 38,
+  "failures": 0
+}

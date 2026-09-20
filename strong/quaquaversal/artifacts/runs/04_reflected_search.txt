@@ -1,0 +1,36 @@
+Completed masks 0..31
+Completed masks 0..63
+Completed masks 0..95
+Completed masks 0..127
+Completed masks 0..159
+Completed masks 0..191
+Completed masks 0..223
+Completed masks 0..255
+{
+  "equal_degree_0": [
+    2,
+    3
+  ],
+  "opposite_degree_0": [
+    0,
+    1
+  ],
+  "equal_degree_1": [
+    2,
+    5
+  ],
+  "opposite_degree_1": [
+    0,
+    3
+  ],
+  "equal_degree_2": [
+    2,
+    3,
+    8,
+    9
+  ],
+  "opposite_degree_2": [
+    0,
+    6
+  ]
+}

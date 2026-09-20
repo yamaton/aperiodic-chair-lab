@@ -1,0 +1,139 @@
+{
+  "scope": "Necessary finite vertex closure only; no full panel theorem certificate",
+  "status": "vertex_closure_stabilized",
+  "rounds": [
+    {
+      "round": 1,
+      "added": 3,
+      "total": 9,
+      "maximum_denominator": 2
+    },
+    {
+      "round": 2,
+      "added": 0,
+      "total": 9,
+      "maximum_denominator": 2
+    }
+  ],
+  "vertices": [
+    {
+      "point": [
+        "0",
+        "0",
+        "0"
+      ],
+      "origin": {
+        "kind": "carrier_vertex",
+        "index": 0
+      }
+    },
+    {
+      "point": [
+        "1",
+        "0",
+        "0"
+      ],
+      "origin": {
+        "kind": "carrier_vertex",
+        "index": 1
+      }
+    },
+    {
+      "point": [
+        "0",
+        "1",
+        "0"
+      ],
+      "origin": {
+        "kind": "carrier_vertex",
+        "index": 2
+      }
+    },
+    {
+      "point": [
+        "0",
+        "0",
+        "1"
+      ],
+      "origin": {
+        "kind": "carrier_vertex",
+        "index": 3
+      }
+    },
+    {
+      "point": [
+        "1",
+        "0",
+        "1"
+      ],
+      "origin": {
+        "kind": "carrier_vertex",
+        "index": 4
+      }
+    },
+    {
+      "point": [
+        "0",
+        "1",
+        "1"
+      ],
+      "origin": {
+        "kind": "carrier_vertex",
+        "index": 5
+      }
+    },
+    {
+      "point": [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      "origin": {
+        "kind": "sibling:6:5",
+        "source": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "point": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "origin": {
+        "kind": "sibling:7:2",
+        "source": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "point": [
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "origin": {
+        "kind": "sibling:7:5",
+        "source": [
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    }
+  ],
+  "arguments": {
+    "rounds": 5,
+    "limit": 10000
+  },
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "refine_vertices.py": "bd55e773ab0133e7ba128f39863daa4b3ccb827657487d820e393f10d8ab757d"
+  }
+}

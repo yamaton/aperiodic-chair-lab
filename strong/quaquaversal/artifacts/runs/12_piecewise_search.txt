@@ -1,0 +1,17 @@
+Finished masks 0..15; cached contact maps 83
+Finished masks 0..31; cached contact maps 103
+Finished masks 0..47; cached contact maps 119
+Finished masks 0..63; cached contact maps 121
+Finished masks 0..79; cached contact maps 135
+Finished masks 0..95; cached contact maps 141
+Finished masks 0..111; cached contact maps 145
+Finished masks 0..127; cached contact maps 146
+Finished masks 0..143; cached contact maps 158
+Finished masks 0..159; cached contact maps 159
+Finished masks 0..175; cached contact maps 160
+Finished masks 0..191; cached contact maps 160
+Finished masks 0..207; cached contact maps 160
+Finished masks 0..223; cached contact maps 160
+Finished masks 0..239; cached contact maps 160
+Finished masks 0..255; cached contact maps 160
+Not rejected: 2

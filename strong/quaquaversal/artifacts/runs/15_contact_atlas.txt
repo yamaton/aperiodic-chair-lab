@@ -1,0 +1,6 @@
+{"round": 1, "added": 28, "total": 49}
+{"round": 2, "added": 27, "total": 76}
+{"round": 3, "added": 10, "total": 86}
+{"round": 4, "added": 5, "total": 91}
+{"round": 5, "added": 0, "total": 91}
+periodic control accepted: False

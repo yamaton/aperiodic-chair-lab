@@ -1,0 +1,6 @@
+Completed equal families
+Completed opposite families
+{
+  "families": 512,
+  "not_rejected_by_control": 40
+}

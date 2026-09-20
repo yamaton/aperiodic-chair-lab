@@ -1,0 +1,1145 @@
+{
+  "scope": "Second-level sibling constraints for the 40 degree-two families not yet rejected",
+  "results": [
+    {
+      "mask": 19,
+      "condition": "equal",
+      "contacts": 167,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 20,
+      "condition": "equal",
+      "contacts": 166,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 27,
+      "condition": "equal",
+      "contacts": 169,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 28,
+      "condition": "equal",
+      "contacts": 169,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 35,
+      "condition": "equal",
+      "contacts": 161,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 36,
+      "condition": "equal",
+      "contacts": 165,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 43,
+      "condition": "equal",
+      "contacts": 163,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 44,
+      "condition": "equal",
+      "contacts": 168,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 77,
+      "condition": "equal",
+      "contacts": 170,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 80,
+      "condition": "equal",
+      "contacts": 169,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 87,
+      "condition": "equal",
+      "contacts": 166,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 88,
+      "condition": "equal",
+      "contacts": 171,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 92,
+      "condition": "equal",
+      "contacts": 170,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 95,
+      "condition": "equal",
+      "contacts": 169,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 96,
+      "condition": "equal",
+      "contacts": 168,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 103,
+      "condition": "equal",
+      "contacts": 160,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 104,
+      "condition": "equal",
+      "contacts": 170,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 111,
+      "condition": "equal",
+      "contacts": 163,
+      "first_level_dimension": 9,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 126,
+      "condition": "equal",
+      "contacts": 165,
+      "first_level_dimension": 8,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 129,
+      "condition": "equal",
+      "contacts": 168,
+      "first_level_dimension": 8,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 144,
+      "condition": "equal",
+      "contacts": 168,
+      "first_level_dimension": 9,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 151,
+      "condition": "equal",
+      "contacts": 164,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 152,
+      "condition": "equal",
+      "contacts": 170,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 159,
+      "condition": "equal",
+      "contacts": 167,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 160,
+      "condition": "equal",
+      "contacts": 167,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 163,
+      "condition": "equal",
+      "contacts": 161,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 167,
+      "condition": "equal",
+      "contacts": 158,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 168,
+      "condition": "equal",
+      "contacts": 169,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 175,
+      "condition": "equal",
+      "contacts": 161,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 178,
+      "condition": "equal",
+      "contacts": 163,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 211,
+      "condition": "equal",
+      "contacts": 170,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 212,
+      "condition": "equal",
+      "contacts": 168,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 219,
+      "condition": "equal",
+      "contacts": 172,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 220,
+      "condition": "equal",
+      "contacts": 171,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 227,
+      "condition": "equal",
+      "contacts": 164,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 228,
+      "condition": "equal",
+      "contacts": 167,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 235,
+      "condition": "equal",
+      "contacts": 166,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 236,
+      "condition": "equal",
+      "contacts": 170,
+      "first_level_dimension": 3,
+      "second_level_dimension": 2,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mask": 111,
+      "condition": "opposite",
+      "contacts": 163,
+      "first_level_dimension": 6,
+      "second_level_dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": []
+    },
+    {
+      "mask": 144,
+      "condition": "opposite",
+      "contacts": 168,
+      "first_level_dimension": 6,
+      "second_level_dimension": 0,
+      "universally_accepted_cell_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "basis": []
+    }
+  ],
+  "not_rejected_by_control": 0,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "polynomial_rules.py": "be3bd8e2c5e7b9b0965fdb65832168b4241a01283660ecd40798c9b7b60bcfe4",
+    "reflected_search.py": "0794d2b64f4b12540a4b77ec43221bc0e1e92390756a44dc323f1aaec897541f",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "geometry_and_constant_rules.json": "cbe4666bb9018fdc7d97f495448f2a1651d70048fba7f07f49e44169f12b99a5",
+    "reflected_periodic_controls.json": "baf3a1f60838c30a37a39013be9ab93a1b4e40e1d59801540f1a667a5ae147d0",
+    "reflected_second_level.py": "1cf7365f3a7b213f7340b0bda2186a95aac8984381bcd8ffb6c4e5c636f06d2f"
+  }
+}

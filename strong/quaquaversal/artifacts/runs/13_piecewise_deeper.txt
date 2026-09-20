@@ -1,0 +1,4 @@
+mask 111: 512 tiles; extracting exact contacts
+{"mask": 111, "level": 3, "tiles": 512, "contacts": 1510, "dimension": 3, "accepted_cells": [], "canonical_panel_colors": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [2, 1, 1, 2], [1, 2, 2, 1, 2, 1, 1, 2]]}
+mask 144: 512 tiles; extracting exact contacts
+{"mask": 144, "level": 3, "tiles": 512, "contacts": 1551, "dimension": 3, "accepted_cells": [], "canonical_panel_colors": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 2, 2, 1], [2, 1, 1, 2, 1, 2, 2, 1]]}

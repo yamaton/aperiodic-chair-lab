@@ -1,0 +1,213 @@
+{
+  "scope": "Reproduction of finite research results, including counterexamples; objective remains open",
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/verify_geometry.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/01_verify_geometry.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/polynomial_rules.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/02_polynomial_rules.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/periodic_obstruction.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/03_periodic_obstruction.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/reflected_search.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/04_reflected_search.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/reflected_controls.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/05_reflected_controls.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/reflected_second_level.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/06_reflected_second_level.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/refine_vertices.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/07_refine_vertices.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/refine_panels.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/08_refine_panels.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/audit_panels.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/09_audit_panels.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/refine_panels.py",
+        "--seed-audit",
+        "strong/quaquaversal/artifacts/panel_audit.json",
+        "--output",
+        "strong/quaquaversal/artifacts/panel_refinement_v2.json"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/10_refine_panels.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/audit_panels.py",
+        "--input",
+        "strong/quaquaversal/artifacts/panel_refinement_v2.json",
+        "--output",
+        "strong/quaquaversal/artifacts/panel_audit_v2.json"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/11_audit_panels.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/piecewise_search.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/12_piecewise_search.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/piecewise_deeper.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/13_piecewise_deeper.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/piecewise_periodic_grid.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/14_piecewise_periodic_grid.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/contact_atlas.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/15_contact_atlas.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/atlas_periodic_reflections.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/16_atlas_periodic_reflections.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/atlas_stars.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/17_atlas_stars.txt"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "strong/quaquaversal/star_language.py"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/runs/18_star_language.txt"
+    }
+  ],
+  "input_hash_checks": 92,
+  "source_sha256": "44968cc10e084ede16a5213cce26ba170e731f6ae676f552df66f0b6fe164510"
+}

@@ -1,0 +1,2 @@
+periodic orbit representatives 24
+PASS: 24 tiles per cell; 120 directed area contacts; no overlap; volume density 1

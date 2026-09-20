@@ -1,0 +1,1045 @@
+{
+  "scope": "Exact positive-area panel, line-segment, and vertex inheritance/incidence checks",
+  "counts": {
+    "sibling_positive_pairs": 204,
+    "hereditary_positive_pairs": 204,
+    "vertex_incidences": 316,
+    "sibling_edge_incidences": 544,
+    "hereditary_edges": 90
+  },
+  "panel_counts": [
+    12,
+    12,
+    24,
+    1,
+    2
+  ],
+  "canonical_vertex_count": 33,
+  "failures": [
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 0,
+      "j": 1,
+      "source": [
+        "0",
+        "1/2",
+        1
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 1,
+      "j": 2,
+      "source": [
+        "1",
+        0,
+        "1/2"
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 1,
+      "j": 0,
+      "source": [
+        "0",
+        "1/2",
+        1
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 2,
+      "j": 1,
+      "source": [
+        "1",
+        0,
+        "1/2"
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 3,
+      "j": 0,
+      "source": [
+        "1",
+        0,
+        "1/2"
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 4,
+      "j": 1,
+      "source": [
+        "0",
+        "1/2",
+        0
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 5,
+      "j": 7,
+      "source": [
+        "1",
+        0,
+        "1/2"
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 5,
+      "j": 1,
+      "source": [
+        "0",
+        "1/2",
+        1
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 6,
+      "j": 5,
+      "source": [
+        "0",
+        0,
+        "1/2"
+      ],
+      "target": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_vertex_missing",
+      "i": 7,
+      "j": 5,
+      "source": [
+        "0",
+        0,
+        "1/2"
+      ],
+      "target": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 0,
+      "j": 1,
+      "source": [
+        [
+          "0",
+          "1/2",
+          1
+        ],
+        [
+          "0",
+          "1",
+          1
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 0,
+      "j": 1,
+      "source": [
+        [
+          "0",
+          "0",
+          1
+        ],
+        [
+          "0",
+          "1/2",
+          1
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 1,
+      "j": 3,
+      "source": [
+        [
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1"
+        ]
+      ],
+      "target": [
+        "1",
+        "0",
+        "1"
+      ],
+      "target_end": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 1,
+      "j": 3,
+      "source": [
+        [
+          "1/2",
+          "1/2",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "1"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "0",
+        "0"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 1,
+      "j": 0,
+      "source": [
+        [
+          "0",
+          "1/2",
+          1
+        ],
+        [
+          "0",
+          "1",
+          1
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 1,
+      "j": 0,
+      "source": [
+        [
+          "0",
+          "0",
+          1
+        ],
+        [
+          "0",
+          "1/2",
+          1
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 1,
+      "j": 2,
+      "source": [
+        [
+          "1",
+          0,
+          "1/2"
+        ],
+        [
+          "1",
+          0,
+          "1"
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 1,
+      "j": 2,
+      "source": [
+        [
+          "1",
+          0,
+          "0"
+        ],
+        [
+          "1",
+          0,
+          "1/2"
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 2,
+      "j": 3,
+      "source": [
+        [
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1"
+        ]
+      ],
+      "target": [
+        "0",
+        "0",
+        "0"
+      ],
+      "target_end": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 2,
+      "j": 3,
+      "source": [
+        [
+          "1/2",
+          "1/2",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "1"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "target_end": [
+        "1",
+        "0",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 2,
+      "j": 1,
+      "source": [
+        [
+          "1",
+          0,
+          "1/2"
+        ],
+        [
+          "1",
+          0,
+          "1"
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 2,
+      "j": 1,
+      "source": [
+        [
+          "1",
+          0,
+          "0"
+        ],
+        [
+          "1",
+          0,
+          "1/2"
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 3,
+      "j": 0,
+      "source": [
+        [
+          "1",
+          0,
+          "1/2"
+        ],
+        [
+          "1",
+          0,
+          "1"
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 3,
+      "j": 0,
+      "source": [
+        [
+          "1",
+          0,
+          "0"
+        ],
+        [
+          "1",
+          0,
+          "1/2"
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 4,
+      "j": 1,
+      "source": [
+        [
+          "0",
+          "0",
+          0
+        ],
+        [
+          "0",
+          "1/2",
+          0
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 4,
+      "j": 1,
+      "source": [
+        [
+          "0",
+          "1/2",
+          0
+        ],
+        [
+          "0",
+          "1",
+          0
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 5,
+      "j": 2,
+      "source": [
+        [
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1"
+        ]
+      ],
+      "target": [
+        "1",
+        "0",
+        "1"
+      ],
+      "target_end": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 5,
+      "j": 2,
+      "source": [
+        [
+          "1/2",
+          "1/2",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "1"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "0",
+        "0"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 5,
+      "j": 1,
+      "source": [
+        [
+          "0",
+          "1/2",
+          1
+        ],
+        [
+          "0",
+          "1",
+          1
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 5,
+      "j": 1,
+      "source": [
+        [
+          "0",
+          "0",
+          1
+        ],
+        [
+          "0",
+          "1/2",
+          1
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "0"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 5,
+      "j": 7,
+      "source": [
+        [
+          "1",
+          0,
+          "1/2"
+        ],
+        [
+          "1",
+          0,
+          "1"
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "0"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 5,
+      "j": 7,
+      "source": [
+        [
+          "1",
+          0,
+          "0"
+        ],
+        [
+          "1",
+          0,
+          "1/2"
+        ]
+      ],
+      "target": [
+        "0",
+        "1",
+        "1"
+      ],
+      "target_end": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 6,
+      "j": 5,
+      "source": [
+        [
+          "0",
+          0,
+          "0"
+        ],
+        [
+          "0",
+          0,
+          "1/2"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      "target_end": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 6,
+      "j": 2,
+      "source": [
+        [
+          0,
+          "0",
+          "1"
+        ],
+        [
+          0,
+          "1",
+          "1"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "target_end": [
+        "1",
+        "0",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 6,
+      "j": 5,
+      "source": [
+        [
+          "0",
+          0,
+          "1/2"
+        ],
+        [
+          "0",
+          0,
+          "1"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "target_end": [
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 7,
+      "j": 5,
+      "source": [
+        [
+          "0",
+          0,
+          "0"
+        ],
+        [
+          "0",
+          0,
+          "1/2"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "target_end": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 7,
+      "j": 2,
+      "source": [
+        [
+          0,
+          "0",
+          "0"
+        ],
+        [
+          0,
+          "1",
+          "0"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "target_end": [
+        "0",
+        "0",
+        "0"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "kind": "sibling_edge_mismatch",
+      "i": 7,
+      "j": 5,
+      "source": [
+        [
+          "0",
+          0,
+          "1/2"
+        ],
+        [
+          "0",
+          0,
+          "1"
+        ]
+      ],
+      "target": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "target_end": [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "polynomial_rules.py": "be3bd8e2c5e7b9b0965fdb65832168b4241a01283660ecd40798c9b7b60bcfe4",
+    "periodic_obstruction.py": "fd7ac62de21b9ef9df7358e1c5e57abc4df1f8e41887cd1655fff89102431667",
+    "panel_refinement.json": "41db1d2afbdf451e40a5e0a8181b5218db1e508944ba82cdfd38fce4c0f626cc",
+    "audit_panels.py": "32299666fea8e5e6c5e8aa7708d21fb82292701fc30bccb00af4e4e0bffd5f9d"
+  }
+}

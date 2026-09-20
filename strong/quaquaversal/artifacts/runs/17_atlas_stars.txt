@@ -1,0 +1,12 @@
+91 neighbors; 1137 overlap conflicts; building root stars
+stars 1000
+stars 2000
+stars 3000
+stars 4000
+stars 5000
+stars 6000
+stars 7000
+stars 8000
+stars 9000
+stars 10000
+{"stars": 10000, "enumeration_complete": false, "termination": "model_limit_unknown"}

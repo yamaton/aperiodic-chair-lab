@@ -8,6 +8,18 @@ For the present mathematical claims, read the [dependency table](PROOF_STATUS.md
 the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
 [short curved-to-grid manuscript](../strong/review/CURVED_GRID_NOTE.md).
 
+## Quaquaversal matching-rule research
+
+[Research entry point](../strong/quaquaversal/README.md),
+[attempt register and commands](../strong/quaquaversal/ATTEMPTS.md), and
+[primary-source notes](../strong/quaquaversal/LITERATURE.md).
+The first result is a [periodic obstruction for one fixed
+decoration](../strong/quaquaversal/PERIODIC_OBSTRUCTION.md), with exact
+contact-path certificates. [Stronger pose and face-star rules](../strong/quaquaversal/RELATIVE_POSE_RULES.md)
+also have explicit periodic counterexamples. The
+[multiple-decoration route](../strong/quaquaversal/MULTITYPE_ROUTE.md)
+has a checked 60-panel boundary structure; no successful monotile is claimed.
+
 ## Public presentation and provenance
 
 - [AI assistance, attribution and chronology](PROVENANCE.md).

@@ -1,0 +1,7 @@
+{"round": 1, "added": 5, "line_counts": [4, 4, 6, 4, 5]}
+{"round": 2, "added": 7, "line_counts": [5, 5, 11, 4, 5]}
+{"round": 3, "added": 7, "line_counts": [7, 9, 12, 4, 5]}
+{"round": 4, "added": 7, "line_counts": [11, 11, 13, 4, 5]}
+{"round": 5, "added": 1, "line_counts": [11, 11, 14, 4, 5]}
+{"round": 6, "added": 0, "line_counts": [11, 11, 14, 4, 5]}
+panel counts [12, 12, 24, 1, 2]

@@ -1,0 +1,1 @@
+PASS: six exact region/path certificates imply all ten periodic contacts; all paths odd.

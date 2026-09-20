@@ -1,0 +1,95 @@
+{
+  "children": 8,
+  "sibling_contacts": 14,
+  "face_checks": 40,
+  "periodic_contacts": 10,
+  "Q001": {
+    "equality_classes": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "periodic_control_accepted": true,
+    "observed_face_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "periodic_face_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "arbitrary_face_pair_predicate_accepts_control": true,
+    "signed_kernel": [],
+    "signed_control_accepted": true
+  }
+}

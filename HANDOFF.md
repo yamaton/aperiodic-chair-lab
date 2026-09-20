@@ -1,6 +1,6 @@
 # Research handoff
 
-*Updated 19 September 2026. Read this first when resuming.*
+*Updated 20 September 2026. Read this first when resuming.*
 
 ## Repository organization
 
@@ -20,6 +20,51 @@ disclosure. Keep unrelated future changes local unless publishing is
 authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
+
+**Quaquaversal matching-rule research started locally (20 September UTC):**
+the user requested sustained attempts, preserving failed approaches and
+continuing toward aperiodic matching rules. The active goal is in
+`strong/quaquaversal/README.md`; `ATTEMPTS.md` records scope and commands.
+Exact rational-metric reconstruction verifies the eight proper child maps,
+28 pair separations, 14 contacts, 40 face-coverage checks and the paper's
+interior three-step address. A new written obstruction
+`strong/quaquaversal/PERIODIC_OBSTRUCTION.md` derives all contacts of a
+two-prism periodic tiling from odd-length sibling contact paths. It rules
+out arbitrary pointwise colors or involutive complements for one decoration
+with the recorded proper child poses; it does not cover arbitrary recuts or
+other handedness assignments. An exact script checks the domain/path
+certificates. A separate degree-0..6 polynomial check agrees.
+Follow-up results now reject all 512 degree-two equality/signed families
+under 256 stationary handedness words (Q004), and all 60-panel constant
+families (Q005, including a delayed four-prism periodic witness). Q003's
+first 51-panel refinement failed vertex incidence; the preserved second
+60-panel refinement passes exact area, vertex and segment audits, supporting
+the known multiple-decoration theorem route without yet constructing its
+decorated inventory. `MULTITYPE_ROUTE.md` records this distinction.
+Q006's relative-pose atlas closes at 91 directed contacts, but an exact
+24-prism periodic reflection tiling satisfies it. Q008 strengthens the
+rule to full positive-area face-stars: a 512-prism proper patch supplies
+80 observed stars, and a 192-prism periodic cell uses only eight of them.
+Thus this stronger rule still fails. `RELATIVE_POSE_RULES.md` explains both
+witnesses. Q007's 10,000 root-star models are a capped overapproximation,
+not an exhaustive or realizable-star count.
+**Resume with Q009**, full closed stars including edge/vertex neighbors:
+`closed_stars.py` has now checked (sample level 3, periodic level 1), giving
+95/8 stars with all 8 control stars unobserved, and (4,2), giving 741/62
+stars with 31 unobserved. This is unknown, not exclusion. Next try closing
+the atlas of all closed contacts, including lower-dimensional contacts, to
+distinguish forbidden from unobserved pairs. **Q010** is another next route:
+pointwise identification groupoids retaining affine panel-frame maps for
+reflected words. ATTEMPTS.md records details and reproduction commands.
+The constructive Q003 skeleton/vertex-wire inventory remains another route.
+`uv run --locked python strong/quaquaversal/reproduce.py` replays the 18
+checkpoint commands and verifies input hashes; it is not a discovery loop.
+The 18-command checkpoint passed with 92 input-hash checks. Q009's two
+subsequent probes are separately recorded. `SYMMETRY_LEMMA.md` supplies a
+conditional packing proof of finite symmetry groups from recognizable
+prism supertiles, without assuming finitely many orientations.
+The target is NOT achieved; no all-tilings hierarchy proof, single-solid
+construction, external review, or new Lean claim. No publication or outreach.
 
 **Five-agent independent review completed locally (19 September):** the user
 requested independent review of the changes across the project. Separate
