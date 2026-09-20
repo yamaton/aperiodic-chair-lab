@@ -57,6 +57,24 @@ COMMANDS = [
     ['parent_cover_star_constraints.py'],
     ['forced_outer_layer.py'],
     ['audit_outer_rejections.py'],
+    ['audit_cover_domains.py'],
+    ['audit_forced_domains.py','--input',ARTIFACTS+'forced_outer_layer.json',
+     '--source',ARTIFACTS+'parent_cover_star_constraints.json','--source-poses',ARTIFACTS+'parent_external_domains.json',
+     '--output',ARTIFACTS+'forced_outer_layer_full_audit.json'],
+    ['propagate_forced_domains.py'],
+    ['audit_forced_domains.py'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'forced_outer_layer_2.json','--output',ARTIFACTS+'forced_outer_layer_3.json'],
+    ['audit_forced_domains.py','--input',ARTIFACTS+'forced_outer_layer_3.json','--source',ARTIFACTS+'forced_outer_layer_2.json',
+     '--output',ARTIFACTS+'forced_outer_layer_3_audit.json'],
+    ['propagate_forced_domains.py','--input',ARTIFACTS+'forced_outer_layer_3.json','--output',ARTIFACTS+'forced_outer_layer_4.json'],
+    ['audit_forced_domains.py','--input',ARTIFACTS+'forced_outer_layer_4.json','--source',ARTIFACTS+'forced_outer_layer_3.json',
+     '--output',ARTIFACTS+'forced_outer_layer_4_audit.json'],
+    ['parent_defect_profiles.py'],
+    ['forced_patch_geometry.py'],
+    ['audit_forced_geometry.py'],
+    ['expanded_arc_consistency.py'],
+    ['audit_expanded_arcs.py'],
+    ['prepare_forced_seed.py'],
 ]
 
 
@@ -109,6 +127,14 @@ def main():
     assert read('parent_cover_star_constraints.json')['status_counts'] == {'survivor':5984,'rejected':3373}
     assert read('forced_outer_layer.json')['status_counts'] == {'survivor':4035,'rejected':1949}
     assert read('outer_rejection_audit.json')['rejected_covers_checked'] == 1949
+    assert read('parent_cover_domain_audit.json')['survivors'] == 5984
+    assert read('forced_outer_layer_full_audit.json')['survivors'] == 4035
+    assert read('forced_outer_layer_2_audit.json')['survivors'] == 1554
+    assert read('forced_outer_layer_3_audit.json')['survivors'] == 1076
+    assert read('forced_outer_layer_4_audit.json')['survivors'] == 744
+    assert read('forced_geometry_audit.json')['rejected_patches'] == 17
+    assert read('expanded_arc_audit.json')['survivors'] == 350
+    assert read('expanded_arc_seed.json')['status_counts']['survivor'] == 350
     receipt = dict(scope='Reproduction of finite research results, including counterexamples; objective remains open',
                    commands=records,input_hash_checks=checks,
                    source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

@@ -21,7 +21,9 @@ results in `artifacts/` with a reproduction command.
 | Q011 | Recognize and desubstitute the closed-star rule | One-level grouping supported; recursive legality open | 41,719 sibling checks pass; 52,485 extra parent-neighborhood tuples remain unresolved |
 | Q012 | Extend candidate parent neighborhoods through external stars | Exact filters reduce extras; recursive legality open | 3,025 extra root tuples and 9,357 nonlanguage parent covers remain |
 | Q013 | Condition exterior stars on each complete parent cover | Partial exclusion | 3,373 covers rejected; 5,984 remain unresolved |
-| Q014 | Add a layer of necessarily present exterior neighbors | Partial exclusion | 1,949 more covers rejected; 4,035 remain unresolved |
+| Q014 | Repeated necessarily present exterior neighbors | Partial exclusion | Four layers leave 744 covers, with full survivor-domain audits |
+| Q015 | Geometric pair tests in expanded forced patches | Partial exclusion | 17 of the 1,076 layer-3 patches rejected by eight intersection witnesses |
+| Q016 | Arc consistency in expanded forced patches | Partial exclusion | 394 of 744 covers rejected; 350 remain unresolved |
 
 ## Q000 — geometry
 
@@ -143,10 +145,10 @@ Evidence: `artifacts/star_language_3_1.json`.
 
 ## Next attempts
 
-- Continue Q014 from `forced_outer_layer.json`: propagate narrowed domains
-  through further necessarily present neighbors, preserving finite bounds
-  and unresolved survivors. Then test pairwise consistency in the enlarged
-  patches or branch on the remaining star domains.
+- Continue Q014 from `expanded_arc_seed.json`: propagate the narrowed
+  domains of its 350 survivors through another forced layer, audit every
+  surviving domain, then repeat Q016 or branch on remaining star choices.
+  [PARENT_PROPAGATION.md](PARENT_PROPAGATION.md) gives the next exact commands.
 - Q003: construct explicit skeleton/vertex-wire labels for the multiple-type
   route, then investigate a recut which preserves that information.
 
@@ -196,7 +198,13 @@ one additional forced layer leaves 4,035. None is claimed to be a tiling.
 
 `uv run --locked python strong/quaquaversal/reproduce.py`
 
-This now runs 41 commands in dependency order and checks input hashes. Expected
+Q014–Q016 follow-up: [PARENT_PROPAGATION.md](PARENT_PROPAGATION.md) records
+the next three forced layers (1,554, 1,076, 744 survivors), geometric
+exclusions and expanded arc propagation. The latter leaves 350 unresolved
+parent covers. Every retained domain and every logged reduction has now
+been audited; this does not establish infinite extension or aperiodicity.
+
+This now runs 55 commands in dependency order and checks input hashes. Expected
 failed attempts are preserved and checked as such. It is a finite
 reproduction command, not an unattended discovery process or a proof of the
 unresolved objective.

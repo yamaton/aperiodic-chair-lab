@@ -40,10 +40,11 @@ stationary reflected words for equality and real scalar opposite-sign
 markings. A stronger [6,840-type closed-star rule](CLOSED_STAR_RULES.md)
 excludes the known periodic control and supports recognizable grouping of
 one parent level. Recursive parent legality remains open. Subsequent
-[exterior-neighborhood checks](PARENT_EXTENSION.md) reduce the unresolved
-possibilities to 4,035 nonlanguage parent covers after one forced outer
-layer. Work continues by extending those domains and with constructive
-hierarchy labels.
+[exterior-neighborhood checks](PARENT_EXTENSION.md) and
+[repeated propagation](PARENT_PROPAGATION.md) reduce the unresolved
+possibilities to 350 nonlanguage parent covers. The retained domains and
+exclusion traces have been audited. Work continues by extending those
+domains and with constructive hierarchy labels.
 See [attempts and commands](ATTEMPTS.md) and [primary sources](LITERATURE.md).
 No novelty, external review, or fabrication claim is made.
 

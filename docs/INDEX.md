@@ -25,8 +25,9 @@ The [closed-star rule](../strong/quaquaversal/CLOSED_STAR_RULES.md) instead has
 6,840 allowed neighborhoods and supports recognizable grouping of one parent
 level. Recursive parent legality remains open.
 [Exterior extension checks](../strong/quaquaversal/PARENT_EXTENSION.md)
-now leave 4,035 nonlanguage parent covers after one additional forced layer;
-the next experiments propagate these domains farther.
+and [repeated propagation](../strong/quaquaversal/PARENT_PROPAGATION.md)
+now leave 350 nonlanguage parent covers, with audited domain reductions;
+the next experiments propagate those domains farther.
 
 ## Public presentation and provenance
 

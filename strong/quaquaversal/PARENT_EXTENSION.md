@@ -92,6 +92,11 @@ placement. That audit does not certify realizability of survivors.
 
 ## Next step and data navigation
 
+This is the first exterior-extension checkpoint. Subsequent
+[repeated propagation](PARENT_PROPAGATION.md) reduces its 4,035 survivors
+to 350; resume from `expanded_arc_seed.json` as described there. The older
+navigation below describes the preserved input to that continuation.
+
 Continue from `artifacts/forced_outer_layer.json`. Each surviving record has
 tile/domain IDs into that file's `poses` and `domain_pool`; its parent cover
 is identified by `boundary_index` and `cover_index` in

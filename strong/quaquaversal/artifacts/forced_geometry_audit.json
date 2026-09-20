@@ -1,0 +1,14 @@
+{
+  "scope": "Point-in-both-polyhedra and atlas-absence certificates for geometric exclusions only",
+  "rejected_patches": 17,
+  "distinct_witnesses": 8,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "contact_atlas.py": "50ea2b29d700f49af40e0d20b20bb2624ea5d76c00524776a0429568db91147f",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "closed_contact_atlas.json": "f25a57d98f389a63934b5c3b01cbbaf2ffe876a52d8dd3c3c57959611b5dc1e2",
+    "forced_outer_layer_3.json": "d0fd55f5f352b362891d1a11e18c77371ce6911a6223401f00af4ae2aa14c36b",
+    "forced_patch_geometry.json": "082bb8e422718934b62ced6fbd4d3dcb51c35aeff58341b8bb818265ef50440c",
+    "audit_forced_geometry.py": "df06ea541280b3a4bb2bb7cd6f813a6d13661f7f53de7f78aef840e1ae43f170"
+  }
+}

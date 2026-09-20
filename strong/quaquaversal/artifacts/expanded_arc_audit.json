@@ -1,0 +1,16 @@
+{
+  "scope": "Explicit-set replay of every reduction trace and rational geometry for each used edge",
+  "rejected": 394,
+  "survivors": 350,
+  "reductions": 1054536,
+  "distinct_geometric_edges": 242468,
+  "sources": {
+    "geometry.py": "85aaca8e07630ce55a5b6ab1fc094e6765e88d85254a754e018c311e49b91260",
+    "reflected_controls.py": "b12c5b3c4a0dbd60f48479b1d2e6915c90473c63814a7ad60d82dd1b7ccb7d09",
+    "closed_contact_atlas.json": "f25a57d98f389a63934b5c3b01cbbaf2ffe876a52d8dd3c3c57959611b5dc1e2",
+    "closed_star_compatibility.json": "00aa8a139e4027deba0b0a2c366278c60c07dfc8c9ee445bc504ef23e3d4b693",
+    "forced_outer_layer_4.json": "ad1c48144000e78d84f4cfc1a86a741ca86796abf9493cc2a5d35d19237b07a8",
+    "expanded_arc_consistency.json": "6572fd1adf434964a59784238b05837380766a7c724de5be9d99a2d6e0a69dc2",
+    "audit_expanded_arcs.py": "78d1a3be71ed3aad96d7d76f0a516eb141e94398c16e4216b22663ed345c8d22"
+  }
+}

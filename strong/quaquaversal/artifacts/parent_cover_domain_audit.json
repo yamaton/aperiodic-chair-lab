@@ -1,0 +1,16 @@
+{
+  "scope": "Independent synchronous replay of every Q013 role-conditioned cover domain",
+  "covers": 9357,
+  "survivors": 5984,
+  "rejections": 3373,
+  "synchronous_rounds": 17472,
+  "sources": {
+    "closed_star_audit.json": "9bf1fc0e8a7f6689be73522d1c63fe313539012a38f97d7e15e73a9280f506e2",
+    "closed_star_compatibility.json": "00aa8a139e4027deba0b0a2c366278c60c07dfc8c9ee445bc504ef23e3d4b693",
+    "parent_neighbor_graph.json": "bb9a3bbaa41a6fdf23a12e60528ab36b1afe4005441360febca25911d5fa0af6",
+    "parent_star_arc_consistency.json": "dd9c6af405af005abae0bad8bfeca67219258f5dece28f97eea4de7f4697b701",
+    "parent_boundary_cover_arcs.json": "01b44f88acf2b75204f3a9c1251bcb2af552f3fbf6bba7b83a85c7aa3ed6abc1",
+    "parent_cover_star_constraints.json": "0390fe74f382d564a114c689cbbf83f8d8b05d6203518b0c2ebf6a679c4a4ee3",
+    "audit_cover_domains.py": "077acaa92500adcb912f0aff85f8ec5ff5e6346e444e9488b229147e09f6e293"
+  }
+}

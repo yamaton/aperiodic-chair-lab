@@ -111,10 +111,10 @@ extra tuples remain. Adding common-neighbor checks between disjoint sibling
 centers rejects none of these extras. These are preserved necessary local
 candidates, not realized counterexamples and not infinite tilings.
 
-The follow-up [exterior-neighborhood experiments](PARENT_EXTENSION.md) now
-apply these extension and role constraints, leaving 4,035 nonlanguage parent
-covers after one additional forced layer. They remain unresolved finite
-candidates. Work continues with wider propagation and, if needed, explicit
+The follow-up [exterior-neighborhood experiments](PARENT_EXTENSION.md) and
+[repeated propagation](PARENT_PROPAGATION.md) now apply these extension and
+role constraints, leaving 350 nonlanguage parent covers. They remain
+unresolved finite candidates. Work continues with wider propagation and, if needed, explicit
 hierarchy labels. A finite-symmetry conclusion needs grouping at arbitrarily
 many scales, as explained in `SYMMETRY_LEMMA.md`.
 

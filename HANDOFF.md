@@ -70,23 +70,39 @@ Independent synchronous propagation agrees on all 11,560 cases. Boundary
 exact covers from the narrowed roles produce all 6,840 genuine parent stars
 plus 9,357 distinct nonlanguage covers. Fixing all roles of each cover at
 once rejects 3,373; adding one forced outer layer rejects another 1,949.
-**4,035 nonlanguage covers remain unresolved.** The final rejections have
+That first exterior checkpoint left **4,035 nonlanguage covers unresolved**. The final rejections have
 explicit empty-domain witnesses checked with sets and exact placements.
 `PARENT_EXTENSION.md` records counts, arguments, commands and audit scope.
 An initial boundary enumeration hit a cover cap and failed its final
 genuine-count assertion; its source/failure are preserved. The repaired,
 stronger arc-domain run completes without a cap and separately checks all
 6,840 genuine cover witnesses.
-**Resume with Q014's next layer**, from `artifacts/forced_outer_layer.json`:
-survivors use its shared `poses` (10,240 positions) and `domain_pool`
-(17,747 lists), and identify their parent cover by `boundary_index` and
-`cover_index` in `parent_boundary_cover_arcs.json`. Repeat necessary forced
-neighbor propagation on narrowed domains with explicit finite bounds.
-Most old domains were singleton, so their exterior consequences matter.
-Then add pairwise compatibility in the expanded patch or branch on domains
-if propagation stalls. Do not call survivors realizable counterexamples.
-All evidence is retained in exact JSON. No worker is left running at this
-checkpoint.
+**Q014–Q016 continuation now leaves 350 unresolved covers.** Three further
+forced layers reduced 4,035 to 1,554, then 1,076, then 744. Independent
+explicit-set audits replay every retained domain as well as every rejection
+at all four layers. The previously unaudited Q013 role-conditioned domains
+were also replayed synchronously (all 9,357 cases). Q015 checks geometric
+pairs in the layer-3 forced patches: 17 rejections from eight common-point
+witnesses, each audited by point inclusion and atlas absence. Diagnostic
+nearest-legal-star comparisons show point-only differences in 855 of the
+1,076 layer-3 covers, edge differences in 220, and a face difference in one;
+these profiles are not realizability claims.
+Q016 discovers atlas contacts among already present forced tiles and applies
+arc consistency. It rejects 394 of the 744 layer-4 covers, leaving 350.
+Its 1,054,536 logged reductions and 242,468 distinct used geometric edges
+were replayed with sets and rational poses. Combining earlier geometric
+exclusions rejects none additionally. `PARENT_PROPAGATION.md` gives scopes,
+counts, commands and the next step.
+**Resume from `artifacts/expanded_arc_seed.json`:** 74,903 shared positions,
+22,558 domain lists, 350 records with `domains`; the other 394 records retain
+rejection references. Parent-cover keys remain `boundary_index`/`cover_index`
+into `parent_boundary_cover_arcs.json`. First run
+`uv run --locked python strong/quaquaversal/propagate_forced_domains.py --input strong/quaquaversal/artifacts/expanded_arc_seed.json --output strong/quaquaversal/artifacts/forced_after_arcs_1.json`,
+then the full-domain audit with that input and `--source` set to the seed.
+If survivors remain, the expanded-arc producer/auditor and seed preparer
+accept input/output arguments for further rounds. Preserve explicit finite
+bounds and interpret survival as unknown. Do not call candidates realizable
+counterexamples. No worker is left running at this checkpoint.
 **Q010 completed:** affine whole-panel groupoids give periodic witnesses for
 all 256 stationary handedness words, for arbitrary pointwise equality or
 real scalar opposite-sign functions. Only equality words 111/144 require
@@ -95,7 +111,7 @@ derivations and 5,140 periodic contacts. `POINTWISE_GROUPOIDS.md` limits the
 scalar zero-cycle argument; arbitrary multi-fixed-symbol involutions and
 independent edge labels are not covered. The constructive Q003 skeleton/
 vertex-wire inventory remains another route.
-`uv run --locked python strong/quaquaversal/reproduce.py` now lists 41
+`uv run --locked python strong/quaquaversal/reproduce.py` now lists 55
 dependency-ordered commands; `--audit-only` checks retained hashes and result
 expectations. The original 18-command replay passed, and all subsequent
 commands have also run separately; the expanded combined replay has not yet
