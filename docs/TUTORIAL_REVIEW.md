@@ -3,6 +3,44 @@
 *16–17 September 2026. AI review requested by the user; no human student
 trial or independent human mathematical review is claimed.*
 
+**19 September update:** the tutorial's geometric main example now uses
+the [triangular cubic variant](../strong/PORT_SIMPLIFICATION.md). The current
+coordinator updated the surface, three-line proof, diagram, printing estimates
+and exercises, and checked the new panel-rule and self-symmetry inputs.
+The earlier multi-agent review recorded below concerns the square-cap edition;
+it must not be read as a review of the new geometry. Its rendering counts
+are historical. `tutorial_verification.json` records the latest artifact's
+presentation checks; those checks do not verify the mathematical proof.
+
+**Movable-dimension update, 19 September:** Step C now shows cancellation of
+general position offsets; Step E states the inset inequalities and the
+larger candidate's rho=1/7 choice. Section 10 compares the recorded dimensions
+with the relocated 12×-width / 256×-depth candidate at the same 25 mm carrier
+scale. Figure 11, the width-family scope, curved-zone separation argument,
+and revised Exercises 5 and 14 distinguish sufficient geometric conditions
+from manufacturing limits. The current coordinator checked these changes
+against `strong/PORT_DIMENSIONS.md` and its exact evidence. No new multi-agent
+or human review is claimed; the earlier review below does not cover this
+addition. The original snapshots and cover remain unchanged.
+Pandoc rebuilt the offline HTML without warnings; final Firefox checks
+cover 11 embedded figures, 732 MathML expressions, 56 local links and both
+1200/390 px layouts, including enlargement and JavaScript-disabled reading.
+The new dimension table and mobile enlarged comparison were visually
+inspected. The receipt hashes match, and the local Pages build passed its
+89-link check. These are presentation checks, not additional proof review.
+
+**Subsequent independent review, 19 September:** at the user's request, five
+separate agents reviewed the current mathematics, information-transfer work,
+rule lab, tutorial and rendering. The tutorial reviewer independently rebuilt
+and inspected the current edition, finding two low-priority ambiguities about
+which cover/viewer depicts which geometry. Both were corrected and rechecked;
+the geometry reviewer also confirmed a stronger triangle-template audit.
+See the [complete review and corrections](../strong/review/PORT_UPDATE_REVIEW.md)
+for each reviewer report, checks, baseline hashes and limitations. This later
+AI review covers the new edition; it does not constitute human review or
+extend the Lean theorem scope. The current presentation receipt describes
+the rebuilt post-correction HTML.
+
 ## Review question and method
 
 The user asked reviewers to check correctness **and** whether a reader with

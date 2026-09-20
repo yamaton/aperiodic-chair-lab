@@ -19,6 +19,13 @@ the [proper grid symmetry result](../formal/GRID_SYMMETRY.md), and the
 
 ## Undergraduate tutorial
 
+The README's [Blender cover](figures/aperiodic-chair-cover-relocated.md)
+now shows the relocated triangular candidate at its actual design proportions,
+an actual matching +2/-2 pair and the eight-child assembly. The design uses
+12× width and 256× depth relative to the small snapshot, with no extra
+feature exaggeration. The linked receipt records the new wedge-based mesh,
+closed-seam and contact checks; earlier covers remain available.
+
 [Interactive assembly prototype](assembly.html) opens offline in a browser:
 face matching, a fixed assembly plus one moving piece, undo, and parent/child
 exploration. Its interface supports [Japanese, English and Simplified Chinese](locales/README.md) and includes a short illustrated
@@ -50,8 +57,14 @@ coordinator's reread, two independent AI reviews and the resulting clarification
 [How one shape can enforce order without repetition](APERIODIC_CHAIR_TUTORIAL.html)
 develops the local parent proof, parity and legal deflation, period halving,
 the five-step curved-surface registration argument, and the existence limit.
-Ten figures and 19 worked exercises connect these to physical implications
-and printable-interface proposals. Finite census data remain in the linked
+Eleven figures and 19 worked exercises connect these to physical implications
+and printable-interface proposals. The geometric main example now uses
+two-depth triangular cubic ports, with the earlier square cap retained
+for comparison. Depth encoding, the three-line rigidity proof, print-scale
+estimates and exercises reflect the new candidate. Movable offsets and a
+12×-width, 256×-depth example distinguish recorded dimensions from design
+constraints, with a comparison figure and updated Exercises 5 and 14; Lean scope remains
+the preserved grid model. Finite census data remain in the linked
 complete tables. The HTML opens
 offline with embedded figures, styling and native MathML; links to project
 reports require the repository. [Markdown source](APERIODIC_CHAIR_TUTORIAL.md).
@@ -60,11 +73,16 @@ and mobile checks, local links, offline resources and artifact hashes.
 The [independent tutorial review](TUTORIAL_REVIEW.md) records mathematical,
 first-reader, and presentation findings, the applied changes, and follow-up
 checks. It is AI review, not a student comprehension trial.
+The later [five-agent review of the current port, tutorial, rule-lab and
+rendering changes](../strong/review/PORT_UPDATE_REVIEW.md) records independent
+re-derivations and probes, three corrected findings, and preserved reviewer reports.
 
-Rebuild the eight new vector diagrams and HTML from the repository root:
+Rebuild the nine tutorial vector diagrams (including the preserved square-cap
+comparison), the dimension-study figure, and HTML from the repository root:
 
 ```sh
 uv run --locked python docs/draw_tutorial_figures.py
+uv run --locked python strong/audit/investigate_port_dimensions.py
 pandoc docs/APERIODIC_CHAIR_TUTORIAL.md --from=markdown-implicit_figures --to=html5 \
   --standalone --embed-resources --math-method=mathml --toc --toc-depth=2 \
   --resource-path=docs --css=tutorial.css \
@@ -110,6 +128,10 @@ are absent.
 | Arbitrary placements → one grid | [Geometric scrutiny](../strong/review/GEOMETRIC_GRID_SCRUTINY.md) | [Primary checker](../strong/audit/scrutinize_grid_bridge.py), [alternate checker](../strong/audit/grid_bridge_crosscheck.py) |
 | Proposed exact solid and hierarchy | [Recut chair](../strong/RECUT_CHAIR.md) | [Frozen-coordinate audit](../strong/audit/README.md) |
 | Reflections and face patterns | [Follow-up](../strong/FOLLOWUP_REFLECTIONS.md) | [Reflection checker](../strong/audit/check_reflections.py) |
+| Why redundant matching constraints remain consistent | [Chirality, cycle balance and volume neutrality](../strong/CONSTRAINT_BALANCE.md) | [Coordinate audit](../strong/audit/check_constraint_balance.py), [exact results](../strong/audit/constraint_balance.json) |
+| Which distinctions survive grouping | [Five forbidden equality patterns and a two-depth witness](../strong/INFORMATION_TRANSFER.md) | [Symbolic analysis](../strong/audit/analyze_information_transfer.py), [independent replay](../strong/audit/crosscheck_information_transfer.cjs), [results](../strong/audit/information_transfer.json) |
+| Simpler port geometry | [Scalene triangular cubic cap](../strong/PORT_SIMPLIFICATION.md) | [New snapshot](../strong/audit/triangular_v1/README.md), [primary checks](../strong/audit/simplify_ports.py), [independent replay](../strong/audit/crosscheck_triangular_ports.cjs) |
+| Movable-anchor width/depth bounds | [Dimension study and larger witness](../strong/PORT_DIMENSIONS.md) | [Exact checker](../strong/audit/investigate_port_dimensions.py), [evidence](../strong/audit/port_dimensions.json), [layout/parameter figure](../strong/artifacts/port-dimensions.svg) |
 | Local eight-chair grouping | [Parent rule](../strong/MOTIF_GROUPING.md) | [Grouping checker](../strong/audit/motif_grouping.py) |
 | Proof dependencies and existence | [Dependency audit](../strong/review/DEPENDENCY_AUDIT.md) | [Review verifier](../strong/review/verify_package.py) |
 | Substitution dynamics | [Scrutiny addendum](../strong/review/SCRUTINY_ADDENDUM.md) | [Cube exploration](../strong/audit/explore_cube_substitution.py) |

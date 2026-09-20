@@ -1,0 +1,16 @@
+{
+  "scope": "Verbatim independent AI review reports and historical probes; baseline precedes coordinator corrections.",
+  "files": {
+    "geometry.md": "f2fc24329930d00d2d0ed2b1fe53284eecc03558d7bf19e624c245d39d90c83a",
+    "information.md": "57daa3dab51764f16af5a124f9a18e485d93e308135e40d753fdb15cec379411",
+    "rulelab.md": "25173714cf332cc78aeac6ded15d7fd37f35144e68dd46f3ed99c0babcf3b333",
+    "tutorial.md": "7a20396e7af5354be2de67ca5d543d0d8b03dc1d7e1d64141e7b3670fe6964c7",
+    "rendering.md": "f9226c75baf511bbf57558bfa7888d626df0c499aa56e716764fbf89777d49b0",
+    "baseline.json": "8b42ea0138779b27b2f1ef3bf0d1e88d8c2b0eb92613df526dc1e85e78762c49",
+    "tutorial-independent-result.json": "2600f9b3a2189152a515112ce912ca82056130964e7bafea1b233c2e1a4fadb1",
+    "probes/rendering.py": "ab90099165e241799615db1bdb0166442400e7e4c18cddef83862d1462f9c849",
+    "probes/rule-model.cjs": "fe399f877b70793a3efd81dfc2f8127e32bc2041ce7599fb42ce7a8f9c89ae65",
+    "probes/rule-browser.cjs": "09c77d197bbdfb1e2d16e121602eda620c6a4aeeb30cdc2dcf643ad60fcb6269",
+    "probes/tutorial-browser.cjs": "76384d43071a8918c57efcbce906b13cadb56624420c6c1da6a82f2e4dafdc40"
+  }
+}

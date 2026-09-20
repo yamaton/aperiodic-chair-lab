@@ -1,0 +1,27 @@
+{
+  "browser": "155.0",
+  "layouts": [
+    {
+      "width": 1200,
+      "math": 732,
+      "images": 11,
+      "localLinks": 56,
+      "controls": 11
+    },
+    {
+      "width": 390,
+      "math": 732,
+      "images": 11,
+      "localLinks": 56,
+      "controls": 11
+    }
+  ],
+  "network": [],
+  "errors": [],
+  "noScript": {
+    "images": 11,
+    "math": 732,
+    "overflow": false,
+    "loaded": true
+  }
+}

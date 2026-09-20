@@ -1,6 +1,6 @@
 # Research handoff
 
-*Updated 17 September 2026. Read this first when resuming.*
+*Updated 19 September 2026. Read this first when resuming.*
 
 ## Repository organization
 
@@ -20,6 +20,261 @@ disclosure. Keep unrelated future changes local unless publishing is
 authorized. No reviewer outreach has been authorized or sent.
 
 ## Active objective
+
+**Five-agent independent review completed locally (19 September):** the user
+requested independent review of the changes across the project. Separate
+agents with no authoring-conversation fork reviewed geometry/dimensions,
+constraint/information transfer, the rule lab, tutorial/docs, and Blender
+geometry/provenance. No P1/P2 correctness issue was identified. Three P3
+findings were fixed: the dimension checker now tests actual transformed
+triangles against independently generated templates (plus all axes and
+face-grid parity); the tutorial distinguishes the current and earlier covers
+and limits its square-rendering description to Figure 1; README labels its
+viewer as the square-port reference. The responsible reviewers independently
+confirmed each fix. Both witnesses' 9,216 template memberships still pass,
+and the dimensional JSON is byte-for-byte unchanged, preserving cover provenance.
+Reviewers additionally re-derived the analytic transfer and symbolic counts,
+replayed the atlas audits, compared 916,992 randomized rule-lab decisions,
+and checked actual mesh faces, all 384 contact vertex sets and proper crops.
+The coordinator rebuilt HTML, refreshed Firefox presentation checks, and
+rebuilt the local site. Full record: `strong/review/PORT_UPDATE_REVIEW.md`;
+`strong/review/port-update-review/` preserves five reports, four historical
+probes, the 73-file pre-review baseline, manifests and final validation.
+This is internal independent AI review, not external human acceptance or
+a new Lean/printing certificate. No open reviewer finding within scope;
+existing research limitations remain. No commit, publication or outreach.
+
+**Relocated Blender cover rendered locally (19 September):** the user asked
+to regenerate the cover after the dimensional tutorial update. README now
+uses `docs/figures/aperiodic-chair-cover-relocated.png`, 2400×1060, depicting
+the actual common-offset witness a=-1/4, b=7/32, w=3/16, delta=1/16, with
+no additional feature enlargement. The three panels retain one chair,
+the actual +2/-2 port pair, and the recorded eight-child assembly. Detail
+uniform magnification is 8/3, and the whole assembly is shown at half scale.
+`docs/render_chair_cover.py --variant relocated --samples 64` now reproduces
+it; earlier square/triangular variants retain their defaults. New
+`docs/relocated_cover_mesh.py` replaces overlapping square cutouts with
+eight wedges per face, each filled by a cap and three flat strips. The
+detail crop is a 9/8-expanded triangle inside the actual wedge, with
+explicitly artificial side/backing geometry. No Blender worker changes.
+A 16-sample preview and final 64-sample Cycles/OptiX render in Blender
+5.2.1 LTS were visually inspected. Geometry checks passed: 470,592 triangles,
+235,298 vertices, all edges paired with opposite winding, Euler characteristic
+2, volume 7 to floating precision, sampled cap error below 2e-16, closed
+detail meshes, 384 matched internal port pairs and the 56-cell child partition.
+Source ports 40/56 in children 7/6 are unchanged; their relocated common
+anchor is (-5/4,-55/32,0), checked at 91 rational triangle samples.
+New adjacent notes/JSON receipt record reproduction, transformations and
+eight matching input/source/image hashes. All three earlier cover PNGs
+still match their preserved receipts. README, docs/INDEX and earlier
+triangular-cover notes point to the new cover. Both mathematical snapshots
+are unchanged; this is mesh visualization, not a manufacturing certificate.
+No commit, publication, outreach, or tutorial HTML change in this render turn.
+
+**Tutorial updated for movable dimensions locally (19 September):** the user
+requested applying the dimension study to the tutorial. Section 7 now labels
+the small dimensions as the recorded example, proves registration using
+general offsets alpha,beta (including depth-dependent offsets), and states
+the clamping inequalities with rho=1/64 for the reference and rho=1/7 for
+the larger candidate. Section 10 compares both candidates at a 25 mm carrier
+edge: the relocated legs are 9.375/4.6875 mm and depths 1.5625/3.125 mm.
+It explains the specified family's width supremum, curved-zone separation,
+and the distinction between sufficient depth bounds and manufacturing limits.
+Figure 11 embeds the existing `strong/artifacts/port-dimensions.svg`; its
+source/evidence hashes are now included in the presentation receipt.
+Exercises 5 and 14 and their answers, the status table, further reading,
+`docs/INDEX.md`, and `docs/TUTORIAL_REVIEW.md` were updated.
+Pandoc rebuilt the standalone HTML without warnings. Final Firefox checks
+passed at 1200/390 px: 11 embedded figures, all enlargement controls, 732
+MathML expressions, 56 local links, JavaScript-disabled reading, no page
+overflow, external requests or page errors. The dimension section, table
+at both widths and enlarged mobile Figure 11 were visually inspected.
+All receipt hashes match; the local Pages build passed its 89-link check.
+The existing snapshots, meshes and cover remain unchanged. This is a local
+tutorial update, not a new mathematical review, Lean proof, publication,
+commit or outreach.
+
+**Movable-anchor width/depth investigation (19 September):** the user requested
+a deeper dimensional audit and explicitly rejected treating the old fixed
+positions as a design-wide constraint. `strong/PORT_DIMENSIONS.md` now permits
+common offsets a,b in p=f+aU+bV: they cancel exactly from every frame-locked
+contact translation. For eight supports in the existing D4 face orbit and
+the same 1:2 right triangle, an eight-wedge packing argument gives supremum
+w=1/4 (16× recorded width), with strict separation for every smaller width.
+The old 1/16 limit is only for the old anchors.
+A concrete witness a=-1/4, b=7/32, w=3/16, delta=1/16 gives 12× width and
+256× depth. Same-face triangles and outer face edges remain separated.
+Symmetric curved zones |s|<=h psi satisfy h psi<distance to every face edge;
+perpendicular-zone intersection would imply both |s_A|<|s_B| and its reverse.
+An exact four-interval Bernstein certificate gives clearance >=5/256.
+h=1/8 retains radius-1/4 core balls; rho=1/7 replaces the old arbitrary
+1/64 inset in the component-exhaustion argument. The same fine/full-macro
+predicates transfer by identical frame maps and separated local interfaces.
+`uv run --locked python strong/audit/investigate_port_dimensions.py` produces
+`strong/audit/port_dimensions.json` and `strong/artifacts/port-dimensions.svg`
+(plus PNG), checks all eight width cases, 28 triangle pairs, 13,312 old/new
+frame maps, 9,216 signed-frame memberships and the exact clearance polynomial.
+Offsets can also differ between the two depth levels: a second checked
+witness moves only high ports inward by U/128 and preserves all 13,312 maps
+and all 672 actual same-face pairs. The 16 faces with seven low ports retain
+the w<=1/4 wedge bound even in this four-parameter placement family.
+Depth envelopes are sufficient, not necessary or globally optimized over a,b.
+The existing snapshots, tutorial, cover and meshes are unchanged. Rendering
+this witness would need a new face triangulation: enclosing squares overlap
+even though the actual triangles do not. No new Lean scope, fabricated-solid
+claim, commit, publication, or outreach.
+
+**Triangular Blender cover rendered locally (19 September):** the user
+requested rerendering the cover after the tutorial/shape update. README now
+uses `docs/figures/aperiodic-chair-cover-triangular.png`: one chair, the actual
+internal +2/-2 contact pair, and the recorded eight-child assembly. All three
+panels use the same disclosed feature multipliers, width 3 and depth 64;
+the close-up then applies uniform 32/3 magnification and the assembly is
+shown at half the single-chair scale. Camera elevation increases for the
+close-up to expose the triangular footprint. Old square covers/receipts
+remain intact and link to the current version.
+`docs/render_chair_cover.py --variant triangular` uses new
+`docs/triangular_cover_mesh.py` with the existing Blender worker. The default
+square variant retains the earlier reproduction commands. A 16-sample
+preview informed the selected scales; the final 2400×1060 image used Blender
+5.2.1 LTS / Cycles / OptiX / 64 samples and was visually inspected.
+Mesh preparation checked triangular support and patch projected areas,
+all sampled curved vertices (maximum error about 4.16e-17), 384 internal
+port correspondences, 91 exact rational samples of the displayed contact,
+the 56-cell child partition, positive feature-box separation and retained
+cores. The area/orientation check caught and corrected reversed flat filler
+triangles before the final rendering. Source port indices 40/56 in children
+7/6 (zero-based) provide the shown pair. Input/source/image hashes match
+`docs/figures/aperiodic-chair-cover-triangular.json`; reproduction and scope
+are in the adjacent `.md`. No mathematical snapshot, existing viewer,
+published site, commit or outreach was changed. The enlarged mesh is an
+illustration, not a certified exact solid or manufacturing design.
+
+**Tutorial updated for triangular ports locally (19 September):** the user
+requested the tutorial update after the shape-simplification investigation.
+`docs/APERIODIC_CHAIR_TUTORIAL.md` now uses the two-depth triangular cubic
+candidate as the geometric main example. Section 3 explains distributed
+depth encoding; Section 4.4 distinguishes preserved contact information
+from numerical depths and mentions the symbolic fixed point. Section 7.1
+teaches barycentric coordinates, the three-line open-patch rigidity proof,
+the centroid/anchor distinction and registration transfer. Section 10 has
+the new footprint/depth dimensions and preserves the unresolved fabrication
+scope. Exercises 5, 13 and 19, answers and the evidence table were updated.
+The square-cap formula and SVG remain as comparisons; whole-chair renderings
+and the older viewer are explicitly labelled as the earlier square design.
+New `docs/figures/tutorial-triangular-cap-rigidity.svg` is generated with the
+existing figure script, which now writes nine SVGs including the preserved
+comparison. The offline HTML still embeds ten figures.
+The independent triangular checker now also verifies all 2,304 aligned panel
+comparisons (192 fits, identical A/B/C rules) and trivial self-symmetry among
+48 signed frames, supporting the tutorial's rule/symmetry transfer claims.
+`docs/PROOF_STATUS.md` and `docs/TUTORIAL_REVIEW.md` distinguish these new
+written deductions and finite checks from the earlier review and Lean scope.
+Pandoc and the local Pages build passed; Firefox presentation checks cover
+desktop/mobile, all figures and enlargement controls, no-JavaScript reading,
+669 MathML expressions, 55 local links and zero external requests/page errors.
+The latest hashes are in `docs/tutorial_verification.json`. Figure 7 was
+visually inspected, including enlarged mobile presentation. No publication,
+commit, frozen-data change or Lean rebuild; the existing grid theorem is
+unchanged.
+
+**Simpler port candidate investigated locally (19 September):** the user asked
+to pursue a simpler shape with two depth levels and full frame rigidity.
+`strong/PORT_SIMPLIFICATION.md` proposes a standard cubic triangle bubble
+on a scalene right-triangle footprint, lowering polynomial degree 5 to 3.
+Its three straight lines on the algebraic continuation recover the scalene
+triangle and ordered axes from any open patch, including arbitrary tilted
+or reflected isometries. A written transfer of the existing registration
+argument is included, not a new Lean theorem or independent human review.
+Degree 3 is minimal in the single-polynomial polygon-supported zero-boundary
+class; a square would need degree >=5 for full ordered-frame rigidity.
+An explicit planar-facet sliding control explains why a pyramid needs a
+different proof, not why all polyhedral alternatives would be impossible.
+`strong/audit/triangular_v1/` is a separate immutable research snapshot:
+same 192 frame anchors, new triangular supports and two-depth signed keys.
+The original `frozen_v1/` is unchanged. Primary checks passed via
+`uv run --locked python strong/audit/simplify_ports.py`; standalone replay
+`node strong/audit/crosscheck_triangular_ports.cjs` checked actual triangle
+vertices, all 13,312 opposite-key pairs (1,410 distinct local poses), and
+exact equality of the 44 fine and 44 full macro contact sets, with no odd
+macro offsets. Primary checks also cover 15,528 periodic box separations,
+9,216 frame/box memberships, volume 7 and height <=1/2048.
+Evidence: `strong/audit/port_simplification.json` and
+`strong/audit/triangular_ports_crosscheck.json`. The comparison figure
+`strong/artifacts/port-simplification.png` is regenerated by
+`uv run --locked python strong/audit/draw_port_simplification.py`.
+This is algebraic simplification, not a tolerance or fabrication result;
+no certified mesh, viewer replacement, commit, publication or outreach.
+
+**Information transfer classified locally (19 September):** following the
+constraint-cycle investigation, the user asked which remaining distinctions
+survive across hierarchy levels. `strong/INFORMATION_TRANSFER.md` gives an
+exact symbolic classification in the fixed twelve-component recoding family:
+both the original 44 fine contacts and the 44 full macrocontacts are preserved
+iff five specified simultaneous-equality patterns are avoided. Aligned
+parent predicates depend only on two collective phase-word equality tests,
+giving 44, 111 or 1,194 contacts. The symbolic substitution operator satisfies
+T(F0)=F1 and T(F1)=F1. The other equality tests protect against odd parent
+offsets, so the aligned count alone is insufficient.
+A new two-depth witness raises only chirality-corrected components 2 and 9;
+1,224 of 2,048 binary partitions preserve both full contact sets. This reduces
+the prior six-depth witness without modifying frozen geometry. Minimality
+is only within positive chirality-aligned amplitudes, not arbitrary solids.
+`uv run --locked python strong/audit/analyze_information_transfer.py` passed;
+the standalone `node strong/audit/crosscheck_information_transfer.cjs` replay
+independently checked 9,189 symbolic predicates, including actual 64-child
+second-level boundaries, and all 13,312 opposite-key cap-frame maps.
+Results: `strong/audit/information_transfer.json` and
+`strong/audit/information_transfer_crosscheck.json`. This is a proper-grid
+classification and aligned hierarchy identity, not a new arbitrary-placement
+proof or a classification of the 111-contact regime. UI and frozen data
+unchanged in this follow-up; no commit, publication or outreach.
+
+**Constraint-cycle explanation audited locally (19 September):** the user
+noticed the graph retains one freedom after additional edges and asked about
+symmetries/conservation. New `strong/CONSTRAINT_BALANCE.md` proves that the
+depth-independent port chirality chi=det[u,v,n] flips at every proper
+registered grid contact. Thus every selected equation graph is bipartite;
+y_i=chi_i*x_i turns x_i+x_j=0 into y_i=y_j. This explains solvability for all
+stationary templates, not just the successful recurrence candidate.
+`uv run --locked python strong/audit/check_constraint_balance.py` passed:
+independent raw-coordinate reconstruction of 1,194 contacts, 7,740 distinct
+potential port-pair edges, no frame or chirality violations. The universal
+graph is connected and retains one scalar. Each of the successful profile's
+12 components has 16 vertices, 31 edges, rank 15 and 16 cycle dependencies.
+An artificial same-chirality chord forces its component to zero; it is not
+a geometric contact. Equal positive/negative counts in every selected
+component also explain volume cancellation as amplitudes vary. An intrinsic
+D4 permutation action on port sites gives graph automorphisms, not rigid
+symmetries of the decorated solid. Recurrence/aperiodicity remain separate.
+Results: `strong/audit/constraint_balance.json`. The UI and frozen geometry
+were not changed in this follow-up. No commit, publication or outreach.
+
+**Interactive matching-rule lab implemented locally (19 September):** following
+the discussion of deflation, algebraic constraints and uniqueness, the user
+requested an intuitive interactive treatment. The assembly header now opens
+an independent three-stage dialog: reveal actual signed-contact graph edges
+(one original family goes from 16 freedoms to 1), change family depths/signs,
+then compare the fine and aligned-parent contact sets. Presets include the
+recorded six-depth recoding (44/44) and all positive depths equal (228/44).
+The three recorded maximal profile representatives give 186/1194, 44/44 and
+62/398; witnesses distinguish parent-only, child-only and shared contacts.
+Drawings use the actual representative child poses. The lab never writes to
+assembly state and is translated into Japanese, English and Simplified Chinese.
+`docs/assembly/build_rule_data.py` exports equations from preserved contact
+closures, with `--check` for reproducibility. No frozen research data changes.
+`node docs/assembly/verify-rule-lab.cjs` independently replays six assignments
+from raw frozen port coordinates (14,328 decisions), checks every family's
+graph freedom, and exercises offline controls, three languages/screen widths,
+focus return and history preservation. The engine check, data reproduction
+check and all eight browser suites passed; all browser records match the
+final standalone HTML. Desktop/mobile layouts, witness geometry and negative
+relief profiles were visually inspected. `docs/assembly.html#rules` opens the
+lab directly. See `docs/assembly/README.md` for reproduction and scope.
+This lab compares only aligned proper integer-grid contacts, not arbitrary
+edited designs' odd offsets, recognizability or infinite tilability. Its
+uniqueness discussion is restricted to the recorded maximal profile classes.
+Changes are local; no commit or publication was requested.
 
 **Parent four-panel experiment implemented locally (19 September):** the user
 found deflation abrupt and requested an interactive algebraic explanation.

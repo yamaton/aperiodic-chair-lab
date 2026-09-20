@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-20T02:59:00.190Z",
+  "scope": "Coordinator checks after independent AI review corrections; not a new theorem",
+  "findings": {
+    "P1_P2": 0,
+    "P3_fixed": 3,
+    "open": 0
+  },
+  "reviewer_fix_confirmation": [
+    "review_geometry",
+    "review_tutorial"
+  ],
+  "dimension_evidence_unchanged": true,
+  "dimension_evidence_sha256": "4bbb0a0b50ef70bd7af51d0fd7fb8b835d068cc175a284098c90699bc9bf8716",
+  "tutorial": {
+    "images": 11,
+    "mathml": 732,
+    "local_links": 58,
+    "external_requests": [],
+    "page_errors": [],
+    "all_receipt_hashes_match": true
+  },
+  "cover": {
+    "receipt_hashes_checked": 8,
+    "all_match": true,
+    "image_sha256": "f2032ee2e3206254f8b1d1d382da806da437607ab302dee012ea00688bf3f562"
+  },
+  "snapshots": "both match original manifests",
+  "site": {
+    "local_links": 89,
+    "source_sha256": "8498c9b18cf706dfa2d1ea24521604fc9bddb4421e5f6911faa8dc9b5438f8c8"
+  },
+  "review_local_links": 127,
+  "corrected_files_sha256": {
+    "strong/audit/investigate_port_dimensions.py": "1810d7eca83fb3e961797a1dadf3ed5cf99b0d6bb7a87a42bf8856f94fcb3667",
+    "docs/APERIODIC_CHAIR_TUTORIAL.md": "8498c9b18cf706dfa2d1ea24521604fc9bddb4421e5f6911faa8dc9b5438f8c8",
+    "docs/APERIODIC_CHAIR_TUTORIAL.html": "03ceeb7e903be6958c5d36317159cb8c641def08252e883e1895286d2fe11b5f",
+    "README.md": "9d943bb8fb43b44bf63a9047adc228a7d77de8ec34ab161608e82477e741650c"
+  }
+}
